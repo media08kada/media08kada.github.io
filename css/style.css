@@ -227,7 +227,7 @@ p {
 }
 
 .hero .content h1 span {
-  color: #;
+  color: var(--primary);
 }
 
 .hero .content p {
