@@ -239,6 +239,10 @@ p {
   mix-blend-mode: difference;
 }
 
+.hero .content h2 {
+  animation: 4s appear linear infinite alternate;
+}
+
 .hero .content .cta {
   margin-top: 1rem;
   display: inline-block;
@@ -262,8 +266,8 @@ p {
   }
 }
 
-.hero .content .cta {
-  animation: 4s appear linear infinite alternate;
+/*.hero .content .cta {
+  animation: 4s appear linear infinite alternate;*/
   /*animation: appear linear;
   animation-timeline: view();
   /*animation-range: entry 0 cover 25%; */
