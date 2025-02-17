@@ -323,7 +323,7 @@ position: relative;
 
 .slider .list .item .detail {
   position: absolute;
-  top: 20%;
+  top: 30%;
   width: 1200px;
   max-width: 80%;
   margin: auto;
