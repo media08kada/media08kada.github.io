@@ -231,6 +231,7 @@ body {
   object-fit: cover;
 }
 
+
 /*.slider-container::after {
   content: '';
   display: block;
