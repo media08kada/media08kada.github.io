@@ -231,15 +231,15 @@ body {
   object-fit: cover;
 }
 
-
-/*.slider-container::after {
+.slider-container::after {
   content: '';
   display: block;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 30%;
+  bottom: 0;
   background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 25%);
-}*/
+}
 
 .slider-item .slider-content {
   position: absolute;
@@ -247,12 +247,12 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
 .slider-container .slider-title {
-  font-size: 6rem; /** 6 x 16px */
+  font-size: 6rem;  6 x 16px */
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
