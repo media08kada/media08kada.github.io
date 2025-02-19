@@ -139,6 +139,8 @@ body {
   background-color: #fff;
   color: var(--bg);
   transition: 0.3s;
+  scroll-behavior: smooth;
+  cursor: pointer;
 }
 
 .archive.active {
