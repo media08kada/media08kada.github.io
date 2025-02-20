@@ -16,16 +16,16 @@ document.querySelector('#search-button').onclick = (e) => {
 };
 
 // Toggle class active untuk shopping cart
-const coffee = document.querySelector('.coffee');
-document.querySelector('#coffee-button').onclick = (e) => {
-  coffee.classList.toggle('active');
+const archive = document.querySelector('.archive');
+document.querySelector('#archive-button').onclick = (e) => {
+  archive.classList.toggle('active');
   e.preventDefault();
 };
 
 // Klik di luar elemen
 const hm = document.querySelector('#hamburger-menu');
 const sb = document.querySelector('#search-button');
-const sc = document.querySelector('#coffee-button');
+const sc = document.querySelector('#archive-button');
 
 document.addEventListener('click', function (e) {
   if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
