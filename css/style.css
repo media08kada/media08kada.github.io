@@ -129,7 +129,7 @@ body {
 }
 
 /* Box Cart */
-.archive {
+.coffee {
   position: absolute;
   top: 100%;
   right: -100%;
@@ -143,11 +143,11 @@ body {
   cursor: pointer;
 }
 
-.archive.active {
+.coffee.active {
   right: 0;
 }
 
-.archive .cart-item {
+.coffee .cart-item {
   margin: 2rem 0;
   display: flex;
   align-items: center;
@@ -157,27 +157,27 @@ body {
   position: relative;
 }
 
-.archive img {
+.coffee img {
   height: 6rem;
   border-radius: 50%;
 }
 
-.archive h3 {
+.coffee h3 {
   font-size: 1.6rem;
   padding-bottom: 0.5rem;
 }
 
-.archive .item-price {
+.coffee .item-price {
   font-size: 1.5rem;
 }
 
-.archive.active .remove-item {
+.coffee .active .remove-item {
   position: absolute;
   right: 1rem;
   cursor: pointer;
 }
 
-.archive .remove-item:hover {
+.coffee  .remove-item:hover {
   color: var(--primary);
 }
 
