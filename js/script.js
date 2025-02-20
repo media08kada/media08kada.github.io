@@ -36,8 +36,8 @@ document.addEventListener('click', function (e) {
     searchForm.classList.remove('active');
   }
 
-  if (!sc.contains(e.target) && !coffee.contains(e.target)) {
-    coffee.classList.remove('active');
+  if (!sc.contains(e.target) && !archive.contains(e.target)) {
+    archive.classList.remove('active');
   }
 });
 
