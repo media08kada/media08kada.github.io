@@ -927,9 +927,9 @@ footer .credit a {
   }
 
   /* Mobile Phone */
-  @media (max-width: 767px) {
+  @media (max-width: 567px) {
     .html {
-      font-size: 35%;
+      font-size: 55%;
     }
     .slider-container {
       background-size: cover; /* Ensured cover for mobile */
