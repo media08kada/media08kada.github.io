@@ -132,7 +132,7 @@ body {
 .archive {
   position: absolute;
   top: 100%;
-  right: -100%;
+  right: -110%;
   height: 100vh;
   width: 35rem;
   padding: 0 1.5rem;
