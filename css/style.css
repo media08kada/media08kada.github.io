@@ -352,9 +352,11 @@ position: relative;
 }
 
   /* Media Queries */ 
-   @media (max-width: 768px)
-    {
-      
+   @media (max-width: 687px) /* koreksi 768*/
+   .slider {
+    width: 90%;
+   }
+         
   .hero .content h1 {
     font-size: 3em; /* Adjusted for smaller screens */
   }
