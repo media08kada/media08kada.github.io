@@ -128,7 +128,7 @@ body {
   color: var(--bg);
 }
 
-/* Box Cart */
+/* Rekomendasi Cart */
 .archive {
   position: absolute;
   top: 100%;
@@ -168,7 +168,7 @@ body {
 }
 
 .archive .item-price {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .archive.active .remove-item {

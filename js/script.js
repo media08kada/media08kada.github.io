@@ -15,6 +15,24 @@ document.querySelector('#search-button').onclick = (e) => {
   e.preventDefault();
 };
 
+// Seacrh Aktive
+/*const searchInput = document.getElementById('search-input');
+const list = document.getElementById('list');
+const listItems = list.getElementsByTagName('li');
+
+searchInput.addEventListener('keyup', function (e) {
+  const listTerm = e.target.volue.tolowerCase();
+  for (let i = 0; i < listItems.length; i++) {
+    const text = listItems[i].textContent,tolowerCase()
+    if(text.includes(listItems)){
+      if(text.includes(listTerm)){
+        listItems[i].style.display = 'block';
+      } else {
+        listItems[i].style.display = 'none';
+    }
+  }
+});*/
+
 // Toggle class active untuk shopping cart
 const archive = document.querySelector('.archive');
 document.querySelector('#archive-button').onclick = (e) => {
@@ -40,23 +58,6 @@ document.addEventListener('click', function (e) {
     archive.classList.remove('active');
   }
 });
-
-// Modal Box
-//const itemDetailModal = document.querySelector('#item-detail-modal');
-//const itemDetailButtons = document.querySelectorAll('.item-detail-button');
-
-//itemDetailButtons.forEach((btn) => {
-// btn.onclick = (e) => {
-// itemDetailModal.style.display = 'flex';
-//e.preventDefault();
-//  };
-//});
-
-// klik tombol close modal
-//document.querySelector('.modal .close-icon').onclick = (e) => {
-//  itemDetailModal.style.display = 'none';
-//  e.preventDefault();
-//};
 
 let preveiwContainer = document.querySelector('.products-preview');
 let previewBox = preveiwContainer.querySelectorAll('.preview');
