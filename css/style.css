@@ -832,14 +832,14 @@ footer .credit a {
 
 /* Media Queries */
 /* Laptop */
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   html {
     font-size: 75%;
   }
 }
 
 /* Tablet */
-@media (max-width: 758px) {
+@media (max-width: 768px) {
  html {
     font-size: 62.5%;
   }
@@ -927,9 +927,9 @@ footer .credit a {
   }
 
   /* Mobile Phone */
-  @media (max-width: 450px) {
+  @media (max-width: 767px) {
     .html {
-      font-size: 55%;
+      font-size: 35%;
     }
     .slider-container {
       background-size: cover; /* Ensured cover for mobile */
