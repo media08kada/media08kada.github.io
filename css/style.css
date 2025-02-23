@@ -315,7 +315,7 @@ position: relative;
 
 .slider .list .item > img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -916,6 +916,14 @@ footer .credit a {
     .html {
       font-size: 55%;
     }
+
+    .archive {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      height: 100vh;
+      width: 35rem;
+      
     .slider-container {
       background-size: cover; /* Ensured cover for mobile */
       background-position: center;
