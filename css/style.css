@@ -397,14 +397,15 @@ position: relative;
   display: flex;
 }
 
-.about .row .about-img {
+/* Freme Video star */
+.about .row .about-iframe {
   flex: 1 1 45rem;
 }
 
-.about .row .about-img img {
+.about .row .about-iframe iframe {
   width: 100%;
   border-radius: 2%;
-}
+  }
 
 .about .row .content {
   flex: 1 1 35rem;
@@ -415,6 +416,9 @@ position: relative;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+/* Freme Video end */
+
+
 
 .about .row .content p {
   margin-bottom: 0.8rem;
@@ -434,6 +438,7 @@ position: relative;
 
 .about .row .about-img img {
   width: 100%;
+  border-radius: 2%;
 }
 
 .about .row .content {
