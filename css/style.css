@@ -214,6 +214,7 @@ body {
   transition: opacity 3000ms;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0)); 
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  overflow: hidden;
 }
 
 .slider-container .slider-item[data-show="show"] {
@@ -766,7 +767,16 @@ position: relative;
   font-size: 1.7rem;
   background: none;
   color: #fff;
-}
+ }
+
+ .contact .row form .input-group pesan {
+  padding: 2rem .5rem;
+  field-sizing: content;
+  min-block-size: 3.5rlh;
+  min-inline-size: 23ch;
+  max-inline-size: 50ch:
+ }
+ 
 
 .contact .row form .btn {
   margin-top: 3rem;
@@ -914,7 +924,7 @@ footer .credit a {
     flex-wrap: wrap;
   }
 
-  /* Mobile Phone */
+   /* Mobile Phone */
   @media (max-width: 450px) {
     .html {
       font-size: 55%;
