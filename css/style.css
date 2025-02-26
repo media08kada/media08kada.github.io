@@ -263,6 +263,7 @@ body {
 
 .slider-content .slider-description {
   font-size:1.5rem;
+  font-weight: 100;
 }
 
 .slider-content .slider-description {
@@ -397,39 +398,6 @@ position: relative;
   display: flex;
 }
 
-/* Freme Video star */
-.about .row .about-iframe {
-  flex: 1 1 45rem;
-}
-
-.about .row .about-iframe iframe {
-  width: 100%;
-  border-radius: 2%;
-  }
-
-.about .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
-}
-
-.about .row .content h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-/* Freme Video end */
-
-.about .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
-  font-weight: 100;
-  line-height: 1.6;
-}
-
-/* Slider */
-.about .row {
-  display: flex;
-}
-
 .about .row .about-img {
   flex: 1 1 45rem;
 }
@@ -455,6 +423,40 @@ position: relative;
   font-weight: 100;
   line-height: 1.6;
 }
+
+/* Freme Video star */
+.about .row .about-iframe {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-iframe iframe {
+  width: 100%;
+  border-radius: 2%;
+  }
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+/* Fremez Video end */
+
+/* Slider */
+.about .row {
+  display: flex;
+}
+
 
 .images {
   display: flex;
@@ -520,7 +522,6 @@ position: relative;
     width: 90%;
   }
 }
-
 /* Berita utama end */
 
 /* Stuktur Organisasi */
@@ -733,7 +734,6 @@ position: relative;
   background: #444;
   color: #fff;
 }
-
 /* Preview Box end */
 
 /* Contact Section */
@@ -780,7 +780,6 @@ position: relative;
   max-inline-size: 50ch:
  }
  
-
 .contact .row form .btn {
   margin-top: 3rem;
   display: inline-block;
@@ -889,7 +888,7 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height: 60rem;
+    height: 24rem; /*revisian*/
     object-fit: cover;
     object-position: center;
   }
