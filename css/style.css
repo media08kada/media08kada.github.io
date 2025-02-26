@@ -356,7 +356,7 @@ position: relative;
 }
 
   /* Media Queries */ 
-   @media (max-width: 768px)
+   @media (max-width: 678px)
     {
       
   .hero .content h1 {
@@ -417,8 +417,6 @@ position: relative;
   margin-bottom: 1rem;
 }
 /* Freme Video end */
-
-
 
 .about .row .content p {
   margin-bottom: 0.8rem;
