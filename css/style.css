@@ -888,7 +888,7 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height: 24rem; /*revisian*/
+    height:30rem; /*revisian*/
     object-fit: cover;
     object-position: center;
   }
