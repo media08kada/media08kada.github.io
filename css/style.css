@@ -424,39 +424,10 @@ position: relative;
   line-height: 1.6;
 }
 
-/* Freme Video star */
-.about .row .about-iframe {
-  flex: 1 1 45rem;
-}
-
-.about .row .about-iframe iframe {
-  width: 100%;
-  border-radius: 2%;
-  }
-
-.about .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
-}
-
-.about .row .content h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.about .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
-  font-weight: 100;
-  line-height: 1.6;
-}
-/* Fremez Video end */
-
 /* Slider */
 .about .row {
   display: flex;
 }
-
 
 .images {
   display: flex;
