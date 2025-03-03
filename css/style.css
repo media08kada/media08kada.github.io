@@ -493,6 +493,7 @@ position: relative;
     width: 90%;
   }
 }
+
 /* Berita utama end */
 
 /* Stuktur Organisasi */
@@ -886,7 +887,7 @@ footer .credit a {
   }
 
   .contact .row .map {
-    height: 30rem;
+    height: 35rem;
   }
 
   .contact .row form {
