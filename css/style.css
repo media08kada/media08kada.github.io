@@ -216,6 +216,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 .slider .list .item .content {
   position: absolute;
   top: 20%;
@@ -395,6 +396,7 @@ body {
 @keyframes loadingTime {
   to {
     width: 0;
+    z-index: 999;
   }
 }
 
@@ -413,6 +415,7 @@ body {
   opacity: 0;
   animation: showContent 0.5s 1s linear 1 forwards;
 }
+
 @keyframes showContent {
   to {
     transform: translateY(0px);
@@ -420,6 +423,7 @@ body {
     opacity: 1;
   }
 }
+
 .slider .list .item:nth-child(1) .content .title {
   animation-delay: 0.4s !important;
 }
