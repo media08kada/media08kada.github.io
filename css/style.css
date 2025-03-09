@@ -724,8 +724,8 @@ body {
 .container .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1.5rem; /* 2rem */
+  margin-top: 4rem; /* 2rem */
 }
 
 .container .products-container .product {
@@ -794,6 +794,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
+  z-index: 9999; /*display tetap */
 }
 
 .products-preview .preview {
