@@ -613,7 +613,7 @@ font-size: 1.2rem;
   color: #fff;
   background-color: var(--primary);
 }
-/* Kotak Modal end... */
+/* Kotak Contonue end... */
 
 /* Slider Berita Utama end*/
 .about .row {
@@ -940,6 +940,11 @@ font-size: 1.2rem;
 .modal-container .close-icon {
   position: absolute;
   right: 1rem;
+}
+
+.modal-container .close-icon:hover {
+  background-color: var(--primary);
+  color: #000;
 }
 
 .modal-content {
