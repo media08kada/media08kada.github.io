@@ -361,6 +361,7 @@ body {
   gap: 10px;
   align-items: center;
 }
+
 .nextPrevArrows button {
   width: 40px;
   height: 40px;
@@ -373,6 +374,7 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+
 .nextPrevArrows button:hover {
   background-color: #fff;
   color: #000;
@@ -595,7 +597,7 @@ body {
   line-height: 1.6;
 }
 
-/* Kotak Continue Star... */
+/* Kotak Continue 1 Star... */
 .about .row .content .modal-icons {
 display: inline-block;
 margin-top: 0.4rem;
@@ -613,7 +615,7 @@ font-size: 1.2rem;
   color: #fff;
   background-color: var(--primary);
 }
-/* Kotak Contonue end... */
+/* Kotak Contonue 1 end... */
 
 /* Slider Berita Utama end*/
 .about .row {
@@ -685,6 +687,7 @@ font-size: 1.2rem;
   }
 }
 /* Slider Berita Utama */
+
 /* Berita utama end */
 
 /* Stuktur Organisasi */
@@ -744,8 +747,8 @@ font-size: 1.2rem;
 .container .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem; /* 2rem */
-  margin-top: 4rem; /* 2rem */
+  gap: 2rem; /* 1.5rem */
+  margin-top: 2rem; /* 4rem */
 }
 
 .container .products-container .product {
@@ -900,7 +903,7 @@ font-size: 1.2rem;
 }
 /* Preview Box end */
 
-/* Modal Box Berita utama star */
+/* Modal Box Berita 1 star */
 /* Item Detail */
 .modal {
   display: none;
@@ -963,7 +966,7 @@ font-size: 1.2rem;
   line-height: 1.8rem;
   margin-top: 1.2rem;
 }
-/* Detil Modal Box Berita utama end */
+/* Detil Modal Box Berita 1 end */
 
 /* Contact Section */
 .contact .row {

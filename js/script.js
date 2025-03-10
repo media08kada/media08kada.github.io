@@ -143,7 +143,7 @@ if (sliderItems) {
   }, 5000);
 }
 
-// Modal Box
+// Modal 1 Box
 const itemDetailModal = document.querySelector('#item-detail-modal');
 const itemDetailButtons = document.querySelectorAll('.item-detail-button');
 
@@ -154,13 +154,13 @@ itemDetailButtons.forEach((btn) => {
   };
 });
 
-// klik tombol close modal
+// klik tombol close modal 1
 document.querySelector('.modal .close-icon').onclick = (e) => {
   itemDetailModal.style.display = 'none';
   e.preventDefault();
 };
 
-// klik di luar modal
+// klik di luar modal 1
 window.onclick = (e) => {
   if (e.target === itemDetailModal) {
     itemDetailModal.style.display = 'none';
