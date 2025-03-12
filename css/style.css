@@ -905,7 +905,7 @@ font-size: 1.2rem;
 }
 /* Preview Box end */
 
-/* Modal Box Berita 1 star */
+/* Modal Box Berita Utama star */
 /* Item Detail */
 .modal1,
 .modal2 {
@@ -929,7 +929,8 @@ font-size: 1.2rem;
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
-  animation: animateModal 0.5s;
+  animation: animateModal1 0.5s;
+  animation: animateModal2 0.5s;
 }
 
 /* Modal Animation */
