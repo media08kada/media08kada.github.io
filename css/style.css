@@ -597,8 +597,9 @@ body {
   line-height: 1.6;
 }
 
-/* Kotak Continue 1 Star... */
-.about .row .content .modal-icons {
+/* Box Continue Star... */
+.about .row .content .modal1-icons,
+.about .row .content .modal2-icons {
 display: inline-block;
 margin-top: 0.4rem;
 gap: 1rem;
@@ -611,11 +612,12 @@ border-radius: 0.3rem;
 font-size: 1.2rem;
 }
 
-.about .row .content .modal-icons:hover {
+.about .row .content .modal1-icons:hover,
+.about .row .content .modal2-icons:hover {
   color: #fff;
   background-color: var(--primary);
 }
-/* Kotak Contonue 1 end... */
+/* Box Contonue End... */
 
 /* Slider Berita Utama end*/
 .about .row {
@@ -905,7 +907,8 @@ font-size: 1.2rem;
 
 /* Modal Box Berita 1 star */
 /* Item Detail */
-.modal {
+.modal1,
+.modal2 {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -917,7 +920,8 @@ font-size: 1.2rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-container {
+.modal1-container,
+.modal2-container {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
@@ -929,7 +933,8 @@ font-size: 1.2rem;
 }
 
 /* Modal Animation */
-@keyframes animateModal {
+@keyframes animateModal1,
+@keyframes animateModal2 {
   from {
     top: -300px;
     opacity: 0;
@@ -940,28 +945,33 @@ font-size: 1.2rem;
     }
   }
 
-.modal-container .close-icon {
+.modal1-container .close-icon,
+.modal2-container .close-icon {
   position: absolute;
   right: 1rem;
 }
 
-.modal-container .close-icon:hover {
+.modal1-container .close-icon:hover,
+.modal2-container .close-icon:hover {
   background-color: var(--primary);
   color: #000;
 }
 
-.modal-content {
+.modal1-content,
+.modal2-content {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.modal-content img {
+.modal1-content img,
+.modal2-content img {
   height: 20rem;
   margin-right: 2rem;
   margim-bottom: 2rem;
 }
 
-.modal-content p {
+.modal1-content p,
+.modal2-content p {
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin-top: 1.2rem;
@@ -1158,7 +1168,8 @@ footer .credit a {
     flex-wrap: wrap;
   }
 
-  .modal-content {
+  .modal1-content,
+  .modal2-content {
     flex-wrap: wrap;
   }
 

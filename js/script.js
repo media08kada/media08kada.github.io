@@ -144,25 +144,45 @@ if (sliderItems) {
 }
 
 // Modal 1 Box
-const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButtons = document.querySelectorAll('.item-detail-button');
+const itemDetailModal1 = document.querySelector('#item-detail-modal1');
+const itemDetailButton1 = document.querySelectorAll('.item-detail-button1');
 
-itemDetailButtons.forEach((btn) => {
+const itemDetailModal2 = document.querySelector('#item-detail-modal2');
+const itemDetailButton2 = document.querySelectorAll('.item-detail-button2');
+
+itemDetailButton1.forEach((btn) => {
   btn.onclick = (e) => {
-    itemDetailModal.style.display = 'flex';
+    itemDetailModal1.style.display = 'flex';
+    e.preventDefault();
+  };
+});
+
+itemDetailButton2.forEach((btn) => {
+  btn.onclick = (e) => {
+    itemDetailModal2.style.display = 'flex';
     e.preventDefault();
   };
 });
 
 // klik tombol close modal 1
-document.querySelector('.modal .close-icon').onclick = (e) => {
-  itemDetailModal.style.display = 'none';
+document.querySelector('.modal1 .close-icon').onclick = (e) => {
+  itemDetailModal1.style.display = 'none';
+  e.preventDefault();
+};
+
+document.querySelector('.modal2 .close-icon').onclick = (e) => {
+  itemDetailModal2.style.display = 'none';
   e.preventDefault();
 };
 
 // klik di luar modal 1
 window.onclick = (e) => {
-  if (e.target === itemDetailModal) {
-    itemDetailModal.style.display = 'none';
+  if (e.target === itemDetailModal1) {
+    itemDetailModal1.style.display = 'none';
+  }
+};
+window.onclick = (e) => {
+  if (e.target === itemDetailModal2) {
+    itemDetailModal2.style.display = 'none';
   }
 };
