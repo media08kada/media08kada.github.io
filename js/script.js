@@ -9,8 +9,13 @@ let thumbnailItems = thumbnail.querySelectorAll('.item');
 thumbnail.appendChild(thumbnailItems[0]);
 
 // AutoPlay Slider
-let runAutoPlay = setTimeout(() => {
+/*let runAutoPlay = setTimeout(() => {
   next.click();
+}, 3000);*/
+
+// AutoPlay Slider
+let autoPlayInterval = setInterval(() => {
+  nextBtn.click();
 }, 3000);
 
 // Function for next button
@@ -42,10 +47,14 @@ function moveSlider(direction) {
     slider.classList.remove('prev');
   }, 2000);
 }
-clearTimeout(runAutoPlay);
+
+// Clear interval waktu sebelumnya
+clearInterval(autoPlayInterval);
+
+/*clearTimeout(runAutoPlay);
 runAutoPlay = setTimeout(() => {
   next.click();
-}, 3000);
+}, 3000); */
 
 // Remove the event listener after it's triggered once
 
