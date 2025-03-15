@@ -9,9 +9,9 @@ let thumbnailItems = thumbnail.querySelectorAll('.item');
 thumbnail.appendChild(thumbnailItems[0]);
 
 // AutoPlay Slider
-/*let runAutoPlay = setTimeout(() => {
+let runAutoPlay = setTimeout(() => {
   next.click();
-}, 3000);*/
+}, 3000);
 
 // AutoPlay Slider
 let autoPlayInterval = setInterval(() => {
@@ -51,10 +51,10 @@ function moveSlider(direction) {
 // Clear interval waktu sebelumnya
 clearInterval(autoPlayInterval);
 
-/*clearTimeout(runAutoPlay);
+clearTimeout(runAutoPlay);
 runAutoPlay = setTimeout(() => {
   next.click();
-}, 3000); */
+}, 3000);
 
 // Remove the event listener after it's triggered once
 
