@@ -803,6 +803,10 @@ font-size: 1.2rem;
   align-items: center;
 }
 
+.container .products-container .product-icons a {
+  color: var(--primary);
+}
+
 .products .product-icons .product a:hover {
   background-color: var(--primary);
   border: 1px solid var(--primary);
@@ -825,7 +829,7 @@ font-size: 1.2rem;
 .products-preview .preview {
   display: none;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
   background: #fefefe;
   position: relative;
   margin: 2rem;
@@ -850,7 +854,7 @@ font-size: 1.2rem;
 }
 
 .products-preview .preview img {
-  height: 30rem;
+  height: 15rem;
 }
 
 .products-preview .preview .fa-times {
@@ -889,20 +893,11 @@ font-size: 1.2rem;
 .products-preview .preview .buttons a {
   flex: 1 1 16rem;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #444;
   border: 0.1rem solid #444;
 }
 
-.products-preview .preview .buttons a.cart {
-  background: #444;
-  color: #fff;
-}
-
-.products-preview .preview .buttons a.buy:hover {
-  background: #444;
-  color: #fff;
-}
 /* Preview Box end */
 
 /* Modal Box Berita Utama star */
