@@ -281,7 +281,7 @@ body {
 
 .slider .content .action::before {
   content: '';
-  background-color: var(--primary);
+  background-color: var(--bg1);
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -621,7 +621,7 @@ body {
 .about .row .content .modal1-icons:before,
 .about .row .content .modal2-icons:before {
   content: '';
-  background-color: var(--primary);
+  background-color: var(--bg1);
   position: absolute;
   inset: 0;
   z-index: -1;
