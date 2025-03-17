@@ -637,7 +637,6 @@ body {
 
 .about .row .content .modal1-icons:hover,
 .about .row .content .modal2-icons:hover {
-
   color: #000;
 }
 
@@ -694,7 +693,7 @@ body {
 }
 
 .navigation a:hover {
-  background-color: var(--primary);
+  background-color: var(--bg1);
 }
 
 .navigation {
