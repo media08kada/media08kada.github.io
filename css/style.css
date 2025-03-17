@@ -637,6 +637,7 @@ body {
 
 .about .row .content .modal1-icons:hover,
 .about .row .content .modal2-icons:hover {
+
   color: #000;
 }
 
@@ -693,7 +694,7 @@ body {
 }
 
 .navigation a:hover {
-  background-color: var(--bg1);
+  background-color: var(--primary);
 }
 
 .navigation {
@@ -871,7 +872,7 @@ body {
 }
 
 .products-preview .preview img {
-  height: 10rem;
+  height: 15rem;
 }
 
 .products-preview .preview .fa-times {
