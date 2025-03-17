@@ -774,6 +774,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem; /* 1.5rem */
   margin-top: 2rem; /* 4rem */
+  align-items: center;
 }
 
 .container .products-container .product {
@@ -1200,5 +1201,14 @@ footer .credit a {
       background-size: cover; /* Ensured cover for mobile */
       background-position: center;
     }
+
+    .products-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 }
+
+
