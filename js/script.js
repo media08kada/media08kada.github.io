@@ -75,7 +75,7 @@ document.querySelector('#search-button').onclick = (e) => {
   e.preventDefault();
 };
 
-// Toggle class active untuk shopping cart
+// Toggle class active untuk Archive cart
 const archive = document.querySelector('.archive');
 document.querySelector('#archive-button').onclick = (e) => {
   archive.classList.toggle('active');
