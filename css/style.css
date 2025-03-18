@@ -621,7 +621,7 @@ body {
 .about .row .content .modal1-icons:before,
 .about .row .content .modal2-icons:before {
   content: '';
-  background-color: var(--bg1);
+  background-color: var(--primary);
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -694,7 +694,7 @@ body {
 }
 
 .navigation a:hover {
-  background-color: var(--primary);
+  background-color: var(--bg1);
 }
 
 .navigation {
@@ -712,6 +712,7 @@ body {
     width: 90%;
   }
 }
+
 /* Slider Berita Utama */
 /* Berita utama end */
 
@@ -873,7 +874,7 @@ body {
 }
 
 .products-preview .preview img {
-  height: 15rem;
+  height: 10rem;
 }
 
 .products-preview .preview .fa-times {
@@ -886,7 +887,7 @@ body {
 }
 
 .products-preview .preview .fa-times:hover {
-  background-color: var(--primary);
+  background-color: var(--bg1);
   color: #000;
 }
 
@@ -971,7 +972,7 @@ body {
 
 .modal1-container .close-icon:hover,
 .modal2-container .close-icon:hover {
-  background-color: var(--primary);
+  background-color: var(--bg1);
   color: #000;
 }
 
@@ -983,7 +984,7 @@ body {
 
 .modal1-content img,
 .modal2-content img {
-  height: 20rem;
+  height: 10rem;
   margin-right: 2rem;
   margim-bottom: 2rem;
 }
