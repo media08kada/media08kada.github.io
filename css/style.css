@@ -1056,7 +1056,7 @@ footer {
   background-color: var(--primary);
   text-align: center;
   padding: 1rem 0 3rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 footer .socials {
@@ -1074,7 +1074,7 @@ footer .links a:hover {
 }
 
 footer .links {
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 footer .links a {
