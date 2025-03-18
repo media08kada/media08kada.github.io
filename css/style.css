@@ -803,7 +803,7 @@ body {
 
 .container .products-container .product h3 {
   padding: 0.5rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
@@ -826,6 +826,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.2rem;
 }
 
 .products .products-container .product:hover a {
