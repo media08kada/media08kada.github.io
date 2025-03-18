@@ -826,7 +826,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.2rem;
+  font-size: 0.1rem;
 }
 
 .products .products-container .product:hover a {
