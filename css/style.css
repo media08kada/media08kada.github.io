@@ -946,10 +946,11 @@ body {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 15% auto;
+  margin: 5% auto; /* 15% */
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
+  height: 80% auto; /* none */
   animation: animateModal1 0.5s;
 }
 
@@ -997,6 +998,26 @@ body {
   line-height: 1.8rem;
   margin-top: 1.2rem;
 }
+
+.modal1-content a,
+.modal2-content a {
+  display: flex;
+  gap: 1rem;
+  width: 12rem;
+  background-color: var(--primary);
+  color: #25D366;
+  margin-top: 1rem;
+  padding: 1rem 1.6rem;
+}
+
+.modal1-content .fa-whatsapp,
+.modal2-content .fa-whatsapp {
+  transform: scale(2);
+  margin-top: 0.3rem;
+  color: #25D366;
+  }
+
+
 /* Detil Modal Box Berita 1 end */
 
 /* Contact Section */
