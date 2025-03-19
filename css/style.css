@@ -950,7 +950,7 @@ body {
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
-  height: 80% auto; /* none */
+  height: 100% auto; /* none */
   animation: animateModal1 0.5s;
 }
 
