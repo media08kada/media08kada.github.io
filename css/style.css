@@ -950,7 +950,7 @@ body {
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
-  height: 100% auto; /* none */
+  height: 80% auto; /* none */
   animation: animateModal1 0.5s;
 }
 
@@ -1007,7 +1007,8 @@ body {
   background-color: var(--primary);
   color: #25D366;
   margin-top: 1rem;
-  padding: 1rem 1.6rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
 }
 
 .modal1-content .fa-whatsapp,
