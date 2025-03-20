@@ -943,6 +943,7 @@ body {
 
 .modal1-container,
 .modal2-container {
+  display: inline-block;
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
