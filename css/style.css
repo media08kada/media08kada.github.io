@@ -61,7 +61,7 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0 1rem;
 }
 
@@ -595,7 +595,7 @@ body {
 
 .about .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.3rem;
+  font-size: 1.2srem;
   font-weight: 100;
   line-height: 1.6;
 }
@@ -615,6 +615,7 @@ body {
   position: relative;
   isolation: isolate;
   border-radius: 0.5rem;
+  
   transition: all 500ms;
 }
 
