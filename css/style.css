@@ -615,7 +615,6 @@ body {
   position: relative;
   isolation: isolate;
   border-radius: 0.5rem;
-  
   transition: all 500ms;
 }
 
@@ -997,11 +996,20 @@ body {
   margin-top: 1.2rem;
 }
 
+.products-preview,
+.modal1-content,
+.modal2-content {
+  flex-wrap: wrap;
+  justify=content: center;
+  gap: 1rem;
+  margim: 2rem;
+}
+
 .products-preview a,
 .modal1-content a,
 .modal2-content a {
-  display: flex;
-  gap: 1rem;
+  /*display: flex;*/
+  /*gap: 1rem;*/ 
   width: 12rem;
   background-color: var(--primary);
   color: #25D366;
@@ -1016,7 +1024,17 @@ body {
   transform: scale(2);
   margin-top: 0.3rem;
   color: #25D366;
-  }
+  padding: 1rem;
+}
+
+.products-preview .fa-instagram,
+.modal1-content .fa-instagram,
+.modal2-content .fa-instagram {
+  transform: scale(2);
+  margin-top: 0.3rem;
+  color: #25D366;
+  padding: 1rem;
+}
 /* Detil Modal Box Berita 1 end */
 
 /* Contact Section */
