@@ -615,6 +615,7 @@ body {
   position: relative;
   isolation: isolate;
   border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
   transition: all 500ms;
 }
 
@@ -627,7 +628,6 @@ body {
   z-index: -1;
   width: 0;
   transition: all 1000ms;
-  border-radius: 0.5rem;
 }
 
 .about .row .content .modal1-icons:hover::before,
