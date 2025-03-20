@@ -257,7 +257,7 @@ body {
 }
 
 .slider .content p {
-  margin-bottom: 0.8rem;
+  margin-bottom: 2rem; /*0.8rem*/
   font-size: 1.2rem;
   line-height: 1.6;
 }
