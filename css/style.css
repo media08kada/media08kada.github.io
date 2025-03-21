@@ -1003,7 +1003,7 @@ body {
   justify-content: left;
   gap: 20px;
   margim: 20px;
- }
+}
 
 .products-preview a,
 .modal1-content a,
@@ -1015,7 +1015,6 @@ body {
   padding: 0.8rem 1.6rem;
   border-radius: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  justify-items: center;
 }
 
 .products-preview .fa-whatsapp,
