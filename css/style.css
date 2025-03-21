@@ -1042,7 +1042,7 @@ body {
   transform: scale(2);
   margin-top: 0.3rem;
   color: #25D366;
-  padding: 0.8rem 1.2rem;
+  padding: 1rem;
 }
 
 .products-preview .fa-x-twitter,
@@ -1051,7 +1051,7 @@ body {
   transform: scale(2);
   margin-top: 0.3rem;
   color: #25D366;
-  padding: 0.8rem 1.4rem;
+  padding: 1rem 1.4rem;
 }
 /* Detil Modal Box Berita 1 end */
 
