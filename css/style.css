@@ -1007,8 +1007,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-   gap: 5px;
-   }
+   gap: 5px;   
+}
 
 .products-preview a,
 .modal1-content a,
@@ -1253,6 +1253,12 @@ footer .credit a {
   .modal2-content {
     flex-wrap: wrap;
   }
+
+  .products-preview .sosmed,
+.modal1-content .sosmed,
+.modal2-content .sosmed {
+  flex-wrap: wrap;
+}
 
    /* Mobile Phone */
   @media (max-width: 450px) {
