@@ -1000,9 +1000,10 @@ body {
 .modal1-content,
 .modal2-content {
   flex-wrap: wrap;
-  justify-content: left;
   gap: 20px;
   margim: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .products-preview a,
@@ -1015,6 +1016,7 @@ body {
   padding: 0.8rem 1.6rem;
   border-radius: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  
 }
 
 .products-preview .fa-whatsapp,
