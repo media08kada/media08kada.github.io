@@ -621,7 +621,7 @@ body {
 .about .row .content .modal1-icons:before,
 .about .row .content .modal2-icons:before {
   content: '';
-  background-color: var(--primary);
+  background-color: var(--bg1);
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -1042,7 +1042,7 @@ body {
   transform: scale(2);
   margin-top: 0.3rem;
   color: #25D366;
-  padding: 1rem;
+  padding: 1rem 1.2rem;
 }
 
 .products-preview .fa-x-twitter,
