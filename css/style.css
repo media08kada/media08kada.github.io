@@ -626,7 +626,7 @@ body {
   inset: 0;
   z-index: -1;
   width: 0;
-  transition: all 1000ms;
+  transition: all 500ms;
 }
 
 .about .row .content .modal1-icons:hover::before,
@@ -1008,6 +1008,7 @@ body {
   align-items: center;
   justify-content: center;
    gap: 5px;
+   margin-top: 100px auto;
   }
 
 .products-preview a,
@@ -1017,7 +1018,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   color: #25D366;
   margin-top: 1rem;
-  padding: 0.5rem 1.6rem;
+  padding: 0.2rem 1.6rem;
   border-radius: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
@@ -1057,6 +1058,7 @@ body {
   color: #25D366;
   padding: 1rem 1.4rem;
 }
+
 /* Detil Modal Box Berita 1 end */
 
 /* Contact Section */
