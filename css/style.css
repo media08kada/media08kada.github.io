@@ -726,7 +726,7 @@ body {
   max-width: 30rem;
   margin: auto;
   font-weight: 100;
-  line-height: 1.6;
+    line-height: 1.6;
 }
 
 .menu .row {
@@ -769,8 +769,8 @@ body {
 .container .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem; /* 1.5rem */
-  margin-top: 2rem; /* 4rem */
+  gap: 2rem; 
+  margin-top: 2rem; 
   align-items: center;
 }
 
@@ -829,10 +829,6 @@ body {
   color: var(--bg1);
 }
 
-/*.products .products-container .product:hover {
-  background: var(--bg1)
-}*/
-
 /* Preview Box */
 .products-preview {
   position: fixed;
@@ -844,7 +840,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 9999; /*display tetap */
+  z-index: 9999; 
 }
 
 .products-preview .preview {
@@ -942,13 +938,14 @@ body {
 
 .modal1-container,
 .modal2-container {
-  position: relative; /*relative*/
+  position: relative; 
   background-color: #fefefe;
   color: var(--bg);
-  margin: 5% auto; /* 15% */
+  margin: 5% auto; 
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
+  height: 90%; /*Revisi*/
   animation: animateModal1 0.5s;
 }
 
@@ -991,6 +988,11 @@ body {
   margim-bottom: 2rem;
 }
 
+.modal1-content h3,
+.modal2-content h3 {
+  font-size: 1.8rem;
+}
+
 .modal1-content p,
 .modal2-content p {
   font-size: 1.2rem;
@@ -999,25 +1001,6 @@ body {
 }
 
 /* Share Sosial Media */
-/*.sosmed {
-  background-color: var(--primary);
-  flex-warp: wrap;
-  text-align: center;
-  padding: 1rem 0 3rem;
-  margin-top: 3rem;
-}*/
-
-.products-preview .sosmed h3,
-.modal1-content .sosmed h3,
-.modal2-content .sosmed h3 {
-  display: flex;
-  flex-warp: wrap;
-  text-align: center;
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 5rem;
-}
-
 .products-preview .sosmed,
 .modal1-content .sosmed,
 .modal2-content .sosmed {
@@ -1028,6 +1011,16 @@ body {
    gap: 5px;
  }
 
+ .products-preview .sosmed h3,
+.modal1-content .sosmed h3,
+.modal2-content .sosmed h3 {
+  display: flex;
+  flex-warp: wrap;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
 .products-preview a,
 .modal1-content a,
 .modal2-content a {
@@ -1035,7 +1028,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   color: #25D366;
   margin-top: 1rem;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1rem;
   border-radius: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
@@ -1103,6 +1096,21 @@ body {
 .products-preview .fa-x-twitter:hover,
 .modal1-content .fa-x-twitter:hover,
 .modal2-content .fa-x-twitter:hover {
+  color: #fff;
+}
+
+.products-preview .fa-tiktok,
+.modal1-content .fa-tiktok,
+.modal2-content .fa-tiktok {
+  transform: scale(2);
+  margin-top: 0.3rem;
+  color: #25D366;
+  padding: 1rem 2.3rem;
+}
+
+.products-preview .fa-tiktok:hover,
+.modal1-content .fa-tiktok:hover,
+.modal2-content .fa-tiktok:hover {
   color: #fff;
 }
 
