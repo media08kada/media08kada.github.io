@@ -1013,14 +1013,6 @@ body {
   margin-top: -20px;
  }
 
- @media only screen and (max-width: 768px) {
-.products-preview .sosmed,
-.modal1-content .sosmed,
-.modal2-content .sosmed {
-  width: 100%;
-  }
- }
- 
 .products-preview .sosmed h3,
 .modal1-content .sosmed h3,
 .modal2-content .sosmed h3 {
@@ -1330,6 +1322,12 @@ footer .credit a {
 .moal1-content .sosmed,
 .modal2-content .sosmed {
   flex-wrap: wrap;
+}
+
+.products-preview .sosmed,
+.moal1-content .sosmed,
+.modal2-content .sosmed {
+  width: 100%;
 }
 
    /* Mobile Phone */
