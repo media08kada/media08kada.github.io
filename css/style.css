@@ -945,7 +945,7 @@ body {
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
-  height: 90%; /*Revisi*/
+  height: 100%; /*Revisi*/
   animation: animateModal1 0.5s;
 }
 
@@ -1004,14 +1004,24 @@ body {
 .products-preview .sosmed,
 .modal1-content .sosmed,
 .modal2-content .sosmed {
-  flex-wrap: wrap;
   display: flex;
+  flex-decoration: column;
   align-items: center;
   justify-content: center;
-   gap: 5px;
+  padding: 0.8rem 1rem;
+  flex-wrap: wrap;
+  margin-top: -20px;
  }
 
- .products-preview .sosmed h3,
+ @media only screen and (max-width: 768px) {
+.products-preview .sosmed,
+.modal1-content .sosmed,
+.modal2-content .sosmed {
+  width: 100%;
+  }
+ }
+ 
+.products-preview .sosmed h3,
 .modal1-content .sosmed h3,
 .modal2-content .sosmed h3 {
   display: flex;
@@ -1030,7 +1040,7 @@ body {
   margin-top: 1rem;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: center;
 }
 
 .products-preview a:hover,
@@ -1045,7 +1055,8 @@ body {
   transform: scale(2);
   margin-top: 0.3rem;
   color: #25D366;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
+  justify-content: center;
 }
 
 .products-preview .fa-whatsapp:hover,
@@ -1060,7 +1071,8 @@ body {
   transform: scale(2);
   margin-top: 0.3rem;
   color: #25D366;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
+  justify-content: center;
 }
 
 .products-preview .fa-instagram:hover,
@@ -1076,6 +1088,7 @@ body {
   margin-top: 0.3rem;
   color: #25D366;
   padding: 1rem 1.2rem;
+  justify-content: center;
 }
 
 .products-preview .fa-facebook:hover,
@@ -1091,6 +1104,7 @@ body {
   margin-top: 0.3rem;
   color: #25D366;
   padding: 1rem 1.4rem;
+  justify-content: center;
 }
 
 .products-preview .fa-x-twitter:hover,
@@ -1106,6 +1120,7 @@ body {
   margin-top: 0.3rem;
   color: #25D366;
   padding: 1rem 2.3rem;
+  justify-content: center;
 }
 
 .products-preview .fa-tiktok:hover,
@@ -1268,7 +1283,7 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height:40rem; /*revisian*/
+    height: 40rem; /*revisian*/
     object-fit: cover;
     object-position: center;
   }
