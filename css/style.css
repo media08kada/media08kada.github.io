@@ -298,7 +298,6 @@ body {
   color: #000;
 }
 
-
 /* Mobile-Breakpoint */
 @media screen and (max-width: 678px) {
   .slider .list .item .detail .name {
@@ -545,6 +544,44 @@ body {
 }
 /* slider section end */
 
+/* Services Star */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.service {
+  background-color: #333;
+  padding: 2px;
+  text-align: center;
+ border: 1px solid var(--bg);
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0.3);
+}
+
+.service .icon {
+  font-size: 2em;
+}
+
+.service a {
+  display: block;
+  font-size: 1.2em;
+  color: var(--bg1);
+}
+
+.service a:hover {
+  color: #fff;
+}
+
+.service p {
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 0.8em;
+  color: #fff;
+}
+/* Services End */
+
 /* Berita Utama Star */
 .about,
 .menu,
@@ -641,10 +678,6 @@ body {
 /* Box Contonue End... */
 
 /* Slider Berita Utama end*/
-.about .row {
-  display: flex;
-}
-
 .images {
   display: flex;
   width: 100%;
@@ -1007,7 +1040,7 @@ body {
 }
 
 .media {
-  order: -1;
+  order: 1;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
