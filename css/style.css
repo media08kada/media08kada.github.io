@@ -726,7 +726,7 @@ body {
   max-width: 30rem;
   margin: auto;
   font-weight: 100;
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 .menu .row {
@@ -1001,39 +1001,39 @@ body {
 
 /* Share Sosial Media */
 /* Container */
-.container {
+.container .media {
   display: grid;
   gap: 10px;
 }
 
-.menu {
+.media {
   order: -1;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
-.menu .brand {
+.media .brand {
   display: flex;
   font-size: 1.3em;
   color: #333;
 }
 
-.menu .brand h1 {
+.media .brand h1 {
   display: grid;
   text-align: center;
   font-size: 1rem;
   margin-bottom: 5rem;
 }
 
-.menu ul {
+.media ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 5px;
 }
 
-.menu a {
+.media a {
   display: block;
   background-color:rgb(39, 38, 38);
   color: #25D366;
@@ -1045,149 +1045,21 @@ body {
   border-radius: 2%;
 }
 
-.menu a:hover {
+.media a:hover {
   color: #fff;
 }
 
 /* Responsive Breakpoin */
 @media (max-width: 1024px) {
-  .menu {
+  .media {
     order: inherit;
     grid-template-columns: 1fr;
   }
 
-  .menu .brand {
+  .media .brand {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-/*.products-preview .sosmed,
-.modal1-content .sosmed,
-.modal2-content .sosmed {
-  display: flex;
-  flex-decoration: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem 1rem;
-  flex-wrap: wrap;
-  margin-top: -20px;
- }
-
-.products-preview .sosmed h3,
-.modal1-content .sosmed h3,
-.modal2-content .sosmed h3 {
-  display: flex;
-  flex-warp: wrap;
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 5rem;
-}
-
-.products-preview a,
-.modal1-content a,
-.modal2-content a {
-  width: 12rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #25D366;
-  margin-top: 1rem;
-  padding: 0.8rem 1rem;
-  border-radius: 0.5rem;
-  justify-content: center;
-}
-
-.products-preview a:hover,
-.modal1-content a:hover,
-.modal2-content a:hover {
-  color: #fff;
-}
-
-.products-preview .fa-whatsapp,
-.modal1-content .fa-whatsapp,
-.modal2-content .fa-whatsapp {
-  transform: scale(2);
-  margin-top: 0.3rem;
-  color: #25D366;
-  padding: 0.8rem 1rem;
-  justify-content: center;
-}
-
-.products-preview .fa-whatsapp:hover,
-.modal1-content .fa-whatsapp:hover,
-.modal2-content .fa-whatsapp:hover {
-  color: #fff;
-}
-
-.products-preview .fa-instagram,
-.modal1-content .fa-instagram,
-.modal2-content .fa-instagram {
-  transform: scale(2);
-  margin-top: 0.3rem;
-  color: #25D366;
-  padding: 0.8rem 1rem;
-  justify-content: center;
-}
-
-.products-preview .fa-instagram:hover,
-.modal1-content .fa-instagram:hover,
-.modal2-content .fa-instagram:hover {
-  color: #fff;
-}
-
-.products-preview .fa-facebook,
-.modal1-content .fa-facebook,
-.modal2-content .fa-facebook {
-  transform: scale(2);
-  margin-top: 0.3rem;
-  color: #25D366;
-  padding: 1rem 1.2rem;
-  justify-content: center;
-}
-
-.products-preview .fa-facebook:hover,
-.modal1-content .fa-facebook:hover,
-.modal2-content .fa-facebook:hover {
-  color: #fff;
-}
-
-.products-preview .fa-x-twitter,
-.modal1-content .fa-x-twitter,
-.modal2-content .fa-x-twitter {
-  transform: scale(2);
-  margin-top: 0.3rem;
-  color: #25D366;
-  padding: 1rem 1.4rem;
-  justify-content: center;
-}
-
-.products-preview .fa-x-twitter:hover,
-.modal1-content .fa-x-twitter:hover,
-.modal2-content .fa-x-twitter:hover {
-  color: #fff;
-}
-
-.products-preview .fa-tiktok,
-.modal1-content .fa-tiktok,
-.modal2-content .fa-tiktok {
-  transform: scale(2);
-  margin-top: 0.3rem;
-  color: #25D366;
-  padding: 1rem 2.3rem;
-  justify-content: center;
-}
-
-.products-preview .fa-tiktok:hover,
-.modal1-content .fa-tiktok:hover,
-.modal2-content .fa-tiktok:hover {
-  color: #fff;
-}*/
-
 /* Detil Modal Box Berita 1 end */
 
 /* Contact Section */
