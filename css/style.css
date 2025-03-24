@@ -949,7 +949,6 @@ body {
   animation: animateModal1 0.5s;
 }
 
-
 /* Modal Animation */
 @keyframes animateModal1,
 @keyframes animateModal2 {
@@ -1001,7 +1000,75 @@ body {
 }
 
 /* Share Sosial Media */
-.products-preview .sosmed,
+/* Container */
+.container {
+  display: grid;
+  gap: 10px;
+}
+
+.menu {
+  order: -1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.menu .brand {
+  display: flex;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.menu .brand h1 {
+  display: grid;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+.menu ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px;
+}
+
+.menu a {
+  display: block;
+  background-color:rgb(39, 38, 38);
+  color: #25D366;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-radius: 2%;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+/* Responsive Breakpoin */
+@media (max-width: 1024px) {
+  .menu {
+    order: inherit;
+    grid-template-columns: 1fr;
+  }
+
+  .menu .brand {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+/*.products-preview .sosmed,
 .modal1-content .sosmed,
 .modal2-content .sosmed {
   display: flex;
@@ -1119,7 +1186,7 @@ body {
 .modal1-content .fa-tiktok:hover,
 .modal2-content .fa-tiktok:hover {
   color: #fff;
-}
+}*/
 
 /* Detil Modal Box Berita 1 end */
 
@@ -1318,7 +1385,7 @@ footer .credit a {
     flex-wrap: wrap;
   }
   
-.products-preview .sosmed,
+/*.products-preview .sosmed,
 .moal1-content .sosmed,
 .modal2-content .sosmed {
   flex-wrap: wrap;
@@ -1328,7 +1395,7 @@ footer .credit a {
 .moal1-content .sosmed,
 .modal2-content .sosmed {
   width: 100%;
-}
+}*/
 
    /* Mobile Phone */
   @media (max-width: 450px) {
