@@ -1,9 +1,9 @@
 :root {
   --primary: #b6895b;
   --bg: #010101;
-  --bg1: #14ff72cb
+  --bg1: #14ff72cb /* #14ff72cb */
 }
-
+#14ff72cb
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +39,7 @@ body {
   align-items: center;
   padding: 1.2rem 7%;
   background-color: rgba(1, 1, 1, 0.8);
-  border-bottom: 1px solid #513c28;
+  border-bottom: 1px solid var(--bg1);
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +55,7 @@ body {
 }
 
 .navbar .navbar-logo span {
-  color: var(--primary);
+  color: var(--bg1);
 }
 
 .navbar .navbar-nav a {
@@ -66,14 +66,14 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--primary);
+  color: var(--bg1);
 }
 
 .navbar .navbar-nav a::after {
   content: '';
   display: block;
   padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--primary);
+  border-bottom: 0.1rem solid var(--bg1);
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -88,7 +88,7 @@ body {
 }
 
 .navbar .navbar-extra a:hover {
-  color: var(--primary);
+  color: var(--bg1);
 }
 
 #hamburger-menu {
@@ -180,9 +180,9 @@ body {
   cursor: pointer;
 }
 
-.archive .remove-item:hover {
+/*.archive .remove-item:hover {
   color: var(--primary);
-}
+}*/
 /* Hamburger end */
 
 /* slider section Star */
@@ -239,7 +239,7 @@ body {
 }
 
 .slider .type span {
-  color: var(--primary);
+  color: var(--bg1);
 }
 
 .slider .action span {
@@ -385,7 +385,7 @@ body {
 .loading-bar {
   width: 0%;
   height: 5px;
-  background-color: var(--primary);
+  background-color: var(--bg1);
   position: absolute;
   z-index: 999;
   top: 0;
@@ -541,8 +541,7 @@ body {
   .slider .list .item .content .title {
     font-size: 50px;
   }
-}
-/* slider section end */
+}/* slider section end */
 
 /* Services Star */
 .services {
@@ -555,7 +554,7 @@ body {
   background-color: #333;
   padding: 2px;
   text-align: center;
- border: 1px solid var(--bg);
+  border: 1px solid var(--bg);
   border-radius: 3px;
   box-shadow: 0 0 2px rgba(0, 0, 0.3);
 }
@@ -568,6 +567,9 @@ body {
   display: block;
   font-size: 1.2em;
   color: var(--bg1);
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5px;
 }
 
 .service a:hover {
@@ -587,7 +589,7 @@ body {
 .menu,
 .products,
 .contact {
-  padding: 4rem 7% 1.4rem;
+ padding: 4rem 7% 1.4rem;
 }
 
 .about h2,
@@ -604,7 +606,7 @@ body {
 .menu h2 span,
 .products h2 span,
 .contact h2 span {
-  color: var(--primary);
+  color: var(--bg1);
 }
 
 .about .row {
@@ -1150,7 +1152,7 @@ body {
   padding: 1rem 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: var(--bg1);
   cursor: pointer;
 }
 
@@ -1191,7 +1193,7 @@ footer .credit {
 
 footer .credit a {
   color: var(--bg);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* Media Queries */
@@ -1295,18 +1297,6 @@ footer .credit a {
     flex-wrap: wrap;
   }
   
-/*.products-preview .sosmed,
-.moal1-content .sosmed,
-.modal2-content .sosmed {
-  flex-wrap: wrap;
-}
-
-.products-preview .sosmed,
-.moal1-content .sosmed,
-.modal2-content .sosmed {
-  width: 100%;
-}*/
-
    /* Mobile Phone */
   @media (max-width: 450px) {
     .html {
