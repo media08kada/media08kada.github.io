@@ -1084,7 +1084,11 @@ body {
 }
 
 .media a:hover {
-  color: #fff;
+  color: #fff;;
+}
+
+.media .instagram a:hover {
+  color: #C13584;
 }
 
 /* Responsive Breakpoin */
