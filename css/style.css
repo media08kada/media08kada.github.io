@@ -972,11 +972,6 @@ body {
   font-size: 2rem;
 }
 
-.products-preview .preview h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
 .products-preview .preview p {
   line-height: 1.3;
   padding: 1rem 0;
@@ -984,23 +979,11 @@ body {
   color: #444;
 }
 
-.products-preview .preview .buttons {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.products-preview .preview .buttons a {
-  flex: 1 1 16rem;
-  padding: 1rem;
+.products-preview .preview h4 {
   font-size: 1rem;
-  color: #444;
-  border: 0.1rem solid #444;
+  margin-bottom: 1rem;
 }
-/* Preview Box end */
 
-/* Modal Box Berita Utama star */
 /* Item Detail */
 .modal1,
 .modal2 {
@@ -1077,62 +1060,6 @@ body {
   line-height: 1.8rem;
   margin-top: 1.2rem;
 }
-
-/* Share Sosial Media */
-.media {
-  order: 1;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-}
-
-.media .brand {
-  display: flex;
-  font-size: 1.3em;
-  color: #333;
-}
-
-.media .brand h1 {
-  display: grid;
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 5rem;
-}
-
-.media ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 5px;
-}
-
-.media a {
-  display: block;
-  background-color:rgb(39, 38, 38);
-  color: #25D366;
-  text-decoration: none;
-  text-align: center;
-  padding: 5px;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  border-radius: 2%;
-}
-
-.media a:hover {
-  color: #fff;;
-}
-/* Responsive Breakpoin */
-@media (max-width: 1024px) {
-  .media {
-    order: inherit;
-    grid-template-columns: 1fr;
-  }
-
-  .media .brand {
-    display: none;
-  }
-}
-/* Detil Modal Box Berita 1 end */
 
 /* Contact Section */
 .contact .row {
