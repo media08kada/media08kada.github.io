@@ -1,9 +1,9 @@
 :root {
   --primary: #b6895b;
   --bg: #010101;
-  --bg1: #14ff72cb /* #14ff72cb */
+  --bg1: #14ff72cb;
 }
-#14ff72cb
+ 
 * {
   margin: 0;
   padding: 0;
@@ -179,13 +179,9 @@ body {
   right: 1rem;
   cursor: pointer;
 }
-
-/*.archive .remove-item:hover {
-  color: var(--primary);
-}*/
 /* Hamburger end */
 
-/* slider section Star */
+/* slider Hero Section Star */
 .slider {
   height: 100vh;
   margin-top: -50px;
@@ -265,18 +261,17 @@ body {
 /* Slider Action */
 .slider .action {
   display: inline-block;
-  margim-top: 1rem;
   color: white;
   box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
   padding: 0.8rem 1.5rem;
-  font-size: 1.2rem;
-  text-decoration: none;
   background-color: #fff; 
   width: fit-content;
-  position: relative;
-  isolation: isolate;
   border-radius: 0.5rem;
-  transition: all 500ms;
+}
+
+.slider .action a {
+  font-size: 1.3rem;
+  text-decoration: none;
 }
 
 .slider .content .action::before {
@@ -286,8 +281,8 @@ body {
   inset: 0;
   z-index: -1;
   width: 0;
-  transition: all 500ms;
   border-radius: 0.5rem;
+  transition: all 500ms;
 }
 
 .slider .content .action:hover::before {
@@ -541,7 +536,7 @@ body {
   .slider .list .item .content .title {
     font-size: 50px;
   }
-}/* slider section end */
+}/* Slider Hero Section end */
 
 /* Services Star */
 .services {
@@ -569,6 +564,7 @@ body {
   color: var(--bg1);
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
   padding: 0.5px;
 }
 
@@ -584,7 +580,7 @@ body {
 }
 /* Services End */
 
-/* Berita Utama Star */
+/* About Berita Utama Star */
 .about,
 .menu,
 .products,
@@ -654,7 +650,6 @@ body {
   position: relative;
   isolation: isolate;
   border-radius: 0.5rem;
-  transition: all 500ms;
 }
 
 .about .row .content .modal1-icons:before,
@@ -784,7 +779,7 @@ body {
   }
 }
 /* Slider Berita Utama */
-/* Berita utama end */
+/* About Berita utama end */
 
 /* Stuktur Organisasi */
 .menu h2,
@@ -1007,7 +1002,7 @@ body {
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
-  height: 80%; /*Revisi*/
+  height: 80%; 
   animation: animateModal1 0.5s;
 }
 
