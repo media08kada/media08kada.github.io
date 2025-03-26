@@ -2,6 +2,7 @@
   --primary: #b6895b;
   --bg: #010101;
   --bg1: #14ff72cb;
+  --secondary: #fff;
 }
 
 * {
@@ -560,7 +561,7 @@ body {
 
 .service a {
   display: block;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--bg1);
   text-decoration: none;
   text-align: center;
