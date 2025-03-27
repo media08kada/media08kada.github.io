@@ -160,6 +160,9 @@ const itemDetailButton1 = document.querySelectorAll('.item-detail-button1');
 const itemDetailModal2 = document.querySelector('#item-detail-modal2');
 const itemDetailButton2 = document.querySelectorAll('.item-detail-button2');
 
+const itemDetailModal3 = document.querySelector('#item-detail-modal3');
+const itemDetailButton3 = document.querySelectorAll('.item-detail-button3');
+
 itemDetailButton1.forEach((btn) => {
   btn.onclick = (e) => {
     itemDetailModal1.style.display = 'flex';
@@ -170,6 +173,13 @@ itemDetailButton1.forEach((btn) => {
 itemDetailButton2.forEach((btn) => {
   btn.onclick = (e) => {
     itemDetailModal2.style.display = 'flex';
+    e.preventDefault();
+  };
+});
+
+itemDetailButton3.forEach((btn) => {
+  btn.onclick = (e) => {
+    itemDetailModal3.style.display = 'flex';
     e.preventDefault();
   };
 });
@@ -185,6 +195,11 @@ document.querySelector('.modal2 .close-icon').onclick = (e) => {
   e.preventDefault();
 };
 
+document.querySelector('.modal3 .close-icon').onclick = (e) => {
+  itemDetailModal3.style.display = 'none';
+  e.preventDefault();
+};
+
 // klik di luar modal 1
 window.onclick = (e) => {
   if (e.target === itemDetailModal1) {
@@ -194,5 +209,11 @@ window.onclick = (e) => {
 window.onclick = (e) => {
   if (e.target === itemDetailModal2) {
     itemDetailModal2.style.display = 'none';
+  }
+};
+
+window.onclick = (e) => {
+  if (e.target === itemDetailModal3) {
+    itemDetailModal3.style.display = 'none';
   }
 };

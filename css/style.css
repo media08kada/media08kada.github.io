@@ -638,7 +638,8 @@ body {
 
 /* Box Continue Star... */
 .about .row .content .modal1-icons,
-.about .row .content .modal2-icons {
+.about .row .content .modal2-icons,
+.about .row .content .modal3-icons {
   display: inline-block;
   margim-top: 1rem;
   color: white;
@@ -654,7 +655,8 @@ body {
 }
 
 .about .row .content .modal1-icons:before,
-.about .row .content .modal2-icons:before {
+.about .row .content .modal2-icons:before,
+.about .row .content .modal3-icons:before {
   content: '';
   background-color: var(--bg1);
   position: absolute;
@@ -666,12 +668,14 @@ body {
 }
 
 .about .row .content .modal1-icons:hover::before,
-.about .row .content .modal2-icons:hover::before {
+.about .row .content .modal2-icons:hover::before,
+.about .row .content .modal3-icons:hover::before {
   width: 100%;
 }
 
 .about .row .content .modal1-icons:hover,
-.about .row .content .modal2-icons:hover {
+.about .row .content .modal2-icons:hover,
+.about .row .content .modal3-icons:hover {
  color: #000;
 }
 /* Box Contonue End */
@@ -711,7 +715,6 @@ body {
   font-size: 0.8em;
   color: #fff;
 }
-
 /* Box Media Sosial End */
 
 /* Slider Berita Utama end*/
@@ -745,9 +748,9 @@ body {
   margin-left: -200%;
 }
 
-#slide-4:target ~ .images {
+/*#slide-4:target ~ .images {
   margin-left: -300%;
-}
+}*/
 
 .navigation a {
   display: inline-block;
@@ -983,7 +986,8 @@ body {
 
 /* Item Detail */
 .modal1,
-.modal2 {
+.modal2,
+.modal3 {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -996,7 +1000,8 @@ body {
 }
 
 .modal1-container,
-.modal2-container {
+.modal2-container,
+.modal3-container {
   position: relative; 
   background-color: #fefefe;
   color: var(--bg);
@@ -1004,7 +1009,7 @@ body {
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
-  height: 95%; 
+  height: 90%; 
   animation: animateModal1 0.5s;
 }
 
@@ -1022,44 +1027,51 @@ body {
   }
 
 .modal1-container .close-icon,
-.modal2-container .close-icon {
+.modal2-container .close-icon,
+.modal3-container .close-icon {
   position: absolute;
   right: 1rem;
 }
 
 .modal1-container .close-icon:hover,
-.modal2-container .close-icon:hover {
+.modal2-container .close-icon:hover,
+.modal3-container .close-icon:hover {
   background-color: var(--bg1);
   color: #000;
 }
 
 .modal1-content,
-.modal2-content {
+.modal2-content,
+.modal3-content {
   display: flex;
   flex-wrap: nowrap;
 }
 
 .modal1-content img,
-.modal2-content img {
+.modal2-content img,
+.modal3-content img {
   height: 10rem;
   margin-right: 2rem;
   margim-bottom: 2rem;
 }
 
 .modal1-content h3,
-.modal2-content h3 {
+.modal2-content h3,
+.modal3-content h3 {
   font-size: 1.8rem;
 }
 
 .modal1-content p,
-.modal2-content p {
+.modal2-content p,
+.modal3-content p {
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin-top: 1.2rem;
 }
 
 .modal1-content h4,
-.modal2-content h4 {
+.modal2-content h4,
+.modal3-content h4 {
   color: #444;
   padding: 0.5rem 0;
   font-size: 1rem;
@@ -1221,6 +1233,8 @@ footer .credit a {
     height: 40rem; /*revisian*/
     object-fit: cover;
     object-position: center;
+    padding: 20px;
+    gap: 10px;
   }
 
   .about .row .content {
@@ -1257,7 +1271,8 @@ footer .credit a {
   }
 
   .modal1-content,
-  .modal2-content {
+  .modal2-content,
+  .modal3-content {
     flex-wrap: wrap;
   }
   
