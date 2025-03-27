@@ -46,7 +46,6 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
-  cursor: pointer;
 }
 
 .navbar .navbar-logo {
@@ -56,16 +55,16 @@ body {
   font-style: italic;
 }
 
-/*.navbar .navbar-logo span {
+.navbar .navbar-logo span {
   color: var(--bg1);
-}*/
+}
 
-/*.navbar .navbar-nav a {
+.navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 1rem;
-} */
+}
 
 .navbar .navbar-nav a:hover {
   color: var(--bg1);
@@ -545,6 +544,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
+  border-radius: 2px;
 }
 
 .service {
@@ -817,7 +817,7 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 80%;
+  width: 75%;
 }
 
 .menu .row .menu-card .menu-card-title {
