@@ -1051,7 +1051,7 @@ body {
 .modal1-content img,
 .modal2-content img,
 .modal3-content img {
-  height: 35rem;
+  height: 25rem;
   margin-right: 2rem;
   margim-bottom: 2rem;
 }
@@ -1065,8 +1065,8 @@ body {
 .modal1-content p,
 .modal2-content p,
 .modal3-content p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-top: 1.2rem;
 }
 
