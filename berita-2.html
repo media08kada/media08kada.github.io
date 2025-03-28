@@ -24,8 +24,11 @@
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Share Media Sosial -->
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=67e723bb54a3d000192a4696&product=inline-share-buttons&source=platform" async="async"></script>
   </head>
-  <>
+
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -67,65 +70,50 @@
         <p align="justify"></p>
         <p align="justify">Media Kite Kalo Bukan Kite Nyang Gedein, Siape Lagi ? (LMK-08)</p>
         <br>
-         <h4 style="color: #fff;">Share to......</h4>
-         
-          <!-- Media Sosial -->
-           <section class="services1">
-             <div class="service1">
-             <a href="https://wa.me/?text=https://media.rw08kelapadua.web.id/" data-action="share/whatsapp/share" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-             </div>
-              <div class="service1">
-              <a href="https://www.instagram.com/" target="_blank" class="share-instagram"><i class="fa-brands fa-instagram"></i> instagram</a>
-              </div>
-              <div class="service1">
-              <a href="https://www.facebook.com/" target="_blank" class="share-facebook"><i class="fa-brands fa-facebook"></i> facebook</a>
-              </div>
-              <div class="service1">
-              <a href="https://tiktok.com/" target="_blank" class="share-tiktok"><i class="fa-brands fa-tiktok"></i></i> tiktok</a>
-                  </div>            
-                </section>     
-         <!-- Modal Box Berita 1 end --> 
+        </section> 
+
+          <!-- Histats.com  (div with counter) -->
+          <footer>
+            <div id="histats_counter"></div>
+            <!-- Histats.com  START  (aync)-->
+            <script type="text/javascript">var _Hasync= _Hasync|| [];
+             _Hasync.push(['Histats.start', '1,4937767,4,1030,150,25,00011111']);
+             _Hasync.push(['Histats.fasi', '1']);
+             _Hasync.push(['Histats.track_hits', '']);
+             (function() {
+             var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+             hs.src = ('//s10.histats.com/js15_as.js');
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+            })();</script>
+            <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4937767&101" alt="free statistics" border="0"></a></noscript>
+            <!-- Histats.com  END  -->
              
-         <!-- Histats.com  (div with counter) -->
-         <footer>
-         <div id="histats_counter"></div>
-         <!-- Histats.com  START  (aync)-->
-         <script type="text/javascript">var _Hasync= _Hasync|| [];
-          _Hasync.push(['Histats.start', '1,4937767,4,1030,150,25,00011111']);
-          _Hasync.push(['Histats.fasi', '1']);
-          _Hasync.push(['Histats.track_hits', '']);
-          (function() {
-          var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-          hs.src = ('//s10.histats.com/js15_as.js');
-         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-         })();</script>
-         <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4937767&101" alt="free statistics" border="0"></a></noscript>
-         <!-- Histats.com  END  -->
+             <!-- Share Media Sosial -->
+             <div class="sharethis-inline-share-buttons"></div> 
+   
+            <div class="credit">
+               <p style="font-size: 10px;">Created by <a href="https://lmkkelapadua.github.io">LMK RW 08-KelapaDua</a> | &copy; 2025.</p>
+             </div>
+             </footer>
+          
+          <!-- Feather Icons -->
+          <script>
+            feather.replace();
+            </script>
 
-         <div class="credit">
-            <p style="font-size: 10px;">Created by <a href="https://lmkkelapadua.github.io">LMK RW 08-KelapaDua</a> | &copy; 2025.</p>
-          </div>
-        </footer>
-        <!-- Medsos end -->
-
-    <!-- Feather Icons -->
-    <script>
-      feather.replace();
-    </script>
-
-    <!-- My Javascript -->
-    <script src="js/script.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
-      const form = document.forms['media08kd-form']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+<!-- My Javascript -->
+<script src="js/script.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
+  const form = document.forms['media08kd-form']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+  })
+  </script>
     
     </script>
   </body>
