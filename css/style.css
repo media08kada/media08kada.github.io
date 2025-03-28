@@ -778,7 +778,7 @@ body {
   margin-top: -50px;
 }
 
-@media screen and (max-widih: 687px) {
+@media screen and (max-width: 687px) {
   .wrapper {
     width: 90%;
   }
@@ -1010,7 +1010,7 @@ body {
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
-  height: 90%; 
+  height: 80%; 
   animation: animateModal1 0.5s;
 }
 
@@ -1271,10 +1271,11 @@ footer .credit a {
     flex-wrap: wrap;
   }
 
-  .modal1-content,
-  .modal2-content,
-  .modal3-content {
+  .modal1-content p,
+  .modal2-content p,
+  .modal2-content p {
     flex-wrap: wrap;
+    weight: 80%;
   }
   
    /* Mobile Phone */
