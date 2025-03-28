@@ -749,9 +749,9 @@ body {
   margin-left: -200%;
 }
 
-/*#slide-4:target ~ .images {
+#slide-4:target ~ .images {
   margin-left: -300%;
-}*/
+}
 
 .navigation a {
   display: inline-block;
@@ -1078,6 +1078,25 @@ body {
   font-size: 1rem;
   line-height: 1.8rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .about .modal3-content {
+    width: 100%;
+  }
+  .about .content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about h2 {
+    font-size: 18px;
+  }
+  .about .content {
+    font-size: 14px;
+  }
+}
+
 
 /* Contact Section */
 .contact .row {
