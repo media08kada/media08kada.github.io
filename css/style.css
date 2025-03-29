@@ -267,7 +267,17 @@ body {
   padding: 0.8rem 1.5rem;
   background-color: #fff; 
   width: fit-content;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
+}
+
+.slider .action1 {
+  display: inline-block;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+  padding: 0.1rem 0.2rem;
+  background-color: #fff; 
+  width: fit-content;
+  border-radius: 4rem;
 }
 
 .slider .action a {
@@ -282,7 +292,7 @@ body {
   inset: 0;
   z-index: -1;
   width: 0;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   transition: all 500ms;
 }
 
@@ -410,6 +420,7 @@ body {
 .slider .list .item:nth-child(1) .content .title,
 .slider .list .item:nth-child(1) .content .type,
 .slider .list .item:nth-child(1) .content .description,
+.slider .list .item:nth-child(1) .content .action1,
 .slider .list .item:nth-child(1) .content .action {
   transform: translateY(50px);
   filter: blur(20px);
