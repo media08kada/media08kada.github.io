@@ -829,7 +829,7 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 80%;
+  width: 75%;
 }
 
 .menu .row .menu-card .menu-card-title {
@@ -1110,24 +1110,12 @@ body {
 }
 
 /* Video Youtube */
-.video-container {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.video {
-  width: 560px;
-  height: 315px;
-  border-radius: 5px;
-  box-shadow: 0 0 2px rgba(0,0, 0.3);
-  margin: 10px;
-  flex-direction: row;
+.video-container iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid #666;
 }
 
 .about h4 {
@@ -1141,54 +1129,6 @@ body {
 
 .about h2 {
   margin-bottom: 0;
-}
-
-.about h4 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 1px;
-  margin-bottom: 5px;
-  text-align: center;
-  font-weight: lighter;
-}
-
-@media only screen and (max-width: 768px) {
-  .video {
-    width: 62.5%;
-    height: 200px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .video {
-    width: 35%;
-    height: 150px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .video {
-    width: 800px;
-    height: 450px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .video {
-    width: 1000px;
-    height: 550px;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  .video-container {
-    flex-direction: row;
-  }
-  .video {
-    width: 45%;
-    height: 300px;
-    margin: 10px;
-  }
 }
 
 /* Contact Section */
@@ -1228,7 +1168,7 @@ body {
  }
 
  .contact .row form .input-group pesan {
-  padding: 2rem .5rem;
+  padding: 2rem 5rem;
   field-sizing: content;
   min-block-size: 3.5rlh;
   min-inline-size: 23ch;
@@ -1343,7 +1283,7 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height: 40rem; /*revisian*/
+    height: 35rem; /*revisian*/
     object-fit: cover;
     object-position: center;
     padding: 20px;
@@ -1387,10 +1327,10 @@ footer .credit a {
   .modal2-content p,
   .modal2-content p {
     flex-wrap: wrap;
-    weight: 80%;
+    width: 80%;
   }
 
- 
+
    /* Mobile Phone */
   @media (max-width: 450px) {
     .html {
