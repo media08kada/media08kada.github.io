@@ -624,7 +624,7 @@ body {
 }
 
 .about .row .about-img {
-  flex: 1 1 45rem;
+  flex: 1 1 35rem;
 }
 
 .about .row .about-img img {
@@ -743,7 +743,7 @@ body {
 
 .wrapper {
   width: 687px;
-  flex: 1 1 45rem;
+  flex: 1 1 35rem;
   overflow: hidden;
   position: relative;
   border-radius: 2%;
