@@ -33,70 +33,76 @@ body {
   color: #fff;
 }
 
-.boxs {
-  display: flex;
-  margin-top: 3rem;
-  margin-botton: 2rem;
+/* Baca Juga Start */
+.services {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  border-radius: 2px;
+  flex-direction: row;
+  gap: 10px;
+  align-items: left;
+  cursor: pointer;
 }
 
-.box {
+.service {
   display: flex;
-  flex-direction: row;
-  align-items: center;z
-  background-color: #fff;
+  background-color: #333;
   padding: 2px;
+  text-align: left;
   border: 1px solid var(--bg);
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 0 0 2px rgba(0, 0, 0.3);
 }
 
-.box img {
-  width: 100px;
-  height: 100px;
+.service img {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  broder-radius: 5px;
+  padding: 0.5rem;
+  margin-right: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0.3);
 }
 
-.box p {
+.service a {
+  display: block;
+  color: var(--bg1);
+  text-align: left;
+  padding: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.service a:hover {
+  color: #fff;
+}
+
+.service p {
+  display: flex;
   font-weight: 100;
   letter-spacing: 0.5px;
-  font-size: 0.8em;
-  color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-/* Box Continue Star... */
-.boxs .box .continue {
-  display: inline-block;
-  margim-top: 1rem;
-  color: white;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  background-color: #333;
-  width: fit-content;
-  position: relative;
-  isolation: isolate;
-  border-radius: 0.5rem;
+/* Responsive Breakpoint */
+@mediav (max-widht: 1024px) {
 }
 
-.boxs .box .continue:before {
-  content: '';
-  background-color: var(--bg1);
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  width: 0;
-  border-radius: 0.5rem;
-  transition: all 500ms;
+@media (max-widht: 768px) {
 }
 
-.boxs .box .continue:hover::before {
-  width: 100%;
+@media (max-widht: 500px) {
 }
 
-.boxs .box .continue:hover {
-  color: #000;
+/* Preview Animation */
+@keyframes animateService
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
-/* Box Contonue End */
