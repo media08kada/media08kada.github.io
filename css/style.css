@@ -1131,7 +1131,6 @@ body {
   border: none; 
 }
 
-
 /* Contact Section */
 .contact .row {
   display: flex;
@@ -1337,6 +1336,7 @@ footer .credit a {
     width: 80%;
   }
 
+  
   .video {
     width: 100%;
     padding: 10px;
