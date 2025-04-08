@@ -1230,6 +1230,12 @@ footer .credit a {
   font-weight: 500;
 }
 
+/* PopUp Subscribe */
+.powr-popup {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
