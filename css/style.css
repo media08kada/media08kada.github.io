@@ -797,15 +797,12 @@ body {
 }
 /* About Berita utama end */
 
-/* Stuktur Organisasi */
-.menu h2,
 .products h2,
 .contact h2 {
   margin-bottom: 1rem;
 }
 
 .video,
-.menu p,
 .products p,
 .contact p {
   text-align: center;
@@ -817,28 +814,6 @@ body {
 
 .video h2 {
   margin-bottom: 0;
-}
-
-
-.menu .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-  justify-content: center;
-}
-
-.menu .row .menu-card {
-  text-align: center;
-  padding-bottom: 4rem;
-}
-
-.menu .row .menu-card img {
-  border-radius: 50%;
-  width: 75%;
-}
-
-.menu .row .menu-card .menu-card-title {
-  margin: 1rem auto 0.5rem;
 }
 
 /* Kegiatan RW 08 Star */
