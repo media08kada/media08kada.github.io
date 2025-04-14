@@ -1,0 +1,60 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+  --bg1: #14ff72cb;
+  --secondary: #fff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  /* background-color: #eee; */
+  color: #fff;
+}
+
+/* Style Utama */
+.container {
+  background-color: #222;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 75%;
+  border: 1px solid var(--bg1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.menu .row .menu-card .menu-card-title img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+}
