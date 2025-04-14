@@ -280,11 +280,11 @@
       <div class="content" data-aos="fade-left" data-aos-duration="1000">
         <br>
         <div class="sharethis-inline-share-buttons"></div>
-        <h3>Silaturahmi Idul Fitri 1446 H</h3>
-        <h4>Tanggal, 2 Apri 2025</h4>
+        <h3>Survey Permasalahan Saluran Drainase</h3>
+        <h4>Tanggal, 14 Apri 2025</h4>
         <br>
-        <p align="justify"><b>media08kada</b> | Idul Fitri bagi umat muslim identik dengan kegiatan silaturahmi. Tradisi Silaturahmi dilakukan dengan saling mengunjungi antar Keluarga, Kerabat dan Tetangga dengan tujuan saling memaafkan satu dengan lainnya.</p>
-        <p align="justify"> Silaturahmi dapat diartikan sebagai merangkai hubungan yang didasari kasih sayang. Sedangkan arti Idul Fitri hakikatnya bermakna kembali ke fitrah atau keadaan manusia yang bersih dan suci.</p>
+        <p align="justify"><b>media08kada</b> | Dalam rangka merespon keluhan dari beberapa warga, khususnya permasalahan tidak adanya saluran drainase di Gg. H. Asmat RT 002/08 Kelapa Dua, yang mengakibatkan air masuk dibeberapa rumah warga dikala musim hujan.</p>
+        <p align="justify"> Sebelumnya pernah ada saluran drainase yang melintas diwilayah tersebut yang dibangun dari dana Program Pemberdayaan Masyarakat Kelurahan (PPMK), namun saat ini saluran drainase tersebut sudah tidak berfungsi bahkan sudah tertutup</p>
 
             <!-- Modal Continue 1 -->
            <div class="modal1-icons">
@@ -614,7 +614,7 @@
         <!-- Contact Section end -->
        
         <!-- Footer start -->
-        <section><footer>
+        <section class="footer" id="footer"><footer>
           <div class="socials">
             <a href="https://www.instagram.com/beritakosongdelapan/"><i data-feather="instagram"></i></a>
             <a href="https://www.youtube.com/channel/UC41XqwNU6eP4PJdziPCVT2Q"><i data-feather="youtube"></i></a>
@@ -651,35 +651,37 @@
 
           <!-- Emoji -->
           <div class="sharethis-inline-reaction-buttons"></div>
-        </footer></section>  
+        </footer></section>
+
         
         <!-- Medsos end -->
+        
+        <!-- Feather Icons -->
+        <script>
+          feather.replace();
+          </script>
 
-    <!-- Feather Icons -->
-    <script>
-      feather.replace();
-    </script>
-
-    <!-- My Javascript -->
-    <script src="js/script.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
-      const form = document.forms['media08kd-form']
+<!-- My Javascript -->
+<script src="js/script.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
+  const form = document.forms['media08kd-form']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+  })
+  </script>
     
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-    
-    </script>
-  </body>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  </script>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+  </script>
      </body>
-</html>
+     </html>
+    
