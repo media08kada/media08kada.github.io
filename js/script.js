@@ -1,35 +1,40 @@
 let nextBtn = document.querySelector('.next');
 let prevBtn = document.querySelector('.prev');
-
 let slider = document.querySelector('.slider');
-let sliderList = slider.querySelector('.slider .list');
-let thumbnail = document.querySelector('.slider .thumbnail');
+let sliderList = slider.querySelector('.list');
+let thumbnail = document.querySelector('.thumbnail');
 let thumbnailItems = thumbnail.querySelectorAll('.item');
 
-thumbnail.appendChild(thumbnailItems[0]);
+let autoPlayInterval;
 
-// AutoPlay Slider
-let runAutoPlay = setTimeout(() => {
-  next.click();
-}, 3000);
+function startAutoPlay() {
+  autoPlayInterval = setInterval(() => {
+    nextBtn.click();
+  }, 7000);
+}
 
-// AutoPlay Slider
-let autoPlayInterval = setInterval(() => {
-  nextBtn.click();
-}, 3000);
+function stopAutoPlay() {
+  clearInterval(autoPlayInterval);
+}
+
+startAutoPlay();
 
 // Function for next button
 nextBtn.onclick = function () {
   moveSlider('next');
+  stopAutoPlay();
+  startAutoPlay();
 };
 
 // Function for prev button
 prevBtn.onclick = function () {
   moveSlider('prev');
+  stopAutoPlay();
+  startAutoPlay();
 };
 
 function moveSlider(direction) {
-  let sliderItems = sliderList.querySelectorAll('.item');
+  let sliderItems = slider.querySelectorAll('.item');
   let thumbnailItems = document.querySelectorAll('.thumbnail .item');
 
   if (direction === 'next') {
@@ -42,21 +47,18 @@ function moveSlider(direction) {
     slider.classList.add('prev');
   }
 
-  setTimeout(() => {
-    slider.classList.remove('next');
-    slider.classList.remove('prev');
-  }, 2000);
+  slider.addEventListener(
+    'animationend',
+    function () {
+      if (direction == 'next') {
+        slider.classList.remove('next');
+      } else {
+        slider.classList.remove('prev');
+      }
+    },
+    { once: true }
+  );
 }
-
-// Clear interval waktu sebelumnya
-clearInterval(autoPlayInterval);
-
-clearTimeout(runAutoPlay);
-runAutoPlay = setTimeout(() => {
-  next.click();
-}, 3000);
-
-// Remove the event listener after it's triggered once
 
 // Toggle class active untuk hamburger menu
 const navbarNav = document.querySelector('.navbar-nav');
