@@ -88,7 +88,7 @@ body {
   color: var(--bg1);
 }
 
-/* Navbar berJejer */
+/* Navbar Sejajar/beranak Star */
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -117,12 +117,19 @@ body {
   padding: 5px;
   text-decoration: none;
   color: #333;
-  position: left;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+/* Tanda Panah */
+.dropdown-toggle::after {
+  content: "\25BC"; /* kode untuk tanda panah ke bawah */
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+/* Navbar Sejajar/beranak End */
 
 #hamburger-menu {
   display: none;

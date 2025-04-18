@@ -219,3 +219,5 @@ window.onclick = (e) => {
     itemDetailModal3.style.display = 'none';
   }
 };
+
+// Navbar Dropdown
