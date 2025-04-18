@@ -46,7 +46,7 @@ body {
 .menu .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 2rem;
   justify-content: center;
 }
 
@@ -55,7 +55,16 @@ body {
   padding-bottom: 4rem;
 }
 .menu h2 {
+  margin-bottom: 0.8rem;
+}
+
+.menu h3 {
+  font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.menu h3:hover {
+  color: var(--bg1);
 }
 
 .menu p {
