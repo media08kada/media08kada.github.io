@@ -34,13 +34,33 @@ body {
 }
 
 /* Struktur Organisasi */
+.container {
+  background-color: #222;
+  margin: 5rem;
+  padding: 50px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
 .menu h2 {
   margin-bottom: 1rem;
 }
 
 .menu p {
   text-align: center;
-  max-width: 30rem;
+  max-width: 50rem;
   margin: auto;
   font-weight: 100;
   line-height: 1.6;
@@ -60,7 +80,10 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 75%;
+  width: 85%;
+  border: 1px solid var(--bg1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .menu .row .menu-card .menu-card-title {
