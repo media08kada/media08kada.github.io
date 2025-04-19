@@ -105,11 +105,12 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 0;
   background-color: rgba(1, 1, 1, 0.8);
   padding: 10px;
   min-width: 200px;
+  transition: 0.2s linear;
 }
 
 .dropdown-menu a {
@@ -125,9 +126,13 @@ body {
 
 /* Tanda Panah */
 .dropdown-toggle::after {
-  content: "\25BC"; /* kode untuk tanda panah ke bawah */
+  content: "\25B2"; /* kode untuk tanda panah ke atas */
   font-size: 1rem;
   margin-left: 0.5rem;
+}
+
+.dropdown-toggle.open::after {
+  content: "\25BC"; /* kode untuk tanda panah ke bawah */
 }
 /* Navbar Sejajar/beranak End */
 
@@ -588,7 +593,6 @@ body {
     font-size: 50px;
   }
 }
-
 /* Slider Hero Section end */
 
 /* Services Star */
