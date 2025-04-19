@@ -1150,6 +1150,45 @@ body {
   border: none; 
 }
 
+/* Scroll To Top */
+.buttonToTop {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  buttom: 10px;
+  right: 10px;
+  cursor: pointer;
+  gap: 10%;
+}
+
+.buttonToTop a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg1);
+  border: none;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.buttonToTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+.buttonToTop a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 /* Contact Section */
 .contact .row {
   display: flex;
