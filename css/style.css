@@ -1087,6 +1087,7 @@ body {
   height: 30rem;
   margin-right: 2rem;
   margim-bottom: 2rem;
+  broder-radius: 5%;
 }
 
 .modal1-content h3,
