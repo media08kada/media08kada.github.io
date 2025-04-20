@@ -1297,7 +1297,6 @@ footer .credit a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -1414,7 +1413,6 @@ footer .credit a {
     flex-wrap: wrap;
     width: 80%;
   }
-
   
   .video {
     width: 100%;
@@ -1423,7 +1421,6 @@ footer .credit a {
   .video iframe {
     height: 300px;
   }
-
 
    /* Mobile Phone */
   @media (max-width: 450px) {
