@@ -787,7 +787,7 @@ body {
 
 .wrapper {
   width: 687px;
-  flex: 1 1 35rem;
+  flex: 1 1 25rem; /* flex: 1 1 30rem; */
   overflow: hidden;
   position: relative;
   border-radius: 2%;
@@ -1386,7 +1386,7 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height: 35rem; /*revisian*/
+    height: 30rem; /*revisian*/
     object-fit: cover;
     object-position: center;
     padding: 20px;
