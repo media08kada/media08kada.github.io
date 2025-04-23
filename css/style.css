@@ -683,13 +683,13 @@ body {
 }
 
 .about .row .content h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .about .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 100;
   line-height: 1.6;
 }
@@ -703,7 +703,7 @@ body {
   color: white;
   box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
   padding: 0.5rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   background-color: #333; 
   width: fit-content;
@@ -880,7 +880,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /*grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /*30rem*/
-  gap: 0.2rem; 
+  gap: 0.5rem; 
   margin-top: 1rem; 
   align-items: center;
   justify-content: center;
