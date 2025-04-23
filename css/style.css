@@ -926,8 +926,8 @@ body {
 }
 
 .container .products-container .product a {
-  width: 2;
-  height: 2;
+  width: 1.2;
+  height: 1.2;
   color: #fff;
   border-radius: 1px solid #666;
   border-radius: 50%;
@@ -996,8 +996,8 @@ body {
 
 .products-preview .preview .fa-times {
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
+  top: 0.8rem;
+  right: 0.8rem;
   cursor: pointer;
   color: #444;
   font-size: 1.5rem;
