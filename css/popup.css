@@ -104,7 +104,7 @@
 }
 
 /* Style for popup view */
-.product .popup-view{
+/*.product .popup-view{
   z-index: 2;
   background: rgba(255, 255, 255, 0.5);
   position: fixed;
@@ -217,7 +217,7 @@
   font-align: center;
   font-weight: 600;
   text-transform: uppercase;
-}
+}*/
 
 /* Responsive */
 @media (max-width: 900px){
