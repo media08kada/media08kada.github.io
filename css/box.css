@@ -51,6 +51,7 @@ body {
   border: 1px solid var(--bg);
   border-radius: 5px;
   box-shadow: 0 0 2px rgba(0, 0, 0.3);
+  border: 0.2px solid var(--bg1);
 }
 
 .service img {
