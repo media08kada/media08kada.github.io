@@ -29,7 +29,6 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
-  /* background-color: #eee; */
   color: #fff;
 }
 
@@ -1194,8 +1193,8 @@ body {
 
 .buttonToTop a {
   display: flex;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: var(--bg1);
   border: none;
@@ -1211,7 +1210,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -1277,11 +1276,21 @@ body {
 }
 
 /* Footer */
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 10rem;
+}
+
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--primary);
   text-align: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
+  padding: 0.5rem 0;
 }
 
 footer .socials {
