@@ -736,6 +736,8 @@ body {
 .about .row .content .modal3-icons:hover {
  color: #000;
 }
+
+
 /* Box Contonue End */
 
 /* Box Media Sosial Star */
@@ -840,6 +842,20 @@ body {
     width: 90%;
   }
 }
+
+/* Garis Pemisah antar News */
+.elemen {
+  border-bottom: 0.5px solid var(--bg1);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elemen:first-child {
+  border-top: none;
+}
+
 /* About Berita utama end */
 
 .products h2,
