@@ -231,3 +231,24 @@ document.addEventListener('DOMContentLoaded', function () {
     dropdownToggle.classList.toggle('open');
   });
 });
+
+// Navbar Dropdown Footer
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownContent = document.querySelector('.dropdown-content');
+const dropdownSpan = document.querySelector('.dropdown-btn span');
+
+dropdownBtn.addEventListener('click', () => {
+  dropdownContent.classList.toggle('show');
+  if (dropdownContent.classList.contains('show')) {
+    dropdownSpan.innerHTML = '&#9660;';
+  } else {
+    dropdownSpan.innerHTML = '&#9650;';
+  }
+});
+
+window.addEventListener('click', (e) => {
+  if (!dropdownBtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+    dropdownContent.classList.remove('show');
+    dropdownSpan.innerHTML = '&#9650;';
+  }
+});
