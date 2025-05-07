@@ -775,6 +775,7 @@ body {
 }
 /* Box Media Sosial End */
 
+/* Slider Berita */
 .images {
   display: flex;
   width: 100%;
@@ -857,7 +858,6 @@ body {
 .elemen:first-child {
   border-top: none;
 }
-
 /* About Berita utama end */
 
 .products h2,
