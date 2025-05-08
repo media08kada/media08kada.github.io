@@ -781,6 +781,7 @@ body {
   display: flex;
   width: 100%;
   transition: 2s;
+  gap: 20px;
 }
 
 .picture img,
@@ -804,22 +805,22 @@ body {
 
 #salindia-2:target ~ .picture,
 #slide-2:target ~ .images {
-  margin-left: -100%;
+  margin-left: calc(-100% - 20px);
 }
 
 #salindia-3:target ~ .picture,
 #slide-3:target ~ .images {
-  margin-left: -200%;
+  margin-left: calc(-200% - 40px);
 }
 
 #salindia-4:target ~ .picture,
 #slide-4:target ~ .images {
-  margin-left: -300%;
+  margin-left: calc(-300% - 60px);
 }
 
 #salindia-5:target ~ .picture,
 #slide-5:target ~ .images {
-  margin-left: -400%;
+  margin-left: calc(-400% - 80px);
 }
 
 .navigasi a,
