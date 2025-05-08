@@ -607,14 +607,14 @@
           <div class="row">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d787.038170448413!2d106.76574922985795!3d-6.207722754310394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1738416804003!5m2!1sid!2sid"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map" class="map"></iframe>
     
-            <form name='media08kd-form'>
+            <form name='media08kada-form'>
               <div class="input-group">
                 <i data-feather="user"></i>
                 <input type="text" placeholder="Nama" name="nama"/>
               </div>
               <div class="input-group">
-                <i data-feather="mail"></i>
-                <input type="text" placeholder="E-mail" name="email" />
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="telepon" name="telepon" />
               </div>
               <div class="input-group">
                 <i data-feather="message-square"></i>
@@ -695,15 +695,15 @@
 
   <script src="js/script.js"></script>
   <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
-  const form = document.forms['media08kd-form']
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwRvn268alDWUZ7nq1s4TrvZd_fD3lTWX7oMxZuf86NFvclEd9lcjgGC1cKLaSrN--E/exec'
+    const form = document.forms['media08kada-form']
   
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
-  })
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
     
   </script>
