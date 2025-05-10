@@ -227,7 +227,7 @@ body {
 
 /* slider Hero Section Star */
 .slider {
-  height: 100vh;
+  height: 80vh; /*100vh*/
   margin-top: -50px;
   width: 100vw;
   overflow: hidden;
@@ -259,7 +259,7 @@ body {
 
 .slider .list .item .content {
   position: absolute;
-  top: 20%;
+  top: 25%; /*20%*/
   width: 1140px;
   max-width: 80%;
   left: 50%;
@@ -272,7 +272,7 @@ body {
 
 .slider .list .item .content .title,
 .slider .list .item .content .type {
-  font-size: 5em;
+  font-size: 4em; /*4em*/
   font-weight: bold;
   line-height: 1.2em;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -292,14 +292,15 @@ body {
 
 .slider-content .slider-description {
   width: 50ch;
-  line-height: 1.5;
+  line-height: 1.6;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .slider .content p {
-  margin-bottom: 2rem; 
+  margin-bottom: 3rem;
+  margin-top: 2rem; /* mengatur jarak atas */
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.6; /* 1.6*/
 }
 
 /* Slider Action */
@@ -307,10 +308,10 @@ body {
   display: inline-block;
   color: white;
   box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1rem; /*0.8rem 1.5rem*/
   background-color: #fff; 
   width: fit-content;
-  border-radius: 2rem;
+  border-radius: 1.5rem; /* 2rem */
 }
 
 .slider .action1 {
@@ -321,11 +322,11 @@ body {
   background-color: #fff; 
   width: 80px;
   height: 50px;
-  border-radius: 5rem;
+  border-radius: 5rem; 
 }
 
 .slider .action a {
-  font-size: 1.3rem;
+  font-size: 1rem; /*1.3*rem*/
   text-decoration: none;
 }
 
@@ -363,17 +364,17 @@ body {
 /* Thumbnail Section  */
 .thumbnail {
   position: absolute;
-  bottom: 50px;
-  left: 50%;
+  bottom: 10px; /*50px*/
+  left: 65%;/*50%*/
   width: max-content;
   z-index: 100;
   display: flex;
-  gap: 20px;
+  gap: 15px; /*20px*/
 }
 
 .thumbnail .item {
-  width: 150px;
-  height: 220px;
+  width: 100px; /*150*/
+  height: 150px; /*220*/
   flex-shrink: 0;
   position: relative;
 }
@@ -382,7 +383,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 15px; /* 20 */
   box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -404,11 +405,11 @@ body {
 /* nextPrevArrows Section  */
 .nextPrevArrows {
   position: absolute;
-  top: 80%;
-  right: 52%;
+  top: 90%;
+  right: 52%; /* 52% */
   z-index: 100;
   width: 300px;
-  max-width: 30%;
+  max-width: 40%; /*30*/
   display: flex;
   gap: 10px;
   align-items: center;
@@ -599,13 +600,13 @@ body {
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  gap: 10px;
   border-radius: 2px;
 }
 
 .service {
   background-color: #333;
-  padding: 2px;
+  padding: 5px;
   text-align: center;
   border: 1px solid var(--bg);
   border-radius: 3px;
@@ -613,7 +614,7 @@ body {
 }
 
 .service .icon {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .service a {
@@ -624,6 +625,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 0.5px;
+  line-height: 1.1;
 }
 
 .service a:hover {
@@ -635,6 +637,7 @@ body {
   letter-spacing: 0.5px;
   font-size: 0.8em;
   color: #fff;
+  line-height: 1.1;
 }
 /* Services End */
 
@@ -643,7 +646,7 @@ body {
 .menu,
 .products,
 .contact {
- padding: 4rem 7% 1.4rem;
+ padding: 3rem 7% 1.4rem;
 }
 
 .about h2,
@@ -1254,9 +1257,14 @@ body {
 }
 
 /* Contact Section */
+.contact h2 {
+  line-height: 0.5;
+  margin-top: 1rem:
+}
+
 .contact .row {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 4rem;
   background-color: #222;
   z-index: 9999;
 }
