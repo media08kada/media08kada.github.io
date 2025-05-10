@@ -267,4 +267,4 @@ document.querySelector('form[name="media08kada-form"]').addEventListener('submit
   this.reset();
 });
 
-// Contact Akan terhapus otomatis
+// Dropdown Hamburger
