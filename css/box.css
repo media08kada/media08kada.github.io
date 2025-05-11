@@ -1,8 +1,8 @@
 :root {
   --primary: #b6895b;
-  --bg: #010101;
+  --bg: $gray-200; /*#010101*/
   --bg1: #14ff72cb;
-  --secondary: #fff;
+  --secondary: #000;
 }
 
 * {
@@ -30,7 +30,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   /* background-color: #eee; */
-  color: #fff;
+  color: #000;
 }
 
 /* Baca Juga Start */
