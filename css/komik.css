@@ -1,6 +1,6 @@
 :root {
   --primary: #b6895b;
-  --bg: $gray-200; /*#010101*/
+  --bg: #eaeaea; /*#010101*/
   --bg1: #14ff72cb;
   --secondary: #000;
 }

@@ -1,6 +1,6 @@
 :root {
   --primary: #b6895b;
-  --bg: $gray-200; /*#010101*/
+  --bg: #eaeaeaS; /*#010101*/
   --bg1: #14ff72cb;
   --secondary: #000;
 }
@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bg);
+  background-color: var(bg);
   color: #000;
 }
 

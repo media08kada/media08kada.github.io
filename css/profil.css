@@ -1,6 +1,6 @@
 :root {
   --primary: #b6895b;
-  --bg: #fff; /*#010101*/
+  --bg: #eaeaea; /*#010101*/
   --bg1: #14ff72cb;
   --secondary: #000;
 }
@@ -36,13 +36,13 @@ body {
 /* Navbar */
 .navbar a {
   font-size: 1.5rem;
-  color: var(--bg)
+  color: #000;
   transition: 0.3s;
 }
 
 .navbar a:hover {
-  color: var(--bg1); 
-  text-decoration: underline; 
+  color: var(--bg1);
+  text-decoration: underline;
 }
 
 /* Struktur Organisasi */

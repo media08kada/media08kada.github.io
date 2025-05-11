@@ -1,6 +1,6 @@
 :root {
   --primary: #b6895b;
-  --bg: $gray-200; /*#010101*/
+  --bg: #eaeaea; /*#010101*/
   --bg1: #14ff72cb;
   --secondary: #000;
 }
@@ -36,7 +36,7 @@ body {
 /* Navbar */
 .navbar a {
   font-size: 1.5rem;
-  color: var(--bg);
+  color: #000;
   transition: 0.3s;
 }
 
