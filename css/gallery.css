@@ -1,15 +1,15 @@
 :root {
   --primary: #b6895b;
-  --bg: #010101;
+  --bg: $gray-200; /*#010101*/
   --bg1: #14ff72cb;
-  --secondary: #fff;
+  --secondary: #000;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   /* background-color: #eee; */
-  color: #fff;
+  color: #000;
 }
 
 /* Style Utama */
@@ -17,7 +17,7 @@ body {
   background-color: #222;
   margin: auto;
   padding: 20px;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.8);
   border-radius: 10px;
   z-index: 9999;
 }

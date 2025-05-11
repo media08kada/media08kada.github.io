@@ -1,8 +1,8 @@
 :root {
   --primary: #b6895b;
-  --bg: #010101;
+  --bg: $gray-200; /*#010101*/
   --bg1: #14ff72cb;
-  --secondary: #fff;
+  --secondary: #000;
 }
 
 * {
@@ -29,7 +29,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
-  color: #fff;
+  color: #000;
 }
 
 /* Navbar */
@@ -38,7 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 7%;
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid var(--bg1);
   position: fixed;
   top: 0;
@@ -50,12 +50,12 @@ body {
 .navbar .navbar-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   font-style: italic;
 }
 
 .navbar .navbar-nav a {
-  color: #fff;
+  color: #000;
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 1rem;
@@ -79,7 +79,7 @@ body {
 }
 
 .navbar .navbar-extra a {
-  color: #fff;
+  color: #000;
   margin: 0 0.5rem;
 }
 
@@ -106,7 +106,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 0;
   min-width: 130px;
   transition: 0.2s linear;
@@ -119,7 +119,7 @@ body {
   display: inline-block;
   padding: 5px;
   text-decoration: none;
-  color: #333;
+  color: #000;
   
 }
 
@@ -156,6 +156,7 @@ body {
   transform: scaleY(0);
   transform-origin: top;
   transition: 0.3s;
+  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.8);
 }
 
 .navbar .search-form.active {
@@ -174,7 +175,7 @@ body {
   cursor: pointer;
   font-size: 2rem;
   margin-right: 1.5rem;
-  color: var(--bg);
+  color: #000;
 }
 
 /* Hamburger Cart Star */
@@ -186,7 +187,7 @@ body {
   width: 32rem;
   padding: 0 1.5rem;
   background-color: #fff;
-  color: var(--bg);
+  color: #000;
   transition: 0.3s;
   scroll-behavior: smooth;
   cursor: pointer;
@@ -227,7 +228,6 @@ body {
   right: 1rem;
   cursor: pointer;
 }
-/* Hamburger end */
 
 /* slider Hero Section Star */
 .slider {
@@ -270,8 +270,8 @@ body {
   transform: translateX(-50%);
   padding-right: 30%;
   box-sizing: border-box;
-  color: #fff;
-  text-shadow: 0 5px 10px #0004;
+  color: var(--bg1);
+  text-shadow: 0 5px 10px #000;
 }
 
 .slider .list .item .content .title,
@@ -297,14 +297,14 @@ body {
 .slider-content .slider-description {
   width: 50ch;
   line-height: 1.6;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .slider .content p {
   margin-bottom: 3rem;
-  margin-top: 2rem; /* mengatur jarak atas */
-  font-size: 1.2rem;
-  line-height: 1.6; /* 1.6*/
+  margin-top: 2rem;   
+  font-size: 1.5rem;
+  color: var(--primary);
+  text-shadow: none;
 }
 
 /* Slider Action */
@@ -332,6 +332,7 @@ body {
 .slider .action a {
   font-size: 1rem; /*1.3*rem*/
   text-decoration: none;
+  text-shadow: none;
 }
 
 .slider .content .action::before {
@@ -388,13 +389,14 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 15px; /* 20 */
-   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
+  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
 }
 
 .thumbnail .item .detail {
   position: absolute;
   bottom: 15px;
   left: 10px;
+  color: #000;
 }
 
 .thumbnail .item .detail .name {
@@ -426,8 +428,11 @@ body {
   background-color: var(--bg1);
   border: none;
   color: #fff;
-  font-family: monospace;
+  font-size: 24px;
+  display: flex;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -606,14 +611,16 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   border-radius: 2px;
-}
+  }
 
 .service {
-  background-color: #333;
+  background-color: var(--bg1);
   padding: 5px;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
+  box-shadow: 1px 1px 5px rgb(10, 10, 10);
+
+
 }
 
 .service .icon {
@@ -622,13 +629,13 @@ body {
 
 .service a {
   display: block;
-  font-size: 1em;
-  color: var(--bg1);
+  font-size: 1.2em;
+  color: var(--primary);
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   padding: 0.5px;
-  line-height: 1.1;
+  line-height: 1.0;
 }
 
 .service a:hover {
@@ -636,10 +643,10 @@ body {
 }
 
 .service p {
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.5px;
   font-size: 0.8em;
-  color: #fff;
+  color: #000;
   line-height: 1.1;
 }
 /* Services End */
@@ -659,6 +666,7 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .slider-content h2 span,
@@ -696,7 +704,7 @@ body {
 .about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.1rem;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -867,7 +875,7 @@ body {
 
 /* Garis Pemisah antar News */
 .elemen {
-  border-bottom: 0.5px solid var(--bg1);
+  border-bottom: 0.5px solid #333;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -890,7 +898,7 @@ body {
   text-align: center;
   max-width: 30rem;
   margin: auto;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -926,7 +934,7 @@ body {
 }
 
 .container .products-container .product:hover {
-  outline: 0.2rem solid #222;
+  outline: 0.1rem solid #222;
   outline-offset: 0;
 }
 
@@ -942,7 +950,7 @@ body {
 .container .products-container .product h3 {
   padding: 0.5rem 0;
   font-size: 1.2rem;
-  color: #fff;
+  color: #000;
 }
 
 .container .products-container .product text {
@@ -994,7 +1002,7 @@ body {
   left: 0;
   min-height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   display: none;
   align-items: center;
   justify-content: center;
@@ -1482,7 +1490,7 @@ footer .credit a {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
     margin: 0.5rem;
   }
 
@@ -1492,6 +1500,7 @@ footer .credit a {
 
   .dropdown-content a {
     min-width: 75px;
+    
   }
   
   .navbar .navbar-nav.active {
@@ -1499,7 +1508,7 @@ footer .credit a {
   }
 
   .navbar .navbar-nav a {
-    color: var(--bg);
+    color: #000;
     display: block;
     margin: 1rem;
     padding: 0.5rem;

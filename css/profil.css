@@ -1,8 +1,8 @@
 :root {
   --primary: #b6895b;
-  --bg: #010101;
+  --bg: #fff; /*#010101*/
   --bg1: #14ff72cb;
-  --secondary: #fff;
+  --secondary: #000;
 }
 
 * {
@@ -38,7 +38,7 @@ body {
   background-color: #222;
   margin: 1.5rem;
   padding: 50px;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.8);
   border-radius: 10px;
   z-index: 9999;
 }
