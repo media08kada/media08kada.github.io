@@ -296,13 +296,13 @@ body {
 
 .slider-content .slider-description {
   width: 50ch;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .slider .content p {
   margin-bottom: 3rem;
   margin-top: 2rem;   
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--primary);
   text-shadow: none;
 }
@@ -369,7 +369,7 @@ body {
 /* Thumbnail Section  */
 .thumbnail {
   position: absolute;
-  bottom: 10px; /*50px*/
+  bottom: 18px; /*50px*/
   left: 50%;
   width: max-content;
   z-index: 100;
@@ -619,8 +619,6 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 1px 1px 5px rgb(10, 10, 10);
-
-
 }
 
 .service .icon {
