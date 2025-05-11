@@ -1016,6 +1016,8 @@ body {
   margin: 2rem;
   width: 80%;
   animation: animatePreview 0.5s;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 1%;
 }
 
 /* Preview Animation */
@@ -1323,6 +1325,7 @@ body {
   font-size: 1.7rem;
   color: #000;
   background-color: var(--bg1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 

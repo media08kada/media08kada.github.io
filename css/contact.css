@@ -33,6 +33,19 @@ body {
   color: #000;
 }
 
+/* Navbar */
+.navbar a {
+  font-size: 1.5rem;
+  color: var(--bg);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--bg1);
+  text-decoration: underline;
+}
+
 .container {
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0rem auto;
