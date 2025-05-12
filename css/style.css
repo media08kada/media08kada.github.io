@@ -1515,6 +1515,10 @@ footer .credit a {
   font-weight: 500;
 }
 
+footer .credit p {
+  color: #fff;
+}
+
 /* Dropdown Footer */
 .links {
   display: flex;
@@ -1604,7 +1608,7 @@ footer .credit a {
   #hamburger-menu {
     display: inline-block;
   }
-
+  
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
@@ -1638,14 +1642,14 @@ footer .credit a {
   .navbar .navbar-nav.active {
     right: 0;
   }
-
+  
   .navbar .navbar-nav a {
     color: #000;
     display: block;
-    margin: 1rem;
+    margin-botton: 5px;
     padding: 0.5rem;
-    font-size: 2rem;
-    min-width: 200px;
+    font-size: 1.5em;
+    min-width: 120px;
   }
 
   .navbar .navbar-nav a::after {
