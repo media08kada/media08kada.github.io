@@ -48,6 +48,18 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+     <!-- Popup Iklan -->
+     <div class="popup-screen">
+      <div class="popup-box">
+        <i class="fas fa-times close-btn"></i>
+        <img src="img/Gallery/Jali-jali.jpg" alt="">
+        <h2 data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300"><span>Jali</span> Jali </h2>
+        <h4>Antar Jemput Lansia</h4>
+        <p align="center">Posbindu ILP Melati RW 08 Menyediakan Layanan Antar Jemput Lansia gratis. Pendaftaran layanan dapat di click pada tombol hijau.</p>
+        <a href="antar-jemput-lansia.html" class="btn">Click Disini</a>
+      </div>
+     </div>
+
     <!-- Navbar start -->
     <nav class="navbar"data-aos="fade-down" data-aos-duration="500">
       <img src="img/Media08Kada.png" alt="Logo-media" width="50" height="50" class="d-inline-block align-text-top rounded"/>
@@ -90,7 +102,7 @@
              <div class="service" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="500">
              <img src="img/box/qurban.png" alt=""><div>
             <a href="popup.html"><span><b>🐮Hewan Qurban 1446 H</b></span></a>
-            <p style="font-size: 12px;" align="justify">Menerima & Menyalurkan Hewan Qurban</p></div>
+            <p style="font-size: 12px;" align="left">Menerima & Menyalurkan Hewan Qurban</p></div>
             <div class="service-card">
             <a href="index.html"><i class="fas fa-times close-btn"></i></a>
           </section>
@@ -153,6 +165,28 @@
       })
     </script>
     
+    <script type="text/javascript">
+      const popupScreen = document.querySelector(".popup-screen");
+      const popupBox = document.querySelector(".popup-box");
+      const closeBtn = document.querySelector(".close-btn");
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          popupScreen.classList.add("active");
+        }, 2000); // popup the screen in 02 seconds after the page is loaded.
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popupScreen.classList.remove("active");
+        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
+
+        if(WebsiteCookie != -1){
+          popupScreen.style.display = "none";
+        }
+        else{
+          popupScreen.style.display = "flex";
+        }
+      });
     </script>
   </body>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

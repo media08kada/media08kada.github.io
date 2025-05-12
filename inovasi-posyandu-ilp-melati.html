@@ -35,10 +35,6 @@
    </head>
   <body>
 
-<!-- Pop Up Iklan -->
-<!--<div class="powr-popup" id="d1979f53_1745291711"></div>
-<script src="https://www.powr.io/powr.js?platform=html" width="360" height="115"></script>-->
-
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     
@@ -91,7 +87,7 @@
             <div class="service" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
               <img src="img/berita-3/2C.jpg" alt=""><div>
                 <a href="pohon-tumbang-di-jalan-kelapa-dua.html"><span><b>📜BACA JUGA</b></span></a>
-                <p style="font-size: 12px;" align="justify">Pohon Tumbang Di Jalan Kelapa Dua<br></p></div>
+                <p style="font-size: 12px;" align="left">Pohon Tumbang Di Jalan Kelapa Dua<br></p></div>
                 <div class="service-card">
                   <a href="index.html"><i class="fas fa-times close-btn" ></i></a>
                 </section>
@@ -105,7 +101,7 @@
             <div class="service" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="500">
               <img src="img/box/qurban.png" alt=""><div>
                 <a href="popup.html"><span><b>🐮Hewan Qurban 1446 H</b></span></a>
-                <p style="font-size: 12px;" align="justify">Menerima & Menyalurkan Hewan Qurban</p></div>
+                <p style="font-size: 12px;" align="left">Menerima & Menyalurkan Hewan Qurban</p></div>
                 <div class="service-card">
                   <a href="index.html"><i class="fas fa-times close-btn"></i></a>
               </section>
@@ -161,20 +157,21 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
       const form = document.forms['media08kd-form']
-    
+      
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
       })
-    </script>
+      </script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+          </script>
 
+    <!-- My Javascript Popup Screen Iklan -->
     <script type="text/javascript">
       const popupScreen = document.querySelector(".popup-screen");
       const popupBox = document.querySelector(".popup-box");

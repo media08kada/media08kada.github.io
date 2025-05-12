@@ -168,17 +168,18 @@ section {
 /* Baca Juga Start */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   flex-direction: row;
   gap: 10px;
-  align-items: left;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
 .service {
   display: flex;
   background-color: #333;
-  padding: 2px;
+  padding: 10px;
   text-align: left;
   border: 1px solid var(--bg);
   border-radius: 5px;
