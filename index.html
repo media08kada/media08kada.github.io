@@ -23,6 +23,7 @@
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/box.css">
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -44,6 +45,17 @@
     <meta name="google-site-verification" content="0PsHL6uce6tGsDdHPvFqPV1FbJArKf87m6e7mQ_SAZ0" />
   </head>
   <body>
+        <!-- Popup Iklan -->
+     <div class="popup-screen">
+      <div class="popup-box">
+        <i class="fas fa-times close-btn"></i>
+        <img src="img/Gallery/Jali-jali.jpg" alt="">
+        <h2 data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300"><span>Jali</span> Jali </h2>
+        <h4> Jemput Antar Lansia</h4>
+        <p align="center">Posyandu ILP Melati RW 08 Menyediakan Layanan Jemput Antar Lansia Gratis. Pendaftaran layanan dilakukan pada saat atau sebelum pelaksanaan Posyandu berlangsung dengan cara mengclick tombol hijau dibawah. </p>
+        <a href="antar-jemput-lansia.html" class="btn">Click Disini</a>
+      </div>
+     </div>
     
     <!-- Navbar start -->
     <nav class="navbar"data-aos="fade-down" data-aos-duration="2000">
@@ -706,7 +718,30 @@
     })
   </script>
     
-  </script>
+  <!-- My Javascript Popup Screen Iklan -->
+    <script type="text/javascript">
+      const popupScreen = document.querySelector(".popup-screen");
+      const popupBox = document.querySelector(".popup-box");
+      const closeBtn = document.querySelector(".close-btn");
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          popupScreen.classList.add("active");
+        }, 2000); //
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popupScreen.classList.remove("active");
+        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
+
+        if(WebsiteCookie != -1){
+          popupScreen.style.display = "none";
+        }
+        else{
+          popupScreen.style.display = "flex";
+        }
+      });
+    </script>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
