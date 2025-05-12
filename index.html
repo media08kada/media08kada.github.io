@@ -45,7 +45,7 @@
   </head>
   <body>
 
-        <!-- Popup Iklan -->
+     <!-- Popup Iklan -->
      <div class="popup-screen">
       <div class="popup-box">
         <i class="fas fa-times close-btn"></i>
@@ -55,7 +55,9 @@
         <p align="center">Posyandu ILP Melati RW 08 Menyediakan Layanan Jemput Antar Lansia Gratis. Pendaftaran layanan dilakukan pada saat atau sebelum pelaksanaan Posyandu berlangsung dengan mengclick tombol hijau dibawah.<br>Terimakasih Telah Berkunjung Ke media.rw08kelapadua.web.id </p>
         <a href="antar-jemput-lansia.html" class="btn">Click Disini</a>
       </div>
-     </div>
+      <audio autoplay><source src="audio/popup.mp3" type="audio/mp3" id="popup-audio">
+      </audio>
+    </div>
 
     <!-- Navbar start -->
     <nav class="navbar"data-aos="fade-down" data-aos-duration="2000">
@@ -723,12 +725,13 @@
       const popupScreen = document.querySelector(".popup-screen");
       const popupBox = document.querySelector(".popup-box");
       const closeBtn = document.querySelector(".close-btn");
+      const popupAudio = document.querySelector('popup-audio');
       window.addEventListener("load", () => {
         setTimeout(() => {
           popupScreen.classList.add("active");
+          popupAudio.play();
         }, 2000); //
       });
-
       closeBtn.addEventListener("click", () => {
         popupScreen.classList.remove("active");
         document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
