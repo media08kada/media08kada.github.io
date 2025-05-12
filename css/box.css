@@ -31,13 +31,12 @@ body {
   background-color: var(--bg);
   /* background-color: #eee; */
   color: #000;
-  min-height: 100vh;
 }
 
 /* Popup Iklan Star */
 .popup-screen {
   z-index: 999999;
-  position: fixed;
+  position: flex;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   width: 100%;
@@ -163,10 +162,6 @@ body {
 
 .close-btn {
   opacity: 1;
-}
-
-section {
-  padding: 50px 100px;
 }
 /* Popup Iklan End */
 
