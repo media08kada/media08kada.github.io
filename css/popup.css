@@ -244,14 +244,6 @@ body {
   background: var(--primary);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .product .popup-card {
-    flex-direction: column;
-    width: 550px;
-    height: auto;
-  }
-
   .product .popup-card .product-img {
     z-index: 3;
     width: 100%;
