@@ -1499,17 +1499,20 @@ footer .links a:hover {
 }
 
 footer .links {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 footer .links a {
   color: #fff;
   padding: 0.7rem 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 footer .credit {
   font-size: 0.8rem;
   border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
 footer .credit a {
@@ -1519,75 +1522,6 @@ footer .credit a {
 
 footer .credit p {
   color: #fff;
-}
-
-/* Dropdown Footer */
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.dropdown-btn {
-  background-color: transparent;
-  border: none;
-  padding: 1px;
-  font-size: 16px;
-  cursor: pointer;
-  color: #fff;
-}
-
-.dropdown-btn:hover {
-  color: var(--bg1)
-}
-
-.dropdown-content {
-  display: transparent;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(1, 1, 1, 0.8);
-  padding: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  border-radius: 10%;
-}
-
-.dropdown-content {
-  display: none;
-}
-
-.dropdown-content.show {
-  display: block;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-  min-width: 150px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  color: #f0f0f0;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-btn span {
-  font-size: 12px;
-  margin-left: 5px;
 }
 
 /* PopUp Subscribe */
@@ -1624,6 +1558,7 @@ footer .credit p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border: 0.2px;
   }
 
   .dropdown-menu {
