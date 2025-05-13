@@ -1552,8 +1552,9 @@ footer .credit p {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(1, 1, 1, 0.8);
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 10%;
 }
 
 .dropdown-content {
@@ -1571,6 +1572,7 @@ footer .credit p {
   color: #333;
   min-width: 150px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
 .dropdown-content a:hover {
