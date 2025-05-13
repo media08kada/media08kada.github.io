@@ -1631,6 +1631,11 @@ footer .credit p {
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
     margin: 0.5rem;
     z-index: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .dropdown-menu.show {
+  display: block;
   }
 
   .dropdown-btn {
@@ -1639,11 +1644,11 @@ footer .credit p {
 
   .dropdown-content a {
     min-width: 75px;
-    
   }
   
   .navbar .navbar-nav.active {
     right: 0;
+    transition: all 0.5s ease-in-out;
   }
   
   .navbar .navbar-nav a {

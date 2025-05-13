@@ -68,6 +68,12 @@ document.querySelector('#hamburger-menu').onclick = () => {
   navbarNav.classList.toggle('active');
 };
 
+dropdownButton.addEventListener('click', () => {
+  setTimeout(() => {
+    dropdownMenu.classList.toggle('show');
+  }, 7000); // delay 2 detik
+});
+
 // Toggle class active untuk search form
 const searchForm = document.querySelector('.search-form');
 const searchBox = document.querySelector('#search-box');
