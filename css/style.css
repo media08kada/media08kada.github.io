@@ -1594,9 +1594,9 @@ footer .credit p {
     gap: 20px;
   }
 
-  .navbar .navbar-nav .icon i {
+  .navbar .navbar-nav icon {
     align-items: center;
-
+    line-spacing: 2px;
 
   }
 

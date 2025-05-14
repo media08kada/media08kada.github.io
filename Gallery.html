@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>Gallery Photo</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="./img/Media08Kada.png" type="image/x-icon" />
@@ -55,34 +55,23 @@
      <section id="menu" class="menu">
       <h2 data-aos="fade-up" data-aos-duration="1000" date-aos-delay="500"><span>Gallery</span> Photo</h2>
         
-      <div class="container" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="1500">          
-        <div class="row">
-        <div class="menu-card" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="2000">
-          <a href=""><img src="img/Gallery/1.jpg" alt="" class="menu-card-img" />
-            <h3 class="menu-card-title">Fooging Chikungunya</h3></a>
-            </div>
-        <div class="menu-card" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="2000">
-          <a href=""><img src="img/Gallery/2.jpg" alt="" class="menu-card-img" />
-            <h3 class="menu-card-title">Pemasangan Plang Aset</h3></a>
-            </div>
-        <div class="menu-card" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="2000">
-          <a href=""><img src="img/Gallery/3.jpg" alt="" class="menu-card-img" />
-            <h3 class="menu-card-title">Diskusi dengan Vendor</h3></a>
-            </div>
-        <div class="menu-card" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="2000">
-          <a href=""><img src="img/Gallery/4.jpg" alt="" class="menu-card-img" />
-            <h3 class="menu-card-title">Diskusi dengan Puskesmas</h3></a>
-            </div>
-        <div class="menu-card" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="2000">
-          <a href=""><img src="img/Gallery/5.jpg" alt="" class="menu-card-img" />
-            <h3 class="menu-card-title">Diskusi Wilayah</h3></a>
-            </div>
-        <div class="menu-card" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="2000">
-          <a href=""><img src="img/Gallery/6.jpg" alt="" class="menu-card-img" />
-            <h3 class="menu-card-title">Rapat LMK Kelurahan</h3></a>
-            </div>
-      </section>
-            <!-- Struktur Organisasi end -->
+    <div class="container">
+      <img src="img/berita-1/1A.jpg" class="preview-img" id="preview-img" alt="Gambar-1" />
+
+      <div class="galleries">
+        <img src="img/berita-1/1A.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="img/berita-1/2A.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="img/berita-1/3A.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="img/berita-1/4A.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="img/berita-1/5A.jpg" onclick="imgPreview(this.src)" alt="" />
+      </div>
+    </div>
+    <script>
+      const imgPreview = (src) => {
+        document.getElementById('preview-img').src = src;
+      };
+    </script>
+            <!-- Gallery end -->
 
             <!-- Scroll Ke Atas Star-->
         <div class="buttonToTop" onclick="scrollKeatas()">
