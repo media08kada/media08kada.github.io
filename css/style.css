@@ -549,7 +549,7 @@ body {
   right: 52%; 
   z-index: 100;
   width: 300px;
-  max-width: 40%; /*30*/
+  max-width: 40%; 
   display: flex;
   gap: 10px;
   align-items: center;
@@ -835,7 +835,7 @@ body {
 
 .about .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -1542,6 +1542,10 @@ footer .credit p {
   #hamburger-menu {
     display: inline-block;
   }
+
+  #navbar-nav i {
+    feather-icon: none;
+  }
   
   .navbar .navbar-nav {
     position: absolute;
@@ -1554,6 +1558,7 @@ footer .credit p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 5px;
  }
 
   .dropdown-menu {
@@ -1590,9 +1595,10 @@ footer .credit p {
     padding: 0.5rem;
     font-size: 1.5em;
     min-width: 120px;
+    gap: 20px;
   }
 
-  .navbar .navbar-nav a::after {
+ .navbar .navbar-nav a::after {
     transform-origin: 0 0;
   }
 
@@ -1669,8 +1675,8 @@ footer .credit p {
   }
 
   .thumbnail .item {
-  width: 100px; 
-  height: 150px; 
+   width: 100px; 
+   height: 150px; 
   }
 
   .thumbnail {

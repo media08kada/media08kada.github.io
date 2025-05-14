@@ -68,6 +68,11 @@ document.querySelector('#hamburger-menu').onclick = () => {
   navbarNav.classList.toggle('active');
 };
 
+// Nonaktifkan Feather icon di navbar
+document.querySelectorAll('.navbar-nav i[data-feather]').forEach((icon) => {
+  icon.removeAttribute('data-feather');
+});
+
 // Toggle class active untuk search form
 const searchForm = document.querySelector('.search-form');
 const searchBox = document.querySelector('#search-box');

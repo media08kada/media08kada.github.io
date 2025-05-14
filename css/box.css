@@ -184,7 +184,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   flex-direction: row;
-  gap: 10px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -193,7 +192,7 @@ body {
 .service {
   display: flex;
   background-color: #eaeaea;
-  padding: 5px;
+  padding: 2px;
   text-align: left;
   border: 1px solid var(--bg);
   border-radius: 5px;
@@ -205,12 +204,13 @@ body {
   display: flex;
   width: 80px;
   height: 80px;
+  margin-top: 2px;
   broder-radius: 5px;
   padding: 0.5rem;
   margin-right: 0.5px;
   box-shadow: 0 0 2px rgba(0, 0, 0.3);
   transform: translateX(5px);
-  border-radius: 5%;
+  border-radius: 10%;
 }
 
 .service a {
