@@ -546,7 +546,7 @@ body {
 .nextPrevArrows {
   position: absolute;
   top: 90%;
-  right: 52%; /* 52% */
+  right: 52%; 
   z-index: 100;
   width: 300px;
   max-width: 40%; /*30*/
@@ -835,7 +835,7 @@ body {
 
 .about .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.6;
 }

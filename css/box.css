@@ -33,6 +33,19 @@ body {
   color: #000;
 }
 
+/* Navbar Star */
+.navbar a {
+  font-size: 1.5rem;
+  color: #000;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--bg1);
+  text-decoration: underline;
+}
+/* Navbar End */
+
 /* Popup Iklan Star */
 .popup-screen {
   z-index: 999999;
@@ -165,19 +178,6 @@ body {
   transform: rotate(90deg);
 }
 /* Popup Iklan End */
-
-/* Navbar Star */
-.navbar a {
-  font-size: 1.5rem;
-  color: #000;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: var(--bg1);
-  text-decoration: underline;
-}
-/* Navbar End */
 
 /* Baca Juga Start */
 .services {
