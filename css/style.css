@@ -1542,10 +1542,6 @@ footer .credit p {
   #hamburger-menu {
     display: inline-block;
   }
-
-  #navbar-nav i {
-    feather-icon: none;
-  }
   
   .navbar .navbar-nav {
     position: absolute;
@@ -1572,7 +1568,7 @@ footer .credit p {
   }
 
   .dropdown-menu.show {
-  display: block;
+   display: block;
   }
 
   .dropdown-btn {
@@ -1596,6 +1592,12 @@ footer .credit p {
     font-size: 1.5em;
     min-width: 120px;
     gap: 20px;
+  }
+
+  .navbar .navbar-nav .icon i {
+    align-items: center;
+
+
   }
 
  .navbar .navbar-nav a::after {
@@ -1646,6 +1648,7 @@ footer .credit p {
 
   .contact .row .map {
     height: 30rem;
+    width: 5rem;
   }
 
   .contact .row form {
