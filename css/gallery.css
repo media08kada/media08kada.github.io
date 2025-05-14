@@ -39,12 +39,11 @@ img {
 
 .preview-img {
   height: 600px;
-  width: 400%;
+  width: 100%;
   object-fit: cover;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 20px;
-  justify-content: center;
 }
 
 .galleries {
