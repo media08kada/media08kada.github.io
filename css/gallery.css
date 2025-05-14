@@ -40,7 +40,7 @@ img {
 .preview-img {
   height: 600px;
   width: 400%;
-
+  object-fit: cover;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
