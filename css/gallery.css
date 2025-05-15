@@ -38,8 +38,8 @@ img {
 }
 
 .preview-img {
-  height: 600px;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -49,14 +49,22 @@ img {
 .galleries {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 9px;
   justify-content: center;
 }
 
 .galleries img {
   width: 110px;
-  height: 100px;
+  height: 110px;
   cursor: pointer;
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  .preview-img {
+    width: 100%;
+    height: 687px;
+  }
 }
 
 @media (max-width: 768px) {
