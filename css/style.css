@@ -1459,7 +1459,6 @@ body {
   font-size: 1.7rem;
   color: #fff;
   background-color: var(--bg1);
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
