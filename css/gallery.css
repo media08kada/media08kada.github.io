@@ -78,6 +78,6 @@ img {
 @media (max-width: 768px) {
   .galleries img {
     width: 80px;
-    height: 70px;
+    height: 80px;
   }
 }
