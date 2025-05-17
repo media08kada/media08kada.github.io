@@ -1161,6 +1161,8 @@ body {
   animation: animatePreview 0.5s;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 1%;
+  overflow-y: auto; /* atau overflow-y: scroll */
+  max-height: 80vh; 
 }
 
 /* Preview Animation */
