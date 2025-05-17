@@ -1079,7 +1079,7 @@ body {
 }
 
 .container .products-container .product img {
-  height: 20rem; /*25rem*/
+  height: 20rem; 
   border-radius: 2%;
 }
 
