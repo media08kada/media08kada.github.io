@@ -1025,8 +1025,8 @@ body {
 .elemen:first-child {
   border-top: none;
 }
-/* About Berita utama end */
 
+/* About Berita utama end */
 .products h2,
 .contact h2 {
   margin-bottom: 1rem;
@@ -1190,9 +1190,9 @@ body {
 }
 
 .products-preview .preview .fa-times {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  position: fixed;
+  top: 3rem;
+  right: 5rem;
   cursor: pointer;
   color: #444;
   font-size: 1.5rem;
@@ -1243,6 +1243,7 @@ body {
   .products-preview .preview {
     flex-direction: column;
   }
+
   .products-preview .preview img {
     width: 100%;
     height: auto;
@@ -1395,7 +1396,7 @@ body {
   cursor: pointer;
   z-index: 999;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: var(--bg1);
   padding: 6px;
   border-radius: 50%;
   shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
