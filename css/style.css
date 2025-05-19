@@ -172,7 +172,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 7%;
+  padding: 1rem 7%;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid var(--bg1);
   position: fixed;
@@ -193,7 +193,7 @@ body {
 .navbar .navbar-nav a {
   color: #000;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 1rem;
 }
 
