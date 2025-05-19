@@ -796,7 +796,7 @@ body {
 .menu,
 .products,
 .contact {
- padding: 3rem 7% 1.4rem;
+ padding: 3rem 7% 1.4rem; /*3rem 7% 1.4rem*/
 }
 
 .about h2,
