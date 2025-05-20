@@ -1666,7 +1666,7 @@ footer .credit p {
   }
 
   .about .row .about-img img {
-    height: 30rem; /*revisian*/
+    height: 30rem; 
     object-fit: cover;
     object-position: center;
     padding: 20px;
