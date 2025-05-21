@@ -272,4 +272,16 @@ document.querySelector('form[name="media08kada-form"]').addEventListener('submit
   this.reset();
 });
 
-// Dropdown Hamburger
+// Jempu Antar Lansia
+document.querySelector('form[name="media08kada-form"]').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // Kode untuk mengirim pesan menggunakan AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', '/path/to/server', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send(new URLSearchParams(new FormData(this)).toString());
+
+  // Mengatur ulang nilai input form
+  this.reset();
+});
