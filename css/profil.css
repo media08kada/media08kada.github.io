@@ -48,8 +48,8 @@ body {
 /* Struktur Organisasi */
 .container {
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 1.5rem;
-  padding: 50px;
+  margin: 5rem;
+  padding: 5px;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   z-index: 9999;
@@ -96,12 +96,12 @@ body {
 
 .menu .row .menu-card {
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 85%;
+  width: 65%;
   border: 1px solid var(--bg1);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   position: relative;

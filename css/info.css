@@ -3,6 +3,7 @@
   --bg: #eaeaea; /*#010101*/
   --bg1: #14ff72cb;
   --secondary: #000;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -19,8 +20,8 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--bg1); 
-  text-decoration: underline; 
+  color: var(--bg1);
+  text-decoration: underline;
 }
 
 /* Style Utama */
