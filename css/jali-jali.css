@@ -66,6 +66,7 @@ body {
 .menu h2 {
   font-size: 3rem;
   font-family: 800;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -75,6 +76,7 @@ h4 {
   left: 0;
   width: 100%;
   text-align: left;
+  padding-bottom: 10px;
 }
 
 footer {
@@ -121,4 +123,21 @@ footer .credit {
 footer .credit a {
   color: var(--bg);
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px; /* kurangi padding untuk layar kecil */
+    max-width: 95%; /* atur lebar container menjadi 100% */
+  }
+  body {
+    padding-bottom: 5rem; /* kurangi padding bottom untuk layar kecil */
+  }
+}
+
+/* Media query untuk layar handphone yang lebih kecil */
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 10px; /* kurangi padding lagi untuk layar yang lebih kecil */
+  }
 }
