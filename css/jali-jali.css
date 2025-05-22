@@ -63,6 +63,11 @@ body {
   padding-bottom: 15rem;
 }
 
+.menu h2 {
+  font-size: 3rem;
+  font-family: 800;
+}
+
 h4 {
   position: relative;
   font-size: 10px;
