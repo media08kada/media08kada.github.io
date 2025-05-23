@@ -805,6 +805,7 @@ body {
 .picture img,
 .images img {
   width: 100%;
+  border: 1px solid var(--bg1);
 }
 
 .bungkus,
@@ -1205,7 +1206,7 @@ body {
   height: 30rem;
   margin-right: 2rem;
   margim-bottom: 2rem;
-  broder-radius: 5%;
+  border: 1px solid var(--bg1);
 }
 
 .modal1-content h3,
