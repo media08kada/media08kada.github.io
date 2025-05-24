@@ -69,7 +69,7 @@ body {
   transform: scala(0);
   transition: 0.5s ease;
   transition-property: transform;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.8);
   z-index: 1;
 }
 
@@ -86,7 +86,7 @@ body {
   height: 150px;
   border-radius: 50%;
   border: 5px solid #fff;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.8);
 }
 
 .popup-box h2 {
