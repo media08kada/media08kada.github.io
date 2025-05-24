@@ -62,6 +62,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 2%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  filter: blur(10px);
 }
 
 .container img {
