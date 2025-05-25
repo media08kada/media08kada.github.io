@@ -367,11 +367,11 @@ body {
     font-size: 2.8rem;
     line-height: 2.8rem;
     }
+}
 
   .slider .list .item .detail .description {
       font-size: 0.8;
     }
-}
 
 /* Thumbnail Section  */
 .thumbnail {
@@ -1585,8 +1585,6 @@ footer .credit p {
     width: 80%;
   }
 
-
-  /* Giat Video */
   .video {
     width: 100%;
     padding: 10px;
@@ -1596,7 +1594,7 @@ footer .credit p {
     height: 300px;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   }
-
+  
   .thumbnail .item {
    width: 100px; 
    height: 150px; 
@@ -1624,7 +1622,8 @@ footer .credit p {
       align-items: center;
       flex-direction: column;
     }
-    .video {
+
+        .video {
       width: 100%;
       padding: 5px;
     }
