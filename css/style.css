@@ -706,6 +706,7 @@ body {
 }
 
 .about .row .content p {
+  color: #444;
   margin-bottom: 0.8rem;
   font-size: 1rem;
   font-weight: 500;
