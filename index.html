@@ -180,7 +180,7 @@
         <div class="content">
           <div class="title">MEDIA 08</div>
           <div class="type"><span>KELAPA DUA</span></div>
-          <p class="description">
+          <p class="description" style="color: #000;">
             Warga RW 08 jika butuh pelayanan<br>nga usah ribet cukup dengan scan QR Code</p>
           <div class="action">
             <a href="#" class="cta"><span>media.rw08kelapadua.web.id</span></a>
@@ -193,7 +193,7 @@
         <div class="content">
           <div class="title">MEDIA 08</div>
           <div class="type"><span>KELAPA DUA</span></div>
-          <p class="description">
+          <p class="description"  style="color: #fff;">
             Kampung Kite Kalo Bukan Kita Nyang Ngurus <br>Siape Lagi ?
           </p>
           <div class="action">
@@ -207,7 +207,7 @@
         <div class="content">
           <div class="title">MEDIA 08</div>
           <div class="type"><span>KELAPA DUA</span></div>
-          <p class="description">
+          <p class="description"  style="color: #000;">
             Jakarta, Kota Global dan Berbudaya</p>
           <div class="action">
             <a href="#" class="cta"><span>media.rw08kelapadua.web.id</span></a>
@@ -286,6 +286,35 @@
     </div>
   </section>
   <!-- Services End -->
+
+  <!-- clock Star -->
+  <div class="container-clock">
+     <div class="container-jam">
+  <div class="jam-container">
+    <span class="value" id="jam"></span>
+    <p class="tanggal" id="tanggal"></p>
+</div>
+    <script>
+      function updateJam() {
+        const date = new Date();
+        const jam = date.toLocaleTimeString('id-ID', { hour12: false });
+        document.getElementById("jam").innerHTML = jam;
+        setTimeout(updateJam, 1000);
+      }
+      
+      function updateTanggal() {
+        const date = new Date();
+        const tanggal = date.getDate();
+        const bulan = date.toLocaleString('default', { month: 'long' });
+        const tahun = date.getFullYear();
+        document.getElementById("tanggal").innerHTML = `${tanggal} ${bulan} ${tahun}`;
+      }
+      
+      updateJam();
+      updateTanggal();
+    </script>
+</div>
+<!-- clock End -->
 
        <!-- About Berita Utama start -->
           <section id="about" class="about" class="container">
