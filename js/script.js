@@ -287,20 +287,3 @@ document.querySelector('form[name="media08kada-form"]').addEventListener('submit
 });
 
 // Clock
-function updateJam() {
-  const date = new Date();
-  const jam = date.toLocaleTimeString('id-ID', { hour12: false });
-  document.getElementById('jam').innerHTML = jam;
-  setTimeout(updateJam, 1000);
-}
-
-function updateTanggal() {
-  const date = new Date();
-  const tanggal = date.getDate();
-  const bulan = date.toLocaleString('default', { month: 'long' });
-  const tahun = date.getFullYear();
-  document.getElementById('tanggal').innerHTML = `${tanggal} ${bulan} ${tahun}`;
-}
-
-updateJam();
-updateTanggal();

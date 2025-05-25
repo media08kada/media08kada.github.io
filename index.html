@@ -287,34 +287,19 @@
   </section>
   <!-- Services End -->
 
-  <!-- clock Star -->
+  <!-- Clock Section Star -->
   <div class="container-clock">
-     <div class="container-jam">
-  <div class="jam-container">
-    <span class="value" id="jam"></span>
-    <p class="tanggal" id="tanggal"></p>
-</div>
+    <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:227px;height:75px;"src="https://www.clocklink.com/html5embed.php?clock=008&timezone=Indonesia_Jakarta&color=black&size=227&Title=&Message=&Target=&From=2025,1,1,0,0,0&Color=black"></iframe><p id="tanggal" style="font-size: 20px; color: var(--primary)"></p>
     <script>
-      function updateJam() {
-        const date = new Date();
-        const jam = date.toLocaleTimeString('id-ID', { hour12: false });
-        document.getElementById("jam").innerHTML = jam;
-        setTimeout(updateJam, 1000);
-      }
+      const date = new Date();
+      const tanggal = date.getDate();
+      const bulan = date.toLocaleString('default', { month: 'long' });
+      const tahun = date.getFullYear();
       
-      function updateTanggal() {
-        const date = new Date();
-        const tanggal = date.getDate();
-        const bulan = date.toLocaleString('default', { month: 'long' });
-        const tahun = date.getFullYear();
-        document.getElementById("tanggal").innerHTML = `${tanggal} ${bulan} ${tahun}`;
-      }
-      
-      updateJam();
-      updateTanggal();
-    </script>
+      document.getElementById("tanggal").innerHTML = `${tanggal} ${bulan} ${tahun}`;
+      </script>
 </div>
-<!-- clock End -->
+<!-- Clock Section End -->
 
        <!-- About Berita Utama start -->
           <section id="about" class="about" class="container">
