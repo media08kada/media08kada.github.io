@@ -37,7 +37,7 @@
       <a href="index.html" style="color:#000; font-size:15px;">Beranda</a>
     </nav>
    </div>
-       
+     
     <!-- Calender Star -->
     <div class="hero">
 
@@ -75,24 +75,24 @@
         date: "January/1/2025", // Event date (required)
         calendarEvents: [
       {
-        id: 'event1', // Event's ID (required)
+        id: 'event', // Event's ID (required)
         name: "New Year", // Event name (required)
         date: "January/1/2020", // Event date (required)
         description: "Monitoring Wilayah Tahun 2025"
-        type: "Kegiatan", // Event type (required)
+        type: "holiday", // Event type (required)
         everyYear: true // Same event every year (optional)
       },
       {
         name: "Lomba Kelurahan Tingkat DKI Jakarta",
-        badge: "05/27 - 06/05", // Event badge (optional)
-        date: ["Mei/27/2025", "Juni/5/2025"], // Date range
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["Mei/27/2025", "Juni/05/2025"], // Date range
         description: "Lomba antar Kelurahan Tingkat Provinsi DKI Jakarta, setelah sebelumnya berhasil lolos pada tingkat Kecamatan Kebon Jeruk dan tingkat Pemerintah Kota (Pemkot) Administrasi Jakarta Barat.", // Event description (optional)
-        type: "Lomba",
+        type: "Lomba Kelurahan",
         color: "#63d867" // Event custom color (optional)
       }
     ]
 
-        type: "Kegiatan", // Event type (required)
+        type: "holiday", // Event type (required)
         everyYear: true // Same event every year (optional)
       },
       {
@@ -147,6 +147,7 @@
       feather.replace();
     </script>
 
+    <script src="js/script.js"></script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
       const form = document.forms['media08kd-form']
