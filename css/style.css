@@ -682,6 +682,7 @@ body {
   border: 1px solid #ddd; 
   border-radius: 6px;
   margin: 5px auto;
+  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
 }
 
 /* About Berita Utama Star */

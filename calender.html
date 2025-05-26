@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+     <!-- Favicons -->
+    <link rel="shortcut icon" href="./img/Media08Kada.png" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+     <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/evo-calendar.min.css">
+    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="css/calender.css">
+
+    <!-- Share Media Sosial -->
+    <script type="text/javascript" 
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=67ea04446aa9ea001960ddf1&product=inline-share-buttons&source=platform" async="async">
+    </script>
+
+   </head>
+  <body>
+
+        <!-- Navbar start -->
+    <nav class="navbar"data-aos="fade-down" data-aos-duration="1000">
+      <img src="img/Media08Kada.png" alt="Logo-media" width="50" height="50" class="d-inline-block align-text-top rounded"/>
+      <a href="index.html" style="color:#000; font-size:15px;">Beranda</a>
+    </nav>
+   </div>
+       
+    <!-- Calender Star -->
+    <div class="hero">
+
+      <div id="calendar"></div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/evo-calendar.min.js"></script>
+
+    <script>
+         $(document).ready(function() {
+    $('#calendar').evoCalendar({
+        
+    })
+})
+
+    </script>
+
+
+    </script>
+        <!-- My Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/evo-calendar.min.js"></script>
+
+    <script>
+         $(document).ready(function() {
+    $('#calendar').evoCalendar({
+
+      calendarEvents: [{
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2025", // Event date (required)
+        calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2020", // Event date (required)
+        description: "Monitoring Wilayah Tahun 2025"
+        type: "Kegiatan", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Lomba Kelurahan Tingkat DKI Jakarta",
+        badge: "05/27 - 06/05", // Event badge (optional)
+        date: ["Mei/27/2025", "Juni/5/2025"], // Date range
+        description: "Lomba antar Kelurahan Tingkat Provinsi DKI Jakarta, setelah sebelumnya berhasil lolos pada tingkat Kecamatan Kebon Jeruk dan tingkat Pemerintah Kota (Pemkot) Administrasi Jakarta Barat.", // Event description (optional)
+        type: "Lomba",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+
+        type: "Kegiatan", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2020", "February/15/2020"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+  })
+})
+
+    </script>
+     <!-- Calender End -->
+
+    <!-- Scroll Ke Atas Star-->
+        <div class="buttonToTop" onclick="scrollKeatas()">
+          <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+     
+        <!-- Scroll Ke Atas End-->
+        
+        <!-- Histats.com  (div with counter) -->
+        <footer><div id="histats_counter"></div>
+         <!-- Histats.com  START  (aync)-->
+         <script type="text/javascript">var _Hasync= _Hasync|| [];
+          _Hasync.push(['Histats.start', '1,4937767,4,1030,150,25,00011111']);
+          _Hasync.push(['Histats.fasi', '1']);
+          _Hasync.push(['Histats.track_hits', '']);
+          (function() {
+          var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+          hs.src = ('//s10.histats.com/js15_as.js');
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+         })();</script>
+         <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4937767&101" alt="free statistics" border="0"></a></noscript>
+         <!-- Histats.com  END  -->
+
+         <!-- Share Media Sosial -->
+         <div class="sharethis-inline-share-buttons" style="display: flex; justify-content: center;"></div>
+
+
+         <div class="credit">
+            <p style="font-size: 10px;">Created by <a href="https://lmkkelapadua.github.io">LMK RW 08-KelapaDua</a> | &copy; 2025.</p>
+          </div>
+        </footer>
+        <!-- Medsos end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
+      const form = document.forms['media08kd-form']
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+      })
+      </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+          </script>
+
+    <!-- My Javascript Popup Screen Iklan -->
+    <script type="text/javascript">
+      const popupScreen = document.querySelector(".popup-screen");
+      const popupBox = document.querySelector(".popup-box");
+      const closeBtn = document.querySelector(".close-btn");
+      const popupAudio = document.querySelector('popup-audio');
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          popupScreen.classList.add("active");
+          popupAudio.play();
+        }, 2000); //
+      });
+      closeBtn.addEventListener("click", () => {
+        popupScreen.classList.remove("active");
+        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
+
+        if(WebsiteCookie != -1){
+          popupScreen.style.display = "none";
+        }
+        else{
+          popupScreen.style.display = "flex";
+        }
+      });
+    </script>
+     </body>
+</html>

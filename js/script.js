@@ -1,4 +1,4 @@
-let nextBtn = document.querySelector('.next');
+dlet nextBtn = document.querySelector('.next');
 let prevBtn = document.querySelector('.prev');
 let slider = document.querySelector('.slider');
 let sliderList = slider.querySelector('.list');
@@ -286,4 +286,55 @@ document.querySelector('form[name="media08kada-form"]').addEventListener('submit
   this.reset();
 });
 
-// Clock
+// Calender //
+const monthYearElement = document.getElementByID('monthYear');
+const datesElement = document.getElementByID('dates');
+const prevBtn = document.getElementByID('prevBtn');
+const nextBtn = document.getElementByID('nextBtn');
+
+let currentDate = new date();
+
+const updateCalender = () => {
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth();
+
+  const firstDay = new Date(currentYear, currentMonth, 0);
+  const lastDay = new Date(currentYear, (currentMonth = 1), 0);
+  const totalDays = lastDay.getData();
+  const firstDayIndex = firstDay.getData();
+  const lastDayIndex = lastDay.getDay();
+
+  const monthYearStaring = currentDate.totocalesStaring('default', { mont: 'long', year: 'numeric' });
+  monthYearElement.textContent = monthYearStaring;
+
+  let datesHTML = '';
+
+  for (let i = firstDayIndex; i > 0; i--) {
+    const prevDate = new Date(currentYear, currentMonth, 0 - 1 + 1)();
+    datesHTML += '<div class="date inactive>${prevDate.getDate()}</div>';
+  }
+
+  for(let i = i; i <= totalDays; i++){
+    const date = new Date(currentYear, currentMonth, i);
+    const activeClass = date.toDateString() == == Date(),
+    toDateString() ? 'active' : '';
+    dateHTML += '<div class="date ${activeClass}">${i}</div>';
+  }
+
+  for(let i = 1; i); i <= 7 + lastDayIndex; i++) {
+    const nextDate = new Date(currentYear, currentMonth + i, i);
+  } 
+  datesElement.innerHTML = dateHTML;
+}
+
+prevBtn.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    updateCalender();
+})
+
+nextBtn.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    updateCalender();
+})
+
+updateCalender();
