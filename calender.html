@@ -8,11 +8,9 @@
     <link rel="shortcut icon" href="./img/Media08Kada.png" type="image/x-icon" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
 
      <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
@@ -51,7 +49,8 @@
     <script src="js/evo-calendar.min.js"></script>
 
     <script>
-         $(document).ready(function() {
+
+      $(document).ready(function() {
     $('#calendar').evoCalendar({
         
     })
@@ -60,7 +59,6 @@
     </script>
 
 
-    </script>
         <!-- My Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="js/evo-calendar.min.js"></script>
@@ -69,37 +67,19 @@
          $(document).ready(function() {
     $('#calendar').evoCalendar({
 
-      calendarEvents: [{
+     theme:"Midnight Blue",
+     calendarEvents: [{
         id: 'event1', // Event's ID (required)
         name: "New Year", // Event name (required)
         date: "January/1/2025", // Event date (required)
-        calendarEvents: [
-      {
-        id: 'event', // Event's ID (required)
-        name: "New Year", // Event name (required)
-        date: "January/1/2020", // Event date (required)
-        description: "Monitoring Wilayah Tahun 2025"
         type: "holiday", // Event type (required)
         everyYear: true // Same event every year (optional)
       },
       {
-        name: "Lomba Kelurahan Tingkat DKI Jakarta",
-        badge: "02/13 - 02/15", // Event badge (optional)
-        date: ["Mei/27/2025", "Juni/05/2025"], // Date range
-        description: "Lomba antar Kelurahan Tingkat Provinsi DKI Jakarta, setelah sebelumnya berhasil lolos pada tingkat Kecamatan Kebon Jeruk dan tingkat Pemerintah Kota (Pemkot) Administrasi Jakarta Barat.", // Event description (optional)
-        type: "Lomba Kelurahan",
-        color: "#63d867" // Event custom color (optional)
-      }
-    ]
-
-        type: "holiday", // Event type (required)
-        everyYear: true // Same event every year (optional)
-      },
-      {
-        name: "Vacation Leave",
-        badge: "02/13 - 02/15", // Event badge (optional)
-        date: ["February/13/2020", "February/15/2020"], // Date range
-        description: "Vacation leave for 3 days.", // Event description (optional)
+        name: "Lomba Kelurahan Tingkat Pemprov DKI Jakarta",
+        badge: "05/27 - 06/05", // Event badge (optional)
+        date: ["May/27/2025", "May/05/2025"], // Date range
+        description: "Kelurahan Kelapa Dua melaksanakan lomba antar Kelurahan Tingkat Provinsi DKI Jakarta.", // Event description (optional)
         type: "event",
         color: "#63d867" // Event custom color (optional)
       }
