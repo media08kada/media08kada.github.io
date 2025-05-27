@@ -54,33 +54,24 @@ body {
 }
 
 /* Product Iklan */
-.container {
+..container {
   width: 80%;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 2%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  filter: blur(10px);
 }
 
 .container img {
   width: 100%;
   height: auto;
   border: 1px solid var(--bg1);
+  box-shadow: 1px 1px 5px rgb(10, 10, 10);
   border-radius: 2%;
-  margin-bottom: 20px;
 }
 
 .container h3 {
-  font-size: 15px;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .container p {
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 1rem;
 }
 
 /* Scroll To Top */
