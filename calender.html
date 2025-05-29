@@ -67,23 +67,22 @@
     <script>
          $(document).ready(function() {
     $('#calendar').evoCalendar({
-
      theme:"Midnight Blue",
      calendarEvents: [{
-        id: 'event1', // Event's ID (required)
-        name: "New Year", // Event name (required)
-        date: "January/1/2025", // Event date (required)
-        type: "holiday", // Event type (required)
-        everyYear: true, // Same event every year (optional)
+        id: 'event1', 
+        name: "New Year", 
+        date: "January/1/2025",
+        type: "holiday", 
+        everyYear: true, 
         description:"Kelurahan Kelapa Dua saat ini melaksanakan persiapan lomba antar Kelurahan Tingkat Provinsi DKI Jakarta."
       },
       {
         name: "Lomba Kelurahan Tingkat Pemprov DKI Jakarta",
-        badge: "05/27 - 06/05", // Event badge (optional)
-        date: ["May/27/2025", "May/05/2025"], // Date range
-        description: "Kelurahan Kelapa Dua melaksanakan lomba antar Kelurahan Tingkat Provinsi DKI Jakarta.", // Event description (optional)
+        badge: "05/27 - 06/05",
+        date: ["May/27/2025", "May/05/2025"], 
+        description: "Kelurahan Kelapa Dua melaksanakan lomba antar Kelurahan Tingkat Provinsi DKI Jakarta.", 
         type: "event",
-        color: "#63d867" // Event custom color (optional)
+        color: "#63d867" 
       }
     ]
   })

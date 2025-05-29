@@ -25,19 +25,10 @@ body {
 }
 
 /* Style Utama */
-.container {
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: auto;
-  padding: 20px;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  z-index: 9999;
-}
-
 .menu .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 0.5rem;
   justify-content: center;
 }
 
@@ -46,12 +37,14 @@ body {
   padding-bottom: 4rem;
 }
 
-.menu .row .menu-card img {
+.menu .row .menu-card iframe {
   border-radius: 2%;
-  width: 75%;
+  width: 200%;
   border: 1px solid var(--bg1);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menu .row .menu-card .menu-card-title {
@@ -61,13 +54,11 @@ body {
   line-height: 1.6;
 }
 
-.menu .row .menu-card .menu-card-title img {
-  display: block;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(200, 200, 200, 0.5);
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  transition: 0.3s;
+@media (max-width: 768px) {
+  .menu .row .menu-card iframe {
+    width: 100%;
+    height: auto;
+    left: 0;
+    transform: none;
+  }
 }
