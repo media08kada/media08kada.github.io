@@ -7,19 +7,14 @@
      <!-- Favicons -->
     <link rel="shortcut icon" href="./img/Media08Kada.png" type="image/x-icon" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
-
-     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
     <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"
 
     <!-- Share Media Sosial -->
     <script type="text/javascript" 
@@ -39,24 +34,19 @@
      
     <!-- Calender Star -->
     <div class="hero">
-
       <div id="calendar"></div>
-
-
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="js/evo-calendar.min.js"></script>
 
     <script>
-
-      $(document).ready(function() {
+    $(document).ready(function() {
     $('#calendar').evoCalendar({
-        
+       
+
     })
 })
-
     </script>
 
 
@@ -65,39 +55,49 @@
     <script src="js/evo-calendar.min.js"></script>
 
     <script>
-         $(document).ready(function() {
-    $('#calendar').evoCalendar({
-     theme:"Midnight Blue",
-     calendarEvents: [{
-        id: 'event1', 
-        name: "New Year", 
-        date: "January/1/2025",
-        type: "holiday", 
-        everyYear: true, 
-        description:"Kelurahan Kelapa Dua saat ini melaksanakan persiapan lomba antar Kelurahan Tingkat Provinsi DKI Jakarta."
+    $(document).ready(function() {
+    $("#evoCalendar").evoCalendar({
+
+    theme: "Midnight Blue",
+    calendarEvents: [{
+        id: 'event1', // Event's ID (required)
+        name: "Lomba Kelurahan DKI", // Event name (required)
+        date: "May/27/2025", // Event date (required)
+        description:"Kelurahan kelapa Dua hari ini mengikuti Lomba Kelurahan tingkat Pemerintah Provinsi DKI Jakarta, di Gedung Balai Kota Jakarta.",
+        type: "Lomba", // Event type (required)
+        everyYear: true // Same event every year (optional)
       },
       {
-        name: "Lomba Kelurahan Tingkat Pemprov DKI Jakarta",
-        badge: "05/27 - 06/05",
-        date: ["May/27/2025", "May/05/2025"], 
-        description: "Kelurahan Kelapa Dua melaksanakan lomba antar Kelurahan Tingkat Provinsi DKI Jakarta.", 
+        id: 'event2', // Event's ID (required)
+        name: "Lomba PKK Kelurahan", // Event name (required)
+        date: "June/04/2025", // Event date (required)
+        description:"Lomba 10 Program PKK tingkat Pemkot Administrasi Jakarta Barat.",
+        type: "Lomba", // Event type (required)
+        everyYear: true // Same event every year (optional)
+       },
+       {
+        id: 'event3', // Event's ID (required)
+        name: "Lomba Posyandu", // Event name (required)
+        date: "June/11/2025", // Event date (required)
+        description:"Posyandu Siklus Hidup Melati RW-08 mengikuti lomba Posyandu tingkat Pemkot Administrasi Jakarta Barat.",
+        type: "Lomba", // Event type (required)
+        everyYear: true // Same event every year (optional)
+       },
+       {
+        name: "HUT Jakarta 498 Tahun",
+        badge: "06/01 - 06/22", // Event badge (optional)
+        date: ["June/01/2025", "June/22/2025"], // Date range
+        description: "Lomba dan Perayaan", // Event description (optional)
         type: "event",
-        color: "#63d867" 
+        color: "#63d867" // Event custom color (optional)
       }
     ]
   })
 })
-
-    </script>
+     </script>
      <!-- Calender End -->
 
-    <!-- Scroll Ke Atas Star-->
-        <div class="buttonToTop" onclick="scrollKeatas()">
-          <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
-        </div>
-     
-        <!-- Scroll Ke Atas End-->
-        
+      
         <!-- Histats.com  (div with counter) -->
         <footer><div id="histats_counter"></div>
          <!-- Histats.com  START  (aync)-->
@@ -115,8 +115,6 @@
 
          <!-- Share Media Sosial -->
          <div class="sharethis-inline-share-buttons" style="display: flex; justify-content: center;"></div>
-
-
          <div class="credit">
             <p style="font-size: 10px;">Created by <a href="https://lmkkelapadua.github.io">LMK RW 08-KelapaDua</a> | &copy; 2025.</p>
           </div>
@@ -129,47 +127,5 @@
     </script>
 
     <script src="js/script.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
-      const form = document.forms['media08kd-form']
-      
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-      })
-      </script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-          </script>
-
-    <!-- My Javascript Popup Screen Iklan -->
-    <script type="text/javascript">
-      const popupScreen = document.querySelector(".popup-screen");
-      const popupBox = document.querySelector(".popup-box");
-      const closeBtn = document.querySelector(".close-btn");
-      const popupAudio = document.querySelector('popup-audio');
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          popupScreen.classList.add("active");
-          popupAudio.play();
-        }, 2000); //
-      });
-      closeBtn.addEventListener("click", () => {
-        popupScreen.classList.remove("active");
-        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
-
-        if(WebsiteCookie != -1){
-          popupScreen.style.display = "none";
-        }
-        else{
-          popupScreen.style.display = "flex";
-        }
-      });
-    </script>
      </body>
 </html>
