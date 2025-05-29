@@ -7,7 +7,7 @@
 .hero {
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #6aclc5, #bda5ff;);
+  background: linear-gradient(45deg, #6aclc5, #fff;);
   position: relative;
 }
 
@@ -18,5 +18,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translateX(-50%);
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.8);
 }
