@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Share Media Sosial -->
     <script type="text/javascript" 
@@ -34,8 +34,9 @@
      
     <!-- Calender Star -->
     <div class="hero">
-      <div id="calendar"></div>
-    </div>
+  <div id="calendar" style="width: 80%;"></div>
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="js/evo-calendar.min.js"></script>
@@ -43,50 +44,35 @@
     <script>
     $(document).ready(function() {
     $('#calendar').evoCalendar({
-       
-
-    })
-})
-    </script>
-
-
-        <!-- My Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="js/evo-calendar.min.js"></script>
-
-    <script>
-    $(document).ready(function() {
-    $("#evoCalendar").evoCalendar({
-
-    theme: "Midnight Blue",
+           theme: "Midnight Blue",
     calendarEvents: [{
-        id: 'event1', // Event's ID (required)
-        name: "Lomba Kelurahan DKI", // Event name (required)
-        date: "May/27/2025", // Event date (required)
+        id: 'event1', 
+        name: "Lomba Kelurahan DKI", 
+        date: "May/27/2025", 
         description:"Kelurahan kelapa Dua hari ini mengikuti Lomba Kelurahan tingkat Pemerintah Provinsi DKI Jakarta, di Gedung Balai Kota Jakarta.",
-        type: "Lomba", // Event type (required)
-        everyYear: true // Same event every year (optional)
+        type: "Lomba", 
+        everyYear: true 
       },
       {
-        id: 'event2', // Event's ID (required)
-        name: "Lomba PKK Kelurahan", // Event name (required)
-        date: "June/04/2025", // Event date (required)
+        id: 'event2', 
+        name: "Lomba PKK Kelurahan",
+        date: "June/04/2025", 
         description:"Lomba 10 Program PKK tingkat Pemkot Administrasi Jakarta Barat.",
-        type: "Lomba", // Event type (required)
-        everyYear: true // Same event every year (optional)
+        type: "Lomba", 
+        everyYear: true 
        },
        {
-        id: 'event3', // Event's ID (required)
-        name: "Lomba Posyandu", // Event name (required)
-        date: "June/11/2025", // Event date (required)
+        id: 'event3', 
+        name: "Lomba Posyandu", 
+        date: "June/11/2025", 
         description:"Posyandu Siklus Hidup Melati RW-08 mengikuti lomba Posyandu tingkat Pemkot Administrasi Jakarta Barat.",
-        type: "Lomba", // Event type (required)
-        everyYear: true // Same event every year (optional)
+        type: "Lomba", 
+        everyYear: true 
        },
        {
         name: "HUT Jakarta 498 Tahun",
         badge: "06/01 - 06/22", // Event badge (optional)
-        date: ["June/01/2025", "June/22/2025"], // Date range
+        date: ["June/22/2025", "June/22/2025"], // Date range
         description: "Lomba dan Perayaan", // Event description (optional)
         type: "event",
         color: "#63d867" // Event custom color (optional)
@@ -95,7 +81,11 @@
   })
 })
      </script>
-     <!-- Calender End -->
+
+
+        <!-- My Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/evo-calendar.min.js"></script>
 
       
         <!-- Histats.com  (div with counter) -->
