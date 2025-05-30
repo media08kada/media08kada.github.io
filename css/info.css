@@ -8,7 +8,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
-  /* background-color: #eee; */
   color: #000;
 }
 
@@ -24,17 +23,26 @@ body {
   text-decoration: underline;
 }
 
-/* Style Utama */
+/* Infografis */
 .menu .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   justify-content: center;
 }
 
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
+}
+
+.menu-card {
+  text-align: center;
+}
+
+.menu-card iframe {
+  margin: 0 auto;
+  display: block;
 }
 
 .menu .row .menu-card iframe {
@@ -62,4 +70,42 @@ body {
     margin: 0 auto;
     display: block;
   }
+}
+
+/* Info Penting-2 */
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%; /* atur lebar menu-card */
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .menu .row .menu-card {
+    width: 100%; /* atur lebar menu-card pada layar kecil */
+  }
+}
+
+.menu .row .menu-card img {
+  border-radius: 2%;
+  width: 75%;
+  border: 1px solid var(--bg1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+  color: #000;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.6;
 }
