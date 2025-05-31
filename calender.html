@@ -4,97 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calender Event</title>
-     <!-- Favicons -->
+    <!-- Favicons -->
     <link rel="shortcut icon" href="./img/Media08Kada.png" type="image/x-icon" />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <link rel="stylesheet" href="css/calender.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calender.css" />
+    <link rel="stylesheet" href="css/evo-calendar.min.css" />
+    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
     <!-- Share Media Sosial -->
-    <script type="text/javascript" 
-    src="https://platform-api.sharethis.com/js/sharethis.js#property=67ea04446aa9ea001960ddf1&product=inline-share-buttons&source=platform" async="async">
-    </script>
-
-   </head>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=67ea04446aa9ea001960ddf1&product=inline-share-buttons&source=platform" async="async"></script>
+  </head>
   <body>
-
-        <!-- Navbar start -->
+    <!-- Navbar start -->
     <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
     <a href="index.html" class="navbar-brand">
     <img src="img/Media08Kada.png" alt="Logo-media" width="50" height="50" class="d-inline-block align-text-top rounded" style="cursor: pointer;"></a>
       <a href="index.html" style="color:#000; font-size:15px;">Beranda</a>
     </nav>
-   </div>
-     
+   </div> 
     <!-- Calender Star -->
     <div class="hero">
-  <div id="calendar"></div>
-</div>
+      <div id="calendar"></div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="js/evo-calendar.min.js"></script>
 
     <script>
-    $(document).ready(function() {
-    $('#calendar').evoCalendar({
-           theme: "Midnight Blue",
-    calendarEvents: [{
-        id: 'event1', 
-        name: "Lomba Posyandu", 
-        date: "May/15/2025", 
-        description:"Posyandu Siklus Hidup Melati RW-08 mengikuti lomba Posyandu tingkat Kecamatan Kebon Jeruk",
-        type: "Lomba", 
-      },
-      {
-        id: 'event2', 
-        name: "Lomba Kelurahan DKI Jakarta", 
-        date: "May/27/2025", 
-        description:"Kelurahan kelapa Dua mengikuti Lomba Kelurahan tingkat Pemerintah Provinsi DKI Jakarta, di Gedung Balai Kota Jakarta.",
-        type: "Lomba", 
-      },
-      {
-        id: 'event3', 
-        name: "Lomba PKK Kelurahan",
-        date: "June/04/2025", 
-        description:"Lomba 10 Program PKK tingkat Pemkot Administrasi Jakarta Barat.",
-        type: "Lomba", 
-       },
-       {
-        id: 'event4', 
-        name: "Lomba Kelurahan DKI Jakarta", 
-        date: "June/05/2025", 
-        description:"Verifikasi lapangan lomba Kelurahan tingkat Pemprov DKI Jakarta.",
-        type: "Lomba", 
-       },
-       {
-        id: 'event5', 
-        name: "Lomba Posyandu", 
-        date: "June/11/2025", 
-        description:"Posyandu Siklus Hidup Melati RW-08 mengikuti lomba Posyandu tingkat Pemkot Administrasi Jakarta Barat.",
-        type: "Lomba", 
-       },
-       {
-        name: "HUT Jakarta 498 Tahun",
-        badge: "06/01 - 06/22", 
-        date: ["June/22/2025", "June/22/2025"], 
-        description: "Lomba dan Perayaan", 
-        type: "event",
-        color: "#63d867",
-      }
-    ]
-  })
-})
-     </script>
+      $(document).ready(function () {
+        $('#calendar').evoCalendar({
+          theme: 'Default',
+          calendarEvents: [
+            {
+              id: 'event1',
+              name: 'Lomba Posyandu',
+              date: 'May/15/2025',
+              description: 'Posyandu Siklus Hidup Melati RW-08 mengikuti lomba Posyandu tingkat Kecamatan Kebon Jeruk',
+              type: 'Lomba',
+            },
+            {
+              id: 'event2',
+              name: 'Lomba Kelurahan DKI Jakarta',
+              date: 'May/27/2025',
+              description: 'Kelurahan kelapa Dua mengikuti Lomba Kelurahan tingkat Pemerintah Provinsi DKI Jakarta, di Gedung Balai Kota Jakarta.',
+              type: 'Lomba',
+            },
+            {
+              id: 'event3',
+              name: 'Lomba PKK Kelurahan',
+              date: 'June/04/2025',
+              description: 'Lomba 10 Program PKK tingkat Pemkot Administrasi Jakarta Barat.',
+              type: 'Lomba',
+            },
+            {
+              id: 'event4',
+              name: 'Lomba Kelurahan DKI Jakarta',
+              date: 'June/05/2025',
+              description: 'Verifikasi lapangan lomba Kelurahan tingkat Pemprov DKI Jakarta.',
+              type: 'Lomba',
+            },
+            {
+              id: 'event5',
+              name: 'Lomba Posyandu',
+              date: 'June/11/2025',
+              description: 'Posyandu Siklus Hidup Melati RW-08 lomba Posyandu tingkat Pemkot Administrasi Jakarta Barat.',
+              type: 'Lomba',
+            },
+            {
+              name: 'HUT Jakarta 498 Tahun',
+              badge: '06/01 - 06/22',
+              date: ['June/22/2025', 'June/22/2025'],
+              description: 'Lomba dan Perayaan',
+              type: 'event',
+              color: '#63d867',
+            },
+          ],
+        });
+      });
+    </script>
+    <!-- Calender end -->
 
-        <!-- Histats.com  (div with counter) -->
-        <footer><div id="histats_counter"></div>
-         <!-- Histats.com  START  (aync)-->
+    <!-- Histats.com  (div with counter) -->
+    <!-- Histats.com  START  (aync)-->
+    <footer><div id="histats_counter"></div>
          <script type="text/javascript">var _Hasync= _Hasync|| [];
           _Hasync.push(['Histats.start', '1,4937767,4,1030,150,25,00011111']);
           _Hasync.push(['Histats.fasi', '1']);
@@ -105,19 +102,19 @@
          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
          })();</script>
          <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4937767&101" alt="free statistics" border="0"></a></noscript>
-         <!-- Histats.com  END  -->
+    <!-- Histats.com  END  -->
 
-         <!-- Share Media Sosial -->
-         <div class="sharethis-inline-share-buttons" style="display: flex; justify-content: center;"></div>
+    <!-- Share Media Sosial -->
+    <div class="sharethis-inline-share-buttons" style="display: flex; justify-content: center;"></div>
          <div class="credit">
             <p style="font-size: 10px;">Created by <a href="https://lmkkelapadua.github.io">LMK RW 08-KelapaDua</a> | &copy; 2025.</p>
           </div>
         </footer>
-        <!-- Medsos end -->
+    <!-- Medsos end -->
 
     <!-- Feather Icons -->
     <script>
       feather.replace();
     </script>
-     </body>
+  </body>
 </html>
