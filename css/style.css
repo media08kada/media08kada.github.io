@@ -283,6 +283,7 @@ body {
 
 .slider .list .item .content .title,
 .slider .list .item .content .type {
+  font-family: Poppins;
   font-size: 4em; 
   font-weight: bold;
   line-height: 1.2em;
