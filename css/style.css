@@ -692,6 +692,40 @@ body {
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
 }
 
+/* Container Iklan Star */
+.container-iklan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; /* atau ukuran yang sesuai */
+  padding: 65px;
+  margin: 5px auto;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+
+.container-iklan img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
 /* About Berita Utama Star */
 .about,
 .menu,
