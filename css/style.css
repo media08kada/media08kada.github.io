@@ -718,13 +718,13 @@ body {
 
 @media (max-width: 768px) {
   .container-iklan {
-    padding: 50px; /* kurangi padding untuk ukuran handphone */
+    padding: 20px; /* kurangi padding untuk ukuran handphone */
   }
 }
 
 @media (max-width: 480px) {
   .container-iklan {
-    padding: 50px; /* kurangi padding lagi untuk ukuran handphone kecil */
+    padding: 10px; /* kurangi padding lagi untuk ukuran handphone kecil */
   }
 }
 
