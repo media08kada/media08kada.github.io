@@ -707,7 +707,6 @@ body {
    position: relative;
 }
 
-
 .container-iklan img {
   position: absolute;
   top: 0;
@@ -717,14 +716,17 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .container-iklan {
+    padding: 50px; /* kurangi padding untuk ukuran handphone */
+  }
+}
 
-
-
-
-
-
-
-
+@media (max-width: 480px) {
+  .container-iklan {
+    padding: 50px; /* kurangi padding lagi untuk ukuran handphone kecil */
+  }
+}
 
 /* About Berita Utama Star */
 .about,
