@@ -310,7 +310,7 @@ body {
 .slider .content p {
   margin-bottom: 3rem;
   margin-top: 1rem;   
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--primary);
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
