@@ -180,7 +180,7 @@ body {
 .services1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
+  gap: 10px;
 }
 
 .service1 {
@@ -188,13 +188,13 @@ body {
   padding: 2px;
   text-align: center;
   border: 1px solid var(--bg);
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
 }
 
 .service1 a {
   display: block;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--bg1);
   text-decoration: none;
   text-align: center;
