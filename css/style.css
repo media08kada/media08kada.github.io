@@ -959,7 +959,7 @@ body {
 }
 
 .preview p {
-  max-width: 80rem;
+  max-width: 30rem;
   margin: auto;
   font-weight: 500;
   line-height: 1.6;
