@@ -35,9 +35,9 @@ body {
 
 /* Preview Box */
 .products-preview .container {
-  max-width: 100%;
+  max-width: 100% auto;
   margin: 0;
-  padding: 0 30px;
+  padding: 0;
   background-color: var(--bg);
 }
 
@@ -62,20 +62,18 @@ body {
   background: #fff;
   position: relative;
   margin: 2rem;
-  width: 80%;
+  width: 100%;
   animation: animatePreview 0.5s;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 1%;
   overflow-y: auto;
-  max-height: 95vh;
+  max-height: 100vh;
 }
 
 .products-preview img {
-  weight: 15rem;
-  height: 15rem;
+  width: 35rem;
+  height: 35rem;
   margin-right: 2rem;
-  margim-bottom: 2rem;
-  broder-radius: 5%;
+  margin-bottom: 2rem;
 }
 
 /* Preview Animation */
@@ -95,9 +93,9 @@ body {
 }
 
 .products-preview .preview .fa-times {
-  position: fixed;
-  top: 2.5rem;
-  right: 10rem;
+  position: absolute; /* Perbaikan: fixed -> absolute */
+  top: 1rem;
+  right: 1rem;
   margin: 5px;
   cursor: pointer;
   color: #444;
@@ -113,57 +111,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .products-preview .preview .fa-times {
-    position: fixed;
-    top: 2.5rem;
-    right: 8rem;
-    margin: 2px;
-  }
-}
-
-@media (max-width: 480px) {
-  .products-preview .preview .fa-times {
-    position: fixed;
-    top: 2.5rem;
-    right: 4.5rem;
-    margin: 2px;
-  }
-}
-
-.products-preview .preview .fa-times {
-  transition: transform 0.5s ease-in-out;
-}
-
-.products-preview .preview .fa-times:hover {
-  background-color: var(--primary);
-  color: #000;
-}
-
-.products-preview .preview .fa-times:hover {
-  transform: rotate(90deg);
-}
-
-.products-preview .preview h3 {
-  color: #444;
-  padding: 0.5rem 0;
-  font-size: 1.5rem;
-}
-
-.products-preview .preview p {
-  color: #444;
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
-.products-preview .preview h4 {
-  color: #444;
-  padding: 0.5rem 0;
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
   .products-preview .preview {
     flex-direction: column;
   }
@@ -171,8 +118,30 @@ body {
   .products-preview .preview img {
     width: 100%;
     height: auto;
+    margin-top: 0;
     margin-right: 0;
     margin-bottom: 2rem;
+  }
+
+  .products-preview .preview p {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    font-size: 1.6px;
+  }
+
+  .products-preview .preview iframe {
+    margin-top: 0;
+    width: 100% auto;
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .products-preview .preview iframe {
+    width: 50%;
   }
 }
 
