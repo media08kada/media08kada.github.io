@@ -92,7 +92,7 @@ body {
 .dropdown-menu a,
 .navbar-nav a .icon {
   position: relative;
-  top: 5px; /* atur nilai top */
+  top: 5px; 
 }
 
 /* Navbar Sejajar/beranak Star */
@@ -116,7 +116,7 @@ body {
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0;
-  min-width: 130px;
+  min-width: 180px;
   transition: 0.2s linear;
   border-radius: 10%;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
