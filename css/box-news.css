@@ -58,7 +58,7 @@ body {
 .box-news img {
   background-color: var(--bg);
   width: 300px;
-  height: 150px;
+  height: 180px;
   padding: 10px;
   text-align: center;
   border-radius: 3px;
@@ -72,25 +72,32 @@ body {
 .box-news h3 {
   font-weight: 800;
   letter-spacing: 0.5px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #000;
-  line-height: 1.1;
+  line-height: 1.6;
   text-align: center;
 }
 
-.box-news p {
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  font-size: 1em;
+.box-news h3 a {
   color: #000;
-  line-height: 1.1;
+  transition: color 0.3s ease-in-out;
+}
+
+.box-news h3 a:hover {
+  color: var(--bg1);
+}
+
+.box-news p {
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
   text-align: center;
 }
 
 /* Item Detail */
-.modal1,
-.modal2,
-.modal3 {
+.box {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -102,9 +109,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal1-container,
-.modal2-container,
-.modal3-container {
+.box-container {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
@@ -129,30 +134,17 @@ body {
   }
 }
 
-.modal1-container .close-icon,
-.modal2-container .close-icon,
-.modal3-container .close-icon {
-  position: absolute;
-  right: 1rem;
-}
-
-.modal1-container .close-icon:hover,
-.modal2-container .close-icon:hover,
-.modal3-container .close-icon:hover {
+.box-container h3:hover {
   background-color: var(--bg1);
   color: #000;
 }
 
-.modal1-content,
-.modal2-content,
-.modal3-content {
+.box-content {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.modal1-content img,
-.modal2-content img,
-.modal3-content img {
+.box-content img {
   weight: 30rem;
   height: 30rem;
   margin-right: 2rem;
@@ -160,23 +152,17 @@ body {
   border: 1px solid var(--bg1);
 }
 
-.modal1-content h3,
-.modal2-content h3,
-.modal3-content h3 {
+.box-content h3 {
   font-size: 1.8rem;
 }
 
-.modal1-content p,
-.modal2-content p,
-.modal3-content p {
+.box-content p {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-top: 2rem;
 }
 
-.modal1-content h4,
-.modal2-content h4,
-.modal3-content h4 {
+.box-content h4 {
   color: #444;
   padding: 0.5rem 0;
   font-size: 1rem;
@@ -184,7 +170,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .about .modal3-content {
+  .about .box-content {
     width: 100%;
   }
 
