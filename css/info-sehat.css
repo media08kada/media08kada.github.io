@@ -53,6 +53,7 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  align-items: center;
 }
 
 .menu .row .menu-card .menu-card-title {
@@ -64,11 +65,12 @@ body {
 
 @media (max-width: 768px) {
   .menu .row .menu-card iframe {
-    width: 150%;
-    height: auto;
-    aspect-ratio: 16/9;
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 9/16;
     margin: 0 auto;
     display: block;
+    align-items: center;
   }
 }
 
@@ -91,13 +93,13 @@ body {
 
 @media (max-width: 768px) {
   .menu .row .menu-card {
-    width: 100%; /* atur lebar menu-card pada layar kecil */
+    width: 80%;
   }
 }
 
 .menu .row .menu-card img {
   border-radius: 2%;
-  width: 75%;
+  width: 100%;
   border: 1px solid var(--bg1);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   position: relative;
