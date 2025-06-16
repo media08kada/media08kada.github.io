@@ -73,7 +73,6 @@ body {
   letter-spacing: 0.5px;
   font-size: 1.2rem;
   color: #000;
-  line-height: 1.6;
   text-align: center;
 }
 
@@ -86,14 +85,14 @@ body {
   color: var(--bg1);
 }
 
-.box-news p {
+/*.box-news p {
   letter-spacing: 0.5px;
   font-weight: 300;
   font-size: 1rem;
   color: #000;
   line-height: 1.6;
   text-align: center;
-}
+}*/
 
 /* Item Detail */
 .box {
