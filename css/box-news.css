@@ -48,7 +48,7 @@ body {
 /* Box News Star */
 .box-newss {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   border-radius: 5px;
   align-items: center;
@@ -58,7 +58,7 @@ body {
 .box-news img {
   background-color: var(--bg);
   width: 100%;
-  height: 190px;
+  height: 150px;
   padding: 10px;
   text-align: center;
   border-radius: 3px;
@@ -71,7 +71,7 @@ body {
 .box-news h3 {
   font-weight: 800;
   letter-spacing: 0.5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #000;
   text-align: center;
 }
@@ -83,6 +83,18 @@ body {
 
 .box-news h3 a:hover {
   color: var(--bg1);
+}
+
+@media screen and (max-width: 768px) {
+  .box-newss {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-newss {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*.box-news p {
