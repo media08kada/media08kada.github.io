@@ -46,13 +46,13 @@ body {
 }
 
 /* Box News Star */
-.box-container {
+/*.box-container {
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 0 10px;
-}
+}*/
 
 .box-newss {
   display: grid;
@@ -85,7 +85,7 @@ body {
   font-size: 0.8rem;
   color: #000;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .box-news h3 a {
