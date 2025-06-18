@@ -832,6 +832,23 @@ body {
 }
 /* Box Contonue End */
 
+/* Container News  */
+.about .container-box h2 {
+  line-height: 0.5;
+}
+
+.container-box {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #f7f7f7; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  padding-top: 0.5px;
+}
+
 /* Slider Berita */
 .media,
 .picture,
@@ -1493,7 +1510,7 @@ footer .credit p {
 
   .contact .row .map {
     height: 30rem;
-    width: 5rem;
+    width: 20rem;
   }
 
   .contact .row form {
