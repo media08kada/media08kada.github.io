@@ -1,7 +1,7 @@
 :root {
   --primary: #b6895b;
-  --bg: #eaeaea; /*#010101*/
-  --bg1: #14ff72cb;
+  --bg: #eaeaea;
+  --bg1: #28c76f;
   --secondary: #000;
 }
 
@@ -55,13 +55,6 @@ body {
   z-index: 9999;
 }
 
-.menu .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
@@ -84,7 +77,7 @@ body {
   max-width: 50rem;
   margin: auto;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .menu .row {
@@ -101,7 +94,7 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 65%;
+  width: 85%;
   border: 1px solid var(--bg1);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   position: relative;
