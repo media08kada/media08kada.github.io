@@ -640,7 +640,8 @@ body {
 
 .service a {
   display: block;
-  font-size: 1.2em;
+  font-family: bold;
+  font-size: 1em;
   color: var(--primary);
   text-decoration: none;
   text-align: center;
