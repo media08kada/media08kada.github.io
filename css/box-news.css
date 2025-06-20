@@ -109,15 +109,6 @@ body {
   }
 }
 
-/*.box-news p {
-  letter-spacing: 0.5px;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #000;
-  line-height: 1.6;
-  text-align: center;
-}*/
-
 /* Item Detail */
 .box {
   display: none;
@@ -172,6 +163,7 @@ body {
   margin-right: 2rem;
   margim-bottom: 2rem;
   border: 1px solid var(--bg1);
+  border-radius: 5px;
 }
 
 .box-content h3 {
