@@ -14,13 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
 
-
-    <!-- font awesome cdn link  -->
+     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <!-- custom css file link -->
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/box-giat.css">
 <link rel="stylesheet" href="../css/box-news.css">
 
 <!-- custom js file link -->
@@ -53,18 +51,18 @@
       <a href="../index.html" style="color:#000; font-size:15px;">Beranda</a>
     </nav>
    </div>
-  <br><br><br><br>
+  <br><br><br><br><br><br>
 
      <!-- About Berita Utama start -->
           <section id="about" class="about">
-          <h2 data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300"><span>Giat</span> Berita</h2> 
+          <h2 data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300"><span>Giat</span> Wilayah</h2> 
                  
         <div class="row">
           <div class="box-content">
-            <img src="../img/box-news/news1.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300">
+            <img src="../img/giat/B1.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300">
           </div>
          <div class="content" data-aos="fade-left" data-aos-duration="1000" date-aos-delay="500">
-        <h3>Posyandu Remaja</h3>
+         <h3>Posyandu Remaja</h3>
         <h4>Tanggal, 14 Juni 2025</h4>
         <br>
         <p align="justify">MediaKada | Kegiatan Posyandu Remaja Siklus Hidup Melati RW 08 Kelapa Dua, berlangsung pada minggu ke 2 pada hari Sabtu tiap bulannya. Kegiatan ini diperuntukkan untuk anak usia 10-17 Tahun, dimana kader penyelenggaran Posyandu Remaja adalah para remaja dilingkungan RW 08.</p>
@@ -109,6 +107,16 @@
           </footer>
         <!-- Medsos end -->
 
+             <!-- My Javascript -->
+          <script>
+          function scrollKeatas() {
+            window.scrollTo({
+              top: 0, 
+              behavior: "smooth"
+            })
+          }
+         </script>
+
     <!-- Feather Icons -->
     <script>
       feather.replace();
@@ -116,18 +124,7 @@
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
-      const form = document.forms['media08kd-form']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-    
+        
     </script>
   </body>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -136,30 +133,5 @@
       AOS.init();
     </script>
 
-     <!-- My Javascript Popup Screen Iklan -->
-    <script type="text/javascript">
-      const popupScreen = document.querySelector(".popup-screen");
-      const popupBox = document.querySelector(".popup-box");
-      const closeBtn = document.querySelector(".close-btn");
-      const popupAudio = document.querySelector('popup-audio');
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          popupScreen.classList.add("active");
-          popupAudio.play();
-        }, 2000); //
-      });
-      closeBtn.addEventListener("click", () => {
-        popupScreen.classList.remove("active");
-        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
-
-        if(WebsiteCookie != -1){
-          popupScreen.style.display = "none";
-        }
-        else{
-          popupScreen.style.display = "flex";
-        }
-      });
-    </script>
-     </body>
+   </body>
 </html>
