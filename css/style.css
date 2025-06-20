@@ -843,7 +843,7 @@ body {
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 20px; 
-  background-color: #f7f7f7; 
+  background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% ); 
   border: 1px solid #ddd; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 80px;
@@ -1095,7 +1095,7 @@ body {
 .modal2-container,
 .modal3-container {
   position: relative; 
-  background-color: #fefefe;
+  background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% );
   color: var(--bg);
   margin: 5% auto; 
   padding: 1.2rem;
