@@ -46,6 +46,10 @@ body {
 }
 
 /* Box News Star */
+.menu .container-box h2 {
+  line-height: 0.5;
+}
+
 .container-box {
   width: 100% auto;
   max-width: 1500px;
@@ -84,6 +88,7 @@ body {
 .gallery-item {
   display: flex;
   align-items: flex-start;
+
   gap: 10px;
   cursor: pointer;
 }
@@ -105,7 +110,6 @@ body {
   .gallery-item {
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
   .gallery-item img {

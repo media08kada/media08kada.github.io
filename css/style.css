@@ -833,23 +833,6 @@ body {
 }
 /* Box Contonue End */
 
-/* Container News  */
-.about .container-box h2 {
-  line-height: 0.5;
-}
-
-.container-box {
-  width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 20px; 
-  background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% ); 
-  border: 1px solid #ddd; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 80px;
-  padding-top: 0.5px;
-}
-
 /* Slider Berita */
 .media,
 .picture,
