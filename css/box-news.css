@@ -96,7 +96,7 @@ body {
 }
 
 .gallery-item .text-box p {
-  flex: 1 1 55rem;
+  flex: 1 1 50rem;
   line-height: 1.2;
   padding: 3rem 5% 1rem;
 }
@@ -132,9 +132,8 @@ body {
 
 @media (max-width: 768px) {
   .gallery-item p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     white-space: normal;
-    overflow-wrap: break-word;
   }
 }
 
