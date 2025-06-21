@@ -52,7 +52,7 @@ body {
 
 .container-box {
   width: 100% auto;
-  max-width: 1500px;
+  max-width: cover;
   margin: 0 auto;
   padding: 20px;
   background-image: radial-gradient(circle 343px at 46.3% 47.5%, rgba(242, 242, 242, 1) 0%, rgba(241, 241, 241, 1) 72.9%);
@@ -60,6 +60,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 80px;
   padding-top: 0.5px;
+  border-radius: 2%;
 }
 
 .container-box {
