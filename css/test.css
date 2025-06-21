@@ -1,0 +1,92 @@
+:root {
+  --primary: #b6895b;
+  --bg: #eaeaea;
+  --bg1: #28c76f;
+  --secondary: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  /* background-color: #eee; */
+  color: #000;
+}
+
+/* Style Gallery */
+img {
+  max-width: 80% auto;
+  border: 1px solid var(--bg1);
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Atur kolom grid */
+  gap: 80px; /* Atur jarak antara kolom */
+}
+
+.preview-img {
+  grid-column: 1; /* Atur posisi preview-img */
+  width: 110%; /* Atur lebar preview-img */
+  height: auto;
+  border-radius: 2%;
+}
+
+.galleries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gallery-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 145px; /* Atur lebar gambar */
+  height: auto;
+  border-radius: 3%;
+}
+
+.gallery-item p {
+  font-size: 15px;
+  line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .gallery-item {
+    display: flex;
+    flex-direction: row; /* Atur arah flex menjadi row */
+    align-items: center;
+  }
+
+  .gallery-item img {
+    width: 100%; /* Atur lebar gambar */
+    height: auto;
+  }
+
+  .gallery-item p {
+    font-size: 14px; /* Atur ukuran font */
+    margin-left: 10px; /* Atur jarak antara gambar dan text */
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-img {
+    display: none; /* Menghilangkan galleries di layar kecil */
+  }
+
+  .preview-img {
+    width: 100%; /* Atur lebar preview-img */
+    height: auto;
+  }
+}
