@@ -699,7 +699,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%; /* atau ukuran yang sesuai */
+  width: 100%; 
   padding: 65px;
   margin: 5px auto;
   background-color: #f7f7f7;
@@ -935,7 +935,7 @@ body {
   border-bottom: 0.5px solid #333;
   padding: 30px;
   display: flex;
-  justify-content: space-between;
+  
   align-items: center;
 }
 

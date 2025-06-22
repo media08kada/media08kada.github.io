@@ -46,25 +46,16 @@ body {
 }
 
 /* Box News Star */
-.menu .container-box h2 {
-  line-height: 0.5;
-}
-
-.container-box {
-  width: 100%;
-  margin: 0;
-  padding: 15px;
-  background-image: radial-gradient(circle 343px at 46.3% 47.5%, rgba(242, 242, 242, 1) 0%, rgba(241, 241, 241, 1) 72.9%);
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding-top: 0.5px;
-}
-
 .container-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 120px;
-  margin-top: 10px;
+  gap: 130px;
+  max-width: 1200px; /* atau nilai sesuai kebutuhan */
+  margin: 0 auto;
+  padding: 1.4rem 3% 1.4rem;
+  background-image: radial-gradient(circle 343px at 46.3% 47.5%, rgba(242, 242, 242, 1) 0%, rgba(241, 241, 241, 1) 72.9%);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .view-img {
@@ -78,7 +69,7 @@ body {
 .photoes {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 18px;
   margin-top: 15px;
 }
 
@@ -157,18 +148,13 @@ body {
   .photo-item a {
     text-align: left !important;
     font-size: 1.2rem;
-    white-space: none;
+    white-space: normal;
   }
 }
 
 @media (max-width: 768px) {
   .view-img {
     display: none;
-  }
-
-  .view-img {
-    width: 100px;
-    height: auto;
   }
 
   .photo-item a {
