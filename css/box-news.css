@@ -56,6 +56,7 @@ body {
   background-image: radial-gradient(circle 343px at 46.3% 47.5%, rgba(242, 242, 242, 1) 0%, rgba(241, 241, 241, 1) 72.9%);
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1%;
 }
 
 .view-img {
@@ -99,12 +100,13 @@ body {
   display: block;
   position: relative;
   overflow: hidden;
-  width: auto;
+  width: 300px;
   text-align: left !important;
   flex: 1 1 50rem;
   line-height: 1.2;
   padding: 1rem 2% 0.5rem;
   transition: 0.3s;
+  color: #fff;
 }
 
 .photo-item a:hover {
@@ -161,6 +163,7 @@ body {
     text-align: left !important;
     font-size: 1.2rem;
     white-space: normal;
+    width: 100px;
   }
 }
 
