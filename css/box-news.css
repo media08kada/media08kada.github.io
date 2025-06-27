@@ -166,6 +166,34 @@ body {
   }
 }
 
+/* Box Continue Star... */
+.continue4,
+.continue3,
+.continue2,
+.continue1 {
+  background-color: var(--bg1);
+  padding: 1.5px 1px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80px;
+  height: auto;
+  height: 20px auto;
+  margin: 20px 0 20px 0;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+  transition: background-color 0.3s;
+  line-height: 0.5; /* Atur line-height */
+}
+
+.Continue4:hover,
+.Continue3:hover,
+.Continue2:hover,
+.Continue1:hover {
+  background-color: var(primary); /* Warna latar belakang saat hover */
+}
+
+/* Box Contonue End */
+
 /* Item Detail */
 .box {
   display: none;
@@ -247,6 +275,15 @@ body {
 
   .about .content {
     width: 100%;
+  }
+
+  .continue4,
+  .continue3,
+  .continue2,
+  .continue1 {
+    width: 55%;
+    line-height: 0.5; /* Atur line-height */
+    text-align: center;
   }
 }
 
