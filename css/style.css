@@ -1203,6 +1203,11 @@ body {
   margin: 20px auto;
 }
 
+.video p {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
 .video iframe {
   width: 100%; 
   height: 400px; 
