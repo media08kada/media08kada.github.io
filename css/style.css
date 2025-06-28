@@ -118,12 +118,12 @@ body {
   padding: 0;
   min-width: 180px;
   transition: 0.2s linear;
-  border-radius: 10%;
+  border-radius: 10px;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown-menu a {
-  display: inline-block;
+  display: block;
   padding: 5px;
   text-decoration: none;
   color: #000;
@@ -135,13 +135,11 @@ body {
 
 /* Tanda Panah */
 .dropdown-toggle::after {
-  content: '\25B2'; /* kode untuk tanda panah ke atas */
-  font-size: 1rem;
-  margin-left: 0.5rem;
+  content: '\25B2';
 }
 
 .dropdown-toggle.open::after {
-  content: '\25BC'; /* kode untuk tanda panah ke bawah */
+  content: '\25BC';
 }
 /* Navbar Sejajar/beranak End */
 
@@ -161,8 +159,10 @@ body {
   align-items: center;
   transform: scaleY(0);
   transform-origin: top;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.8);
+  z-index: 100;
+  box-sizing: border-box;
 }
 
 .navbar .search-form.active {
@@ -194,10 +194,11 @@ body {
   padding: 0 1.5rem;
   background-color: #fff;
   color: #000;
-  transition: 0.3s;
-  scroll-behavior: smooth;
+  transition: right 0.3s ease;
   cursor: pointer;
-  overflow: hidden;
+  overflow-y: auto;
+  z-index: 99;
+  box-sizing: border-box;
 }
 
 .archive.active {
@@ -421,9 +422,8 @@ body {
 }
 
 .thumbnail .item .detail .name {
-  font-weight: 900;
+  font-weight: 400;
   font-size: 1rem;
-  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -652,13 +652,12 @@ body {
 
 .service a {
   display: block;
-  font-family: bold;
+  font-weight: bold;
   font-size: 1em;
   color: var(--primary);
   text-decoration: none;
-  text-align: center;
   text-transform: uppercase;
-  padding: 0.5px;
+  padding: 0.5em;
   line-height: 1;
 }
 
@@ -676,27 +675,25 @@ body {
 
 /* Clock */
 .container-clock {
-  display: center;
+  position: center;
   flex-direction: column;
   gap: 0.5px;
-  width: cover;
-  margin: 10px auto 30px;
-  padding: 0.5px;
+  width: 100%;
+  margin: 10px auto 0.2rem;
+  padding: 0.3rem;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 0.2rem;
 }
 
 .tanggal-clock {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--primary);
   display: block;
-  min-width: 230px;
-  max-width: 300px;
-  width: 16.2%;
-  padding: 2px;
+  width: 100%;
+  max-width: 230px;
+  padding: 4px 8px;
   text-align: center;
   background-color: black;
   border: 1px solid #ddd;
@@ -718,6 +715,7 @@ body {
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  overflow: hidden;
 }
 
 .container-iklan img {
