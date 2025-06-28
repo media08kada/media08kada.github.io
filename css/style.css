@@ -1269,16 +1269,15 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   z-index: 9999;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact .row img {
   flex: 1 1 45rem;
   width: 50vw;
-  object-fit: cover;
+  aspect-ratio: 1/1;
+  object-fit: contain;
   margin: 20px;
+  transform: translateY(-10px);
 }
 
 .contact .row form {
@@ -1340,7 +1339,7 @@ body {
 
 @media (min-width: 1200px) {
   .contact .row img {
-    width: 50%; /* Atur lebar gambar pada layar besar */
+    width: 50%;
     margin: 30px;
   }
 }
