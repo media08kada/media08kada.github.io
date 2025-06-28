@@ -117,6 +117,16 @@
   <lastmod>2025-06-13T05:32:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
-
+<url>
+  <loc>https://mediakelapadua.web.id/video</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  <video:video xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <video:thumbnail_loc>"https://img.youtube.com/vi/Lf2l1qC5h-M/hqdefault.jpg"</video:thumbnail_loc>
+  <video:title>Giat Video</video:title>
+  <video:description>Subscribe, Like, Share and Comment</video:description>
+  <video:content_loc>https://www.youtube.com/embed/Lf2l1qC5h-M</video:content_loc>
+  <video:player_loc>https://www.youtube.com/embed/Lf2l1qC5h-M</video:player_loc>
+  </video:video>
+ </url>
 </urlset>
