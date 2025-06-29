@@ -27,89 +27,35 @@ body {
 .menu .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0.2rem;
   justify-content: center;
-}
-
-.menu .row .menu-card {
-  text-align: center;
-  padding-bottom: 4rem;
-}
-
-.menu-card {
-  text-align: center;
-}
-
-.menu-card iframe {
-  margin: 0 auto;
-  display: block;
-}
-
-.menu .row .menu-card iframe {
-  border-radius: 2%;
-  width: 200%;
-  border: 1px solid var(--bg1);
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.menu .row .menu-card .menu-card-title {
-  margin: 2rem auto 0.5rem;
-  color: #000;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  line-height: 1.6;
-}
-
-.menu .row .menu-card p {
-  margin-top: 2px;
-}
-
-@media (max-width: 768px) {
-  .menu .row .menu-card iframe {
-    width: 150%;
-    height: auto;
-    aspect-ratio: 16/9;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-/* Info Penting-2 */
-.menu .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  justify-content: center;
+  gap: 1rem;
 }
 
 .menu .row .menu-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%; /* atur lebar menu-card */
+  width: calc(100% - 1rem); /* Atur lebar card */
+  padding-bottom: 1rem;
   text-align: center;
-  padding-bottom: 2rem;
+}
+
+.menu-card iframe {
+  width: 100%; /* Atur lebar iframe */
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 1px solid var(--bg1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
   .menu .row .menu-card {
-    width: 100%; /* atur lebar menu-card pada layar kecil */
+    width: 100%; /* Atur lebar card pada layar kecil */
   }
 }
 
-.menu .row .menu-card img {
-  border-radius: 2%;
-  width: 75%;
-  border: 1px solid var(--bg1);
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-.menu .row .menu-card .menu-card-title {
-  margin: 1rem auto 0.5rem;
-  color: #000;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  line-height: 1.6;
+@media (max-width: 480px) {
+  .menu .row {
+    flex-direction: column; /* Atur flex-direction pada layar sangat kecil */
+  }
 }
