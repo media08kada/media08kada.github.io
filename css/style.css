@@ -1024,12 +1024,14 @@ body {
 
 .container .products-container .product h3 {
   padding: 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #000;
 }
 
-.container .products-container .product text {
+.container .products-container .product p {
   font-size: 0.8rem;
+  line-height: 0.5;
+  margin-bottom: 1rem;
 }
 
 .container .products-container .product:hover h3 {
