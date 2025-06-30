@@ -122,7 +122,7 @@
   <changefreq>monthly</changefreq>
   <priority>0.5</priority>
   <video:video xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <video:thumbnail_loc>"https://img.youtube.com/vi/Lf2l1qC5h-M/hqdefault.jpg"</video:thumbnail_loc>
+  <video:thumbnail_loc>https://www.youtube.com/embed/Lf2l1qC5h-M</video:thumbnail_loc>
   <video:title>Giat Video</video:title>
   <video:description>Subscribe, Like, Share and Comment</video:description>
   <video:content_loc>https://www.youtube.com/embed/Lf2l1qC5h-M</video:content_loc>
