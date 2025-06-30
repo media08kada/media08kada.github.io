@@ -82,7 +82,7 @@ body {
 .popup-box img {
   position: absolute;
   aspect-ratio: 1;
-  top: -65px;
+  top: -75px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 100%;
