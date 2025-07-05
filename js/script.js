@@ -285,5 +285,3 @@ document.querySelector('form[name="media08kada-form"]').addEventListener('submit
   // Mengatur ulang nilai input form
   this.reset();
 });
-
-
