@@ -101,6 +101,7 @@ body {
   margin: 0;
   padding: 0;
   margin-top: -10px;
+  transform: translatex(10%);
 }
 
 .service-card {
