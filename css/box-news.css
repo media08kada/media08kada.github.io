@@ -87,6 +87,12 @@ body {
   height: auto;
   border-radius: 3%;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 10px rgba(1, 250, 105, 0.7);
 }
 
 .text-box p {
