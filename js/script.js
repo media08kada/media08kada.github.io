@@ -285,3 +285,14 @@ document.querySelector('form[name="media08kada-form"]').addEventListener('submit
   // Mengatur ulang nilai input form
   this.reset();
 });
+
+// Gambar berganti secara otomatis
+function cycleImages() {
+  const img = document.getElementById('view-img');
+  img.style.opacity = 0;
+  setTimeout(() => {
+    img.src = images[currentIndex];
+    img.style.opacity = 1;
+    currentIndex = (currentIndex + 1) % images.length;
+  }, 500);
+}

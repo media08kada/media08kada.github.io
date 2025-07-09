@@ -897,6 +897,16 @@ body {
 .elemen:first-child {
   border-top: none;
 }
+
+.images img,
+.picture img,
+.media img {
+  width: 100%;
+  height: auto;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
 /* About Berita utama end */
 
 .products h2,

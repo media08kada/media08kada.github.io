@@ -467,6 +467,33 @@
      </div>
      <div class="elemen" data-aos="zoom-in" data-aos-duration="1000"></div>
      <!-- Modal Box Berita 3 end -->
+
+     <!-- Image Berganti otomatis Star-->
+     <script>
+       function setupImageSwitcher(containerSelector, interval = 4000) {
+         const container = document.querySelector(containerSelector);
+         const images = container.querySelectorAll("img");
+         let current = 0;
+         
+    // Atur gambar pertama tampil, lainnya disembunyikan
+    images.forEach((img, i) => {
+      img.style.display = i === 0 ? "block" : "none";
+    });
+    
+    setInterval(() => {
+      images[current].style.display = "none";
+      current = (current + 1) % images.length;
+      images[current].style.display = "block";
+    }, interval);
+  }
+  
+    // Terapkan untuk setiap bagian gambar
+      setupImageSwitcher(".images");
+      setupImageSwitcher(".picture");
+      setupImageSwitcher(".media");
+    </script>
+  <!-- Image Berganti otomatis End-->
+
      
      <!-- Box-News Star -->
        <section id="menu" class="menu">
@@ -515,11 +542,30 @@
           </div>
         </div>
       </div>
-          <script>
+
+    <script>
       const imgView = (src) => {
         document.getElementById('view-img').src = src;
       };
-    </script>
+  // Ganti gambar secara otomatis //
+      const images = [
+      '../img/box-news/A.jpg',
+      '../img/box-news/B.jpg',
+      '../img/box-news/C.jpg',
+      '../img/box-news/D.jpg'
+  ];
+      let currentIndex = 0;
+
+      function cycleImages() {
+      document.getElementById('view-img').src = images[currentIndex];
+      currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  // Ganti gambar setiap 4 detik
+  setInterval(cycleImages, 4000);
+</script>
+
+
     </section>
   <!-- Box-News End -->
 
