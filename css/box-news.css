@@ -97,10 +97,11 @@ body {
 }
 
 .text-box p {
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   text-align: left;
   margin-top: -15px;
+  padding-right: 0;
 }
 
 .photo-item a {
