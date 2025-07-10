@@ -543,11 +543,12 @@
         </div>
       </div>
 
+      // Ganti gambar secara otomatis //
     <script>
       const imgView = (src) => {
         document.getElementById('view-img').src = src;
       };
-  // Ganti gambar secara otomatis //
+      
       const images = [
       '../img/box-news/A.jpg',
       '../img/box-news/B.jpg',
@@ -561,10 +562,9 @@
       currentIndex = (currentIndex + 1) % images.length;
   }
 
-  // Ganti gambar setiap 4 detik
   setInterval(cycleImages, 4000);
-</script>
-    </section>
+  </script>
+</section>
   <!-- Box-News End -->
 
     <!-- Kegiatan RW 08 start -->
