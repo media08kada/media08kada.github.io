@@ -633,7 +633,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5em;
-  line-height: 0.5;
+  line-height: 0.2;
 }
 
 .service a:hover {
@@ -1304,7 +1304,7 @@ body {
 /* Footer */
 body {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0;
   padding-bottom: 10rem;
 }
