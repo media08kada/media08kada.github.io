@@ -60,7 +60,7 @@ body {
 
 .view-img {
   grid-column: 1;
-  width: 120%;
+  width: 115%;
   height: auto;
   margin-top: 15px;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
@@ -70,7 +70,7 @@ body {
 .photoes {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
   margin-top: 15px;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .photo-item img {
-  width: 115px;
+  width: 135px;
   height: auto;
   border-radius: 3%;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
@@ -100,6 +100,7 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   text-align: left;
+  margin-top: -15px;
 }
 
 .photo-item a {
@@ -149,7 +150,7 @@ body {
   }
 
   .photo-item img {
-    width: 135px;
+    width: 100px;
     height: auto;
   }
 

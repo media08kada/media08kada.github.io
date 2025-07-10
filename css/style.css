@@ -678,11 +678,19 @@ body {
 }
 
 /* About Berita Utama Star */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem; /* bisa kamu sesuaikan */
+}
+
 .about,
 .menu,
 .products,
 .contact {
-  padding: 3rem 7% 1.4rem;
+  padding: 3rem 0 1.4rem; /* Hilangkan padding horizontal */
+  max-width: 1200px; /* Atur lebar maksimum konten */
+  margin: 0 auto; /* Posisikan konten ke tengah */
 }
 
 .about h2,
@@ -718,7 +726,7 @@ body {
 }
 
 .about .row .content {
-  flex: 1 1 35rem;
+  flex: 1 1 45rem;
   padding: 0 2rem;
 }
 
@@ -1530,6 +1538,15 @@ footer .credit p {
   .thumbnail {
     left: 65%;
     gap: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .about,
+    .menu,
+    .products,
+    .contact {
+      padding: 3rem 2rem 1.4rem; /* Tambahkan padding horizontal 2rem untuk layar kecil */
+    }
   }
 
   /* Mobile Phone */
