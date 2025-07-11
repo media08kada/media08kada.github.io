@@ -386,6 +386,7 @@ body {
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
+  cursor: pointer;
 }
 
 .thumbnail .item .detail {
@@ -394,12 +395,14 @@ body {
   left: 5px;
   color: #000;
   z-index: 9999;
+  cursor: pointer;
 }
 
 .thumbnail .item .detail .name {
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 5px;
+  color: #fff;
 }
 
 /* nextPrevArrows Section  */
