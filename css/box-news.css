@@ -65,6 +65,7 @@ body {
   margin-top: 15px;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
   transition: opacity 0.5s ease-in-out;
+  border-radius: 2%;
 }
 
 .photoes {
