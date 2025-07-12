@@ -77,22 +77,18 @@
    <!-- Contact End -->
    
    <!-- Notifikasi WA-->
-<script>
-  function sendMessage(event) {
-    event.preventDefault(); // Mencegah form reload
+   <script>
+    function sendMessage() {
+     const name = document.getElementById('name').value;
+     const alamat = document.getElementById('alamat').value;
+     const telepon = document.getElementById('telepon').value;
+     const pesan = document.getElementById('pesan').value;
 
-    const name = document.getElementById('name').value;
-    const telepon = document.getElementById('telepon').value;
-    const alamat = "Layanan Jemput Antar Lansia";
-    const pesan = "Proses";
+    const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerima%20kasih%20telah%20mengisi%20form%20Jali-Jali.%0ALayanan%20Jemput%20Antar%20Lansia:%20${alamat}%0AMohon%20tunggu:%20${pesan}`;
 
-    const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerima%20kasih%20telah%20menggunakan%20*${alamat}*%0A%0AStatus%20pesan:%20${pesan}`;
-
-    window.open(url, '_blank');
-  }
-
-  document.querySelector("form[name='jali-jali-contact-form']").addEventListener("submit", sendMessage);
-</script>
+window.open(url)
+    }
+   </script>
     
 <!-- Histats.com  (div with counter) -->
 <section class="footer" id="footer">
