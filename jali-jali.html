@@ -60,7 +60,7 @@
                   <label for="alamat" class="form-label">Alamat</label>
                   <input type="alamat" class="form-control" id="alamat" poppins-describedby="alamat" name="alamat" required>
                   <div class="mb-3">
-                    <label for="telepon" class="form-label">No. Telepon 62</label>
+                    <label for="telepon" class="form-label">No. Telepon di Awali 62</label>
                     <input type="telepon" class="form-control" id="telepon" poppins-describedby="telepon" name="telepon" required>
                   </div>
                   <div class="mb-3">
@@ -84,7 +84,7 @@
      const telepon = document.getElementById('telepon').value;
      const pesan = document.getElementById('pesan').value;
 
-    const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerima%20kasih%20telah%20mengisi%20form%20Jali-Jali.%0ALayanan%20Jemput%20Antar%20Lansia:%20${alamat}%0AMohon%20tunggu:%20${pesan}`;
+    const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerima%20kasih%20telah%20mengisi%20form%20Jali-Jali%0ALayanan%20Jemput%20Antar%20Lansia%0AMohon%20tunggu,%20jemputan%20akan%20tiba%20`;
 
 window.open(url)
     }
