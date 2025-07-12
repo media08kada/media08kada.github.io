@@ -84,7 +84,9 @@
      const telepon = document.getElementById('telepon').value;
      const pesan = document.getElementById('pesan').value;
 
-    const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerima%20kasih%20telah%20mengisi%20form%20Jali-Jali%0ALayanan%20Jemput%20Antar%20Lansia%0AMohon%20tunggu,%20jemputan%20akan%20tiba%20`;
+    const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerimakasih%20telah%20mengisi%20form%20Jali-Jali%0ALayanan%20Jemput%20Antar%20Lansia%0AMohon%20tunggu,%20jemputan%20akan%20tiba%20`;
+
+    alert("Pesan akan terbuka di WhatsApp. Pastikan klik tombol 'Kirim' di sana ya!");
 
 window.open(url)
     }
