@@ -70,6 +70,7 @@
                   <button type="submit" class="btn btn-success">Kirim Pesan</button>
                 </form>
               <h4>Posyandu ILP Melati RW 08<br>Buka : Hari Selasa Minggu Ke 2 setiap Bulan,  pada Jam 8.00-11.00 WIB</h4>
+              <audio id="alertSound" src="../audio/message-alert.mp3" preload="auto"></audio>
           </div>
         </div>
       </div>
@@ -77,18 +78,22 @@
    <!-- Contact End -->
    
    <!-- Notifikasi WA-->
-   <script>
-    function sendMessage() {
-     const name = document.getElementById('name').value;
-     const alamat = document.getElementById('alamat').value;
-     const telepon = document.getElementById('telepon').value;
-     const pesan = document.getElementById('pesan').value;
+  <script>
+  function sendMessage() {
+  const name = document.getElementById('name').value;
+  const alamat = document.getElementById('alamat').value;
+  const telepon = document.getElementById('telepon').value;
+  const pesan = document.getElementById('pesan').value;
 
-    const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerimakasih%20telah%20mengisi%20form%20Jali-Jali%0ALayanan%20Jemput%20Antar%20Lansia%0AMohon%20tunggu,%20jemputan%20akan%20tiba%20`;
+  const url = `https://api.whatsapp.com/send?phone=${telepon}&text=Halo%20${name}%2C%0A%0ATerimakasih%20telah%20mengisi%20form%20Jali-Jali%0ALayanan%20Jemput%20Antar%20Lansia%0AMohon%20tunggu,%20jemputan%20akan%20tiba%20`;
 
-    alert("Pesan akan terbuka di WhatsApp. Pastikan klik tombol 'Kirim' di sana ya!");
+  // Mainkan suara notifikasi sebelum alert
+  const sound = document.getElementById('alertSound');
+  sound.play();
 
-window.open(url)
+  alert("Terimakasih telah berkunjung ke Layanan Jali-Jali. Kami akan segera menghubungi Bapak/Ibu untuk konfirmasi jemputan !");
+
+  window.open(url);
     }
    </script>
     

@@ -376,7 +376,7 @@ body {
 
 .thumbnail .item {
   width: 150px;
-  height: 220px;
+  height: 220px;`
   flex-shrink: 0;
   position: relative;
 }
