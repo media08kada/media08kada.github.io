@@ -1550,7 +1550,7 @@ footer .credit p {
     .menu,
     .products,
     .contact {
-      padding: 3rem 2rem 1.4rem; /* Tambahkan padding horizontal 2rem untuk layar kecil */
+      padding: 3rem 2rem 1.4rem; 
     }
   }
 
@@ -1561,7 +1561,7 @@ footer .credit p {
     }
 
     .slider-container {
-      background-size: cover; /* Ensured cover for mobile */
+      background-size: cover; 
       background-position: center;
     }
 
