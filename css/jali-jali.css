@@ -83,14 +83,15 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  top: 0.2;
   width: 100%;
-  background-color: var(--primary);
+  background-color: #333;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 footer .socials {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 footer .histats_counter {
@@ -100,6 +101,37 @@ footer .histats_counter {
 footer .socials a {
   color: #fff;
   margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg1);
+}
+
+footer .links {
+  margin-bottom: 1rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 0.2rem;
+}
+
+footer .credit a {
+  color: var(--bg1);
+  font-weight: 500;
+}
+
+footer .credit p {
+  color: #fff;
 }
 
 footer .socials a:hover,
