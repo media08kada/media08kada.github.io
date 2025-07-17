@@ -1257,14 +1257,14 @@ body {
 
 @media (max-width: 768px) {
   .contact .row img {
-    width: 80%; /* Atur lebar gambar pada layar kecil */
+    width: 60%; /* Atur lebar gambar pada layar kecil */
     margin: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .contact .row img {
-    width: 60%; /* Atur lebar gambar pada layar sangat kecil */
+    width: 30%; /* Atur lebar gambar pada layar sangat kecil */
     margin: 5px;
   }
 }
