@@ -1264,8 +1264,10 @@ body {
 
 @media (max-width: 480px) {
   .contact .row img {
-    width: 30%; /* Atur lebar gambar pada layar sangat kecil */
-    margin: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* atau sesuaikan agar tetap estetik */
   }
 }
 
