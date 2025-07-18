@@ -1,0 +1,150 @@
+:root {
+  --primary: #b6895b;
+  --bg: #eaeaea;
+  --bg1: #28c76f;
+  --secondary: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: #000;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(248, 248, 248) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+}
+
+/* Item Detail */
+.modal1,
+.modal2,
+.modal3 {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal1-container,
+.modal2-container,
+.modal3-container {
+  position: relative;
+  background-image: radial-gradient(circle 343px at 46.3% 47.5%, rgba(242, 242, 242, 1) 0%, rgba(241, 241, 241, 1) 72.9%);
+  color: var(--bg);
+  margin: 5% auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  width: 80%;
+  height: 80%;
+  animation: animateModal1 0.5s;
+}
+
+/* Modal Animation */
+@keyframes animateModal1,
+@keyframes animateModal2 {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal1-container .close-icon,
+.modal2-container .close-icon,
+.modal3-container .close-icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.modal1-container .close-icon:hover,
+.modal2-container .close-icon:hover,
+.modal3-container .close-icon:hover {
+  background-color: var(--bg1);
+  color: #000;
+}
+
+.modal1-content,
+.modal2-content,
+.modal3-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.modal1-content img,
+.modal2-content img,
+.modal3-content img {
+  weight: 30rem;
+  height: 30rem;
+  margin-right: 2rem;
+  margim-bottom: 2rem;
+  border: 1px solid var(--bg1);
+  object-fit: cover;
+}
+
+.modal1-content h3,
+.modal2-content h3,
+.modal3-content h3 {
+  font-size: 1.8rem;
+}
+
+.modal1-content p,
+.modal2-content p,
+.modal3-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+
+.modal1-content h4,
+.modal2-content h4,
+.modal3-content h4 {
+  color: #444;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about .modal3-content {
+    width: 100%;
+  }
+
+  .about .content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about h2 {
+    font-size: 18px;
+  }
+  .about .content {
+    font-size: 14px;
+  }
+}
