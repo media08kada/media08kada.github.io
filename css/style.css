@@ -1069,6 +1069,19 @@ body {
   box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
   margin-bottom: 0rem;
 }
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.video-description {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
 /* Video Youtube End */
 
 /* Contact Section */
