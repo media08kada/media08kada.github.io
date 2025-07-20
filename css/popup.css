@@ -155,7 +155,7 @@ body {
   transition: 0.3s ease;
   transition-property: opacity;
   display: flex;
-  background: var(--bg1);
+  background: radial-gradient(circle 887px at -13.8% 18.3%, rgba(8, 208, 115, 1) 0%, rgba(0, 0, 0, 1) 90%);
   width: 22px;
   height: 22px;
   align-items: center;
