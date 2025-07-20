@@ -1083,10 +1083,12 @@ body {
 
 .contact .row img {
   flex: 1 1 35rem;
-  width: 35vw;
+  max-width: 400px;
+  width: 100%;
   aspect-ratio: 1/1;
   object-fit: contain;
   margin: 20px;
+  border: none;
   transform: translateY(-10px);
 }
 
@@ -1149,10 +1151,10 @@ body {
 
 @media (max-width: 480px) {
   .contact .row img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: block;
-    margin: 10px auto; /* atau sesuaikan agar tetap estetik */
+    margin: 40px auto 10px auto;
   }
 }
 
