@@ -118,15 +118,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/video</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.5</priority>
-  <video:video xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <video:thumbnail_loc>https://www.youtube.com/embed/Lf2l1qC5h-M</video:thumbnail_loc>
-  <video:title>Giat Video</video:title>
-  <video:description>Pengumuman pemenang Jambore Kader dan Posyandu Berprestasi, tingkat Kota Administrasi Jakarta Barat, dilaksanakan di ruang serbaguna MH. Thamrin Lantai 2 Blok B Kantor Walikota Administrasi Jakarta Barat.</video:description>
-  <video:content_loc>Jangan lupa !<b>Subscribe, Like, Share and Comment</b>www.youtube.com/@KosongDelapan102</video:content_loc>
-  <video:player_loc>https://www.youtube.com/embed/Lf2l1qC5h-M</video:player_loc>
+  <loc>https://mediakelapadua.web.id/video.html</loc>
+  <video:video>
+    <video:title>Giat Video - Pengumuman Posyandu</video:title>
+    <video:description>Pengumuman pemenang Jambore Kader dan Posyandu tingkat Jakarta Barat.</video:description>
+    <video:thumbnail_loc>https://img.youtube.com/vi/Lf2l1qC5h-M/maxresdefault.jpg</video:thumbnail_loc>
+    <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Lf2l1qC5h-M?si=Z9nsjZG6EOVrOeWV</video:player_loc>
+    <video:duration>150</video:duration>
+    <video:publication_date>2024-07-01T09:00:00+07:00</video:publication_date>
   </video:video>
- </url>
+</url>
 </urlset>
