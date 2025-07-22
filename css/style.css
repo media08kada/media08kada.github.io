@@ -1,8 +1,8 @@
 :root {
-  --primary: #b6895b;
-  --bg: #eaeaea;
-  --bg1: #28c76f;
-  --secondary: #000;
+  --primary: #b6895b; /* Coklat */
+  --bg: #eaeaea; /* Abu-abu */
+  --bg1: #28c76f; /* Hijau */
+  --secondary: #000; /* Hitam */
 }
 
 * {
@@ -31,6 +31,10 @@ body {
   background-color: var(--bg);
   color: #000;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(248, 248, 248) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+}
+
+body {
+  background-color
 }
 
 /* Navbar */
