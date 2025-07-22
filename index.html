@@ -628,30 +628,47 @@
           <a href="../giat/pelantikan-rt-dan-rw-kelapa-dua.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         
-        <div class="product" data-name="p4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="product hidden" data-name="p4" id="p4" data-aos="fade-up" data-aos-duration="1000">
           <img src="../img/giat/A.jpg" alt="">
           <h3>Ular Sanca Gegerkan Warga Kelapa Dua</h3>
           <p>Tanggal, 05 Juli 2025</p>
           <a href="../giat/ular-sanca-gegerkan-warga-kelapa-dua.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         
-        <div class="product" data-name="p5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="product hidden" data-name="p5" id="p5" data-aos="fade-up" data-aos-duration="1000">
           <img src="../img/giat/B.jpg" alt="">
           <h3>Kader Posyandu Melati Juara 1</h3>
           <p>Tanggal 24 Juni 2025 </p>
           <a href="../giat/kader-posyandu-melati-juara-1.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-
-        <div class="product" data-name="p6"data-aos="fade-up" data-aos-duration="1000">
+        
+        <div class="product hidden" data-name="p6" id="p6" data-aos="fade-up" data-aos-duration="1000">
           <img src="../img/giat/F.jpg" alt="">
           <h3>Pemberian Ikan Lele untuk Balita</h3>
           <p>Tanggal 8 Juni 2025</p>
           <a href="../giat/pemberian-ikan-lele-untuk-balita.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
         </div>
+        <button id="show-more-btn">Tampilkan Selengkapnya</button>
        </div>
       </div>
     </div>
   </section>
+  
+  <script>
+  const btn = document.getElementById("show-more-btn");
+  let isShown = false;
+
+  btn.addEventListener("click", function () {
+    const items = [document.getElementById("p4"), document.getElementById("p5"), document.getElementById("p6")];
+
+    items.forEach(item => {
+      item.classList.toggle("hidden");
+    });
+
+    isShown = !isShown;
+    btn.textContent = isShown ? "Sembunyikan" : "Tampilkan Selengkapnya";
+  });
+</script>
 
 <!-- Video Section -->
 <section id="video" class="video">

@@ -1044,6 +1044,38 @@ body {
   background: var(--primary);
 }
 
+/* Sembunyikan Giat */
+
+.hidden {
+  display: none;
+}
+
+.show-more-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#show-more-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  background: var(--bg1);
+  color: white;
+  border-radius: 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  font-weight: 600;
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+  margin-top: 20px;
+}
+
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* Sembunyi End */
+
 @media (max-width: 768px) {
   .container .products-container {
     grid-template-columns: repeat(2, 1fr);
