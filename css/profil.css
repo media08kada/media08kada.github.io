@@ -76,7 +76,7 @@ body {
   text-align: center;
   max-width: 50rem;
   margin: auto;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -110,11 +110,19 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 100%;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
   border: 1px solid var(--bg1);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   position: relative;
+}
+
+.menu-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .menu .row .menu-card .menu-card-title {
