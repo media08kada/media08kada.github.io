@@ -94,6 +94,7 @@ body {
   color: #fff;
 }
 
+.service-jali p,
 .service p {
   display: flex;
   font-weight: 100;
