@@ -5,17 +5,36 @@
   --secondary: #000;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
-  color: #000;
+  color: var(--secondary);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #f8f8f8 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 5rem; /* for footer spacing */
 }
 
 /* Navbar */
 .navbar a {
   font-size: 1.5rem;
-  color: #000;
-  transition: 0.3s;
+  color: var(--secondary);
+  transition: 0.3s ease;
 }
 
 .navbar a:hover {
@@ -24,59 +43,38 @@ body {
 }
 
 /* Infografis */
-.menu .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.menu .row .menu-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100% - 1rem); /* Atur lebar card */
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.menu-card iframe {
-  width: 100%; /* Atur lebar iframe */
-  aspect-ratio: 16 / 9;
+.infografis-wrapper img {
+  width: 100%;
+  max-width: 560px;
   height: auto;
-  border: 1px solid var(--bg1);
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .menu .row .menu-card {
-    width: 100%; /* Atur lebar card pada layar kecil */
-  }
+.infografis-description {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 1.6;
 }
 
-@media (max-width: 480px) {
-  .menu .row {
-    flex-direction: column; /* Atur flex-direction pada layar sangat kecil */
+/* Responsive iframe (if used in future) */
+@media screen and (max-width: 480px) {
+  .infografis-wrapper iframe {
+    max-width: 100%;
+    height: 240px;
   }
 }
 
 /* Footer */
-body {
-  position: relative;
-  min-height: 100vh;
-  margin: 0;
-  padding-bottom: 5rem;
-}
-
 footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 0.2;
   width: 100%;
   background-color: #333;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
 }
 
 footer .socials {
@@ -110,8 +108,8 @@ footer .links a {
 
 footer .credit {
   font-size: 0.8rem;
-  border-radius: 20px;
   margin-bottom: 0.2rem;
+  border-radius: 20px;
 }
 
 footer .credit a {
@@ -121,4 +119,37 @@ footer .credit a {
 
 footer .credit p {
   color: #fff;
+}
+
+/* Scroll To Top */
+.buttonToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonToTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  background-color: var(--bg1);
+  color: #fff;
+  font-family: monospace;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+.buttonToTop a:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  transform: rotate(360deg);
 }
