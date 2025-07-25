@@ -25,3 +25,104 @@ body {
   margin-bottom: 80px;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.8);
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
+footer .socials {
+  padding: 0.5rem 0;
+}
+
+footer .histats_counter {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg1);
+}
+
+footer .links {
+  margin-bottom: 1rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  border-radius: 20px;
+}
+
+footer .credit a {
+  color: var(--bg1);
+  font-weight: 500;
+}
+
+footer .credit p {
+  color: #fff;
+}
+
+/* Scroll To Top */
+.buttonToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonToTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  background-color: var(--bg1);
+  color: #fff;
+  font-family: monospace;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+.buttonToTop a:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  transform: rotate(360deg);
+}
