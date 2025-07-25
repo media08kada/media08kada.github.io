@@ -394,6 +394,7 @@ body {
   border-radius: 15px;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
   cursor: pointer;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .thumbnail .item .detail {
@@ -411,6 +412,11 @@ body {
   font-size: 0.8rem;
   margin-bottom: 5px;
   color: #fff;
+}
+
+.thumbnail .item:hover img {
+  transform: scale(1.05);
+  opacity: 0.85;
 }
 
 /* nextPrevArrows Section  */
