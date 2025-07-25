@@ -1,136 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- Homepage (kanonis) -->
+  <url>
+    <loc>https://mediakelapadua.web.id/</loc>
+    <lastmod>2025-07-25T05:32:58+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
 
-<url>
-  <loc>https://mediakelapadua.web.id/</loc>
-  <lastmod>2025-07-24T08:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info/iklan-product.html</loc>
-  <lastmod>2025-07-20T05:12:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/jali-jali.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info/profil.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info/info-kelurahan.html</loc>
-  <lastmod>2025-07-24T02:25:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info/info-kesehatan.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/calender.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info/gallery-photo.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/utama/semarak-festival-olahraga-rakyat.html</loc>
-  <lastmod>2025-07-22T07:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/utama/mpls-serentak-dimulai-sambut-siswa-baru.html</loc>
-  <lastmod>2025-07-14T08:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/utama/smpn-189-tanamkan-wawasan-kebangsaan-melalui-mpls.html</loc>
-  <lastmod>2025-07-17T09:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/studi-banding-posyandu-siklus-hidup.html</loc>
-  <lastmod>2025-07-08T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/menjelang-tahun-ajaran-baru.html</loc>
-  <lastmod>2025-07-09T05:32:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/pelantikan-rt-dan-rw-kelapa-dua.html</loc>
-  <lastmod>2025-06-17T05:02:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/ular-sanca-gegerkan-warga-kelapa-dua.html</loc>
-  <lastmod>2025-07-05T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/kader-posyandu-melati-juara-1.html</loc>
-  <lastmod>2025-06-24T08:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/pemberian-ikan-lele-untuk-balita.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/reses-wakil-ketua-dprd-dki-jakarta.html</loc>
-  <lastmod>2025-07-05T04:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/news/kapolsek-gelar-ngopi-kamtibmas.html</loc>
-  <lastmod>2025-07-05T21:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://https://mediakelapadua.web.id/news/peringatan-40-hari-wafatnya-kh-bunyamin.html</loc>
-  <lastmod>2025-07-24T19:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/news/kelurahan-kelapa-dua-gelar-penanaman-serentak.html</loc>
-  <lastmod>2025-07-18T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/news/santunan-anak-yatim-mushollah-al-hidayah.html</loc>
-  <lastmod>2025-07-12T18:00:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/index.html</loc>
-  <lastmod>2025-07-25T05:32:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/video.html</loc>
-  <video:video>
-    <video:title>Giat Video - Pengumuman Posyandu</video:title>
-    <video:description>Pengumuman pemenang Jambore Kader dan Posyandu tingkat Jakarta Barat.</video:description>
-    <video:thumbnail_loc>https://img.youtube.com/vi/Lf2l1qC5h-M/maxresdefault.jpg</video:thumbnail_loc>
-    <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Lf2l1qC5h-M?si=Z9nsjZG6EOVrOeWV</video:player_loc>
-    <video:duration>150</video:duration>
-    <video:publication_date>2024-07-01T09:00:00+07:00</video:publication_date>
-  </video:video>
-</url>
+  <!-- Info -->
+  <url>
+    <loc>https://mediakelapadua.web.id/info/iklan-product.html</loc>
+    <lastmod>2025-07-20T05:12:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/info/profil.html</loc>
+    <lastmod>2025-06-13T05:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/info/info-kelurahan.html</loc>
+    <lastmod>2025-07-24T02:25:58+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/info/info-kesehatan.html</loc>
+    <lastmod>2025-06-13T05:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/info/gallery-photo.html</loc>
+    <lastmod>2025-06-13T05:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Utama -->
+  <url>
+    <loc>https://mediakelapadua.web.id/utama/semarak-festival-olahraga-rakyat.html</loc>
+    <lastmod>2025-07-22T07:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/utama/mpls-serentak-dimulai-sambut-siswa-baru.html</loc>
+    <lastmod>2025-07-14T08:30:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/utama/smpn-189-tanamkan-wawasan-kebangsaan-melalui-mpls.html</loc>
+    <lastmod>2025-07-17T09:30:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Giat -->
+  <url>
+    <loc>https://mediakelapadua.web.id/giat/studi-banding-posyandu-siklus-hidup.html</loc>
+    <lastmod>2025-07-08T08:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/giat/menjelang-tahun-ajaran-baru.html</loc>
+    <lastmod>2025-07-09T05:32:09+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/giat/pelantikan-rt-dan-rw-kelapa-dua.html</loc>
+    <lastmod>2025-06-17T05:02:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/giat/ular-sanca-gegerkan-warga-kelapa-dua.html</loc>
+    <lastmod>2025-07-05T05:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/giat/kader-posyandu-melati-juara-1.html</loc>
+    <lastmod>2025-06-24T08:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/giat/pemberian-ikan-lele-untuk-balita.html</loc>
+    <lastmod>2025-06-13T05:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/giat/reses-wakil-ketua-dprd-dki-jakarta.html</loc>
+    <lastmod>2025-07-05T04:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- News -->
+  <url>
+    <loc>https://mediakelapadua.web.id/news/kapolsek-gelar-ngopi-kamtibmas.html</loc>
+    <lastmod>2025-07-05T21:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/news/peringatan-40-hari-wafatnya-kh-bunyamin.html</loc>
+    <lastmod>2025-07-24T19:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/news/kelurahan-kelapa-dua-gelar-penanaman-serentak.html</loc>
+    <lastmod>2025-07-18T08:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/news/santunan-anak-yatim-mushollah-al-hidayah.html</loc>
+    <lastmod>2025-07-12T18:00:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Lainnya -->
+  <url>
+    <loc>https://mediakelapadua.web.id/calender.html</loc>
+    <lastmod>2025-06-13T05:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mediakelapadua.web.id/jali-jali.html</loc>
+    <lastmod>2025-06-13T05:32:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Video Page -->
+  <url>
+    <loc>https://mediakelapadua.web.id/video.html</loc>
+    <video:video>
+      <video:title>Giat Video - Pengumuman Posyandu</video:title>
+      <video:description>Pengumuman pemenang Jambore Kader dan Posyandu tingkat Jakarta Barat.</video:description>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Lf2l1qC5h-M/maxresdefault.jpg</video:thumbnail_loc>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Lf2l1qC5h-M?si=Z9nsjZG6EOVrOeWV</video:player_loc>
+      <video:duration>150</video:duration>
+      <video:publication_date>2024-07-01T02:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
 </urlset>
