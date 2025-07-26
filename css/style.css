@@ -942,8 +942,9 @@ body {
 
 /* Kegiatan RW 08 Star */
 .container {
-  max-width: 1200%;
-  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
   padding: 0 30px;
 }
 
@@ -951,7 +952,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   align-items: center;
   justify-content: center;
   justify-items: center;
@@ -963,7 +964,7 @@ body {
   background: var(--bg);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   outline: 0.1rem solid #666;
-  outline-offset: -1.5rem;
+  outline-offset: -0.5rem;
   cursor: pointer;
 }
 
@@ -1032,7 +1033,7 @@ body {
   }
 
   .product {
-    padding: 1rem 0.5rem; 
+    padding: 1.5rem 1rem;
   }
 
   .product img {
@@ -1041,7 +1042,7 @@ body {
   }
 
   .product h3 {
-    font-size: 1.2rem; /* Lebih besar agar mudah dibaca */
+    font-size: 1.2rem; 
   }
 
   .product p {
@@ -1052,13 +1053,13 @@ body {
 
 @media (min-width: 768px) {
   .container .products-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom di layar sedang */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (min-width: 1024px) {
   .container .products-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 kolom di layar besar */
+    grid-template-columns: repeat(4, 1fr); 
   }
 }
 
