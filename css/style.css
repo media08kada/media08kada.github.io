@@ -942,7 +942,8 @@ body {
 
 /* Kegiatan RW 08 Star */
 .container {
-  max-width: 100%;
+  width: 100%;
+  max-width: 480px;
   margin-top: 8px;
   margin-bottom: 8px;
   padding: 0 30px;
@@ -1024,30 +1025,8 @@ body {
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 10px; 
-  }
-
   .products-container {
-    grid-template-columns: 1fr;
-  }
-
-  .product {
-    padding: 1.5rem 1rem;
-  }
-
-  .product img {
-    width: 25%; 
-    height: auto; 
-  }
-
-  .product h3 {
-    font-size: 1.2rem; 
-  }
-
-  .product p {
-    font-size: 0.9rem;
-    line-height: 1.2;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 }
 
