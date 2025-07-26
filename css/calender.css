@@ -1,53 +1,82 @@
+:root {
+  --primary: #b6895b;
+  --bg: #eaeaea;
+  --bg1: #28c76f;
+  --secondary: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(248, 248, 248) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--secondary);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #f8f8f8 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 5rem; /* for footer spacing */
 }
 
+/* Navbar */
+.navbar a {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--bg1);
+  text-decoration: underline;
+}
+
+/* Section Calender Event */
 .hero {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(45deg, #6aclc5, #fff;);
-  position: relative;
+  display: flex;
+  justify-content: flex-start; /* atau center kalau mau di tengah */
+  align-items: center;
+  flex-direction: column;
 }
 
 #calendar {
   width: 80%;
-  position: absolute;
-  top: calc(60px + 40px);
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform: translateX(-50%);
+  position: relative;
+  margin-top: 20px;
   margin-bottom: 80px;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.8);
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
+@media screen and (min-width: 1200px) {
+  #calendar {
+    top: 0px;
+  }
 }
 
 /* Footer */
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #333;
   text-align: center;
   padding: 0.2rem 0;
+  margin-top: 5rem;
 }
 
 footer .socials {
