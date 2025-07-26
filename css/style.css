@@ -942,15 +942,15 @@ body {
 
 /* Kegiatan RW 08 Star */
 .container {
-  max-width: 100%;
+  max-width: 1200%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .container .products-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
   margin-top: 1rem;
   align-items: center;
   justify-content: center;
@@ -973,8 +973,8 @@ body {
 }
 
 .container .products-container .product img {
-  width: 20rem;
-  height: 20rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 2%;
 }
 
@@ -1022,6 +1022,46 @@ body {
   background: var(--primary);
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px; 
+  }
+
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+
+  .product {
+    padding: 1rem 0.5rem; 
+  }
+
+  .product img {
+    width: 25%; 
+    height: auto; 
+  }
+
+  .product h3 {
+    font-size: 1.2rem; /* Lebih besar agar mudah dibaca */
+  }
+
+  .product p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .container .products-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di layar sedang */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container .products-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom di layar besar */
+  }
+}
+
 /* Sembunyikan Giat */
 .hidden {
   display: none;
@@ -1053,17 +1093,6 @@ body {
 }
 /* Sembunyi End */
 
-@media (max-width: 768px) {
-  .container .products-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .container .products-container {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* Image Video */
 .video-wrapper img {
