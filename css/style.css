@@ -986,14 +986,15 @@ body {
 
 .container .products-container .product h3 {
   padding: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-text: 0.5rem;
   color: #000;
   text-align: center;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 
 .container .products-container .product p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 0.5;
   margin-bottom: 1rem;
   text-align: center;
