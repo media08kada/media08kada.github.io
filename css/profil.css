@@ -48,14 +48,15 @@ body {
 /* Struktur Organisasi */
 .container {
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 5rem;
-  padding: 5px;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2rem; /* Sudah cukup memberi ruang horizontal */
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  max-width: 1200px; /* Ganti dari 100% agar tidak terlalu lebar */
+  width: 80%;
   box-sizing: border-box;
-  z-index: 9999;
+  z-index: 10;
+  margin-top: 5rem;
 }
 
 .menu .row .menu-card {
@@ -92,24 +93,12 @@ body {
   margin: 30px;
 }
 
-..menu-card-main {
+.menu-card-main {
   margin-top: 20px;
-}
-
-.menu-card-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .menu-card {
   margin: 10px;
-}
-
-.menu-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
 }
 
 .menu .row .menu-card img {
@@ -133,6 +122,12 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .menu-card-container {
     flex-direction: column;
@@ -141,13 +136,6 @@ body {
 
   .menu-card {
     width: 80%; /* Atur lebar agar pas di layar kecil */
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    margin: 5rem 2rem;
-    padding: 10px;
   }
 }
 
