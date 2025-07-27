@@ -961,11 +961,11 @@ body {
 
 .container .products-container .product {
   text-align: center;
-  padding: 5rem 3rem;
+  padding: 3.5rem 4rem;
   background: var(--bg);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   outline: 0.1rem solid #666;
-  outline-offset: -1.5rem;
+  outline-offset: -1.2rem;
   cursor: pointer;
 }
 
@@ -989,6 +989,7 @@ body {
   font-size: 1rem;
   color: #000;
   text-align: center;
+  margin: 0.5rem 0;
 }
 
 .container .products-container .product p {
