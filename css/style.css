@@ -1193,7 +1193,7 @@ body {
 /* Footer */
 body {
   position: relative;
-  min-height: 80vh;
+  min-height: 65vh;
   margin: 0;
   padding-bottom: 5rem;
 }
