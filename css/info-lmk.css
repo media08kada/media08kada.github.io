@@ -23,6 +23,46 @@ body {
   text-decoration: underline;
 }
 
+/* Stuktur Organisasi */
+.menu h2 {
+  margin-bottom: 1rem;
+}
+
+.menu p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -10px;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 65%;
+  border: 1px solid var(--bg1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  margin-top: -20px;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+.menu-card-price
+
 /* Footer */
 body {
   position: relative;
