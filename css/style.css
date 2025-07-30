@@ -1081,8 +1081,8 @@ body {
 }
 
 #show-more-btn:hover i {
-  transform: scale(1.2) rotate(10deg); /* Membesarkan dan memiringkan ikon */
-  stroke: var(--primary); /* Mengubah warna garis ikon, pastikan Feather icons menggunakan stroke */
+  transform: scale(1.2) rotate(10deg); 
+  stroke: var(--primary); 
 }
 
 /* Sembunyi End */
