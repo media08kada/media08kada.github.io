@@ -651,26 +651,31 @@
           <p>Tanggal, 17 Juni 2025</p>
           <a href="../giat/pelantikan-rt-dan-rw-kelapa-dua.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <button id="show-more-btn">Tampilan Selengkapnya</button>
+        <button id="show-more-btn" data-aos="fade-up" data-aos-duration="1000"><span class="btn-text" >Tampilan Selengkapnya</span><i data-feather="arrow-right-circle"></i>
+        </button>
        </div>
       </div>
     </div>
   </section>
   
   <script>
-  const btn = document.getElementById("show-more-btn");
-  let isShown = false;
+const btn = document.getElementById("show-more-btn");
+const btnText = btn.querySelector(".btn-text");
+let isShown = false;
 
-  btn.addEventListener("click", function () {
-    const items = [document.getElementById("p5"), document.getElementById("p6"), document.getElementById("p7"), document.getElementById("p8")];
+btn.addEventListener("click", function () {
+  const items = [
+    document.getElementById("p5"),
+    document.getElementById("p6"),
+    document.getElementById("p7"),
+    document.getElementById("p8")
+  ];
 
-    items.forEach(item => {
-      item.classList.toggle("hidden");
-    });
+  items.forEach(item => item.classList.toggle("hidden"));
 
-    isShown = !isShown;
-    btn.textContent = isShown ? "Tutup Tampilan" : "Tampilan Selengkapnya";
-  });
+  isShown = !isShown;
+  btnText.textContent = isShown ? "Tutup Tampilan" : "Tampilan Selengkapnya";
+});
 </script>
 
 <!-- Video Section -->
@@ -806,6 +811,7 @@
         }
       });
     </script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>    
