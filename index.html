@@ -500,7 +500,7 @@
          const images = container.querySelectorAll("img");
          let current = 0;
          
-    // Atur gambar pertama tampil, lainnya disembunyikan
+ 
       images.forEach((img, i) => {
       img.style.display = i === 0 ? "block" : "none";
     });
@@ -512,7 +512,6 @@
     }, interval);
   }
   
- <!--Terapkan untuk setiap bagian gambar -->
       setupImageSwitcher(".images");
       setupImageSwitcher(".picture");
       setupImageSwitcher(".media");

@@ -276,17 +276,17 @@ document.querySelector('form[name="media08kada-form"]').addEventListener('submit
 document.querySelector('form[name="media08kada-form"]').addEventListener('submit', function (e) {
   e.preventDefault();
 
-  // Kode untuk mengirim pesan menggunakan AJAX
+  // Kode untuk mengirim pesan menggunakan AJAX //
   var xhr = new XMLHttpRequest();
   xhr.open('POST', '/path/to/server', true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.send(new URLSearchParams(new FormData(this)).toString());
 
-  // Mengatur ulang nilai input form
+  // Mengatur ulang nilai input form //
   this.reset();
 });
 
-// Gambar berganti secara otomatis
+// Gambar berganti secara otomatis //
 function cycleImages() {
   const img = document.getElementById('view-img');
   img.style.opacity = 0;
