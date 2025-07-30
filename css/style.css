@@ -1101,6 +1101,7 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
+
 }
 
 /* Contact Section */
@@ -1111,6 +1112,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   z-index: 9999;
+  
 }
 
 .contact .row img {
