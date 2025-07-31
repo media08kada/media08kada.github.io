@@ -50,6 +50,7 @@ body {
   border: 1px solid #ddd;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   min-height: 500px;
+  border-radius: 1%;
 }
 
 .view-img {
@@ -103,21 +104,13 @@ body {
   padding: 1rem 2% 0.5rem;
   transition: 0.3s;
 }
+
 .photo-item a:hover {
   color: var(--bg1);
   transform: translateY(-4px);
   font-size: 1.05em;
 }
-.photo-item a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0;
-  transition: width 0.3s;
-  background-color: currentColor;
-}
+
 .photo-item a:hover::after {
   width: 100%;
 }

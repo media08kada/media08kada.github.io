@@ -698,7 +698,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem; /* bisa kamu sesuaikan */
+  padding: 0 2rem; 
 }
 
 .video,
@@ -706,9 +706,9 @@ body {
 .menu,
 .products,
 .contact {
-  padding: 3rem 0 1.4rem; /* Hilangkan padding horizontal */
-  max-width: 1200px; /* Atur lebar maksimum konten */
-  margin: 0 auto; /* Posisikan konten ke tengah */
+  padding: 3rem 0 1.4rem; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 .video h2,
 .about h2,
