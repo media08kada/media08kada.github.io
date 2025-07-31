@@ -34,6 +34,15 @@ body {
   margin: auto;
   font-weight: 300;
   line-height: 1.5;
+  margin-top: -10px;
+}
+
+.menu .menu-card-price {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 4;
   margin-top: -20px;
 }
 
