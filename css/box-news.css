@@ -33,6 +33,7 @@ body {
   color: #000;
   transition: 0.3s;
 }
+
 .navbar a:hover {
   color: var(--bg1);
   text-decoration: underline;
@@ -141,6 +142,7 @@ body {
   box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
   transition: background-color 0.3s;
 }
+
 .continue1 a,
 .continue2 a,
 .continue3 a,
@@ -149,6 +151,7 @@ body {
   margin-bottom: 5px;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
+
 .continue1:hover,
 .continue2:hover,
 .continue3:hover,
