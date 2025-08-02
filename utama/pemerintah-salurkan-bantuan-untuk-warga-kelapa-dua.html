@@ -81,7 +81,7 @@
                  
         <div class="row">
           <div class="modal3-content">
-            <img src="../img/berita-3/C.jpg" alt="">
+            <img src="../img/berita-3/C.jpg" alt="" loading="lazy">
           </div>
          <div class="content">
           <h3>Pemerintah Salurkan Bantuan Beras untuk Warga Kelapa Dua</h3>
@@ -93,7 +93,7 @@
         <!-- Box Iklan Berita Star -->
           <section class="services">
             <div class="service" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
-              <img src="../img/berita-1/A.jpg" alt=""><div>
+              <img src="../img/berita-1/A.jpg" alt="" loading="lazy"><div>
                 <a href="../utama/semarak-festival-olahraga-rakyat.html" style="font-family: poppins;"><span><b>📜BACA JUGA</b></span></a>
                 <p style="font-size: 12px;" align="left">
                 <a href="../utama/semarak-festival-olahraga-rakyat.html" style="font-family: poppins; color: black; font-size: 12px; text-transform: none; text-decoration: none; line-height: 15px;" >Semarak Festival Olahraga Rakyat Jakarta Barat 2025: Senam Ondel-Ondel Meriahkan Kebersamaan Warga. Baca detailnya di sini !</a></p></div>
@@ -161,36 +161,13 @@
         <!-- Footer end -->
 
         <!-- Javascript Feather Icons Medsos -->
-        <script>
-          feather.replace();
-          </script>
+         <script src="js/script.js"></script>
+         <script src="js/script-1.js"></script>
+         <script src="js/histats.js"></script>
+         <script>
+         feather.replace();
+         </script>
 
-    <!-- My Javascript Popup Screen Iklan -->
-    <script type="text/javascript">
-      const popupScreen = document.querySelector(".popup-screen");
-      const popupBox = document.querySelector(".popup-box");
-      const closeBtn = document.querySelector(".close-btn");
-      const popupAudio = document.querySelector('popup-audio');
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          popupScreen.classList.add("active");
-          popupAudio.play();
-        }, 2000); //
-      });
-      closeBtn.addEventListener("click", () => {
-        popupScreen.classList.remove("active");
-        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
-
-        if(WebsiteCookie != -1){
-          popupScreen.style.display = "none";
-        }
-        else{
-          popupScreen.style.display = "flex";
-        }
-      });
-    </script>
-  </body>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

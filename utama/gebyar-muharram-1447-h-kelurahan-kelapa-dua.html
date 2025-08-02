@@ -82,7 +82,7 @@
                  
         <div class="row">
           <div class="modal1-content">
-            <img src="../img/berita-2/B.jpg" alt="">
+            <img src="../img/berita-2/B.jpg" alt="" loading="lazy">
             
           </div>
          <div class="content">
@@ -95,7 +95,7 @@
         <!-- Box Iklan Berita Star -->
           <section class="services">
             <div class="service" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
-              <img src="../img/box-news/news4.jpg" alt=""><div>
+              <img src="../img/box-news/news4.jpg" alt="" loading="lazy"><div>
                 <a href="../news/santunan-anak-yatim-di-mushollah-al-hidayah.html" style="font-family: poppins;"><span><b>📜BACA JUGA</b></span></a>
                 <p style="font-size: 12px;" align="left">
                 <a href="../news/santunan-anak-yatim-di-mushollah-al-hidayah.html" style="font-family: poppins; color: black; font-size: 12px; text-transform: none; text-decoration: none;">Santunan Anak Yatim di Mushollah Al Hidayah</a></p></div>
@@ -110,7 +110,7 @@
         <!-- Box Iklan Berita Star -->
           <section class="services">
             <div class="service" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
-              <img src="../img/Logo/jemput.png" alt=""><div>
+              <img src="../img/Logo/jemput.png" alt="" loading="lazy"><div>
                 <a href="../jali-jali.html" style="font-family: poppins;"><span><b>📜BACA JUGA</b></span></a>
                 <p style="font-size: 12px;" align="left">
                 <a href="../jali-jali.html" style="font-family: poppins; color: black; font-size: 12px; text-transform: none; text-decoration: none;">Jemput Antar Lansia Ke Posyandu</a></p></div>
@@ -143,7 +143,8 @@
        <!-- Hi stats.com  START  (aync)-->
        <div id="histats_counter"></div>
        <!-- Histats.com  (div with counter) -->
-      <script type="text/javascript">var _Hasync= _Hasync|| [];
+      <script type="text/javascript">
+      var _Hasync= _Hasync|| [];
         _Hasync.push(['Histats.start', '1,4937767,4,1030,150,25,00011111']);
         _Hasync.push(['Histats.fasi', '1']);
         _Hasync.push(['Histats.track_hits', '']);
@@ -168,36 +169,11 @@
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-
-    <!-- My Javascript Popup Screen Iklan -->
-    <script type="text/javascript">
-      const popupScreen = document.querySelector(".popup-screen");
-      const popupBox = document.querySelector(".popup-box");
-      const closeBtn = document.querySelector(".close-btn");
-      const popupAudio = document.querySelector('popup-audio');
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          popupScreen.classList.add("active");
-          popupAudio.play();
-        }, 2000); //
-      });
-      closeBtn.addEventListener("click", () => {
-        popupScreen.classList.remove("active");
-        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
-
-        if(WebsiteCookie != -1){
-          popupScreen.style.display = "none";
-        }
-        else{
-          popupScreen.style.display = "flex";
-        }
-      });
-    </script>
-     </body>
+    <script src="js/script-1.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+   </script>
+   </body>
 </html>
