@@ -884,39 +884,16 @@ body {
   }
 }
 
-/* Garis Pemisah antar News */
-/*.elemen {
-  border-bottom: 0.5px solid #333;
-  padding: 30px;
-  display: flex;
-
-  align-items: center;
-}
-
-.elemen:first-child {
-  border-top: none;
-}
-
-.images img,
-.picture img,
-.media img {
-  width: 100%;
-  height: auto;
-  display: none;
-  transition: opacity 0.5s ease-in-out;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.8);
-} */
-
 .margin-section {
   margin-top: 4rem;
 }
-/* About Berita utama end */
 
 .products h2,
 .contact h2 {
   margin-bottom: 1rem;
   margin-top: 0.5rem;
 }
+/* About Berita utama end */
 
 /* Kegiatan RW 08 Star */
 .container {
