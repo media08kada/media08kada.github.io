@@ -137,30 +137,6 @@
 </section>
 <!-- Medsos end -->
 
-<!-- Feather Icons -->
-<script>
-feather.replace();
-</script>
-
-<!-- My Javascript -->
-<script src="js/script.js"></script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxKHMrUOe_aqGplf0svJP8xAS-WWTZ8ChOHUs7qESc-jifDvSIpXis-1Q0eKl7goc_o3Q/exec'
-  const form = document.forms['jali-jali-contact-form']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then((response) => {
-    console.log('Success!', response);
-    form.reset(); // Hapus nilai input
-  })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-   
-</script>
-</body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

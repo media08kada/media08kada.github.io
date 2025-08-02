@@ -46,9 +46,7 @@
     <link rel="stylesheet" href="../css/box-giat.css">
     <link rel="stylesheet" href="../css/box-news.css">
     <link rel="stylesheet" href="../css/box.css">
-    
-    <!-- custom js file link -->
-    <script src="js/script.js" defer></script>
+
     <title>Kader Posyandu Melati Juara 1</title>
   </head>
 <body>
@@ -64,13 +62,13 @@
 
      <!-- About Berita Utama start -->
           <section id="about" class="about">
-          <h2 data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300"><span>Giat</span> Berita </h2> 
+          <h2><span>Giat</span> Berita </h2> 
                  
         <div class="row">
           <div class="box-content">
-            <img src="../img/box-news/news4.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300">
+            <img src="../img/box-news/news4.jpg" alt="">
           </div>
-         <div class="content" data-aos="fade-left" data-aos-duration="1000" date-aos-delay="500">
+         <div class="content">
         <h3>Santunan Anak Yatim di Mushollah Al Hidayah</h3>
           <h4>Tanggal, 12 Juli 2025</h4>
         <br>
@@ -135,57 +133,14 @@
           </footer>
         <!-- Medsos end -->
 
-    <!-- Feather Icons -->
-    <script>
-      feather.replace();
-    </script>
-
     <!-- My Javascript -->
     <script src="js/script.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzK4zBOY0LPe6I06k1e1fpmfjLrSh8skkGRAX8YurscUnCGM62_JMFvINbc9auj5jJUtA/exec'
-      const form = document.forms['media08kd-form']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-    
-    </script>
-  </body>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
-     <!-- My Javascript Popup Screen Iklan -->
-    <script type="text/javascript">
-      const popupScreen = document.querySelector(".popup-screen");
-      const popupBox = document.querySelector(".popup-box");
-      const closeBtn = document.querySelector(".close-btn");
-      const popupAudio = document.querySelector('popup-audio');
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          popupScreen.classList.add("active");
-          popupAudio.play();
-        }, 2000); //
-      });
-      closeBtn.addEventListener("click", () => {
-        popupScreen.classList.remove("active");
-        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
-
-        if(WebsiteCookie != -1){
-          popupScreen.style.display = "none";
-        }
-        else{
-          popupScreen.style.display = "flex";
-        }
-      });
-    </script>
      </body>
 </html>

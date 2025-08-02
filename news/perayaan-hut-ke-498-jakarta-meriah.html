@@ -47,9 +47,7 @@
     <link rel="stylesheet" href="../css/box-giat.css">
     <link rel="stylesheet" href="../css/box-news.css">
     <link rel="stylesheet" href="../css/box.css">
-    
-    <!-- custom js file link -->
-    <script src="js/script.js" defer></script>
+
     <title>Perayaan HUT Ke 498 Jakarta Meriah</title>
     </head>
   <body>
@@ -65,12 +63,12 @@
 
      <!-- About Berita Utama start -->
      <section id="about" class="about">
-     <h2 data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300"><span>Giat</span> Berita</h2> 
+     <h2><span>Giat</span> Berita</h2> 
                  
      <div class="row">
      <div class="box-content">
-     <img src="../img/box-news/news1.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="300"></div>
-    <div class="content" data-aos="fade-left" data-aos-duration="1000" date-aos-delay="500">
+     <img src="../img/box-news/news1.jpg" alt=""></div>
+    <div class="content">
     <h3>Perayaan HUT Ke 498 Jakarta Meriah</h3>
     <h4>Tanggal, 26 Juli 2025</h4>
     <br>
@@ -134,11 +132,6 @@
           </footer>
         <!-- Medsos end -->
 
-    <!-- Feather Icons -->
-    <script>
-      feather.replace();
-    </script>
-
     <!-- My Javascript -->
     <script src="js/script.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -147,30 +140,5 @@
           AOS.init();
           </script>
 
-    <!-- My Javascript Popup Screen Iklan -->
-    <script type="text/javascript">
-      const popupScreen = document.querySelector(".popup-screen");
-      const popupBox = document.querySelector(".popup-box");
-      const closeBtn = document.querySelector(".close-btn");
-      const popupAudio = document.querySelector('popup-audio');
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          popupScreen.classList.add("active");
-          popupAudio.play();
-        }, 2000); //
-      });
-      closeBtn.addEventListener("click", () => {
-        popupScreen.classList.remove("active");
-        document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
-        const WebsiteCookie = document.cookie.indexOf("WebsiteName");
-
-        if(WebsiteCookie != -1){
-          popupScreen.style.display = "none";
-        }
-        else{
-          popupScreen.style.display = "flex";
-        }
-      });
-    </script>
-     </body>
+      </body>
 </html>
