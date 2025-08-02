@@ -69,7 +69,7 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     popupScreen.classList.add('active');
     popupAudio.play();
-  }, 2000); //
+  }, 1000); //
 });
 closeBtn.addEventListener('click', () => {
   popupScreen.classList.remove('active');
