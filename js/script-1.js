@@ -60,36 +60,25 @@ _Hasync.push(['Histats.track_hits', '']);
   (document.head || document.body).appendChild(hs);
 })();
 
-// Selektor Komponen
+// My Javascript Popup Screen Iklan //
 const popupScreen = document.querySelector('.popup-screen');
 const popupBox = document.querySelector('.popup-box');
 const closeBtn = document.querySelector('.close-btn');
-const popupAudio = document.querySelector('#popup-audio');
-
-// Fungsi: Cek cookie
-function hasCookie(name) {
-  return document.cookie.split(';').some((item) => item.trim().startsWith(name + '='));
-}
-
-// Fungsi: Tampilkan PopUp + Audio
-function showPopupWithAudio() {
-  popupScreen.classList.add('active');
-  popupAudio.play().catch(() => {
-    // Autoplay gagal? Tunggu interaksi user
-    popupScreen.addEventListener('click', () => popupAudio.play());
-  });
-}
-
-// Saat halaman dimuat
+const popupAudio = document.querySelector('popup-audio');
 window.addEventListener('load', () => {
-  if (!hasCookie('WebsiteName')) {
-    setTimeout(showPopupWithAudio, 1000); // Delay 1 detik
-  }
+  setTimeout(() => {
+    popupScreen.classList.add('active');
+    popupAudio.play();
+  }, 1000); //
 });
-
-// Tutup PopUp
 closeBtn.addEventListener('click', () => {
   popupScreen.classList.remove('active');
-  popupScreen.style.display = 'none';
   document.cookie = 'WebsiteName=testWebsite; max-age=' + 24 * 60 * 60;
+  const WebsiteCookie = document.cookie.indexOf('WebsiteName');
+
+  if (WebsiteCookie != -1) {
+    popupScreen.style.display = 'none';
+  } else {
+    popupScreen.style.display = 'flex';
+  }
 });

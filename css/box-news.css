@@ -150,6 +150,17 @@ body {
   background-color: var(--primary);
 }
 
+.fade-in-img {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+[data-aos].aos-animate.fade-in-img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Modal Box */
 .box {
   display: none;
