@@ -652,35 +652,6 @@ body {
   line-height: 1.1;
 }
 
-/* Clock */
-.container-clock {
-  position: center;
-  flex-direction: column;
-  gap: 0.5px;
-  width: 100%;
-  margin: 10px auto 0.2rem;
-  padding: 0.3rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.tanggal-clock {
-  font-size: 1.25rem;
-  color: var(--primary);
-  display: block;
-  width: 100%;
-  max-width: 230px;
-  padding: 4px 8px;
-  text-align: center;
-  background-color: black;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin: 5px auto;
-  box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
-}
-
 /* About Berita Utama Star */
 .container {
   max-width: 1200px;
