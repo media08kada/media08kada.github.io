@@ -30,15 +30,15 @@ img {
   align-itms: center;
   background-color: rgba(255, 255, 255, 0.5);
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   z-index: 9999;
 }
 
 .preview-img {
-  height: 45%;
-  width: 45%;
+  height: 50%;
+  width: 50%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
