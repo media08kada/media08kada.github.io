@@ -33,9 +33,6 @@ body {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(248, 248, 248) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
 }
 
-body {
-  background-color
-}
 
 /* Navbar */
 .navbar {
@@ -370,7 +367,7 @@ body {
 
 .thumbnail .item {
   width: 150px;
-  height: 220px;`
+  height: 220px;
   flex-shrink: 0;
   position: relative;
 }
@@ -724,7 +721,7 @@ body {
 .about .row .content .modal2-icons,
 .about .row .content .modal3-icons {
   display: inline-block;
-  margim-top: 1rem;
+  margin-top: 1rem;
   color: white;
   box-shadow: 1px 1px 5px rgba(1, 250, 105, 0.5);
   padding: 0.5rem 1rem;
@@ -926,7 +923,6 @@ body {
 .container .products-container .product h3 {
   padding: 0.5rem 0;
   font-size: 1.1rem;
-  line-text: 0.5rem;
   color: #000;
   text-align: center;
   margin: 0.3rem 0;
@@ -1312,7 +1308,7 @@ footer .credit p {
   .navbar .navbar-nav a {
     color: #000;
     display: block;
-    margin-botton: 5px;
+    margin-bottom: 5px;
     padding: 0.5rem;
     font-size: 1.5em;
     min-width: 120px;
@@ -1321,7 +1317,6 @@ footer .credit p {
 
   .navbar .navbar-nav icon {
     align-items: center;
-    line-spacing: 2px;
   }
 
   .navbar .navbar-nav a::after {
