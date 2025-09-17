@@ -1035,7 +1035,21 @@ body {
   margin: 0 auto;
 }
 
+.g-ytsubscribe {
+  text-align: center;
+}
+
 /* Contact Section */
+.contact {
+  margin-top: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.contact p {
+  text-align: center;
+}
+
 .contact .row {
   display: flex;
   margin-top: 2rem;
@@ -1052,6 +1066,7 @@ body {
   aspect-ratio: 1/1;
   object-fit: contain;
   margin: 20px;
+  color: #000;
   border: none;
   transform: translateY(-10px);
 }
