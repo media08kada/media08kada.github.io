@@ -296,3 +296,6 @@ function cycleImages() {
     currentIndex = (currentIndex + 1) % images.length;
   }, 500);
 }
+
+
+

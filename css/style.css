@@ -52,7 +52,7 @@ body {
 .navbar .navbar-nav a {
   color: #000;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 2rem;
 }
 
@@ -162,7 +162,7 @@ body {
 .navbar .search-form input {
   height: 100%;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--bg);
   padding: 1rem;
 }
@@ -172,60 +172,6 @@ body {
   font-size: 2rem;
   margin-right: 1.5rem;
   color: #000;
-}
-
-/* Hamburger Cart Star */
-.archive {
-  position: absolute;
-  top: 100%;
-  right: -100%;
-  height: 100vh;
-  width: 32rem;
-  padding: 0 1.5rem;
-  background-color: #fff;
-  color: #000;
-  transition: right 0.3s ease;
-  cursor: pointer;
-  overflow-y: auto;
-  z-index: 99;
-  box-sizing: border-box;
-}
-
-.archive.active {
-  right: 0;
-}
-
-.archive .cart-item {
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px dashed #666;
-  position: relative;
-  overflow: hidden;
-}
-
-.archive img {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.archive h2 {
-  font-size: 1.2rem;
-  padding-bottom: 0.5rem;
-}
-
-.archive .item-price {
-  font-size: 1.2rem;
-}
-
-.archive.active .remove-item {
-  position: absolute;
-  right: 1rem;
-  cursor: pointer;
 }
 
 /* slider Hero Section Star */
@@ -875,6 +821,27 @@ body {
   margin-top: 0.5rem;
 }
 /* About Berita utama end */
+
+/* Parallax Box-News */
+.parallax {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../img/assets/Ondel-bg1.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  z-index: -1; /* supaya di belakang konten */
+}
+
 
 /* Kegiatan RW 08 Star */
 .container {
