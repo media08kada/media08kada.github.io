@@ -52,7 +52,7 @@ body {
 .navbar .navbar-nav a {
   color: #000;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 2rem;
 }
 
@@ -176,7 +176,7 @@ body {
 
 /* slider Hero Section Star */
 .slider {
-  height: 80vh;
+  height: 80vh; 
   margin-top: -50px;
   width: 100vw;
   overflow: hidden;
@@ -313,7 +313,7 @@ body {
 
 .thumbnail .item {
   width: 150px;
-  height: 220px;
+  height: 200px;
   flex-shrink: 0;
   position: relative;
 }
@@ -826,7 +826,6 @@ body {
 .parallax {
   position: relative;
   overflow: hidden;
-
 }
 
 .parallax::before {
@@ -841,7 +840,6 @@ body {
   filter: grayscale(1);
   z-index: -1; /* supaya di belakang konten */
 }
-
 
 /* Kegiatan RW 08 Star */
 .container {
