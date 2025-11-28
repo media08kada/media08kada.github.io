@@ -163,21 +163,23 @@ body {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 .box-container {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
   margin: 5% auto;
   padding: 1.2rem;
-  border: 1px solid #666;
   width: 80%;
   height: 80%;
   animation: animateModal1 0.5s;
 }
+
 .box-container h3:hover {
   background-color: var(--bg1);
   color: #000;
 }
+
 .box-content {
   display: flex;
   flex-wrap: nowrap;
