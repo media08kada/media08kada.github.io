@@ -312,8 +312,8 @@ body {
 }
 
 .thumbnail .item {
-  width: 150px;
-  height: 200px;
+  width: 100px;
+  height: 150px;
   flex-shrink: 0;
   position: relative;
 }
@@ -447,8 +447,8 @@ body {
 
 /* Animation for next button click */
 .slider.next .list .item:nth-child(1) img {
-  width: 150px;
-  height: 220px;
+  width: 100px;
+  height: 150px;
   position: absolute;
   bottom: 50px;
   left: 50%;
