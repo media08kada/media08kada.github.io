@@ -662,6 +662,22 @@ body {
   line-height: 1.6;
 }
 
+/* Atur jarak wrapper berita sama dengan slider */
+.about-img .wrapper.berita {
+  margin-top: 20px;   /* samakan dengan margin slider */
+  margin-bottom: 20px;
+  text-align: center; /* kalau slider juga rata tengah */
+}
+
+.about-img h3 {
+  margin-bottom: 5px; /* rapatkan heading ke paragraf */
+}
+
+.about-img p {
+  margin-top: 0;
+}
+
+
 /* Box Continue Star... */
 .about .row .content .modal1-icons,
 .about .row .content .modal2-icons,
