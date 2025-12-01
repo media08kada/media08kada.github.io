@@ -112,13 +112,15 @@ html {
   width: 55px;
   height: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+  box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.2);
   transition: background-color 0.3s;
 }
 
 .continue-btn a {
   font-size: 10px;
   margin-bottom: 5px;
+  color: #fff;
+  text-align: center;
 }
 
 .fade-in-img {
