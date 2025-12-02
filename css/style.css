@@ -842,6 +842,7 @@ body {
 .parallax {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(0deg, rgb(237, 237, 241) 3%, rgba(252, 252, 252, 0.315) 25%);
 }
 
 .parallax::before {
