@@ -23,7 +23,7 @@ setupImageSwitcher('.media');
 const imgView = (src) => {
   document.getElementById('view-img').src = src;
 };
-const images = ['../img/box-news/A.jpg', '../img/box-news/B.jpg', '../img/box-news/C.jpg', '../img/box-news/D.jpg'];
+const images = ['../img/box-news/news1.jpg', '../img/box-news/news2.jpg', '../img/box-news/news3.jpg', '../img/box-news/news4.jpg'];
 let currentIndex = 0;
 
 function cycleImages() {
