@@ -1391,6 +1391,10 @@ footer .credit p {
     width: 80%;
   }
 
+  input {
+  color: #000;
+}
+
   .video {
     width: 100%;
     padding: 10px;
