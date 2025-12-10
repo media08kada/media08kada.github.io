@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/kelurahan.css">
+    <title>Info Puskesmas</title>
+    
+  </head>
+  <body id="home" class="scrollspy">
+    
+    <!-- Navbar Start -->
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo">
+              <img src="../img/logo/MediaKelapadua.png" width="50" height="50" alt="Logo Media Kelapa Dua" />
+            </a>
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons large">home</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<!-- Info Kelurahan -->
+<section id="berita" class="section berita grey-text text-darken-3">
+  <div class="container">
+    <!-- Judul -->
+    <div class="row">
+      <div class="col s12">
+        <h3 class="light center-align grey-text text-darken-3">Info Puskesmas</h3>
+      </div>
+    </div>
+
+  <!-- Embed PowerPoint via Google Slides -->
+<div class="powerpoint-wrapper" style="text-align:center;">
+  <iframe 
+    src="https://docs.google.com/presentation/d/1RH5WFI0t0bp4m-Yz0yoOz1JiH8ctMkYj/embed?start=true&loop=true&delayms=2000&rm=minimal"
+    width="800" height="500" frameborder="0" 
+    allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+  </iframe>
+</div>
+
+  <div class="description">
+    <h5 style="text-align: center;">Deskripsi :</h5>
+    <p style="text-align: center;">
+      Program Implementasi Nyamuk Aedes Aegypti Berwolbachia di Kota Jakarta Barat
+    </p>
+  </div>
+</section>
+<!-- End Video Section -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Dropdown
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+        });
+
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+      });
+    </script>
+  </body>
+</html>

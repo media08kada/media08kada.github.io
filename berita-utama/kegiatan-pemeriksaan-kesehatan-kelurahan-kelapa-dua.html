@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediakelapadua</title>
+
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="home" class="scrollspy">
+
+    <!-- Navbar Start -->
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo">
+              <img src="../img/logo/MediaKelapadua.png" width="50" height="50" alt="Logo Media Kelapa Dua" />
+            </a>
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons large">home</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<!-- Berita Utama -->
+<section id="berita" class="section berita grey-text text-darken-3">
+  <div class="container">
+    <!-- Judul -->
+    <div class="row">
+      <div class="col s12">
+        <h3 class="light center-align grey-text text-darken-3">Berita Utama</h3>
+      </div>
+    </div>
+
+    <!-- Berita-1 -->
+    <div class="row berita-detil">
+      <!-- Gambar -->
+      <div class="col s12 m4">
+        <img src="../img/berita-3/C.jpg" alt="Festival Kelapa Dua" class="responsive-img z-depth-1" />
+      </div>
+
+      <!-- Konten -->
+      <div class="col s12 m8">
+        <h5>Kegiatan Pemeriksaan Kesehatan Kelurahan Kelapa Dua</h5>
+          <p class="date">Tanggal, 25 November 2025</p>
+        
+          <p class="text" style="text-align: justify;">MediaKada | Kelurahan Kelapa Dua bekerjasama dengan Puskesmas Kebon Jeruk, Puskesmas Pembantu Kelapa Dua, RS Kanker Dharmais dan PKK Kelurahan Kelapa Dua menggelar layanan pemeriksaan kesehatan gratis bagi masyarakat, pada Selasa (25/11) pagi.</p>
+          <p style="text-align: justify;">Kegiatan ini mencakup skrining HPV DNA untuk pencegahan kanker serviks, pemeriksaan Sadanis (pemeriksaan payudara klinis), serta skrining CKG yang meliputi TB, Berat Badan, Lingkar Perut, Tensi Darah, dan Kesehatan Jiwa.</p>
+           <p style="text-align: justify;">Kegiatan ini berlangsung mulai pukul 08.00 WIB hingga selesai berlokasi di Aula Kelurahan Kelapa Dua Lantai 3 Kecamatan Kebon Jeruk Jakarta Barat. Antusiasme tinggi dari warga, khususnya kaum perempuan untuk mengikuti kegiatan tersebut, untuk menambah semangat partisipasi, panitia menyediakan bingkisan berupa sembako bagi 50 pendaftar pertama.</p>
+           <p style="text-align: justify;">Inisiatif ini diharapkan dapat meningkatkan kesadaran masyarakat khususnya masyarakat Kelapa Dua akan pentingnya deteksi dini penyakit serta menjaga kesehatan secara menyeluruh sebagai investasi masa depan.</p>
+           <p style="text-align: justify;">Ungkapan “mencegah lebih baik daripada mengobati” menjadi pesan utama dalam kegiatan ini. Deteksi dini terbukti sangat penting, khususnya untuk penyakit-penyakit berisiko tinggi seperti kanker serviks dan kanker payudara. Dengan pemeriksaan sejak awal, masyarakat dapat menjaga kesehatan dan mencegah dampak yang lebih serius di kemudian hari.</p>
+        <p style="text-align: justify;">Tetap Semangat, Salam Sehat</p>
+        <p style="font-size: 12px;" text-align="justify" >(LMK-08 Kelapa dua)</p>
+
+        <a href="../index.html" class="waves-effect waves-light btn-small green">
+          Home
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Dropdown
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+        });
+
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+      });
+    </script>
+  </body>
+</html>

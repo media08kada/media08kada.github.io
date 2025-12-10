@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediakelapadua</title>
+
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="home" class="scrollspy">
+
+    <!-- Navbar Start -->
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo">
+              <img src="../img/logo/MediaKelapadua.png" width="50" height="50" alt="Logo Media Kelapa Dua" />
+            </a>
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons large">home</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<!-- Berita Utama -->
+<section id="berita" class="section berita grey-text text-darken-3">
+  <div class="container">
+    <!-- Judul -->
+    <div class="row">
+      <div class="col s12">
+        <h3 class="center-align grey-text text-darken-3">Berita Pilihan</h3>
+      </div>
+    </div>
+
+    <!-- Berita-1 -->
+    <div class="row berita-detil">
+      <!-- Gambar -->
+      <div class="col s12 m4">
+        <img src="../img/card/card4d.jpg" alt="Festival Kelapa Dua" class="responsive-img z-depth-1" />
+      </div>
+
+      <!-- Konten -->
+      <div class="col s12 m8">
+        <h5>Pertunjukan Lenong Betawi</h5>
+          <p></p>
+          Lenong Betawi, salah satu warisan budaya khas masyarakat Betawi, kembali menjadi sorotan dalam upaya pelestarian seni tradisional di Jakarta. Teater rakyat ini memadukan komedi segar, musik gambang kromong yang merdu, tarian penuh semangat, serta dialog berbahasa Betawi yang kental dengan nuansa lokal.</p>
+          <p style="text-align: justify;">Kini, lenong Betawi terus digelar di berbagai panggung komunitas maupun festival budaya, menjadi simbol identitas dan kebanggaan warga Betawi. Kehadirannya bukan sekadar tontonan, melainkan juga tuntunan yang menjaga nilai-nilai kebersamaan, humor, dan kearifan lokal agar tetap hidup di tengah masyarakat modern.</p>
+          <P style="text-align: justify;">Dengan semangat pelestarian, lenong Betawi diharapkan mampu menarik generasi muda untuk mengenal dan mencintai seni tradisi yang sarat makna ini.</P>
+
+        <a href="../index.html" class="waves-effect waves-light btn-small green">
+          Home
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Dropdown
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+        });
+
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+      });
+    </script>
+  </body>
+</html>

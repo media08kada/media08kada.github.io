@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
      <!-- Google Adsense-->
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957"
      crossorigin="anonymous"></script>
-     
-    <!--  Metadata -->
+
+     <!--  Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Media Kelapa Dua" />
@@ -37,598 +37,744 @@
     gtag('config', 'G-LFE1NH0SL3');
     </script>
 
-    <!-- Favicon -->
-    <link rel="icon" href="./img/Logo/mediakada.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediakelapadua</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
-    
-    <!-- Icons & Animations -->
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/calender.css">
-    <link rel="stylesheet" href="css/box-giat.css">
-    <link rel="stylesheet" href="css/box-news.css">
-    <link rel="stylesheet" href="css/iklan.css">
-    <link rel="stylesheet" href="css/berita-utama.css">
-    <link rel="stylesheet" href="css/info.css">
-    <link rel="stylesheet" href="css/video.css">
-    <link rel="stylesheet" href="reset.css">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    
-    <!-- Share Media Sosial -->
-    <script type="text/javascript" 
-    src="https://platform-api.sharethis.com/js/sharethis.js#gitproperty=67ea04446aa9ea001960ddf1&product=inline-share-buttons&source=platform" async="async" >
-    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/puskesmas.css">
+  </head>
+  <body id="home" class="scrollspy">
 
-    <title>Media Kelapa Dua</title>
-     <body>
-    <br>
-
-     <!-- Popup Iklan Star-->
-     <!--<div class="popup-screen">
- 
-       <div class="popup-box" style="background-image: url('img/iklan/MalingMotor.jpg'); background-size: 100%; background-position: center; width: 687px; height: 687px;  width: 100% auto; height: 75%; color: white">
-         <i class="fas fa-times close-btn"></i>
-         <img src="../img/Logo/mediakada.png" style="position: fixed" alt="" loading="lazy">
-         <h2 style="color: #000;"  data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000"></h2>
-         <h4></h4>
-         <p align-text="center"></p>
-         <a href="index.html" class="btn" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); background-color: #0b972e;">close</a>
-        </div>
-        <audio autoplay><source src="../audio/popup.mp3" type="audio/mp3" id="popup-audio">
-        </audio>
-        </div>-->
-      <!-- Popup Iklan End-->
-      
-      <!-- Navbar start -->
-   <nav class="navbar">
-  <a href="#" class="navbar-brand">
-    <img src="img/Logo/mediakada.png" alt="Logo-media" width="50" height="50" class="d-inline-block align-text-top" style="cursor: pointer; border: none;">
-  </a>
-        
-      <!-- Navbar Star-->
-      <div class="navbar-nav">
-        <a href="#home">Beranda</a>
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Kegiatan </a>
-          <div class="dropdown-menu">
-            <a href="#giat-utama">Giat Utama</a>
-            <a href="#menu">Giat Berita</a>
-            <a href="#giat-wilayah">Giat Wilayah</a>
-            <a href="video.html">Giat Video</a>
+    <!-- Navbar Start -->
+    <div class="navbar-fixed" id="top">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="navbar-brand">
+              <img src="img/logo/MediaKelapadua.png" width="40" height="40" />
+            </a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Beranda</a></li>
+              <li>
+                <a class="dropdown-trigger" href="#berita" data-target="dropdown1">
+                  Berita<i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">
+                  Info Wilayah<i class="material-icons right">arrow_drop_down</i></a>
+              </li>
+              <li>
+                <a class="dropdown-trigger" href="#gallery" data-target="dropdown3">
+                 Gallery<i class="material-icons right">arrow_drop_down</i></a>
+              </li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
           </div>
         </div>
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Info Wilayah</a>
-          <div class="dropdown-menu">
-            <a href="../info/info-kelurahan.html">Info Kelurahan</a>
-            <a href="puskesmas.html">Info Puskesmas</a>
-            <a href="../info/info-lmk.html">Info LMK</a>
-            <a href="calender.html">Calender Event</a>
-            <a href="../info/gallery-photo.html">Gallery Photo</a>
-            <a href="../info/iklan-product.html">Iklan Product</a>
-            <a href="../info/profil.html">Profil Redaksi</a>
-          </div>
-        </div>
-        <a href="#contact">Kontak Saran</a>
-      </div>
-      
-      <div class="navbar-extra">
-        <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="#" id="hamburger-menu" data-aos="fade-left"><i data-feather="menu"></i></a>
-      </div>
-    </div>
-   </nav>
-      <!-- Search Form start -->
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here..." />
-        <label for="search-box"><i data-feather="search"></i></label>
-      </div>
-      <!-- Search Form end -->
-
-      <!-- Box Card end -->
-     
-<!-- Slider Hero Section Star -->
-    <div class="slider" id="home">
-    <div class="list">
-      <div class="item">
-        <img src="./img/assets/Kelapa-bg1.jpg" alt="" loading="lazy"/>
-          <div class="content">
-          <div class="title">MEDIA</div>
-          <div class="type"><span>KELAPA DUA</span></div>
-          <div class="action">
-            <a href="#" class="cta"><span>mediakelapadua.web.id</span></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="./img/assets/Kota-bg1.jpg" alt="" loading="lazy"/>
-        <div class="content">
-          <div class="title">MEDIA</div>
-          <div class="type"><span>KELAPA DUA</span></div>
-          <div class="action">
-            <a href="#" class="cta"><span>mediakelapadua.web.id</span></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="./img/assets/Rausin-bg1.jpeg" alt="" loading="lazy"/>
-        <div class="content">
-          <div class="title">MEDIA</div>
-          <div class="type"><span>KELAPA DUA</span></div>
-          <div class="action">
-            <a href="#" class="cta"><span>mediakelapadua.web.id</span></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="./img/assets/Ondel-bg1.jpeg" alt="" loading="lazy"/>
-        <div class="content">
-          <div class="title">MEDIA</div>
-          <div class="type"><span>KELAPA DUA</span></div>
-          <div class="action">
-            <a href="#" class="cta"><span>mediakelapadua.web.id</span></a>
-          </div>
-        </div>
-      </div>
+      </nav>
     </div>
 
-    <!-- Thumbnail Section -->
-    <div class="thumbnail">
-    <a href="../giat/kader-posyandu-melati-juara-1.html">
-      <div class="item" >
-        <img src="./img/thumbnail/A.jpg" alt="" loading="lazy"/>
-        <div class="detail">
-          <div class="name">Festival Kelapa Dua</div>
-        </div>
-      </div>
+    <!-- Dropdown Content 1 -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#berita">Berita Utama</a></li>
+      <li><a href="#wilayah">Berita Wilayah</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">More Services</a></li>
+    </ul>
+    <!-- Dropdown Content 2 -->
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#keluraha.html">Info Kelurahan</a></li>
+      <li><a href="#puskesmas.html">Info Puskesmas</a></li>
+      <li><a href="#lmkkelapadua.html">Info LMK</a></li>
+      <li><a href="info-wilayah/event.html">Kalender Event</a></li>
+    </ul>
+    <!-- Dropdown Content 3 -->
+    <ul id="dropdown3" class="dropdown-content">
+      <li><a href="gallery/gallery-photo.html">Gallery Photo</a></li>
+      <li><a href="gallery/gallery-video.html">Gallery Video</a></li>
+    </ul>
+    <!-- Navbar End -->
+
+    <!-- Sidenav -->
+<ul class="sidenav" id="mobile-nav">
+  <li><a href="index.html">Beranda</a></li>
+
+  <!-- Dropdown trigger di sidenav -->
+  <li>
+    <a class="dropdown-trigger" href="#berita" data-target="dropdown1-mobile">
+      Berita<i class="material-icons right">arrow_drop_down</i>
     </a>
+  </li>
+  <li>
+    <a class="dropdown-trigger" href="#wilayah" data-target="dropdown2-mobile">
+      Info Wilayah<i class="material-icons right">arrow_drop_down</i>
+    </a>
+  </li>
+  <li>
+    <a class="dropdown-trigger" href="#gallery" data-target="dropdown3-mobile">
+      Gallery<i class="material-icons right">arrow_drop_down</i>
+    </a>
+  </li>
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
 
-      <a href="../utama/posyandu-rw-08-hadirkan-pusteling-dan-storytelling.html">
-        <div class="item">
-          <img src="./img/thumbnail/F.jpg" alt="" loading="lazy"/>
-          <div class="detail">
-            <div class="name">Storytelling</div>
-          </div>
-        </div>
-      </a>
+<!-- Dropdown Content khusus untuk mobile -->
+<ul id="dropdown1-mobile" class="dropdown-content">
+  <li><a href="#!">Berita Utama</a></li>
+  <li><a href="#!">Berita Wilayah</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">More Services</a></li>
+</ul>
 
-      <a href="../utama/semarak-festival-olahraga-rakyat.html">
-        <div class="item">
-          <img src="./img/thumbnail/C.jpg" alt="" loading="lazy"/>
-          <div class="detail">
-            <div class="name">Festival Olahraga</div>
-          </div>
-        </div>
-      </a>
+<ul id="dropdown2-mobile" class="dropdown-content">
+  <li><a href="#!">Info Kelurahan</a></li>
+  <li><a href="#!">Info Puskesmas</a></li>
+  <li><a href="#!">Info LMK</a></li>
+  <li><a href="info-wilayah/event.html">Kalender Event</a></li>
+</ul>
 
-      <a href="">
-        <div class="item">
-          <img src="./img/thumbnail/D.jpg" alt="" loading="lazy"/>
-          <div class="detail">
-            <div class="name">Survey Assets Pemda</div>
+<ul id="dropdown3-mobile" class="dropdown-content">
+  <li><a href="gallery/gallery-photo.html">Gallery Photo</a></li>
+  <li><a href="gallery/gallery-video.html">Gallery Video</a></li>
+ </ul>
+
+    <!-- Slider Star -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="slider/img/Kelapa-bg1.jpg" />
+          <div class="caption center-align">
+            <h3 style="font-weight: bold;  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); ">Media Kelapa Dua</h3>
+            <h5 class="light grey-text text-lighten-3">Kampung Kite Kalo Bukan Kite yang Ngurusin Siapa Lagi</h5>
           </div>
-        </div>
-      </a>
+        </li>
+        <li>
+          <img src="slider/img/Rausin-bg1.jpeg" />
+          <div class="caption center-align">
+            <h3 style="font-weight: bold ;  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); ">Media Kelapa Dua</h3>
+            <h5 class="light grey-text text-lighten-3">Jakarta Baru, Jakarta Maju</h5>
+          </div>
+        </li>
+        <li>
+          <img src="slider/img/Kota-bg1.jpg" />
+          <div class="caption center-align">
+            <h3 style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); ">Media Kelapa Dua</h3>
+            <h5 class="light grey-text text-lighten-3" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Maju Kotanya, Bahagia Warganya</h5>
+          </div>
+        </li>
+      </ul>
     </div>
+    <!-- Slider End -->
 
-    <div class="nextPrevArrows">
-      <button class="prev"><</button>
-      <button class="next">></button>
+<!-- Berita Utama -->
+<section id="berita" class="berita scrollspy">
+  <div class="container">
+    <h3 class="center light grey-text text-darken-3">Berita Utama</h3>
+     <div class="row">
+
+      <!-- Berita-1 -->
+      <div class="col m4 s12">
+        <div class="slider" id="slidernews">
+          <ul class="slides">
+            <li><img src="img/berita-1/1A.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-1/2A.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-1/3A.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-1/4A.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-1/5A.jpg" class="responsive-img"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col m8 light">
+        <h5>Kemeriahan Festival Kelapa Dua</h5>
+        <p class="date">Tanggal, 29 November 2025</p>
+
+        <p class="taxt">media08kada | Suasana penuh semangat kebersamaan mewarnai Festival Kelapa Dua Jilid 4 yang digelar di Lapangan Tenis Komplek Yonhub RW 04, Kelurahan Kelapa Dua, Kebon Jeruk, Jakarta Barat, pada Sabtu (29/11). Dengan mengusung tema “Dengan semangat kebersamaan kita junjung tinggi nilai-nilai kearifan lokal nusantara sebagai karakteristik budaya bangsa yang gemah ripah loh jinawi”, acara berlangsung meriah dan penuh antusiasme warga.</p>
+        <p>
+        Festival ini merupakan agenda rutin tahunan Karang Taruna Kelurahan Kelapa Dua sebagai wujud nyata peran pemuda dalam melestarikan budaya nusantara, khususnya Budaya Betawi. Selain itu, kegiatan ini juga menjadi wadah pemberdayaan UMKM, dengan menghadirkan berbagai aktivitas yang memadukan nilai tradisi dan semangat kewirausahaan.
+        </p>
+        <a href="berita-utama/kemeriahan-festival-kelapa-dua-jilid-1.html"
+           class="waves-effect waves-light btn-small green">Continue</a>
+      </div>
     </div>
+    <!-- Berita-1 End -->
 
-    <div class="loading-bar"></div>
+    <!-- Berita-2 -->
+    <div class="row">
+      <div class="col m4 s12">
+        <div class="slider" id="slidernews">
+          <ul class="slides">
+            <li><img src="img/berita-2/1B.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-2/2B.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-2/3B.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-2/4B.jpg" class="responsive-img"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col m8 light">
+       <h5>Rapat Koordinasi Wilayah (Rakorwil) Kelurahan Kelapa Dua</h5>
+          <p class="date">Tanggal, 4 Desember 2025</p>
+
+          <p class="text">media08kada | Kelurahan Kelapa Dua menyelenggarakan Rapat Koordinasi Wilayah (Rakorwil) pada Kamis, 4 Desember 2025 bertempat di Aula Gedung Sasana Purna Caraka, Komp. Youhub RW 04. Kegiatan rutin bulanan ini menjadi wadah penyampaian program dan kegiatan kelurahan kepada para pemangku wilayah.</p>
+          <p> Dalam sambutannya, Lurah Kelapa Dua Elfin Ridho Putra menegaskan pentingnya Rakorwil sebagai sarana perangkat wilayah untuk mensosialisasikan program pemerintah kepada masyarakat. Beliau juga mengingatkan bahwa tugas Ketua RW, Ketua RT, LMK, dan FKDM sebagai pelayan masyarakat tidaklah mudah karena harus menghadapi beragam dinamika sosial.</p>
+   
+        <a href="berita-utama/rapat-koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html"
+           class="waves-effect waves-light btn-small green">Continue</a>
+      </div>
+    </div>
+    <!-- Berita-2 End -->
+
+    <!-- Berita-3 -->
+    <div class="row">
+      <div class="col m4 s12">
+        <div class="slider" id="slidernews">
+          <ul class="slides">
+            <li><img src="img/berita-3/1C.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-3/2C.jpg" class="responsive-img"></li>
+            <li><img src="img/berita-3/3C.jpg" class="responsive-img"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col m8 light">
+        <h5>Kegiatan Pemeriksaan Kesehatan Kelurahan Kelapa Dua</h5>
+            <p class="date">Tanggal, 25 November 2025</p>
+            <p class="taxt"> media08kada | Kelurahan Kelapa Dua bekerjasama dengan Puskesmas Kebon Jeruk, Puskesmas Pembantu Kelapa Dua, RS Kanker Dharmais dan PKK Kelurahan Kelapa Dua menggelar layanan pemeriksaan kesehatan gratis bagi masyarakat, pada Selasa (25/11) pagi.</p>
+            <p> Kegiatan ini mencakup skrining HPV DNA untuk pencegahan kanker serviks, pemeriksaan Sadanis (pemeriksaan payudara klinis), serta skrining CKG yang meliputi TB, Berat Badan, Lingkar Perut, Tensi Darah, dan Kesehatan Jiwa.</p>
+        <a href="berita-utama/kegiatan-pemeriksaan-kesehatan-kelurahan-kelapa-dua.html"
+           class="waves-effect waves-light btn-small green">Continue</a>
+      </div>
+    </div>
   </div>
-  
-  <!-- Slider Hero Saction end -->
-  
-  <!-- Services Star -->
-  <section class="services">
-    <div class="service">
-      <a class="icon" href="https://www.youtube.com/channel/UC41XqwNU6eP4PJdziPCVT2Q">🎞️</a>
-      <a href="https://www.youtube.com/channel/UC41XqwNU6eP4PJdziPCVT2Q" class="cta"><span>YouTube</span></a>
-      <p>kosongdelapan102</p>
-    </div>
-    <div class="service">
-      <a class="icon" href="puskesmas.html">📜</a>
-      <a href="puskesmas.html" class="cta"><span>Info Puskesmas</span></a>
-      <p>Pustu Kelapa Dua</p>
-    </div>
-    <div class="service">
-      <a class="icon" href="jali-jali.html">👴</a>
-      <a href="jali-jali.html" class="cta"><span>Jali Jali</span></a>
-      <p>Jemput Antar Lansia</p>
-    </div>
-      <div class="service">
-      <a class="icon" href="../info/info-kelurahan.html">📢</a>
-      <a href="../info/info-kelurahan.html" class="cta" ><span>Info Kelurahan</span></a>
-      <p><a href="../info/info-kelurahan.html" class="cta" style="color:black;">Link Logo HUT RI Ke 80</a></p>
-    </div>
-    <div class="service">
-      <a class="icon" href="../info/info-lmk.html">💻</a>
-      <a href="../info/info-lmk.html" class="cta"><span>Info LMK</span></a>
-      <p>LMK Kelapa Dua</p>
-    </div>
-    <div class="service">
-      <a class="icon" href="../info/gallery-photo.html">🖼️</a>
-      <a href="../info/gallery-photo.html" class="cta"><span>Gallery</span></a>
-      <p>Gallery Photo Kegiatan</p>
-     </div>
-  </section>
-  <!-- Services End -->
-      
-       <!-- Container Iklan Star -->
-       <div class="container-iklan">
-        <img src="img/iklan/bg-iklan.jpg" alt="" loading="lazy">
-       </div>
-       <!-- Container Iklan End -->
-
-       <!-- About Berita Utama start -->
-          <section id="about" class="about" class="container">
-          <h2><span>Giat</span> Utama </h2> 
-         
-          <section class="about-img" id="giat-utama">
-            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
-              <div class="wrapper">
-                <div class="slide">
-                  <span id="slide-1"></span>
-                  <span id="slide-2"></span>
-                  <span id="slide-3"></span>
-                  <span id="slide-4"></span>
-                  <span id="slide-5"></span>
-                  <div class="images">
-                  <img src="img/berita-1/1A.jpg" alt="Berita-1" loading="lazy">
-                  <img src="img/berita-1/2A.jpg" alt="berita-1" loading="lazy">
-                  <img src="img/berita-1/3A.jpg" alt="Berita-1" loading="lazy">
-                  <img src="img/berita-1/4A.jpg" alt="Berita-1" loading="lazy">
-                  <img src="img/berita-1/5A.jpg" alt="Berita-1" loading="lazy">
-                </div>
-        </div>
-            
-        <!-- Navigation -->
-        <div class="navigation">
-          <a href="#slide-1">1</a>
-          <a href="#slide-2">2</a>
-          <a href="#slide-3">3</a>
-          <a href="#slide-4">4</a>
-          <a href="#slide-5">5</a>
-          </div>
-      </div>
-      <div class="content" data-aos="zoom-in" data-aos-duration="1000">
-
-          <h3 style="margin-bottom:5px;">Kemeriahan Festival Kelapa Dua Jilid 4</h3>
-          <p style="margin-top:0;">Tanggal, 29 November 2025</p>
-
-          <p align="justify"><b>media08kada</b> | Suasana penuh semangat kebersamaan mewarnai Festival Kelapa Dua Jilid 4 yang digelar di Lapangan Tenis Komplek Yonhub RW 04, Kelurahan Kelapa Dua, Kebon Jeruk, Jakarta Barat, pada Sabtu (29/11). Dengan mengusung tema “Dengan semangat kebersamaan kita junjung tinggi nilai-nilai kearifan lokal nusantara sebagai karakteristik budaya bangsa yang gemah ripah loh jinawi”, acara berlangsung meriah dan penuh antusiasme warga.</p>
-          <p align="justify">Festival ini merupakan agenda rutin tahunan Karang Taruna Kelurahan Kelapa Dua sebagai wujud nyata peran pemuda dalam melestarikan budaya nusantara, khususnya Budaya Betawi. Selain itu, kegiatan ini juga menjadi wadah pemberdayaan UMKM, dengan menghadirkan berbagai aktivitas yang memadukan nilai tradisi dan semangat kewirausahaan.</p>
-
-            <!-- Modal Continue 1 -->
-           <div class="modal1-icons">
-            <a href="../utama/kemeriahan-festival-kelapa-dua-jilid-4.html" style="color: #fff;">Continue</a>
-          </div>
-       </div> 
-     </div>
-         <!-- Modal Box Berita 1 end -->       
-         
-         <!-- Modal Berita Utama 2 -->
-          <br><br><br><br>
-          </div>
-          <section class="about-picture">
-            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
-              <div class="bungkus">
-                <div class="salindia">
-                  <span id="salindia-1"></span>
-                  <span id="salindia-2"></span>
-                  <span id="salindia-3"></span>
-                  <span id="salindia-4"></span>
-                  <div class="picture">
-                  <img src="img/berita-2/1B.jpg" alt="Berita-2" loading="lazy">
-                  <img src="img/berita-2/2B.jpg" alt="Berita-2" loading="lazy">
-                  <img src="img/berita-2/3B.jpg" alt="Berita-2" loading="lazy">
-                  <img src="img/berita-2/4B.jpg" alt="Berita-2" loading="lazy">
-                </div>
-        </div>
-            
-        <!-- Navigation -->
-        <div class="navigasi">
-          <a href="#salindia-1">1</a>
-          <a href="#salindia-2">2</a>
-          <a href="#salindia-3">3</a>
-          <a href="#salindia-4">4</a>
-          </div>
-      </div>
-
-          <div class="content" data-aos="zoom-in" data-aos-duration="1000">
-          <h3>Rapat Koordinasi Wilayah (Rakorwil) Kelurahan Kelapa Dua</h3>
-          <h4>Tanggal, 4 Desember 2025</h4>
-          <p align="justify">media08kada | Kelurahan Kelapa Dua menyelenggarakan Rapat Koordinasi Wilayah (Rakorwil) pada Kamis, 4 Desember 2025 bertempat di Aula Gedung Sasana Purna Caraka, Komp. Youhub RW 04. Kegiatan rutin bulanan ini menjadi wadah penyampaian program dan kegiatan kelurahan kepada para pemangku wilayah.</p>
-          <p align="justify">Dalam sambutannya, Lurah Kelapa Dua Elfin Ridho Putra menegaskan pentingnya Rakorwil sebagai sarana perangkat wilayah untuk mensosialisasikan program pemerintah kepada masyarakat. Beliau juga mengingatkan bahwa tugas Ketua RW, Ketua RT, LMK, dan FKDM sebagai pelayan masyarakat tidaklah mudah karena harus menghadapi beragam dinamika sosial.</p>
-
-               <!-- Modal Continue 2 -->
-              <div class="modal2-icons">
-                <a href="../utama/rapat-koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html" style="color: #fff;">Continue</a>
-               </div>
-            </div> 
-          </div>
-        <!-- Modal Berita Utama 3 -->
-        <br><br><br><br>
-      </div>
-      <section class="about-media">
-        <div class="row"data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="tempat">
-            <div class="news">
-                  <span id="news-1"></span>
-                  <span id="news-2"></span>
-                  <span id="news-3"></span>
-                  <div class="media">
-                  <img src="img/berita-3/1.jpg" alt="berita-3" loading="lazy">
-                  <img src="img/berita-3/2C.jpg" alt="berita-3" loading="lazy">
-                  <img src="img/berita-3/3C.jpg" alt="Berita-3" loading="lazy">
-                </div>
-        </div>
-            
-        <!-- Navigation -->
-        <div class="navi">
-          <a href="#news-1">1</a>
-          <a href="#news-2">2</a>
-          <a href="#news-3">3</a>
-          </div>
-      </div>
-          <div class="content" data-aos="zoom-in" data-aos-duration="1000">
-          <h3 style="margin-bottom:5px;">Kegiatan Pemeriksaan Kesehatan Kelurahan Kelapa Dua</h3>
-          <p style="margin-top:0;">Tanggal, 25 November 2025</p>
-          <p align="justify">MediaKada | Kelurahan Kelapa Dua bekerjasama dengan Puskesmas Kebon Jeruk, Puskesmas Pembantu Kelapa Dua, RS Kanker Dharmais dan PKK Kelurahan Kelapa Dua menggelar layanan pemeriksaan kesehatan gratis bagi masyarakat, pada Selasa (25/11) pagi.</p>
-          <p align="justify">Kegiatan ini mencakup skrining HPV DNA untuk pencegahan kanker serviks, pemeriksaan Sadanis (pemeriksaan payudara klinis), serta skrining CKG yang meliputi TB, Berat Badan, Lingkar Perut, Tensi Darah, dan Kesehatan Jiwa.</p>
-
-           <!-- Modal Continue 3 -->
-          <div class="modal3-icons">
-            <a href="../utama/kegiatan-pemeriksaan-kesehatan-kelurahan-kelapa-dua.html" style="color: #fff;">Continue</a>
-          </div>
-       </div> 
-     </div>
-     <br>
-     <br>
-     <!-- Modal Box Berita 3 end -->
-     
-     <!-- Box-News Pilihan Editor Star -->
-       <section id="news" class="news scrollspy parallax">
-       <h2><span>Giat</span> Berita</h2>
-      <div class="container-box" style="background: url('.)" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="500">
-      <img src="../img/box-news/news1.jpg" class="view-img" id="view-img" alt="" loading="lazy"/>
-
-      <div class="photoes">
-        <div class="photo-item"data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
-        <img src="../img/box-news/news1.jpg" onclick="imgView(this.src)" alt="" loading="lazy"/>
-        <div class="text-box">
-        <p><a href="news/sri-wahyuni-juara-3-jambore-kader-posyandu-tingkat-dki-jakarta.html">Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</a></p>
-        <div class="continue-btn">
-        <a href="../news/sri-wahyuni-juara-3-jambore-kader-posyandu-tingkat-dki-jakarta.html" class="btn-small waves-effect waves-light">continue</a>
-        </div>
-       </div>
-      </div>
-
-        <div class="photo-item" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
-        <img src="../img/box-news/news2.jpg" onclick="imgView(this.src)" alt="" loading="lazy"/>
-        <div class="text-box">
-        <p><a href="news/kegiatan-posyandu-dahlia-rw-03-kelapa-dua.html">Pelayanan Kesehatan Posyandu dan Posbindu DAHLIA RW 03 Kelurahan Kelapa Dua</a></p>
-        <div class="continue-btn">
-        <a href="../news/pelayanan-posyandu-dahlia-rw-03-kelapa-dua.html" class="btn-small waves-effect waves-light">continue</a>
-        </div>
-       </div>
-      </div>
-
-        <div class="photo-item" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
-        <img src="../img/box-news/news3.jpg" onclick="imgView(this.src)" alt="" loading="lazy" />
-        <div class="text-box">
-        <p><a href="news/posyandu-rw-08-hadirkan-pusteling-dan-storytelling.html">Posyandu RW 08 Hadirkan Pusteling dan Storytelling</a></p>
-        <div class="continue-btn">
-        <a href="../news/posyandu-rw-08-hadirkan-pusteling-dan-storytelling.html" class="btn-small waves-effect waves-light" >continue</a>
-        </div>
-       </div>
-     </div>
-
-        <div class="photo-item" data-aos="fade-up" data-aos-duration="1000" date-aos-delay="1000">
-        <img src="../img/box-news/news4.jpg" onclick="imgView(this.src)"  alt="" loading="lazy"/>
-        <div class="text-box">
-        <p><a href="news/semangat-kemerdekaan-menggema-di-kelapa-dua.html">Semangat Kemerdekaan Menggema di Kelapa Dua</a></p>
-        <div class="continue-btn">
-        <a href="../news/semangat-kemerdekaan-menggema-di-kelapa-dua.html" class="btn-small waves-effect waves-light" >continue</a>
-        </div>
-      </div>
-    </div>
 </section>
-  <!-- Box-News End -->
+  <!-- Berita-3 End -->
 
-    <!-- Kegiatan RW 08 start -->
-    <section class="products" id="giat-wilayah" x-data="products">
-      <div class="container" >
-        <h2><span>Giat</span> Wilayah</h2>
-          <div class="products-container">
-
-          <div class="product" data-name="p1"data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/E.jpg" alt="" loading="lazy">
-          <h3>Studi Banding Posyandu</h3>
-          <p>Tanggal, 08 Juli 2025</p>
-          <a href="../giat/studi-banding-posyandu.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-             
-         <div class="product" data-name="p2"data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/C.jpg" alt="" loading="lazy">
-          <h3>Menjelang Tahun Ajaran Baru</h3>
-          <p>Tanggal, 09 Juli 2025</p>
-          <a href="../giat/menjelang-tahun-ajaran-baru.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        
-        <div class="product" data-name="p3" data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/D.jpg" alt="" loading="lazy">
-          <h3>MPLS Serentak Sambut Siswa Baru</h3>
-          <p>Tanggal 14 Juli 2025</p>
-          <a href="../giat/mpls-serentak-sambut-siswa-baru.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        
-        <div class="product" data-name="p4" id="p4" data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/A.jpg" alt="" loading="lazy">
-          <h3>Ular Sanca Gegerkan Warga Kelapa Dua</h3>
-          <p>Tanggal, 05 Juli 2025</p>
-          <a href="../giat/ular-sanca-gegerkan-warga-kelapa-dua.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        
-        <div class="product hidden" data-name="p5" id="p5" data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/B.jpg" alt="" loading="lazy">
-          <h3>Kader Posyandu Melati Juara 1</h3>
-          <p>Tanggal 24 Juni 2025 </p>
-          <a href="../giat/kader-posyandu-melati-juara-1.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        
-        <div class="product hidden" data-name="p6" id="p6" data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/F.jpg" alt="" loading="lazy">
-          <h3>Pemberian Ikan Lele untuk Balita</h3>
-          <p>Tanggal 8 Juni 2025</p>
-          <a href="../giat/pemberian-ikan-lele-untuk-balita.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <div class="product hidden" data-name="p7" id="p7" data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/G.jpg" alt="" loading="lazy">
-          <h3>Reses Wakil Ketua DPRD DKI Jakarta</h3>
-          <p>Tanggal 05 Juni 2025</p>
-          <a href="../giat/reses-wakil-ketua-dprd-dki-jakarta.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <div class="product hidden" data-name="p8" id="p8" data-aos="fade-up" data-aos-duration="1000">
-          <img src="../img/giat/H.jpg" alt="" loading="lazy">
-          <h3>Pelantikan RT dan RW Kelapa Dua</h3>
-          <p>Tanggal, 17 Juni 2025</p>
-          <a href="../giat/pelantikan-rt-dan-rw-kelapa-dua.html" class="add-cart-btn">Continue <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <button id="show-more-btn" data-aos="fade-up" data-aos-duration="1000"><span class="btn-text" >Tampilan Selengkapnya </span><i data-feather="arrow-right"></i>
-        </button>
-       </div>
+    <!-- Berita Wilayah -->
+    <div class="parallax-container scrollspy" id="wilayah">
+      <div class="parallax"><img src="slider/img/Ondel-bg1.jpeg" /></div>
       </div>
-    </div>
-  </section>
-  
+
+      <div class="grey lighten-3 scrollspy" style="padding-top:20px;">
+        <div class="container">
+         <h3 class="center light text-darken-3">Berita Wilayah</h3>
+     
+         <!-- Kolom Kanan: Daftar Berita -->
+          <div class="col m12 s12">
+            <div class="card sticky">
+              <div class="card-content">
+                <span class="card-title">Pojok Berita</span>
+                <ul class="collection">
+
+                  <!-- Modal 1 -->
+                   <div class="row">
+                  <li class="collection-item" >
+                    <img src="img/modal/news1.jpg"                   class="circle responsive-img" 
+                    style="width:60px; height:60px; margin:8px 10px 0 0; float:left;">
+                    <h6 class="date">Posyandu Siklus Hidup Melati RW 08 Kelurahan Kelapa Dua Gelar Pelayanan Kesehatan</h6>
+                    <p class="text" style="text-align: justify">Kegiatan Posyandu Siklus Hidup Melati RW 08 Kelurahan Kelapa Dua kembali digelar dengan penuh semangat. Sejak pagi, warga RW 08 berbondong-bondong mendatangi lokasi posyandu untuk mendapatkan layanan kesehatan gratis yang disediakan oleh para petugas.</p>
+                    <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card1">continue</a></li>
+                  
+                  <!-- Modal 2 -->
+                  <li class="collection-item">
+                    <img src="img/modal/news2.jpg"                   class="circle responsive-img" 
+                    style="width:60px; height:60px; margin:8px 10px 0 0; float:left;">
+                    <h6 class="date">Penyerahan BLTS untuk Warga</h6>
+                    <p class="text" style="text-align: justify;">Kegiatan penyerahan bantuan langsung tunai sementara (BLTS) atau yang populer disebut BLT Kesra ini menjadi salah satu instrumen kebijakan sosial pemerintah untuk meringankan beban ekonomi masyarakat berpenghasilan rendah.</p>
+                    <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card2">continue</a></li>
+
+                   <!-- Modal 3 -->
+                  <li class="collection-item">
+                    <img src="img/modal/news3.jpg"
+                    class="circle responsive-img" 
+                    style="width:60px; height:60px; margin:8px 10px 0 0; float:left;">
+                    <h6 class="date">Pusteling dan Storytelling</h6>
+                    <p class="text" style="text-align: justify">Posyandu Siklus Hidup Melati RW 08 terus berinovasi dalam mendekatkan layanan kesehatan dan edukasi kepada masyarakat. Bekerja sama dengan Politeknik Kesehatan Kementerian Kesehatan Jakarta III, Posyandu ini menggelar kegiatan Perpustakaan Elektronik Keliling (Pusteling) dan storytelling</p>
+                    <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card3">continue</a></li>
+
+                   <!-- Modal 4 -->
+                  <li class="collection-item">
+                    <img src="img/modal/news4.jpg"
+                    class="circle responsive-img" 
+                    style="width:60px; height:60px; margin:8px 10px 0 0; float:left;">
+                    <h6 class="date">Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</h6>
+                    <p class="text" style="text-align: justify">Dalam rangka pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta pada Kamis, 21 Agustus 2025, bertempat di Hotel The Grand Mansion, Menteng, Jakarta.</p>
+                    <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card4">continue</a></li>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </ul>
+            </section>
+
+          <div id="services" class="services scrollspy">
+            <div class="row">
+              <div class="col s12">
+                <h3 class="light center grey-text text-darken-3"></h3>
+              </div>
+            </div>
+
+            <!-- Modal Section -->
+          <div id="box-card1" class="modal">
+            <div class="modal-content">
+              <h6 class="bold">Kegiatan Posyandu Melati RW 08 Kelurahan Kelapa Dua</h6>
+              <p class="date">Tanggal, 9 Desember 2025</p>
+
+              <p class="text" style="text-align: justify">media08kada | Kegiatan Posyandu Siklus Hidup Melati RW 08 Kelurahan Kelapa Dua kembali digelar dengan penuh semangat. Sejak pagi, warga RW 08 berbondong-bondong mendatangi lokasi posyandu untuk mendapatkan layanan kesehatan gratis yang disediakan oleh para petugas.</p>
+              <p style="text-align: justify;">Pelayanan yang diberikan mencakup seluruh siklus kehidupan, mulai dari balita, remaja, dewasa, hingga lansia. Untuk balita, dilakukan pemeriksaan tumbuh kembang, imunisasi, serta pemberian vitamin. Warga dewasa mendapatkan layanan cek tekanan darah, konsultasi kesehatan, dan penyuluhan gizi. Sementara itu, para lansia memperoleh pemeriksaan kesehatan rutin serta arahan mengenai pola hidup sehat.</p>
+              <P style="text-align: justify;">Kegiatan ini tidak hanya menjadi sarana pemeriksaan kesehatan, tetapi juga wadah mempererat kebersamaan warga. Antusiasme masyarakat terlihat dari tingginya partisipasi, yang menunjukkan kesadaran akan pentingnya menjaga kesehatan sejak dini hingga usia lanjut.</P>
+              <P style="text-align: justify;">Dengan adanya Posyandu Siklus Hidup Melati RW 08, diharapkan kualitas kesehatan warga Kelurahan Kelapa Dua semakin meningkat, sekaligus memperkuat semangat gotong royong dalam menjaga kesejahteraan bersama.</P>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+            </div>
+          </div>
+
+          <div id="box-card2" class="modal">
+            <div class="modal-content">
+              <h6>Penyaluran BLT untuk Warga</h6>
+              <p class="date">Tanggal, 2 Desember 2025</p>
+
+              <p class="text" style="text-align: justify">
+                Kegiatan penyerahan Bantuan Langsung Tunai Sementara (BLTS) atau yang populer disebut BLT Kesra ini menjadi salah satu instrumen kebijakan sosial pemerintah untuk meringankan beban ekonomi masyarakat berpenghasilan rendah.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+            </div>
+          </div>
+
+          <div id="box-card3" class="modal">
+            <div class="modal-content">
+              <h6>Posyandu RW 08 Hadirkan Pusteling dan Storytelling</h6>
+              <p class="date">Tanggal, 16 Sepetember 2025</p>
+
+              <p class="text" style="text-align: justify">
+                Posyandu Siklus Hidup Melati RW 08 terus berinovasi dalam mendekatkan layanan kesehatan dan edukasi kepada masyarakat. Bekerja sama dengan Politeknik Kesehatan Kementerian Kesehatan Jakarta III, Posyandu ini menggelar kegiatan Perpustakaan Elektronik Keliling (Pusteling) dan storytelling yang berlangsung di Sekretariat RW 08, Kelurahan Kelapa Dua, Hari Selasa (16/09)</p>
+
+              <p style="text-align: justify">
+                Kegiatan ini bertujuan untuk memperkaya wawasan anak-anak dan orang tua melalui bacaan interaktif berbasis digital, sekaligus menghadirkan momen edukatif yang menyenangkan. Di sela-sela pemeriksaan kesehatan rutin, anak-anak diajak mendengarkan cerita inspiratif yang mengandung pesan-pesan kesehatan dan nilai kebersamaan, memperkuat peran Posyandu sebagai ruang tumbuh kembang yang holistik.</p>
+
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+            </div>
+          </div>
+
+          <div id="box-card4" class="modal">
+            <div class="modal-content">
+              <h6 class="bold">Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</h6>
+              <p class="date">Tanggal, 21 Agustus 2025</p>
+
+              <p class="text" style="text-align: justify">
+                Dalam rangka pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta pada Kamis, 21 Agustus 2025, bertempat di Hotel The Grand Mansion, Menteng, Jakarta.</p>
+              <p style="text-align: justify">
+                Pemerintah Kota Administrasi Jakarta Barat yang diwakili oleh Sri Wahyuni Kader Posyandu Siklus Hidup Melati RW 08 Kelurahan Kelapa Dua berhasil mendapatkan Juara Ke 3 dalam lomba Jambore Kader dan Posyandu Bidang Kesehatan Berprestasi Tingkat Provinsi DKI Jakarta.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+            </div>
+          </div>
+
+          <!-- Berita Pilihan -->
+          <!-- Card Section -->
+          <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+            <!-- Card 1 -->
+            <div class="col s12 m3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/card/card1.jpg" alt="Ondel-ondel">
+                </div>
+                <div class="card-content">
+                  <p style="text-align: justify">Ondel-ondel Betawi</p>
+                </div>
+                <div class="card-action">
+                  <!-- Tambahkan class modal-trigger dan gunakan href="#box-card1" -->
+                  <a class="waves-effect waves-light btn-small grey modal-trigger" href="modal/modal1.html">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col s12 m3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/card/card2.jpg" alt="Pencak Silat Cingkrik">
+                </div>
+                <div class="card-content">
+                  <p style="text-align: justify">Pencak Silat Cingkrik</p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light btn-small grey modal-trigger" href="modal/modal2.html">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col s12 m3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/card/card3.jpg" alt="Festival Kelapa Dua">
+                </div>
+                <div class="card-content">
+                  <p style="text-align: justify">Tugu Kelapa Dua</p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light btn-small grey modal-trigger" href="modal/modal3.html">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col s12 m3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/card/card4.jpg" alt="Lenong Betawi">
+                </div>
+                <div class="card-content">
+                  <p style="text-align: justify">Lenong Betawi</p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light btn-small grey modal-trigger" href="modal/modal4.html">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+        <!-- Info Wilayah -->
+        <section id="wilayah" class="wilayah scrollspy">
+          <h3 class="center light grey-text text-darken-3">Info Wilayah</h3>
+            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+
+        <!-- Info 1 -->
+              <div class="col m3 s12">
+                <div class="card green darken-1">
+                  <div class="card-content white-text center-align">
+                    <a href="/info-wilayah/kelurahan.html" class="white-text">
+                    <i class="material-icons small white-text">account_balance</i></a>
+                    <a href="/info-wilayah/kelurahan.html" class="white-text">
+                    <h4 class="card-title no-margin" style="font-size:16px;">Info Kelurahan</h4></a>
+                    <p class="no-margin" style="font-size:12px; margin-bottom:4px;">Kelurahan Kelapa Dua</p>
+                    <p class="no-margin" style="font-size:10px;">(Klik icons untuk melanjutkan)</p>
+                  </div>
+                </div>
+              </div>
+        <!-- Info 2-->
+              <div class="col m3 s12">
+                <div class="card green darken-1">
+                  <div class="card-content white-text center-align">
+                    <a href="/info-wilayah/puskesmas.html" class="white-text">
+                    <i class="material-icons small white-text">local_hospital</i></a>
+                    <a href="/info-wilayah/puskesmas.html" class="white-text">
+                    <h4 class="card-title no-margin" style="font-size:16px;">Info Puskesmas</h4></a>
+                    <p class="no-margin" style="font-size:12px;">Pustu Kel. Kelapa Dua</p>
+                    <p class="no-margin" style="font-size:10px;">(Klik icons untuk melanjutkan)</p>
+                  </div>
+                </div>
+              </div>
+      <!-- Info 3-->
+              <div class="col m3 s12">
+                <div class="card green darken-1">
+                  <div class="card-content white-text center-align">
+                    <a href="/info-wilayah/lmkkelapadua.html" class="white-text">
+                      <i class="material-icons small white-text">group</i></a>
+                      <a href="/info-wilayah/lmkkelapadua.html" class="white-text">
+                    <h4 class="card-title no-margin" style="font-size:16px;">Info LMK</h4></a>
+                    <p class="no-margin" style="font-size:12px;">LMK Kel. Kelapa Dua</p>
+                    <p class="no-margin" style="font-size:10px;">(Klik icons untuk melanjutkan)</p>
+                  </div>
+                </div>
+              </div>
+        <!-- Info 4-->
+        <div class="col m3 s12">
+          <div class="card green darken-1">
+            <div class="card-content white-text center-align">
+              <a href="/info-wilayah/event.html" class="white-text">
+                <i class="material-icons small">event_note</i></a>
+               <a href="/info-wilayah/event.html" class="white-text">
+                <h4 class="card-title no-margin" style="font-size:16px;">Info Event</h4>
+              </a>
+              <p class="no-margin" style="font-size:12px;">Kelurahan Kelapa Dua</p>
+              <p class="no-margin" style="font-size:10px;">(Klik icons untuk melanjutkan)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Gallery -->
+      <section id="gallery" class="gallery scrollspy">
+
+      <h3 class="center light grey-text text-darken-3">Gallery</h3>
+
+        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="col m3 s12">
+            <img src="img/gallery/1.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          <div class="col m3 s12">
+            <img src="img/gallery/2.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          <div class="col m3 s12">
+            <img src="img/gallery/3.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          <div class="col m3 s12">
+            <img src="img/gallery/4.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          <div class="col m3 s12 hidden">
+            <img src="img/gallery/5.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          <div class="col m3 s12 hidden">
+            <img src="img/gallery/6.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          <div class="col m3 s12 hidden">
+            <img src="img/gallery/7.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+          <div class="col m3 s12 hidden">
+            <img src="img/gallery/8.jpg" class="responsive-img materialboxed z-depth-3" />
+          </div>
+
+          <!-- Tombol Gallery-->
+           <div class="col m s12">
+          <a id="show-more-btn" class="waves-effect waves-light btn-small green">
+          <i class="material-icons left"></i>Open</a>
+           </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
 <!-- Video Section -->
-<section id="video" class="video">
-  <h2><span>Giat</span> Video</h2>
-    <div class="video-wrapper">
-    <a href="video.html" target="_blank">
-    <img width="560" height="315" src="img/video/tumbnail.jpg" alt="" title="" loading="lazy"></a>
-    
+<section id="video" class="video grey lighten-3 scrollspy">
+  <h3 class="center light grey-text text-darken-3">Video</h3>
+  <div class="video-wrapper center">
+    <a href="gallery/gallery-video.html" target="_blank">
+      <img width="560" height="315" src="img/video/thumbnail.jpg" alt="Thumbnail Video" loading="lazy">
+    </a>
   </div>
 
   <div class="video-description">
-    <h3>Deskripsi :</h3>
-    <p align="center">Suasana penuh semangat kebersamaan mewarnai Festival Kelapa Dua Jilid 4 yang digelar di Lapangan Tenis Komplek Yonhub RW 04, Kelurahan Kelapa Dua, Kebon Jeruk, Jakarta Barat, pada Sabtu (29/11).<br><strong>Subscribe, Like, Share, dan Comment</strong></p>
-      <a href="https://www.youtube.com/@KosongDelapan102" target="_blank" >YouTube KosongDelapan102</a></p>
-      <br>
-      <div>
-  <div class="g-ytsubscribe"
-       data-channelid="UC41XqwNU6eP4PJdziPCVT2Q"
-       data-layout="default"
-       data-count="hidden">
+    <h5>Deskripsi :</h5>
+    <p>
+      Suasana penuh semangat kebersamaan mewarnai Festival Kelapa Dua Jilid 4 yang digelar di Lapangan Tenis Komplek Yonhub RW 04, Kelurahan Kelapa Dua, Kebon Jeruk, Jakarta Barat, pada Sabtu (29/11).<br>
+      <strong>Subscribe, Like, Share, dan Comment</strong>
+    </p>
+    <div style="display: flex; justify-content: center; gap: 10px;">
+      <a href="https://www.youtube.com/@KosongDelapan102" target="_blank">
+        YouTube KosongDelapan102
+      </a>
+
+      <div class="g-ytsubscribe"
+           data-channelid="UC41XqwNU6eP4PJdziPCVT2Q"
+           data-layout="default"
+           data-count="hidden">
+      </div>
+    </div>
   </div>
-
-   </div>
 </section>
-<!-- End Video Section -->
 
-    <script src="https://apis.google.com/js/platform.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 
-    <!-- Kontak RW 08 start -->
-    <section id="contact" class="contact">
-    <h2><span>Kontak</span> Saran</h2>
-    <p align="center">Sampaikan saran Anda ke mediakelapadua.web.id melalui kontak saran dibawah ini.</p>
 
-    <!-- Image -->
-    <div class="row">
-    <img src="../img/Logo/mediakada.png" />
-    <form name='media08kada-form'>
-    <div class="input-group"><i data-feather="user"></i>
-    <input type="text" style="color: #000" placeholder="Nama" name="nama"/>
-    </div>
+      <!-- Contact Us -->
+ <section id="contact" class="contact grey lighten-3 scrollspy">
+    <div class="container">
+      <h3 class="center light grey-text text-darken-3">Contact Us</h3>
+        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="col m5 s12">
 
-    <div class="input-group">
-    <i data-feather="phone"></i>
-    <input type="text" style="color: #000" placeholder="telepon" name="telepon" /></div>
-              
-    <div class="input-group">
-    <i data-feather="message-square"></i>
-    <textarea name="pesan" placeholder="pesan" style="color: #000; resize: vertical;"></textarea></div>
-    <button type="submit" class="btn" text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);>kirim pesan</button>
-    </form>
-    </div>
-  </section>
-    <!-- Contact Section end -->
-        
+            <div class="card-panel green darket-3 center white-text">
+              <h6 class="light">Bekerjasama :</h6>
+                <img src="img/logo/Logo DKI New Vector 2020.png" width="80" height="85" class="dki-logo" />
+                <img src="img/logo/logo-lmk.png" width="80" height="80" />
+                <img src="img/logo/rw08.png" width="85" height="85" />
+                <img src="img/logo/puskesmas.png" width="100" height="80" />
+                <img src="img/logo/logo PKK.png" width="84" height="80" />
+                <img src="img/logo/Logo Karang Taruna Jaya.png" width="82" height="80" />
+                <p></p>
+            </div>
+            <ul class="collection with-header">
+              <li class="collection-header center"><h6>Sekretariat LMK</h6></li>
+              <li class="collection-item" style="font-size: smaller;">Jl. Inpres No.17 2, RT.2/RW.5, Klp. Dua, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11550</li>
+            </ul>
+          </div>
+
+          <div class="col m7 s12">
+            <form name="media-kada-form">
+              <div class="card-panel">
+                <h5>Silahkan Hubungi Kami</h5>
+                <div class="input-field">
+                  <input type="text" name="nama" id="name" required class="validate" />
+                  <label for="name">Nama</label>
+                </div>
+                <div class="input-field">
+                  <input type="email" name="email" id="email" class="validate" name="email" />
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" name="telepon" id="phone" required class="validate" />
+                  <label for="Phone">Telepon</label>
+                </div>
+                <div class="input-field">
+                  <textarea name="pesan" id="message" class="materialize-textarea"></textarea>
+                  <label for="message">Pesan</label>
+                </div>
+                <button type="submit" class="btn green">Kirim</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Scroll Ke Atas Star-->
     <div class="buttonToTop" onclick="scrollKeatas()">
-    <a href="#top"><i class="fa-solid fa-angle-up"></i></a></div>
-    <br><br><br>
+    <a href="#top"><i class="material-icons">expand_less</i></a></div>
     <!-- Scroll Ke Atas End-->
-         
-        <!-- Footer start -->
-        <section class="footer" id="footer">
-          <footer><div class="socials">
-          <a href="https://www.instagram.com/mediakelapadua/"><i data-feather="instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UC41XqwNU6eP4PJdziPCVT2Q"><i data-feather="youtube"></i></a>
-          <a href="https://www.facebook.com/share/16fECc65xo/"><i data-feather="facebook"></i></a>
-        </div>
-       <!-- Hi stats.com  START  (aync)-->
-       <div id="histats_counter"></div>
-       <!-- Histats.com  (div with counter) -->
-        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4937767&101" alt="free statistics" border="0"></a></noscript>
-        <!-- Histats.com  END  -->
-          <div class="credit">
-          <p>Created by <a href="https://lmkkelapadua.github.io/">LMK-08 KelapaDua</a> | &copy; 2025.</p>
-        </div>
-      </footer>
-    </section>
-     <!-- Medsos end -->
 
-    <!-- Javascript Feather Icons Medsos -->
-    <script>
-      feather.replace();
-    </script>
+    <!-- Footer -->
+<footer class="green darken-3 white-text center">
+  <p class="flow">LMK-08 Kelapa Dua, Copyright 2025</p>
 
-     <!-- My Javascript -->
-     <script>
-     function scrollKeatas() {
-       window.scrollTo({
-       top: 0, 
-       behavior: "smooth"
-       })
-     }
-    </script>
+        <!-- Channel Links -->
+          <div class="footer-channels">
+           <a href="https://rw08kelapadua.web.id/" class="btn-floating  green"><i class="material-icons">language</i></a>
+          <span>Website</span></a>
 
-    <script src="js/script.js"></script>
-    <script src="js/script-1.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/histats.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <a href="https://www.instagram.com/posyanduilpmelati_08kelapadua?igsh=MXVnMXozZDR1NWl5aw==" class="btn-floating green"><i class="material-icons">photo_camera</i></a>
+          <span>Instagram</span></a>
+          
+          <a href="https://www.instagram.com/posyanduilpmelati_08kelapadua?igsh=MXVnMXozZDR1NWl5aw==" class="btn-floating green"><i class="material-icons">play_circle_filled</i></a>
+          <span>Youtube</span></a>
+
+          <a href="https://www.mediakelapadua.web.id" class="btn-floating green"><i class="material-icons">computer</i></a>
+          <span>mediakelapadua</span></a>
+       </div>
+    </footer>
+ 
+   <!-- JavaScript -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-    
+    <!-- Navbar Star -->
     <script>
-    AOS.init();
-   </script> 
-  </body> 
+      // Dropdown
+      document.addEventListener('DOMContentLoaded', function() {
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+   
+        // Slider
+        var slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 350,
+          transition: 600,
+          interval: 3000
+        });
+
+        // Parallax
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+        const materialbox = document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(materialbox);
+        
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+      });
+    </script>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+</script>
+
+    <!-- Gallery -->
+     <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.getElementById("show-more-btn");
+    const hiddenItems = document.querySelectorAll(".gallery .hidden");
+    let isOpen = false;
+
+    btn.addEventListener("click", function() {
+      if (!isOpen) {
+        hiddenItems.forEach(item => item.style.display = "block");
+        btn.innerHTML = '<i class="material-icons left"></i>Close';
+        isOpen = true;
+      } else {
+        hiddenItems.forEach(item => item.style.display = "none");
+        btn.innerHTML = '<i class="material-icons left"></i>Open';
+        isOpen = false;
+      }
+    });
+  });
+</script>
+
+<script>
+  function scrollKeatas() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzIDToqJ1qHe7mrqNJzBBP549GUOHHTnT4sLLmU9ak3NWqbESOn0h9rp7xO03qnTfFQ/exec'
+  const form = document.forms['media-kada-form'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+ <script>
+  // Menghapus Contact Pesan
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.forms['media-kada-form'];
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault(); // Mencegah reload halaman
+
+          // Tampilkan toast notifikasi
+          M.toast({
+            html: 'Pesan berhasil dikirim!',
+            classes: 'green darken-2 white-text',
+          });
+
+          // Hapus semua isian form
+          form.reset();
+        });
+      });
+    </script>
+
+ </body>
 </html>
-
-
-    
-
