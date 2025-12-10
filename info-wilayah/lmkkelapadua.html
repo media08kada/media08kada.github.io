@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Info LMK</title>
-
+    
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Materialize CSS -->
@@ -13,9 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/photo.css">
+    <title>Info LMK</title>
+    
   </head>
   <body id="home" class="scrollspy">
-
+    
     <!-- Navbar Start -->
     <div class="navbar-fixed">
       <nav class="green darken-3">
@@ -35,22 +37,53 @@
       </nav>
     </div>
 
-    <!-- Info LMK -->
-    <section id="berita" class="section berita">
-      <div class="container">
-        <div class="row berita-detil">
-          <h3 class="center light grey-text text-darken-3" style="text-align: justify;">Info LMK</h3>
+<!-- Info Kelurahan -->
+<section id="berita" class="section berita grey-text text-darken-3">
+  <div class="container">
+    <!-- Judul -->
+    <div class="row">
+      <div class="col s12">
+        <h3 class="light center-align grey-text text-darken-3">Info LMK</h3>
+      </div>
+    </div>
 
+    <div class="container">
+      <img src="../img/lmk/lmk-1.jpg" class="preview-img" id="preview-img" alt="Gambar-1" />
 
-
-
-
-
+      <div class="galleries">
+        <img src="../img/lmk/lmk-1.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-2.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-3.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-4.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-5.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-6.jpg" onclick="imgPreview(this.src)" alt="" />
+      </div>
+    </div>
+    <script>
+      const imgPreview = (src) => {
+        document.getElementById('preview-img').src = src;
+      };
+    </script>
+              <h5 style="text-align: center;">Deskripsi:</h5>
+              <p style="text-align: center;">Kegiatan rapat bulanan LMK Kelurahan Kelapa Dua, di Sekretariat LMK Kelurahan
+              </p>
+             </div>
+          </section>
+        </div>
+      </div>
+    </section>
 
     <!-- JavaScript -->
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // Dropdown
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+        });
+
         // ScrollSpy
         var scrollspy = document.querySelectorAll('.scrollspy');
         M.ScrollSpy.init(scrollspy, {
