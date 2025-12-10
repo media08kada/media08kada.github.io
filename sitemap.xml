@@ -15,125 +15,45 @@
   <priority>1.00</priority>
 </url>
 
-<!-- Info Wilayah -->
+<!-- Berita Utama -->
 <url>
-  <loc>https://mediakelapadua.web.id/info/info-kelurahan.html</loc>
-  <lastmod>2025-07-24T08:00:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-utama/kemeriahan-festival-kelapa-dua-jilid-1.html</loc>
+  <lastmod>2025-11-29T08:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/info/info-lmk.html</loc>
-  <lastmod>2025-07-28T18:00:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-utama/rapat-koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html</loc>
+  <lastmod>2025-12-04T14:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/info/gallery-photo.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info/iklan-product.html</loc>
-  <lastmod>2025-09-18T15:07:00+08:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info/profil.html</loc>
-  <lastmod>2025-07-20T15:00:58+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-utama/kegiatan-pemeriksaan-kesehatan-kelurahan-kelapa-dua.html</loc>
+  <lastmod>2025-11-25T09:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
-<!-- Giat Utama -->
+<!-- Info Wilayah  -->
 <url>
-  <loc>https://mediakelapadua.web.id/utama/sri-wahyuni-juara-3-di-jambore-kader-posyandu-tingkat-dki-jakarta.html</loc>
+  <loc>https://mediakelapadua.web.id/info-wilayah/Kelurahan.html</loc>
   <lastmod>2025-08-21T07:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/utama/kegiatan-pemeriksaan-kesehatan-kelurahan-kelapa-dua.html</loc>
+  <loc>https://mediakelapadua.web.id/info-wilayah/puskesmas.html</loc>
   <lastmod>2025-11-25T08:11:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/utama/posyandu-rw-08-hadirkan-pusteling-dan-storytelling.html</loc>
+  <loc>https://mediakelapadua.web.id/info-wilayah/lmkkelapadua.html</loc>
+  <lastmod>2025-09-16T09:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/info-wilayah/event.html</loc>
   <lastmod>2025-09-16T09:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
-<!-- Giat Wilayah -->
-<url>
-  <loc>https://mediakelapadua.web.id/giat/studi-banding-posyandu.html</loc>
-  <lastmod>2025-07-08T08:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/menjelang-tahun-ajaran-baru.html</loc>
-  <lastmod>2025-07-09T05:08:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/mpls-serentak-dimulai-sambut-siswa-baru.html</loc>
-  <lastmod>2025-06-17T05:14:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/ular-sanca-gegerkan-warga-kelapa-dua.html</loc>
-  <lastmod>2025-07-05T17:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/kader-posyandu-melati-juara-1.html</loc>
-  <lastmod>2025-06-24T05:08:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/pemberian-ikan-lele-untuk-balita.html</loc>
-  <lastmod>2025-06-08T05:09:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/reses-wakil-ketua-dprd-dki-jakarta.html</loc>
-  <lastmod>2025-06-05T05:17:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/giat/pelantikan-rt-dan-rw-kelapa-dua.html</loc>
-  <lastmod>2025-06-17T05:14:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-<!-- Giat Berita -->
-<url>
-  <loc>https://mediakelapadua.web.id/news/sri-wahyuni-juara-3-di-jambore-kader-posyandu-tingkat-dki-jakarta.html</loc>
-  <lastmod>2025-08-21T07:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/news/news/pelayanan-posyandu-dahlia-rw-03-kelapa-dua.html.html</loc>
-  <lastmod>2025-12-03T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/news/posyandu-rw-08-hadirkan-pusteling-dan-storytelling.html</loc>
-  <lastmod>2025-07-12T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/news/semangat-kemerdekaan-menggema-di-kelapa-dua.html</loc>
-  <lastmod>2025-09-16T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-<!-- Lain-lain-->
-<url>
-  <loc>https://mediakelapadua.web.id/jali-jali.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/calender.html</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
 
 <!-- Giat Video -->
 <url>
