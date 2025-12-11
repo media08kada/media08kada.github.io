@@ -149,6 +149,7 @@ html, body {
   display: none; /* Semua elemen dengan class hidden tidak muncul */
 }
 
+
 .gallery img {
   margin-bottom: 15px; /* jarak vertikal antar gambar */
   background-color: #f0f0f0;
@@ -174,10 +175,17 @@ html, body {
 
   .video-wrapper,
   .video-description {
-  max-width: 560px;   /* sama dengan lebar thumbnail */
-  margin: 0 auto;     /* biar center */
-  text-align: center;   /* teks rata kiri agar lebih rapi */
-}
+  max-width: 560px;   
+  margin: 0 auto;     
+  text-align: center;   
+  }
+
+.video-wrapper img {
+  display: block;          
+  padding: 15px 15px;     
+  box-sizing: border-box;
+}  
+
 
   @media (max-width: 768px) {
     .about,
@@ -354,12 +362,12 @@ html, body {
       }
     }
 
-@media (max-width: 480px) {
-  .container-iklan {
-    width: 100%;
-    height: auto;
-  }
-}
+    @media (max-width: 480px) {
+      .container-iklan {
+        width: 100%;
+        height: auto;
+      }
+    }
 /* Container Iklan Thumbnail End */
 
 
