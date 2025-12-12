@@ -20,40 +20,36 @@ html {
 }
 
 /* Powerpoint Youtube Star */
-.powerpoint {
-  max-width: 800px;
-  width: 100%;
-  margin: 20px auto;
-  padding: 20px;
-  z-index: 9999;
-  border-radius: 5%;
-}
-
- .powerpoint-wrapper {
-    display: flex;
-    justify-content: center;  
-    align-items: center;       
-    margin: 20px 0;
+.powerpoint-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 960px; /* batas lebar agar tidak terlalu besar */
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
   }
-
-.powerpoint-wrapper iframe {
-    max-width: 100%;          
-    height: auto;             
-    aspect-ratio: 16 / 9;    
-    border: none;
+  .powerpoint-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #f7f4f4;   /* kotak/border */
     box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+
+
+  }
+  .description {
+    margin-top: 10px;
+    text-align: center;
   }
 
-.description {
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: center;
-  line-height: 1.3;
-}
-
-@media screen and (max-width: 480px) {
-  .video-wrapper iframe {
-    height: 240px;
-    max-width: 100%;
+/* Tambahkan jarak antar blok PowerPoint */
+  .powerpoint-block {
+    margin-bottom: 2rem; /* atur sesuai kebutuhan */
   }
-}
+
+
+
+
