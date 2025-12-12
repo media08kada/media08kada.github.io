@@ -180,11 +180,11 @@ html, body {
   text-align: center;   
   }
 
-.video-wrapper img {
-  display: block;          
-  padding: 15px 15px;     
-  box-sizing: border-box;
-}  
+  .video-wrapper img {
+    display: block;          
+    padding: 15px 15px;     
+    box-sizing: border-box;
+  }  
 
   @media (max-width: 768px) {
     .about,
@@ -372,6 +372,8 @@ html, body {
 #histats_counter {
   margin-top: 15px; /* atur sesuai kebutuhan */
 }
+
+
 
 
 
