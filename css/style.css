@@ -38,7 +38,7 @@ footer {
 =========================== */
 .slider .slides li .caption {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 0;
   transform: translateX(-50%);
   text-align: center;
@@ -411,8 +411,8 @@ footer {
 /* Tablet */
 @media (max-width: 768px) {
   .caption h3 {
-    font-size: 28px;
-    margin-bottom: 15px; /* jarak lebih kecil */
+    font-size: 30px;
+    margin-bottom: 10px; /* jarak lebih kecil */
   }
 
   .caption h5 {
@@ -423,8 +423,8 @@ footer {
 /* Smartphone */
 @media (max-width: 480px) {
   .caption h3 {
-    font-size: 22px;
-    margin-bottom: 10px; /* jarak lebih rapat */
+    font-size: 28px;
+    margin-bottom: 5px; /* jarak lebih rapat */
   }
 
   .caption h5 {
