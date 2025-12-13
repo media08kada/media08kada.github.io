@@ -99,6 +99,12 @@ footer {
   margin-top: 10px;
 }
 
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
 
 
 /* ===========================
