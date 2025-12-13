@@ -116,11 +116,13 @@ footer {
 }
 
 .col h5 {
-  margin-bottom: 3px;
+  margin-bottom: 8px;
 }
 
 .col p {
   margin-top: 0;
+  margin-bottom: 12px; /* jarak antar paragraf */
+  line-height: 1.6; 
 }
 
 /* ===========================
@@ -153,15 +155,15 @@ footer {
   margin: 2px 0;
 }
 
+/* Default (desktop) */
 .card-title.custom-title {
-  font-size: 16px;
-  margin: 0;
+  font-size: 18px;
 }
 
 .card-text.custom-text {
-  font-size: 12px;
-  margin: 0;
+  font-size: 16px;
 }
+
 
 /* ===========================
    Info Wilayah
@@ -349,7 +351,7 @@ footer {
 
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 100%;
   }
 
   .slider-container {
@@ -370,6 +372,26 @@ footer {
 
   .video iframe {
     height: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-title.custom-title {
+    font-size: 16px; /* tetap terbaca */
+  }
+  .card-text.custom-text {
+    font-size: 14px;
+  }
+}
+
+footer {
+  font-size: 14px; /* default desktop */
+  line-height: 1.4;
+}
+
+@media (max-width: 450px) {
+  footer {
+    font-size: 12px; /* lebih kecil di layar handphone */
   }
 }
 
