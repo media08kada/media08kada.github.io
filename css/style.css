@@ -38,7 +38,7 @@ footer {
 =========================== */
 .slider .slides li .caption {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 0;
   transform: translateX(-50%);
   text-align: center;
@@ -392,6 +392,43 @@ footer {
 @media (max-width: 450px) {
   footer {
     font-size: 12px; /* lebih kecil di layar handphone */
+  }
+}
+
+.caption h3 {
+  font-size: 48px; /* default desktop */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin-bottom: 20px; /* jarak ke h5 */
+}
+
+.caption h5 {
+  font-size: 24px; /* default desktop */
+  color: #ccc;
+  margin-top: 0; /* pastikan tidak ada jarak tambahan dari atas */
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .caption h3 {
+    font-size: 28px;
+    margin-bottom: 15px; /* jarak lebih kecil */
+  }
+
+  .caption h5 {
+    font-size: 16px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+  .caption h3 {
+    font-size: 22px;
+    margin-bottom: 10px; /* jarak lebih rapat */
+  }
+
+  .caption h5 {
+    font-size: 14px;
   }
 }
 
