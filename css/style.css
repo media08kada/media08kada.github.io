@@ -313,6 +313,16 @@ footer {
   object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .card-action a {
+    display: block;       /* tombol full width */
+    width: 100%;          /* isi lebar container */
+    text-align: center;   /* teks rata tengah */
+    margin-top: 8px;      /* beri jarak antar elemen */
+  }
+}
+
+
 /* ===========================
    Responsive Queries
 =========================== */
