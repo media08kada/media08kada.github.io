@@ -441,6 +441,11 @@ footer {
   margin-top: 15px;
 }
 
+.sidenav,
+.sidenav .user-view .name {
+  font-weight: 300;   /* 300 = light */
+}
+
 
 
 

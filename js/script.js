@@ -83,17 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     interval: 4000,
   });
 
-  // Pagination active state
-  const paginationLinks = document.querySelectorAll(".pagination li a");
-  paginationLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      document
-        .querySelectorAll(".pagination li")
-        .forEach((li) => li.classList.remove("active"));
-      this.parentElement.classList.add("active");
-    });
-  });
-
   // Auto resize textarea
   var textNeedResize = document.querySelectorAll("#message");
   if (textNeedResize.length > 0) {
@@ -105,4 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function scrollKeatas() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+
+
 
