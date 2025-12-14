@@ -415,7 +415,16 @@ footer {
   }
 }
 
-/* Misc
+/* Misc */
 #histats_counter {
   margin-top: 15px;
 }
+
+#pilihan h4 {
+  margin-top: 0;
+  margin-bottom: 20px; /* atur sesuai kebutuhan */
+}
+
+
+
+
