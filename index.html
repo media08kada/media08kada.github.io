@@ -285,6 +285,7 @@
                   <img src="img/modal/news1.jpg"
                   class="circle responsive-img materialboxed z-depth-3"
                   style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  <p>Tanggal, 9 Desember 2025</p>
                   <h6>Posyandu Siklus Hidup Melati RW 08 Kelurahan Kelapa Dua Gelar Pelayanan Kesehatan</h6>
                   <p style="text-align: justify">
                     Kegiatan Posyandu Siklus Hidup Melati RW 08 Kelurahan Kelapa Dua kembali digelar dengan penuh semangat dan warga hadir dengan penuh antusias.
@@ -299,6 +300,7 @@
                   <img src="img/modal/news2.jpg"
                   class="circle responsive-img materialboxed z-depth-3"
                   style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  <p>Tanggal, 12 Desember 2025</p>
                   <h6>Penyerahan SK Bank Sampah RW 08 Kelurahan Kelapa Dua</h6>
                   <p style="text-align: justify;">
                     Kegiatan penyerahan Surat Keputusan (SK) Bank Sampah RW 08 yang diserahkan langsung oleh Koordinator Bank Sampah Kelurahan Kelapa Dua, Lina, kepada Ketua Bank Sampah RW 08, H. Uus Agustino.
@@ -313,6 +315,7 @@
                   <img src="img/modal/news3.jpg"
                   class="circle responsive-img materialboxed z-depth-3"
                   style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  <p>Tanggal, 16 September 2025</p>
                   <h6>Posyandu RW 08 Hadirkan Pusteling dan Storytelling</h6>
                   <p style="text-align: justify">
                     Posyandu Siklus Hidup Melati RW 08 Kelapa Dua terus berinovasi dalam mendekatkan layanan kesehatan dan edukasi kepada masyarakat dilingkungan RW 08 Kelapa Dua.
@@ -327,6 +330,7 @@
                   <img src="img/modal/news4.jpg"
                   class="circle responsive-img materialboxed z-depth-3"
                   style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  Tanggal, 21 Agustus 2025
                   <h6>Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</h6>
                   <p style="text-align: justify">
                     Dalam rangka pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta.
@@ -410,7 +414,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -722,75 +725,75 @@
       }
     });
   });
-</script>
-
-<script>
-  function scrollKeatas() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' 
-    });
-  }
-</script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzIDToqJ1qHe7mrqNJzBBP549GUOHHTnT4sLLmU9ak3NWqbESOn0h9rp7xO03qnTfFQ/exec'
-  const form = document.forms['media-kada-form'];
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
- <script>
-  // Menghapus Contact Pesan
-      document.addEventListener('DOMContentLoaded', function () {
-        const form = document.forms['media-kada-form'];
-
-        form.addEventListener('submit', function (e) {
-          e.preventDefault(); // Mencegah reload halaman
-
-          // Tampilkan toast notifikasi
-          M.toast({
-            html: 'Pesan berhasil dikirim!',
-            classes: 'green darken-2 white-text',
-          });
-
-          // Hapus semua isian form
-          form.reset();
-        });
-      });
     </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.slider');
-  var instances = M.Slider.init(elems, {
-    indicators: false,
-    height: 300,
-    duration: 500,
-    interval: 4000
-  });
-});
-</script>
+    <script>
+      function scrollKeatas() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' 
+        });
+      }
+    </script>
 
-  <!-- container untuk modal -->
-  <div id="modal-container"></div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzIDToqJ1qHe7mrqNJzBBP549GUOHHTnT4sLLmU9ak3NWqbESOn0h9rp7xO03qnTfFQ/exec'
+      const form = document.forms['media-kada-form'];
 
-  <script>
-    // load file modals.html ke dalam index
-    fetch("modals.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("modal-container").innerHTML = data;
-        // inisialisasi materialize modal setelah dimuat
-        var elems = document.querySelectorAll('.modal');
-        M.Modal.init(elems);
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <script>
+      // Menghapus Contact Pesan
+          document.addEventListener('DOMContentLoaded', function () {
+            const form = document.forms['media-kada-form'];
+
+            form.addEventListener('submit', function (e) {
+              e.preventDefault(); // Mencegah reload halaman
+
+              // Tampilkan toast notifikasi
+              M.toast({
+                html: 'Pesan berhasil dikirim!',
+                classes: 'green darken-2 white-text',
+              });
+
+              // Hapus semua isian form
+              form.reset();
+            });
+          });
+        </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, {
+        indicators: false,
+        height: 300,
+        duration: 500,
+        interval: 4000
       });
-  </script>
+    });
+    </script>
+
+      <!-- container untuk modal -->
+      <div id="modal-container"></div>
+
+      <script>
+        // load file modals.html ke dalam index
+        fetch("modals.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("modal-container").innerHTML = data;
+            // inisialisasi materialize modal setelah dimuat
+            var elems = document.querySelectorAll('.modal');
+            M.Modal.init(elems);
+          });
+      </script>
 
  </body>
 </html>

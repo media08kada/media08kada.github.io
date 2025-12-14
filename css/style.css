@@ -53,14 +53,6 @@ footer {
   background-color: #000;
 }
 
-.slides li {
-  aspect-ratio: 1 / 1;       /* Membuat kotak 1:1 */
-  overflow: hidden;          /* Supaya gambar tidak keluar kotak */
-}
-
-
-
-
 /* Aturan umum untuk semua link di dropdown */
 .dropdown-content a {
   color: black !important;  
