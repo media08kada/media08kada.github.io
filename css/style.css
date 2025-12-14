@@ -53,6 +53,19 @@ footer {
   background-color: #000;
 }
 
+/* Aturan umum untuk semua link di dropdown */
+.dropdown-content a {
+  color: black !important;  
+  font-weight: 300; 
+}
+
+.sidenav a {
+  color: black !important;  
+  font-weight: 300;
+}
+
+
+
 #news {
   position: absolute;
   top: 0;
@@ -418,11 +431,6 @@ footer {
 /* Misc */
 #histats_counter {
   margin-top: 15px;
-}
-
-#pilihan h4 {
-  margin-top: 0;
-  margin-bottom: 20px; /* atur sesuai kebutuhan */
 }
 
 
