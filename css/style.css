@@ -1,6 +1,5 @@
-/* ===========================
-   Global Layout
-=========================== */
+/* Global La
+ */
 html, body {
   height: 100%;
   margin: 0;
@@ -21,9 +20,7 @@ footer {
   max-width: 100%;
 }
 
-/* ===========================
-   Navbar & Logo
-=========================== */
+/* Navbar & Logo */
 .brand-logo {
   max-width: 150px;
 }
@@ -33,9 +30,7 @@ footer {
   margin: auto 0;
 }
 
-/* ===========================
-   Slider
-=========================== */
+/* Slider */
 .slider .slides li .caption {
   position: absolute;
   top: 35%;
@@ -44,7 +39,6 @@ footer {
   text-align: center;
   width: 100%;
 }
-
 
 .slider h3,
 .slider h5,
@@ -66,9 +60,7 @@ footer {
   color: #fff;
 }
 
-/* ===========================
-   Berita
-=========================== */
+/* Berita */
 #berita {
   margin-top: 50px;
 }
@@ -107,9 +99,7 @@ footer {
 
 
 
-/* ===========================
-   Grid & Row
-=========================== */
+/* Grid & Row */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -125,9 +115,7 @@ footer {
   line-height: 1.6; 
 }
 
-/* ===========================
-   Card & Collection
-=========================== */
+/* Card & Collection */
 .card-panel {
   min-height: 200px;
 }
@@ -165,9 +153,7 @@ footer {
 }
 
 
-/* ===========================
-   Info Wilayah
-=========================== */
+/* Info Wilayah */
 .no-margin {
   margin: 0 !important;
 }
@@ -176,9 +162,7 @@ footer {
   text-align: center;
 }
 
-/* ===========================
-   Gallery
-=========================== */
+/* Gallery */
 .hidden {
   display: none;
 }
@@ -195,9 +179,7 @@ footer {
   }
 }
 
-/* ===========================
-   Video
-=========================== */
+/* Video */
 .thumbnail {
   left: 65%;
   gap: 15px;
@@ -221,9 +203,7 @@ footer {
   box-sizing: border-box;
 }
 
-/* ===========================
-   Scroll To Top Button
-=========================== */
+/* Scroll To Top Button */
 .buttonToTop {
   position: fixed;
   bottom: 100px;
@@ -267,9 +247,7 @@ footer {
   box-shadow: none !important;
 }
 
-/* ===========================
-   Parallax & Footer
-=========================== */
+/* Parallax & Footer */
 section,
 footer {
   padding: 10px 0;
@@ -286,9 +264,7 @@ footer {
   opacity: 0.5 !important;
 }
 
-/* ===========================
-   Container Iklan
-=========================== */
+/* Container Iklan  */
 .container-iklan {
   display: flex;
   flex-direction: column;
@@ -315,16 +291,14 @@ footer {
 
 @media (max-width: 600px) {
   .card-action a {
-    display: block;       /* tombol full width */
-    width: 100%;          /* isi lebar container */
-    text-align: center;   /* teks rata tengah */
-    margin-top: 8px;      /* beri jarak antar elemen */
+    display: block;       
+    width: 100%;          
+    text-align: center;   
+    margin-top: 8px;    
   }
 }
 
-/* ===========================
-   Responsive Queries
-=========================== */
+/* Responsive Queries */
 @media (max-width: 768px) {
   .about,
   .menu,
@@ -441,9 +415,7 @@ footer {
   }
 }
 
-/* ===========================
-   Misc
-=========================== */
+/* Misc
 #histats_counter {
   margin-top: 15px;
 }
