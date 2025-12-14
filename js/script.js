@@ -1,20 +1,20 @@
 // Semua inisialisasi dijalankan setelah DOM siap
 document.addEventListener("DOMContentLoaded", function () {
   // Dropdown
-  var dropdowns = document.querySelectorAll(".dropdown-trigger");
+  const dropdowns = document.querySelectorAll(".dropdown-trigger");
   M.Dropdown.init(dropdowns, { coverTrigger: false, constrainWidth: false });
 
   // Sidenav
-  var sidenav = document.querySelectorAll(".sidenav");
+  const sidenav = document.querySelectorAll(".sidenav");
   M.Sidenav.init(sidenav);
 
-  // Slider (versi 1)
-  var slider = document.querySelectorAll(".slider");
-  M.Slider.init(slider, {
+  // Slider (gunakan satu konfigurasi saja)
+  const sliders = document.querySelectorAll(".slider");
+  M.Slider.init(sliders, {
     indicators: false,
     height: 350,
-    transition: 600,
-    interval: 3000,
+    duration: 600, // gunakan 'duration' bukan 'transition'
+    interval: 4000,
   });
 
   // Parallax
@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
   M.Materialbox.init(materialbox);
 
   // ScrollSpy
-  var scrollspy = document.querySelectorAll(".scrollspy");
+  const scrollspy = document.querySelectorAll(".scrollspy");
   M.ScrollSpy.init(scrollspy, { scrollOffset: 50 });
 
   // Modal init
-  var modals = document.querySelectorAll(".modal");
+  const modals = document.querySelectorAll(".modal");
   M.Modal.init(modals);
 
   // Gallery Show/Hide
@@ -39,15 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenItems = document.querySelectorAll(".gallery .hidden");
     let isOpen = false;
     btn.addEventListener("click", function () {
-      if (!isOpen) {
-        hiddenItems.forEach((item) => (item.style.display = "block"));
-        btn.innerHTML = '<i class="material-icons left"></i>Close';
-        isOpen = true;
-      } else {
-        hiddenItems.forEach((item) => (item.style.display = "none"));
-        btn.innerHTML = '<i class="material-icons left"></i>Open';
-        isOpen = false;
-      }
+      hiddenItems.forEach((item) => {
+        item.style.display = isOpen ? "none" : "block";
+      });
+      btn.innerHTML = isOpen
+        ? '<i class="material-icons left"></i>Open'
+        : '<i class="material-icons left"></i>Close';
+      isOpen = !isOpen;
     });
   }
 
@@ -59,42 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => console.log("Success!", response))
+        .then((response) => {
+          console.log("Success!", response);
+          M.toast({
+            html: "Pesan berhasil dikirim!",
+            classes: "green darken-2 white-text",
+          });
+          form.reset();
+        })
         .catch((error) => console.error("Error!", error.message));
     });
-
-    // Toast + reset form
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      M.toast({
-        html: "Pesan berhasil dikirim!",
-        classes: "green darken-2 white-text",
-      });
-      form.reset();
-    });
-  }
-
-  // Slider (versi 2)
-  var slider2 = document.querySelectorAll(".slider");
-  M.Slider.init(slider2, {
-    indicators: false,
-    height: 300,
-    duration: 500,
-    interval: 4000,
-  });
-
-  // Auto resize textarea
-  var textNeedResize = document.querySelectorAll("#message");
-  if (textNeedResize.length > 0) {
-    M.textareaAutoResize(textNeedResize[0]);
   }
 });
 
-// Fungsi scroll ke atas (harus global, tidak dibungkus DOMContentLoaded)
+// Fungsi scroll ke atas (global)
 function scrollKeatas() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
-
-
-
-

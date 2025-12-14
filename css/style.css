@@ -385,14 +385,6 @@ footer {
   line-height: 1.4;
 }
 
-/* Atur tinggi minimum textarea agar lebih panjang */
-#message {
-  min-height: 150px;
-  max-height: 400px;
-  overflow-y: auto; /* scrollbar muncul jika teks terlalu panjang */
-}
-
-
 @media (max-width: 450px) {
   footer {
     font-size: 12px; /* lebih kecil di layar handphone */
