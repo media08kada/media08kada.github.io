@@ -264,7 +264,17 @@
       </div>
     </div>
   </div>
+
+  <!-- Tambahan -->
+    <ul class="pagination center">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="berita-utama/kemeriahan-festival-kelapa-dua-jilid-1.html">1</a></li>
+    <li class="waves-effect"><a href="berita-utama/rapat-koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html">2</a></li>
+    <li class="waves-effect"><a href="berita-utama/musyawarah-masyarakat-desa-untuk-tingkatkan-pelayanan-kesehatan.html">3</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
 </section>
+
   <!-- Berita-3 End -->
 
   <!-- Berita Wilayah Start -->
@@ -274,7 +284,7 @@
       
       <!-- Kolom Berita -->
       <div class="row">
-        <div class="col m12 s12 light">
+        <div class="col s12 m12 light">
           <div class="card sticky">
             <div class="card-content">
               <span class="card-title">Sekilas Berita</span>
@@ -467,7 +477,7 @@
                       <i class="material-icons small white-text">group</i></a>
                       <a href="/info-wilayah/lmkkelapadua.html" class="white-text">
                     <h4 class="card-title no-margin" style="font-size:16px;">Info LMK</h4></a>
-                    <p class="no-margin" style="font-size:12px;">LMK Kelurahan Kelapa Dua</p>
+                    <p class="no-margin" style="font-size:12px;">LMK Kelapa Dua</p>
                     <p class="no-margin" style="font-size:10px;">(Klik icons untuk melanjutkan)</p>
                   </div>
                 </div>
@@ -658,127 +668,7 @@
     </footer>
     <!-- Footer End -->
  
-   <!-- JavaScript -->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <!-- Navbar Star -->
-    <script>
-      // Dropdown
-      document.addEventListener('DOMContentLoaded', function() {
-        var dropdowns = document.querySelectorAll('.dropdown-trigger');
-        M.Dropdown.init(dropdowns, {
-          coverTrigger: false,
-          constrainWidth: false
-        });
-
-        // Sidenav
-        var sidenav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sidenav);
-   
-        // Slider
-        var slider = document.querySelectorAll('.slider');
-        M.Slider.init(slider, {
-          indicators: false,
-          height: 350,
-          transition: 600,
-          interval: 3000
-        });
-
-        // Parallax
-        const parallax = document.querySelectorAll('.parallax');
-        M.Parallax.init(parallax);
-
-        const materialbox = document.querySelectorAll('.materialboxed');
-      M.Materialbox.init(materialbox);
-        
-        // ScrollSpy
-        var scrollspy = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(scrollspy, {
-          scrollOffset: 50
-        });
-      });
-    </script>
-
-    <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems);
-  });
-</script>
-
-    <!-- Gallery -->
-     <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.getElementById("show-more-btn");
-    const hiddenItems = document.querySelectorAll(".gallery .hidden");
-    let isOpen = false;
-
-    btn.addEventListener("click", function() {
-      if (!isOpen) {
-        hiddenItems.forEach(item => item.style.display = "block");
-        btn.innerHTML = '<i class="material-icons left"></i>Close';
-        isOpen = true;
-      } else {
-        hiddenItems.forEach(item => item.style.display = "none");
-        btn.innerHTML = '<i class="material-icons left"></i>Open';
-        isOpen = false;
-      }
-    });
-  });
-    </script>
-
-    <script>
-      function scrollKeatas() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth' 
-        });
-      }
-    </script>
-
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzIDToqJ1qHe7mrqNJzBBP549GUOHHTnT4sLLmU9ak3NWqbESOn0h9rp7xO03qnTfFQ/exec'
-      const form = document.forms['media-kada-form'];
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-
-    <script>
-      // Menghapus Contact Pesan
-          document.addEventListener('DOMContentLoaded', function () {
-            const form = document.forms['media-kada-form'];
-
-            form.addEventListener('submit', function (e) {
-              e.preventDefault(); // Mencegah reload halaman
-
-              // Tampilkan toast notifikasi
-              M.toast({
-                html: 'Pesan berhasil dikirim!',
-                classes: 'green darken-2 white-text',
-              });
-
-              // Hapus semua isian form
-              form.reset();
-            });
-          });
-        </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.slider');
-      var instances = M.Slider.init(elems, {
-        indicators: false,
-        height: 300,
-        duration: 500,
-        interval: 4000
-      });
-    });
-    </script>
+<!-- JavaScript-->
 
       <!-- container untuk modal -->
       <div id="modal-container"></div>
@@ -794,6 +684,12 @@
             M.Modal.init(elems);
           });
       </script>
+
+ <!-- Materialize JS -->
+<script src="js/materialize.min.js"></script>
+
+<!-- Custom Script -->
+<script src="js/script.js"></script>
 
  </body>
 </html>

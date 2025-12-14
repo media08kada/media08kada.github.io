@@ -236,8 +236,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: rgb(6, 156, 6);
   color: #fff;
@@ -432,6 +432,19 @@ footer {
 #histats_counter {
   margin-top: 15px;
 }
+
+
+/* Warna untuk item aktif */
+.pagination li.active a {
+  background-color: #39a73e; /* hijau */
+  color: #fff;
+}
+
+
+
+
+
+
 
 
 
