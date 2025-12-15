@@ -1,12 +1,13 @@
+/* Overlay layar popup */
 .popup-screen {
-  z-index: 999999;
   position: fixed;
-  inset: 0; 
-  background: var(--overlay-bg);
-  backdrop-filter: blur(10px);
+  inset: 0;
+  z-index: 999999;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--overlay-bg);
+  backdrop-filter: blur(10px);
   visibility: hidden;
   transition: visibility 0.5s ease;
 }
@@ -15,23 +16,21 @@
   visibility: visible;
 }
 
+/* Kotak popup */
 .popup-box {
-  background-size: cover;      
-  background-position: center; 
-  background-repeat: no-repeat;
-  flex-direction: column;
   position: relative;
-  padding: 50px 40px;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  max-width: 300px;
-  min-height: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 300px;
   padding: 50px 40px;
   border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
   box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transform: scale(0);
   transition: transform 0.5s ease;
 }
@@ -40,6 +39,7 @@
   transform: scale(1);
 }
 
+/* Logo popup */
 .popup-logo {
   position: absolute;
   top: -75px;
@@ -52,25 +52,25 @@
   box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 }
 
+/* Tombol close */
 .close-btn {
   position: absolute;
   top: 15px;
   right: 15px;
   width: 30px;
   height: 30px;
-  display: grid;              /* alternatif flex */
-  place-items: center;        /* center horizontal & vertical */
-  font-size: 2em;           /* lebih proporsional */
-  line-height: 30px;          /* pastikan teks di tengah */
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+  line-height: 30px;
   cursor: pointer;
   opacity: 0.7;
-  border-radius: 50%;         /* bulat */
-  transition: transform 0.5s ease, opacity 0.3s ease;
+  border-radius: 50%;
   background-color: green;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  transition: transform 0.5s ease, opacity 0.3s ease;
 }
-
 
 .close-btn:hover {
   background-color: green;
@@ -79,41 +79,41 @@
   opacity: 1;
 }
 
+/* Judul & teks */
 .popup-box h3 {
+  margin-top: 60px;
   font-size: 2em;
   font-weight: 800;
-  margin-top: 60px;
   color: rgba(226, 6, 6, 0.863);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .popup-box h4 {
-  font-size: 1.2em;
   margin: 10px 0;
+  font-size: 1.2em;
   text-align: center;
-
 }
 
 .popup-box p {
-  font-size: 1em;
   margin-bottom: 20px;
+  font-size: 1em;
   text-align: center;
 }
 
+/* Tombol aksi */
 .popup-box .btn {
-  display: flex;              
-  justify-content: center;    
-  align-items: center;       
-  width: 120px;              
-  height: 35px;              
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 35px;
+  margin-top: auto;
+  border-radius: 10px;
   background: rgb(3, 124, 3);
   color: #fff;
   text-decoration: none;
-  border-radius: 10px;
-  margin-top: auto;
 }
-
 
 .popup-box .btn:hover {
   background-color: #fff;
@@ -143,9 +143,9 @@
   }
 
   .popup-box .btn {
-    font-size: 1em;
     width: 100%;
     max-width: 90px;
+    font-size: 1em;
     text-align: center;
   }
 }
@@ -174,3 +174,4 @@
     padding: 8px 20px;
   }
 }
+
