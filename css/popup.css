@@ -123,9 +123,9 @@
 /* Responsive Popup */
 @media (min-width: 992px) {
   .popup-box {
-    height: 600px;       /* atur tinggi sesuai kebutuhan */
-    max-width: 650px;    /* lebar maksimum popup */
-    padding: 40px;       /* beri ruang lebih */
+    height: 600px;       
+    max-width: 450px;    
+    padding: 40px;       
   }
 }
 
