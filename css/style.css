@@ -186,6 +186,12 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  h5 {
+    font-size: 18px;
+  }
+}
+
 /* Video */
 .thumbnail {
   left: 65%;
