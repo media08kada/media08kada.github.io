@@ -46,8 +46,10 @@
 
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    
     <!-- Materialize CSS -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/popup.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <!-- Custom CSS -->
@@ -186,23 +188,31 @@
       </ul>
     </div>
     <!-- Slider End -->
-    
-    <!-- Banner Iklan -->
-    <!--<div class="container-iklan container">
-      <div class="row">
-        <div class="col s12">
-          <img src="img/iklan/curanmor.jpg" alt="Iklan" class="responsive-img" loading="lazy">
-        </div>
+
+    <!-- Popup Iklan Start -->
+    <div class="popup-screen">
+      <div class="popup-box" style="background-image: url('img/iklan/iklan.jpg');">
+        <div class="close-btn">&times;</div>
+
+
+        <img src="img/partner/MediaKelapadua.png" alt="Logo Partner" loading="lazy" class="popup-logo">
+        
+        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">WASPADA<br>CURANMOR</h3>
+        <h4>Tambahkan Kunci Ganda<br>pada Kendaraan</h4>
+        <p></p>
+        <a href="index.html" class="btn">Close</a>
       </div>
-    </div>-->
-    <!-- Container Iklan End -->
-    <!-- Navbar End -->
-    
+      <audio autoplay>
+        <source src="/audio/popup.mp3" type="audio/mp3" id="popup-audio">
+      </audio>
+    </div>
+    <!-- Popup Iklan End -->
+
     <!-- Berita Utama start -->
-<section id="berita" class="berita scrollspy">
-  <div class="container">
-    <h4 class="center light grey-text text-darken-3" style="margin-top: -15px;">Berita Utama</h4>
-     <div class="row">
+    <section id="berita" class="berita scrollspy">
+      <div class="container">
+        <h4 class="center light grey-text text-darken-3" style="margin-top: -15px;">Berita Utama</h4>
+        <div class="row">
 
       <!-- Berita-1 -->
       <div class="col m4 s12">
@@ -799,6 +809,34 @@
             M.Modal.init(elems);
           });
       </script>
+
+        <!-- PopUp Star -->
+        <script>
+        // My Javascript Popup Screen Iklan //
+        const popupScreen = document.querySelector('.popup-screen');
+        const popupBox = document.querySelector('.popup-box');
+        const closeBtn = document.querySelector('.close-btn');
+        const popupAudio = document.querySelector('popup-audio');
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            popupScreen.classList.add('active');
+            popupAudio.play();
+          }, 1000); //
+        });
+        closeBtn.addEventListener('click', () => {
+          popupScreen.classList.remove('active');
+          document.cookie = 'WebsiteName=testWebsite; max-age=' + 24 * 60 * 60;
+          const WebsiteCookie = document.cookie.indexOf('WebsiteName');
+
+          if (WebsiteCookie != -1) {
+            popupScreen.style.display = 'none';
+          } else {
+            popupScreen.style.display = 'flex';
+          }
+        });
+        </script>
+              <!-- PopUp Star -->
+
 
  </body>
 </html>

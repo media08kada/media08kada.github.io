@@ -74,3 +74,5 @@ document.addEventListener("DOMContentLoaded", function () {
 function scrollKeatas() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+
