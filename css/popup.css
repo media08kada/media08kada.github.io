@@ -136,6 +136,7 @@
   .popup-box h4 {
     font-size: 1em;
     line-height: 1em;
+    margin-top: -5px;
   }
 
   .popup-box p {
