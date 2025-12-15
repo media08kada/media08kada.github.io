@@ -432,6 +432,14 @@ footer {
   font-weight: 300;   /* 300 = light */
 }
 
+.small-text {
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+
+
 
 
 
