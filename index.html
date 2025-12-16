@@ -368,6 +368,48 @@
                     <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card5">continue</a>
                     </div>
                    </li>
+
+                <!-- Item 6 -->
+                  <!--<li id="item" class="collection-item item-hidden">
+                  <img src="img/modal/news5.jpg"
+                  class="circle responsive-img materialboxed z-depth-3"
+                  style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  <h6>Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</h6>
+                  <p style="text-align: justify">
+                    media08kada | Dalam rangka pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta pada Kamis, 21 Agustus 2025, bertempat di Hotel The Grand Mansion, Menteng, Jakarta.
+                  </p>
+                  <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card5">continue</a>
+                    </div>
+                   </li>-->
+
+                <!-- Item 7 -->
+                  <!--<li id="item" class="collection-item item-hidden">
+                  <img src="img/modal/news5.jpg"
+                  class="circle responsive-img materialboxed z-depth-3"
+                  style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  <h6>Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</h6>
+                  <p style="text-align: justify">
+                    media08kada | Dalam rangka pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta pada Kamis, 21 Agustus 2025, bertempat di Hotel The Grand Mansion, Menteng, Jakarta.
+                  </p>
+                  <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card5">continue</a>
+                    </div>
+                   </li>-->
+
+                <!-- Item 8 -->
+                  <!--<li id="item" class="collection-item item-hidden">
+                  <img src="img/modal/news5.jpg"
+                  class="circle responsive-img materialboxed z-depth-3"
+                  style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  <h6>Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</h6>
+                  <p style="text-align: justify">
+                    media08kada | Dalam rangka pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta pada Kamis, 21 Agustus 2025, bertempat di Hotel The Grand Mansion, Menteng, Jakarta.
+                  </p>
+                  <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card5">continue</a>
+                    </div>
+                   </li>-->
                  
                   </ul>
                   <!-- Tombol Wilayah-->
@@ -858,21 +900,32 @@
 
         <!-- Sekilas Berita-->
         <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          const btn = document.getElementById("show-more-btn");
-          const item = document.getElementById("item");
+  document.addEventListener("DOMContentLoaded", function() {
+    const showMoreBtn = document.getElementById("show-more-btn");
+    const hiddenItems = document.querySelectorAll(".item-hidden");
+    let isOpen = false; // status awal
 
-          btn.addEventListener("click", function() {
-            if (item.classList.contains("item-hidden")) {
-              item.classList.remove("item-hidden");
-              btn.innerHTML = '<i class="material-icons left"></i>Close';
-            } else {
-              item.classList.add("item-hidden");
-              btn.innerHTML = '<i class="material-icons left"></i>Open';
-            }
-          });
+    showMoreBtn.addEventListener("click", function() {
+      if (!isOpen) {
+        // buka item
+        hiddenItems.forEach(item => {
+          item.style.display = "block";
         });
-      </script>
+        showMoreBtn.innerText = "Close"; // ubah teks tombol
+        isOpen = true;
+      } else {
+        // sembunyikan item
+        hiddenItems.forEach(item => {
+          item.style.display = "none";
+        });
+        showMoreBtn.innerText = "Open"; // kembalikan teks tombol
+        isOpen = false;
+      }
+    });
+  });
+</script>
+
+
 
   </body>
 </html>
