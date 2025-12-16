@@ -334,7 +334,7 @@
                   style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
                   <h6>Warga Kelapa Dua Khawatir Pohon Rindang di Jalan</h6>
                   <p style="text-align: justify">
-                    Keberadaan pohon besar dan sangat rindang di Jl. H. Kelik RT 003/08, Kelapa Dua, Kebon Jeruk, tepat di depan Komplek Migas 20, kini menjadi perhatian serius warga sekitar.
+                    Keberadaan pohon besar dan sangat rindang di Jl. H. Kelik RT 003/08, Kelapa Dua, Kebon Jeruk, tepat di depan Komplek Migas 20, kini menjadi perhatian serius warga sekitar terutama pada musim hujan seperti saat ini.
                   </p>
                   <div class="lift-align">
                     <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card3">continue</a>
@@ -354,8 +354,26 @@
                     <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card4">continue</a>
                     </div>
                    </li>
-                  
+
+                <!-- Item 5 -->
+                  <li id="item" class="collection-item item-hidden">
+                  <img src="img/modal/news5.jpg"
+                  class="circle responsive-img materialboxed z-depth-3"
+                  style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
+                  <h6>Sri Wahyuni Juara 3 Jambore Kader Posyandu Tingkat DKI Jakarta</h6>
+                  <p style="text-align: justify">
+                    media08kada | Dalam rangka pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta pada Kamis, 21 Agustus 2025, bertempat di Hotel The Grand Mansion, Menteng, Jakarta.
+                  </p>
+                  <div class="lift-align">
+                    <a class="waves-effect waves-light btn-small green modal-trigger" href="#box-card5">continue</a>
+                    </div>
+                   </li>
+                 
                   </ul>
+                  <!-- Tombol Wilayah-->
+                  <div class="col m s12 center-align">
+                  <a id="show-more-btn" class="waves-effect waves-light btn-small grey">
+                  <i class="material-icons left"></i>Open</a>
                 </div>
                </div>
              </div>
@@ -539,7 +557,7 @@
 
           <!-- Tombol Gallery-->
            <div class="col m s12">
-          <a id="show-more-btn" class="waves-effect waves-light btn-small green">
+          <a id="gallery-btn" class="waves-effect waves-light btn-small green">
           <i class="material-icons left"></i>Open</a>
            </div>
           </div>
@@ -653,8 +671,8 @@
     <!-- Scroll Ke Atas End-->
 
     <!-- Footer Start -->
-<footer class="green darken-3 white-text center">
-  <p class="flow">LMK-08 Kelapa Dua, Copyright 2025</p>
+    <footer class="green darken-3 white-text center">
+      <p class="flow">LMK-08 Kelapa Dua, Copyright 2025</p>
 
         <!-- Channel Links -->
           <div class="footer-channels">
@@ -725,7 +743,7 @@
     <!-- Gallery -->
      <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.getElementById("show-more-btn");
+    const btn = document.getElementById("gallery-btn");
     const hiddenItems = document.querySelectorAll(".gallery .hidden");
     let isOpen = false;
 
@@ -838,6 +856,23 @@
         </script>
               <!-- PopUp Star -->
 
+        <!-- Sekilas Berita-->
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const btn = document.getElementById("show-more-btn");
+          const item = document.getElementById("item");
 
- </body>
+          btn.addEventListener("click", function() {
+            if (item.classList.contains("item-hidden")) {
+              item.classList.remove("item-hidden");
+              btn.innerHTML = '<i class="material-icons left"></i>Close';
+            } else {
+              item.classList.add("item-hidden");
+              btn.innerHTML = '<i class="material-icons left"></i>Open';
+            }
+          });
+        });
+      </script>
+
+  </body>
 </html>

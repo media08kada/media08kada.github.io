@@ -85,6 +85,12 @@ footer {
   margin-top: 50px;
 }
 
+.item-hidden {
+  display: none; /* Item tidak terlihat */
+}
+
+
+
 #berita p,
 #card-content p {
   text-align: justify;
