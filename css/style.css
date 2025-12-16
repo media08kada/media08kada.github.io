@@ -237,7 +237,7 @@ footer {
 .buttonToTop {
   position: fixed;
   bottom: 100px;
-  right: 30px;
+  right: 20px;
   cursor: pointer;
   z-index: 999;
   transition: all 0.3s ease-in-out;
