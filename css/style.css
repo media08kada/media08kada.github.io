@@ -32,23 +32,21 @@ footer {
 /* Slider */
 .slider .slides li .caption {
   position: absolute;
-  top: 60%;
+  top: 20%;
   left: 0;
   transform: translateX(-50%);
   text-align: center;
   width: 100%;
 }
 
-/* Atur jarak h3 dengan elemen di bawahnya */
-.slider .caption h3 {
+.slider h3 {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  margin-bottom: 30px; /* ubah sesuai kebutuhan */
+  margin-bottom: 0; /* diperkecil dari 30px */
 }
 
-/* Atur jarak h5 dengan elemen di atasnya */
-.slider .caption h5 {
-  margin-top: 60px; /* tambah jarak ke atas */
+.slider h5 {
+  margin-top: 5px; /* tambahkan satuan px */
   color: #ccc; /* contoh styling tambahan */
 }
 
