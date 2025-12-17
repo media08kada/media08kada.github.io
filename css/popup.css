@@ -110,10 +110,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 35px;
+  width: 95px;
+  height: 25px;
   margin-top: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   background: rgb(3, 124, 3);
   color: #fff;
   text-decoration: none;
