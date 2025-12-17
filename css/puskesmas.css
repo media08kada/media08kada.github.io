@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Powerpoint Youtube Star */
+.powerpoint-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  background: transparent;
+}
+
+
+ .powerpoint-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #fff; /* hilangkan block hitam */
+}
+
+
+  .description {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+/* Tambahkan jarak antar blok PowerPoint */
+  .powerpoint-block {
+    margin-bottom: 2rem; /* atur sesuai kebutuhan */
+  }
+
+
+
+

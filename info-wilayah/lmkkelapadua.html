@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="mediakelapadua.web.id" />
+    <meta name="keywords" content="media, informasi, Pustu kelapa dua, layanan masyarakat, berita lokal">
+    <meta name="author" content="MediaKada" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- SEO & Verification -->
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="QwSdMazhBKysAXAxVwftI2Sm0OqIzOptOeUvVji3lsQ" />
+
+    <!-- Open Graph dan Twitter Card -->
+    <meta property="og:title" content="mediakelapadua.web.id" />
+    <meta property="og:description" content="Berita seputar Kelapa Dua dan sekitarnya. Baca detailnya di sini!" />
+     <meta property="og:image" content="https://mediakelapadua.web.id/slider/img/Kelapa-bg1.jpg"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://mediakelapadua.web.id/index.html"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="MediaKada" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/photo.css">
+    <title>Info LMK</title>
+    
+  </head>
+  <body id="home" class="scrollspy">
+    
+    <!-- Navbar Start -->
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo" style="padding: 10px;">
+              <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
+            </a>
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="waves-effect material-icons large">home</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<!-- Info Kelurahan -->
+<section id="berita" class="section berita grey-text text-darken-3">
+  <div class="container">
+    <!-- Judul -->
+    <div class="row">
+      <div class="col s12">
+        <h4 class="light center-align grey-text text-darken-3">Info LMK</h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="../img/lmk/lmk-1.jpg" class="preview-img" id="preview-img" alt="Gambar-1" />
+
+      <div class="galleries">
+        <img src="../img/lmk/lmk-1.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-2.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-3.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-4.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-5.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/lmk/lmk-6.jpg" onclick="imgPreview(this.src)" alt="" />
+      </div>
+    </div>
+    <script>
+      const imgPreview = (src) => {
+        document.getElementById('preview-img').src = src;
+      };
+    </script>
+              <h5 style="text-align: center;">Deskripsi:</h5>
+              <p style="text-align: center;">Kegiatan rapat bulanan LMK Kelurahan Kelapa Dua, di Sekretariat LMK Kantor Kelurahan Kelapa Dua Lantai 4.
+              </p>
+             </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Dropdown
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+        });
+
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+      });
+    </script>
+  </body>
+</html>

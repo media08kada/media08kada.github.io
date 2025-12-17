@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/video.css">
+    
+    <title>Gallery Video</title>
+  </head>
+  <body id="home" class="scrollspy">
+
+    <!-- Navbar Start -->
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo" style="padding: 10px;">
+              <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
+            </a>
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons large">home</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Video -->
+    <section id="gallery-video" class="gallery-video">
+  <div class="container">
+    <h4 class="center light grey-text text-darken-3">Gallery-Photo</h4>
+
+      <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KD5UOu4YiQs?si=VUMR0F5kw20gTIVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
+
+     <div class="video-description">
+     <h5>Deskripsi :</h5>
+     <p>Pembinaan Posyandu Bidang Layanan Kesehatan, Dinas Kesehatan Provinsi DKI Jakarta menyelenggarakan Jambore Kader dan Posyandu Berprestasi Tingkat Provinsi DKI Jakarta</p><br>
+     <p><strong>Subscribe, Like, Share, dan Comment</strong><a href="https://www.youtube.com/@KosongDelapan102" target="_blank" style="color: black;"> <br>YouTube KosongDelapan102</a>
+    </p>
+
+    <div class="g-ytsubscribe" data-channelid="UC41XqwNU6eP4PJdziPCVT2Q" data-layout="default" data-count="hidden"></div>
+  </div>
+</section>
+<!-- End Video Section -->
+
+
+
+
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+      });
+    </script>
+  </body>
+</html>

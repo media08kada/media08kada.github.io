@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediakelapadua</title>
+
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="home" class="scrollspy">
+
+    <!-- Navbar Start -->
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo" style="padding: 10px;">
+              <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
+            </a>
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons large">home</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<!-- Berita Utama -->
+<section id="berita" class="section berita grey-text text-darken-3">
+  <div class="container">
+    <!-- Judul -->
+    <div class="row">
+      <div class="col s12">
+        <h4 class="light center-align grey-text text-darken-3">Berita Pilihan</h4>
+      </div>
+    </div>
+
+    <!-- Berita-1 -->
+    <div class="row berita-detil">
+      <!-- Gambar -->
+      <div class="col s12 m4">
+        <img src="../img/card/card1a.jpg" alt="Festival Kelapa Dua" class="responsive-img z-depth-1" />
+      </div>
+
+      <!-- Konten -->
+      <div class="col s12 m8">
+        <h5>Ondel-ondel Betawi</h5>
+        
+          <p style="text-align: justify">media08kada | Jakarta — Ondel-ondel Betawi, kesenian boneka raksasa khas masyarakat Betawi, kembali menjadi sorotan dalam berbagai pesta rakyat dan perayaan pernikahan di ibu kota. Boneka raksasa ini dipercaya sebagai simbol leluhur penjaga sekaligus penolak bala, menghadirkan nuansa sakral sekaligus meriah di tengah masyarakat.</p>
+          <p style="text-align: justify;">Tradisi ini menampilkan sepasang boneka besar sosok pria berwajah merah dan wanita berwajah putih, keduanya dibuat dari anyaman bambu yang dipikul dari dalam oleh seorang pengarak. Kehadiran ondel-ondel tak hanya menjadi hiburan, tetapi juga lambang identitas budaya Jakarta yang terus lestari hingga kini.</p>
+          <P style="text-align: justify;">Arak-arakan ondel-ondel biasanya diiringi musik tradisional Betawi, menciptakan suasana semarak yang mengundang perhatian warga maupun wisatawan. Dari kampung hingga pusat kota, ondel-ondel tetap menjadi ikon budaya yang menegaskan kekayaan tradisi Betawi di tengah modernisasi Jakarta.</P>
+          <P style="text-align: justify;">Sayangnya, di berbagai sudut ibu kota, ondel-ondel lebih sering dijumpai sebagai perlengkapan mengamen di jalanan. Fungsi sakral dan budaya yang melekat mulai bergeser, sehingga warisan budaya ini tidak lagi sepenuhnya hadir dalam konteks tradisi yang berakar dari masyarakat Betawi.</P>
+          <P style="text-align: justify;">Kondisi ini menimbulkan keprihatinan banyak pihak. Para budayawan menilai, jika tren ini terus berlanjut, makna filosofis ondel-ondel sebagai penjaga dan simbol kebanggaan Betawi bisa terkikis oleh komersialisasi.</P>
+          <P style="text-align: justify;">Meski begitu, masih ada komunitas dan sanggar seni yang berupaya menjaga kemurnian tradisi, mengarak ondel-ondel dalam acara budaya, festival, dan perayaan resmi. Harapannya, generasi muda dapat kembali melihat ondel-ondel bukan sekadar boneka raksasa untuk hiburan jalanan, melainkan warisan budaya yang patut dijaga dan dilestarikan.</P>
+
+        <a href="../index.html" class="waves-effect waves-light btn-small green">
+          Home
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Dropdown
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+          coverTrigger: false,
+          constrainWidth: false
+        });
+
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+      });
+    </script>
+  </body>
+</html>

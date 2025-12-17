@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Material-icons", sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#6ac1c5,#bda5ff);
+}
+
+#calender {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50,-50);
+}
+
+.evo-calendar .calendar-events .event {
+  background-color: #106804 !important;
+}
+
+
+

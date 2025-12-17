@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Photo</title>
+
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/photo.css">
+    
+    <title>Gallery Photo</title>
+
+  </head>
+  <body id="home" class="scrollspy">
+
+
+    <!-- Navbar Start -->
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo" style="padding: 10px;">
+              <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
+            </a>
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons large">home</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Info Event -->
+    <section id="gallery-photo" class="gallery-photo">
+  <div class="container">
+    <h4 class="center light grey-text text-darken-3">Gallery-Photo</h4>
+          
+    <div class="container">
+      <img src="../img/photo/1.jpg" class="preview-img" id="preview-img" alt="Gambar-1" />
+
+      <div class="galleries">
+        <img src="../img/photo/1.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/photo/2.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/photo/3.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/photo/4.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/photo/5.jpg" onclick="imgPreview(this.src)" alt="" />
+        <img src="../img/photo/6.jpg" onclick="imgPreview(this.src)" alt="" />
+      </div>
+    </div>
+    <script>
+      const imgPreview = (src) => {
+        document.getElementById('preview-img').src = src;
+      };
+    </script>
+            <!-- Gallery end -->
+
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // ScrollSpy
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollspy, {
+          scrollOffset: 50
+        });
+
+        // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+      });
+    </script>
+  </body>
+</html>
