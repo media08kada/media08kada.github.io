@@ -195,23 +195,21 @@
       </ul>
     </div>
     <!-- Slider End -->
-
+    
     <!-- Popup Iklan Start -->
-    <div class="popup-screen">
-      <div class="popup-box" style="background-image: url('img/iklan/flayer-dbd.jpg');">
-        <div class="waves-effect close-btn">&times;</div>
-
+        <div id="popup" class="popup-screen" style="display:none;">
+          <div class="popup-box" style="background-image: url('img/iklan/flayer-dbd.jpg');">
+            <div id="close-popup" class="waves-effect close-btn">&times;</div>
         <img src="img/partner/MediaKelapadua.png" alt="Logo Partner" loading="lazy" class="popup-logo">
-        
-        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">NYAMUK<br>AEDES AEGYPTI<br>ber WOLBACHIA</h3>
-        <h4>Menurunkan virus Dengue<br>mengurangi Deman Berdarah</h4>
+        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          NYAMUK<br>AEDES AEGYPTI<br>ber WOLBACHIA
+        </h3>
+        <h4>Menurunkan virus Dengue<br>mengurangi Demam Berdarah</h4>
         <p style="line-height: 1.2;">Info selengkapnya pada<br>link dibawah ini :</p>
         <a href="info-wilayah/puskesmas.html" class="waves-effect btn">Link</a>
+        </div>
       </div>
-      <audio autoplay>
-        <source src="/audio/popup.mp3" type="audio/mp3" id="popup-audio">
-      </audio>
-    </div>
+    <button id="open-popup" class="waves-effect btn">Buka Popup</button>
     <!-- Popup Iklan End -->
 
     <!-- Berita Utama start -->
@@ -871,32 +869,15 @@
           });
       </script>
 
-        <!-- PopUp Star -->
-        <script>
-        // My Javascript Popup Screen Iklan //
-        const popupScreen = document.querySelector('.popup-screen');
-        const popupBox = document.querySelector('.popup-box');
-        const closeBtn = document.querySelector('.close-btn');
-        const popupAudio = document.querySelector('popup-audio');
-        window.addEventListener('load', () => {
-          setTimeout(() => {
-            popupScreen.classList.add('active');
-            popupAudio.play();
-          }, 1000); //
+      <!-- Popup -->
+      <script>
+        document.getElementById('open-popup').addEventListener('click', () => {
+          document.getElementById('popup').style.display = 'block';
         });
-        closeBtn.addEventListener('click', () => {
-          popupScreen.classList.remove('active');
-          document.cookie = 'WebsiteName=testWebsite; max-age=' + 24 * 60 * 60;
-          const WebsiteCookie = document.cookie.indexOf('WebsiteName');
-
-          if (WebsiteCookie != -1) {
-            popupScreen.style.display = 'none';
-          } else {
-            popupScreen.style.display = 'flex';
-          }
+        document.getElementById('close-popup').addEventListener('click', () => {
+          document.getElementById('popup').style.display = 'none';
         });
-        </script>
-              <!-- PopUp Star -->
+      </script>
 
         <!-- Sekilas Berita-->
         <script>
