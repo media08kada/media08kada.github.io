@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+  </head>
+  <body id="home" class="scrollspy">
+    <!-- Modal Section Sekilas Berita -->
+
+    <!-- Modal 1 -->
+      <div id="box-card1" class="modal">
+  <div class="modal-content">
+    <img src="/img/modal/news1A.jpg" 
+         alt="Kegiatan Posyandu Melati RW 08" 
+         class="responsive-img materialboxed z-depth-3" 
+         width="200" height="200" />
+         <h6 class="modal-title">Musrenbang Tingkat Walikota Jakarta Barat</h6>
+        <p class="date">Tanggal, 18 Desember 2025</p>
+
+        <p class="text" style="text-align: justify">
+        MediaKada | Pemerintah Kota Administrasi Jakarta Barat menyelenggarakan Musyawarah Perencanaan Pembangunan (Musrenbang) Tingkat Kota untuk Tahun Anggaran 2026. Acara berlangsung di Ruang Ali Sadikin, Kantor Walikota Jakarta Barat, pada Kamis (18/12/2025).</p>
+        <p style="text-align: justify">Musrenbang ini dihadiri oleh jajaran pejabat pemerintah daerah, perwakilan masyarakat, serta tokoh-tokoh penting dari berbagai kecamatan dan Kelurahan. Agenda utama membahas prioritas pembangunan wilayah, mulai dari infrastruktur, pelayanan publik, hingga program pemberdayaan masyarakat.</p>
+        <p style="text-align: justify">
+        Musrenbang sebagai wadah partisipasi masyarakat dan berbagai pihak untuk berdiskusi, menyepakati, dan menyusun rencana pembangunan daerah atau nasional secara bottom-up, mulai dari tingkat desa/kelurahan hingga pusat, agar pembangunan tepat sasaran, inklusif, dan sesuai kebutuhan riil warga.</p>
+        <p style="text-align: justify">Kegiatan berlangsung dengan suasana dialogis, di mana peserta menyampaikan usulan dan masukan secara terbuka. Hasil Musrenbang ini akan menjadi dasar penyusunan Rencana Kerja Pemerintah Daerah (RKPD) Jakarta Barat Tahun 2026.</p>
+        <p class="small-text" style="font-size: 10px" text-align="justify">(LMK-08 dan LMK-06 Kelapa Dua)</p>
+      </div>
+       <!-- Tombol Share di dalam modal -->
+       <div class="modal-footer">
+         <button type="button" class="share-whatsapp waves-effect waves-light btn green">
+          Share ke WhatsApp
+         </button>
+         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.querySelector('#box-card1');
+    var instance = M.Modal.init(modal);
+
+    document.querySelectorAll('.modal-trigger').forEach(function(trigger) {
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        fetch('box-card1.html')
+          .then(response => response.text())
+          .then(data => {
+            modal.querySelector('.modal-content').innerHTML = data;
+            instance.open();
+          });
+      });
+    });
+  });
+</script>
+
+  </body>
+</html>
