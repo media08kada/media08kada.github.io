@@ -2,8 +2,7 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!DOCTYPE html>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   </head>
   <body id="home" class="scrollspy">
     <!-- Modal Section Sekilas Berita -->
@@ -239,7 +238,9 @@
     <!-- JavaScript-->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Pasang event listener ke semua tombol share
+  const modals = document.querySelectorAll('.modal');
+  M.Modal.init(modals);
+
   document.querySelectorAll(".share-whatsapp").forEach(btn => {
     btn.addEventListener("click", function() {
       const modal = btn.closest(".modal");
@@ -247,11 +248,14 @@ document.addEventListener("DOMContentLoaded", function() {
       const titleEl = modal.querySelector(".modal-title");
       const title = titleEl ? titleEl.textContent.trim() : "Berita RW 08";
 
-      // Buat teks share
       const shareText = `${title} - https://mediakelapadua.web.id/modals.html#${modalId}`;
-      const waUrl = "https://wa.me/?text=" + encodeURIComponent(shareText);
 
-      // Buka WhatsApp
+      // Deteksi perangkat
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const waUrl = isMobile 
+        ? "whatsapp://send?text=" + encodeURIComponent(shareText)
+        : "https://wa.me/?text=" + encodeURIComponent(shareText);
+
       window.open(waUrl, "_blank");
     });
   });
