@@ -32,25 +32,45 @@
   <priority>0.80</priority>
 </url>
 
-<!-- Info Wilayah  -->
+<!-- Berita Wilayah  -->
 <url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/Kelurahan.html</loc>
-  <lastmod>2025-08-21T07:30:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/musrenbang-tingkat-walikota-jakarta-barat.html</loc>
+  <lastmod>2025-12-18T08:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/puskesmas.html</loc>
-  <lastmod>2025-11-25T08:11:19+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/penyerahan-sk-bank-sampah-rw-08-kelurahan-kelapa-dua.html</loc>
+  <lastmod>2025-12-12T22:00:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/lmkkelapadua.html</loc>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/warga-kelapa-dua-khawatir-pohon-rindang-dijalan.html</loc>
   <lastmod>2025-09-16T09:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/event.html</loc>
-  <lastmod>2025-09-16T09:00:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/festival-kelapa-dua-jilid-1.html</loc>
+  <lastmod>2025-09-29T09:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/sri-wahyuni-juara-3-jambore-kader-posyandu-tingkat-dki-jakarta.html</loc>
+  <lastmod>2025-08-21T09:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/pemeriksaan-kesehatan-warga-kelapa-dua.html</loc>
+  <lastmod>2025-08-21T09:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/warga-rw-08-kelapa-dua-terima-bantuan-soundsystem.html</loc>
+  <lastmod>2025-12-10T09:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/posyandu-siklus-hidup-melati-rw-08-gelar-pelayanan-kesehatan.html</loc>
+  <lastmod>2025-12-09T08:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
@@ -109,6 +129,8 @@
   <lastmod>2025-11-25T08:11:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+
 
 
 <!-- Giat Video -->
