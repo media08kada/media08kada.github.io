@@ -139,6 +139,10 @@ footer {
   line-height: 1.6; 
 }
 
+#show-more-btn {
+  margin-top: 20px; /* sesuaikan jarak */
+}
+
 /* Card & Collection */
 .card-panel {
   min-height: 200px;
