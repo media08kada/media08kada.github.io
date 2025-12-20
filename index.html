@@ -89,15 +89,12 @@
                  Gallery<i class="material-icons right">arrow_drop_down</i></a>
               </li>
               <li>
-              <!-- Tombol Search -->
               <div id="search-button">
                 <i class="material-icons white-text">search</i>
               </div>
-              <!-- Search Box (disembunyikan dulu) -->
               <div class="search-form">
                 <form action="#" method="get" class="input-wrapper">
                   <input type="search" id="search-box" placeholder="Search here..." />
-                  <!-- ikon close di dalam input -->
                   <span class="close-icon">
                     <i class="material-icons">close</i>
                   </span>
@@ -938,13 +935,6 @@
     searchBox.value = '';
   };
 
-  // tambahan untuk layar sentuh
-searchButton.addEventListener('touchstart', (e) => {
-  e.preventDefault();
-  searchForm.classList.add('active');
-  searchBox.focus();
-});
-
   // Klik di luar area search → tutup box
   document.addEventListener('click', (e) => {
     if (
@@ -956,35 +946,5 @@ searchButton.addEventListener('touchstart', (e) => {
   });
 </script>
 
-<script>
-  const searchButtonMobile = document.querySelector('#search-button-mobile');
-const searchFormMobile = document.querySelector('.search-form-mobile');
-const searchBoxMobile = document.querySelector('#search-box-mobile');
-const closeIconMobile = document.querySelector('.close-icon-mobile');
-
-// Klik ikon search mobile → buka box
-searchButtonMobile.onclick = (e) => {
-  e.preventDefault();
-  searchFormMobile.classList.add('active');
-  searchBoxMobile.focus();
-};
-
-// Klik ikon close mobile → tutup box
-closeIconMobile.onclick = () => {
-  searchFormMobile.classList.remove('active');
-  searchBoxMobile.value = '';
-};
-
-// Klik di luar area search mobile → tutup box
-document.addEventListener('click', (e) => {
-  if (
-    !searchFormMobile.contains(e.target) &&
-    !searchButtonMobile.contains(e.target)
-  ) {
-    searchFormMobile.classList.remove('active');
-  }
-});
-</script>
- 
  </body>
 </html>
