@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <!-- Google Adsense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957"crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957" crossorigin="anonymous"></script>
 
     <!-- Metadata -->
     <meta charset="UTF-8" />
@@ -17,7 +16,21 @@
     <meta name="robots" content="index, follow" />
     <meta name="google-site-verification" content="QwSdMazhBKysAXAxVwftI2Sm0OqIzOptOeUvVji3lsQ" />
 
-    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <!-- Open Graph -->
+    <meta property="og:image" content="https://mediakelapadua.web.id/slider/img/img-share.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="Media Kelapa Dua" />
+    <meta property="og:description" content="Berita Seputar Kelapa Dua dan sekitarnya, Update dan Terpercaya. Baca detailnya di sini!" />
+    <meta property="og:url" content="https://mediakelapadua.web.id/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediaKada" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Media Kelapa Dua" />
+    <meta name="twitter:description" content="Berita Seputar Kelapa Dua dan sekitarnya, Update dan Terpercaya. Baca detailnya di sini!" />
+    <meta name="twitter:image" content="https://mediakelapadua.web.id/slider/img/img-share.jpg" />
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFE1NH0SL3"></script>
@@ -44,9 +57,9 @@
     <link rel="stylesheet" href="css/puskesmas.css" />
 
     <title>Media Kelapa Dua</title>
+  </head>
+  <body id="home" class="scrollspy">
 
-    </head>
-    <body id="home" class="scrollspy">
 
     <!-- Navbar Start -->
     <div class="navbar-fixed" id="top">
@@ -72,9 +85,9 @@
                  Gallery<i class="material-icons right">arrow_drop_down</i></a>
               </li>
               <li>
-              <a href="#" id="search-button">
+              <div id="search-button">
                 <i class="material-icons white-text">search</i>
-              </a>
+              </div>
               <div class="search-form">
                 <form action="#" method="get" class="input-wrapper">
                   <input type="search" id="search-box" placeholder="Search here..." />
@@ -84,7 +97,6 @@
                 </form>
               </div>
             </li>
-
             </ul>
           </div>
         </div>
@@ -113,54 +125,43 @@
     
     <!-- Sidenav -->
     <ul class="sidenav" id="mobile-nav">
-      <li><div class="user-view">
-      <div class="background">
-        <img src="img/partner/mediakelapadua.jpg">
-      </div>
-      <a href="#user"><img class="circle" src="img/partner/MediaKelapadua.png"></a>
-      <a href="#name"><span class="white-text name">mediakelapadua.web.id</span></a>
-      <a href="#email"><span class="white-text email"></span></a>
-    </div></li>
-      
-      <li><a href="index.html">Beranda</a></li>
-      
-      <!-- Dropdown trigger di sidenav -->
       <li>
-        <a class="dropdown-trigger" href="#berita" data-target="dropdown1-mobile">
-          Berita<i class="material-icons right">arrow_drop_down</i></a>
-        </li>
-        <li>
-          <a class="dropdown-trigger" href="#wilayah" data-target="dropdown2-mobile">
-            Info Wilayah<i class="material-icons right">arrow_drop_down</i></a>
-          </li>
-          <li>
-            <a class="dropdown-trigger" href="#gallery" data-target="dropdown3-mobile">
-              Gallery<i class="material-icons right">arrow_drop_down</i></a>
-            </li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-
-                   
+        <div class="user-view">
+          <div class="background">
+            <img src="img/partner/mediakelapadua.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="img/partner/MediaKelapadua.png"></a>
+          <a href="#name"><span class="white-text name">mediakelapadua.web.id</span></a>
+          <a href="#email"><span class="white-text email"></span></a>
+        </div>
+      </li>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a class="dropdown-trigger" href="#berita" data-target="dropdown1-mobile">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2-mobile">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3-mobile">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+                
           <!-- Dropdown Content khusus untuk mobile -->
-          <ul id="dropdown1-mobile" class="dropdown-content">
-            <li><a href="#berita">Berita Utama</a></li>
-            <li><a href="#wilayah">Berita Wilayah</a></li>
-            <li><a href="#pilihan">Berita Pilihan</a></li>
-            <li class="divider"></li>
-            <li><a href="/info-wilayah/event.html">Calender Event</a></li>
-          </ul>
-          
-          <ul id="dropdown2-mobile" class="dropdown-content">
-            <li><a href="/info-wilayah/kelurahan.html">Info Kelurahan</a></li>
-            <li><a href="/info-wilayah/puskesmas.html">Info Puskesmas</a></li>
-            <li><a href="/info-wilayah/lmkkelapadua.html">Info LMK</a></li>
-          </ul>
-          
-          <ul id="dropdown3-mobile" class="dropdown-content">
-            <li><a href="gallery/gallery-photo.html">Gallery Photo</a></li>
-            <li><a href="gallery/gallery-video.html">Gallery Video</a></li>
-          </ul>
-          <li>
+<ul id="dropdown1-mobile" class="dropdown-content">
+  <li><a href="#berita">Berita Utama</a></li>
+  <li><a href="#wilayah">Berita Wilayah</a></li>
+  <li><a href="#pilihan">Berita Pilihan</a></li>
+  <li class="divider"></li>
+  <li><a href="/info-wilayah/event.html">Calendar Event</a></li>
+</ul>
+
+<ul id="dropdown2-mobile" class="dropdown-content">
+  <li><a href="/info-wilayah/kelurahan.html">Info Kelurahan</a></li>
+  <li><a href="/info-wilayah/puskesmas.html">Info Puskesmas</a></li>
+  <li><a href="/info-wilayah/lmkkelapadua.html">Info LMK</a></li>
+</ul>
+
+<ul id="dropdown3-mobile" class="dropdown-content">
+  <li><a href="gallery/gallery-photo.html">Gallery Photo</a></li>
+  <li><a href="gallery/gallery-video.html">Gallery Video</a></li>
+</ul>
+
                    
           <!-- Slider Start -->
           <div class="slider">
