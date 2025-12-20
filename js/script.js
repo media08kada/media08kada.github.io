@@ -60,12 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
 const popupScreen = document.querySelector(".popup-screen");
 const popupBox = document.querySelector(".popup-box");
 const closeBtn = document.querySelector(".close-btn");
-const popupAudio = document.querySelector(".popup-audio"); // perbaikan selector
+const popupAudio = document.querySelector(".popup-audio");
 
 window.addEventListener("load", () => {
   setTimeout(() => {
     popupScreen.classList.add("active");
-    if (popupAudio) popupAudio.play(); // cek agar tidak error
+    if (popupAudio) popupAudio.play(); 
   }, 1000);
 });
 
@@ -204,3 +204,5 @@ document.addEventListener("click", (e) => {
     searchFormSmall.classList.remove("active");
   }
 });
+
+

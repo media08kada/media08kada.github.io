@@ -324,7 +324,7 @@ footer {
 /* Search Start */
 .search-dropdown {
   display: none;
-  background: #f1f1f1;
+  background: #fff;
   padding: 10px;
   animation: slideDown 0.3s ease;
   border-radius: 8px;
