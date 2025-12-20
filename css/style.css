@@ -479,7 +479,7 @@ footer {
   height: 100%;
   font-size: 1.6rem;
   color: gray;
-  padding: 1rem 3rem 1rem 1rem; /* beri ruang kanan untuk ikon X */
+  padding: 1rem 3rem 1rem 1rem;
   border: none;
   outline: none;
 }
