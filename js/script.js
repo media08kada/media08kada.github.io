@@ -145,64 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// --- Search ---
-const searchButton = document.querySelector("#search-button");
-const searchForm = document.querySelector(".search-form");
-const searchBox = document.querySelector("#search-box");
-const closeIcon = document.querySelector(".close-icon");
 
-if (searchButton) {
-  searchButton.onclick = (e) => {
-    e.preventDefault();
-    searchForm.classList.add("active");
-    searchBox.focus();
-  };
-}
 
-if (closeIcon) {
-  closeIcon.onclick = () => {
-    searchForm.classList.remove("active");
-    searchBox.value = "";
-  };
-}
 
-// --- Mobile ---
-const searchButtonSmall = document.querySelector("#search-button-small");
-const searchFormSmall = document.querySelector(".search-form-small");
-const searchBoxSmall = document.querySelector("#search-box-small");
-const closeIconSmall = document.querySelector(".close-icon-small");
 
-if (searchButtonSmall) {
-  searchButtonSmall.onclick = (e) => {
-    e.preventDefault();
-    searchFormSmall.classList.add("active");
-    searchBoxSmall.focus();
-  };
-}
-
-if (closeIconSmall) {
-  closeIconSmall.onclick = () => {
-    searchFormSmall.classList.remove("active");
-    searchBoxSmall.value = "";
-  };
-}
-
-// Klik di luar area search → tutup box
-document.addEventListener("click", (e) => {
-  if (
-    searchForm &&
-    !searchForm.contains(e.target) &&
-    !searchButton.contains(e.target)
-  ) {
-    searchForm.classList.remove("active");
-  }
-  if (
-    searchFormSmall &&
-    !searchFormSmall.contains(e.target) &&
-    !searchButtonSmall.contains(e.target)
-  ) {
-    searchFormSmall.classList.remove("active");
-  }
-});
 
 
