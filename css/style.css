@@ -361,7 +361,7 @@ footer {
   padding: 0.8rem 1rem;
   border: none;
   outline: none;
-  border-radius: 12px;
+  border-radius: 2px;
   background-color: #fff;
 }
 
@@ -373,7 +373,6 @@ footer {
   padding: 0.7rem 1rem;
   border: 1px solid #ccc;
   outline: none;
-  border-radius: 12px;   /* sudut melengkung */
   background-color: #fff;
 }
 
@@ -390,7 +389,6 @@ footer {
   align-items: center;
   padding: 0 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  border-radius: 12px;
   transition: all 0.3s ease;
   z-index: 999;
 }
@@ -431,6 +429,24 @@ footer {
   cursor: pointer;
   font-size: 1.4rem;
   margin-left: 8px;
+}
+
+/* Form search default hidden */
+.search-form-small {
+  display: none;
+  position: absolute;
+  top: 64px; /* tinggi navbar */
+  right: 10px; /* beri jarak dari kanan */
+  width: auto; /* biar tidak full */
+  max-width: 350px; /* batas lebar maksimal */
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.search-form-small.active {
+  display: block;
 }
 /* Search End */
 

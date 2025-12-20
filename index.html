@@ -60,7 +60,6 @@
   </head>
   <body id="home" class="scrollspy">
 
-
     <!-- Navbar Start -->
     <div class="navbar-fixed" id="top">
       <nav class="green darken-3">
@@ -98,11 +97,28 @@
               </div>
             </li>
             </ul>
-          </div>
+            <ul class="right hide-on-large-only">
+          <li>
+           <div id="search-button-small">
+            <i class="material-icons white-text">search</i>
+           </div>
+          </li>
+        </ul>
+         </div>
         </div>
       </nav>
     </div>
-    
+
+    <!-- Form search muncul di bawah navbar -->
+<div class="search-form-small">
+  <form action="#" method="get" class="input-wrapper">
+    <input type="search" id="search-box-small" placeholder="Search here..." />
+    <span class="close-icon-small">
+      <i class="material-icons">close</i>
+    </span>
+  </form>
+</div>
+       
     <!-- Dropdown Content 1 -->
     <ul id="dropdown1" class="dropdown-content">
       <li><a href="#berita">Berita Utama</a></li>
@@ -140,30 +156,30 @@
       <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2-mobile">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3-mobile">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a href="#contact">Contact Us</a></li>
-    </ul>
+   </ul>
                 
-          <!-- Dropdown Content khusus untuk mobile -->
-<ul id="dropdown1-mobile" class="dropdown-content">
-  <li><a href="#berita">Berita Utama</a></li>
-  <li><a href="#wilayah">Berita Wilayah</a></li>
-  <li><a href="#pilihan">Berita Pilihan</a></li>
-  <li class="divider"></li>
-  <li><a href="/info-wilayah/event.html">Calendar Event</a></li>
-</ul>
+     <!-- Dropdown Content khusus untuk mobile -->
+      <ul id="dropdown1-mobile" class="dropdown-content">
+        <li><a href="#berita">Berita Utama</a></li>
+        <li><a href="#wilayah">Berita Wilayah</a></li>
+        <li><a href="#pilihan">Berita Pilihan</a></li>
+        <li class="divider"></li>
+        <li><a href="/info-wilayah/event.html">Calendar Event</a></li>
+      </ul>
 
-<ul id="dropdown2-mobile" class="dropdown-content">
-  <li><a href="/info-wilayah/kelurahan.html">Info Kelurahan</a></li>
-  <li><a href="/info-wilayah/puskesmas.html">Info Puskesmas</a></li>
-  <li><a href="/info-wilayah/lmkkelapadua.html">Info LMK</a></li>
-</ul>
+      <ul id="dropdown2-mobile" class="dropdown-content">
+        <li><a href="/info-wilayah/kelurahan.html">Info Kelurahan</a></li>
+        <li><a href="/info-wilayah/puskesmas.html">Info Puskesmas</a></li>
+        <li><a href="/info-wilayah/lmkkelapadua.html">Info LMK</a></li>
+      </ul>
 
-<ul id="dropdown3-mobile" class="dropdown-content">
-  <li><a href="gallery/gallery-photo.html">Gallery Photo</a></li>
-  <li><a href="gallery/gallery-video.html">Gallery Video</a></li>
-</ul>
+      <ul id="dropdown3-mobile" class="dropdown-content">
+        <li><a href="gallery/gallery-photo.html">Gallery Photo</a></li>
+        <li><a href="gallery/gallery-video.html">Gallery Video</a></li>
+      </ul>
 
-                   
-          <!-- Slider Start -->
+                        
+    <!-- Slider Start -->
           <div class="slider">
             <ul class="slides">
               <li>
@@ -832,8 +848,6 @@
     });
     </script>
 
-
-
       <script>
         // load file modals.html ke dalam index
         fetch("modals.html")
@@ -901,34 +915,64 @@
 </script>
 
 <script>
+  // --- Desktop ---
+  // --- Desktop ---
   const searchButton = document.querySelector('#search-button');
   const searchForm = document.querySelector('.search-form');
   const searchBox = document.querySelector('#search-box');
   const closeIcon = document.querySelector('.close-icon');
 
-  // Klik ikon search → buka box
-  searchButton.onclick = (e) => {
-    e.preventDefault();
-    searchForm.classList.add('active');
-    searchBox.focus();
-  };
+  if (searchButton) {
+    searchButton.onclick = (e) => {
+      e.preventDefault();
+      searchForm.classList.add('active');
+      searchBox.focus();
+    };
+  }
 
-  // Klik ikon close → tutup box
-  closeIcon.onclick = () => {
-    searchForm.classList.remove('active');
-    searchBox.value = '';
-  };
+  if (closeIcon) {
+    closeIcon.onclick = () => {
+      searchForm.classList.remove('active');
+      searchBox.value = '';
+    };
+  }
+
+  // --- Mobile ---
+  const searchButtonSmall = document.querySelector('#search-button-small');
+  const searchFormSmall = document.querySelector('.search-form-small');
+  const searchBoxSmall = document.querySelector('#search-box-small');
+  const closeIconSmall = document.querySelector('.close-icon-small');
+
+  if (searchButtonSmall) {
+    searchButtonSmall.onclick = (e) => {
+      e.preventDefault();
+      searchFormSmall.classList.add('active');
+      searchBoxSmall.focus();
+    };
+  }
+
+  if (closeIconSmall) {
+    closeIconSmall.onclick = () => {
+      searchFormSmall.classList.remove('active');
+      searchBoxSmall.value = '';
+    };
+  }
 
   // Klik di luar area search → tutup box
   document.addEventListener('click', (e) => {
-    if (
-      !searchForm.contains(e.target) &&
-      !searchButton.contains(e.target)
-    ) {
+    if (searchForm && !searchForm.contains(e.target) && !searchButton.contains(e.target)) {
       searchForm.classList.remove('active');
+    }
+    if (searchFormSmall && !searchFormSmall.contains(e.target) && !searchButtonSmall.contains(e.target)) {
+      searchFormSmall.classList.remove('active');
     }
   });
 </script>
+
+
+
+
+
 
  </body>
 </html>
