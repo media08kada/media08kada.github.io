@@ -335,29 +335,12 @@ footer {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Ikon search & close */
-.label-icon i.material-icons,
-.input-field i.material-icons,
-#search-button i.material-icons,
-.input-wrapper .close-icon i.material-icons {
-  cursor: pointer;
-  font-size: 1.6rem; /* cukup besar agar mudah disentuh */
-  transition: color 0.2s ease;
-}
-
-.label-icon i.material-icons:hover,
-.input-field i.material-icons:hover,
-#search-button i.material-icons:hover,
-.input-wrapper .close-icon i.material-icons:hover {
-  color: #2e7d32; /* hijau gelap saat hover */
-}
-
 /* Input di dalam search form (desktop) */
 .navbar .search-form input {
   height: 100%;
   width: 100%;
   font-size: 1.4rem;
-  color: #333;
+  color: #646262;
   padding: 0.8rem 1rem;
   border: none;
   outline: none;
