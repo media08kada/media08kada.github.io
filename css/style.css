@@ -435,18 +435,31 @@ footer {
 .search-form-small {
   display: none;
   position: absolute;
-  top: 64px; /* tinggi navbar */
-  right: 10px; /* beri jarak dari kanan */
-  width: auto; /* biar tidak full */
-  max-width: 350px; /* batas lebar maksimal */
+  top: 64px;
+  right: 5px;
+  max-width: 300px;
   background: #fff;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  border-radius: 4px;
+  align-items: center;
 }
 
 .search-form-small.active {
   display: block;
+}
+
+.search-form-small {
+  z-index: 9999;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;   /* vertikal rata tengah */
+}
+
+.close-icon-small {
+  background: #eee;
+  cursor: pointer;
 }
 /* Search End */
 
