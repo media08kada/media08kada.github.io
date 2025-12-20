@@ -372,12 +372,21 @@ footer {
   display: none;
   position: absolute;
   top: 100%;
-  right: 7%;
+  right: 1rem;              /* lebih fleksibel */
   background-color: #fff;
-  width: 50rem;
-  height: 5rem;
+  width: 90%;               /* responsif */
+  max-width: 50rem;         /* batas maksimal */
+  height: auto;             /* biar menyesuaikan konten */
   align-items: center;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  z-index: 999;             /* pastikan di atas navbar */
+}
+
+.search-form.active {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Saat aktif: tampilkan */
@@ -452,11 +461,6 @@ footer {
   }
 }
 
-  .navbar .search-form {
-    width: 90%;
-    right: 2%;
-  }
-  
 @media (max-width: 580px) {
   .container {
     max-width: 100%;
@@ -575,16 +579,6 @@ footer {
   .caption h5 {
     font-size: 14px;
   }
-}
-
-/* Ikon search */
-#search-button i.material-icons {
-  cursor: pointer;
-}
-
-/* Ikon close */
-.input-wrapper .close-icon i.material-icons {
-  cursor: pointer;
 }
 
 
