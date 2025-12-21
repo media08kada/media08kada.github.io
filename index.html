@@ -47,6 +47,9 @@
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+    <!-- Feather Icons-->
+       <script src="https://unpkg.com/feather-icons"></script>
+
     <!-- CSS Libraries -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="css/popup.css" />
@@ -55,8 +58,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/puskesmas.css" />
+    <link rel="stylesheet" href="css/search.css">
 
     <title>Media Kelapa Dua</title>
+
+
   </head>
   <body id="home" class="scrollspy">
 
@@ -79,17 +85,14 @@
           <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="javascript:void(0)" id="search-button">
-              <i class="material-icons white-text">search</i>
-            </a>
-            </li>
+            <div class="navbar-extra">
+              <!-- tombol search -->
+              <a href="#" id="search-button"><i class="material-icons">search</i></a>
+            </div>
+            <!-- Search Form -->
             <div class="search-form">
-              <form action="#" method="get" class="input-wrapper">
-                <input type="search" id="search-box" placeholder="Search here..." />
-                <span class="close-icon">
-                  <i class="material-icons">close</i>
-                </span>
-              </form>
+              <input type="search" id="search-box" placeholder="Search here..." />
+              <label for="search-box"><i class="material-icons">search</i></label>
             </div>
           </li>
         </ul>
@@ -97,7 +100,6 @@
     </div>
   </nav>
 </div>
-
 
 <!-- Dropdown Content 1 -->
 <ul id="dropdown1" class="dropdown-content">
@@ -148,6 +150,7 @@
               Gallery<i class="material-icons right">arrow_drop_down</i></a>
             </li>
             <li><a href="#contact">Contact Us</a></li>
+            <li>
           </ul>
 
           <!-- Dropdown Content khusus untuk mobile -->
@@ -169,8 +172,7 @@
             <li><a href="gallery/gallery-photo.html">Gallery Photo</a></li>
             <li><a href="gallery/gallery-video.html">Gallery Video</a></li>
           </ul>
-          <li>
-            
+              
                   
       <!-- Slider Start -->
           <div class="slider">
@@ -718,14 +720,65 @@
     </footer>
     <!-- Footer End -->
 
- 
    <!-- JavaScript -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+
+
+     <!-- Batas Wilayah -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const showMoreBtn = document.getElementById("show-more-btn");
+    const hiddenItems = document.querySelectorAll(".item-hidden");
+    let isOpen = false; // status awal
+
+    showMoreBtn.addEventListener("click", function () {
+    if (!isOpen) {
+      // buka item
+      hiddenItems.forEach((item) => {
+        item.style.display = "block";
+      });
+      showMoreBtn.innerText = "Close"; // ubah teks tombol
+      isOpen = true;
+    } else {
+      // sembunyikan item
+      hiddenItems.forEach((item) => {
+        item.style.display = "none";
+      });
+      showMoreBtn.innerText = "Open"; // kembalikan teks tombol
+      isOpen = false;
+    }
+  });
+});
+   </script>
+   
+    <!-- Gallery toggle -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("gallery-btn");
+      const hiddenItems = document.querySelectorAll(".gallery .hidden");
+      let isOpen = false;
+
+      btn.addEventListener("click", function () {
+        if (!isOpen) {
+          hiddenItems.forEach((item) => (item.style.display = "block"));
+          btn.innerHTML = '<i class="material-icons left"></i>Close';
+          isOpen = true;
+        } else {
+          hiddenItems.forEach((item) => (item.style.display = "none"));
+          btn.innerHTML = '<i class="material-icons left"></i>Open';
+          isOpen = false;
+        }
+      });
+    });
+   </script>
 
   <script src="js/script.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/search.js"></script>
 
+
+  <script>
+      feather.replace();
+    </script>
  </body>
 </html>

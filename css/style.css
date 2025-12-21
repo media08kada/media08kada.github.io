@@ -418,12 +418,7 @@ input[type="search"]:invalid {
 }
 
 /* Search End */
-
-
-
-
-
-.input-wrapper {
+/*.input-wrapper {
   position: relative;
   flex: 1;
 }
@@ -455,7 +450,7 @@ input[type="search"]:invalid {
     text-align: center;
     margin-top: 8px;
   }
-}
+}*/
 
 /* Responsive Queries */
 @media (max-width: 768px) {

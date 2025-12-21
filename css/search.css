@@ -1,0 +1,62 @@
+/* Default desktop */
+.search-form {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: white;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+/* Aktif */
+.search-form.active {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* Input */
+.search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  color: grey;
+  padding: 1rem;
+  border: none;
+  outline: none;
+}
+
+/* Label */
+.search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: gray;
+}
+
+/* Responsive untuk handphone */
+@media (max-width: 768px) {
+  .search-form {
+    position: fixed;       /* biar nempel di layar */
+    top: 60px;             /* sesuaikan dengan tinggi navbar */
+    left: 1rem;
+    right: 1rem;
+    width: auto;           /* otomatis sesuai layar */
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    z-index: 999;          /* pastikan di atas elemen lain */
+  }
+
+  .search-form input {
+    font-size: 1.4rem;
+  }
+}
+

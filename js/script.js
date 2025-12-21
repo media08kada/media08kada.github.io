@@ -81,25 +81,6 @@ closeBtn.addEventListener("click", () => {
   }
 });
 
-// Gallery toggle
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("gallery-btn");
-  const hiddenItems = document.querySelectorAll(".gallery .hidden");
-  let isOpen = false;
-
-  btn.addEventListener("click", function () {
-    if (!isOpen) {
-      hiddenItems.forEach((item) => (item.style.display = "block"));
-      btn.innerHTML = '<i class="material-icons left"></i>Close';
-      isOpen = true;
-    } else {
-      hiddenItems.forEach((item) => (item.style.display = "none"));
-      btn.innerHTML = '<i class="material-icons left"></i>Open';
-      isOpen = false;
-    }
-  });
-});
-
 // Scroll ke atas
 function scrollKeatas() {
   window.scrollTo({
@@ -120,30 +101,8 @@ fetch("modals.html")
   })
   .catch((error) => console.error("Gagal memuat modals.html:", error));
 
-// --- Sekilas Berita ---
-document.addEventListener("DOMContentLoaded", function () {
-  const showMoreBtn = document.getElementById("show-more-btn");
-  const hiddenItems = document.querySelectorAll(".item-hidden");
-  let isOpen = false; // status awal
 
-  showMoreBtn.addEventListener("click", function () {
-    if (!isOpen) {
-      // buka item
-      hiddenItems.forEach((item) => {
-        item.style.display = "block";
-      });
-      showMoreBtn.innerText = "Close"; // ubah teks tombol
-      isOpen = true;
-    } else {
-      // sembunyikan item
-      hiddenItems.forEach((item) => {
-        item.style.display = "none";
-      });
-      showMoreBtn.innerText = "Open"; // kembalikan teks tombol
-      isOpen = false;
-    }
-  });
-});
+
 
 
 
