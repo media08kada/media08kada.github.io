@@ -516,3 +516,22 @@ footer {
     font-size: 14px;
   }
 }
+
+/* Share Medsos */
+.artikel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column; /* gambar otomatis di atas teks */
+  gap: 12px; /* jarak antar elemen */
+}
+
+.artikel img {
+  display: block;
+  width: 100%;       /* penuh lebar container */
+  height: auto;      /* proporsional */
+  border-radius: 6px; /* opsional: sudut membulat */
+}
+
+
