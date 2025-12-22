@@ -534,15 +534,4 @@ footer {
   border-radius: 6px; /* opsional: sudut membulat */
 }
 
-/* Mobile (layar kecil, misalnya max-width 576px) */
-@media (max-width: 576px) {
-  .slider {
-    margin-bottom: 30px; /* jarak lebih kecil di HP */
-  }
-
-  h5 {
-    margin-top: 8px; /* tambahan jarak kecil */
-  }
-}
-
 
