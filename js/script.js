@@ -101,6 +101,26 @@ fetch("modals.html")
   })
   .catch((error) => console.error("Gagal memuat modals.html:", error));
 
+  // Click Only
+  document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".fixed-action-btn");
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: "left",
+      hoverEnabled: false,
+    });
+
+  var sliderElems = document.querySelectorAll(".slider");
+  M.Slider.init(sliderElems, {
+    indicators: false,
+    height: 500,
+    duration: 500,
+    interval: 3000
+  });
+});
+
+
+      
+
 
 
 
