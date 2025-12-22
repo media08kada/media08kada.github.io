@@ -323,8 +323,7 @@ footer {
   object-fit: cover;
 }
 
-
-/* Fab */
+/* Fab Slider */
 .slider {
   position: relative;   /* supaya anak bisa absolute */
   overflow: visible;    /* biar FAB tidak terpotong */
@@ -334,12 +333,20 @@ footer {
 .fab-inside-slider {
   position: absolute;
   bottom: 20px;   /* jarak dari bawah slider */
-  right: 20px;    /* jarak dari kanan slider */
+  right: 30px;    /* jarak dari kanan slider */
   z-index: 999;   /* pastikan di atas gambar */
   border-radius: 5%;
 }
 
+.btn-floating {
+  border-radius: 8px !important;
+}
 
+.btn-floating i[data-feather="facebook"],
+.btn-floating svg.feather-facebook {
+  position: relative;
+  top: 6px; /* geser ke bawah, ubah angka sesuai kebutuhan */
+}
 
 /* Responsive Queries */
 @media (max-width: 768px) {
