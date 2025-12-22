@@ -237,12 +237,12 @@ footer {
 /* Scroll To Top Button */
 .buttonToTop {
   position: fixed;
-  bottom: 100px;
+  bottom: 10px;
   right: 20px;
   cursor: pointer;
   z-index: 999;
   transition: all 0.3s ease-in-out;
-  padding: 6px;
+  padding: 10px;
   border-radius: 50%;
 }
 
@@ -264,6 +264,9 @@ footer {
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  osition: fixed;      /* selalu menempel di layar */
+  bottom: 20px;         /* jarak dari bawah layar */
+  right: 20px;          /* jarak dari sisi kanan layar */
 }
 
 .buttonToTop a:hover {
@@ -320,9 +323,12 @@ footer {
   object-fit: cover;
 }
 
+
+/* Fab */
 .slider {
   position: relative;   /* supaya anak bisa absolute */
   overflow: visible;    /* biar FAB tidak terpotong */
+  border-radius: 5%;
 }
 
 .fab-inside-slider {
@@ -330,6 +336,7 @@ footer {
   bottom: 20px;   /* jarak dari bawah slider */
   right: 20px;    /* jarak dari kanan slider */
   z-index: 999;   /* pastikan di atas gambar */
+  border-radius: 5%;
 }
 
 
