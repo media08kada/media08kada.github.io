@@ -1,14 +1,3 @@
-// Inisialisasi Materialize Slider
-document.addEventListener("DOMContentLoaded", function () {
-  const elems = document.querySelectorAll(".slider");
-  M.Slider.init(elems, {
-    indicators: false,
-    height: 300,
-    duration: 500,
-    interval: 4000,
-  });
-});
-
 // Inisialisasi komponen Materialize Navbar
 document.addEventListener("DOMContentLoaded", function () {
   // Dropdown
@@ -26,7 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelectorAll(".slider");
   M.Slider.init(slider, {
     indicators: false,
-    height: 350,
+    height: 400,
+    transition: 600,
+    interval: 3000,
+  });
+
+  // Slider Berita
+  const beritaSlider = document.querySelectorAll(".berita-slider");
+  M.Slider.init(beritaSlider, {
+    indicators: false,
+    height: window.innerWidth < 600 ? 300 : 400,
     transition: 600,
     interval: 3000,
   });
@@ -117,6 +115,9 @@ fetch("modals.html")
     interval: 3000
   });
 });
+
+
+
 
 
       
