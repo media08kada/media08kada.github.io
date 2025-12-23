@@ -134,7 +134,7 @@ footer {
 
 .col h5 {
   margin-bottom: 8px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .col p {
@@ -244,15 +244,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: rgb(6, 156, 6);
-  color: #fff;
+  background-color: grey;
   font-family: monospace;
   font-size: 25px;
-  cursor: pointer;
-  transition: 0.5s;
+  color: white; /* tambahkan agar teks terlihat */
+  text-decoration: none; /* hilangkan underline */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -268,15 +267,6 @@ footer {
   padding: 10px 0;
   margin: 0;
   width: 100%;
-}
-
-.parallax-container {
-  height: 240px;
-}
-
-.parallax img {
-  filter: grayscale(1);
-  opacity: 0.5 !important;
 }
 
 /* Container Iklan */
@@ -425,6 +415,31 @@ footer {
 
   [class*='col-'] {
     flex: 1 1 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    padding: 10px 0;         /* lebih kecil */
+    font-size: 12px;         /* teks copyright lebih kecil */
+  }
+
+  .footer-channels {
+    gap: 8px;                /* jarak antar item lebih rapat */
+  }
+
+  .footer-channels .material-icons {
+    font-size: 18px;         /* kecilkan icon */
+  }
+
+  .footer-channels .btn-floating {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .footer-channels span {
+    font-size: 11px;         /* teks label lebih kecil */
   }
 }
 
