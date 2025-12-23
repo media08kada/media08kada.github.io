@@ -52,7 +52,7 @@ footer {
 
 .slider h3 {
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -66,6 +66,30 @@ footer {
 .news h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+/* Geser slider agar tidak menempel ke navbar */
+.slider {
+  margin-top: 64px; /* tinggi default navbar Materialize */
+}
+
+/* Atur posisi caption lebih turun */
+.slider .caption {
+  top: 95%; /* default 50%, makin besar makin turun */
+  transform: translateY(-50%);
+}
+
+/* Jarak antar teks */
+.slider .caption h3 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin-bottom: 10px;
+}
+
+.slider .caption h5 {
+  margin-top: 10px;
+}
+
+
 
 /* Berita Slider */
 .square-img {
