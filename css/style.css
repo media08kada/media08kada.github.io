@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;       /* hilangkan margin bawaan browser */
+  padding: 0;      /* hilangkan padding bawaan browser */
+}
+
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
 */ html,
 body {
   height: 100%;
@@ -110,7 +133,8 @@ footer {
 /* Berita-Slider End */
 
 #berita {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .item-hidden {
@@ -266,13 +290,11 @@ footer {
 /* Scroll To Top Button */
 .buttonToTop {
   position: fixed;
-  bottom: 10px;
-  right: 20px;
+  bottom: 20px;   /* konsisten jarak bawah */
+  right: 20px;    /* konsisten jarak kanan */
   cursor: pointer;
   z-index: 999;
   transition: all 0.3s ease-in-out;
-  padding: 10px;
-  border-radius: 50%;
 }
 
 .buttonToTop:hover {
@@ -283,32 +305,25 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgb(6, 156, 6);
+  width: 60px;              
+  height: 60px;
+  border-radius: 50%;       
+  background-color: rgb(6, 156, 6); /* hijau */
   color: #fff;
   font-family: monospace;
   font-size: 25px;
   cursor: pointer;
   transition: 0.5s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: fixed;      /* selalu menempel di layar */
-  bottom: 20px;         /* jarak dari bawah layar */
-  right: 20px;          /* jarak dari sisi kanan layar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .buttonToTop a:hover {
-  background-color: var(--primary);
+  background-color: rgb(10, 204, 10); 
   color: #000;
   transform: rotate(360deg);
 }
 
-.btn-floating {
-  border-radius: 0 !important;
-  background: none !important;
-  box-shadow: none !important;
-}
+
 
 /* Parallax & Footer */
 section,

@@ -205,7 +205,7 @@
 
     <!-- Click Only FAB -->
         <div class="fixed-action-btn fab-inside-slider">
-          <a class="btn-floating btn-madium green darken-2 z-depth-3">
+          <a class="btn-floating btn-medium green darken-2 z-depth-3">
             <i class="large material-icons">apps</i>
           </a>
           <ul>
@@ -288,7 +288,7 @@
       </div>
 
       <div class="col s12 m6 light">
-       <h5 style="margin-top: 30px;">Sosialisasi Teknologi Wolbachia Pengendalian DBD di RW 08 Kelapa Dua</h5>
+       <h5>Sosialisasi Teknologi Wolbachia Pengendalian DBD di RW 08 Kelapa Dua</h5>
         <p class="date">Tanggal, 22 Desember 2025</p>
 
         <p class="text">MediaKada | Kegiatan sosialisasi metode pengendalian Demam Berdarah Dengue (DBD) melalui penerapan teknologi nyamuk Aedes aegypti ber-Wolbachia digelar di Sekretariat RW 08 Kelapa Dua. Acara ini diikuti oleh ibu-ibu kader jumantik serta jajaran pengurus wilayah, pada Senin (22/12) Siang.</p>
@@ -714,10 +714,11 @@
     </section>
     <!-- Contact Us End -->
 
-    <!-- Scroll Ke Atas Star-->
-    <div class="buttonToTop" onclick="scrollKeatas()">
-    <a href="#top"><i class="material-icons">expand_less</i></a></div>
-    <!-- Scroll Ke Atas End-->
+      <!-- Scroll Ke Atas -->
+      <div class="buttonToTop" onclick="scrollKeatas()">
+        <i class="material-icons">expand_less</i>
+      </div>
+      <!-- Scroll Ke Atas End -->
 
     <!-- Footer Start -->
     <footer class="green darken-3 white-text center">
@@ -790,6 +791,17 @@
         }
       });
     });
+   </script>
+
+   <script>
+      // Click Only
+  document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".fixed-action-btn");
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: "left",
+      hoverEnabled: false,
+    });
+ });
    </script>
 
   <script src="js/script.js"></script>
