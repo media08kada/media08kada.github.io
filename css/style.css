@@ -43,10 +43,10 @@ footer {
   font-weight: 300;
 }
 
-/* Slider */
+/* Slider Start */
 .slider {
   position: relative;
-  overflow: visible; /* biar FAB tidak terpotong */
+  overflow: visible; 
   border-radius: 5%;
 }
 
@@ -70,9 +70,9 @@ footer {
 /* Atur posisi caption lebih turun */
 .slider .caption {
   position: absolute;
-  top: 85%;                          /* geser caption ke bawah (default biasanya 50%) */
+  top: 85%;                         
   left: 50%;
-  transform: translate(-50%, -50%);  /* tetap center horizontal & vertical */
+  transform: translate(-50%, -50%);  
   width: 100%;
   text-align: center;
 }
@@ -81,19 +81,35 @@ footer {
 .slider .caption h3 {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  margin-top: 40px;                  /* geser h3 lebih turun */
-  margin-bottom: 15px;               /* jarak ke bawah sebelum h5 */
+  margin-top: 85px;                  
+  margin-bottom: 15px;               
 }
 
 .slider .caption h5 {
-  margin-top: 5px;                   /* jarak atas h5 */
+  margin-top: 5px;                   
 }
+
+/* Default slider image */
+.slider img {
+  width: 100%;
+  height: 400px;   /* tinggi default untuk layar besar */
+  object-fit: cover;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 600px) {
+  .slider img {
+    height: 10vh;   /* tinggi lebih kecil di layar kecil */
+    object-fit: cover;
+  }
+}
+/* Slider End */
 
 /* Container slider berita */
 .berita-slider {
-  margin-top: 0;                     /* hilangkan jarak atas */
-  display: flex;                     /* pastikan konten fleksibel */
-  align-items: flex-start;           /* sejajarkan ke atas */
+  margin-top: 0;                    
+  display: flex;                     
+  align-items: flex-start;         
 }
 
 /* Slider news khusus */
@@ -118,7 +134,6 @@ footer {
   }
 }
 
-
   .slides li img {
     position: absolute;
     top: 0;
@@ -127,7 +142,6 @@ footer {
     height: 100%;
     object-fit: cover;
   }
-
 
 .berita-slider {
   margin-right: 20px;
