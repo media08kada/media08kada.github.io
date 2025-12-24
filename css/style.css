@@ -75,7 +75,7 @@ footer {
   transform: translate(-50%, -50%);  
   width: 100%;
   text-align: center;
-}
+  }
 
 /* Styling teks dalam caption */
 .slider .caption h3 {
@@ -94,7 +94,7 @@ footer {
   width: 100%;
   height: 400px;   /* tinggi default untuk layar besar */
   object-fit: cover;
-}
+  }
 
 /* Media query untuk layar kecil */
 @media (max-width: 600px) {
@@ -103,6 +103,27 @@ footer {
     object-fit: cover;
   }
 }
+
+.slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 252, 253, 0.95) 0%,
+    rgba(250, 250, 250, 0.8) 100%
+  );
+  z-index: 1;
+}
+.slides li img {
+  position: relative;
+  z-index: 0;
+}
+.caption {
+  position: relative;
+  z-index: 2;
+}
+
 /* Slider End */
 
 /* Container slider berita */
