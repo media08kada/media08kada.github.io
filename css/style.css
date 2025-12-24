@@ -266,7 +266,7 @@ footer {
 /* Scroll To Top Button */
 .buttonToTop {
   position: fixed;
-  bottom: 20px;
+  bottom: 85px;
   right: 20px;
   cursor: pointer;
   z-index: 999;
@@ -281,8 +281,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 35;
+  height: 35;
   border-radius: 50%;
   background-color: grey;
   font-family: monospace;
@@ -293,7 +293,7 @@ footer {
 }
 
 .buttonToTop a:hover {
-  background-color: rgb(10, 204, 10);
+  background-color: rgb(128, 131, 128);
   color: #000;
   transform: rotate(360deg);
 }

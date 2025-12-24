@@ -176,32 +176,32 @@
           </ul>
                          
       <!-- Slider Start -->
-<div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="slider/img/Kelapa-bg1.jpg">
-        <div class="caption center-align">
-          <h3>Media Kelapa Dua</h3>
-          <h5 class="light grey-text text-lighten-3">
-            Kampung Kite Kalo <br>Bukan Kite yang Ngurusin Siapa Lagi
-          </h5>
-        </div>
-      </li>
-      <li>
-        <img src="slider/img/Rausin-bg1.jpeg">
-        <div class="caption center-align">
-          <h3>Media Kelapa Dua</h3>
-          <h5 class="light grey-text text-lighten-3">Jakarta Baru, Jakarta Maju</h5>
-        </div>
-      </li>
-      <li>
-        <img src="slider/img/Kota-bg1.jpg">
-        <div class="caption center-align">
-          <h3>Media Kelapa Dua</h3>
-          <h5 class="light grey-text text-lighten-3">Maju Kotanya, Bahagia Warganya</h5>
-        </div>
-      </li>
-    </ul>
+      <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="slider/img/Kelapa-bg1.jpg">
+              <div class="caption center-align">
+                <h3>Media Kelapa Dua</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Kampung Kite Kalo <br>Bukan Kite yang Ngurusin Siapa Lagi
+                </h5>
+              </div>
+            </li>
+            <li>
+              <img src="slider/img/Rausin-bg1.jpeg">
+              <div class="caption center-align">
+                <h3>Media Kelapa Dua</h3>
+                <h5 class="light grey-text text-lighten-3">Jakarta Baru, Jakarta Maju</h5>
+              </div>
+            </li>
+            <li>
+              <img src="slider/img/Kota-bg1.jpg">
+              <div class="caption center-align">
+                <h3>Media Kelapa Dua</h3>
+                <h5 class="light grey-text text-lighten-3">Maju Kotanya, Bahagia Warganya</h5>
+              </div>
+            </li>
+          </ul>
 
    <!-- Click Only FAB -->
         <div class="fixed-action-btn fab-inside-slider">
@@ -727,7 +727,7 @@
 
       <!-- Scroll Ke Atas -->
       <div class="buttonToTop" onclick="scrollKeatas()">
-        <a href="#"><i class="material-icons small">expand_less</i></a> 
+        <a href="#top"><i class="material-icons small">expand_less</i></a> 
       </div>
       <!-- Scroll Ke Atas End -->
 
@@ -756,33 +756,39 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
-     <!-- Batas Wilayah -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
+     <!-- Berita Wilayah -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
     const showMoreBtn = document.getElementById("show-more-btn");
     const hiddenItems = document.querySelectorAll(".item-hidden");
     let isOpen = false; // status awal
 
+    // Pastikan item hidden tertutup saat awal
+    hiddenItems.forEach((item) => {
+      item.style.display = "none";
+    });
+
     showMoreBtn.addEventListener("click", function () {
-    if (!isOpen) {
-      // buka item
-      hiddenItems.forEach((item) => {
-        item.style.display = "block";
-      });
-      showMoreBtn.innerText = "Close"; // ubah teks tombol
-      isOpen = true;
-    } else {
-      // sembunyikan item
-      hiddenItems.forEach((item) => {
-        item.style.display = "none";
-      });
-      showMoreBtn.innerText = "Open"; // kembalikan teks tombol
-      isOpen = false;
-    }
+      if (!isOpen) {
+        // buka item
+        hiddenItems.forEach((item) => {
+          item.style.display = "block";
+        });
+        showMoreBtn.innerText = "Close"; // ubah teks tombol
+        isOpen = true;
+      } else {
+        // sembunyikan item
+        hiddenItems.forEach((item) => {
+          item.style.display = "none";
+        });
+        showMoreBtn.innerText = "Open"; // kembalikan teks tombol
+        isOpen = false;
+      }
+    });
   });
-});
-   </script>
-   
+</script>
+
+  
     <!-- Gallery toggle -->
     <script>
     document.addEventListener("DOMContentLoaded", function () {
