@@ -188,6 +188,14 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .popup-box {
+    padding-top: 100px;
+  }
+}
+
+
+
 
 
 
