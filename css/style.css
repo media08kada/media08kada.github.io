@@ -67,11 +67,6 @@ footer {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Geser slider agar tidak menempel ke navbar */
-.slider {
-  margin-top: 64px; /* tinggi default navbar Materialize */
-}
-
 /* Atur posisi caption lebih turun */
 .slider .caption {
   top: 95%; /* default 50%, makin besar makin turun */
@@ -89,9 +84,17 @@ footer {
   margin-top: 10px;
 }
 
-
-
 /* Berita Slider */
+.berita-slider {
+  margin-top: 0;          /* hilangkan jarak atas */
+  display: flex;          /* pastikan konten fleksibel */
+  align-items: flex-start; /* sejajarkan ke atas */
+}
+
+#slidernews {
+  margin-top: 0 !important;
+}
+
 .square-img {
   width: 100%;
   display: block;
