@@ -1,0 +1,62 @@
+.card.horizontal {
+  max-height: 150px;        
+  overflow: hidden;         
+  display: flex;           
+  align-items: center;      
+}
+
+.card.horizontal .card-image {
+  padding: 8px;             /* kurangi padding agar jarak lebih rapat */
+  max-height: 100%;
+  display: flex;
+  align-items: center;      /* gambar sejajar tengah */
+}
+
+.card.horizontal .card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.card.horizontal .card-stacked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* teks sejajar vertikal */
+  flex: 1;
+}
+
+.card.horizontal .card-action {
+  border-top: none;       /* hilangkan garis pembatas */
+  margin: 0;              /* hilangkan margin bawah */
+  padding: 0;             /* samakan padding dengan konten */
+}
+
+.card.horizontal .card-content,
+.card.horizontal .card-action {
+  padding: 2px 4px;      /* seragamkan padding agar terlihat menyatu */
+}
+
+@media (max-width: 600px) {
+  .card.horizontal,
+  .card.horizontal .card-image img {
+    max-height: 120px; 
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
