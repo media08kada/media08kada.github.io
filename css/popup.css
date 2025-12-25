@@ -16,6 +16,16 @@
   visibility: visible;
 }
 
+  #toast-container {
+    z-index: 9999 !important; /* Supaya di atas modal */
+    top: 10%;                 /* Geser ke atas */
+    bottom: auto;             /* Hilangkan posisi default bawah */
+  }
+
+
+
+
+
 /* Kotak popup */
 .popup-box {
   position: relative;

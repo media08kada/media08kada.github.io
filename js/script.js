@@ -87,8 +87,6 @@ function scrollKeatas() {
   });
 }
 
-
-
 // Load file modals.html ke dalam index
 fetch("modals.html")
   .then((response) => response.text())
@@ -109,6 +107,19 @@ fetch("modals.html")
     duration: 500,
     interval: 3000
   });
+
+// Pemberitahuan pesan telah terkirim
+  function showToast() {
+    M.toast({
+      html: "Pesan berhasil dikirim!",
+      classes: "rounded green",
+      displayLength: 5000, 
+    });
+  }
+
+
+
+
 
 
 
