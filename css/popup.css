@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--overlay-bg, rgba(175, 173, 173, 0.6));
+  background: var(--overlay-bg, rgba(175, 173, 173, 0.171));
   backdrop-filter: blur(10px);
   opacity: 0;
   pointer-events: none;
