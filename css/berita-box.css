@@ -1,8 +1,8 @@
 .card.horizontal {
-  max-height: 150px;        
-  overflow: hidden;         
-  display: flex;           
-  align-items: center;      
+  max-height: 150px;        /* tinggi maksimal card */
+  overflow: hidden;         /* cegah konten keluar box */
+  display: flex;            /* pastikan layout horizontal */
+  align-items: center;      /* sejajarkan img & text secara vertikal */
 }
 
 .card.horizontal .card-image {
@@ -10,6 +10,7 @@
   max-height: 100%;
   display: flex;
   align-items: center;      /* gambar sejajar tengah */
+  margin-bottom: 8px;
 }
 
 .card.horizontal .card-image img {
@@ -18,6 +19,7 @@
   object-fit: cover;
   display: block;
   border-radius: 4px;
+  margin: auto 0;           /* beri margin otomatis atas & bawah */
 }
 
 .card.horizontal .card-stacked {
@@ -47,10 +49,21 @@
   }
 }
 
+/* Default (desktop) */
+.card.horizontal {
+  max-height: 300px;       /* lebih tinggi di desktop */
+  max-width: 800px;        /* batasi lebar agar lebih proporsional */
+  margin: auto;            /* center di layar besar */
+}
 
-
-
-
+/* Mobile */
+@media (max-width: 600px) {
+  .card.horizontal,
+  .card.horizontal .card-image img {
+    max-height: 120px; 
+    max-width: 100%;
+  }
+}
 
 
 
