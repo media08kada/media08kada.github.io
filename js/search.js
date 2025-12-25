@@ -15,9 +15,3 @@ document.addEventListener("click", function (e) {
     searchForm.classList.remove("active");
   }
 });
-
-
-
-
-
-

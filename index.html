@@ -61,44 +61,48 @@
     <link rel="stylesheet" href="css/popup.css">
 
     <title>Media Kelapa Dua</title>
-
-
   </head>
   <body id="home" class="scrollspy">
 
- <!-- Navbar Start -->
+<!-- Navbar Start -->
 <div class="navbar-fixed" id="top">
   <nav class="green darken-3">
     <div class="container">
       <div class="nav-wrapper">
+        <!-- Logo -->
         <a href="#home" class="navbar-brand">
           <img src="/img/partner/MediaKelapadua.png" width="40" height="40" />
         </a>
+
+        <!-- Trigger menu mobile -->
         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-          <i class="waves-effect material-icons">menu</i>
+          <i class="material-icons">menu</i>
         </a>
+
+        <!-- Tombol search (selalu terlihat) -->
+        <div class="navbar-extra right">
+          <a href="#" id="search-button"><i class="material-icons">search</i></a>
+        </div>
+
+        <!-- Search Form -->
+        <form class="search-form" action="search.html" method="get">
+        <input type="search" id="search-box" name="q" placeholder="Search here..." />
+        <label for="search-box"><i class="material-icons">search</i></label>
+      </form>
+
+       <!-- Menu desktop -->
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Beranda</a></li>
           <li><a class="dropdown-trigger" href="#berita" data-target="dropdown1">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="#contact">Contact</a></li>
-          <li>
-            <div class="navbar-extra">
-              <!-- tombol search -->
-              <a href="#" id="search-button"><i class="material-icons">search</i></a>
-            </div>
-            <!-- Search Form -->
-            <div class="search-form">
-              <input type="search" id="search-box" placeholder="Search here..." />
-              <label for="search-box"><i class="material-icons">search</i></label>
-            </div>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
+
 
 <!-- Dropdown Content 1 -->
 <ul id="dropdown1" class="dropdown-content">

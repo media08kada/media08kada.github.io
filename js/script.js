@@ -79,6 +79,18 @@ closeBtn.addEventListener("click", () => {
   }
 });
 
+// buka popup
+document.querySelector('#open-search').addEventListener('click', function() {
+  document.querySelector('#search-popup').classList.add('active');
+});
+
+// tutup popup
+document.querySelector('.close-btn').addEventListener('click', function() {
+  document.querySelector('#search-popup').classList.remove('active');
+});
+
+
+
 // Scroll ke atas
 function scrollKeatas() {
   window.scrollTo({
