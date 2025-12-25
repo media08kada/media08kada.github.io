@@ -87,6 +87,8 @@ function scrollKeatas() {
   });
 }
 
+
+
 // Load file modals.html ke dalam index
 fetch("modals.html")
   .then((response) => response.text())
