@@ -130,8 +130,28 @@
   <priority>0.80</priority>
 </url>
 
+<!-- Lain-lain -->
+<url>
+  <loc>https://mediakelapadua.web.id/gallery/table.html</loc>
+  <lastmod>2025-12-26T18:58:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
-
+<!-- Berita Lama -->
+<url>
+  <loc>https://mediakelapadua.web.id/berita-lama/festival-kelapa-dua-jilid-1.html</loc>
+  <lastmod>2025-11-29T08:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/berita-lama/rapat-koordinasi-wilayah-(rakowil)-kelurahan-kelapa-dua.html</loc>
+  <lastmod>2025-12-04T14:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+<url>
+  <loc>https://mediakelapadua.web.id/berita-lama/sri-wahyuni-juara-3-jambore-kader-posyandu-tingkat-dki-jakarta.html</loc>
+  <lastmod>2025-08-21T08:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 <!-- Giat Video -->
 <url>
