@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Donasi</title>
+
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <!-- Favicon -->
+    <link rel="icon" href="img/partner/MediaKelapadua.png" type="image/x-icon" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/donasi.css">
+
+  </head>
+  <div id="home" class="scrollspy">
+
+    <!-- Navbar Start -->
+<nav class="green darken-3">
+  <div class="nav-wrapper">
+    <a href="../index.html" class="brand-logo" style="padding: 10px;">
+      <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
+    </a>
+    <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+      <i class="material-icons large">home</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="../index.html">Beranda</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Berita Wilayah -->
+<section id="donationTable" class="section donationTable grey-text text-darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h4 class="center-align grey-text text-darken-3 light">Table Donasi</h4>
+        <p>Aceh - Sumatera Barat - Sumatera Utara</p>
+      </div>
+
+      
+      <table id="donationTable">
+        <thead>
+            <tr>
+            <th>No</th><th>Date</th><th>Nama</th><th class="price">Item Price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+            <tr>
+            <td colspan="3"><strong>Total</strong></td>
+            <td id="totalPrice" class="price"></td>
+            </tr>
+        </tfoot>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script src="js/donasi.js"></script>
+
+
+  </body>
+</html>
