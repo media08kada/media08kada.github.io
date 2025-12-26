@@ -72,7 +72,7 @@
   cursor: pointer;
   opacity: 0.7;
   border-radius: 50%;
-  background-color: #0f9c39; /* hijau bootstrap */
+  background-color: #0f9c16; /* hijau bootstrap */
   color: #fff;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -85,11 +85,11 @@
 /* Judul & teks */
 .popup-box h3 {
   margin-top: 60px;
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 800;
   color: #d62828; /* merah */
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 3px rgba(0,0,0,1);
 }
 
 .popup-box h4 {
@@ -97,14 +97,15 @@
   font-size: 1.2em;
   text-align: center;
   color: #fff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 3px rgba(0,0,0,1);
 }
 
 .popup-box p {
   margin-bottom: 15px;
   font-size: 1em;
   text-align: center;
-  color: #333;
+  color: #f7f4f4;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 /* Tombol aksi */
@@ -123,14 +124,14 @@
 
 .popup-box .btn:hover {
   background: #fff;
-  color: #198754;
+  color: #19871e;
   border: 1px solid #198754;
 }
 
 /* Responsive Popup */
 @media (min-width: 992px) {
   .popup-box {
-    max-width: 450px;
+    max-width: 350px;
     padding: 50px;
   }
 }
@@ -158,8 +159,11 @@
 
 @media (max-width: 480px) {
   .popup-box {
+    width: 95%;          /* tambahkan lebar hampir penuh layar kecil */
+    max-width: 250px;    /* opsional: batasi agar tidak terlalu besar */
     padding: 20px 15px;
     border-radius: 15px;
+    margin: 0 auto;      /* posisikan di tengah */
   }
 
   .popup-logo {
