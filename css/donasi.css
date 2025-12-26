@@ -55,6 +55,33 @@ table td:last-child {
   border-collapse: collapse;
 }
 
+@media only screen and (max-width: 600px) {
+  table#donationTable {
+    width: auto;          /* jangan full width */
+    margin: 0 auto;       /* posisikan di tengah */
+    display: table;       /* pastikan tetap table */
+  }
+}
+
+/* Agar tabel selalu berada di tengah */
+    #donationTableWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    table {
+      margin: 0 auto; /* fallback */
+    }
+
+    /* Pada layar kecil, pastikan tabel tidak melebar */
+    @media (max-width: 600px) {
+      table {
+        width: 90%;   /* agar tetap responsif */
+      }
+    }
+
+
+
 
 
 
