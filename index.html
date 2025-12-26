@@ -79,15 +79,19 @@
           <i class="material-icons">menu</i></a>
 
         <!-- Tombol search (selalu terlihat) -->
-        <div class="navbar-extra right">
-          <a href="javascript:void@" id="search-button"><i class="material-icons">search</i></a>
-        </div>
+      <div class="navbar-extra right">
+        <a href="javascript:void(0)" id="search-button">
+          <i class="material-icons">search</i>
+        </a>
+      </div>
 
-          <!-- Search Form -->
-          <form class="search-form" id="search-form" action="search.html" method="get">
-            <input type="search" id="search-box" name="q" placeholder="Search here..." />
-            <label for="search-box"><i class="material-icons">search</i></label>
-          </form>
+        <!-- Search Form -->
+        <form class="search-form" action="search.html" method="get">
+        <div class="input-field" style="position: relative;">
+          <input type="search" id="search-box" name="q" placeholder="Search here..." />
+          <i class="material-icons" style="position: absolute; right: 10px; top: 10px; color: #757575;">search</i>
+        </div>
+      </form>
 
        <!-- Menu desktop -->
         <ul class="right hide-on-med-and-down">
@@ -791,7 +795,6 @@
     });
   });
 </script>
-
   
     <!-- Gallery toggle -->
     <script>

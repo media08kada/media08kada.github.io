@@ -5,7 +5,7 @@ const pages = [
   { title: "Berita Wilayah", url: "#wilayah" },
   { title: "Berita Pilihan", url: "#pilihan" },
   { title: "Berita Lama", url: "news-old.html" },
-  { title: "Calender Event", url: "/info-wilayah/event.html" },
+  { title: "Calendar Event", url: "/info-wilayah/event.html" },
   { title: "Info Kelurahan", url: "/info-wilayah/kelurahan.html" },
   { title: "Info Puskesmas", url: "/info-wilayah/puskesmas.html" },
   { title: "Info LMK", url: "/info-wilayah/lmkkelapadua.html" },
@@ -16,35 +16,48 @@ const pages = [
 
 // Ambil query dari URL (?q=...)
 const params = new URLSearchParams(window.location.search);
-const query = params.get("q")?.toLowerCase() || "";
+const q = params.get("q");
+const query = q ? q.toLowerCase().trim() : "";
 
 // Container hasil pencarian
 const resultsContainer = document.getElementById("results");
 
 // Fungsi pencarian
 function searchPages(keyword) {
+  if (!keyword) return [];
   return pages.filter((page) => page.title.toLowerCase().includes(keyword));
 }
 
-// Jalankan pencarian
-const results = searchPages(query);
+// Render hasil pencarian
+function renderResults() {
+  if (!resultsContainer) return; // cegah error jika #results tidak ada
+  resultsContainer.innerHTML = "";
+  const results = searchPages(query);
 
-if (results.length > 0) {
-  results.forEach((page) => {
-    const item = document.createElement("a");
-    item.href = page.url;
-    item.className = "collection-item";
-    item.textContent = page.title;
-    resultsContainer.appendChild(item);
-  });
-} else {
-  resultsContainer.innerHTML = `<p class="red-text">Tidak ada hasil untuk "${query}"</p>`;
+  if (results.length > 0) {
+    results.forEach((page) => {
+      const item = document.createElement("a");
+      item.href = page.url;
+      item.className = "collection-item";
+      item.textContent = page.title;
+      resultsContainer.appendChild(item);
+    });
+  } else {
+    resultsContainer.innerHTML = query
+      ? `<p class="red-text center-align">Tidak ada hasil untuk "${query}"</p>`
+      : `<p class="grey-text center-align">Masukkan kata kunci untuk mencari</p>`;
+  }
 }
 
-const searchBtn = document.getElementById("search-button");
-const searchForm = document.getElementById("search-form");
+// Jalankan pencarian
+renderResults();
 
-searchBtn.addEventListener("click", function (e) {
-  e.preventDefault(); // cegah reload
-  searchForm.classList.toggle("active");
-});
+// Toggle search box
+const searchBtn = document.querySelector("#search-button");
+const searchForm = document.querySelector(".search-form");
+
+if (searchBtn && searchForm) {
+  searchBtn.addEventListener("click", () => {
+    searchForm.classList.toggle("active");
+  });
+}
