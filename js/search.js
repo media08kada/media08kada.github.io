@@ -1,26 +1,4 @@
-// --- Bagian Toggle Form Search ---
-const searchForm = document.querySelector(".search-form");
-const searchBox = document.querySelector("#search-box");
-const searchButton = document.querySelector("#search-button");
-
-// Klik tombol search → langsung submit form
-searchButton.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  // Kalau input kosong, fokus dulu biar user isi
-  if (!searchBox.value.trim()) {
-    searchForm.classList.add("active");
-    searchBox.focus();
-  } else {
-    // Kalau sudah ada isi → submit form ke search.html?q=...
-    searchForm.submit();
-  }
-});
-
-// --- Bagian Pencarian Halaman ---
-const resultContainer = document.getElementById("results");
-
-// Daftar halaman (bisa diganti fetch JSON eksternal)
+// Data halaman yang bisa dicari
 const pages = [
   { title: "Home", url: "index.html" },
   { title: "Berita Utama", url: "#berita" },
@@ -36,26 +14,37 @@ const pages = [
   { title: "Contact Us", url: "#contact" },
 ];
 
-// Ambil query dari URL
+// Ambil query dari URL (?q=...)
 const params = new URLSearchParams(window.location.search);
-const query = params.get("q")?.toLowerCase();
+const query = params.get("q")?.toLowerCase() || "";
 
-// Filter hasil
-if (query) {
-  const results = pages.filter((p) => p.title.toLowerCase().includes(query));
+// Container hasil pencarian
+const resultsContainer = document.getElementById("results");
 
-  if (results.length > 0) {
-    results.forEach((r) => {
-      const link = document.createElement("a");
-      link.href = r.url;
-      link.textContent = r.title;
-      link.className = "collection-item"; // Materialize style
-      resultContainer.appendChild(link);
-    });
-  } else {
-    const empty = document.createElement("div");
-    empty.className = "collection-item red-text";
-    empty.textContent = "Tidak ada hasil ditemukan.";
-    resultContainer.appendChild(empty);
-  }
+// Fungsi pencarian
+function searchPages(keyword) {
+  return pages.filter((page) => page.title.toLowerCase().includes(keyword));
 }
+
+// Jalankan pencarian
+const results = searchPages(query);
+
+if (results.length > 0) {
+  results.forEach((page) => {
+    const item = document.createElement("a");
+    item.href = page.url;
+    item.className = "collection-item";
+    item.textContent = page.title;
+    resultsContainer.appendChild(item);
+  });
+} else {
+  resultsContainer.innerHTML = `<p class="red-text">Tidak ada hasil untuk "${query}"</p>`;
+}
+
+const searchBtn = document.getElementById("search-button");
+const searchForm = document.getElementById("search-form");
+
+searchBtn.addEventListener("click", function (e) {
+  e.preventDefault(); // cegah reload
+  searchForm.classList.toggle("active");
+});
