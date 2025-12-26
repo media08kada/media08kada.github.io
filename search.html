@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil Pencarian</title>
+  <!-- Import Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="green darken-3">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">
+        <img src="/img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#berita">Berita Utama</a></li>
+        <li><a href="#wilayah">Berita Wilayah</a></li>
+        <li><a href="#pilihan">Berita Pilihan</a></li>
+        <li><a href="news-old.html">Berita Lama</a></li>
+        <li><a href="/info-wilayah/event.html">Calender Event</a></li>
+      </ul>
+          <!-- Form Search -->
+    <form class="search-form" action="search.html" method="get">
+      <input type="search" id="search-box" name="q" placeholder="Search here..." />
+      <label for="search-box"><i class="material-icons">search</i></label>
+    </form>
+  </div>
+</nav>
+
+  <!-- Container hasil pencarian -->
+  <div class="container" style="margin-top: 30px;">
+    <h4 class="center-align">Hasil Pencarian</h4>
+    <div id="results" class="collection">
+      <!-- Hasil pencarian akan ditambahkan di sini oleh search.js -->
+    </div>
+  </div>
+
+  <!-- Import Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
+
+
+
