@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Survey</title>
 
+      <!-- Open Graph -->
+    <meta property="og:type" content="mediakelapadua" />
+    <meta property="og:url" content="https://mediakelapadua.web.id/survey.html" />
+    <meta property="og:title" content="Media Kelapa Dua" />
+    <meta property="og:description" content="Survey Pelayanan. Isi di sini!" />
+    <meta property="og:image" content="https://mediakelapadua.web.id/survey.html" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://mediakelapadua.web.id/survey.html" />
+    <meta name="twitter:title" content="Media Kelapa Dua" />
+    <meta name="twitter:description" content="Survey Pelayanan. Isi di sini!" />
+    <meta name="twitter:image" content="https://mediakelapadua.web.id/survey.html" />
+
+
   <!-- Google Icon Font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
@@ -232,7 +249,6 @@
   })
 </script>
 
-<!-- Tombol Back Survey -->
 <Script>
 $(document).ready(function(){
   // Simpan setiap perubahan input
@@ -250,9 +266,14 @@ $(document).ready(function(){
     M.updateTextFields();
     $('select').formSelect();
   }
-});
-</Script>
-
+  window.addEventListener('popstate', function(event) {
+    // Cegah reset data
+    event.preventDefault();
+    // Misalnya: fokus ke kolom sebelumnya
+    document.querySelector('#last_name').focus();
+  });
+  });
+  </Script>
 
 <script>
   $(document).ready(function(){
