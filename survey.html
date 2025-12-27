@@ -61,7 +61,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h4 class="light center-align grey-text text-darken-1">Survey Pelayanan</h4>
+          <h4 class="center-align grey-text text-darken-1">Survey Pelayanan</h4>
         </div>
       </div>
 
@@ -72,66 +72,65 @@
 
             <!-- Nama -->
             <div class="row">
-              <div class="input-field col s12 m6">
-                <input id="first_name" name="first_name" type="text" class="validate">
+              <div class="input-field col s12 m6 equal-spacing">
+                <input id="first_name" name="first_name" type="text" required  class="validate">
                 <label for="first_name" name="first_name">Nama Depan</label>
               </div>
               <div class="input-field col s12 m6">
-                <input id="last_name" name="last_name" type="text" class="validate">
+                <input id="last_name" name="last_name" type="text" required class="validate">
                 <label for="last_name" name="last_name">Nama Belakang</label>
               </div>
             </div>
 
             <!-- Tempat/Tgl Lahir -->
             <div class="row">
-              <div class="input-field col s12">
-                <input id="lahir" name="lahir" type="text" class="validate">
+              <div class="input-field col s12 equal-spacing">
+                <input id="lahir" name="lahir" type="text" required  class="validate">
                 <label for="lahir" name="lahir">Tempat/Tgl Lahir</label>
               </div>
             </div>
 
             <!-- Alamat -->
             <div class="row">
-              <div class="input-field col s12">
-                <input id="alamat" name="alamat" type="text" class="validate" placeholder="Alamat lengkap">
+              <div class="input-field col s12 equal-spacing">
+                <input id="alamat" name="alamat" type="text" required  class="validate" placeholder="Alamat lengkap">
                 <label for="alamat" name="alamat">Alamat</label>
               </div>
             </div>
 
             <!-- Telepon & Pekerjaan -->
             <div class="row">
-              <div class="input-field col s12 m6">
-                <input id="Telepon" name="telepon" type="tel">
+              <div class="input-field col s12 m6 equal-spacing">
+                <input id="Telepon" name="telepon" type="tel" required >
                 <label for="Telepon" name="Telepon">Telepon</label>
               </div>
               <div class="input-field col s12 m6">
-                <input id="pekerjaan" name="pekerjaan" type="text">
+                <input id="pekerjaan" name="pekerjaan" type="text" required >
                 <label for="pekerjaan" name="pekerjaan">Pekerjaan</label>
               </div>
             </div>
 
             <!-- Agama & Gender -->
             <div class="row">
-              <div class="input-field col s12 m6">
-                <input id="Agama" name="agama" type="text">
+              <div class="input-field col s12 m6 equal-spacing">
+                <input id="Agama" name="agama" type="text" required >
                 <label for="agama" name="agama">Agama</label>
               </div>
               <div class="input-field col s12 m6">
-                <input id="kelamin" name="kelamin" type="text">
+                <input id="kelamin" name="kelamin" type="text" required >
                 <label for="kelamin" name="kelamin">Jenis Kelamin</label>
+                </div>
               </div>
-            </div>
-
-            <div class="data-survey">
+           <div class="data-survey">
             <h6 class="center">Data Survay Warga</h6>
             </div>
 
             <!-- Kegiatan Pelayanan -->
             <div class="row">
-              <div class="input-field col s12">
-                <select multiple name="kegiatan">
-                  <option value="" disabled>Pilih Pilihan Anda</option>
-                  <option value="1">Pengurus Wilayah</option>
+              <div class="input-field col s12 equal-spacing">
+                <select multiple name="kegiatan" required>
+                  <option value="" disabled>Pilihan Anda</option>
+                  <option value="1">Pengurus RT/RW</option>
                   <option value="2">Posyandu Siklus Hidup</option>
                   <option value="3">Keamanan</option>
                 </select>
@@ -141,9 +140,9 @@
 
             <!-- Jenis Pelayanan -->
             <div class="row">
-              <div class="input-field col s12">
-                <select multiple name="pelayanan">
-                  <option value="" disabled>Pilih Pilihan Anda</option>
+              <div class="input-field col s12 equal-spacing">
+                <select multiple name="pelayanan" required >
+                  <option value="" disabled>Pilihan Anda</option>
                   <option value="1">Posyandu</option>
                   <option value="2">Posbindu</option>
                   <option value="3">Posyandu Remaja</option>
@@ -154,32 +153,31 @@
 
             <!-- Pelayanan Kader -->
             <div class="row">
-              <div class="input-field col s12 m6">
-                <select name="kader">
-                  <option value="" disabled selected>Pilih Pilihan Anda</option>
+              <div class="input-field col s12 m6 equal-spacing">
+                <select name="kader" required>
+                  <option value="" disabled selected>Pilihan Anda</option>
                   <option value="1">Baik</option>
                   <option value="2">Kurang Baik</option>
                   <option value="3">Buruk</option>
                 </select>
                 <label>Pelayanan Kader</label>
               </div>
-
-              <div class="input-field col s12 m6">
-                <select name="medis">
-                  <option value="" disabled selected>Pilih Pilihan Anda</option>
+              <div class="input-field col s12 m6 equal-spacing">
+                <select name="medis" required >
+                  <option value="" disabled selected>Pilihan Anda</option>
                   <option value="1">Baik</option>
                   <option value="2">Kurang Baik</option>
                   <option value="3">Buruk</option>
                 </select>
-                <label>Pelayanan Tenaga Kesehatan</label>
+                <label>Pelayanan T. Kesehatan</label>
               </div>
             </div>
 
             <!-- Sarana Prasarana -->
             <div class="row">
-              <div class="input-field col s12">
-                <select multiple name="sarana">
-                  <option value="" disabled>Pilih Pilihan Anda</option>
+              <div class="input-field col s12 equal-spacing">
+                <select multiple name="sarana" required >
+                  <option value="" disabled>Pilihan Anda</option>
                   <option value="1">Baik</option>
                   <option value="2">Kurang Baik</option>
                   <option value="3">Buruk</option>
@@ -190,9 +188,9 @@
 
             <!-- Rencana Kembali -->
             <div class="row">
-              <div class="input-field col s12">
-                <select name="rencana">
-                  <option value="" disabled selected>Pilih Pilihan Anda</option>
+              <div class="input-field col s12 equal-spacing">
+                <select name="rencana" required >
+                  <option value="" disabled selected>Pilihan Anda</option>
                   <option value="1">Kembali</option>
                   <option value="2">Pikir-pikir</option>
                   <option value="3">Tidak kembali</option>
@@ -203,7 +201,7 @@
 
             <!-- Textarea -->
             <div class="row">
-              <div class="input-field col s12">
+              <div class="input-field col s12 equal-spacing">
                 <i class="material-icons prefix">mode_edit</i>
                 <textarea id="komentar" name="komentar" class="materialize-textarea"></textarea>
                 <label for="komentar">Saran dan Pesan</label>
@@ -221,6 +219,16 @@
       </div>
     </div>
   </section>
+
+<div class="data-notes">
+  <div class="container">
+  <h6 class="center">Keterangan</h6>
+  <p style="text-align: justify">
+    Mohon isi survey berikut dengan lengkap. Data yang Anda berikan akan digunakan untuk keperluan peningkatan pelayanan masyarakat.
+  </p>
+</div>
+
+<!-- JavaScrip -->
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -295,8 +303,20 @@ $(document).ready(function(){
       $('select').formSelect();
     });
   });
+</script>
 
+<!-- Pemberitahuan agar kolom survey diisi -->
+/ <script>
+document.getElementById("surveyForm").addEventListener("submit", function(e) {
+  let nama = this.nama.value.trim();
+  let email = this.email.value.trim();
+  let kegiatan = this.kegiatan.value;
 
+  if (!nama || !email || !kegiatan) {
+    e.preventDefault(); // cegah form terkirim
+    alert("Harap isi semua kolom survey sebelum mengirim!");
+  }
+});
 </script>
 
 </body>

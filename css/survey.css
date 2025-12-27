@@ -25,7 +25,48 @@ section#survey {
   color: grey; /* bisa pakai grey-text juga */
 }
 
-
 .data-survey {
   margin-bottom: 2rem;
 }
+
+.data-survey h6 {
+  margin-bottom: 20px; /* atur jarak ke bawah */
+}
+
+.survey-contact-form .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* samakan tinggi semua kolom */
+}
+
+.survey-contact-form .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.survey-contact-form .row .col {
+  margin-bottom: 20px; /* jarak antar kolom */
+}
+
+/* Terapkan flexbox agar kolom dalam satu row rata tingginya */
+@media only screen and (max-width: 600px) {
+  .survey-contact-form .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* samakan tinggi semua kolom */
+  }
+
+  .survey-contact-form .row .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 15px; /* jarak antar kolom */
+  }
+
+  .survey-contact-form .input-field {
+    flex: 1; /* isi kolom menyesuaikan tinggi */
+  }
+}
+
+

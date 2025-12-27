@@ -6,6 +6,7 @@ const data = [
   [4, "26/12/2025", "Hamba Alloh", "Rp50.000"],
   [5, "26/12/2025", "Uus", "Rp50.000"],
   [6, "26/12/2025", "Hamba Alloh", "Rp2.000.000"],
+  [6, "27/12/2025", "Hamba Alloh", "Rp500.000"],
 ];
 
 const tbody = document.querySelector("#donationTable tbody");
