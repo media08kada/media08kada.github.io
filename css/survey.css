@@ -1,0 +1,28 @@
+nav {
+  margin-bottom: 40px; /* jarak bawah navbar */
+}
+
+section#berita {
+  margin-top: 40px; /* jarak atas section */
+}
+
+.input-field {
+  margin: 0; /* hilangkan margin default */
+}
+.input-field input {
+  height: 3rem; /* samakan tinggi input */
+  line-height: 3rem;
+}
+
+.input-field label {
+  white-space: nowrap; /* cegah label turun ke bawah */
+  font-size: 0.9rem;   /* kecilkan sedikit agar muat */
+}
+
+.select option {
+  text-transform: lowercase;
+  font-size: 0.5rem;
+  color: grey; /* bisa pakai grey-text juga */
+}
+
+

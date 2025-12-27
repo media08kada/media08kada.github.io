@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey</title>
+
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/survey.css" />
+</head>
+<body id="home" class="scrollspy">
+
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav class="green darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="../index.html" class="brand-logo" style="padding: 10px;">
+            <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
+          </a>
+          <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+            <i class="material-icons large">home</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../index.html">Beranda</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Survey -->
+  <section id="berita" class="section berita grey-text text-darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="light center-align grey-text text-darken-1">Survey Pelayanan</h4>
+        </div>
+      </div>
+
+      <div class="data-survey">
+        <h5 class="center">Data Survey Warga</h5>
+        <div class="row">
+          <form name="survey-contact-form" class="col s12 survey-contact-form" action="#" method="post">
+
+            <!-- Nama -->
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="first_name" name="first_name" type="text" class="validate">
+                <label for="first_name" name="first_name">Nama Depan</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="last_name" name="last_name" type="text" class="validate">
+                <label for="last_name" name="last_name">Nama Belakang</label>
+              </div>
+            </div>
+
+            <!-- Tempat/Tgl Lahir -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="lahir" name="lahir" type="text" class="validate">
+                <label for="lahir" name="lahir">Tempat/Tgl Lahir</label>
+              </div>
+            </div>
+
+            <!-- Alamat -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="alamat" name="alamat" type="text" class="validate" placeholder="Alamat lengkap">
+                <label for="alamat" name="alamat">Alamat</label>
+              </div>
+            </div>
+
+            <!-- Telepon & Pekerjaan -->
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="Telepon" name="telepon" type="tel">
+                <label for="Telepon" name="Telepon">Telepon</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="pekerjaan" name="pekerjaan" type="text">
+                <label for="pekerjaan" name="pekerjaan">Pekerjaan</label>
+              </div>
+            </div>
+
+            <!-- Agama & Gender -->
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="Agama" name="agama" type="text">
+                <label for="agama" name="agama">Agama</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="kelamin" name="kelamin" type="text">
+                <label for="kelamin" name="kelamin">Jenis Kelamin</label>
+              </div>
+            </div>
+
+            <!-- Kegiatan Pelayanan -->
+            <div class="row">
+              <div class="input-field col s12">
+                <select multiple name="kegiatan">
+                  <option value="" disabled>Choose your option</option>
+                  <option value="1">Pengurus Wilayah</option>
+                  <option value="2">Posyandu Siklus Hidup</option>
+                  <option value="3">Keamanan</option>
+                </select>
+                <label>Kegiatan Pelayanan</label>
+              </div>
+            </div>
+
+            <!-- Jenis Pelayanan -->
+            <div class="row">
+              <div class="input-field col s12">
+                <select multiple name="pelayanan">
+                  <option value="" disabled>Choose your option</option>
+                  <option value="1">Posyandu</option>
+                  <option value="2">Posbindu</option>
+                  <option value="3">Posyandu Remaja</option>
+                </select>
+                <label>Jenis Pelayanan</label>
+              </div>
+            </div>
+
+            <!-- Pelayanan Kader -->
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <select name="kader">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Baik</option>
+                  <option value="2">Kurang Baik</option>
+                  <option value="3">Buruk</option>
+                </select>
+                <label>Pelayanan Kader</label>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <select name="medis">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Baik</option>
+                  <option value="2">Kurang Baik</option>
+                  <option value="3">Buruk</option>
+                </select>
+                <label>Pelayanan Tenaga Kesehatan</label>
+              </div>
+            </div>
+
+            <!-- Sarana Prasarana -->
+            <div class="row">
+              <div class="input-field col s12">
+                <select multiple name="sarana">
+                  <option value="" disabled>Choose your option</option>
+                  <option value="1">Baik</option>
+                  <option value="2">Kurang Baik</option>
+                  <option value="3">Buruk</option>
+                </select>
+                <label>Sarana dan Prasarana</label>
+              </div>
+            </div>
+
+            <!-- Rencana Kembali -->
+            <div class="row">
+              <div class="input-field col s12">
+                <select name="rencana">
+                  <option value="" disabled>Choose your option</option>
+                  <option value="1">Kembali</option>
+                  <option value="2">Pikir-pikir</option>
+                  <option value="3">Tidak kembali</option>
+                </select>
+                <label>Apakah Anda berencana untuk kembali lagi?</label>
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="komentar" name="komentar" class="materialize-textarea"></textarea>
+                <label for="komentar">Saran dan Pesan</label>
+              </div>
+            </div>
+
+            <!-- Tombol Submit -->
+            <div class="row center">
+              <button class="btn waves-effect waves-light green" type="submit" name="action">
+                Kirim
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Inisialisasi -->
+  <script>
+    $(document).ready(function(){
+      M.updateTextFields();
+      $('select').formSelect(); // aktifkan semua select
+    });
+  </script>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyIWBTA0wJ4-mhyPex31B1qpFbU-UTrFEvfsvsdlCj3W5_1g7e_1njKFiuxmKJc1z1hQw/exec'
+  const form = document.forms['survey-contact-form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
