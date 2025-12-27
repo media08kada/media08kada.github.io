@@ -40,7 +40,7 @@
   </div>
 
   <!-- Survey -->
-  <section id="berita" class="section berita grey-text text-darken-3">
+  <section id="survey" class="section survey grey-text text-darken-3">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -229,6 +229,28 @@
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+
+<script>
+  $(document).ready(function(){
+    // Inisialisasi Materialize
+    M.updateTextFields();
+    $('select').formSelect();
+
+    // Tangkap submit form
+    $('.survey-contact-form').on('submit', function(e){
+      e.preventDefault(); // cegah reload halaman
+
+      // Tampilkan notifikasi
+      M.toast({html: 'Data survey berhasil dikirim!', classes: 'green darken-1'});
+
+      // Reset form
+      this.reset();
+
+      // Re-inisialisasi select setelah reset
+      $('select').formSelect();
+    });
+  });
 </script>
 
 </body>
