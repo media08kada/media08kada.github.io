@@ -55,6 +55,11 @@ table td:last-child {
   }
 }
 
+.sharethis-inline-share-buttons {
+  margin-top: 20px; /* Atur sesuai kebutuhan */
+}
+
+
 /* Agar tabel selalu berada di tengah */
     #donationTableWrapper {
       display: flex;
