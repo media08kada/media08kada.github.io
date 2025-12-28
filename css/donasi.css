@@ -1,0 +1,40 @@
+#donasi .card-panel {
+  width: 100%;          /* default penuh mengikuti col */
+  max-width: 800px;     /* batas maksimal lebar card */
+  min-height: 500px;    /* tinggi minimum card */
+  margin: 0 auto;       /* center horizontal */
+  padding: 20px;        /* ruang dalam card */
+}
+
+.input-field label {
+  color: rgb(37, 37, 37);
+}
+
+.file-path.validate::placeholder {
+  font-size: 12px;
+  color: black;
+}
+
+.file-field .material-icons {
+  color: #fff; /* putih */
+}
+
+h6.center {
+  margin-bottom: 30px; /* jarak ke bawah */
+  margin-top: 10px;    /* jarak ke atas */
+}
+
+.right-align {
+  margin-bottom: 20px; 
+  line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
