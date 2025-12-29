@@ -242,6 +242,31 @@ body.dark-mode .gallery img {
 }
 
 
+/* Default ukuran switch */
+.switch label .lever {
+  width: 40px;
+  height: 20px;
+}
+
+/* Untuk layar kecil (misalnya max-width 600px) */
+@media (max-width: 600px) {
+  .sidenav .switch label .lever {
+    width: 30px;   /* lebih kecil */
+    height: 15px;  /* lebih ramping */
+  }
+
+  /* Atur ukuran teks label agar proporsional */
+  .sidenav .switch label {
+    font-size: 0.9rem;
+  }
+
+  /* Atur ukuran ikon atau padding jika ada */
+  .sidenav .switch {
+    transform: scale(0.9); /* mengecilkan keseluruhan switch */
+    margin-left: 8px;      /* beri jarak agar tidak terlalu mepet */
+  }
+}
+
 
 
 
