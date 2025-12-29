@@ -89,8 +89,6 @@ document.querySelector('.close-btn').addEventListener('click', function() {
   document.querySelector('#search-popup').classList.remove('active');
 });
 
-
-
 // Scroll ke atas
 function scrollKeatas() {
   window.scrollTo({
@@ -128,6 +126,17 @@ fetch("modals.html")
       displayLength: 5000, 
     });
   }
+
+  const darkmodetoggle = document.getElementById('darkmodetoggle');
+  const body = document.body;
+
+  darkmodetoggle.addEventListener('change', () => {
+    if(darkmodetoggle.checked) {
+      body.classList.add('dark.mode')
+    } else {
+      body.classList.remove('dark.mode')
+    }
+  })
 
 
 

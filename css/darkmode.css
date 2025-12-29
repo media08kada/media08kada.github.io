@@ -1,0 +1,64 @@
+/* Dark Mode */
+body.dark-mode {
+  background-color: #181717;
+  color: #ffffff;
+}
+
+nav.dark-mode {
+  background-color: #333 !important;
+}
+
+/* Navbar Items */
+nav ul li {
+  line-height: 64px;   /* samakan dengan tinggi navbar */
+  margin-left: 10px;
+}
+
+nav .switch {
+  position: relative;
+  top: -8px;   /* geser ke atas */
+}
+
+/* Search Form */
+.search-form input {
+  padding: 0 10px;     /* ruang dalam input */
+  margin-right: 10px;  /* jarak ke tombol close */
+}
+
+/* Icons */
+.light-icon,
+.dark-icon,
+nav .switch i.material-icons {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+/* Switch */
+nav .switch {
+  position: relative;
+  margin: 0 0 0 20px;  /* rapat ke item sebelumnya */
+  transform: scale(0.8); /* kecilkan keseluruhan switch */
+}
+
+nav .switch label {
+  display: flex;
+  align-items: center;
+  gap: 4px;   /* jarak antar ikon dan switch */
+}
+
+nav .switch .lever {
+  width: 30px;   /* default sekitar 40px, diperkecil */
+  height: 14px;  /* default sekitar 20px */
+  margin: 0 4px; /* jarak kiri-kanan lebih rapat */
+}
+
+/* Bulatan toggle */
+nav .switch .lever:after,
+nav .switch input[type=checkbox]:checked + .lever:after {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+

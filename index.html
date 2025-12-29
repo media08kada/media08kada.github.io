@@ -62,6 +62,7 @@
     <link rel="stylesheet" href="css/puskesmas.css" />
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/darkmode.css">
 
     <title>Media Kelapa Dua</title>
   </head>
@@ -103,6 +104,17 @@
           <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="#contact">Contact</a></li>
+          <!-- Dark Mode Toggle -->
+          <li>
+            <div class="switch" style="margin-top:10px;">
+              <label>
+                <i class="material-icons light-icon small">wb_sunny</i>
+                <input type="checkbox" id="darkmodetoggle">
+                <span class="lever"></span>
+                <i class="material-icons dark-icon small">brightness_2</i>
+              </label>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -144,7 +156,13 @@
       <a href="#user"><img class="circle" src="img/partner/MediaKelapadua.png"></a>
       <a href="#name"><span class="white-text name">mediakelapadua.web.id</span></a>
       <a href="#email"><span class="white-text email"></span></a>
-    </div></li>
+      <!-- Dark Mode Toggle -->
+       <div class="switch" style="margin-top:10px;">
+        <label> Light
+        <input type="checkbox" id="darkmodetoggle">
+        <span class="lever"></span>Dark</label>
+        </div>
+       </li>
       
       <li><a href="index.html">Beranda</a></li>
       
@@ -838,6 +856,16 @@
     });
  });
    </script>
+
+   <!-- Dark Mode -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('darkmodetoggle');
+  toggle.addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', this.checked);
+  });
+});
+    </script> 
 
   <script src="js/script.js"></script>
   <script src="js/contact.js"></script>
