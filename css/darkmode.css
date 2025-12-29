@@ -241,7 +241,6 @@ body.dark-mode .gallery img {
   
 }
 
-
 /* Default ukuran switch */
 .switch label .lever {
   width: 40px;
@@ -262,10 +261,40 @@ body.dark-mode .gallery img {
 
   /* Atur ukuran ikon atau padding jika ada */
   .sidenav .switch {
-    transform: scale(0.9); /* mengecilkan keseluruhan switch */
+    transform: scale(0.8); /* mengecilkan keseluruhan switch */
     margin-left: 8px;      /* beri jarak agar tidak terlalu mepet */
   }
 }
+
+/* Perbesar di layar lebar */
+@media (min-width: 992px) {
+  .switch label .lever {
+    width: 60px;   /* lebih panjang */
+    height: 25px;  /* lebih tinggi */
+  }
+
+  .switch label .lever:after {
+    width: 30px;   /* diameter tombol */
+    height: 30px;
+    top: -3px;     /* sesuaikan posisi */
+  }
+
+  /* Ikon kiri/kanan juga bisa diperbesar */
+  .switch label i.material-icons {
+    font-size: 28px; /* default biasanya 18–24px */
+    vertical-align: middle;
+  }
+}
+
+/* Tambahkan jarak vertikal */
+.switch {
+  margin-top: 10px;   /* geser ke bawah */
+}
+
+
+
+
+
 
 
 
