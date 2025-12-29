@@ -108,10 +108,10 @@
           <li>
             <div class="switch" style="margin-top:10px;">
               <label>
-                <i class="material-icons light-icon small">wb_sunny</i>
+                <i class="material-icons" style="vertical-align: middle;">wb_sunny</i>
                 <input type="checkbox" id="darkmodetoggle">
                 <span class="lever"></span>
-                <i class="material-icons dark-icon small">brightness_2</i>
+                <i class="material-icons" style="vertical-align: middle;">brightness_3</i>
               </label>
             </div>
           </li>
@@ -157,11 +157,14 @@
       <a href="#name"><span class="white-text name">mediakelapadua.web.id</span></a>
       <a href="#email"><span class="white-text email"></span></a>
       <!-- Dark Mode Toggle -->
-       <div class="switch" style="margin-top:10px;">
-        <label> Light
-        <input type="checkbox" id="darkmodetoggle">
-        <span class="lever"></span>Dark</label>
-        </div>
+      <div class="switch" style="margin-top:10px;">
+        <label>
+          <i class="material-icons small">wb_sunny</i>
+          <input type="checkbox" id="darkmodetoggle-mobile">
+          <span class="lever"></span>
+          <i class="material-icons small">brightness_3</i>
+        </label>
+      </div>
        </li>
       
       <li><a href="index.html">Beranda</a></li>
@@ -362,12 +365,12 @@
         <!-- Berita-3 End -->
 
         <!-- Berita Wilayah Start -->
-        <div id="wilayah" class="grey lighten-3 scrollspy collapsible popout" style="padding-top:10px;">
+        <div id="wilayah" class="scrollspy collapsible popout" style="padding-top:10px;">
         <div class="container">
         <h4 class="center light text-darken-3">Berita Wilayah</h4>
               
         <!-- Kolom Berita -->
-        <div id="sekilas-berita" class="row">
+        <div class="row" id="sekilas-berita">
          <div class="col m12 s12 light">
          <div class="card sticky">
          <div class="card-content">
@@ -857,15 +860,45 @@
  });
    </script>
 
-   <!-- Dark Mode -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-  const toggle = document.getElementById('darkmodetoggle');
-  toggle.addEventListener('change', function() {
-    document.body.classList.toggle('dark-mode', this.checked);
+    <!-- JavaScript Dark Mode -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Inisialisasi sidenav Materialize
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+
+    // Fungsi toggle dark mode
+    function setDarkMode(isDark) {
+      if (isDark) {
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+    }
+
+    // Event listener untuk switch besar
+    const toggleDesktop = document.getElementById('darkmodetoggle');
+    if (toggleDesktop) {
+      toggleDesktop.addEventListener('change', function() {
+        setDarkMode(this.checked);
+        // Sinkronkan dengan toggle mobile
+        const toggleMobile = document.getElementById('darkmodetoggle-mobile');
+        if (toggleMobile) toggleMobile.checked = this.checked;
+      });
+    }
+
+    // Event listener untuk switch kecil
+    const toggleMobile = document.getElementById('darkmodetoggle-mobile');
+    if (toggleMobile) {
+      toggleMobile.addEventListener('change', function() {
+        setDarkMode(this.checked);
+        // Sinkronkan dengan toggle desktop
+        const toggleDesktop = document.getElementById('darkmodetoggle');
+        if (toggleDesktop) toggleDesktop.checked = this.checked;
+      });
+    }
   });
-});
-    </script> 
+</script>
 
   <script src="js/script.js"></script>
   <script src="js/contact.js"></script>

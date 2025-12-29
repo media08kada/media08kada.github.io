@@ -1,136 +1,86 @@
-/* Dark Mode */
-body.dark-mode {
-  background-color: #212121;
-  color: #ffffff;
+/* Default (Light Mode) */
+.card {
+  background-color: #fff;
+  color: #757575;
+}
+.card-content h6 {
+  color: #757575;
 }
 
-nav.dark-mode {
-  background-color: #333 !important;
+#berita,
+#wilayah,
+#gallery {
+  background-color: #fff; /* atau sesuai tema Anda */
+  transition: background-color 0.3s ease;
 }
 
-/* Navbar Items */
-nav ul li {
-  line-height: 64px;   /* samakan dengan tinggi navbar */
-  margin-left: 10px;
-}
-
-nav .switch {
-  position: relative;
-  top: -8px;   /* geser ke atas */
-}
-
-/* Search Form */
-.search-form input {
-  padding: 0 10px;     /* ruang dalam input */
-  margin-right: 10px;  /* jarak ke tombol close */
-}
-
-/* Icons */
-.light-icon,
-.dark-icon,
-nav .switch i.material-icons {
-  font-size: 20px;
-  margin: 0 5px;
-}
-
-/* Switch */
-nav .switch {
-  position: relative;
-  margin: 0 0 0 20px;  /* rapat ke item sebelumnya */
-  transform: scale(0.8); /* kecilkan keseluruhan switch */
-}
-
-nav .switch label {
-  display: flex;
-  align-items: center;
-  gap: 4px;   /* jarak antar ikon dan switch */
-}
-
-nav .switch .lever {
-  width: 30px;   /* default sekitar 40px, diperkecil */
-  height: 14px;  /* default sekitar 20px */
-  margin: 0 4px; /* jarak kiri-kanan lebih rapat */
-}
-
-/* Bulatan toggle */
-nav .switch .lever:after,
-nav .switch input[type=checkbox]:checked + .lever:after {
-  width: 16px;
-  height: 16px;
-}
-
-/* DARK MODE OVERRIDES */
-/* Global background & text */
+/* Dark Mode Base */
 body.dark-mode {
   background-color: #181717;
-  color: #ffffff;
+  color: #fff;
+}
+body.dark-mode a {
+  color: #66ccff;
 }
 
-/* Navbar */
-body.dark-mode nav {
+/* Navbar & Header */
+body.dark-mode nav,
+body.dark-mode .collection-header,
+body.dark-mode #sekilas-berita .collection-item,
+body.dark-mode #bekerjasama .collection-item,
+body.dark-mode #hubungi-kami .collection-item {
   background-color: #333 !important;
 }
-body.dark-mode nav a {
-  color: #fff !important;   /* link navbar tetap putih */
-}
-body.dark-mode nav ul li {
-  line-height: 64px;
-  margin-left: 10px;
-}
-body.dark-mode nav .switch {
-  display: flex;
-  align-items: center;
-  height: 64px;
-  margin: 0 0 0 20px;
-  transform: scale(0.8);
-}
-body.dark-mode nav .switch label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* Section overrides */
-body.dark-mode #wilayah,
-body.dark-mode #pilihan,
-body.dark-mode #video,
-body.dark-mode #contact {
-  background-color: #222 !important;
-  color: #fff !important;
-}
-
-/* Heading & text overrides */
+body.dark-mode nav a,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6,
 body.dark-mode p,
 body.dark-mode .grey-text,
-body.dark-mode .text-darken-3 {
+body.dark-mode .text-darken-3,
+body.dark-mode .card-panel h5,
+body.dark-mode .card-panel h6,
+body.dark-mode #contact h4,
+body.dark-mode #contact .card-panel h5,
+body.dark-mode #contact .card-panel h6 {
   color: #fff !important;
 }
 
-/* Grey lighten-3 background fix */
-body.dark-mode .grey.lighten-3 {
-  background-color: #222 !important;
-}
-
-/* Sekilas Berita */
+/* Section backgrounds */
+body.dark-mode #pilihan,
+body.dark-mode #video,
+body.dark-mode #contact,
+body.dark-mode #bekerjasama,
+body.dark-mode #hubungi-kami,
+body.dark-mode .collection.with-header,
+body.dark-mode .card-panel,
+body.dark-mode .grey.lighten-3,
 body.dark-mode #sekilas-berita .card,
-body.dark-mode #sekilas-berita .card-content {
+body.dark-mode #sekilas-berita .card-content,
+body.dark-mode #sekilas-berita .collection,
+body.dark-mode #bekerjasama .collection,
+body.dark-mode #hubungi-kami .collection {
   background-color: #222 !important;
   color: #fff !important;
 }
-body.dark-mode #sekilas-berita .card-title {
+
+/* Card */
+body.dark-mode .card {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+body.dark-mode .card-content h6 {
   color: #fff !important;
 }
-body.dark-mode #sekilas-berita .collection {
+
+/* Collection item */
+body.dark-mode .collection-item {
   background-color: #222 !important;
-}
-body.dark-mode #sekilas-berita .collection-item {
-  background-color: #333 !important;
-  color: #fff !important;
+  color: #ddd !important;
   border-bottom: 1px solid #444 !important;
 }
+
+/* Sekilas Berita detail */
 body.dark-mode #sekilas-berita h6,
 body.dark-mode #sekilas-berita p {
   color: #ddd !important;
@@ -140,30 +90,7 @@ body.dark-mode #sekilas-berita a.btn-small {
   color: #fff !important;
 }
 
-/* Collection & Card-panel (Contact, Footer, dll) */
-body.dark-mode .collection.with-header {
-  background-color: #222 !important;
-  color: #fff !important;
-}
-body.dark-mode .collection-header {
-  background-color: #333 !important;
-  color: #fff !important;
-}
-body.dark-mode .collection-item {
-  background-color: #222 !important;
-  color: #ddd !important;
-  border-bottom: 1px solid #444 !important;
-}
-body.dark-mode .card-panel {
-  background-color: #222 !important;
-  color: #fff !important;
-}
-body.dark-mode .card-panel h5,
-body.dark-mode .card-panel h6 {
-  color: #fff !important;
-}
-
-/* Tombol di Berita Utama & Gallery */
+/* Buttons */
 body.dark-mode .btn,
 body.dark-mode .btn-small,
 body.dark-mode .btn-large {
@@ -173,99 +100,149 @@ body.dark-mode .btn.green,
 body.dark-mode .btn-small.green,
 body.dark-mode .btn-large.green {
   background-color: #4caf50 !important;
-  color: #fff !important;
 }
 body.dark-mode .btn.blue,
 body.dark-mode .btn-small.blue,
 body.dark-mode .btn-large.blue {
   background-color: #2196f3 !important;
-  color: #fff !important;
 }
 body.dark-mode .btn:hover,
 body.dark-mode .btn-small:hover,
 body.dark-mode .btn-large:hover {
   filter: brightness(1.1);
-  color: #fff !important;
 }
 
-/* Links (konten biasa, bukan navbar) */
-body.dark-mode a {
-  color: #66ccff;
+/* Contact section */
+body.dark-mode #contact {
+  background-color: #2e2e2e !important;
 }
-body.dark-mode nav a {
-  color: #fff !important;   /* pastikan navbar tetap putih */
+body.dark-mode #contact .card-panel {
+  background-color: #3a3a3a !important;
 }
 
-/* Link YouTube khusus */
+/* Navbar Items & Switch */
+nav ul li {
+  line-height: 64px;
+  margin-left: 10px;
+}
+nav .switch {
+  position: relative;
+  margin-left: 20px;
+  top: -8px;
+  transform: scale(0.8);
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+nav .switch label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+nav .switch .lever {
+  width: 30px;
+  height: 14px;
+  margin: 0 4px;
+}
+nav .switch .lever:after,
+nav .switch input[type=checkbox]:checked + .lever:after {
+  width: 16px;
+  height: 16px;
+}
+
+/* Search Form */
+.search-form input {
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+/* Icons */
+.light-icon,
+.dark-icon,
+nav .switch i.material-icons,
+.switch .material-icons {
+  font-size: 20px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+/* Youtube link khusus */
 body.dark-mode a[href*="youtube.com"] {
-  color: #fff !important;   /* teks YouTube putih */
+  color: #fff !important;
   text-decoration: none;
 }
 
-/* Bekerjasama & Silahkan Hubungi Kami */
-body.dark-mode #bekerjasama,
-body.dark-mode #hubungi-kami {
+/* Sidenav Dark Mode */
+body.dark-mode .sidenav {
   background-color: #222 !important;
   color: #fff !important;
 }
-body.dark-mode #bekerjasama h4,
-body.dark-mode #hubungi-kami h4,
-body.dark-mode #hubungi-kami h5 {
+body.dark-mode .sidenav a,
+body.dark-mode .sidenav .material-icons,
+body.dark-mode .sidenav .dropdown-trigger,
+body.dark-mode .sidenav .user-view .name,
+body.dark-mode .sidenav .user-view .email {
   color: #fff !important;
 }
-body.dark-mode #bekerjasama .collection,
-body.dark-mode #hubungi-kami .collection {
-  background-color: #222 !important;
-  color: #fff !important;
-}
-body.dark-mode #bekerjasama .collection-item,
-body.dark-mode #hubungi-kami .collection-item {
-  background-color: #333 !important;
-  color: #ddd !important;
-  border-bottom: 1px solid #444 !important;
-}
-body.dark-mode #bekerjasama .card-panel,
-body.dark-mode #hubungi-kami .card-panel {
-  background-color: #222 !important;
-  color: #fff !important;
+body.dark-mode .sidenav .user-view .background {
+  background-color: #333 !important; /* ganti background image jika perlu */
 }
 
-/* Contact section background lebih muda */
-body.dark-mode #contact {
-  background-color: #2e2e2e !important;  /* abu-abu lebih muda */
-  color: #fff !important;
-}
-body.dark-mode #contact h4 {
-  color: #fff !important;
-}
-body.dark-mode #contact .card-panel {
-  background-color: #3a3a3a !important;  /* sedikit lebih terang */
-  color: #fff !important;
-}
-body.dark-mode #contact .card-panel h5,
-body.dark-mode #contact .card-panel h6 {
-  color: #fff !important;
+/* Responsive */
+@media (max-width: 600px) {
+  body.dark-mode {
+    background-color: #181717; /* tetap gelap */
+  }
 }
 
-/* Slider image wrapper */
-body.dark-mode .slider img {
-  position: relative;
-  display: block;
+
+/* Default (Light Mode) */
+#berita,
+#wilayah,
+#gallery {
+  background-color: #fff;   /* warna terang default */
+  transition: background-color 0.3s ease;
 }
 
-/* Tambahkan pseudo-element untuk gradiasi bawah */
-body.dark-mode .slider-img {
-  position: relative;
+/* Dark Mode (Semua layar) */
+.dark-mode #berita,
+.dark-mode #wilayah,
+.dark-mode #gallery {
+  background-color: #121212 !important;  /* warna gelap */
+  color: #f5f5f5 !important;
 }
-body.dark-mode .slider-img::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #181717 100%);
+
+/* Judul agar kontras di dark mode */
+.dark-mode #berita h4,
+.dark-mode #wilayah h4,
+.dark-mode #gallery h4 {
+  color: #f5f5f5 !important;
 }
+
+/* Responsive (Mobile) */
+@media (max-width: 600px) {
+  .dark-mode #berita,
+  .dark-mode #wilayah,
+  .dark-mode #gallery {
+    background-color: #121212 !important; /* tetap gelap di layar kecil */
+  }
+}
+
+/* Default (Light Mode) */
+.gallery img {
+  margin-bottom: 15px;
+  background-color: #f0f0f0; /* terang */
+  padding: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode .gallery img {
+  background-color: #2e2e2e; /* abu-abu gelap */
+  
+}
+
+
+
 
 
 
