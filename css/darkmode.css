@@ -1,10 +1,10 @@
 /* Default (Light Mode) */
 .card {
   background-color: #fff;
-  color: #757575;
+  color: #212121 ;
 }
 .card-content h6 {
-  color: #757575;
+  color: #212121 ;
 }
 
 #berita,
@@ -16,11 +16,11 @@
 
 /* Dark Mode Base */
 body.dark-mode {
-  background-color: #181717;
+  background-color: #212121 ;
   color: #fff;
 }
 body.dark-mode a {
-  color: #66ccff;
+  color: white;
 }
 
 /* Navbar & Header */
@@ -29,7 +29,7 @@ body.dark-mode .collection-header,
 body.dark-mode #sekilas-berita .collection-item,
 body.dark-mode #bekerjasama .collection-item,
 body.dark-mode #hubungi-kami .collection-item {
-  background-color: #333 !important;
+  background-color: #212121  !important;
 }
 body.dark-mode nav a,
 body.dark-mode h4,
@@ -60,13 +60,13 @@ body.dark-mode #sekilas-berita .card-content,
 body.dark-mode #sekilas-berita .collection,
 body.dark-mode #bekerjasama .collection,
 body.dark-mode #hubungi-kami .collection {
-  background-color: #222 !important;
+  background-color: #212121  !important;
   color: #fff !important;
 }
 
 /* Card */
 body.dark-mode .card {
-  background-color: #3a3a3a;
+  background-color: #212121 ;
   color: #fff;
 }
 body.dark-mode .card-content h6 {
@@ -75,9 +75,9 @@ body.dark-mode .card-content h6 {
 
 /* Collection item */
 body.dark-mode .collection-item {
-  background-color: #222 !important;
+  background-color: #212121  !important;
   color: #ddd !important;
-  border-bottom: 1px solid #444 !important;
+  border-bottom: 1px solid #212121  !important;
 }
 
 /* Sekilas Berita detail */
@@ -101,10 +101,10 @@ body.dark-mode .btn-small.green,
 body.dark-mode .btn-large.green {
   background-color: #4caf50 !important;
 }
-body.dark-mode .btn.blue,
-body.dark-mode .btn-small.blue,
-body.dark-mode .btn-large.blue {
-  background-color: #2196f3 !important;
+body.dark-mode .btn.grey,
+body.dark-mode .btn-small.grey,
+body.dark-mode .btn-large.grey {
+  background-color: #fff !important;
 }
 body.dark-mode .btn:hover,
 body.dark-mode .btn-small:hover,
@@ -185,13 +185,13 @@ body.dark-mode .sidenav .user-view .email {
   color: #fff !important;
 }
 body.dark-mode .sidenav .user-view .background {
-  background-color: #333 !important; /* ganti background image jika perlu */
+  background-color: #212121  !important; /* ganti background image jika perlu */
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   body.dark-mode {
-    background-color: #181717; /* tetap gelap */
+    background-color: #212121 ; /* tetap gelap */
   }
 }
 
@@ -208,7 +208,7 @@ body.dark-mode .sidenav .user-view .background {
 .dark-mode #berita,
 .dark-mode #wilayah,
 .dark-mode #gallery {
-  background-color: #121212 !important;  /* warna gelap */
+  background-color: #212121  !important;  /* warna gelap */
   color: #f5f5f5 !important;
 }
 
@@ -224,7 +224,7 @@ body.dark-mode .sidenav .user-view .background {
   .dark-mode #berita,
   .dark-mode #wilayah,
   .dark-mode #gallery {
-    background-color: #121212 !important; /* tetap gelap di layar kecil */
+    background-color: #212121 !important; /* tetap gelap di layar kecil */
   }
 }
 
