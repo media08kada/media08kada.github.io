@@ -196,8 +196,11 @@ section, footer {
 
 /* VIDEO */
 .thumbnail {
-  left: 65%;
+  display: flex;
+  justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .thumbnail .item {
@@ -212,10 +215,27 @@ section, footer {
   text-align: center;
 }
 
+/* Gambar video responsif */
 .video-wrapper img {
   display: block;
+  width: 100%;       /* isi penuh container */
+  height: auto;      /* jaga proporsi */
   padding: 15px;
   box-sizing: border-box;
+}
+
+/* Responsif di layar kecil */
+@media (max-width: 600px) {
+  .thumbnail .item {
+    width: 70px;   /* lebih kecil di HP */
+    height: 100px;
+  }
+
+  .video-wrapper,
+  .video-description {
+    max-width: 100%; /* biar ikut lebar layar */
+    padding: 0 10px; /* beri sedikit ruang kiri-kanan */
+  }
 }
 
 /* SCROLL TO TOP BUTTON */
