@@ -404,7 +404,48 @@ body.dark-mode footer.green.darken-3 {
   vertical-align: middle;
 }
 
-/* Slider img dark mode */
+/* Default tanpa border */
+.navbar-fixed nav {
+  border-bottom: none;
+}
+
+/* Saat dark mode aktif */
+body.dark-mode .navbar-fixed nav {
+  border-bottom: 2px solid #513c28;
+}
+
+.navbar-fixed nav {
+  transition: border-bottom 0.3s ease;
+}
+
+.slider-dark img {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../img/header-bg1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;   /* biar gambar penuh */
+  background-position: center;
+  position: relative;
+
+  /* Efek gradasi bawah */
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+
+
+
+
+
+
+
+
 
 
 

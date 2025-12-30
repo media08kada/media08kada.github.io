@@ -75,9 +75,8 @@
       <div class="nav-wrapper">
         <!-- Logo -->
         <a href="#home" class="navbar-brand">
-          <img src="/img/partner/MediaKelapadua.png" width="40" height="40" />
-        </a>
-
+          <img src="/img/partner/MediaKelapadua.png" width="40" height="40" class="d-inline-block align-text-top"/></a>
+        
         <!-- Trigger menu mobile -->
         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
           <i class="material-icons">menu</i></a>
@@ -85,8 +84,7 @@
         <!-- Tombol search (selalu terlihat) -->
       <div class="navbar-extra right" style="margin-right: 2px;">
         <a href="javascript:void(0)" id="search-button">
-          <i class="material-icons">search</i>
-        </a>
+          <i class="material-icons">search</i></a>
       </div>
       
       <!-- Search Form -->
@@ -96,8 +94,7 @@
           <i class="material-icons">close</i>
         </button>
       </form>
-      
-      
+          
       <!-- Switch di kiri khusus mobile -->
       <button id="darkToggle"></button>
         <div class="switch hide-on-large-only right" style="margin-top: 5px;">
@@ -223,33 +220,36 @@
             <li><a href="survey.html">Survery Pelayanan</a></li>
           </ul>
                          
-      <!-- Slider Start -->
-      <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="slider/img/Kelapa-bg1.jpg">
-              <div class="caption center-align">
-                <h3>Media Kelapa Dua</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Kampung Kite Kalo <br>Bukan Kite yang Ngurusin Siapa Lagi
-                </h5>
-              </div>
-            </li>
-            <li>
-              <img src="slider/img/Ondel-bg1.jpeg">
-              <div class="caption center-align">
-                <h3>Media Kelapa Dua</h3>
-                <h5 class="light grey-text text-lighten-3">Jakarta Baru, Jakarta Maju</h5>
-              </div>
-            </li>
-            <li>
-              <img src="slider/img/Kota-bg1.jpg">
-              <div class="caption center-align">
-                <h3>Media Kelapa Dua</h3>
-                <h5 class="light grey-text text-lighten-3">Maju Kotanya, Bahagia Warganya</h5>
-              </div>
-            </li>
-          </ul>
+<!-- Slider Start -->
+<div class="slider" id="sliderhero">
+  <ul class="slides">
+    <li>
+      <img src="slider/img/Kelapa-bg1.jpg" data-dark="slider/img/Kelapa-bg1-dark.jpeg">
+      <div class="caption center-align">
+        <h3>Media Kelapa Dua</h3>
+        <h5 class="light grey-text text-lighten-3">
+          Kampung Kite Kalo <br>Bukan Kite yang Ngurusin Siapa Lagi
+        </h5>
+      </div>
+    </li>
+    <li>
+      <img src="slider/img/Ondel-bg1.jpeg" data-dark="slider/img/Ondel-bg1-dark.jpeg">
+      <div class="caption center-align">
+        <h3>Media Kelapa Dua</h3>
+        <h5 class="light grey-text text-lighten-3">Jakarta Baru, Jakarta Maju</h5>
+      </div>
+    </li>
+    <li>
+      <img src="slider/img/Kota-bg1.jpg" data-dark="slider/img/Kota-bg1-dark.jpeg">
+      <div class="caption center-align">
+        <h3>Media Kelapa Dua</h3>
+        <h5 class="light grey-text text-lighten-3">Maju Kotanya, Bahagia Warganya</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
 
     <!-- Click Only FAB -->
         <div class="fixed-action-btn fab-inside-slider">
@@ -941,10 +941,43 @@ window.onload = function() {
 };
 </script>
 
+
+<script>
+  // pergantian img slider
+  function toggleDarkMode(isDark) {
+    const sliderImages = document.querySelectorAll('#sliderhero .slides li img');
+    sliderImages.forEach(img => {
+      const originalSrc = img.getAttribute('src');
+      const darkSrc = img.getAttribute('data-dark');
+      if (isDark) {
+        img.setAttribute('src', darkSrc);
+      } else {
+        // ambil kembali nama file asli dari atribut src default
+        const lightSrc = originalSrc.replace('-dark', '');
+        img.setAttribute('src', lightSrc);
+      }
+    });
+  }
+
+  // Contoh: toggle berdasarkan class body
+  function checkDarkMode() {
+    const isDark = document.body.classList.contains('dark-mode');
+    toggleDarkMode(isDark);
+  }
+
+  // Jalankan saat halaman load
+  document.addEventListener('DOMContentLoaded', checkDarkMode);
+
+  // Jalankan ulang setiap kali dark mode diubah
+  const observer = new MutationObserver(checkDarkMode);
+  observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+</script>
+
   <script src="js/script.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/search.js"></script>
   <script src="js/page.js"></script>
+
   
   <script>
       feather.replace();
