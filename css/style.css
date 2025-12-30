@@ -381,6 +381,22 @@ section, footer {
   display: inline-block;  /* pastikan tiap item inline */
 }
 
+/* Merubah Mode dark toggle secara global */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* contoh tambahan */
+table.dark-mode {
+  border-color: #ffffff;
+}
+
 
 
 

@@ -302,7 +302,7 @@ nav .container {
 }
 
 body.dark-mode nav.green.darken-3 {
-  background-color: #212121 !important; /* hitam full */
+  background-color:#424242 !important; /* hitam full */
 }
 
 body.dark-mode nav .container {
@@ -391,4 +391,13 @@ body.dark-mode footer.green.darken-3 {
   background-color: #8f6240 !important;
   color: #fff !important;
 }
+
+/* Layar Mobile */
+.nav-wrapper .switch {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
 

@@ -35,23 +35,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/darkmode.css">
     <title>mediakelapadua</title>
   </head>
   <body id="home" class="scrollspy">
 
-    <!-- Navbar Start -->
+<!-- Navbar Start -->
     <div class="navbar-fixed">
       <nav class="green darken-3">
         <div class="container">
           <div class="nav-wrapper">
             <a href="../index.html" class="brand-logo" style="padding: 10px;">
-              <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
+              <img src="/img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
             </a>
+
+        <!-- Switch di kiri khusus mobile -->
+        <div class="switch hide-on-large-only" style="margin-left: 2px;">
+          <label>
+            <i class="material-icons">wb_sunny</i>
+            <input type="checkbox" id="darkmodetoggle-mobile">
+            <span class="lever"></span>
+            <i class="material-icons">brightness_3</i>
+          </label>
+        </div>
+
             <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
               <i class="material-icons large">home</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
+              </a>
+              <ul class="right hide-on-med-and-down">
               <li><a href="../index.html">Beranda</a></li>
+              <li>
+              <div class="switch">
+              <label>
+              <i class="material-icons">wb_sunny</i>
+              <input type="checkbox" id="darkmodetoggle">
+              <span class="lever"></span>
+              <i class="material-icons">brightness_3</i>
+              </label>
+            </div>
+          </li>
             </ul>
           </div>
         </div>
@@ -103,25 +125,6 @@
 
     <!-- JavaScript -->
     <script type="text/javascript" src="../js/materialize.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Dropdown
-        var dropdowns = document.querySelectorAll('.dropdown-trigger');
-        M.Dropdown.init(dropdowns, {
-          coverTrigger: false,
-          constrainWidth: false
-        });
-
-        // ScrollSpy
-        var scrollspy = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(scrollspy, {
-          scrollOffset: 50
-        });
-
-        // Sidenav
-        var sidenav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sidenav);
-      });
-    </script>
+    <script src="../js/darkmode.js"></script>
   </body>
 </html>
