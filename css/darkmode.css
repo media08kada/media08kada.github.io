@@ -398,6 +398,20 @@ body.dark-mode footer.green.darken-3 {
   align-items: center;
 }
 
+/* icon lebih dekat switch */
+.switch label i.material-icons {
+  font-size: 18px;       /* bisa diperkecil agar lebih proporsional */
+  margin: 0 1px;         /* jarak kiri/kanan lebih kecil */
+  vertical-align: middle;
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
 
 
 
