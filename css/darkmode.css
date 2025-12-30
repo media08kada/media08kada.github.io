@@ -128,7 +128,7 @@ nav ul li {
 nav .switch {
   position: relative;
   margin-left: 20px;
-  top: -8px;
+  top: -10px;
   transform: scale(0.8);
   display: flex;
   align-items: center;
@@ -144,11 +144,34 @@ nav .switch .lever {
   height: 14px;
   margin: 0 4px;
 }
-nav .switch .lever:after,
-nav .switch input[type=checkbox]:checked + .lever:after {
-  width: 16px;
-  height: 16px;
+
+/* Warna dasar track (abu-abu) */
+nav .switch .lever {
+  background-color: grey !important;
+  border-radius: 14px;
+  position: relative;
 }
+
+/* Lingkaran (knob) warna putih */
+nav .switch .lever:after {
+  background-color: white !important;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: -px;
+  left: -3px;
+}
+
+/* Saat switch aktif (posisi dark) */
+nav .switch input[type=checkbox]:checked + .lever {
+  background-color: grey !important;
+}
+
+nav .switch input[type=checkbox]:checked + .lever:after {
+  background-color: white !important;
+  left: 13px; /* geser knob ke kanan */
+}
+
 
 /* Search Form */
 .search-form input {
