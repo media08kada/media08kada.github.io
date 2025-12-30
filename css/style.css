@@ -367,6 +367,20 @@ section, footer {
   .gallery img { margin-bottom: 20px; }
 }
 
+/* Sosial-Link */
+.social-links {
+  list-style: none;       /* hilangkan bullet */
+  padding: 0;
+  margin: 10px 0 0 0; 
+  display: flex;          /* sejajarkan horizontal */
+  justify-content: center;/* posisikan di tengah */
+  gap: 10px;              /* jarak antar ikon */
+}
+
+.social-links li {
+  display: inline-block;  /* pastikan tiap item inline */
+}
+
 
 
 
