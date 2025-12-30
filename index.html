@@ -78,8 +78,31 @@
           <img src="/img/partner/MediaKelapadua.png" width="40" height="40" />
         </a>
 
-        <!-- Switch di kiri khusus mobile -->
-        <div class="switch hide-on-large-only right" style="margin-top: 2px;">
+
+        <!-- Trigger menu mobile -->
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+          <i class="material-icons">menu</i></a>
+
+        <!-- Tombol search (selalu terlihat) -->
+      <div class="navbar-extra right" style="margin-right: 2px;">
+        <a href="javascript:void(0)" id="search-button">
+          <i class="material-icons">search</i>
+        </a>
+      </div>
+
+      
+      <!-- Search Form -->
+      <form class="search-form">
+        <input type="text" placeholder="Search here..." />
+        <button type="submit">
+          <i class="material-icons">close</i>
+        </button>
+      </form>
+      
+      
+      <!-- Switch di kiri khusus mobile -->
+      <button id="darkToggle"></button>
+        <div class="switch hide-on-large-only right" style="margin-top: 5px;">
           <label>
             <i class="material-icons">wb_sunny</i>
             <input type="checkbox" id="darkmodetoggle-mobile">
@@ -87,27 +110,6 @@
             <i class="material-icons">brightness_3</i>
           </label>
         </div>
-
-        <!-- Trigger menu mobile -->
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-          <i class="material-icons">menu</i></a>
-
-        <!-- Tombol search (selalu terlihat) -->
-      <div class="navbar-extra right">
-        <a href="javascript:void(0)" id="search-button">
-          <i class="material-icons">search</i>
-        </a>
-      </div>
-
-      <button id="darkToggle"></button>
-
-        <!-- Search Form -->
-        <form class="search-form">
-          <input type="text" placeholder="Search here..." />
-          <button type="submit">
-            <i class="material-icons">close</i>
-          </button>
-        </form>
 
        <!-- Menu desktop -->
         <ul class="right hide-on-med-and-down">
