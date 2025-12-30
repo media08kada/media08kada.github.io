@@ -89,6 +89,8 @@
         </a>
       </div>
 
+      <button id="darkToggle"></button>
+
         <!-- Search Form -->
         <form class="search-form">
           <input type="text" placeholder="Search here..." />
@@ -379,13 +381,14 @@
          <ul class="collection">
                         
         <!-- Item 1 -->
-        <li class="collection-item">
+        <li class="collection-item" id="darkToggle">
           <img src="img/modal/news1.jpg" class="circle responsive-img materialboxed z-depth-3" style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
           <h6>Musrenbang Tingkat Walikota Jakarta Barat</h6>
           <p style="text-align: justify">
            MediaKada | Pemerintah Kota Administrasi Jakarta Barat menyelenggarakan Musyawarah Perencanaan Pembangunan (Musrenbang) Tingkat Kota untuk Tahun Anggaran 2026. Acara berlangsung di Ruang Ali Sadikin, Kantor Walikota Jakarta Barat, pada Kamis (18/12/2025).</p>
            <div class="lift-align">
-           <a class="waves-effect waves-light btn-small green modal-trigger" href="berita-wilayah/musrenbang-tingkat-walikota-jakarta-barat.htm">continue</a></div></li>
+           <a class="waves-effect waves-light btn-small green modal-trigger" href="berita-wilayah/musrenbang-tingkat-walikota-jakarta-barat.htm">continue</a>
+          </div></li>
                         
            <!-- Item 2 -->
            <li class="collection-item">
@@ -897,6 +900,16 @@
       });
     }
   });
+</script>
+
+<script>
+  // Contoh toggle dark mode
+// Contoh tombol toggle
+document.getElementById("darkToggle").addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+});
+
+
 </script>
 
   <script src="js/script.js"></script>

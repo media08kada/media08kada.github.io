@@ -291,17 +291,104 @@ body.dark-mode .gallery img {
   margin-top: 10px;   /* geser ke bawah */
 }
 
+/* Perubahan Warna pada model dark */
+/* Navbar */
+   nav.green.darken-3 {
+  background-color: #2e7d32; /* hijau */
+}
 
+nav .container {
+  background-color: transparent; /* biar nav full */
+}
 
+body.dark-mode nav.green.darken-3 {
+  background-color: #212121 !important; /* hitam full */
+}
 
+body.dark-mode nav .container {
+  background-color: transparent;
+}
 
+/* Button Small */
+.btn-small.green {
+  background-color: #2e7d32; /* hijau bawaan */
+}
 
+body.dark-mode .btn-small.green {
+  background-color: #b6895b !important;
+}
 
+body.dark-mode .btn-small.green:hover,
+body.dark-mode .btn-small.green:focus,
+body.dark-mode .btn-small.green:active {
+  background-color: #a6784d !important; /* lebih gelap untuk hover */
+}
 
+/* Card */
+.card.green.darken-1 {
+  background-color: #2e7d32; /* hijau bawaan */
+}
 
+body.dark-mode .card.green.darken-1 {
+  background-color: #a6784d !important;
+  color: #fff !important; /* teks putih agar kontras */
+}
 
+/* Floating Button */
+.btn-floating.btn-medium.green.darken-2 {
+  background-color: #1b5e20; /* hijau bawaan */
+}
 
+body.dark-mode .btn-floating.btn-medium.green.darken-2 {
+  background-color: #a6784d !important;
+  color: #fff !important; /* ikon putih */
+}
 
+body.dark-mode .btn-floating.btn-medium.green.darken-2:hover,
+body.dark-mode .btn-floating.btn-medium.green.darken-2:focus,
+body.dark-mode .btn-floating.btn-medium.green.darken-2:active {
+  background-color: #8f6240 !important; /* lebih gelap untuk hover */
+}
 
+/* Button Default */
+.waves-effect.btn.green {
+  background-color: #2e7d32; /* hijau bawaan */
+}
 
+body.dark-mode .waves-effect.btn.green {
+  background-color: #a6784d !important;
+  color: #fff !important;
+}
+
+body.dark-mode .waves-effect.btn.green:hover,
+body.dark-mode .waves-effect.btn.green:focus,
+body.dark-mode .waves-effect.btn.green:active {
+  background-color: #8f6240 !important;
+}
+
+/* Footer Buttons */
+footer .btn-floating.green {
+  background-color: #2e7d32; /* hijau bawaan */
+}
+
+body.dark-mode footer .btn-floating.green {
+  background-color: #a6784d !important;
+  color: #fff !important;
+}
+
+body.dark-mode footer .btn-floating.green:hover,
+body.dark-mode footer .btn-floating.green:focus,
+body.dark-mode footer .btn-floating.green:active {
+  background-color: #8f6240 !important;
+}
+
+/* Footer Background */
+footer.green.darken-3 {
+  background-color: #2e7d32; /* hijau bawaan */
+}
+
+body.dark-mode footer.green.darken-3 {
+  background-color: #8f6240 !important;
+  color: #fff !important;
+}
 
