@@ -10,7 +10,7 @@
 #berita,
 #wilayah,
 #gallery {
-  background-color: #fff; /* atau sesuai tema Anda */
+  background-color: #fff; 
   transition: background-color 0.3s ease;
 }
 
@@ -66,7 +66,7 @@ body.dark-mode #hubungi-kami .collection {
 
 /* Card */
 body.dark-mode .card {
-  background-color: #212121 ;
+  background-color: #3a3a3a ;
   color: #fff;
 }
 body.dark-mode .card-content h6 {
@@ -185,7 +185,7 @@ body.dark-mode .sidenav .user-view .email {
   color: #fff !important;
 }
 body.dark-mode .sidenav .user-view .background {
-  background-color: #212121  !important; /* ganti background image jika perlu */
+  background-color: #212121  !important; 
 }
 
 /* Responsive */
@@ -194,7 +194,6 @@ body.dark-mode .sidenav .user-view .background {
     background-color: #212121 ; /* tetap gelap */
   }
 }
-
 
 /* Default (Light Mode) */
 #berita,
@@ -400,10 +399,26 @@ body.dark-mode footer.green.darken-3 {
 
 /* icon lebih dekat switch */
 .switch label i.material-icons {
-  font-size: 18px;       /* bisa diperkecil agar lebih proporsional */
-  margin: 0 1px;         /* jarak kiri/kanan lebih kecil */
+  font-size: 18px;      
+  margin: 0 1px;        
   vertical-align: middle;
 }
+
+/* Slider img dark mode */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
