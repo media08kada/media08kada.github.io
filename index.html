@@ -75,27 +75,30 @@
       <div class="nav-wrapper">
         <!-- Logo -->
         <a href="#home" class="navbar-brand">
-          <img src="/img/partner/MediaKelapadua.png" width="40" height="40" class="d-inline-block align-text-top"/></a>
+          <img src="/img/partner/MediaKelapadua.png" width="40" height="40" class="d-inline-block align-text-top"/>
+        </a>
         
         <!-- Trigger menu mobile -->
         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-          <i class="material-icons">menu</i></a>
+          <i class="material-icons">menu</i>
+        </a>
 
-        <!-- Tombol search (selalu terlihat) -->
-      <div class="navbar-extra right" style="margin-right: 2px;">
-        <a href="javascript:void(0)" id="search-button">
-          <i class="material-icons">search</i></a>
-      </div>
-      
-      <!-- Search Form -->
-      <form class="search-form">
-        <input type="text" placeholder="Search here..." />
-        <button type="submit">
-          <i class="material-icons">close</i>
-        </button>
-      </form>
-          
-      <!-- Menu desktop -->
+        <!-- Tombol search -->
+        <div class="navbar-extra right" style="margin-right: 2px;">
+          <a href="javascript:void(0)" id="search-button">
+            <i class="material-icons">search</i>
+          </a>
+        </div>
+        
+        <!-- Search Form -->
+        <form class="search-form">
+          <input type="text" placeholder="Search here..." />
+          <button type="submit">
+            <i class="material-icons">close</i>
+          </button>
+        </form>
+        
+        <!-- Menu desktop -->
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Beranda</a></li>
           <li><a class="dropdown-trigger" href="#berita" data-target="dropdown1">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -107,6 +110,7 @@
             <div class="switch small">
               <label>
                 <i class="material-icons">wb_sunny</i>
+                <!-- default unchecked -->
                 <input type="checkbox" id="darkmodetoggle">
                 <span class="lever"></span>
                 <i class="material-icons">brightness_3</i>
@@ -247,10 +251,6 @@
               <li><a href="https://www.youtube.com/@KosongDelapan102" class="btn-floating z-depth-3 red darken-3">
                 <i class="fa-brands fa-youtube"></i></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61569679397521" class="btn-floating z-depth-3 blue darken-4 center"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mediakosongdelapan@gmail.com&su=Halo&body=Ini+pesan+share" 
-                class="btn-floating z-depth-3 amber accent-3" target="_blank">
-               <i class="material-icons">mail</i></a></li>
                <li>
                 <a href="https://api.whatsapp.com/send?text=https://mediakelapadua.web.id" 
                 target="_blank" 
@@ -859,112 +859,11 @@
  });
    </script>
 
-    <!-- JavaScript Dark Mode -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Inisialisasi sidenav Materialize
-    var elems = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(elems);
-
-    // Fungsi toggle dark mode
-    function setDarkMode(isDark) {
-      if (isDark) {
-        document.body.classList.add('dark-mode');
-      } else {
-        document.body.classList.remove('dark-mode');
-      }
-    }
-
-    // Event listener untuk switch besar
-    const toggleDesktop = document.getElementById('darkmodetoggle');
-    if (toggleDesktop) {
-      toggleDesktop.addEventListener('change', function() {
-        setDarkMode(this.checked);
-        // Sinkronkan dengan toggle mobile
-        const toggleMobile = document.getElementById('darkmodetoggle-mobile');
-        if (toggleMobile) toggleMobile.checked = this.checked;
-      });
-    }
-
-    // Event listener untuk switch kecil
-    const toggleMobile = document.getElementById('darkmodetoggle-mobile');
-    if (toggleMobile) {
-      toggleMobile.addEventListener('change', function() {
-        setDarkMode(this.checked);
-        // Sinkronkan dengan toggle desktop
-        const toggleDesktop = document.getElementById('darkmodetoggle');
-        if (toggleDesktop) toggleDesktop.checked = this.checked;
-      });
-    }
-  });
-</script>
-
-<script>
-  // Contoh toggle dark mode
-// Contoh tombol toggle
-document.getElementById("darkToggle").addEventListener("click", function() {
-  document.body.classList.toggle("dark-mode");
-});
-</script>
-
-<script>
-  // darkmode.js
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-
-  // simpan preferensi ke localStorage
-  if (document.body.classList.contains("dark-mode")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-}
-
-// cek preferensi saat halaman dimuat
-window.onload = function() {
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-  }
-};
-</script>
-
-
-<script>
-  // pergantian img slider
-  function toggleDarkMode(isDark) {
-    const sliderImages = document.querySelectorAll('#sliderhero .slides li img');
-    sliderImages.forEach(img => {
-      const originalSrc = img.getAttribute('src');
-      const darkSrc = img.getAttribute('data-dark');
-      if (isDark) {
-        img.setAttribute('src', darkSrc);
-      } else {
-        // ambil kembali nama file asli dari atribut src default
-        const lightSrc = originalSrc.replace('-dark', '');
-        img.setAttribute('src', lightSrc);
-      }
-    });
-  }
-
-  // Contoh: toggle berdasarkan class body
-  function checkDarkMode() {
-    const isDark = document.body.classList.contains('dark-mode');
-    toggleDarkMode(isDark);
-  }
-
-  // Jalankan saat halaman load
-  document.addEventListener('DOMContentLoaded', checkDarkMode);
-
-  // Jalankan ulang setiap kali dark mode diubah
-  const observer = new MutationObserver(checkDarkMode);
-  observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-</script>
-
-
   <script src="js/script.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/search.js"></script>
   <script src="js/page.js"></script>
+  <script src="js/darkmode.js"></script>
   
   <script>
       feather.replace();

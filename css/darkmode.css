@@ -461,6 +461,15 @@ body.dark-mode .navbar-fixed nav {
   mask-size: cover;
 }
 
+ body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  body.dark-mode nav {
+    background-color: #333 !important;
+  }
+
+
 
 
 

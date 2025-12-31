@@ -127,17 +127,7 @@ fetch("modals.html")
     });
   }
 
-  const darkmodetoggle = document.getElementById('darkmodetoggle');
-  const body = document.body;
-
-  darkmodetoggle.addEventListener('change', () => {
-    if(darkmodetoggle.checked) {
-      body.classList.add('dark.mode')
-    } else {
-      body.classList.remove('dark.mode')
-    }
-  })
-
+  
 
   
 
