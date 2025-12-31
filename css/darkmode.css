@@ -158,7 +158,7 @@ nav .switch .lever:after {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  top: -px;
+  top: 4px;
   left: -3px;
 }
 
@@ -303,7 +303,7 @@ body.dark-mode .gallery img {
 
   /* Ikon kiri/kanan juga bisa diperbesar */
   .switch label i.material-icons {
-    font-size: 28px; /* default biasanya 18–24px */
+    font-size: 25px; /* default biasanya 18–24px */
     vertical-align: middle;
   }
 }
@@ -460,6 +460,7 @@ body.dark-mode .navbar-fixed nav {
   mask-repeat: no-repeat;
   mask-size: cover;
 }
+
 
 
 

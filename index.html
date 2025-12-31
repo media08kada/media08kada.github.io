@@ -95,25 +95,13 @@
         </button>
       </form>
           
-      <!-- Switch di kiri khusus mobile -->
-      <button id="darkToggle"></button>
-        <div class="switch hide-on-large-only right" style="margin-top: 5px;">
-          <label>
-            <i class="material-icons">wb_sunny</i>
-            <input type="checkbox" id="darkmodetoggle-mobile">
-            <span class="lever"></span>
-            <i class="material-icons">brightness_3</i>
-          </label>
-        </div>
-
-       <!-- Menu desktop -->
+      <!-- Menu desktop -->
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Beranda</a></li>
           <li><a class="dropdown-trigger" href="#berita" data-target="dropdown1">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="#contact">Contact</a></li>
-
           <!-- Dark Mode Toggle -->
           <li>
             <div class="switch small">
@@ -245,11 +233,8 @@
         <h3>Media Kelapa Dua</h3>
         <h5 class="light grey-text text-lighten-3">Maju Kotanya, Bahagia Warganya</h5>
       </div>
-    </li>
-  </ul>
-</div>
-
-
+      </li>
+    </ul>
 
     <!-- Click Only FAB -->
         <div class="fixed-action-btn fab-inside-slider">
@@ -272,8 +257,10 @@
                 class="btn-floating z-depth-3 green lighten-1">
               <i class="fa-brands fa-whatsapp"></i></a></li>
           </ul>
-        </div>
-      </div>
+        </ul>
+     </div>
+   </div>
+    
     <!-- Click Only FAB End -->
     <!-- Slider End -->
     
@@ -973,11 +960,11 @@ window.onload = function() {
   observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 </script>
 
+
   <script src="js/script.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/search.js"></script>
   <script src="js/page.js"></script>
-
   
   <script>
       feather.replace();
