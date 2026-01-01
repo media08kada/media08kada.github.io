@@ -125,6 +125,7 @@ nav ul li {
   line-height: 64px;
   margin-left: 10px;
 }
+
 nav .switch {
   position: relative;
   margin-left: 20px;
@@ -134,32 +135,35 @@ nav .switch {
   align-items: center;
   height: 64px;
 }
+
 nav .switch label {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-nav .switch .lever {
-  width: 30px;
-  height: 14px;
-  margin: 0 4px;
-}
 
-/* Warna dasar track (abu-abu) */
 nav .switch .lever {
+  width: 34px;
+  height: 24px; /* track lebih tinggi agar knob muat */
   background-color: grey !important;
-  border-radius: 14px;
+  border-radius: 24px;
   position: relative;
 }
 
-/* Lingkaran (knob) warna putih */
 nav .switch .lever:after {
+  content: "";
   background-color: white !important;
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  top: 4px;
-  left: -3px;
+  position: absolute;
+  top: 2px;   /* knob turun sedikit dari atas */
+  left: 2px;  /* geser sedikit biar pas */
+}
+
+/* Saat switch aktif (posisi dark) */
+nav .switch input[type=checkbox]:checked + .lever:after {
+  left: 12px; /* knob geser ke kanan */
 }
 
 /* Saat switch aktif (posisi dark) */
@@ -452,22 +456,24 @@ body.dark-mode .navbar-fixed nav {
   position: relative;
 
   /* Efek gradasi bawah */
-  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(rgb(22, 22, 22) 85%, rgba(0, 0, 0, 0));
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
 
-  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgb(24, 24, 24) 85%, rgba(0, 0, 0, 0));
   mask-repeat: no-repeat;
   mask-size: cover;
 }
 
  body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #212121;
+    color: #fff;
   }
   body.dark-mode nav {
     background-color: #333 !important;
   }
+
+  
 
 
 

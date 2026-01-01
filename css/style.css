@@ -385,19 +385,18 @@ section, footer {
 /* Merubah Mode dark toggle secara global */
 body {
   background-color: #ffffff;
-  color: #000000;
+  color: #121212;
 }
 
 body.dark-mode {
   background-color: #121212;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* contoh tambahan */
 table.dark-mode {
-  border-color: #ffffff;
+  border-color: #fff;
 }
-
 
 
 
