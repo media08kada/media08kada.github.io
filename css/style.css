@@ -398,6 +398,50 @@ table.dark-mode {
   border-color: #fff;
 }
 
+/* Atur jarak antar section */
+#wilayah,
+#gallery,
+#contact {
+  margin: 2px 0;
+  padding: 2px 8px;
+}
+
+/* Row spacing */
+.row {
+  margin-bottom: 10px;
+}
+
+/* Heading & paragraph spacing */
+h4, h5 {
+  margin: 6px 0;
+}
+p {
+  margin: 2px 0 6px;
+  line-height: 1.3;
+}
+
+.card {
+  margin: 20px; /* beri jarak antar card */
+}
+
+section {
+  margin-top: 20px;   /* beri ruang antar section */
+  margin-bottom: 20px;
+}
+
+.gallery h4,
+.video {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
