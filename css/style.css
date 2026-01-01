@@ -82,14 +82,52 @@ section, footer {
   margin: 110px 0 15px;
 }
 
-.slider .caption h5 { margin-top: 10px; }
+.slider .caption h5 {
+  margin-top: 10px;
+}
+
+/* Responsive untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  .slider .caption h3 {
+    font-size: 1.4rem;   /* lebih kecil di mobile */
+    margin: 60px 0 10px; /* margin disesuaikan agar tetap center */
+  }
+
+  .slider .caption h5 {
+    font-size: 0.9rem;   /* lebih kecil di mobile */
+    margin-top: 5px;
+  }
+
+  .slider .caption {
+    top: 85%;            /* sedikit naik agar tetap proporsional */
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Responsive untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  .slider .caption {
+    top: 92%;             /* lebih turun dibanding sebelumnya */
+    transform: translate(-50%, -50%);
+  }
+
+  .slider .caption h3 {
+    font-size: 2rem;    /* ukuran lebih kecil */
+    margin: 100px 0 15px;  /* margin atas lebih besar agar turun */
+  }
+
+  .slider .caption h5 {
+    font-size: 1rem;    /* ukuran lebih kecil */
+    margin-top: 15px;     /* tambah jarak agar turun */
+  }
+}
 
 /* BERITA SLIDER */
 .berita-slider {
   margin: 0 20px 0 0;
   display: flex;
   align-items: flex-start;
-   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 #slidernews { margin-top: 0 !important; }
@@ -116,15 +154,15 @@ section, footer {
 .square-img {
   width: 100%;
   display: block;
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;   /* menjaga rasio 1:1 */
+  object-fit: cover;     /* isi penuh tanpa distorsi */
 }
 
 @supports not (aspect-ratio: 1 / 1) {
   .slider .berita-slides li {
     position: relative;
     width: 100%;
-    padding-top: 100%; /* 1:1 ratio */
+    padding-top: 100%; /* fallback 1:1 ratio */
   }
 }
 
@@ -139,6 +177,7 @@ section, footer {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .col h5 {
@@ -154,6 +193,8 @@ section, footer {
 #show-more-btn { margin-top: 10px; }
 
 /* CARD & COLLECTION */
+.card { margin: 20px; }
+
 .card-panel { min-height: 200px; }
 
 .card-panel img {
@@ -186,7 +227,7 @@ section, footer {
 .no-margin { margin: 0 !important; }
 #wilayah h3 { text-align: center; }
 
-/* GALLERY  */
+/* GALLERY */
 .hidden { display: none; }
 
 .gallery img {
@@ -194,6 +235,9 @@ section, footer {
   background-color: #f0f0f0;
   padding: 10px;
 }
+
+.gallery h4,
+.video { margin-bottom: 20px; }
 
 /* VIDEO */
 .thumbnail {
@@ -216,27 +260,12 @@ section, footer {
   text-align: center;
 }
 
-/* Gambar video responsif */
 .video-wrapper img {
   display: block;
-  width: 100%;       /* isi penuh container */
-  height: auto;      /* jaga proporsi */
+  width: 100%;
+  height: auto;
   padding: 15px;
   box-sizing: border-box;
-}
-
-/* Responsif di layar kecil */
-@media (max-width: 600px) {
-  .thumbnail .item {
-    width: 70px;   /* lebih kecil di HP */
-    height: 100px;
-  }
-
-  .video-wrapper,
-  .video-description {
-    max-width: 100%; /* biar ikut lebar layar */
-    padding: 0 10px; /* beri sedikit ruang kiri-kanan */
-  }
 }
 
 /* SCROLL TO TOP BUTTON */
@@ -297,8 +326,8 @@ section, footer {
 /* FAB SLIDER */
 .fab-inside-slider {
   position: absolute;
-  bottom: 20px;
-  right: 30px;
+  top: 350px;      /* ganti bottom dengan top */
+  right: 20px;
   z-index: 999;
   border-radius: 5%;
 }
@@ -310,7 +339,6 @@ section, footer {
   position: relative;
   top: 6px;
 }
-
 
 /* SHARE MEDSOS */
 .artikel {
@@ -352,91 +380,35 @@ section, footer {
   margin-top: 0;
 }
 
-/* RESPONSIVE QUERIES */
-@media (max-width: 768px) {
-  .about, .menu, .products, .contact {
-    padding: 3rem 2rem 1.4rem;
-  }
-  .container-iklan { height: auto; }
-  .caption h3 { font-size: 30px; margin-bottom: 10px; }
-  .caption h5 { font-size: 16px; }
-}
-
-@media (max-width: 600px) {
-  .berita-slider { height: auto !important; }
-  #berita .row { gap: 15px; }
-  .gallery img { margin-bottom: 20px; }
-}
-
-/* Sosial-Link */
+/* Social Links Footer */
 .social-links {
-  list-style: none;       /* hilangkan bullet */
+  list-style: none;       
   padding: 0;
-  margin: 10px 0 0 0; 
-  display: flex;          /* sejajarkan horizontal */
-  justify-content: center;/* posisikan di tengah */
-  gap: 10px;              /* jarak antar ikon */
+  margin: 10px 0 0 0;
+  display: flex;           
+  justify-content: center; 
+  gap: 12px;               
 }
 
 .social-links li {
-  display: inline-block;  /* pastikan tiap item inline */
+  display: inline-block;   
 }
 
-/* Merubah Mode dark toggle secara global */
-body {
-  background-color: #ffffff;
-  color: #121212;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #fff;
-}
-
-/* contoh tambahan */
-table.dark-mode {
-  border-color: #fff;
-}
-
-/* Atur jarak antar section */
-#wilayah,
+/* Jarak Antar Elemen */
+#wilayah h4,
 #gallery,
-#contact {
-  margin: 2px 0;
-  padding: 2px 8px;
-}
-
-/* Row spacing */
-.row {
-  margin-bottom: 10px;
-}
-
-/* Heading & paragraph spacing */
-h4, h5 {
-  margin: 6px 0;
-}
-p {
-  margin: 2px 0 6px;
-  line-height: 1.3;
-}
-
-.card {
-  margin: 20px; /* beri jarak antar card */
-}
-
-section {
-  margin-top: 20px;   /* beri ruang antar section */
+#sekilas-berita {
+  margin-top: -10px;   /* lebih rapat */
   margin-bottom: 20px;
 }
 
-.gallery h4,
-.video {
-  margin-bottom: 20px;
+.card.sticky {
+  width: 100%;        /* pastikan penuh */
+  margin: 0;          /* hilangkan margin default */
 }
-
-
-
-
+.card.sticky .card-content {
+  padding: 0 24px;    /* sesuaikan padding dalam card */
+}
 
 
 

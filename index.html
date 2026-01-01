@@ -212,33 +212,45 @@
             <li><a href="survey.html">Survery Pelayanan</a></li>
           </ul>
                          
-    <!-- Slider Start -->
-    <div class="slider" id="sliderhero">
-      <ul class="slides">
-        <li>
-          <img src="slider/img/Kelapa-bg1.jpg" data-dark="slider/img/Kelapa-bg1-dark.jpeg">
-          <div class="caption center-align">
-            <h3>Media Kelapa Dua</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Kampung Kite Kalo <br>Bukan Kite yang Ngurusin Siapa Lagi
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="slider/img/Ondel-bg1.jpeg" data-dark="slider/img/Ondel-bg1-dark.jpeg">
-          <div class="caption center-align">
-            <h3>Media Kelapa Dua</h3>
-            <h5 class="light grey-text text-lighten-3">Jakarta Baru, Jakarta Maju</h5>
-          </div>
-        </li>
-        <li>
-          <img src="slider/img/Kota-bg1.jpg" data-dark="slider/img/Kota-bg1-dark.jpeg">
-          <div class="caption center-align">
-            <h3>Media Kelapa Dua</h3>
-            <h5 class="light grey-text text-lighten-3">Maju Kotanya, Bahagia Warganya</h5>
-          </div>
-          </li>
-        </ul>
+<!-- Slider Start -->
+<div class="slider" id="sliderhero">
+  <ul class="slides">
+    <li>
+      <img src="slider/img/Kelapa-bg1.jpg"
+           data-light="slider/img/Kelapa-bg1.jpg"
+           data-dark="slider/img/Kelapa-bg1-dark.jpeg"
+           alt="Kelapa Dua">
+      <div class="caption center-align">
+        <h3>Media Kelapa Dua</h3>
+        <h5 class="light grey-text text-lighten-3">
+          Kampung Kite Kalo <br>Bukan Kite yang Ngurusin Siapa Lagi
+        </h5>
+      </div>
+    </li>
+    <li>
+      <img src="slider/img/Ondel-bg1.jpeg"
+           data-light="slider/img/Ondel-bg1.jpeg"
+           data-dark="slider/img/Ondel-bg1-dark.jpeg"
+           alt="Ondel">
+      <div class="caption center-align">
+        <h3>Media Kelapa Dua</h3>
+        <h5 class="light grey-text text-lighten-3">Jakarta Baru, Jakarta Maju</h5>
+      </div>
+    </li>
+    <li>
+      <img src="slider/img/Kota-bg1.jpg"
+           data-light="slider/img/Kota-bg1.jpg"
+           data-dark="slider/img/Kota-bg1-dark.jpeg"
+           alt="Kota">
+      <div class="caption center-align">
+        <h3>Media Kelapa Dua</h3>
+        <h5 class="light grey-text text-lighten-3">Maju Kotanya, Bahagia Warganya</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
 
     <!-- Click Only FAB -->
         <div class="fixed-action-btn fab-inside-slider" data-aos="zoom-in" data-aos-duration="1000">
@@ -256,7 +268,6 @@
                 target="_blank" 
                 class="btn-floating z-depth-3 green lighten-1">
               <i class="fa-brands fa-whatsapp"></i></a></li>
-          </ul>
         </ul>
      </div>
    </div>
@@ -402,7 +413,7 @@
            <img src="img/modal/news3.jpg" class="circle responsive-img materialboxed z-depth-3" style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
            <h6>Warga Kelapa Dua Khawatir Pohon Rindang di Jalan</h6>
            <p style="text-align: justify">
-           MediaKada | Keberadaan pohon besar dan sangat rindang di Jl. H. Kelik RT 003/08, Kelapa Dua, Kebon Jeruk, tepat di depan Komplek Migas 20, kini menjadi perhatian serius warga sekitar terutama pada musim hujan seperti saat ini.</p>
+           MediaKada | Keberadaan pohon besar dan sangat rindang di Jl. H. Kelik RT 003/08, Kelapa Dua, Kebon Jeruk, tepat di depan Komplek Migas 20, kini menjadi perhatian serius warga sekitar.</p>
            <div class="lift-align">
            <a class="waves-effect waves-light btn-small green modal-trigger" href="berita-wilayah/warga-kelapa-dua-khawatir-pohon-rindang-dijalan.html">continue</a>
            </div>
@@ -413,7 +424,7 @@
            <img src="img/modal/news4.jpg" class="circle responsive-img materialboxed z-depth-3" style="width:80px; height:80px; margin:8px 10px 0 0; float:left;">
            <h6>Masyarakat Desa untuk Tingkatkan Pelayanan Kesehatan</h6>
            <p style="text-align: justify">
-           MediaKada | Dalam upaya meningkatkan mutu pelayanan kesehatan di Puskesmas Pembantu Kelapa Dua, masyarakat Kelurahan Kelapa Dua diajak berpartisipasi aktif dalam mengidentifikasi kebutuhan kesehatan di lingkungannya.</p>
+           MediaKada | Dalam upaya meningkatkan mutu pelayanan kesehatan, masyarakat Kelurahan Kelapa Dua diajak berpartisipasi aktif dalam mengidentifikasi kebutuhan kesehatan.</p>
            <div class="lift-align">
            <a class="waves-effect waves-light btn-small green modal-trigger" href="berita-wilayah/musyawarah-masyarakat-desa-untuk-tingkatkan-pelayanan-kesehatan.html">continue</a>
            </div>
@@ -795,74 +806,74 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
      <!-- Berita Wilayah -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const showMoreBtn = document.getElementById("show-more-btn");
-    const hiddenItems = document.querySelectorAll(".item-hidden");
-    let isOpen = false; // status awal
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const showMoreBtn = document.getElementById("show-more-btn");
+          const hiddenItems = document.querySelectorAll(".item-hidden");
+          let isOpen = false; // status awal
 
-    // Pastikan item hidden tertutup saat awal
-    hiddenItems.forEach((item) => {
-      item.style.display = "none";
-    });
+          // Pastikan item hidden tertutup saat awal
+          hiddenItems.forEach((item) => {
+            item.style.display = "none";
+          });
 
-    showMoreBtn.addEventListener("click", function () {
-      if (!isOpen) {
-        // buka item
-        hiddenItems.forEach((item) => {
-          item.style.display = "block";
+          showMoreBtn.addEventListener("click", function () {
+            if (!isOpen) {
+              // buka item
+              hiddenItems.forEach((item) => {
+                item.style.display = "block";
+              });
+              showMoreBtn.innerText = "Close"; // ubah teks tombol
+              isOpen = true;
+            } else {
+              // sembunyikan item
+              hiddenItems.forEach((item) => {
+                item.style.display = "none";
+              });
+              showMoreBtn.innerText = "Open"; // kembalikan teks tombol
+              isOpen = false;
+            }
+          });
         });
-        showMoreBtn.innerText = "Close"; // ubah teks tombol
-        isOpen = true;
-      } else {
-        // sembunyikan item
-        hiddenItems.forEach((item) => {
-          item.style.display = "none";
-        });
-        showMoreBtn.innerText = "Open"; // kembalikan teks tombol
-        isOpen = false;
-      }
-    });
-  });
-</script>
+      </script>
   
-    <!-- Gallery toggle -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const btn = document.getElementById("gallery-btn");
-      const hiddenItems = document.querySelectorAll(".gallery .hidden");
-      let isOpen = false;
+      <!-- Gallery toggle -->
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("gallery-btn");
+        const hiddenItems = document.querySelectorAll(".gallery .hidden");
+        let isOpen = false;
 
-      btn.addEventListener("click", function () {
-        if (!isOpen) {
-          hiddenItems.forEach((item) => (item.style.display = "block"));
-          btn.innerHTML = '<i class="material-icons left"></i>Close';
-          isOpen = true;
-        } else {
-          hiddenItems.forEach((item) => (item.style.display = "none"));
-          btn.innerHTML = '<i class="material-icons left"></i>Open';
-          isOpen = false;
-        }
+        btn.addEventListener("click", function () {
+          if (!isOpen) {
+            hiddenItems.forEach((item) => (item.style.display = "block"));
+            btn.innerHTML = '<i class="material-icons left"></i>Close';
+            isOpen = true;
+          } else {
+            hiddenItems.forEach((item) => (item.style.display = "none"));
+            btn.innerHTML = '<i class="material-icons left"></i>Open';
+            isOpen = false;
+          }
+        });
       });
-    });
-   </script>
+    </script>
 
-   <script>
-   // Click Only
-   document.addEventListener("DOMContentLoaded", function () {
-    var elems = document.querySelectorAll(".fixed-action-btn");
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: "left",
-      hoverEnabled: false,
-    });
- });
-   </script>
+        <script>
+        // Click Only
+        document.addEventListener("DOMContentLoaded", function () {
+          var elems = document.querySelectorAll(".fixed-action-btn");
+          var instances = M.FloatingActionButton.init(elems, {
+            direction: "left",
+            hoverEnabled: false,
+          });
+      });
+        </script>
 
-  <script src="js/script.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/search.js"></script>
-  <script src="js/page.js"></script>
-  <script src="js/darkmode.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/contact.js"></script>
+      <script src="js/search.js"></script>
+      <script src="js/page.js"></script>
+      <script src="js/darkmode.js"></script>
   
   <script>
       feather.replace();

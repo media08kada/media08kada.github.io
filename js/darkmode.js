@@ -1,44 +1,56 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function () {
-  // Inisialisasi sidenav Materialize
   var elems = document.querySelectorAll(".sidenav");
   M.Sidenav.init(elems);
 
-  // Fungsi toggle dark mode
-  function setDarkMode(isDark) {
+  let isDark = false;
+
+  function setDarkMode(isDarkMode) {
+    isDark = isDarkMode;
     if (isDark) {
       document.body.classList.add("dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
     }
+
+    // Update gambar slider
+    document.querySelectorAll("#sliderhero img").forEach((img) => {
+      const darkSrc = img.getAttribute("data-dark");
+      const lightSrc =
+        img.getAttribute("data-light") || img.getAttribute("src");
+
+      if (isDark && darkSrc) {
+        img.setAttribute("data-light", lightSrc);
+        img.setAttribute("src", darkSrc);
+      } else if (!isDark && lightSrc) {
+        img.setAttribute("src", lightSrc);
+      }
+    });
   }
 
-  // Default: selalu Light Mode
-  document.body.classList.remove("dark-mode");
-
-  // Event listener untuk switch desktop
   const toggleDesktop = document.getElementById("darkmodetoggle");
   if (toggleDesktop) {
-    toggleDesktop.checked = false; // pastikan default tidak dicentang
+    toggleDesktop.checked = false;
     toggleDesktop.addEventListener("change", function () {
       setDarkMode(this.checked);
-      // Sinkronkan dengan toggle mobile
       const toggleMobile = document.getElementById("darkmodetoggle-mobile");
       if (toggleMobile) toggleMobile.checked = this.checked;
     });
   }
 
-  // Event listener untuk switch mobile
   const toggleMobile = document.getElementById("darkmodetoggle-mobile");
   if (toggleMobile) {
-    toggleMobile.checked = false; // pastikan default tidak dicentang
+    toggleMobile.checked = false;
     toggleMobile.addEventListener("change", function () {
       setDarkMode(this.checked);
-      // Sinkronkan dengan toggle desktop
       const toggleDesktop = document.getElementById("darkmodetoggle");
       if (toggleDesktop) toggleDesktop.checked = this.checked;
     });
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var elemsDropdown = document.querySelectorAll(".dropdown-trigger");
+  M.Dropdown.init(elemsDropdown, { coverTrigger: false });
 });
 
 
