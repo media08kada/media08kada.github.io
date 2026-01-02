@@ -240,9 +240,19 @@ section, footer {
   }
 
   .collection-item {
-    padding: 10px 2px;   /* kanan kiri rapat */
+    padding: 10px 0px;   /* kanan kiri rapat */
   }
 }
+
+@media (max-width: 600px) {
+  h6 {
+    font-size: 0.9rem;       /* bisa diperkecil agar proporsional */
+    line-height: 1.6;        /* jarak antar baris lebih lega */
+    letter-spacing: 0.5px;   /* jarak antar huruf */
+    margin-bottom: 0.8rem;   /* jarak ke elemen berikutnya */
+  }
+}
+
 
 /* Default tombol (Materialize hijau) */
 .btn-small.green {
@@ -257,7 +267,6 @@ body.dark-mode .btn-small.green {
 #darkToggle.dark-mode .btn-small.green {
   background-color: #8f6240 !important;
 }
-
 
 /* INFO WILAYAH */
 .no-margin { margin: 0 !important; }
@@ -368,6 +377,10 @@ body.dark-mode .btn-small.green {
   border-radius: 5%;
 }
 
+.slider {
+  position: relative;   /* acuan posisi anak */
+}
+
 .btn-floating { border-radius: 8px !important; }
 
 .btn-floating i[data-feather="facebook"],
@@ -434,7 +447,7 @@ body.dark-mode .btn-small.green {
 #wilayah h4,
 #gallery,
 #sekilas-berita {
-  margin-top: -10px;   /* lebih rapat */
+  margin-top: -15px;   /* lebih rapat */
   margin-bottom: 20px;
 }
 
