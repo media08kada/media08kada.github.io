@@ -251,19 +251,19 @@ body.dark-mode .sidenav .user-view .email {
 
 /* 🔽 Dropdown content di dark mode (agar teks hitam & tidak tertutup box) */
 body.dark-mode .dropdown-content {
-  background-color: #fff !important;   /* box dropdown putih */
-  z-index: 9999 !important;            /* pastikan di atas sidenav */
+  background-color: #fff !important;  
+  z-index: 9999 !important;           
 }
 
 body.dark-mode .dropdown-content li > a,
 body.dark-mode .dropdown-content li > span {
-  color: #000 !important;              /* teks hitam */
+  color: #000 !important;             
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   body.dark-mode {
-    background-color: #212121 ; /* tetap gelap */
+    background-color: #212121 ; 
   }
 }
 
@@ -271,7 +271,7 @@ body.dark-mode .dropdown-content li > span {
 #berita,
 #wilayah,
 #gallery {
-  background-color: #fff;   /* warna terang default */
+  background-color: #fff;  
   transition: background-color 0.3s ease;
 }
 
@@ -483,7 +483,7 @@ body.dark-mode footer.green.darken-3 {
 
 /* Saat dark mode aktif */
 body.dark-mode .navbar-fixed nav {
-  border-bottom: 2px solid #513c28;
+  border-bottom: 2px solid #8f6240 ;
 }
 
 .navbar-fixed nav {
