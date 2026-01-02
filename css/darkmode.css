@@ -518,6 +518,23 @@ body.dark-mode .navbar-fixed nav {
     background-color: #333 !important;
   }
 
+  /* Default tombol (Materialize hijau) */
+.btn-small.green {
+  background-color: #4caf50; /* bawaan hijau */
+}
+
+/* Saat dark mode aktif */
+body.dark-mode .btn-small.green {
+  background-color: #8f6240 !important; /* override warna */
+}
+
+body.dark-mode a.btn-small.green {
+  background-color: #8f6240 !important;
+}
+
+
+
+
   
 
 

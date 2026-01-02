@@ -223,6 +223,42 @@ section, footer {
 .card-title.custom-title { font-size: 18px; }
 .card-text.custom-text { font-size: 16px; }
 
+@media (max-width: 600px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col.s12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-content {
+    padding-left: 4px;   /* kecilkan padding card */
+    padding-right: 4px;
+  }
+
+  .collection-item {
+    padding: 10px 2px;   /* kanan kiri rapat */
+  }
+}
+
+/* Default tombol (Materialize hijau) */
+.btn-small.green {
+  background-color: #4caf50; /* bawaan hijau */
+}
+
+/* Saat dark mode aktif */
+body.dark-mode .btn-small.green {
+  background-color: #8f6240 !important; /* override warna */
+}
+
+#darkToggle.dark-mode .btn-small.green {
+  background-color: #8f6240 !important;
+}
+
+
 /* INFO WILAYAH */
 .no-margin { margin: 0 !important; }
 #wilayah h3 { text-align: center; }
