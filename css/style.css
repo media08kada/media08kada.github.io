@@ -362,7 +362,7 @@ body.dark-mode .btn-small.green {
 /* FAB SLIDER */
 .fab-inside-slider {
   position: absolute;
-  top: 350px;      /* ganti bottom dengan top */
+  bottom: 20px;      /* ganti bottom dengan top */
   right: 20px;
   z-index: 999;
   border-radius: 5%;
