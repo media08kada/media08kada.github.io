@@ -235,8 +235,8 @@ section, footer {
   }
 
   .card-content {
-    padding-left: 4px;   /* kecilkan padding card */
-    padding-right: 4px;
+    padding-left: 0;   /* kecilkan padding card */
+    padding-right: 0;
   }
 
   .collection-item {
