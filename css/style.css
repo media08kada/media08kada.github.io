@@ -235,32 +235,32 @@ section, footer {
   }
 
   .card-content {
-    padding-left: 0;   /* kecilkan padding card */
+    padding-left: 0;   
     padding-right: 0;
   }
 
   .collection-item {
-    padding: 10px 0px;   /* kanan kiri rapat */
+    padding: 10px 0px;  
   }
 }
 
 @media (max-width: 600px) {
   h6 {
-    font-size: 0.9rem;       /* bisa diperkecil agar proporsional */
-    line-height: 1.6;        /* jarak antar baris lebih lega */
-    letter-spacing: 0.5px;   /* jarak antar huruf */
-    margin-bottom: 0.8rem;   /* jarak ke elemen berikutnya */
+    font-size: 0.9rem;       
+    line-height: 1.6;       
+    letter-spacing: 0.5px;  
+    margin-bottom: 0.8rem;   
   }
 }
 
 /* Default tombol (Materialize hijau) */
 .btn-small.green {
-  background-color: #4caf50; /* bawaan hijau */
+  background-color: #4caf50; 
 }
 
 /* Saat dark mode aktif */
 body.dark-mode .btn-small.green {
-  background-color: #8f6240 !important; /* override warna */
+  background-color: #8f6240 !important; 
 }
 
 #darkToggle.dark-mode .btn-small.green {
