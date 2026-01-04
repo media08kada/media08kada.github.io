@@ -475,6 +475,15 @@ body.dark-mode .btn-small.green {
   right: 20px;
 }
 
+.popup-box .btn {
+  margin: 20px 30px;   /* atas-bawah 20px, kiri-kanan 30px */
+  padding: 10px 20px;  /* ruang dalam tombol */
+}
+
+
+
+
+
 
 
 

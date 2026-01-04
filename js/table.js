@@ -10,6 +10,8 @@ const data = [
   [8, "28/12/2025", "Hamba Alloh", "Rp200.000"],
   [9, "28/12/2025", "Hamba Alloh", "Rp200.000"],
   [10, "31/12/2025", "Hamba Alloh", "Rp250.000"],
+  [11, "03/01/2026", "Kader Dawis", "Rp1.600.000"],
+  [12, "03/01/2026", "Kader Jumantik", "Rp550.000"],
 ];
 
 const tbody = document.querySelector("#donationTable tbody");
