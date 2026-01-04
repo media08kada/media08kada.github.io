@@ -139,7 +139,7 @@
 </ul>
 
  <!-- Sidenav -->
-    <ul class="sidenav" id="mobile-nav">
+    <ul class="sidenav" id="mobile-nav" >
       <li><div class="user-view">
       <div class="background">
         <img src="img/partner/mediakelapadua.jpg">
@@ -243,8 +243,8 @@
    </ul>
 
   <!-- Click Only FAB (harus di dalam slider) -->
-  <div class="fixed-action-btn fab-inside-slider" data-aos="zoom-in" data-aos-duration="1000">
-    <a class="btn-floating btn-medium green darken-2 z-depth-3 waves-effect">
+  <div class="fixed-action-btn fab-inside-slider">
+    <a class="btn-floating pulse btn-floating btn-medium green darken-2 z-depth-3 waves-effect">
       <i class="large material-icons">link</i>
     </a>
     <ul>
@@ -321,7 +321,7 @@
         </div>
       </div>
 
-      <div class="col s12 m8 light">
+      <div class="col s12 m8 light" data-aos="fade-up">
        <h5>Sosialisasi Teknologi Wolbachia Pengendalian DBD di RW 08 Kelapa Dua</h5>
         <p class="date">Tanggal, 22 Desember 2025</p>
 
@@ -358,7 +358,7 @@
         <!-- Berita-3 End -->
 
         <!-- Berita Wilayah Start -->
-        <div id="wilayah" class="scrollspy collapsible popout" >
+        <div id="wilayah" class="scrollspy collapsible popout">
         <div class="container">
         <h4 class="center light text-darken-3" style="margin-top: -15px;">Berita Wilayah</h4>
               
@@ -469,7 +469,7 @@
            </li>
           </ul>
           <!-- Tombol Wilayah-->
-          <div class="col m s12 center-align" style="margin-bottom: 10px;">
+          <div class="col m s12 center-align" style="margin-bottom: 10px;" data-aos="fade-up">
           <a id="show-more-btn" class="waves-effect waves-light btn-small grey"><i class="material-icons left"></i>Open</a>
           </div>
          </div>
@@ -548,13 +548,6 @@
        </div>
      </div>
 
-        <!-- Modal Template -->
-        <div id="modal1" class="modal">
-          <div class="modal-content">
-            <h5>Ondel-ondel Betawi</h5>
-            <p>Konten detail tentang Ondel-ondel...</p>
-          </div>
-        </div>
         <!-- Berita Pilihan End-->
   
         <!-- Info Wilayah Start -->
@@ -622,11 +615,11 @@
   <!-- Info Wilayah End -->
 
        <!-- Gallery Start -->
-      <section id="gallery" class="gallery scrollspyn" >
-        <div class="container">
+      <section id="gallery" class="gallery scrollspyn">
+      <div class="container">
       <h4 class="center light grey-text text-darken-3">Gallery</h4>
 
-        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="row">
           <div class="col m3 s12">
             <img src="img/photo/1.jpg" class="responsive-img materialboxed z-depth-3" />
           </div>
@@ -698,7 +691,7 @@
  <section id="contact" class="contact grey lighten-3 scrollspy">
     <div class="container">
       <h4 class="center light grey-text text-darken-3">Contact Us</h4>
-        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="row">
           <div class="col m5 s12">
 
             <div class="card-panel green darken-1 center white-text">
@@ -762,10 +755,14 @@
     <!-- Contact Us End -->
 
       <!-- Scroll Ke Atas -->
-      <div class="buttonToTop" onclick="scrollKeatas()">
-        <a href="#top"><i class="material-icons small">expand_less</i></a> 
-      </div>
-      <!-- Scroll Ke Atas End -->
+<a href="#top" 
+   class="btn-floating btn-medium grey pulse buttonToTop" 
+   onclick="scrollKeatas()">
+  <i class="material-icons">expand_less</i>
+</a>
+<!-- Scroll Ke Atas End -->
+
+
 
     <!-- Footer Start -->
     <footer class="green darken-3 white-text center">
@@ -871,6 +868,10 @@
 
       <!-- Google Adsense -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
   
     <script>
       feather.replace();

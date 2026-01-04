@@ -463,6 +463,22 @@ body.dark-mode .btn-small.green {
   padding: 0 24px;    /* sesuaikan padding dalam card */
 }
 
+.buttonToTop.btn-floating {
+  border-radius: 50% !important; /* paksa jadi lingkaran */
+  width: 40px;   /* ukuran default btn-small */
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+
+
 
 
 
