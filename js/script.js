@@ -128,8 +128,17 @@ fetch("modals.html")
   }
 
   
+// Menghilangkan scroll dibawah //
+  document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".dropdown-trigger");
+    M.Dropdown.init(elems, {
+      coverTrigger: false, // dropdown muncul di luar trigger
+      constrainWidth: false, // lebar dropdown tidak dibatasi trigger
+      alignment: "left", // bisa diganti 'right' sesuai kebutuhan
+    });
+  });
 
-  
+
 
 
 

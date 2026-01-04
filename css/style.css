@@ -63,6 +63,7 @@ body .navbar-fixed nav {
 .slider h5 {
   margin-top: 5px;
   color: #ccc;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .slider h3,
@@ -475,10 +476,18 @@ body.dark-mode .btn-small.green {
   right: 20px;
 }
 
-.popup-box .btn {
-  margin: 20px 30px;   /* atas-bawah 20px, kiri-kanan 30px */
-  padding: 10px 20px;  /* ruang dalam tombol */
+/* Menghilang scroll dibawah dropdown */
+.dropdown-content {
+  max-height: none !important;
+  overflow-y: visible !important;
 }
+
+.dropdown-content {
+  width: 150px !important;
+}
+
+
+
 
 
 
