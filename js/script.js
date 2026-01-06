@@ -138,6 +138,22 @@ fetch("modals.html")
     });
   });
 
+// Modal Berita Pilihan //
+  document.addEventListener("DOMContentLoaded", function () {
+    // Ambil semua elemen dengan class .modal
+    var elems = document.querySelectorAll(".modal");
+
+    // Inisialisasi Materialize Modal untuk semuanya
+    var instances = M.Modal.init(elems, {
+      dismissible: true, // bisa ditutup dengan klik di luar modal
+      opacity: 0.5, // transparansi background overlay
+      inDuration: 300, // animasi masuk
+      outDuration: 200, // animasi keluar
+    });
+  });
+
+
+
 
 
 
