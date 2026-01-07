@@ -118,9 +118,7 @@ body .navbar-fixed nav {
   }
 }
 
-/* =========================
-   BERITA SLIDER
-   ========================= */
+/* BERITA SLIDER */
 .berita-slider {
   margin: 0 20px 0 0;
   display: flex;
@@ -162,14 +160,13 @@ body .navbar-fixed nav {
   margin-top: 10px;
 }
 
-/* =========================
-   IMAGE & SLIDES
-   ========================= */
+/* IMAGE & SLIDES */
 .square-img {
   width: 100%;
   display: block;
   aspect-ratio: 1 / 1; /* menjaga rasio 1:1 */
-  object-fit: cover; /* isi penuh tanpa distorsi */
+  object-fit: cover; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 /* Fallback untuk browser yang tidak support aspect-ratio */
