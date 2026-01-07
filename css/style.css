@@ -212,10 +212,7 @@ body .navbar-fixed nav {
   }
 }
 
-/* =========================
-   RESPONSIVE BREAKPOINTS
-   ========================= */
-
+/* RESPONSIVE BREAKPOINTS  */
 /* 📱 Handphone (≤ 767px) */
 @media (max-width: 767px) {
   .berita-slider {

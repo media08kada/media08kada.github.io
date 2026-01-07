@@ -825,15 +825,13 @@
     </section>
     <!-- Contact Us End -->
 
-      <!-- Scroll Ke Atas -->
-<a href="#top" 
-   class="btn-floating btn-medium grey pulse buttonToTop" 
-   onclick="scrollKeatas()">
-  <i class="material-icons">expand_less</i>
-</a>
-<!-- Scroll Ke Atas End -->
-
-
+    <!-- Scroll Ke Atas -->
+      <a href="#top" 
+        class="btn-floating btn-medium grey pulse buttonToTop" 
+        onclick="scrollKeatas()">
+        <i class="material-icons">expand_less</i>
+      </a>
+      <!-- Scroll Ke Atas End -->
 
     <!-- Footer Start -->
     <footer class="green darken-3 white-text center">
@@ -842,13 +840,10 @@
         <!-- Channel Links -->
          <ul class="social-links">
           <li><a href="https://api.whatsapp.com/send?text=https://mediakelapadua.web.id" target="_blank" class="btn-floating z-depth-3 green lighten-1"><i class="fa-brands fa-whatsapp"></i></a></li>
-
           <li><a href="https://www.instagram.com/mediakelapadua" class="btn-floating green">
           <i class="fa-brands fa-instagram"></i></a></li>
-          
           <li><a href="https://www.facebook.com/profile.php?id=61569679397521" class="btn-floating green">
           <i class="fa-brands fa-facebook-f"></i></a></li>
-
           <li><a href="https://www.youtube.com/@KosongDelapan102" class="btn-floating z-depth-3 green">
           <i class="fa-brands fa-youtube"></i></a></li>
          </ul>
@@ -859,19 +854,19 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
      <!-- Berita Wilayah -->
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const showMoreBtn = document.getElementById("show-more-btn");
-          const hiddenItems = document.querySelectorAll(".item-hidden");
-          let isOpen = false; // status awal
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const showMoreBtn = document.getElementById("show-more-btn");
+              const hiddenItems = document.querySelectorAll(".item-hidden");
+              let isOpen = false; // status awal
 
-          // Pastikan item hidden tertutup saat awal
-          hiddenItems.forEach((item) => {
-            item.style.display = "none";
-          });
+              // Pastikan item hidden tertutup saat awal
+              hiddenItems.forEach((item) => {
+                item.style.display = "none";
+              });
 
-          showMoreBtn.addEventListener("click", function () {
-            if (!isOpen) {
+              showMoreBtn.addEventListener("click", function () {
+                if (!isOpen) {
               // buka item
               hiddenItems.forEach((item) => {
                 item.style.display = "block";
@@ -890,26 +885,26 @@
         });
       </script>
   
-      <!-- Gallery toggle -->
-      <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const btn = document.getElementById("gallery-btn");
-        const hiddenItems = document.querySelectorAll(".gallery .hidden");
-        let isOpen = false;
+          <!-- Gallery toggle -->
+          <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("gallery-btn");
+            const hiddenItems = document.querySelectorAll(".gallery .hidden");
+            let isOpen = false;
 
-        btn.addEventListener("click", function () {
-          if (!isOpen) {
-            hiddenItems.forEach((item) => (item.style.display = "block"));
-            btn.innerHTML = '<i class="material-icons left"></i>Close';
-            isOpen = true;
-          } else {
-            hiddenItems.forEach((item) => (item.style.display = "none"));
-            btn.innerHTML = '<i class="material-icons left"></i>Open';
-            isOpen = false;
-          }
-        });
-      });
-    </script>
+            btn.addEventListener("click", function () {
+              if (!isOpen) {
+                hiddenItems.forEach((item) => (item.style.display = "block"));
+                btn.innerHTML = '<i class="material-icons left"></i>Close';
+                isOpen = true;
+              } else {
+                hiddenItems.forEach((item) => (item.style.display = "none"));
+                btn.innerHTML = '<i class="material-icons left"></i>Open';
+                isOpen = false;
+              }
+            });
+          });
+        </script>
 
         <script>
         // Click Only
