@@ -498,6 +498,33 @@ body.dark-mode .btn-small.green {
   border-radius: 4px; /* sudut membulat opsional */
 }
 
+/* Berita Pilihan */
+#pilihan .pilihan-title {
+  margin-top: 5px;
+}
+
+#pilihan .pilihan-card {
+  position: relative;
+}
+
+#pilihan .pilihan-card .icon-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#pilihan .pilihan-card .icon-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#pilihan .pilihan-card i.material-icons {
+  font-size: 40px;
+}
+
+
+
 
 
 
