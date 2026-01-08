@@ -69,7 +69,7 @@ body .navbar-fixed nav {
 }
 
 .slider h5 {
-  margin-top: 5px;
+  margin-top: 20px;
   color: #ccc;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -160,12 +160,17 @@ body .navbar-fixed nav {
   margin-top: 10px;
 }
 
+.compact-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* IMAGE & SLIDES */
 .square-img {
   width: 100%;
   display: block;
   aspect-ratio: 1 / 1; /* menjaga rasio 1:1 */
-  object-fit: cover; 
+  object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -261,6 +266,35 @@ body .navbar-fixed nav {
 
 #show-more-btn {
   margin-top: 10px;
+}
+
+.row .col {
+  padding: 0 8px;
+}
+
+/* Membuat row lebih rapat */
+.compact-row {
+  margin-bottom: 12px; /* default biasanya 20px */
+}
+
+/* Mengurangi padding antar kolom */
+.row .col {
+  padding: 0 8px; /* default biasanya 15px */
+}
+
+/* Heading lebih rapat */
+h5 {
+  margin: 5px 0 8px 0;
+}
+
+/* Paragraf lebih rapat */
+p {
+  margin: 0 0 8px 0;
+}
+
+/* Tombol lebih dekat ke teks */
+.btn-small {
+  margin-top: 5px;
 }
 
 /* CARD & COLLECTION */
@@ -584,8 +618,8 @@ body.dark-mode .btn-small.green {
 
 /* Atur modal agar muncul di tengah dengan ukuran lebih kecil */
 .modal {
-  max-width: 600px; /* lebar modal */
-  border-radius: 4px; /* sudut membulat opsional */
+  max-width: 600px;
+  border-radius: 4px;
 }
 
 /* Berita Pilihan */
