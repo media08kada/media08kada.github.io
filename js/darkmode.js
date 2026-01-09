@@ -1,15 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // init sidenav
   var elems = document.querySelectorAll(".sidenav");
   M.Sidenav.init(elems);
 
-  let isDark = false;
+  // init dropdown
+  var elemsDropdown = document.querySelectorAll(".dropdown-trigger");
+  M.Dropdown.init(elemsDropdown, { coverTrigger: false });
+
+  // default mode
+  document.body.classList.add("light-mode");
 
   function setDarkMode(isDarkMode) {
-    isDark = isDarkMode;
-    if (isDark) {
+    if (isDarkMode) {
+      document.body.classList.remove("light-mode");
       document.body.classList.add("dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
+      document.body.classList.add("light-mode");
     }
 
     // Update gambar slider
@@ -18,39 +25,31 @@ document.addEventListener("DOMContentLoaded", function () {
       const lightSrc =
         img.getAttribute("data-light") || img.getAttribute("src");
 
-      if (isDark && darkSrc) {
+      if (isDarkMode && darkSrc) {
         img.setAttribute("data-light", lightSrc);
         img.setAttribute("src", darkSrc);
-      } else if (!isDark && lightSrc) {
+      } else if (!isDarkMode && lightSrc) {
         img.setAttribute("src", lightSrc);
       }
     });
   }
 
   const toggleDesktop = document.getElementById("darkmodetoggle");
+  const toggleMobile = document.getElementById("darkmodetoggle-mobile");
+
   if (toggleDesktop) {
     toggleDesktop.checked = false;
     toggleDesktop.addEventListener("change", function () {
       setDarkMode(this.checked);
-      const toggleMobile = document.getElementById("darkmodetoggle-mobile");
       if (toggleMobile) toggleMobile.checked = this.checked;
     });
   }
 
-  const toggleMobile = document.getElementById("darkmodetoggle-mobile");
   if (toggleMobile) {
     toggleMobile.checked = false;
     toggleMobile.addEventListener("change", function () {
       setDarkMode(this.checked);
-      const toggleDesktop = document.getElementById("darkmodetoggle");
       if (toggleDesktop) toggleDesktop.checked = this.checked;
     });
   }
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  var elemsDropdown = document.querySelectorAll(".dropdown-trigger");
-  M.Dropdown.init(elemsDropdown, { coverTrigger: false });
-});
-
-

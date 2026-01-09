@@ -510,15 +510,59 @@ body.dark-mode .navbar-fixed nav {
   mask-size: cover;
 }
 
- body.dark-mode {
-    background-color: #212121;
-    color: #fff;
-  }
-  body.dark-mode nav {
-    background-color: #333 !important;
-  }
-  
-  
+/* Default tombol */
+.btn-theme {
+      color: white !important;
+      transition: background-color 0.3s ease;
+    }
+
+    body.light-mode a.btn.btn-theme {
+      background-color: green !important;
+    }
+
+    body.dark-mode a.btn.btn-theme {
+      background-color: #8f6240 !important;
+    }
+
+       body.dark-mode nav {
+      background-color: #333 !important; /* gelap */
+    }
+
+  /* Perbaiki warna Modal */
+    .modal {
+      background-color: white !important;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal .modal-content {
+      background-color: white !important;
+    }
+
+    .modal-footer .btn-flat {
+      color: #333;            /* tombol tutup hitam */
+    }
+
+    .modal .modal-content h6,
+    .modal .modal-content p {
+      color: #212121 !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
