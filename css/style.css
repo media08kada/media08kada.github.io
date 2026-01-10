@@ -607,7 +607,7 @@ body.dark-mode .btn-small.green {
 }
 
 .dropdown-content {
-  width: 150px !important;
+  width: 200px !important;
 }
 
 @media (min-width: 600px) and (max-width: 992px) {
