@@ -1,6 +1,6 @@
 /* Video Youtube Star */
 .video {
-   max-width: 800px;
+   max-width: 640px;
   width: 100%;
   margin: 0 auto; /* hilangkan ruang berlebih */
   padding: 0;     /* tanpa padding */
@@ -26,7 +26,7 @@
 
 /* Deskripsi video */
 .video-description {
-  max-width: 600px;
+  max-width: 500px;
   margin: 1.5rem auto;
   text-align: center;
   line-height: 1.4;
