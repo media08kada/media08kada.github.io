@@ -429,9 +429,14 @@ body.dark-mode .btn-small.green {
   display: block;
   width: 100%;
   height: auto;
-  padding: 15px;
+  padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 15px;
 }
+
+/* Optional: efek fade */
+  #video-thumbnail { transition: opacity 0.4s ease; opacity: 1; }
+  #video-thumbnail.fade-out { opacity: 0; }
 
 /* SCROLL TO TOP BUTTON */
 .buttonToTop {
@@ -646,5 +651,18 @@ body.dark-mode .btn-small.green {
 #pilihan .pilihan-card i.material-icons {
   font-size: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
