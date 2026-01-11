@@ -404,40 +404,6 @@ body.dark-mode .btn-small.green {
   margin-bottom: 20px;
 }
 
-/* VIDEO */
-.thumbnail {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.thumbnail .item {
-  width: 100px;
-  height: 150px;
-}
-
-.video-wrapper,
-.video-description {
-  max-width: 560px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.video-wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-}
-
-/* Optional: efek fade */
-  #video-thumbnail { transition: opacity 0.4s ease; opacity: 1; }
-  #video-thumbnail.fade-out { opacity: 0; }
-
 /* SCROLL TO TOP BUTTON */
 .buttonToTop {
   position: fixed;

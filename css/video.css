@@ -1,70 +1,45 @@
-:root {
-  --primary: #b6895b;
-  --bg: #eaeaea;
-  --bg1: #28c76f;
-  --secondary: #000;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-
 /* Video Youtube Star */
 .video {
-  max-width: 800px;
+   max-width: 800px;
   width: 100%;
-  margin: 20px auto;
-  padding: 20px;
-  z-index: 9999;
-  border-radius: 5%;
+  margin: 0 auto; /* hilangkan ruang berlebih */
+  padding: 0;     /* tanpa padding */
+  border-radius: 0; /* sudut tajam */
+  z-index: auto;  /* biarkan default */
 }
 
 .video-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1px;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
   max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .video-wrapper iframe {
+  aspect-ratio: 16 / 9;   /* jaga rasio 16:9 */
   width: 100%;
-  max-width: 640px;
-  height: 360px;
+  height: auto;
   border: none;
   box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
 }
 
+/* Deskripsi video */
 .video-description {
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 480px) {
   .video-wrapper iframe {
-    height: 240px;
-    max-width: 100%;
+    aspect-ratio: 16 / 9; /* tetap 16:9 */
+    width: 90%;
+    height: auto;
+    display: block;       /* ubah jadi block element */
+    margin: 0 auto;       /* otomatis center horizontal */
+    box-shadow: none;     /* opsional: hilangkan bayangan di HP */
   }
 }
 /* Video Youtube End */

@@ -153,28 +153,18 @@ fetch("modals.html")
   });
 
 // Section Video //
-document.addEventListener("DOMContentLoaded", () => {
-  const thumbnails = [
-    "img/video/thumbnail-1.jpg",
-    "img/video/thumbnail-2.jpg",
-    "img/video/thumbnail-3.jpg",
-  ];
-  let currentIndex = 1;
-  const img = document.getElementById("video-thumbnail");
 
-  function renderImage(index) {
-    if (index < 1 || index > thumbnails.length) return;
-    currentIndex = index;
-    img.src = thumbnails[index - 1];
-  }
 
-  // Klik gambar → ganti ke gambar berikutnya
-  img.addEventListener("click", () => {
-    let nextIndex = currentIndex + 1;
-    if (nextIndex > thumbnails.length) nextIndex = 1;
-    renderImage(nextIndex);
-  });
-});
+
+
+
+
+
+
+
+
+
+
 
 
 
