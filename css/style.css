@@ -410,7 +410,7 @@ body.dark-mode .btn-small.green {
 }
 
 img.responsive-img {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* x-offset, y-offset, blur, warna */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* x-offset, y-offset, blur, warna */
   border-radius: 4px; /* opsional, biar sudut lebih halus */
 }
 
