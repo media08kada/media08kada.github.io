@@ -388,6 +388,32 @@ body.dark-mode .btn-small.green {
   text-align: center;
 }
 
+/* Himbauan */
+.ad-sticky {
+  position: sticky;
+  top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-left: 8px;   /* lebih rapat */
+    padding-right: 8px;
+  }
+}
+
+.card-title {
+  margin-top: 0; /* hilangkan offset negatif */
+}
+
+.card {
+  margin: 10px 0; /* atas-bawah saja, kanan-kiri ikut grid */
+}
+
+img.responsive-img {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* x-offset, y-offset, blur, warna */
+  border-radius: 4px; /* opsional, biar sudut lebih halus */
+}
+
 /* GALLERY */
 .hidden {
   display: none;
@@ -403,6 +429,7 @@ body.dark-mode .btn-small.green {
 .video {
   margin-bottom: 20px;
 }
+
 
 /* SCROLL TO TOP BUTTON */
 .buttonToTop {
