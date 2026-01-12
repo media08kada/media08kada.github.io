@@ -618,6 +618,27 @@ body.dark-mode .btn-small.green {
   font-size: 40px;
 }
 
+/* Spacing super rapat untuk HP kecil */
+@media (max-width: 480px) {
+  #gallery-btn {
+    margin-bottom: 4px; /* tombol hampir menempel dengan section berikutnya */
+  }
+
+  section {
+    margin-top: 6px;   /* jarak antar section sangat rapat */
+    margin-bottom: 6px;
+  }
+
+  #video {
+    margin-top: 8px;   /* sedikit ruang agar judul tidak terlalu menempel */
+  }
+
+  #video h4 {
+    margin-top: 0;     /* hilangkan jarak atas judul */
+    margin-bottom: 6px;/* rapatkan jarak bawah judul */
+  }
+}
+
 
 
 
