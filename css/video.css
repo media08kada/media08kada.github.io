@@ -45,6 +45,20 @@
   transform: scale(1.05);
 }
 
+.galleries img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;       /* biar thumbnail pas */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.galleries img:hover {
+  transform: scale(1.05);
+}
+
 
 /* Responsive untuk tablet */
 @media (max-width: 1024px) {
@@ -83,7 +97,6 @@
     width: 100%;
   }
 }
-
 
 
 

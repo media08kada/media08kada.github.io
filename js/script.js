@@ -153,10 +153,10 @@ fetch("modals.html")
   });
 
 // Section Video //
-      const imgThumbnail = (el) => {
-      document.getElementById('preview-img').src = el.src;
-      document.getElementById('preview-link').href = el.parentElement.href;
-    };
+  function changeVideo(videoId) {
+    document.getElementById("preview-link").src =
+      "https://www.youtube.com/embed/" + videoId;
+  }
 
 
     
