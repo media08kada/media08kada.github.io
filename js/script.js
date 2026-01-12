@@ -153,7 +153,14 @@ fetch("modals.html")
   });
 
 // Section Video //
+      const imgThumbnail = (el) => {
+      document.getElementById('preview-img').src = el.src;
+      document.getElementById('preview-link').href = el.parentElement.href;
+    };
 
+
+    
+ 
 
 
 
