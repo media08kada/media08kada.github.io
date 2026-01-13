@@ -86,13 +86,3 @@ $spanBars.on("click", function () {
   }
 });
 
-// Target icon-button (sesuaikan selector sesuai HTML kamu)
-const $iconButton = $("#calendar .icon-button");
-
-// Toggle panel saat icon-button diklik
-$iconButton.on("click", function () {
-  const isWide = window.matchMedia("(min-width: 768px)").matches;
-  if (!isWide) {                // hanya aktif di layar kecil
-    $eventsPanel.slideToggle();
-  }
-});
