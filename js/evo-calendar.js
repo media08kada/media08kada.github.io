@@ -153,7 +153,7 @@
                 for(var i=0; i < _.options.calendarEvents.length; i++) {
                     // If event doesn't have an id, throw an error message
                     if(!_.options.calendarEvents[i].id) {
-                        console.log("%c Event named: \""+_.options.calendarEvents[i].name+"\" doesn't have a unique ID ", "color:white;font-weight:bold;background-color:#e21d1d;");
+                        console.log("%c Event named: \""+_.options.calendarEvents[i].name+"\" doesn't have a unique ID ", "color:white;font-weight:bold;background-color:##4caf50;");
                     }
                     if(_.isValidDate(_.options.calendarEvents[i].date)) {
                         _.options.calendarEvents[i].date = _.formatDate(_.options.calendarEvents[i].date, _.options.format)

@@ -4,14 +4,15 @@
     font-family: "Material-icons", sans-serif;
 }
 
-.hero {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#6ac1c5,#bda5ff);
+p {
+  color: #616161;
+  font-family: sans-serif; /* kalau mau teks normal, bukan ikon */
 }
 
+
+
 #calender {
-    width: 70%;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,6 +22,47 @@
 .evo-calendar .calendar-events .event {
   background-color: #106804 !important;
 }
+
+.hero {
+  margin-top: -18px;   /* samakan dengan card berita */
+  padding: 20px;      /* agar isi sejajar */
+}
+
+/* Non Aktif Arrow */
+.arrow-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  #calendar {
+    width: 95%;              /* tambah lebar, hampir penuh */
+    margin: 20px auto;       /* auto = jarak kanan/kiri sama */
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
+
+    .hero {
+    margin-top: 20px;     /* jarak lebih kompak tapi tetap ada ruang */
+    padding: 15px;
+    width: 100%;           /* konsisten dengan calendar */
+    margin-left: auto;
+    margin-right: auto;   /* pastikan rata tengah */
+  }
+
+  .evo-calendar .calendar-events .event {
+    margin-bottom: 15px; 
+  }
+}
+
+
+
+
+
+
 
 
 

@@ -56,6 +56,10 @@
     <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/video.css">
 
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/evo-calendar.min.css">
+    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+
     <title>Media Kelapa Dua</title>
 
   </head>
@@ -277,7 +281,7 @@
         <a href="table.html" class="waves-effect btn">Total Donasi</a>
       </div>
       <audio autoplay>
-        <source src="/audio/popup.mp3" type="audio/mp3" id="popup-audio">
+        <source src="audio/message-alert.mp3" type="audio/mp3" id="popup-audio">
       </audio>
     </div>
     <!-- Popup Iklan End -->
@@ -370,7 +374,7 @@
          <button id="darkModeToggle"></button>
           <div class="row" id="sekilas-berita">
           <div class="col m6 s12 light">
-          <div class="card sticky" style="margin-top: 10px;">
+          <div class="card sticky">
           <div class="card-content">
           <span class="card-title">Sekilas Berita</span>
          <ul class="collection">
@@ -482,8 +486,8 @@
        </div>
        
         <!-- Kolom Iklan -->
-        <div class="col s12 m6">
-          <div class="card" style="margin-top: 10px;"> <!-- samakan margin-top -->
+        <!--<div class="col s12 m6">
+          <div class="card" style="margin-top: 10px;">
             <div class="card-content">
               <span class="card-title" style="margin-top: -25px;">Himbauan</span>
               <div class="center-align">
@@ -492,7 +496,14 @@
               </div>
             </div>
           </div>
+        </div>-->
+
+        <!-- Info Event -->
+        <div class="col m6 s12">
+        <div class="hero" >
+        <div id="calendar"></div>
         </div>
+      </div>
 
         <!-- Berita Wilayah End-->
         
@@ -883,8 +894,8 @@
    <!-- JavaScript -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-     <!-- Berita Wilayah -->
-          <script>
+    <!-- Berita Wilayah -->
+     <script>
             document.addEventListener("DOMContentLoaded", function () {
               const showMoreBtn = document.getElementById("show-more-btn");
               const hiddenItems = document.querySelectorAll(".item-hidden");
@@ -965,6 +976,12 @@
       <!-- Google Adsense -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+      <!-- JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+      <script src="../js/evo-calendar.min.js"></script>
+      <script src="js/calender.js"></script>
+
         <script>
           AOS.init();
         </script>
