@@ -9,8 +9,6 @@ p {
   font-family: sans-serif; /* kalau mau teks normal, bukan ikon */
 }
 
-
-
 #calender {
     width: 50%;
     position: absolute;
@@ -36,7 +34,7 @@ p {
 
 @media (max-width: 767px) {
   #calendar {
-    width: 95%;              /* tambah lebar, hampir penuh */
+    width: 100%;              /* tambah lebar, hampir penuh */
     margin: 20px auto;       /* auto = jarak kanan/kiri sama */
     position: relative;
     top: auto;
