@@ -34,38 +34,17 @@ $(document).ready(function () {
   $prevBtn.html('<i class="fa fa-chevron-left"></i>');
   $nextBtn.html('<i class="fa fa-chevron-right"></i>');
 
-  function isWide() {
-    return window.matchMedia("(min-width: 768px)").matches;
-  }
+  // Panel default tertutup
+  $eventsPanel.hide();
 
-  function initPanelState() {
-    if (isWide()) {
-      $eventsPanel.hide(); // panel tertutup default di layar besar
-      $prevBtn.prop("disabled", true);
-      $nextBtn.prop("disabled", true);
-      $spanBars.prop("disabled", true);
-    } else {
-      $eventsPanel.show(); // panel terbuka default di layar kecil
-      $prevBtn.prop("disabled", false);
-      $nextBtn.prop("disabled", false);
-      $spanBars.prop("disabled", false);
-    }
-  }
-
-  // Arrow hanya berfungsi di layar kecil
+  // Arrow & bars berfungsi di semua ukuran layar
   $prevBtn.on("click", function () {
-    if (!isWide()) $eventsPanel.slideToggle();
+    $eventsPanel.slideToggle();
   });
   $nextBtn.on("click", function () {
-    if (!isWide()) $eventsPanel.slideToggle();
+    $eventsPanel.slideToggle();
   });
-
-  // Bars hanya berfungsi di layar kecil
   $spanBars.on("click", function () {
-    if (!isWide()) $eventsPanel.slideToggle();
+    $eventsPanel.slideToggle();
   });
-
-  // Jalankan saat load dan resize
-  initPanelState();
-  $(window).on("resize", initPanelState);
 });
