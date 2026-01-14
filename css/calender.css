@@ -6,26 +6,26 @@
 
 p {
   color: #616161;
-  font-family: sans-serif; /* kalau mau teks normal, bukan ikon */
 }
 
-/* Judul bulan lebih tebal */
 #calendar .calendar-title {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Nama hari */
 #calendar .calendar-weekdays span {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Angka tanggal */
 #calendar .calendar-days span {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
-
 
 #calender {
     width: 50%;
@@ -43,7 +43,6 @@ p {
   margin-top: -18px;   /* samakan dengan card berita */
   padding: 20px;      /* agar isi sejajar */
 }
-
 
 /* Non Aktif Arrow */
 .arrow-disabled {
@@ -80,6 +79,18 @@ p {
     pointer-events: none; /* jaga-jaga supaya tidak bisa diklik */
   }
 }
+
+/* Tambahan CSS untuk menonaktifkan tombol di layar besar */
+@media (min-width: 768px) {
+  #calendar .calendar-navigation button,
+  #calendar .span-bars {
+    pointer-events: none;   /* tidak bisa diklik */
+    opacity: 0.5;           /* tampil lebih redup */
+    cursor: default;
+  }
+}
+
+
 
 
 

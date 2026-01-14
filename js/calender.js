@@ -41,8 +41,14 @@ $(document).ready(function () {
   function initPanelState() {
     if (isWide()) {
       $eventsPanel.hide(); // panel tertutup default di layar besar
+      $prevBtn.prop("disabled", true);
+      $nextBtn.prop("disabled", true);
+      $spanBars.prop("disabled", true);
     } else {
       $eventsPanel.show(); // panel terbuka default di layar kecil
+      $prevBtn.prop("disabled", false);
+      $nextBtn.prop("disabled", false);
+      $spanBars.prop("disabled", false);
     }
   }
 
