@@ -1,13 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Material-icons", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
   color: #616161;
   font-family: sans-serif; /* kalau mau teks normal, bukan ikon */
 }
+
+/* Judul bulan lebih tebal */
+#calendar .calendar-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Nama hari */
+#calendar .calendar-weekdays span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Angka tanggal */
+#calendar .calendar-days span {
+  font-size: 12px;
+}
+
 
 #calender {
     width: 50%;
@@ -18,13 +36,14 @@ p {
 }
 
 .evo-calendar .calendar-events .event {
-  background-color: #106804 !important;
+  background-color: #2e7d32 !important;
 }
 
 .hero {
   margin-top: -18px;   /* samakan dengan card berita */
   padding: 20px;      /* agar isi sejajar */
 }
+
 
 /* Non Aktif Arrow */
 .arrow-disabled {
@@ -54,6 +73,17 @@ p {
     margin-bottom: 15px; 
   }
 }
+
+@media (min-width: 768px) {
+  #calendar .span-bars {
+    display: none;
+    pointer-events: none; /* jaga-jaga supaya tidak bisa diklik */
+  }
+}
+
+
+
+
 
 
 

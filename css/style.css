@@ -411,7 +411,6 @@ body.dark-mode .btn-small.green {
 
 img.responsive-img {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* x-offset, y-offset, blur, warna */
-  border-radius: 4px; /* opsional, biar sudut lebih halus */
 }
 
 /* GALLERY */
@@ -429,7 +428,6 @@ img.responsive-img {
 .video {
   margin-bottom: 20px;
 }
-
 
 /* SCROLL TO TOP BUTTON */
 .buttonToTop {
@@ -528,7 +526,6 @@ img.responsive-img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 6px;
 }
 
 /* MISC */
@@ -617,7 +614,6 @@ img.responsive-img {
 /* Atur modal agar muncul di tengah dengan ukuran lebih kecil */
 .modal {
   max-width: 600px;
-  border-radius: 4px;
 }
 
 /* Berita Pilihan */

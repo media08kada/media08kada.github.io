@@ -1035,7 +1035,12 @@
 
         function addEvent(data) {
             if(!data.id) {
-                console.log("%c Event named: \""+data.name+"\" doesn't have a unique ID ", "color:white;font-weight:bold;background-color:#e21d1d;");
+                console.log(
+                  '%c Event named: "' +
+                    data.name +
+                    "\" doesn't have a unique ID ",
+                  "color:white;font-weight:bold;background-color:#4caf50;"
+                );
             }
 
             if (data.date instanceof Array) {
@@ -1062,7 +1067,10 @@
                 if(_.isValidDate(date)) {
                     return true;
                 } else {
-                    console.log("%c Event named: \""+data.name+"\" has invalid date ", "color:white;font-weight:bold;background-color:#e21d1d;");
+                    console.log(
+                      '%c Event named: "' + data.name + '" has invalid date ',
+                      "color:white;font-weight:bold;background-color:#4caf50;"
+                    );
                 }
                 return false;
             }
@@ -1093,7 +1101,10 @@
                 // remove event indicator
                 _.removeEventIndicator(event);
             } else {
-                console.log("%c "+data+": ID not found ", "color:white;font-weight:bold;background-color:#e21d1d;");
+                console.log(
+                  "%c " + data + ": ID not found ",
+                  "color:white;font-weight:bold;background-color:#4caf50;"
+                );
             }
         }
         if (arr instanceof Array) { // Arrays of index
@@ -1128,3 +1139,5 @@
     };
 
 }));
+
+
