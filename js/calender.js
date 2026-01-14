@@ -1,50 +1,37 @@
 $(document).ready(function () {
   $("#calendar").evoCalendar({
-    theme: "Default",
+    theme: "Midnight Blue",
     calendarEvents: [
       {
-        id: "event1",
-        name: "New Year",
-        date: "January/1/2026",
-        type: "Panwil",
-        everyYear: true,
+        id: "event1", // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2026", // Event date (required)
+        description:
+          "Kegiatan pengawasan lingkungan menjelang pergantian Tahun 2025 dan menyambut Tahun Baru 2026",
+        type: "Panwil", // Event type (required)
+        everyYear: true, // Same event every year (optional)
       },
       {
-        id: "event2",
-        name: "Zoom Meeting",
-        date: "January/09/2026",
-        type: "Webinar",
-        everyYear: true,
+        id: "event2", // Event's ID (required)
+        name: "Zoom Meeting", // Event name (required)
+        date: "January/09/2026", // Event date (required)
+        description:
+          "Zoom Meeting pembahasan Flu vs Superflu, bersama DinKes DKI Jakarta",
+        type: "Webinar", // Event type (required)
+        everyYear: true, // Same event every year (optional)
       },
       {
-        id: "event3",
-        name: "Rembuk RW",
-        date: "January/13/2026",
-        type: "Meeting",
-        everyYear: true,
+        id: "event3", // Event's ID (required)
+        name: "Rembuk RW", // Event name (required)
+        date: "January/13/2026", // Event date (required)
+        description:
+          "Rembuk RW Kelurahan Kelapa Dua Tahun 2026, Tempat Aula Kelurahan Kelapa Dua Lantai 3, Acara pedomanan umum musrenbang",
+        type: "Meeting", // Event type (required)
+        everyYear: true, // Same event every year (optional)
       },
+
     ],
   });
-
-  const $prevBtn = $("#calendar .calendar-navigation .calendar-prev > button");
-  const $nextBtn = $("#calendar .calendar-navigation .calendar-next > button");
-  const $eventsPanel = $("#calendar .calendar-events");
-  const $spanBars = $("#calendar .span-bars");
-
-  $prevBtn.html('<i class="fa fa-chevron-left"></i>');
-  $nextBtn.html('<i class="fa fa-chevron-right"></i>');
-
-  // Panel default tertutup
-  $eventsPanel.hide();
-
-  // Arrow & bars berfungsi di semua ukuran layar
-  $prevBtn.on("click", function () {
-    $eventsPanel.slideToggle();
-  });
-  $nextBtn.on("click", function () {
-    $eventsPanel.slideToggle();
-  });
-  $spanBars.on("click", function () {
-    $eventsPanel.slideToggle();
-  });
 });
+
+

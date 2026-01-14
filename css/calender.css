@@ -35,10 +35,6 @@ p {
     transform: translate(-50,-50);
 }
 
-.evo-calendar .calendar-events .event {
-  background-color: #2e7d32 !important;
-}
-
 .hero {
   margin-top: -18px;   /* samakan dengan card berita */
   padding: 20px;      /* agar isi sejajar */
@@ -73,22 +69,17 @@ p {
   }
 }
 
-@media (min-width: 768px) {
-  #calendar .span-bars {
-    display: none;
-    pointer-events: none; /* jaga-jaga supaya tidak bisa diklik */
-  }
-}
 
-/* Tambahan CSS untuk menonaktifkan tombol di layar besar */
-@media (min-width: 768px) {
-  #calendar .calendar-navigation button,
-  #calendar .span-bars {
-    pointer-events: none;   /* tidak bisa diklik */
-    opacity: 0.5;           /* tampil lebih redup */
-    cursor: default;
-  }
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
