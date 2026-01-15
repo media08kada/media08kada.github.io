@@ -69,6 +69,10 @@ p {
   }
 }
 
+.evo-calendar .event-empty {
+  display: none !important;
+}
+
 @media screen and (min-width: 1024px) {
     /* Mematikan fungsi klik dan menyamarkan tombol panah navigasi */
     .calendar-arrow .arrow-next, 
@@ -78,6 +82,15 @@ p {
         cursor: default;
     }
 }
+
+/* Iklan */
+.ad-section {
+  margin-top: 31px; /* atur sesuai kebutuhan */
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+
+
+
 
 
 
