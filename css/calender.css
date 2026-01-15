@@ -36,8 +36,8 @@ p {
 }
 
 .hero {
-  margin-top: -18px;   /* samakan dengan card berita */
-  padding: 20px;      /* agar isi sejajar */
+  margin-top: -18px;   
+  padding: 20px;     
 }
 
 /* Non Aktif Arrow */
@@ -48,8 +48,8 @@ p {
 
 @media (max-width: 767px) {
   #calendar {
-    width: 100%;              /* tambah lebar, hampir penuh */
-    margin: 20px auto;       /* auto = jarak kanan/kiri sama */
+    width: 100%;          
+    margin: 20px auto;      
     position: relative;
     top: auto;
     left: auto;
@@ -57,11 +57,11 @@ p {
   }
 
     .hero {
-    margin-top: 20px;     /* jarak lebih kompak tapi tetap ada ruang */
+    margin-top: 20px;     
     padding: 15px;
-    width: 100%;           /* konsisten dengan calendar */
+    width: 100%;          
     margin-left: auto;
-    margin-right: auto;   /* pastikan rata tengah */
+    margin-right: auto;   
   }
 
   .evo-calendar .calendar-events .event {
@@ -74,18 +74,17 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-    /* Mematikan fungsi klik dan menyamarkan tombol panah navigasi */
     .calendar-arrow .arrow-next, 
     .calendar-arrow .arrow-prev {
-        pointer-events: none; /* Tombol tidak bisa diklik */
-        opacity: 0.5;        /* Memberikan visual bahwa tombol nonaktif (opsional) */
+        pointer-events: none; 
+        opacity: 0.5;       
         cursor: default;
     }
 }
 
 /* Iklan */
 .ad-section {
-  margin-top: 31px; /* atur sesuai kebutuhan */
+  margin-top: 31px; 
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
   }
 
