@@ -69,6 +69,17 @@ p {
   }
 }
 
+@media screen and (min-width: 1024px) {
+    /* Mematikan fungsi klik dan menyamarkan tombol panah navigasi */
+    .calendar-arrow .arrow-next, 
+    .calendar-arrow .arrow-prev {
+        pointer-events: none; /* Tombol tidak bisa diklik */
+        opacity: 0.5;        /* Memberikan visual bahwa tombol nonaktif (opsional) */
+        cursor: default;
+    }
+}
+
+
 
 
 
