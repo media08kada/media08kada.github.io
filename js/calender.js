@@ -30,5 +30,7 @@ $(document).ready(function () {
   });
 });
 
+<script src="../js/darkmode.js"></script>;
+
 
 

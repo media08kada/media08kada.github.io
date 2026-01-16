@@ -547,6 +547,36 @@ body.dark-mode .navbar-fixed nav {
       color: #212121 !important;
     }
 
+    /* Pastikan teks tabel selalu hitam */
+    #donationTable table,
+    #donationTable table th,
+    #donationTable table td,
+    #donationTable h4,
+    #donationTable p {
+      color: #000 !important;
+    }
+
+    /* Default (light mode) */
+    #donationTable h4,
+    #donationTable p {
+      color: #212121; /* abu gelap */
+    }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      #donationTable h4,
+      #donationTable p {
+        color: #fff !important; /* paksa putih */
+      }
+    }
+
+
+    
+    
+
+    
+
+
 
 
 

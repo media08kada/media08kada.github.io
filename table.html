@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<div>
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--  Metadata -->
+    <!--  Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Media Kelapa Dua" />
@@ -17,54 +17,78 @@
     <meta name="google-site-verification" content="QwSdMazhBKysAXAxVwftI2Sm0OqIzOptOeUvVji3lsQ" />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="mediakelapadua" />
-    <meta property="og:url" content="https://mediakelapadua.web.id/table.html"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mediakelapadua.web.id/table.html" />
     <meta property="og:title" content="Media Kelapa Dua" />
-    <meta property="og:description" content="Donasi Aceh - Sumatera Barat - Suamtera Utara. Baca detailnya di sini!" />
-    <meta property="og:image" content="https://mediakelapadua.web.id/img/iklan/flayer-donasi.jpg"/>
+    <meta property="og:description" content="Donasi Sumatera Barat - Sumatera Utara - Aceh. Baca detailnya di sini!" />
+    <meta property="og:image" content="https://mediakelapadua.web.id/img/partner/mediakelapadua.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://mediakelapadua.web.id/table.html"/>
+    <meta name="twitter:url" content="https://mediakelapadua.web.id/table.html" />
     <meta name="twitter:title" content="Media Kelapa Dua" />
-    <meta name="twitter:description" content="Donasi Aceh - Sumatera Barat - Suamtera Utara. Baca detailnya di sini!" />
-    <meta name="twitter:image" content="https://mediakelapadua.web.id/img/iklan/flayer-donasi.jpg" />
-    
+    <meta name="twitter:description" content="Donasi Sumatera Barat - Sumatera Utara - Aceh. Baca detailnya di sini!" />
+    <meta name="twitter:image" content="https://mediakelapadua.web.id/img/partner/mediakelapadua.jpg" />
+
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
     <!-- Materialize CSS -->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <!-- Favicon -->
-    <link rel="icon" href="img/partner/MediaKelapadua.png" type="image/x-icon"/>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/table.css">
-    
-    <title>Table Donasi Sumatera</title>
+    <link rel="stylesheet" href="css/darkmode.css">
+
+    <title>Total Tabel Donasi</title>
   </head>
-  <div id="home" class="scrollspy">
+  <body id="home" class="scrollspy">
 
     <!-- Navbar Start -->
-    <nav class="green darken-3">
-        <div class="container">  
-        <div class="nav-wrapper">
-        <a href="../index.html" class="brand-logo" style="padding: 10px;">
-          <img src="../img/partner/MediaKelapadua.png" width="40" height="40" alt="Logo Media Kelapa Dua" />
-        </a>
-        <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
-          <i class="material-icons large">home</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="../index.html">Beranda</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+      <nav class="green darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo" style="padding: 10px;">
+              <img src="/img/partner/MediaKelapadua.png" width="40" height="40" class="d-inline-block align-text-top" /></a>
+
+        <!-- Switch di kiri khusus mobile -->
+        <div class="switch hide-on-large-only" style="margin-left: 2px;">
+          <label>
+            <i class="material-icons">wb_sunny</i>
+            <input type="checkbox" id="darkmodetoggle-mobile">
+            <span class="lever"></span>
+            <i class="material-icons">brightness_3</i>
+          </label>
+        </div>
+
+            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+              <i class="material-icons large">home</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Beranda</a></li>
+              <li>
+              <div class="switch">
+              <label>
+              <i class="material-icons">wb_sunny</i>
+              <input type="checkbox" id="darkmodetoggle">
+              <span class="lever"></span>
+              <i class="material-icons">brightness_3</i>
+              </label>
+            </div>
+          </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- Table Donasi -->
       <section id="donationTable" class="section donationTable grey-text text-darken-3">
@@ -108,6 +132,7 @@
   <!-- JavaScript -->
   <script type="text/javascript" src="../js/materialize.min.js"></script>
   <script src="js/table.js"></script>
+   <script src="../js/darkmode.js"></script>
   
   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69436b122569fd578b723129&product=sop' async='async'></script>
 
