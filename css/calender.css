@@ -88,43 +88,9 @@ p {
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
     }
 
-    /* Desktop, laptop, tablet */
-@media (min-width: 768px) {
-  /* Sembunyikan event list */
-  #calendar .calendar-events {
-    display: none !important;
-  }
 
-  /* Pastikan hanya grid kalender yang terlihat penuh */
-  #calendar .calendar-inner {
-    width: 100% !important;
-  }
-}
+ 
 
-
-  /* Header bulan & tahun tetap terlihat */
-  #calendar .calendar-table th[colspan="7"] {
-    display: table-cell !important;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 10px 0;
-  }
-
-/* Arrow default (mobile tetap aktif) */
-#calendar .calendar-year .icon-button {
-  color: #ccc; /* bukan putih */
-}
-
-/* Arrow disabled di desktop/laptop/tablet */
-@media (min-width: 768px) {
-  #calendar .calendar-year .icon-button.arrow-disabled {
-    background-color: #666;       /* abu-abu gelap */
-    opacity: 0.5;      /* redup */
-    cursor: default;   /* cursor normal */
-    pointer-events: none; /* tidak bisa diklik */
-  }
-}
 
 
 
