@@ -135,7 +135,15 @@ body .navbar-fixed nav {
 }
 
 #berita .row .col {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+/* Heading & paragraf lebih dekat */
+#berita h5,
+#berita p,
+.date {
+  margin: 5px 0; /* default 15–20px */
 }
 
 #berita p,
@@ -145,7 +153,7 @@ body .navbar-fixed nav {
 }
 
 .berita .row {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .date {
@@ -157,7 +165,7 @@ body .navbar-fixed nav {
 }
 
 .btn-small.green {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .compact-row {
@@ -543,10 +551,11 @@ body.dark-mode .btn-small.green {
 }
 
 /* Jarak Antar Elemen */
+
 #wilayah h4,
 #gallery,
 #sekilas-berita {
-  margin-top: 30px; /* lebih rapat */
+  margin-top: -15px; /* lebih rapat */
   margin-bottom: 20px;
 }
 
