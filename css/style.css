@@ -365,6 +365,8 @@ p {
   }
 }
 
+
+
 @media (max-width: 600px) {
   h6 {
     font-size: 0.9rem;
@@ -373,6 +375,28 @@ p {
     margin-bottom: 0.8rem;
   }
 }
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  h6 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Laptop (≤1366px) */
+@media (max-width: 1366px) {
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+
 
 /* Default tombol (Materialize hijau) */
 .btn-small.green {
