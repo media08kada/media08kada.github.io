@@ -1,13 +1,15 @@
+/* Reset dasar */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
   color: #616161;
 }
 
+/* Judul kalender */
 #calendar .calendar-title {
   font-size: 15px;
   font-weight: 400;
@@ -27,129 +29,20 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-#calender {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50,-50);
-}
-
+/* Hero section */
 .hero {
-  margin-top: -18px;   
-  padding: 20px;     
+  margin-top: -18px;
+  padding: 20px;
 }
 
-/* Non Aktif Arrow */
+/* Nonaktifkan arrow */
 .arrow-disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
 
-@media (max-width: 767px) {
-  #calendar {
-    width: 100%;          
-    margin: 20px auto;      
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-  }
-
-    .hero {
-    margin-top: 20px;     
-    padding: 15px;
-    width: 100%;          
-    margin-left: auto;
-    margin-right: auto;   
-  }
-
-    .evo-calendar .calendar-events .event {
-      margin-bottom: 15px; 
-    }
-  }
-
-  .evo-calendar .event-empty {
-    display: none !important;
-  }
-
-  @media screen and (min-width: 1024px) {
-      .calendar-arrow .arrow-next, 
-      .calendar-arrow .arrow-prev {
-          pointer-events: none; 
-          opacity: 0.5;       
-          cursor: default;
-      }
-  }
-
-  /* Iklan */
-  .ad-section {
-    margin-top: 31px; 
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
-    }
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Iklan */
+.ad-section {
+  margin-top: 31px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+}
