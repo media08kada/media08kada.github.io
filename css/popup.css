@@ -86,7 +86,7 @@
 
 /* Judul & teks */
 .popup-box h3 {
-  margin-top: 60px;
+  margin-top: 20px;
   font-size: 2em;
   font-weight: 800;
   color: #d62828; /* merah */
@@ -95,15 +95,23 @@
 }
 
 .popup-box h4 {
-  margin: 10px 0;
-  font-size: 1.2em;
+  margin: 20px 0;
+  font-size: 3em;
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .popup-box p {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  text-align: center;
+  color: #f7f4f4;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.popup-box h6 {
+  margin-bottom: 10px;
   font-size: 1em;
   text-align: center;
   color: #f7f4f4;
@@ -115,14 +123,20 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 20px;
+  padding: 6px 10px;
   border-radius: 6px;
   background: #0aa13d;
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 300;
   transition: background 0.3s ease, color 0.3s ease;
 }
+
+.popup-box .btn {
+  position: relative;
+  top: -40px; /* geser ke atas 10px */
+}
+
 
 .popup-box .btn:hover {
   background: #fff;
