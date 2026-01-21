@@ -299,7 +299,7 @@ p {
 
 /* CARD & COLLECTION */
 .card {
-  margin: 20px;
+  margin: 8px 0;
 }
 
 .card-panel {
@@ -333,7 +333,7 @@ p {
   font-size: 18px;
 }
 .card-text.custom-text {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media (max-width: 600px) {
@@ -623,36 +623,16 @@ body.dark-mode .btn-small.green {
   }
 
   section {
-    margin-top: 6px;   /* jarak antar section sangat rapat */
+    margin-top: 6px; /* jarak antar section sangat rapat */
     margin-bottom: 6px;
   }
 
   #video {
-    margin-top: 8px;   /* sedikit ruang agar judul tidak terlalu menempel */
+    margin-top: 8px; /* sedikit ruang agar judul tidak terlalu menempel */
   }
 
   #video h4 {
-    margin-top: 0;     /* hilangkan jarak atas judul */
-    margin-bottom: 6px;/* rapatkan jarak bawah judul */
+    margin-top: 0; /* hilangkan jarak atas judul */
+    margin-bottom: 6px; /* rapatkan jarak bawah judul */
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
