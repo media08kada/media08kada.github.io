@@ -161,11 +161,11 @@
 
 @media (max-width: 480px) {
   .popup-box {
-    width: 95%; /* tambahkan lebar hampir penuh layar kecil */
-    max-width: 250px; /* opsional: batasi agar tidak terlalu besar */
+    width: 95%; 
+    max-width: 250px; 
     padding: 20px 15px;
     border-radius: 15px;
-    margin: 0 auto; /* posisikan di tengah */
+    margin: 0 auto; 
   }
 
   .popup-logo {
