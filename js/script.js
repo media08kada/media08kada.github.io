@@ -80,14 +80,43 @@ closeBtn.addEventListener("click", () => {
 });
 
 // buka popup
-document.querySelector('#open-search').addEventListener('click', function() {
-  document.querySelector('#search-popup').classList.add('active');
-});
+const openSearchBtn = document.querySelector('#open-search');
+const searchPopup = document.querySelector('#search-popup');
 
-// tutup popup
-document.querySelector('.close-btn').addEventListener('click', function() {
-  document.querySelector('#search-popup').classList.remove('active');
-});
+if (openSearchBtn && searchPopup) {
+  openSearchBtn.addEventListener('click', () => {
+    searchPopup.classList.add('active');
+  });
+}
+
+// Load file modals.html ke dalam index
+fetch("modals.html")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("HTTP error " + response.status);
+    }
+    return response.text();
+  })
+  .then((data) => {
+    const container = document.getElementById("modal-container");
+    if (container) {
+      container.innerHTML = data;
+
+      // Inisialisasi Materialize modal setelah konten dimuat
+      const elems = document.querySelectorAll(".modal");
+      M.Modal.init(elems, {
+        // opsi tambahan jika perlu
+        dismissible: true,
+        inDuration: 250,
+        outDuration: 200,
+      });
+    } else {
+      console.error("Elemen #modal-container tidak ditemukan");
+    }
+  })
+  .catch((error) => console.error("Gagal memuat modals.html:", error));
+
+
 
 // Scroll ke atas
 function scrollKeatas() {
