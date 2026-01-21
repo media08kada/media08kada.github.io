@@ -416,7 +416,7 @@ body.dark-mode .btn-small.green {
 .buttonToTop {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 80px;
   cursor: pointer;
   z-index: 999;
   transition: all 0.3s ease-in-out;
