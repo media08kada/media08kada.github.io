@@ -662,14 +662,28 @@ body.dark-mode .btn-small.green {
 /* Iklan */
 .ad-section {
   margin-top: 20px;
+  background: transparent;   /* pastikan tidak ada background */
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
 .ad-section img {
   width: 100%;
-  height: 50px;   /* contoh tinggi tetap */
-  object-fit: cover; /* biar gambar tetap proporsional */
+  height: auto;              /* biar proporsional */
+  object-fit: cover;
+  background: transparent;   /* pastikan img tidak punya background */
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
+
+/* Jika iklan ada di dalam card */
+.card .ad-section,
+.card .ad-section img {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+
+
 
 
 
