@@ -41,8 +41,3 @@ p {
   cursor: not-allowed;
 }
 
-/* Iklan */
-.ad-section {
-  margin-top: 31px;
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
-}

@@ -658,3 +658,18 @@ body.dark-mode .btn-small.green {
     margin-bottom: 6px; /* rapatkan jarak bawah judul */
   }
 }
+
+/* Iklan */
+.ad-section {
+  margin-top: 20px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+.ad-section img {
+  width: 100%;
+  height: 50px;   /* contoh tinggi tetap */
+  object-fit: cover; /* biar gambar tetap proporsional */
+}
+
+
+
