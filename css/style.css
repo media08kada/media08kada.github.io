@@ -204,21 +204,21 @@ body .navbar-fixed nav {
 .berita-slider,
 .slides li,
 .square-img {
-  background: none; /* tidak ada warna */
-  box-shadow: none; /* hilangkan bayangan kotak */
-  border: none; /* hilangkan garis tepi */
+  background: none; 
+  box-shadow: none; 
+  border: none; 
 }
 
 .square-img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover; /* isi penuh tanpa kotak kosong */
+  object-fit: cover;
   display: block;
 }
 @supports not (aspect-ratio: 1 / 1) {
   .slider .berita-slides li {
-    padding-top: 100%; /* ini bikin kotak */
-    background: none; /* pastikan tidak ada warna */
+    padding-top: 100%; 
+    background: none;
   }
 }
 
@@ -319,9 +319,9 @@ p {
   vertical-align: middle;
 }
 
-.collection-header h6 {
+.collection-header p {
   margin: 0;
-  line-height: 1;
+  line-height: 0.8;
 }
 
 .card-content {
@@ -335,13 +335,6 @@ p {
 .card-content h4,
 .card-content p {
   margin: 2px 0;
-}
-
-.card-title.custom-title {
-  font-size: 18px;
-}
-.card-text.custom-text {
-  font-size: 14px;
 }
 
 @media (max-width: 600px) {
@@ -364,8 +357,6 @@ p {
     padding: 10px 0px;
   }
 }
-
-
 
 @media (max-width: 600px) {
   h6 {
@@ -395,8 +386,6 @@ p {
     margin-bottom: 1.2rem;
   }
 }
-
-
 
 /* Default tombol (Materialize hijau) */
 .btn-small.green {
