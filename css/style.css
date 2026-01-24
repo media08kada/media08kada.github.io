@@ -115,18 +115,18 @@ body .navbar-fixed nav {
 /* Responsive untuk layar kecil */
 @media only screen and (max-width: 600px) {
   .slider .caption {
-    top: 92%; 
+    top: 92%;
     transform: translate(-50%, -50%);
   }
 
   .slider .caption h3 {
-    font-size: 2rem; 
-    margin: 100px 0 15px; 
+    font-size: 2rem;
+    margin: 100px 0 15px;
   }
 
   .slider .caption h5 {
-    font-size: 1rem; 
-    margin-top: 15px; 
+    font-size: 1rem;
+    margin-top: 15px;
   }
 }
 
@@ -155,7 +155,7 @@ body .navbar-fixed nav {
 #berita h5,
 #berita p,
 .date {
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 
 #berita p,
@@ -216,9 +216,9 @@ body .navbar-fixed nav {
 .berita-slider,
 .slides li,
 .square-img {
-  background: none; 
-  box-shadow: none; 
-  border: none; 
+  background: none;
+  box-shadow: none;
+  border: none;
 }
 
 .square-img {
@@ -229,7 +229,7 @@ body .navbar-fixed nav {
 }
 @supports not (aspect-ratio: 1 / 1) {
   .slider .berita-slides li {
-    padding-top: 100%; 
+    padding-top: 100%;
     background: none;
   }
 }
@@ -294,12 +294,12 @@ body .navbar-fixed nav {
 
 /* Membuat row lebih rapat */
 .compact-row {
-  margin-bottom: 12px; 
+  margin-bottom: 12px;
 }
 
 /* Mengurangi padding antar kolom */
 .row .col {
-  padding: 0 8px; 
+  padding: 0 8px;
 }
 
 /* Heading lebih rapat */
@@ -500,14 +500,14 @@ body.dark-mode .btn-small.green {
 /* FAB SLIDER */
 .fab-inside-slider {
   position: absolute;
-  bottom: 20px; 
+  bottom: 20px;
   right: 20px;
   z-index: 999;
   border-radius: 5%;
 }
 
 .slider {
-  position: relative; 
+  position: relative;
 }
 
 .btn-floating {
@@ -579,21 +579,22 @@ body.dark-mode .btn-small.green {
 #wilayah h4,
 #gallery,
 #sekilas-berita {
-  margin-top: -15px; 
+  margin-top: -15px;
   margin-bottom: 20px;
 }
 
 .card.sticky {
-  width: 100%; 
-  margin: 0; 
+  width: 100%;
+  margin: 0;
 }
+
 .card.sticky .card-content {
   padding: 0 24px;
 }
 
 .buttonToTop.btn-floating {
-  border-radius: 50% !important; 
-  width: 40px; 
+  border-radius: 50% !important;
+  width: 40px;
   height: 40px;
   display: inline-flex;
   align-items: center;
@@ -652,36 +653,36 @@ body.dark-mode .btn-small.green {
 /* Spacing super rapat untuk HP kecil */
 @media (max-width: 480px) {
   #gallery-btn {
-    margin-bottom: 4px; 
+    margin-bottom: 4px;
   }
 
   section {
-    margin-top: 6px; 
+    margin-top: 6px;
     margin-bottom: 6px;
   }
 
   #video {
-    margin-top: 8px; 
+    margin-top: 8px;
   }
 
   #video h4 {
-    margin-top: 0; 
-    margin-bottom: 6px; 
+    margin-top: 0;
+    margin-bottom: 6px;
   }
 }
 
 /* Iklan */
 .ad-section {
   margin-top: 20px;
-  background: transparent;   
+  background: transparent;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
 .ad-section img {
   width: 100%;
-  height: auto;             
+  height: auto;
   object-fit: cover;
-  background: transparent;   
+  background: transparent;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -690,11 +691,3 @@ body.dark-mode .btn-small.green {
 .card .ad-section img {
   background: transparent !important;
 }
-
-
-
-
-
-
-
-
