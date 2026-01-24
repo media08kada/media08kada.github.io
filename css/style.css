@@ -32,12 +32,12 @@ footer {
 /* Default: Light mode */
 body {
   background-color: #fff;
-  color: #000;
+  color: #212121;
 }
 
 /* Dark mode */
 body.dark-mode {
-  background-color: #121212;
+  background-color: #212121;
   color: #fff;
 }
 
