@@ -43,7 +43,7 @@ body.dark-mode {
 
 /* NAVBAR & LOGO */
 .brand-logo {
-  max-width: 150px;
+  max-width: 250px;
 }
 
 .navbar-brand img {
@@ -151,7 +151,6 @@ body .navbar-fixed nav {
   padding: 0 8px;
 }
 
-/* Heading & paragraf lebih dekat */
 #berita h5,
 #berita p,
 .date {
@@ -189,7 +188,7 @@ body .navbar-fixed nav {
 .square-img {
   width: 100%;
   display: block;
-  aspect-ratio: 1 / 1; /* menjaga rasio 1:1 */
+  aspect-ratio: 1 / 1; 
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -199,7 +198,7 @@ body .navbar-fixed nav {
   .slider .berita-slides li {
     position: relative;
     width: 100%;
-    padding-top: 100%; /* menjaga rasio 1:1 */
+    padding-top: 100%; 
   }
 
   .slides li img {
@@ -238,7 +237,7 @@ body .navbar-fixed nav {
 /* 📱 Handphone (≤ 767px) */
 @media (max-width: 767px) {
   .berita-slider {
-    max-width: 100%; /* penuh layar */
+    max-width: 100%; 
     margin: 0 auto;
   }
 }
@@ -262,7 +261,7 @@ body .navbar-fixed nav {
 /* 🖥️ Desktop (≥ 1440px) */
 @media (min-width: 1440px) {
   .berita-slider {
-    max-width: 400px; /* lebih besar untuk layar lebar */
+    max-width: 400px; 
     margin: 0 auto;
   }
 }
