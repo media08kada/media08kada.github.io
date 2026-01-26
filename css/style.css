@@ -436,6 +436,10 @@ body.dark-mode .btn-small.green {
   margin-bottom: 20px;
 }
 
+.gallery h4 {
+  margin-top: 40px;
+}
+
 /* SCROLL TO TOP BUTTON */
 .buttonToTop {
   position: fixed;
