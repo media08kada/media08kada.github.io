@@ -1,0 +1,40 @@
+/* SHARE MEDSOS */
+.artikel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.artikel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* MISC */
+#histats_counter {
+  margin-top: 15px;
+}
+
+.small-text {
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* Social Links Footer */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-links li {
+  display: inline-block;
+}

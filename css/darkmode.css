@@ -463,6 +463,21 @@ body.dark-mode footer.green.darken-3 {
   color: #fff !important;
 }
 
+/* Default tombol (Materialize hijau) */
+.btn-small.green {
+  background-color: #4caf50;
+}
+
+/* Saat dark mode aktif */
+body.dark-mode .btn-small.green {
+  background-color: #8f6240 !important;
+}
+
+#darkToggle.dark-mode .btn-small.green {
+  background-color: #8f6240 !important;
+}
+
+
 /* Layar Mobile */
 .nav-wrapper .switch {
   display: inline-flex;
