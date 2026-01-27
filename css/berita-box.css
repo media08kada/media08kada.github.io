@@ -1,10 +1,10 @@
 /* Card horizontal */
 .card.horizontal {
-  display: flex;            /* layout horizontal */
-  align-items: center;      /* sejajarkan img & text secara vertikal */
-  overflow: hidden;         /* cegah konten keluar box */
-  max-height: 130px;        /* tinggi maksimal card */
-  width: 100%;              /* biar fleksibel */
+  display: flex;            
+  align-items: center;      
+  overflow: hidden;         
+  max-height: 130px;        
+  width: 100%;              
 }
 
 /* Bagian gambar */
@@ -60,4 +60,32 @@
     max-width: 100%;
   }
 }
+
+/* Cuplikan Kalimat */
+.quote {
+  text-align: justify;
+  background-color: rgba(128, 128, 128, 0.2); /* abu-abu transparan */
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-style: italic;
+  font-size: 16px;
+  display: inline-block; 
+  margin-top: 1px;      /* jarak atas */
+  margin-bottom: 1px;
+}
+
+.quote::before {
+  content: "❝";        /* kutip dekoratif awal */
+  font-size: 50px;
+  color: rgb(63, 63, 63);
+  margin-right: 8px;
+}
+
+.quote::after {
+  content: "❞";        /* kutip dekoratif akhir */
+  font-size: 50px;
+  color: rgb(63, 63, 63);
+  margin-left: 8px;
+}
+
 
