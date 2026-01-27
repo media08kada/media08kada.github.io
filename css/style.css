@@ -125,6 +125,10 @@ body .navbar-fixed nav {
   margin-top: 0;
 }
 
+.modal-title h6 {
+  color: grey;
+}
+
 
 /* Responsive untuk layar kecil */
 @media only screen and (max-width: 600px) {

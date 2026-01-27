@@ -77,14 +77,14 @@
 .quote::before {
   content: "❝";        /* kutip dekoratif awal */
   font-size: 50px;
-  color: rgb(63, 63, 63);
+  color: rgb(84, 84, 84);
   margin-right: 8px;
 }
 
 .quote::after {
   content: "❞";        /* kutip dekoratif akhir */
   font-size: 50px;
-  color: rgb(63, 63, 63);
+  color: rgb(84, 84, 84);
   margin-left: 8px;
 }
 
