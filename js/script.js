@@ -193,6 +193,25 @@ fetch("modals.html")
     var instances = M.Collapsible.init(elems, options);
   });
 
+
+    // Fungsi untuk menampilkan progress bar
+  function showProgress() {
+    document.getElementById("navbar-progress").style.display = "block";
+  }
+
+  // Fungsi untuk menyembunyikan progress bar
+  function hideProgress() {
+    document.getElementById("navbar-progress").style.display = "none";
+  }
+
+  // Contoh penggunaan:
+  // tampilkan progress bar saat mulai loading
+  showProgress();
+
+  // sembunyikan progress bar setelah 3 detik (misalnya selesai loading)
+  setTimeout(hideProgress, 3000);
+
+
     
  
 

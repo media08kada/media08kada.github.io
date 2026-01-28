@@ -62,10 +62,50 @@ body.dark-mode {
   font-weight: 300;
 }
 
-/* Saat dark mode aktif */
+/* Garis Navbar Start */
 body .navbar-fixed nav {
-  border-bottom: 2px solid #8f6240;
+  border-bottom: none;
+  position: relative;
 }
+
+/* Progress bar menempel ke bawah nav */
+body .navbar-fixed .progress {
+  margin: 0;          
+  height: 2px;        
+  position: absolute; 
+  bottom: 0;          
+  left: 0;
+  right: 0;
+  background-color: #f0f0f0;
+}
+
+/* Warna garis bergerak */
+body .navbar-fixed .progress .indeterminate {
+  background-color: #8f6240;
+  animation-duration: 4s;
+}
+
+/* Override keyframes bawaan Materialize */
+@keyframes indeterminate {
+  0%   { left: -35%; right: 100%; }
+  60%  { left: 100%; right: -90%; }
+  100% { left: 100%; right: -90%; }
+}
+
+@keyframes indeterminate-short {
+  0%   { left: -200%; right: 100%; }
+  60%  { left: 107%; right: -8%; }
+  100% { left: 107%; right: -8%; }
+}
+
+/* Terapkan durasi lebih panjang ke kedua animasi */
+body .navbar-fixed .progress .indeterminate:before {
+  animation: indeterminate 4s infinite;
+}
+body .navbar-fixed .progress .indeterminate:after {
+  animation: indeterminate-short 4s infinite;
+}
+/* Garis Navbar End */
 
 /* SLIDER */
 .slider {
