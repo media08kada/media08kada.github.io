@@ -118,26 +118,25 @@
                 <input id="icon_telephone" type="tel" name="telepon" class="validate">
                 <label for="icon_telephone">Telephone</label>
               </div>
-              <div class="input-field col s12 ">
+              <div class="input-field col s12">
                 <i class="material-icons prefix white-text">mode_edit</i>
-                <input id="icon_telephone" type="tel" name="jumlah" class="validate">
-                <label for="icon_telephone">Jumlah Donasi</label>
+                <input id="jumlah" type="text" name="jumlah" class="validate">
+                <label for="jumlah">Jumlah Donasi (Hanya berupa angka)</label>
               </div>
             </div>
 
-              <!-- Upload Bukti -->
-              <div class="file-field input-field">
-                <div class="btn">
-                  <span>File</span>
-                  <!-- tambahkan name="bukti" agar terbaca -->
-                  <input type="file" name="bukti" multiple>
-                </div>
-                <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text" placeholder="Upload one or more files">
-                </div>
+            <!-- Upload Bukti -->
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>File</span>
+                <input type="file" name="bukti" multiple>
               </div>
-              
-              <!-- Tombol Kirim -->
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+              </div>
+            </div>
+
+            <!-- Tombol Kirim -->
             <div class="right-align">
               <button class="btn waves-effect waves-light green" type="submit" name="action">
                 Kirim
@@ -146,17 +145,19 @@
           </form>
         </div>
 
-        <div class="data-notes" style="padding-top: 20px;">
+        <div class="data-notes">
           <p style="text-align: center">
-            Bank Center Asia (BCA)<br><b>Nomor Rekening : 4910289018</b></b><br>a/n : Syarip Hidayattullah
-            <br> 
+            Bank Center Asia (BCA)<br>
+            <b>Nomor Rekening : 4910289018</b><br>
+            a/n : Syarip Hidayattullah<br>
             Terimakasih atas donasi yang anda kirimkan, donasi anda dapat membantu pengembangan mediakelapadua.web.id
-          </div>
           </p>
         </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
