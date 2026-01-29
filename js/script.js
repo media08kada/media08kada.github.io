@@ -117,7 +117,6 @@ fetch("modals.html")
   .catch((error) => console.error("Gagal memuat modals.html:", error));
 
 
-
 // Scroll ke atas
 function scrollKeatas() {
   window.scrollTo({

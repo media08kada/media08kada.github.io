@@ -104,11 +104,12 @@
     <div class="row">
       <div class="col s12 m6 offset-m3">
         <div class="card-panel teal">
-          <form action="#" method="post" class="col s12">
+          <form action="#" method="post" class="col s12" name="donasi-contact-form">
             <div class="contant">
               <h6 class="center">Input Data Donasi</h6>
             <div class="row">
-              <div class="input-field col s12 m6">                <i class="material-icons prefix white-text">account_circle</i>
+              <div class="input-field col s12 m6">                
+                <i class="material-icons prefix white-text">account_circle</i>
                 <input id="icon_prefix" type="text" name="nama" class="validate">
                 <label for="icon_prefix">Nama</label>
               </div>
@@ -117,31 +118,22 @@
                 <input id="icon_telephone" type="tel" name="telepon" class="validate">
                 <label for="icon_telephone">Telephone</label>
               </div>
+              <div class="input-field col s12 ">
+                <i class="material-icons prefix white-text">mode_edit</i>
+                <input id="icon_telephone" type="tel" name="jumlah" class="validate">
+                <label for="icon_telephone">Jumlah Donasi</label>
+              </div>
             </div>
 
-            <!-- Tombol Komentar -->
-              <div class="row">
-                <div class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix white-text">mode_edit</i>
-                      <textarea id="icon_prefix2" 
-                      class="materialize-textarea"></textarea>
-                      <label for="icon_prefix2">Jumlah Donasi</label>
-                    </div>
-                  </div>
-                </div>
-
               <!-- Upload Bukti -->
-              <form action="#">
-                <div class="file-field input-field">
-                  <div class="btn">
-                    <span>File</span>
-                    <input type="file" multiple>
-                  </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
-                  </div>
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>File</span>
+                  <!-- tambahkan name="bukti" agar terbaca -->
+                  <input type="file" name="bukti" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" placeholder="Upload one or more files">
                 </div>
               </div>
               
@@ -154,8 +146,10 @@
           </form>
         </div>
 
-        <div class="data-notes">
+        <div class="data-notes" style="padding-top: 20px;">
           <p style="text-align: center">
+            Bank Center Asia (BCA)<br><b>Nomor Rekening : 4910289018</b></b><br>a/n : Syarip Hidayattullah
+            <br> 
             Terimakasih atas donasi yang anda kirimkan, donasi anda dapat membantu pengembangan mediakelapadua.web.id
           </div>
           </p>
@@ -188,7 +182,11 @@
 
   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69436b122569fd578b723129&product=sop' async='async'></script>
 
-  <script src="../js/darkmode.js"></script>
-  
- </body>
+
+<script src="../js/darkmode.js"></script>
+<script src="js/donasi.js"></script>
+
+
+
+</body>
 </html>
