@@ -126,16 +126,16 @@ body .navbar-fixed .progress .indeterminate:after {
 }
 
 .tap-target h5 {
-  color: #fff;
+  color: #212121;
   margin-top: 10px;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
 }
 
 .tap-target p {
-  color: #fff;
+  color: #212121;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
 }
 
 /* Atur ukuran tombol bulat */
