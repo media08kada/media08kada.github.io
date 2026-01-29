@@ -105,6 +105,54 @@ body .navbar-fixed .progress .indeterminate:before {
 body .navbar-fixed .progress .indeterminate:after {
   animation: indeterminate-short 4s infinite;
 }
+
+/* Variasi Logo Navbar Start */
+.tap-target {
+  background-color: #2e7d32 !important;
+}
+
+/* Ubah warna lingkaran kecil (origin) */
+.tap-target .tap-target-origin {
+  background-color: #2e7d32 !important;
+}
+
+/* Ubah background TapTarget menjadi gambar */
+.tap-target {
+  background-image: url('../slider/img/Ondel-ondel.jpg'); 
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+
+.tap-target p {
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+
+.tap-target h5 {
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+
+/* Atur ukuran tombol bulat */
+#close-tap {
+  width: 40px;      
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Atur ukuran ikon di dalam tombol */
+#close-tap i {
+  font-size: 28px;   
+}
+
+/* Atur jarak TapTarget dari elemen target */
+.tap-target {
+  margin: 0;
+  transform: translateY(0, -10px);
+}
+/* Variasi Logo Navbar End */
 /* Garis Navbar End */
 
 /* SLIDER */

@@ -194,22 +194,22 @@ fetch("modals.html")
   });
 
 
-    // Fungsi untuk menampilkan progress bar
-  function showProgress() {
-    document.getElementById("navbar-progress").style.display = "block";
-  }
+// Variasi Logo Navbar
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".tap-target");
+  var instances = M.TapTarget.init(elems);
 
-  // Fungsi untuk menyembunyikan progress bar
-  function hideProgress() {
-    document.getElementById("navbar-progress").style.display = "none";
-  }
+  // Ambil instance pertama
+  var tapTarget = M.TapTarget.getInstance(elems[0]);
 
-  // Contoh penggunaan:
-  // tampilkan progress bar saat mulai loading
-  showProgress();
+  // Buka hanya saat logo diklik
+  document.getElementById("logo-brand").addEventListener("click", function () {
+    tapTarget.open();
+  });
+});
 
-  // sembunyikan progress bar setelah 3 detik (misalnya selesai loading)
-  setTimeout(hideProgress, 3000);
+
+
 
 
     
