@@ -122,14 +122,18 @@ body .navbar-fixed .progress .indeterminate:after {
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
-}
-
-.tap-target p {
-  line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .tap-target h5 {
+  color: #fff;
+  margin-top: 10px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  
+}
+
+.tap-target p {
+  color: #fff;
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
 }
@@ -140,6 +144,7 @@ body .navbar-fixed .progress .indeterminate:after {
   height: 40px;
   line-height: 40px;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
 }
 
 /* Atur ukuran ikon di dalam tombol */
