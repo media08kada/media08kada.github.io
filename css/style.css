@@ -203,6 +203,25 @@ body .navbar-fixed .progress .indeterminate:after {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.caption.center-align h3 {
+  position: relative;
+  top: -30px; /* naikkan h3 */
+}
+
+.caption.center-align h5 {
+  position: relative;
+  top: -25px; /* naikkan h5 */
+}
+
+@media (min-width: 1200px) {
+  .caption.center-align h3 {
+    top: -40px;
+  }
+  .caption.center-align h5 {
+    top: -30px;
+  }
+}
+
 /* Caption */
 .slider .caption {
   position: absolute;
