@@ -25,42 +25,36 @@
   });
 
 
- function doPost(e) {
-   // Ganti dengan ID folder Google Drive Anda
-   var folder = DriveApp.getFolderById("1vkYT8BpZWZgcV5zJ-Ylnck17lDoN4PeW");
+function doPost(e) {
+  try {
+    var folder = DriveApp.getFolderById("1vkYT8BpZWZgcV5zJ-Ylnck17lDoN4PeW");
 
-   // Ganti dengan ID Spreadsheet Anda
-   var sheet = SpreadsheetApp.openById(
-     "1eOMn7G3IGjajGyNQ4WVA9T2xfl_PRyTZ3W_Jla0LLjE").getSheetByName("Sheet1");
+    // Ambil data form
+    var nama = e.parameter.nama;
+    var telepon = e.parameter.telepon;
+    var jumlah = e.parameter.jumlah;
 
-   var nama = e.parameter.nama;
-   var telepon = e.parameter.telepon;
-   var jumlah = e.parameter.jumlah;
+    // Ambil file upload (input name="bukti")
+    var uploadedFiles = e.files.bukti;
 
-   var urls = [];
+    if (uploadedFiles) {
+      if (Array.isArray(uploadedFiles)) {
+        uploadedFiles.forEach(function (file) {
+          folder.createFile(file);
+        });
+      } else {
+        folder.createFile(uploadedFiles);
+      }
+    }
 
-   // Tangani upload file bukti
-   if (e.files && e.files.bukti) {
-     var buktiFiles = e.files.bukti;
+    return ContentService.createTextOutput(
+      "Data donasi tersimpan: " + nama + ", " + telepon + ", " + jumlah,
+    );
+  } catch (err) {
+    return ContentService.createTextOutput("Error: " + err.message);
+  }
+}
 
-     if (!Array.isArray(buktiFiles)) {
-       buktiFiles = [buktiFiles];
-     }
-
-     for (var i = 0; i < buktiFiles.length; i++) {
-       var f = folder.createFile(buktiFiles[i]);
-       urls.push(f.getUrl());
-     }
-   }
-
-   // Simpan data ke Google Sheet
-   sheet.appendRow([nama, telepon, jumlah, urls.join(", ")]);
-
-   // Return JSON response
-   return ContentService.createTextOutput(
-     JSON.stringify({ status: "Success" }),
-   ).setMimeType(ContentService.MimeType.JSON);
- }
 
 
 
