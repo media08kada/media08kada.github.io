@@ -27,33 +27,21 @@
 
 function doPost(e) {
   try {
-    var folder = DriveApp.getFolderById("1vkYT8BpZWZgcV5zJ-Ylnck17lDoN4PeW");
+    // Tentukan folder tujuan di Google Drive
+    var folder = DriveApp.getFolderById("PASTE_FOLDER_ID_DI_SINI");
 
-    // Ambil data form
-    var nama = e.parameter.nama;
-    var telepon = e.parameter.telepon;
-    var jumlah = e.parameter.jumlah;
+    // Ambil file dari request
+    var fileBlob = e.parameter.bukti;
 
-    // Ambil file upload (input name="bukti")
-    var uploadedFiles = e.files.bukti;
+    // Buat file di folder
+    var file = folder.createFile(fileBlob);
 
-    if (uploadedFiles) {
-      if (Array.isArray(uploadedFiles)) {
-        uploadedFiles.forEach(function (file) {
-          folder.createFile(file);
-        });
-      } else {
-        folder.createFile(uploadedFiles);
-      }
-    }
-
-    return ContentService.createTextOutput(
-      "Data donasi tersimpan: " + nama + ", " + telepon + ", " + jumlah,
-    );
+    return ContentService.createTextOutput("Upload sukses: " + file.getName());
   } catch (err) {
     return ContentService.createTextOutput("Error: " + err.message);
   }
 }
+
 
 
 
