@@ -70,10 +70,10 @@ body .navbar-fixed nav {
 
 /* Progress bar menempel ke bawah nav */
 body .navbar-fixed .progress {
-  margin: 0;          
-  height: 2px;        
-  position: absolute; 
-  bottom: 0;          
+  margin: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -87,15 +87,33 @@ body .navbar-fixed .progress .indeterminate {
 
 /* Override keyframes bawaan Materialize */
 @keyframes indeterminate {
-  0%   { left: -35%; right: 100%; }
-  60%  { left: 100%; right: -90%; }
-  100% { left: 100%; right: -90%; }
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
 }
 
 @keyframes indeterminate-short {
-  0%   { left: -200%; right: 100%; }
-  60%  { left: 107%; right: -8%; }
-  100% { left: 107%; right: -8%; }
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
 }
 
 /* Terapkan durasi lebih panjang ke kedua animasi */
@@ -118,10 +136,10 @@ body .navbar-fixed .progress .indeterminate:after {
 
 /* Ubah background TapTarget menjadi gambar */
 .tap-target {
-  background-image: url('../slider/img/Ondel-ondel.jpg'); 
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat; 
+  background-image: url('../slider/img/Ondel-ondel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -129,27 +147,27 @@ body .navbar-fixed .progress .indeterminate:after {
   color: #212121;
   margin-top: 10px;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tap-target p {
   color: #212121;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Atur ukuran tombol bulat */
 #close-tap {
-  width: 40px;      
+  width: 40px;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Atur ukuran ikon di dalam tombol */
 #close-tap i {
-  font-size: 28px;   
+  font-size: 28px;
 }
 
 /* Atur jarak TapTarget dari elemen target */
@@ -201,10 +219,6 @@ body .navbar-fixed .progress .indeterminate:after {
   margin: 110px 0 15px;
 }
 
-.slider .caption h5 {
-  margin-top: 10px;
-}
-
 .caption h3 {
   font-size: 48px;
   font-weight: bold;
@@ -221,7 +235,6 @@ body .navbar-fixed .progress .indeterminate:after {
 .modal-title h6 {
   color: grey;
 }
-
 
 /* Responsive untuk layar kecil */
 @media only screen and (max-width: 600px) {
@@ -299,7 +312,7 @@ body .navbar-fixed .progress .indeterminate:after {
 .square-img {
   width: 100%;
   display: block;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -309,7 +322,7 @@ body .navbar-fixed .progress .indeterminate:after {
   .slider .berita-slides li {
     position: relative;
     width: 100%;
-    padding-top: 100%; 
+    padding-top: 100%;
   }
 
   .slides li img {
@@ -348,7 +361,7 @@ body .navbar-fixed .progress .indeterminate:after {
 /* 📱 Handphone (≤ 767px) */
 @media (max-width: 767px) {
   .berita-slider {
-    max-width: 100%; 
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -372,7 +385,7 @@ body .navbar-fixed .progress .indeterminate:after {
 /* 🖥️ Desktop (≥ 1440px) */
 @media (min-width: 1440px) {
   .berita-slider {
-    max-width: 400px; 
+    max-width: 400px;
     margin: 0 auto;
   }
 }
@@ -561,11 +574,11 @@ p {
 }
 
 /* Jarak Antar Elemen */
-  #wilayah h4,
-  #gallery,
-  #sekilas-berita {
-    margin-top: -15px;
-    margin-bottom: 20px;
+#wilayah h4,
+#gallery,
+#sekilas-berita {
+  margin-top: -15px;
+  margin-bottom: 20px;
 }
 
 .card.sticky {
@@ -655,4 +668,3 @@ p {
     margin-bottom: 6px;
   }
 }
-
