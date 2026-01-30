@@ -222,6 +222,13 @@ body .navbar-fixed .progress .indeterminate:after {
   }
 }
 
+h5.white-text.text-darken-3 {
+  margin-bottom: 4px;
+}
+#btn-hero {
+  margin-top: 0; /* hilangkan jarak tambahan */
+}
+
 /* Caption */
 .slider .caption {
   position: absolute;
