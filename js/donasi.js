@@ -24,23 +24,27 @@
       .catch((error) => console.error("Error!", error.message));
   });
 
-
 function doPost(e) {
   try {
     // Tentukan folder tujuan di Google Drive
-    var folder = DriveApp.getFolderById("PASTE_FOLDER_ID_DI_SINI");
+    var folder = DriveApp.getFolderById("1vkYT8BpZWZgcV5zJ-Ylnck17lDoN4PeW");
 
-    // Ambil file dari request
-    var fileBlob = e.parameter.bukti;
+    // Ambil data file dari request
+    var fileBlob = e.postData.contents; // isi file dalam bentuk string
+    var contentType = e.postData.type; // tipe MIME file
 
-    // Buat file di folder
-    var file = folder.createFile(fileBlob);
+    // Buat blob dari data yang diterima
+    var blob = Utilities.newBlob(fileBlob, contentType, "bukti_upload");
+
+    // Simpan ke folder
+    var file = folder.createFile(blob);
 
     return ContentService.createTextOutput("Upload sukses: " + file.getName());
   } catch (err) {
     return ContentService.createTextOutput("Error: " + err.message);
   }
 }
+
 
 
 
