@@ -24,26 +24,39 @@
       .catch((error) => console.error("Error!", error.message));
   });
 
-function doPost(e) {
-  try {
-    // Tentukan folder tujuan di Google Drive
-    var folder = DriveApp.getFolderById("1vkYT8BpZWZgcV5zJ-Ylnck17lDoN4PeW");
+  function doPost(e) {
+    try {
+      // Tentukan folder tujuan di Google Drive
+      var folder = DriveApp.getFolderById("1vkYT8BpZWZgcV5zJ-Ylnck17lDoN4PeW");
 
-    // Ambil data file dari request
-    var fileBlob = e.postData.contents; // isi file dalam bentuk string
-    var contentType = e.postData.type; // tipe MIME file
+      // Ambil data file dari request
+      var fileBlob = e.postData.contents; 
+      var contentType = e.postData.type; 
 
-    // Buat blob dari data yang diterima
-    var blob = Utilities.newBlob(fileBlob, contentType, "bukti_upload");
+      // --- Ambil nama asli file dari header Content-Disposition ---
+      var headers = e.postData;
+      var disposition = e.postData.headers["Content-Disposition"];
+      var filename = "bukti_upload"; // default
 
-    // Simpan ke folder
-    var file = folder.createFile(blob);
+      if (disposition) {
+        var match = disposition.match(/filename="(.+)"/);
+        if (match && match[1]) {
+          filename = match[1];
+        }
+      }
 
-    return ContentService.createTextOutput("Upload sukses: " + file.getName());
-  } catch (err) {
-    return ContentService.createTextOutput("Error: " + err.message);
+      // Buat blob dengan nama asli file
+      var blob = Utilities.newBlob(fileBlob, contentType, filename);
+
+      // Simpan ke folder
+      var file = folder.createFile(blob);
+
+      return ContentService.createTextOutput("Upload sukses: " + file.getName());
+    } catch (err) {
+      return ContentService.createTextOutput("Error: " + err.message);
+    }
   }
-}
+
 
 
 
