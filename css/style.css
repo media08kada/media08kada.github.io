@@ -54,12 +54,12 @@ body.dark-mode {
 .dropdown-content a,
 .sidenav a {
   color: black !important;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 .sidenav,
 .sidenav .user-view .name {
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 /* Garis Navbar Start */
@@ -220,7 +220,7 @@ body .navbar-fixed .progress .indeterminate:after {
 }
 
 .caption h3 {
-  font-size: 48px;
+  font-size: 54px;
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -239,7 +239,7 @@ body .navbar-fixed .progress .indeterminate:after {
 /* Responsive untuk layar kecil */
 @media only screen and (max-width: 600px) {
   .slider .caption {
-    top: 92%;
+    top: 95%;
     transform: translate(-50%, -50%);
   }
 
