@@ -26,4 +26,22 @@ html, body {
   background-color: transparent !important;
 }
 
+.navbar {
+  margin-bottom: 0; 
+}
+
+.progress {
+  margin: 0; 
+}
+
+.section.berita {
+  padding-top: 20px; 
+}
+
+#berita h4 {
+  margin-top: 10px; 
+}
+
+
+
 
