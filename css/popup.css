@@ -134,7 +134,7 @@
 
 .popup-box .btn {
   position: relative;
-  top: 0px; /* geser ke atas 10px */
+  top: 10px; /* geser ke atas 10px */
 }
 
 
@@ -148,7 +148,7 @@
 @media (min-width: 992px) {
   .popup-box {
     max-width: 350px;
-    padding: 50px;
+    padding: 60px;
   }
 }
 
@@ -183,7 +183,7 @@
   }
 
   .popup-logo {
-    width: 70px;
+    width: 80px;
     top: -40px;
   }
 
