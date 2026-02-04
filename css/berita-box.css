@@ -28,13 +28,13 @@
 .card.horizontal .card-stacked {
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* teks sejajar vertikal */
+  justify-content: center;  
   flex: 1;
 }
 
 /* Bagian action */
 .card.horizontal .card-action {
-  border-top: none;   /* hilangkan garis pembatas */
+  border-top: none;   
   margin: 0;
   padding: 0;
 }
@@ -64,25 +64,25 @@
 /* Cuplikan Kalimat */
 .quote {
   text-align: justify;
-  background-color: rgba(128, 128, 128, 0.2); /* abu-abu transparan */
+  background-color: rgba(128, 128, 128, 0.2); 
   padding: 5px 15px;
   border-radius: 5px;
   font-style: italic;
   font-size: 16px;
   display: inline-block; 
-  margin-top: 1px;      /* jarak atas */
+  margin-top: 1px;     
   margin-bottom: 1px;
 }
 
 .quote::before {
-  content: "❝";        /* kutip dekoratif awal */
+  content: "❝";        
   font-size: 50px;
   color: rgb(84, 84, 84);
   margin-right: 8px;
 }
 
 .quote::after {
-  content: "❞";        /* kutip dekoratif akhir */
+  content: "❞";        
   font-size: 50px;
   color: rgb(84, 84, 84);
   margin-left: 8px;
