@@ -193,19 +193,7 @@ fetch("modals.html")
   });
 
 
-// Variasi Logo Navbar
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".tap-target");
-  var instances = M.TapTarget.init(elems);
 
-  // Ambil instance pertama
-  var tapTarget = M.TapTarget.getInstance(elems[0]);
-
-  // Buka hanya saat logo diklik
-  document.getElementById("logo-brand").addEventListener("click", function () {
-    tapTarget.open();
-  });
-});
 
 
 
