@@ -618,3 +618,14 @@ p {
   }
 }
 
+#btn-hero {
+  text-align: center; 
+}
+
+#btn-hero a {
+  display: inline-block;
+  margin: 20 5px;
+}
+
+
+
