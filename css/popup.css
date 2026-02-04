@@ -103,7 +103,7 @@
 }
 
 .popup-box p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 1em;
   text-align: center;
   color: #f7f4f4;
@@ -134,7 +134,7 @@
 
 .popup-box .btn {
   position: relative;
-  top: -35px; /* geser ke atas 10px */
+  top: 0px; /* geser ke atas 10px */
 }
 
 
