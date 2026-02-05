@@ -635,7 +635,7 @@ p {
   position: absolute;
   bottom: 4%;          /* jarak proporsional dari bawah */
   right: 4%;           /* jarak proporsional dari kanan */
-  width: 12%;          /* proporsional terhadap container */
+  width: 15%;          /* proporsional terhadap container */
   max-width: 60px;     /* batas maksimal ukuran */
   aspect-ratio: 1 / 1; /* menjaga rasio logo */
   background: url("../img/partner/MediaKelapadua.png") no-repeat center;
