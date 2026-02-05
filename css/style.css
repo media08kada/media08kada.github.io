@@ -626,39 +626,57 @@ p {
 }
 
 /* Logo Slide-news Start */
+#slidernews {
+  position: relative; /* penting agar ::after menempel ke dalam container */
+}
+
 #slidernews::after {
   content: "";
   position: absolute;
-  bottom: 8px;   /* jarak dari bawah */
-  right: 8px;    /* jarak dari kanan */
-  width: 15%;    /* proporsional terhadap gambar */
-  max-width: 60px;
-  height: 0;
-  padding-bottom: 20%; /* menjaga aspek rasio */
+  bottom: 4%;          /* jarak proporsional dari bawah */
+  right: 4%;           /* jarak proporsional dari kanan */
+  width: 12%;          /* proporsional terhadap container */
+  max-width: 60px;     /* batas maksimal ukuran */
+  aspect-ratio: 1 / 1; /* menjaga rasio logo */
   background: url("../img/partner/MediaKelapadua.png") no-repeat center;
   background-size: contain;
   z-index: 999;
+  opacity: 0.8;
 }
 
-
-/* Tablet */
-@media (max-width: 1024px) {
+/* Laptop medium (<=1366px) */
+@media (max-width: 1366px) {
   #slidernews::after {
-    width: 20%;       /* sedikit lebih besar */
-    max-width: 50px;
-    bottom: 40%;
+    width: 18%;
+    max-width: 55px;
+    bottom: 4%;
     right: 3%;
   }
 }
 
-/* Mobile */
+/* Tablet landscape (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #slidernews::after {
+    width: 20%;       /* ukuran menengah */
+    max-width: 48px;
+    bottom: 3%;       /* tetap di bawah */
+    right: 3%;
+  }
+}
+
+/* Mobile (<=768px) */
 @media (max-width: 768px) {
   #slidernews::after {
-    width: 25%;       /* lebih besar agar tetap terlihat */
+    width: 25%;
     max-width: 40px;
-    bottom: 25%;
+    bottom: 4%;        /* benar-benar menempel */
     right: 4%;
   }
 }
 /* Logo Slide-news End */
+
+
+
+
+
 
