@@ -124,9 +124,7 @@ body .navbar-fixed .progress .indeterminate:after {
   animation: indeterminate-short 4s infinite;
 }
 
-
 /* Garis Navbar End */
-
 /* SLIDER */
 .slider {
   position: relative;
@@ -626,6 +624,9 @@ p {
   display: inline-block;
   margin: 20 5px;
 }
+
+
+
 
 
 
