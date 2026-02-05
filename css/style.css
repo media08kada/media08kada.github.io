@@ -625,8 +625,40 @@ p {
   margin: 20 5px;
 }
 
+/* Logo Slide-news Start */
+#slidernews::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;   /* jarak dari bawah */
+  right: 8px;    /* jarak dari kanan */
+  width: 15%;    /* proporsional terhadap gambar */
+  max-width: 60px;
+  height: 0;
+  padding-bottom: 20%; /* menjaga aspek rasio */
+  background: url("../img/partner/MediaKelapadua.png") no-repeat center;
+  background-size: contain;
+  z-index: 999;
+}
 
 
+/* Tablet */
+@media (max-width: 1024px) {
+  #slidernews::after {
+    width: 20%;       /* sedikit lebih besar */
+    max-width: 50px;
+    bottom: 40%;
+    right: 3%;
+  }
+}
 
-
+/* Mobile */
+@media (max-width: 768px) {
+  #slidernews::after {
+    width: 25%;       /* lebih besar agar tetap terlihat */
+    max-width: 40px;
+    bottom: 25%;
+    right: 4%;
+  }
+}
+/* Logo Slide-news End */
 
