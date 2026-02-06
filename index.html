@@ -43,7 +43,11 @@
 
     <!-- CSS Libraries -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- css Swiper -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -796,41 +800,36 @@
     <script src="https://apis.google.com/js/platform.js"></script>
     <!-- Video Section End -->
 
+    <!-- Parallax Background -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="slider/img/parallax-background.jpg" alt="Background Contact Us">
+      </div>
+    </div>
+
     <!-- Contact Us Start -->
-   <section id="contact" class="contact grey lighten-3 scrollspy">
-    <div class="container">
-      <h4 class="center light grey-text text-darken-3" style="margin-top: 5px;">Contact Us</h4>
+    <section id="contact" class="contact grey lighten-3 scrollspy">
+      <div class="container">
+        <h4 class="center light grey-text text-darken-3" style="margin-top: 5px;">Contact Us</h4>
         <div class="row">
           <div class="col m5 s12">
-
             <div class="card-panel green darken-1 center white-text">
               <h6 class="light">Bekerjasama :</h6>
-                <img src="img/partner/Logo DKI New Vector 2020.png" width="60" height="62" class="dki-logo" />
-                <img src="img/partner/logo-lmk.png" width="60" height="60" />
-                <img src="img/partner/rw08.png" width="65" height="65" />
-                <img src="img/partner/puskesmas.png" width="80" height="60" />
-                <img src="img/partner/logo PKK.png" width="64" height="60" />
-                <img src="img/partner/Logo Karang Taruna Jaya.png" width="62" height="60" />
-                <img src="img/partner/kosongdelapan102.png" width="60" height="60" />
-                <p></p>
-                 <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
-                <!-- Histats.com  START  (aync)-->
-                <script type="text/javascript">var _Hasync= _Hasync|| [];
-                _Hasync.push(['Histats.start', '1,4996560,4,1029,150,25,00011111']);
-                _Hasync.push(['Histats.fasi', '1']);
-                _Hasync.push(['Histats.track_hits', '']);
-                (function() {
-                var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-                hs.src = ('//s10.histats.com/js15_as.js');
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-                })();</script>
-                <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4996560&101" alt="" border="0"></a></noscript>
-                <!-- Histats.com  END  -->
+              <img src="img/partner/Logo DKI New Vector 2020.png" width="60" height="62" class="dki-logo" />
+              <img src="img/partner/logo-lmk.png" width="60" height="60" />
+              <img src="img/partner/rw08.png" width="65" height="65" />
+              <img src="img/partner/puskesmas.png" width="80" height="60" />
+              <img src="img/partner/logo PKK.png" width="64" height="60" />
+              <img src="img/partner/Logo Karang Taruna Jaya.png" width="62" height="60" />
+              <img src="img/partner/kosongdelapan102.png" width="60" height="60" />
+              <p></p>
+              <div id="histats_counter"></div>
             </div>
-            
             <ul class="collection with-header center">
               <li class="collection-header"><h6>mediakelapadua.web.id</h6></li>
-              <li class="collection-item" style="font-size: smaller;">Jl. H. Kelik Gg lada No.102, Kelapa Dua Kebon Jeruk Jakarta Barat 11550</li>
+              <li class="collection-item" style="font-size: smaller;">
+                Jl. H. Kelik Gg lada No.102, Kelapa Dua Kebon Jeruk Jakarta Barat 11550
+              </li>
             </ul>
           </div>
 
@@ -843,25 +842,27 @@
                   <label for="name">Nama</label>
                 </div>
                 <div class="input-field">
-                  <input type="email" name="email" id="email" class="validate" name="email" />
+                  <input type="email" name="email" id="email" class="validate" />
                   <label for="email">Email</label>
                 </div>
                 <div class="input-field">
                   <input type="text" name="telepon" id="phone" required class="validate" />
-                  <label for="Phone">Telepon</label>
+                  <label for="phone">Telepon</label>
                 </div>
                 <div class="input-field">
                   <textarea name="pesan" id="message" class="materialize-textarea"></textarea>
                   <label for="message">Pesan</label>
                 </div>
                 <button type="submit" class="waves-effect btn green" onclick="showToast()">Kirim</button>
-                </div>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </section>
     <!-- Contact Us End -->
+
+
 
     <!-- Scroll Ke Atas -->
       <a href="#top" 
@@ -890,6 +891,7 @@
 
    <!-- JavaScript -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Berita Wilayah -->
      <script>
