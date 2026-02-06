@@ -186,7 +186,6 @@ fetch("modals.html")
       "https://www.youtube.com/embed/" + videoId;
   }
 
-
   document.addEventListener("DOMContentLoaded", function () {
     var elems = document.querySelectorAll(".collapsible");
     var instances = M.Collapsible.init(elems, options);
