@@ -208,8 +208,6 @@ fetch("modals.html")
     ).appendChild(hs);
   })();
 
-
-
 // Parallax //
   document.addEventListener("DOMContentLoaded", function () {
     var elems = document.querySelectorAll(".parallax");
