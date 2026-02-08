@@ -1,0 +1,29 @@
+ */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+}
+
+/* Hilangkan warna hitam pada container */
+.container {
+  background-color: transparent !important;
+}
+
+/* Pastikan item berita tidak hitam */
+.collection-item {
+  background-color: #fff !important; /* putih */
+  color: #000 !important;            /* teks hitam */
+}
+
+#berita {
+  background-color: transparent !important;
+}
+
+
