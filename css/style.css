@@ -636,7 +636,7 @@ p {
 
 .berita-slider,
 .col.s12.m8.light {
-  margin-bottom: -50px; /* lebih rapat */
+  margin-bottom: 5px; /* lebih rapat */
   padding: 0; /* hilangkan padding ekstra */
 }
 
