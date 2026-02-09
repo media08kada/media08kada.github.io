@@ -210,6 +210,17 @@ body .navbar-fixed .progress .indeterminate:after {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.berita-slider,
+.col.s12.m8.light {
+  margin-bottom: 5px; /* lebih rapat */
+  padding: 0; /* hilangkan padding ekstra */
+}
+
+.no-gap {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 #slidernews {
   margin-top: 0 !important;
 }
@@ -632,15 +643,4 @@ p {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
-
-.berita-slider,
-.col.s12.m8.light {
-  margin-bottom: 5px; /* lebih rapat */
-  padding: 0; /* hilangkan padding ekstra */
-}
-
-.no-gap {
-  margin: 0 !important;
-  padding: 0 !important;
 }
