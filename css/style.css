@@ -644,3 +644,22 @@ p {
   background-size: cover;
   background-position: center;
 }
+
+/* Info Wilayah Background */
+.custom-bg {
+  background: url('../img/partner/mediakelapadua.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.custom-bg .card-content {
+  position: relative;
+  z-index: 2;
+}
+
