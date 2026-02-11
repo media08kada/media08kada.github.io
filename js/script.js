@@ -214,6 +214,17 @@ fetch("modals.html")
     M.Parallax.init(elems);
   });
 
+   // Ambil tombol close-btn
+  document.getElementById("close").addEventListener("click", function(e) {
+    e.preventDefault(); // cegah link default
+    document.getElementById("icons").style.display = "none"; // sembunyikan div
+  });
+
+
+
+
+
+
 
 
 
