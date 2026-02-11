@@ -1,7 +1,7 @@
 /* Bottom Icons Start */
 #icons {
   position: fixed;       /* tetap di layar meski di-scroll */
-  bottom: 100px;         /* jarak dari bawah */
+  bottom: 95px;         /* jarak dari bawah */
   right: 20px;           /* jarak dari kanan */
   z-index: 9999;         /* pastikan di atas elemen lain */
 }
