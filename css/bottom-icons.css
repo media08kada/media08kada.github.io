@@ -1,19 +1,19 @@
 /* Bottom Icons Start */
 #icons {
-  position: fixed;       /* tetap di layar meski di-scroll */
-  bottom: 95px;         /* jarak dari bawah */
-  right: 20px;           /* jarak dari kanan */
-  z-index: 9999;         /* pastikan di atas elemen lain */
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 9999;
 }
 
 #icons img {
-  width: 80px;           /* ukuran default */
-  height: auto;          /* proporsional */
-  animation: pulse 2s infinite; /* tambahkan animasi pulse */
+  width: 90px;
+  height: auto;
+  animation: pulse 2s infinite;
 }
 
 #icons.btn-floating {
-  width: 80px;   /* default btn-large biasanya 56px */
+  width: 80px;
   height: 80px;
   line-height: 80px;
 }
@@ -25,31 +25,31 @@
 /* Responsif untuk layar mobile */
 @media (max-width: 600px) {
   #icons {
-    bottom: 70px;        /* lebih dekat ke footer */
-    right: 15px;         /* lebih rapat ke tepi */
+    bottom: 70px;
+    right: 15px;
   }
 
   #icons img {
-    width: 60px;         /* perkecil ikon */
+    width: 60px; /* perkecil ikon */
   }
 
   #icons.btn-floating {
-    width: 60px;         /* perkecil tombol */
+    width: 60px; /* perkecil tombol */
     height: 60px;
     line-height: 60px;
   }
 
   #icons.btn-floating i {
-    font-size: 24px;     /* perkecil ikon di dalam tombol */
+    font-size: 24px; /* perkecil ikon di dalam tombol */
   }
 }
 
-#close{
+#close {
   position: absolute;
   top: -5px;
   right: -10px;
-  width: 20px;      /* lebih kecil dari 30px */
-  height: 20px;     /* lebih kecil dari 30px */
+  width: 20px; /* lebih kecil dari 30px */
+  height: 20px; /* lebih kecil dari 30px */
   display: flex;
   align-items: center;
   justify-content: center;
