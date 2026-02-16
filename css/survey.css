@@ -7,23 +7,24 @@ section#survey {
 }
 
 .input-field {
-  margin: 0; /* hilangkan margin default */
+  margin: 0; 
 }
 .input-field input {
-  height: 3rem; /* samakan tinggi input */
+  height: 3rem; 
   line-height: 3rem;
 }
 
 .input-field label {
-  white-space: nowrap; /* cegah label turun ke bawah */
-  font-size: 0.9rem;   /* kecilkan sedikit agar muat */
+  white-space: nowrap; 
+  font-size: 1rem;   /* kecilkan sedikit agar muat */
 }
 
 .select option {
   text-transform: lowercase;
   font-size: 0.5rem;
-  color: grey; /* bisa pakai grey-text juga */
+  color: black; /* bisa pakai grey-text juga */
 }
+
 
 .data-survey {
   margin-bottom: 2rem;
@@ -61,12 +62,14 @@ section#survey {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 15px; /* jarak antar kolom */
+    margin-bottom: 20px; /* jarak antar kolom */
   }
 
   .survey-contact-form .input-field {
     flex: 1; /* isi kolom menyesuaikan tinggi */
   }
 }
+
+
 
 

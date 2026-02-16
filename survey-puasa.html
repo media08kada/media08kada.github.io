@@ -100,7 +100,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h4 class="center-align grey-text text-darken-1">Survey Ramadhan</h4>
+          <h4 class="center-align grey-text text-darken-1">Survey Pelayanan</h4>
         </div>
       </div>
 
@@ -164,81 +164,77 @@
             <h6 class="center">Data Survay Warga</h6>
             </div>
 
-            <!-- Pertanyaan 1 -->
+            <!-- Kegiatan Pelayanan -->
             <div class="row">
               <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-1" required>
-                  <option value="" disabled></option>
-                  <option value="1">Alarm Handphone/Jam</option>
-                  <option value="2">Toa Masjid/Musholla</option>
-                  <option value="3">Anak-anak Berkeliling</option>
+                <select multiple name="kegiatan" required>
+                  <option value="" disabled>Pilihan Anda</option>
+                  <option value="1">Pengurus RT/RW</option>
+                  <option value="2">Posyandu Siklus Hidup</option>
+                  <option value="3">Keamanan</option>
                 </select>
-                <label>Selama bulan puasa, pengingat bangun Sahur biasanya<br> dibantu?</label>
+                <label>Kegiatan Pelayanan</label>
               </div>
             </div>
 
-            <!-- Pertanyaan 2 -->
+            <!-- Jenis Pelayanan -->
             <div class="row">
               <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-2" required>
-                  <option value="" disabled></option>
-                  <option value="1">Setuju</option>
-                  <option value="2">Kurang Setuju</option>
-                  <option value="3">Tidak Setuju</option>
+                <select multiple name="pelayanan" required >
+                  <option value="" disabled>Pilihan Anda</option>
+                  <option value="1">Posyandu</option>
+                  <option value="2">Posbindu</option>
+                  <option value="3">Posyandu Remaja</option>
                 </select>
-                <label>Bagaimana pendapat Anda tentang tradisi anak-anak<br> berkeliling membangunkan sahur?</label>
+                <label>Jenis Pelayanan</label>
               </div>
             </div>
 
-            <!-- Pertanyaan 3 -->
+            <!-- Pelayanan Kader -->
             <div class="row">
-              <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-3" required>
-                  <option value="" disabled selected></option>
-                  <option value="1">Tidak mengganggu</option>
-                  <option value="2">Kadang mengganggu</option>
-                  <option value="3">Sangat mengganggu</option>
+              <div class="input-field col s12 m6 equal-spacing">
+                <select name="kader" required>
+                  <option value="" disabled selected>Pilihan Anda</option>
+                  <option value="1">Baik</option>
+                  <option value="2">Kurang Baik</option>
+                  <option value="3">Buruk</option>
                 </select>
-                <label>Apakah suara anak-anak berkeliling sahur (dengan bedug,<br> kentongan, atau teriakan) menurut Anda mengganggu?</label>
+                <label>Pelayanan Kader</label>
+              </div>
+              <div class="input-field col s12 m6 equal-spacing">
+                <select name="medis" required >
+                  <option value="" disabled selected>Pilihan Anda</option>
+                  <option value="1">Baik</option>
+                  <option value="2">Kurang Baik</option>
+                  <option value="3">Buruk</option>
+                </select>
+                <label>Tenaga Kesehatan</label>
               </div>
             </div>
 
-            <!-- Pertanyaan 4 -->
+            <!-- Sarana Prasarana -->
             <div class="row">
               <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-4" required>
-                  <option value="" disabled selected></option>
-                  <option value="1">Melestarikan budaya lokal</option>
-                  <option value="2">Membantu orang bangun sahur</option>
-                  <option value="3">Tidak ada manfaat</option>
+                <select multiple name="sarana" required >
+                  <option value="" disabled>Pilihan Anda</option>
+                  <option value="1">Baik</option>
+                  <option value="2">Kurang Baik</option>
+                  <option value="3">Buruk</option>
                 </select>
-                <label>Menurut Anda, apa manfaat dari tradisi anak-anak<br> berkeliling membangunkan sahur?</label>
+                <label>Sarana dan Prasarana</label>
               </div>
             </div>
 
-            <!-- Pertanyaan 5 -->
+            <!-- Rencana Kembali -->
             <div class="row">
               <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-5" required >
-                  <option value="" disabled></option>
-                  <option value="1">Sangat setuju</option>
-                  <option value="2">Setuju dengan aturan tertentu</option>
-                  <option value="3">Tidak setuju</option>
+                <select name="rencana" required >
+                  <option value="" disabled selected>Pilihan Anda</option>
+                  <option value="1">Kembali</option>
+                  <option value="2">Pikir-pikir</option>
+                  <option value="3">Tidak kembali</option>
                 </select>
-                <label>Apakah Anda setuju tradisi ini tetap dijalankan di masa<br> sekarang?</label>
-              </div>
-            </div>
-
-            <!-- Pertanyaan 6 -->
-            <div class="row">
-              <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-6" required >
-                  <option value="" disabled></option>
-                  <option value="1">Melarang</option>
-                  <option value="2">Netral</option>
-                  <option value="3">Setuju dengan aturan tertentu</option>
-                </select>
-                <label>Bagaimana seharusnya peran pengurus wilayah<br> dalam mensikapi sahur keliling ?</label>
+                <label>Apakah Anda berencana untuk kembali lagi?</label>
               </div>
             </div>
 
