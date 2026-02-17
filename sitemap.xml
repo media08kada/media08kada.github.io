@@ -133,6 +133,13 @@
   <priority>0.80</priority>
 </url>
 
+<!-- Berita Ramadhan -->
+<url>
+  <loc>https://mediakelapadua.web.id/Pilihan/menanti-penetapan-awal-ramadhan-2026.html</loc>
+  <lastmod>2026-02-17T19:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 <!-- Info Wilayah -->
 <url>
   <loc>https://mediakelapadua.web.id/info-wilayah/kelurahan.html</loc>
