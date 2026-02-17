@@ -173,7 +173,7 @@
                   <option value="2">Toa Masjid/Musholla</option>
                   <option value="3">Anak-anak Berkeliling</option>
                 </select>
-                <label>Apa yang paling sering membantu<br> Anda untuk bangun sahur?</label>
+                <label>Apa yang paling sering membantu Anda untuk<br> bangun sahur?</label>
               </div>
             </div>
 
@@ -193,8 +193,8 @@
             <!-- Pertanyaan 3 -->
             <div class="row">
               <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-3" required>
-                  <option value="" disabled selected></option>
+                <select multiple name="tanya-2" required>
+                  <option value="" disabled></option>
                   <option value="1">Tidak mengganggu</option>
                   <option value="2">Kadang mengganggu</option>
                   <option value="3">Sangat mengganggu</option>
@@ -206,8 +206,8 @@
             <!-- Pertanyaan 4 -->
             <div class="row">
               <div class="input-field col s12 equal-spacing">
-                <select multiple name="tanya-4" required>
-                  <option value="" disabled selected></option>
+                <select multiple name="tanya-2" required>
+                  <option value="" disabled></option>
                   <option value="1">Melestarikan budaya lokal</option>
                   <option value="2">Membantu orang bangun sahur</option>
                   <option value="3">Tidak ada manfaat</option>
@@ -360,6 +360,26 @@ document.getElementById("surveyForm").addEventListener("submit", function(e) {
     alert("Harap isi semua kolom survey sebelum mengirim!");
   }
 });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Ambil semua select di dalam .input-field
+    const selects = document.querySelectorAll(".input-field select");
+
+    selects.forEach(selectEl => {
+      const labelEl = selectEl.parentElement.querySelector("label");
+
+      selectEl.addEventListener("change", function() {
+        // Jika ada pilihan (tidak kosong), sembunyikan label
+        if (selectEl.value) {
+          labelEl.style.display = "none";
+        } else {
+          labelEl.style.display = "block";
+        }
+      });
+    });
+  });
 </script>
 
     <!-- JavaScript -->
