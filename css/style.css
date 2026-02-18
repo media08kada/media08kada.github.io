@@ -124,6 +124,7 @@ body .navbar-fixed .progress .indeterminate {
 body .navbar-fixed .progress .indeterminate:before {
   animation: indeterminate 4s infinite;
 }
+
 body .navbar-fixed .progress .indeterminate:after {
   animation: indeterminate-short 4s infinite;
 }
@@ -201,7 +202,7 @@ body .navbar-fixed .progress .indeterminate:after {
   }
 
   .slider .caption h5 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 15px;
   }
 }
