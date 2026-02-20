@@ -436,8 +436,6 @@ p {
   margin: 2px 0;
 }
 
-
-
 @media (max-width: 600px) {
   .row {
     margin-left: 0;
