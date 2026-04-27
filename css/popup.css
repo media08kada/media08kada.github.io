@@ -43,7 +43,6 @@
 
 /* Popup khusus iklan */
 .popup-box {
-  background-image: url('img/iklan/himbauan.jpeg');
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -157,18 +156,22 @@
     height: 60vh;
     padding: 60px;
   }
+  .popup-logo {
+    width: 120px;
+    top: -70px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .popup-box {
-    max-width: 100%;
-    padding: 30px 20px;
+    max-width: 80%;
+    padding: 40px;
+  }
+  .popup-logo {
+    width: 100px;
+    top: -60px;
   }
 
-  .popup-logo {
-    width: 90px;
-    top: -50px;
-  }
 
   .popup-box h4 {
     font-size: 1em;
@@ -180,30 +183,28 @@
   }
 }
 
+/* Handphone */
 @media (max-width: 480px) {
   .popup-box {
-    width: 95%; 
-    max-width: 300px; 
-    padding: 20px 15px;
+    width: 95%;
+    max-width: 300px;
+    padding: 15px;
     border-radius: 15px;
-    margin: 0 auto; 
   }
-
   .popup-logo {
     width: 80px;
     top: -40px;
   }
-
-  .popup-box h4 {
-    font-size: 0.9em;
+  .popup-box h3, .popup-box h4 {
+    font-size: 1em;
+    line-height: 1.2;
   }
-
-  .popup-box p {
+  .popup-box p, .popup-box h6 {
     font-size: 0.85em;
   }
-
   .popup-box .btn {
     font-size: 0.9em;
-    padding: 6px 16px;
+    padding: 6px 14px;
   }
 }
+
