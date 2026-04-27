@@ -42,8 +42,14 @@
 }
 
 /* Popup khusus iklan */
-.popup-iklan {
-  background-image: url('../img/iklan/wolbachia.jpg');
+.popup-box {
+  background-image: url('img/iklan/himbauan.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 90%;        
+  padding: 20px;     
+  margin: 0 auto;    
 }
 
 /* Logo popup */
@@ -147,14 +153,15 @@
 /* Responsive Popup */
 @media (min-width: 992px) {
   .popup-box {
-    max-width: 350px;
+    max-width: 450px;
+    height: 60vh;
     padding: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .popup-box {
-    max-width: 90%;
+    max-width: 100%;
     padding: 30px 20px;
   }
 
@@ -176,7 +183,7 @@
 @media (max-width: 480px) {
   .popup-box {
     width: 95%; 
-    max-width: 250px; 
+    max-width: 300px; 
     padding: 20px 15px;
     border-radius: 15px;
     margin: 0 auto; 
