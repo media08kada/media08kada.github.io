@@ -102,7 +102,7 @@
   <section id="survey" class="section survey grey-text text-darken-3">
     <div class="container">
       <div class="row">
-        <div class="col s12">
+        <div class="col s12" style="margin-top: -20px;">
           <h4 class="center-align grey-text text-darken-1">Survey Penataan Pembuangan Sampah</h4>
         </div>
       </div>
@@ -268,11 +268,32 @@
 
 <div class="data-notes">
   <div class="container">
-  <h6 class="center">Keterangan</h6>
-  <p style="text-align: justify">
-    Mohon isi survey berikut dengan lengkap. Data yang Anda berikan akan digunakan untuk keperluan peningkatan pelayanan masyarakat.
-  </p>
+    <h6 class="center">Keterangan</h6>
+    <p style="text-align: justify">
+      Mohon isi survey berikut dengan lengkap. Data yang Anda berikan akan digunakan untuk keperluan peningkatan pelayanan masyarakat.
+    </p>
+  </div>
 </div>
+
+
+<!-- Footer Start -->
+    <footer class="green darken-3 white-text center">
+      <p class="flow mb-5 light white-text">LMK-08 Kelapa Dua, Copyright 2025</p>
+
+        <!-- Channel Links -->
+         <ul class="social-links">
+          <li><a href="https://api.whatsapp.com/send?text=https://mediakelapadua.web.id" target="_blank" class="btn-floating z-depth-3 green lighten-1"><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="https://www.instagram.com/mediakelapadua" class="btn-floating green">
+          <i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61569679397521" class="btn-floating green">
+          <i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="https://www.youtube.com/@KosongDelapan102" class="btn-floating z-depth-3 green">
+          <i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="https://www.tiktok.com/@mediakelapadua" class="btn-floating z-depth-3 green">
+          <i class="fa-brands fa-tiktok"></i></a></li>
+         </ul>
+    </footer>
+    <!-- Footer End -->
 
 <!-- JavaScrip -->
 
@@ -286,7 +307,7 @@
   <script>
     $(document).ready(function(){
       M.updateTextFields();
-      $('select').formSelect(); // aktifkan semua select
+      $('select').formSelect(); 
     });
   </script>
 
@@ -352,7 +373,7 @@ $(document).ready(function(){
 </script>
 
 <!-- Pemberitahuan agar kolom survey diisi -->
-/ <script>
+<script>
 document.getElementById("surveyForm").addEventListener("submit", function(e) {
   let nama = this.nama.value.trim();
   let email = this.email.value.trim();

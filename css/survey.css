@@ -50,6 +50,11 @@ section#survey {
   margin-bottom: 20px; /* jarak antar kolom */
 }
 
+.data-notes {
+  margin-bottom: 40px; /* jarak ke footer */
+}
+
+
 /* Terapkan flexbox agar kolom dalam satu row rata tingginya */
 @media only screen and (max-width: 600px) {
   .survey-contact-form .row {
@@ -70,6 +75,18 @@ section#survey {
   }
 }
 
+.social-links {
+  list-style: none;       /* hilangkan bullet */
+  padding: 0;
+  margin: 0;
+  display: flex;          /* jadikan flexbox */
+  justify-content: center; /* posisikan di tengah */
+  gap: 10px;              /* jarak antar ikon */
+}
+
+.social-links li {
+  display: inline-block;  /* pastikan item sejajar */
+}
 
 
 
