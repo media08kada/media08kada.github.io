@@ -16,6 +16,10 @@ main {
   flex: 1;
 }
 
+p {
+font-size: 18px;
+}
+
 footer {
   margin-top: auto;
   font-size: 14px;
@@ -48,6 +52,10 @@ body.dark-mode {
 /* NAVBAR & LOGO */
 .brand-logo {
   max-width: 250px;
+}
+
+nav ul li a {
+font-size: 18px;
 }
 
 .navbar-brand img {
@@ -128,6 +136,7 @@ body .navbar-fixed .progress .indeterminate:before {
 body .navbar-fixed .progress .indeterminate:after {
   animation: indeterminate-short 4s infinite;
 }
+
 
 /* Garis Navbar End */
 /* SLIDER */
@@ -260,7 +269,7 @@ body .navbar-fixed .progress .indeterminate:after {
 }
 
 .taxt {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 
 .btn-small.green {
@@ -327,6 +336,10 @@ body .navbar-fixed .progress .indeterminate:after {
   .berita-slider {
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  P {
+    font-size: 14px;
   }
 }
 
@@ -469,7 +482,7 @@ p {
 /* Tablet (≤1024px) */
 @media (max-width: 1024px) {
   h6 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: 0.5px;
     margin-bottom: 1rem;
@@ -479,7 +492,7 @@ p {
 /* Laptop (≤1366px) */
 @media (max-width: 1366px) {
   h6 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     letter-spacing: 0.5px;
     margin-bottom: 1.2rem;
