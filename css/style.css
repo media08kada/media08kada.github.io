@@ -1,5 +1,10 @@
 /* GLOBAL & LAYOUT */
 html,
+:root {
+  --primary: #b6895b;
+  --bg: #242323;
+}
+
 body {
   height: 100%;
   margin: 0;
