@@ -79,6 +79,11 @@ font-size: 18px;
   font-weight: lighter;
 }
 
+.sidenav li > a {
+font-size: 20px !important;
+font-weight: 500;
+}
+
 /* Garis Navbar Start */
 body .navbar-fixed nav {
   border-bottom: none;
