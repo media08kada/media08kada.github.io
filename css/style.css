@@ -184,6 +184,12 @@ body .navbar-fixed .progress .indeterminate:after {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+#btn-hero {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
 /* Caption */
 .slider .caption {
   position: absolute;
