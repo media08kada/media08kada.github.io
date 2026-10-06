@@ -676,6 +676,7 @@ overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  margin-bottom: 20px;
 }
 
 /* Info Wilayah Background */
