@@ -163,7 +163,7 @@ nav .switch label {
 nav .switch .lever {
   width: 34px;
   height: 20px; 
-  background-color: grey !important;
+  background-color: white !important;
   border-radius: 20px;
   position: relative;
   transition: background-color 0.3s ease;
@@ -184,6 +184,7 @@ nav .switch .lever:after {
 /* Saat switch aktif */
 nav .switch input[type=checkbox]:checked + .lever:after {
   left: 15px;
+  background-color: white !important;
 }
 
 /* Perkecil di layar lebar */
