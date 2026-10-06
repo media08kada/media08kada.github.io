@@ -17,8 +17,8 @@ body{
 font-family:'Poppins',sans-serif;
 }
 
-h4,h5,h6{
-font-weight:600;
+h4,h5,h6 {
+font-weight: lighter;
 }
 
   html {
@@ -31,6 +31,7 @@ main {
 
 p {
 font-size: 18px;
+font-weight: 100;
 }
 
 footer {
@@ -297,6 +298,41 @@ body .navbar-fixed .progress .indeterminate:after {
 .compact-row {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+
+/* Tombol Like */
+#like-btn,
+#btn-hero {
+display: flex;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap; 
+}
+
+#btn-hero 
+#like-btn {
+display: flex;
+align-items: center;
+margin: 0;
+}
+
+#like-btn,
+#btn-hero {
+display: flex;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+#like-btn,
+#like-btn:hover,
+#like-btn:active,
+#like-btn:focus,
+#like-btn:visited {
+background-color: gray;
+color: white;
+border-color: gray;
 }
 
 /* Image & Slider */
