@@ -13,6 +13,14 @@ body {
   overflow-x: hidden;
 }
 
+body{
+font-family:'Poppins',sans-serif;
+}
+
+h4,h5,h6{
+font-weight:600;
+}
+
   html {
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
   }
@@ -340,7 +348,7 @@ body .navbar-fixed .progress .indeterminate:after {
   }
 }
 
-/* RESPONSIVE BREAKPOINTS  */
+/* Responsive Breakpoints  */
 /* 📱 Handphone (≤ 767px) */
 @media (max-width: 767px) {
   .berita-slider {
