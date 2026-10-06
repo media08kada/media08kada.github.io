@@ -56,7 +56,7 @@ body.dark-mode .card-panel h6,
 body.dark-mode #contact h4,
 body.dark-mode #contact .card-panel h5,
 body.dark-mode #contact .card-panel h6 {
-  color: #fff !important;
+  color: grey text-darken-3!important;
 }
 
 /* Section backgrounds */
