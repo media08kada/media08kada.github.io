@@ -18,7 +18,7 @@ font-family:'Poppins',sans-serif;
 }
 
 h4,h5,h6 {
-font-weight: lighter;
+font-weight:600;
 }
 
   html {
@@ -63,29 +63,37 @@ body.dark-mode {
   color: #fff;
 }
 
-/* Navbar & Logo */
+/* Navbar */
+/* Navbar utama */
+.navbar-fixed nav {
+background-color: rgba(1, 1, 1, 0.8) !important;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+
 .brand-logo {
-  max-width: 250px;
+max-width: 250px;
+}
+
+.navbar-brand img {
+vertical-align: middle;
+margin: auto 0;
 }
 
 nav ul li a {
 font-size: 18px;
 }
 
-.navbar-brand img {
-  vertical-align: middle;
-  margin: auto 0;
-}
-
+/* Dropdown & Sidenav */
 .dropdown-content a,
 .sidenav a {
-  color: black !important;
-  font-weight: lighter;
+color: #000 !important;
+font-weight: 300;
 }
 
 .sidenav,
 .sidenav .user-view .name {
-  font-weight: lighter;
+font-weight: 300;
 }
 
 .sidenav li > a {
@@ -93,70 +101,68 @@ font-size: 16px !important;
 font-weight: 300;
 }
 
-/* Garis Navbar Start */
+/* GARIS PROGRESS NAVBAR */
+/* Hilangkan border bawaan navbar */
 body .navbar-fixed nav {
-  border-bottom: none;
-  position: relative;
+position: relative;
+border-bottom: none;
 }
 
-/* Progress bar menempel ke bawah nav */
+/* Progress bar menempel di bawah navbar */
 body .navbar-fixed .progress {
-  margin: 0;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+height: 2px;
+margin: 0;
+background-color: #fff;
 }
 
-/* Warna garis bergerak */
+/* Warna garis berjalan */
 body .navbar-fixed .progress .indeterminate {
-  background-color: #8f6240;
-  animation-duration: 4s;
+background-color: #8f6240;
+animation-duration: 4s;
 }
 
-/* Override keyframes bawaan Materialize */
+/* ANIMASI PROGRESS BAR */
+/* Override animasi Materialize */
 @keyframes indeterminate {
-  0% {
-    left: -35%;
-    right: 100%;
-  }
-  60% {
-    left: 100%;
-    right: -90%;
-  }
-  100% {
-    left: 100%;
-    right: -90%;
-  }
+0% {
+left: -35%;
+right: 100%;
+}
+
+60%,
+100% {
+left: 100%;
+right: -90%;
+}
 }
 
 @keyframes indeterminate-short {
-  0% {
-    left: -200%;
-    right: 100%;
-  }
-  60% {
-    left: 107%;
-    right: -8%;
-  }
-  100% {
-    left: 107%;
-    right: -8%;
-  }
+0% {
+left: -200%;
+right: 100%;
 }
 
-/* Terapkan durasi lebih panjang ke kedua animasi */
-body .navbar-fixed .progress .indeterminate:before {
-  animation: indeterminate 4s infinite;
+60%,
+100% {
+left: 107%;
+right: -8%;
+}
 }
 
-body .navbar-fixed .progress .indeterminate:after {
-  animation: indeterminate-short 4s infinite;
+/* Perpanjang durasi animasi */
+body .navbar-fixed .progress .indeterminate::before {
+animation: indeterminate 4s infinite;
 }
 
-/* Garis Navbar End */
+body .navbar-fixed .progress .indeterminate::after {
+animation: indeterminate-short 4s infinite;
+}
+/* Navbar End */
+
 /* Slider */
 .slider {
   position: relative;
@@ -182,12 +188,6 @@ body .navbar-fixed .progress .indeterminate:after {
 .slider h5,
 .news h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-#btn-hero {
-display: flex;
-justify-content: center;
-margin-top: 20px;
 }
 
 /* Caption */
@@ -308,37 +308,30 @@ margin-top: 20px;
 
 
 /* Tombol Like */
-#like-btn,
 #btn-hero {
 display: flex;
-align-items: center;
-gap: 10px;
-flex-wrap: wrap; 
-}
-
-#btn-hero 
-#like-btn {
-display: flex;
-align-items: center;
-margin: 0;
-}
-
-#like-btn,
-#btn-hero {
-display: flex;
+justify-content: center;
 align-items: center;
 gap: 10px;
 flex-wrap: wrap;
 }
 
-#like-btn,
-#like-btn:hover,
-#like-btn:active,
-#like-btn:focus,
-#like-btn:visited {
+/* #like-btn yang berada di dalam #btn-hero */
+#btn-hero #like-btn {
+display: flex;
+align-items: center;
+margin: 0;
 background-color: gray;
 color: white;
+border: 1px solid gray;
+}
+
+#btn-hero #like-btn:hover,
+#btn-hero #like-btn:active,
+#btn-hero #like-btn:focus {
+background-color: gray;
 border-color: gray;
+color: white;
 }
 
 /* Image & Slider */
