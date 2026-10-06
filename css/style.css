@@ -677,7 +677,10 @@ overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  height: 50vh;
 }
+
+
 
 /* Info Wilayah Background */
 .custom-bg {
@@ -696,6 +699,7 @@ overflow: hidden;
   position: relative;
   z-index: 2;
 }
+
 
 
 

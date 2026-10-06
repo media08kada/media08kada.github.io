@@ -1,7 +1,7 @@
 /* Default (Light Mode) */
 body {
   background-color: #fff;
-  color: #212121;
+  color: #222;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
@@ -31,13 +31,11 @@ body.dark-mode a {
   color: #fff;
 }
 
-body.dark {
+body.dark nav {
   background-color: #212121;
   color: #fff;
 }
 
-
-/* Navbar & Header */
 body.dark-mode nav,
 body.dark-mode .collection-header,
 body.dark-mode #sekilas-berita .collection-item,
@@ -45,6 +43,7 @@ body.dark-mode #bekerjasama .collection-item,
 body.dark-mode #hubungi-kami .collection-item {
   background-color: #212121  !important;
 }
+
 body.dark-mode nav a,
 body.dark-mode h4,
 body.dark-mode h5,
@@ -100,7 +99,7 @@ body.dark-mode #sekilas-berita p {
   color: #ddd !important;
 }
 body.dark-mode #sekilas-berita a.btn-small {
-  background-color: #4caf50 !important;
+  background-color: #b6895b !important;
   color: #fff !important;
 }
 
@@ -108,18 +107,21 @@ body.dark-mode #sekilas-berita a.btn-small {
 body.dark-mode .btn,
 body.dark-mode .btn-small,
 body.dark-mode .btn-large {
-  color: #fff !important;
+color: #212121 !important;
 }
+
 body.dark-mode .btn.green,
 body.dark-mode .btn-small.green,
 body.dark-mode .btn-large.green {
-  background-color: #4caf50 !important;
+  background-color: #b6895b !important;
 }
+
 body.dark-mode .btn.grey,
 body.dark-mode .btn-small.grey,
 body.dark-mode .btn-large.grey {
-  background-color: #fff !important;
+  background-color: #b6895b !important;
 }
+
 body.dark-mode .btn:hover,
 body.dark-mode .btn-small:hover,
 body.dark-mode .btn-large:hover {
@@ -249,7 +251,7 @@ body.dark-mode .sidenav .user-view .email {
   color: #fff !important;
 }
 
-/* 🔽 Dropdown content di dark mode (agar teks hitam & tidak tertutup box) */
+/* Dropdown content di dark mode (agar teks hitam & tidak tertutup box) */
 body.dark-mode .dropdown-content {
   background-color: #fff !important;  
   z-index: 9999 !important;           
@@ -308,8 +310,7 @@ body.dark-mode .dropdown-content li > span {
 
 /* Dark Mode */
 body.dark-mode .gallery img {
-  background-color: #2e2e2e; /* abu-abu gelap */
-  
+  background-color: #2e2e2e; 
 }
 
 /* Default ukuran switch */
@@ -321,9 +322,9 @@ body.dark-mode .gallery img {
 /* Untuk layar kecil (misalnya max-width 600px) */
 @media (max-width: 600px) {
   .sidenav .switch label .lever {
-    width: 30px;   /* lebih kecil */
-    height: 15px;  /* lebih ramping */
-  }
+    width: 30px;  
+    height: 15px;
+  }  
 
   /* Atur ukuran teks label agar proporsional */
   .sidenav .switch label {
@@ -332,16 +333,16 @@ body.dark-mode .gallery img {
 
   /* Atur ukuran ikon atau padding jika ada */
   .sidenav .switch {
-    transform: scale(0.8); /* mengecilkan keseluruhan switch */
-    margin-left: 8px;      /* beri jarak agar tidak terlalu mepet */
+    transform: scale(0.8); 
+    margin-left: 8px;      
   }
 }
 
 /* Perbesar di layar lebar */
 @media (min-width: 992px) {
   .switch label .lever {
-    width: 60px;   /* lebih panjang */
-    height: 25px;  /* lebih tinggi */
+    width: 60px;   
+    height: 25px;  
   }
 
   .switch label .lever:after {
@@ -352,7 +353,7 @@ body.dark-mode .gallery img {
 
   /* Ikon kiri/kanan juga bisa diperbesar */
   .switch label i.material-icons {
-    font-size: 25px; /* default biasanya 18–24px */
+    font-size: 25px; 
     vertical-align: middle;
   }
 }
@@ -364,20 +365,21 @@ body.dark-mode .gallery img {
 
 /* Perubahan Warna pada model dark */
 /* Navbar */
-   nav.green.darken-3 {
-  background-color: #2e7d32; /* hijau */
+nav.green.darken-3 {
+background-color: #b6895b !important;
 }
 
 nav .container {
-  background-color: transparent; /* biar nav full */
+background-color: transparent; /* biar nav full */
 }
 
+/* Mode dark */
 body.dark-mode nav.green.darken-3 {
-  background-color:#424242 !important; /* hitam full */
+background-color: #b6895b !important;
 }
 
 body.dark-mode nav .container {
-  background-color: transparent;
+background-color: transparent;
 }
 
 /* Button Small */
@@ -393,6 +395,15 @@ body.dark-mode .btn-small.green:hover,
 body.dark-mode .btn-small.green:focus,
 body.dark-mode .btn-small.green:active {
   background-color: #a6784d !important; /* lebih gelap untuk hover */
+}
+
+body.dark-mode .btn-small.green {
+background-color: #b6895b !important;
+color: #fff !important;
+}
+
+body.dark-mode .btn-small.green:hover {
+background-color: #a6784d !important;
 }
 
 /* Card */
@@ -442,15 +453,16 @@ footer .btn-floating.green {
   background-color: #2e7d32; /* hijau bawaan */
 }
 
-body.dark-mode footer .btn-floating.green {
-  background-color: #a6784d !important;
-  color: #fff !important;
+body.dark-mode footer.btn-floating.green {
+background-color: #b6895b !important;
+color: #fff !important;
 }
 
 body.dark-mode footer .btn-floating.green:hover,
+body.dark-mode footer .btn-floating.green:hover,
 body.dark-mode footer .btn-floating.green:focus,
 body.dark-mode footer .btn-floating.green:active {
-  background-color: #8f6240 !important;
+background-color: #a6784d !important;
 }
 
 /* Footer Background */
@@ -585,6 +597,106 @@ body.dark-mode .navbar-fixed nav {
       }
     }
 
+    /* Button Dark Mode Fix */
+    body.dark-mode .btn,
+    body.dark-mode .btn-small,
+    body.dark-mode .btn-large,
+    body.dark-mode .btn-floating,
+    body.dark-mode .btn-theme,
+    body.dark-mode .waves-effect.btn,
+    body.dark-mode .btn.green,
+    body.dark-mode .btn-small.green,
+    body.dark-mode .btn-large.green,
+    body.dark-mode .btn-floating.green,
+    body.dark-mode .btn-floating.btn-medium.green.darken-2,
+    body.dark-mode a.btn,
+    body.dark-mode a.btn-small {
+    background-color: #b6895b !important;
+    color: #fff !important;
+    }
+
+    /* Hover */
+    body.dark-mode .btn:hover,
+    body.dark-mode .btn-small:hover,
+    body.dark-mode .btn-large:hover,
+    body.dark-mode .btn-floating:hover,
+    body.dark-mode .btn-theme:hover,
+    body.dark-mode .waves-effect.btn:hover {
+    background-color: #a6784d !important;
+    color: #fff !important;
+    }
+
+    /* Footer Social Links Dark Mode */
+    body.dark-mode footer .social-links .btn-floating {
+    background-color: #b6895b !important;
+    color: #fff !important;
+    }
+
+    body.dark-mode footer .social-links .btn-floating i {
+    color: #fff !important;
+    }
+
+    body.dark-mode footer .social-li*ks .btn-floating:hover,
+    body.dark-mode footer .social-links .btn-floating:focus,
+    body.dark-mode footer .social-links .btn-floating:active { background-color: #a6784d !important;
+    }
+
+    /* Navbar Light Mode */
+    .nav,
+    .navbar-fixed nav,
+    nav.green.darken-3 {
+    background-color: #b6895b !important;
+    }
+
+    /* Navbar Dark Mode */
+    body.dark-mode nav,
+    body.dark-mode .navbar-fixed nav,
+    body.dark-mode nav.green.darken-3 {
+    background-color: rgba(1, 1, 1, 0.8) !important;
+    }
+
+    /* Warna link navbar */
+    nav a,
+    nav .brand-logo {
+    color: #fff !important;
+    }
+
+    /* Border bawah saat dark mode */
+    body.dark-mode .navbar-fixed nav {
+    border-bottom: 2px solid #a6784d !important;
+    }
+
+    /* Footer Background */
+    footer.green.darken-3 {
+    background-color: #2e7d32; /* hijau bawaan */
+    }
+
+    body.dark-mode footer.green.darken-3 {
+    background-color: #b6895b !important;
+    color: #fff !important;
+    }
+
+    /* Footer Dark Mode */
+    body.dark-mode footer,
+    body.dark-mode footer.green.darken-3 {
+    background-color: #b6895b !important;
+    color: #fff !important;
+    }
+
+    /* Footer Dark Mode */
+    body.dark-mode footer,
+    body.dark-mode footer.page-footer,
+    body.dark-mode footer.green,
+    body.dark-mode footer.green.darken-3 {
+    background-color: #b6895b !important;
+    color: #ffffff !important;
+    }
+
+    /* Teks dan link footer */
+    body.dark-mode footer *,
+    body.dark-mode footer a {
+    color: #ffffff !important;
+    }
 
 
 
