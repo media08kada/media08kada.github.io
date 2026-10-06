@@ -419,11 +419,11 @@ body.dark-mode .card.green.darken-1 {
 }
 
 /* Floating Button */
-.btn-floating.btn-medium.green.darken-2 {
-  background-color: #1b5e20; /* hijau bawaan */
+.btn-floating.btn-medium.grey.darken-2 {
+  background-color: grey; 
 }
 
-body.dark-mode .btn-floating.btn-medium.green.darken-2 {
+body.dark-mode .btn-floating.btn-medium.grey.darken-2 {
   background-color: #a6784d !important;
   color: #fff !important; /* ikon putih */
 }

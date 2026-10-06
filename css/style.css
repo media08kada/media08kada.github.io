@@ -696,6 +696,20 @@ overflow: hidden;
   z-index: 2;
 }
 
+.buttonToTop {
+background-color: grey !important; 
+}
+
+@media (prefers-color-scheme: dark) {
+.buttonToTop {
+background-color: grey!important; 
+}
+
+.buttonToTop i {
+color: #fff;
+}
+}
+
 
 
 
