@@ -96,7 +96,7 @@ body.dark-mode .collection-item {
 /* Sekilas Berita detail */
 body.dark-mode #sekilas-berita h6,
 body.dark-mode #sekilas-berita p {
-  color: #ddd !important;
+  color: #fff !important;
 }
 
 body.dark-mode #sekilas-berita a.btn-small {
@@ -299,14 +299,14 @@ body.dark-mode .dropdown-content li > span {
   .dark-mode #berita,
   .dark-mode #wilayah,
   .dark-mode #gallery {
-    background-color: #212121 !important; /* tetap gelap di layar kecil */
+    background-color: #212121 !important; 
   }
 }
 
 /* Default (Light Mode) */
 .gallery img {
   margin-bottom: 15px;
-  background-color: #f0f0f0; /* terang */
+  background-color: #f0f0f0; 
   padding: 10px;
 }
 
