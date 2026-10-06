@@ -1,4 +1,3 @@
-/* GLOBAL & LAYOUT */
 html,
 :root {
   --primary: #b6895b;
@@ -63,37 +62,29 @@ body.dark-mode {
   color: #fff;
 }
 
-/* Navbar */
-/* Navbar utama */
-.navbar-fixed nav {
-background-color: rgba(1, 1, 1, 0.8) !important;
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-}
-
+/* Navbar & Logo */
 .brand-logo {
-max-width: 250px;
-}
-
-.navbar-brand img {
-vertical-align: middle;
-margin: auto 0;
+  max-width: 250px;
 }
 
 nav ul li a {
 font-size: 18px;
 }
 
-/* Dropdown & Sidenav */
+.navbar-brand img {
+  vertical-align: middle;
+  margin: auto 0;
+}
+
 .dropdown-content a,
 .sidenav a {
-color: #000 !important;
-font-weight: 300;
+  color: black !important;
+  font-weight: lighter;
 }
 
 .sidenav,
 .sidenav .user-view .name {
-font-weight: 300;
+  font-weight: lighter;
 }
 
 .sidenav li > a {
@@ -101,68 +92,70 @@ font-size: 16px !important;
 font-weight: 300;
 }
 
-/* GARIS PROGRESS NAVBAR */
-/* Hilangkan border bawaan navbar */
+/* Garis Navbar Start */
 body .navbar-fixed nav {
-position: relative;
-border-bottom: none;
+  border-bottom: none;
+  position: relative;
 }
 
-/* Progress bar menempel di bawah navbar */
+/* Progress bar menempel ke bawah nav */
 body .navbar-fixed .progress {
-position: absolute;
-right: 0;
-bottom: 0;
-left: 0;
-height: 2px;
-margin: 0;
-background-color: #fff;
+  margin: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 }
 
-/* Warna garis berjalan */
+/* Warna garis bergerak */
 body .navbar-fixed .progress .indeterminate {
-background-color: #8f6240;
-animation-duration: 4s;
+  background-color: #8f6240;
+  animation-duration: 4s;
 }
 
-/* ANIMASI PROGRESS BAR */
-/* Override animasi Materialize */
+/* Override keyframes bawaan Materialize */
 @keyframes indeterminate {
-0% {
-left: -35%;
-right: 100%;
-}
-
-60%,
-100% {
-left: 100%;
-right: -90%;
-}
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
 }
 
 @keyframes indeterminate-short {
-0% {
-left: -200%;
-right: 100%;
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
 }
 
-60%,
-100% {
-left: 107%;
-right: -8%;
-}
+/* Terapkan durasi lebih panjang ke kedua animasi */
+body .navbar-fixed .progress .indeterminate:before {
+  animation: indeterminate 4s infinite;
 }
 
-/* Perpanjang durasi animasi */
-body .navbar-fixed .progress .indeterminate::before {
-animation: indeterminate 4s infinite;
+body .navbar-fixed .progress .indeterminate:after {
+  animation: indeterminate-short 4s infinite;
 }
 
-body .navbar-fixed .progress .indeterminate::after {
-animation: indeterminate-short 4s infinite;
-}
-/* Navbar End */
-
+/* Garis Navbar End */
 /* Slider */
 .slider {
   position: relative;
@@ -753,12 +746,3 @@ background-color: grey!important;
 color: #fff;
 }
 }
-
-
-
-
-
-
-
-
-
