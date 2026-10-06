@@ -100,7 +100,7 @@ body.dark-mode #sekilas-berita p {
 }
 
 body.dark-mode #sekilas-berita a.btn-small {
-  background-color: #b6895b !important;
+  background-color: grey !important;
   color: #fff !important;
 }
 
@@ -114,13 +114,13 @@ color: #212121 !important;
 body.dark-mode .btn.green,
 body.dark-mode .btn-small.green,
 body.dark-mode .btn-large.green {
-  background-color: #b6895b !important;
+  background-color: grey !important;
 }
 
 body.dark-mode .btn.grey,
 body.dark-mode .btn-small.grey,
 body.dark-mode .btn-large.grey {
-  background-color: #b6895b !important;
+  background-color: grey !important;
 }
 
 body.dark-mode .btn:hover,
@@ -456,7 +456,7 @@ footer .btn-floating.green {
 }
 
 body.dark-mode footer.btn-floating.green {
-background-color: #b6895b !important;
+background-color: grey !important;
 color: #fff !important;
 }
 
@@ -464,7 +464,7 @@ body.dark-mode footer .btn-floating.green:hover,
 body.dark-mode footer .btn-floating.green:hover,
 body.dark-mode footer .btn-floating.green:focus,
 body.dark-mode footer .btn-floating.green:active {
-background-color: #a6784d !important;
+background-color: grey !important;
 }
 
 /* Footer Background */
@@ -555,7 +555,7 @@ body.dark-mode .navbar-fixed nav {
   }
 
   body.dark-mode a.btn.btn-theme {
-  background-color: #8f6240 !important;
+  background-color: grey !important;
   }
 
   body.dark-mode nav {
@@ -618,7 +618,7 @@ body.dark-mode .navbar-fixed nav {
     body.dark-mode .btn-floating.btn-medium.green.darken-2,
     body.dark-mode a.btn,
     body.dark-mode a.btn-small {
-    background-color: #b6895b !important;
+    background-color: gray !important;
     color: #fff !important;
     }
 
@@ -629,7 +629,7 @@ body.dark-mode .navbar-fixed nav {
     body.dark-mode .btn-floating:hover,
     body.dark-mode .btn-theme:hover,
     body.dark-mode .waves-effect.btn:hover {
-    background-color: #a6784d !important;
+    background-color: gray !important;
     color: #fff !important;
     }
 
