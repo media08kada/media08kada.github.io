@@ -54,7 +54,7 @@ body.dark-mode {
   color: #fff;
 }
 
-/* NAVBAR & LOGO */
+/* Navbar & Logo */
 .brand-logo {
   max-width: 250px;
 }
@@ -80,7 +80,7 @@ font-size: 18px;
 }
 
 .sidenav li > a {
-font-size: 20px !important;
+font-size: 16px !important;
 font-weight: 300;
 }
 
@@ -147,9 +147,8 @@ body .navbar-fixed .progress .indeterminate:after {
   animation: indeterminate-short 4s infinite;
 }
 
-
 /* Garis Navbar End */
-/* SLIDER */
+/* Slider */
 .slider {
   position: relative;
   overflow: visible;
@@ -227,7 +226,7 @@ body .navbar-fixed .progress .indeterminate:after {
   }
 }
 
-/* BERITA SLIDER */
+/* Berita Slider */
 .berita-slider {
   margin: 0 20px 0 0;
   display: flex;
@@ -292,7 +291,7 @@ body .navbar-fixed .progress .indeterminate:after {
   margin-bottom: 10px;
 }
 
-/* IMAGE & SLIDES */
+/* Image & Slider */
 .square-img {
   width: 100%;
   display: block;
@@ -378,7 +377,7 @@ body .navbar-fixed .progress .indeterminate:after {
   }
 }
 
-/* GRID & ROW */
+/* Grid & Row */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -428,7 +427,7 @@ p {
   margin-top: 5px;
 }
 
-/* CARD & COLLECTION */
+/* Card & Collection */
 .card {
   margin: 8px 0;
 }
@@ -510,7 +509,7 @@ p {
   }
 }
 
-/* INFO WILAYAH */
+/* Info Wilayah */
 .no-margin {
   margin: 0 !important;
 }
@@ -523,7 +522,7 @@ p {
 overflow: hidden;
 }
 
-/* GALLERY */
+/* Gallery */
 .hidden {
   display: none;
 }
@@ -543,7 +542,7 @@ overflow: hidden;
   margin-top: 40px;
 }
 
-/* FAB SLIDER */
+/* FAB Inside Slider */
 .fab-inside-slider {
   position: absolute;
   bottom: 20px;
@@ -677,10 +676,7 @@ overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 50vh;
 }
-
-
 
 /* Info Wilayah Background */
 .custom-bg {

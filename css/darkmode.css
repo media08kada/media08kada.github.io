@@ -98,6 +98,7 @@ body.dark-mode #sekilas-berita h6,
 body.dark-mode #sekilas-berita p {
   color: #ddd !important;
 }
+
 body.dark-mode #sekilas-berita a.btn-small {
   background-color: #b6895b !important;
   color: #fff !important;
@@ -132,6 +133,7 @@ body.dark-mode .btn-large:hover {
 body.dark-mode #contact {
   background-color: #2e2e2e !important;
 }
+
 body.dark-mode #contact .card-panel {
   background-color: #3a3a3a !important;
 }
@@ -160,7 +162,7 @@ nav .switch label {
 
 nav .switch .lever {
   width: 34px;
-  height: 20px; /* track lebih tinggi agar knob muat */
+  height: 20px; 
   background-color: grey !important;
   border-radius: 20px;
   position: relative;
@@ -204,7 +206,7 @@ nav .switch input[type=checkbox]:checked + .lever:after {
   }
 
   nav .switch input[type=checkbox]:checked + .lever:after {
-    left: 28px; /* disesuaikan agar knob pas penuh */
+    left: 28px; 
   }
 }
 
@@ -232,7 +234,7 @@ body.dark-mode a[href*="youtube.com"] {
 
 /* Sidenav Dark Mode */
 body.dark-mode .sidenav {
-  background-color: #222 !important;
+  background-color: #3a3a3a !important;
   color: #fff !important;
 }
 
@@ -467,7 +469,7 @@ background-color: #a6784d !important;
 
 /* Footer Background */
 footer.green.darken-3 {
-  background-color: #2e7d32; /* hijau bawaan */
+  background-color: #2e7d32; 
 }
 
 body.dark-mode footer.green.darken-3 {
@@ -488,7 +490,6 @@ body.dark-mode .btn-small.green {
 #darkToggle.dark-mode .btn-small.green {
   background-color: #8f6240 !important;
 }
-
 
 /* Layar Mobile */
 .nav-wrapper .switch {
@@ -535,6 +536,12 @@ body.dark-mode .navbar-fixed nav {
   mask-image: linear-gradient(rgb(24, 24, 24) 85%, rgba(0, 0, 0, 0));
   mask-repeat: no-repeat;
   mask-size: cover;
+}
+
+.slider .slides li img {
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 /* Default tombol */
