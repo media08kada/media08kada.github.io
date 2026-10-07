@@ -30,7 +30,7 @@ main {
 
 p {
 font-size: 18px;
-font-weight: 100;
+font-weight: 300;
 }
 
 footer {
@@ -176,7 +176,7 @@ top: 64px !important;
 }
 
 .sidenav li > a {
-font-size: 18px !important;
+font-size: 15px !important;
 font-weight: 300;
 }
 
@@ -442,7 +442,7 @@ color: white;
 
   P {
     font-size: 14px;
-  }
+     }
 }
 
 /* 📲 Tablet (768px – 1023px) */

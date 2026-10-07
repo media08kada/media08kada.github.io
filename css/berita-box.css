@@ -1,3 +1,32 @@
+.navbar-brand img {
+  vertical-align: middle;
+  margin: auto 0;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.switch-mobile {
+margin-left: 2px;
+margin-top: 25px;
+}
+
+#berita {
+margin-top: 80px;
+}
+
+#berita p {
+  font-size: 18px;
+  line-height: 2;
+  color: #333;
+  text-align: justify;
+  text-indent: 30px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+}
+
+
 /* Card horizontal */
 .card.horizontal {
   display: flex;            
@@ -42,7 +71,7 @@
 /* Konten & action seragam */
 .card.horizontal .card-content,
 .card.horizontal .card-action {
-  padding: 2px 4px;
+  padding: 4px 4px;
 }
 
 /* Mobile */
@@ -50,6 +79,18 @@
   .card.horizontal .card-image img {
     max-height: 65px;
     max-width: 100%;
+  }
+
+  #berita p {
+  font-size: 15px;
+  line-height: 1.5;
+  text-indent: 20px;
+  fline-height: 1.5;
+}
+  .card-action,
+  .card-content {
+    font-size: 12px;
+    line-height: 1.5;
   }
 }
 
