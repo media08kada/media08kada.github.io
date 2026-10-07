@@ -62,13 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Slider Berita
-  const beritaSlider = document.querySelectorAll(".berita-slider");
-  M.Slider.init(beritaSlider, {
-    indicators: false,
-    height: window.innerWidth < 600 ? 300 : 400,
-    transition: 600,
-    interval: 3000,
+document.addEventListener("DOMContentLoaded", function () {
+  M.Slider.init(document.querySelectorAll(".slider"), {
+    indicators: true,
+    height: 300,
+    duration: 500,
+    interval: 5000,
   });
+});
+
 
   // Parallax
   const parallax = document.querySelectorAll(".parallax");

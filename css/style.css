@@ -1,7 +1,11 @@
-html,
+/* ROOT & GLOBAL */
 :root {
   --primary: #b6895b;
   --bg: #242323;
+}
+
+html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
 body {
@@ -10,27 +14,25 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #212121;
 }
 
-body{
-font-family:'Poppins',sans-serif;
+body.dark-mode {
+  background: #212121;
+  color: #fff;
 }
-
-h4,h5,h6 {
-font-weight:600;
-}
-
-  html {
-    font-family: GillSans, Calibri, Trebuchet, sans-serif;
-  }
 
 main {
   flex: 1;
 }
 
-p {
-font-size: 18px;
-font-weight: 300;
+section,
+footer {
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
 }
 
 footer {
@@ -39,47 +41,44 @@ footer {
   line-height: 1.4;
 }
 
-section,
-footer {
-  padding: 10px 0;
-  margin: 0;
-  width: 100%;
-}
-
 .container {
   max-width: 100%;
 }
 
-/* Default: Light mode */
-body {
-  background-color: #fff;
-  color: #212121;
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }
 
-/* Dark mode */
-body.dark-mode {
-  background-color: #212121;
-  color: #fff;
+h5 {
+  margin: 5px 0 8px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 8px;
 }
 
 /* Navbar Star */
 .navbar {
 position: fixed;
-top: 10;
-left: 20;
-right: 20;
-height: 80px; /* tinggi navbar */
+top: 0;
+left: 0;
+right: 0;
+height: 80px;
 line-height: 70px;
 z-index: 1000;
-background-color: rgba(1, 1, 1, 0.8);
+background: rgba(1, 1, 1, 0.8);
 border-bottom: 1px solid #faf7f4;
 }
 
 .nav-wrapper-custom {
-display: flex;
-align-items: center;
-justify-content: space-between;
-overflow: visible !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible !important;
 }
 
 .navbar-brand {
@@ -87,76 +86,81 @@ overflow: visible !important;
 }
 
 .navbar-brand img {
-  vertical-align: middle;
-  margin: auto 0;
   width: 50px;
   height: 50px;
   object-fit: contain;
+  vertical-align: middle;
 }
 
-.navbar .material-icons{
-line-height: 70px;
+.navbar .material-icons {
+  line-height: 70px;
+}
+
+.nav-menu,
+.navbar-extra {
+  display: flex;
+  align-items: center;
 }
 
 .nav-menu {
-display: flex;
-align-items: center;
-gap: 10px;
+  gap: 10px;
 }
 
 .nav-menu li {
-display: flex;
-align-items: center;
-}
-
-.navbar-extra {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-extra a,
 .nav-menu li a {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Search */
 .search-container {
-width: 100%;
-background: #fff;
-max-height: 0;
-overflow: hidden;
-transition: .3s ease;
+  width: 100%;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
 }
 
 .search-container.active {
-max-height: 80px;
+  max-height: 80px;
 }
 
 .search-form {
-display: flex;
-align-items: center;
-width: 100%;
-max-width: 1200px;
-margin: auto;
-padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 15px;
 }
 
 .search-form input {
-flex: 1;
-
-height: 45px;
-border: 1px solid #ddd;
-padding: 0 15px;
-font-size: 16px;
+  flex: 1;
+  height: 45px;
+  border: 1px solid #ddd;
+  padding: 0 15px;
+  font-size: 16px;
 }
 
 .search-form button {
-width: 50px;
-height: 45px;
-border: none;
-background: transparent;
-cursor: pointer;
+  width: 50px;
+  height: 45px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  top: 64px !important;
+  max-height: none !important;
+  overflow-y: visible !important;
+  width: 200px !important;
 }
 
 .dropdown-content a,
@@ -166,84 +170,77 @@ cursor: pointer;
   z-index: 2000 !important;
 }
 
-.dropdown-content {
-top: 64px !important;
-}
-
 .sidenav,
 .sidenav .user-view .name {
   font-weight: lighter;
 }
 
 .sidenav li > a {
-font-size: 15px !important;
-font-weight: 300;
+  font-size: 15px !important;
+  font-weight: 300;
 }
 
-/* Garis Navbar Start */
+/* Progress Bar */
 .navbar nav {
   border-bottom: none;
   position: relative;
 }
 
-/* Progress bar menempel ke bawah nav */
 .navbar .progress {
-  margin: 0;
   height: 1px;
+  margin: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background: #fff;
 }
 
 .navbar .progress .indeterminate {
-  background-color: #8f6240;
+  background: #8f6240;
   animation-duration: 4s;
 }
 
-/* Terapkan durasi lebih panjang ke kedua animasi */
-.navbar .progress .indeterminate:before {
+.navbar .progress .indeterminate::before {
   animation: indeterminate 4s infinite;
 }
 
-.navbar .progress .indeterminate:after {
+.navbar .progress .indeterminate::after {
   animation: indeterminate-short 4s infinite;
 }
 /* Navbar End */
 
-/* Slider */
+/* Slider Star */
 .slider {
-height: 400px !important;
-}
-
-.slider .slides {
-height: 400px !important;
+  position: relative;
+  height: 400px !important;
+  overflow: hidden;
+  border-radius: 2%;
 }
 
 .slider .slides li img {
 width: 100%;
-height: 400px;
+aspect-ratio: 1 / 1;
 object-fit: cover;
+display: block;
+height: auto;
 }
 
-.slider {
-  position: relative;
-  overflow: hidden;
-  border-radius: 2%;
+.slider .slides,
+.slider .slides li {
+margin: 0;
+padding: 0;
 }
 
 .slider h3 {
   font-weight: bold;
   margin-bottom: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .slider h5 {
   margin-top: 20px;
   color: #ccc;
   font-weight: 300;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .contact h4,
@@ -253,7 +250,6 @@ object-fit: cover;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Caption */
 .slider .caption {
   position: absolute;
   top: 90%;
@@ -263,17 +259,10 @@ object-fit: cover;
   text-align: center;
 }
 
-.slider .caption h3 {
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  margin: 50px 0 15px;
-}
-
 .caption h3 {
   font-size: 54px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .caption h5 {
@@ -285,442 +274,78 @@ object-fit: cover;
 .modal-title h6 {
   color: grey;
 }
+/* Slider End */
 
-/* Responsive untuk layar kecil */
-@media only screen and (max-width: 600px) {
-  .slider .caption {
-    top: 95%;
-    transform: translate(-50%, -50%);
-  }
-
-  .slider .caption h3 {
-    font-size: 2rem;
-    margin: 80px 0 15px;
-  }
-
-  .slider .caption h5 {
-    font-size: 0.8rem;
-    margin-top: 15px;
-  }
-}
-
-/* Berita Slider */
+/* Berita Star */
 .berita-slider {
-  margin: 0 20px 0 0;
   display: flex;
   align-items: flex-start;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.berita-slider,
-.col.s12.m8.light {
-  margin-bottom: 5px; /* lebih rapat */
-  padding: 0; /* hilangkan padding ekstra */
-}
-
-.no-gap {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#slidernews {
-  margin-top: 0 !important;
-}
-
-#berita {
-  margin: 20px 0 10px;
-}
-
-#berita .row .col {
-  margin-bottom: 10px;
-  padding: 0 8px;
-}
-
-#berita h5,
-#berita p,
-.date {
-  margin: 5px 0;
-}
-
-#berita p,
-#card-content p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.berita .row {
-  margin-bottom: 8px;
-}
-
-.date {
-  margin-bottom: 20px;
-}
-
-.taxt {
-  margin: 0 0 12px;
-}
-
-.btn-small.green {
-  margin-top: 5px;
-}
-
-.compact-row {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-
-/* Tombol Like */
-#btn-hero {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-wrap: wrap;
-}
-
-/* #like-btn yang berada di dalam #btn-hero */
-#btn-hero #like-btn {
-display: flex;
-align-items: center;
-margin: 0;
-background-color: gray;
-color: white;
-border: 1px solid gray;
-}
-
-#btn-hero #like-btn:hover,
-#btn-hero #like-btn:active,
-#btn-hero #like-btn:focus {
-background-color: gray;
-border-color: gray;
-color: white;
-}
-
-/* Image & Slider */
-.square-img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center
-}
-
-  /* Berita Slider */
-.berita-slider {
   margin: 0 20px 0 0;
-  display: flex;
-  align-items: flex-start;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.berita-slider {
-margin-bottom: 5px;
-padding: 0;
-}
-
-.no-gap {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#slidernews {
-  margin-top: 0 !important;
-}
-
-#berita {
-  margin: 20px 0 10px;
-}
-
-#berita .row .col {
-  margin-bottom: 10px;
-  padding: 0 8px;
-}
-
-#berita h5,
-#berita p,
-.date {
-  margin: 5px 0;
-}
-
-#berita p,
-#card-content p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.berita .row {
-  margin-bottom: 8px;
-}
-
-.date {
-  margin-bottom: 20px;
-}
-
-.taxt {
-  margin: 0 0 12px;
-}
-
-.btn-small.green {
-  margin-top: 5px;
-}
-
-.compact-row {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-
-/* Tombol Like */
-#btn-hero {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-wrap: wrap;
-}
-
-/* #like-btn yang berada di dalam #btn-hero */
-#btn-hero #like-btn {
-display: flex;
-align-items: center;
-margin: 0;
-background-color: gray;
-color: white;
-border: 1px solid gray;
-}
-
-#btn-hero #like-btn:hover,
-#btn-hero #like-btn:active,
-#btn-hero #like-btn:focus {
-background-color: gray;
-border-color: gray;
-color: white;
-}
-
-/* Image & Slider */
-.berita-slider {
-margin-bottom: 5px;
-padding: 0;
-}
-
-@media (max-width: 1023px) {
-.square-img {
-height: 220px;
-aspect-ratio: auto;
-}
-}
-
-/* Fallback untuk browser yang tidak support aspect-ratio */
-@supports not (aspect-ratio: 1 / 1) {
-  .slider .berita-slides li {
-    position: relative;
-    width: 100%;
-    padding-top: 100%;
-  }
-
-  .slides li img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-/* Menghilangkan background di Img */
-.berita-slider,
-.slides li,
-.square-img {
-  background: none;
+  margin-bottom: 5px;
+  padding: 0;
   box-shadow: none;
+  background: none;
   border: none;
 }
 
+#slidernews {
+  margin-top: 0 !important;
+}
+
+#berita {
+  margin: 20px 0 10px;
+}
+
+#berita .row .col {
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+#berita h5,
+#berita p,
+.date {
+  margin: 5px 0;
+}
+
+#berita p,
+#card-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.date {
+  margin-bottom: 20px;
+}
+
+.taxt {
+  margin: 0 0 12px;
+}
+
+/* Image */
 .square-img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
-@supports not (aspect-ratio: 1 / 1) {
-  .slider .berita-slides li {
-    padding-top: 100%;
-    background: none;
-  }
+
+.square-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
 }
 
-/* Responsive Breakpoints  */
-/* 📱 Handphone (≤ 767px) */
-@media (max-width: 767px) {
-  .berita-slider {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  P {
-    font-size: 14px;
-  }
+.square-wrapper .square-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* 📲 Tablet (768px – 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .berita-slider {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
-
-/* 💻 Laptop (1024px – 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-  .berita-slider {
-    max-width: 350px;
-    margin: 0 auto;
-  }
-}
-
-/* 🖥️ Desktop (≥ 1440px) */
-@media (min-width: 1440px) {
-  .berita-slider {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-}
-
-/* Grid & Row */
-.custom-row {
-display: flex;
-flex-wrap: wrap;
-margin-bottom: 10px;
-}
-
-.col h5 {
-  margin-bottom: 8px;
-  line-height: 1.2;
-}
-
-.col p {
-  margin: 0 0 12px;
-  line-height: 1.6;
-}
-
-#show-more-btn {
-  margin-top: 10px;
-}
-
-.row .col {
-  padding: 0 8px;
-}
-
-/* Membuat row lebih rapat */
-.compact-row {
-  margin-bottom: 12px;
-}
-
-/* Mengurangi padding antar kolom */
-.row .col {
-  padding: 0 8px;
-}
-
-/* Heading lebih rapat */
-h5 {
-  margin: 5px 0 8px 0;
-}
-
-/* Paragraf lebih rapat */
-p {
-  margin: 0 0 8px 0;
-}
-
-/* Tombol lebih dekat ke teks */
-.btn-small {
-  margin-top: 5px;
-}
-
-/* Card & Collection */
-.card {
-  margin: 8px 0;
-}
-
-.card-panel {
-  min-height: 200px;
-}
-
-.card-panel img {
-  margin: 15px 5px 0;
-  vertical-align: middle;
-}
-
-.collection-header p {
-  margin: 0;
-  line-height: 0.8;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-content a,
-.card-content h4,
-.card-content p {
-  margin: 2px 0;
-}
-
-@media (max-width: 600px) {
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .col.s12 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .card-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .collection-item {
-    padding: 10px 0px;
-  }
-}
-
-@media (max-width: 600px) {
-  h6 {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.8rem;
-  }
-}
-
-/* Tablet (≤1024px) */
-@media (max-width: 1024px) {
-  h6 {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    margin-bottom: 1rem;
-  }
-}
-
-/* Laptop (≤1366px) */
-@media (max-width: 1366px) {
-  h6 {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    margin-bottom: 1.2rem;
-  }
-}
-
-/* Fallback untuk browser yang tidak support aspect-ratio */
-@supports not (aspect-ratio: 1 / 1) {
+/* Fallback */
+@supports not (aspect-ratio: 1/1) {
   .slider .berita-slides li {
     position: relative;
     width: 100%;
@@ -729,79 +354,54 @@ p {
 
   .slides li img {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
+/* Slider Berita End */
 
-/* Menghilangkan background di Img */
-.berita-slider,
-.slides li,
-.square-img {
-  background: none;
-  box-shadow: none;
-  border: none;
+/* Button Like */
+#btn-hero  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.square-img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  background: #fff;
+#btn-hero #like-btn {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background: gray;
+  color: white;
+  border: 1px solid gray;
 }
 
-@supports not (aspect-ratio: 1 / 1) {
-  .slider .berita-slides li {
-    padding-top: 100%;
-    background: none;
-  }
+#btn-hero #like-btn:hover,
+#btn-hero #like-btn:focus,
+#btn-hero #like-btn:active {
+  background: gray;
+  border-color: gray;
+  color: white;
 }
 
-/* Responsive Breakpoints  */
-/* 📱 Handphone (≤ 767px) */
-@media (max-width: 767px) {
-  .berita-slider {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  P {
-    font-size: 14px;
-  }
-}
-
-/* 📲 Tablet (768px – 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .berita-slider {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
-
-/* 💻 Laptop (1024px – 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-  .berita-slider {
-    max-width: 350px;
-    margin: 0 auto;
-  }
-}
-
-/* 🖥️ Desktop (≥ 1440px) */
-@media (min-width: 1440px) {
-  .berita-slider {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-}
-
-/* Grid & Row */
+/* GRID, CARD, COLLECTION */
 .custom-row {
-display: flex;
-flex-wrap: wrap;
-margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.compact-row {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.row .col {
+  padding: 0 8px;
 }
 
 .col h5 {
@@ -814,40 +414,12 @@ margin-bottom: 10px;
   line-height: 1.6;
 }
 
-#show-more-btn {
-  margin-top: 10px;
-}
-
-.row .col {
-  padding: 0 8px;
-}
-
-/* Membuat row lebih rapat */
-.compact-row {
-  margin-bottom: 12px;
-}
-
-/* Mengurangi padding antar kolom */
-.row .col {
-  padding: 0 8px;
-}
-
-/* Heading lebih rapat */
-h5 {
-  margin: 5px 0 8px 0;
-}
-
-/* Paragraf lebih rapat */
-p {
-  margin: 0 0 8px 0;
-}
-
-/* Tombol lebih dekat ke teks */
-.btn-small {
+#show-more-btn,
+.btn-small,
+.btn-small.green {
   margin-top: 5px;
 }
 
-/* Card & Collection */
 .card {
   margin: 8px 0;
 }
@@ -859,6 +431,10 @@ p {
 .card-panel img {
   margin: 15px 5px 0;
   vertical-align: middle;
+}
+
+.collection-item {
+  overflow: hidden;
 }
 
 .collection-header p {
@@ -879,78 +455,20 @@ p {
   margin: 2px 0;
 }
 
-@media (max-width: 600px) {
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
+/* GALLERY */
 
-  .col.s12 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .card-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .collection-item {
-    padding: 10px 0px;
-  }
-}
-
-@media (max-width: 600px) {
-  h6 {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.8rem;
-  }
-}
-
-/* Tablet (≤1024px) */
-@media (max-width: 1024px) {
-  h6 {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    margin-bottom: 1rem;
-  }
-}
-
-/* Laptop (≤1366px) */
-@media (max-width: 1366px) {
-  h6 {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    margin-bottom: 1.2rem;
-  }
-}
-
-/* Info Wilayah */
-.no-margin {
-  margin: 0 !important;
-}
-#wilayah h3 {
-  text-align: center;
-}
-
-/* Berita Wilayah */
-.collection-item {
-overflow: hidden;
-}
-
-/* Gallery */
 .hidden {
   display: none;
 }
 
 .gallery img {
   margin-bottom: 15px;
-  background-color: #f0f0f0;
+  background: #f0f0f0;
   padding: 10px;
+}
+
+.gallery h4 {
+  margin-top: 40px;
 }
 
 .gallery h4,
@@ -958,48 +476,22 @@ overflow: hidden;
   margin-bottom: 20px;
 }
 
-.gallery h4 {
-  margin-top: 40px;
-}
+/* FLOATING BUTTONS */
 
-/* FAB Inside Slider */
 .fab-inside-slider {
   position: absolute;
-  bottom: 20px;
   right: 20px;
+  bottom: 20px;
   z-index: 999;
   border-radius: 5%;
-}
-
-.slider {
-  position: relative;
 }
 
 .btn-floating {
   border-radius: 8px !important;
 }
 
-.btn-floating i[data-feather='facebook'],
-.btn-floating svg.feather-facebook {
-  position: relative;
-  top: 6px;
-}
-
-/* Jarak Antar Elemen */
-#wilayah h4,
-#gallery,
-#sekilas-berita {
-  margin-top: -15px;
-  margin-bottom: 20px;
-}
-
-.card.sticky {
-  width: 100%;
-  margin: 0;
-}
-
-.card.sticky .card-content {
-  padding: 0 24px;
+.buttonToTop {
+  background: grey !important;
 }
 
 .buttonToTop.btn-floating {
@@ -1014,53 +506,163 @@ overflow: hidden;
   right: 20px;
 }
 
-/* Menghilang scroll dibawah dropdown */
-.dropdown-content {
-  max-height: none !important;
-  overflow-y: visible !important;
-}
-
-.dropdown-content {
-  width: 200px !important;
-}
-
-@media (min-width: 600px) and (max-width: 992px) {
-  .square-img {
-    aspect-ratio: 1 / 1;
+@media (prefers-color-scheme: dark) {
+  .buttonToTop i {
+    color: #fff;
   }
 }
 
-/* Atur modal agar muncul di tengah dengan ukuran lebih kecil */
-.modal {
-  max-width: 600px;
+/* CONTACT & WILAYAH */
+
+.no-margin {
+  margin: 0 !important;
 }
 
-/* Berita Pilihan */
-#pilihan .pilihan-title {
-  margin-top: 5px;
+#wilayah h3 {
+  text-align: center;
 }
 
-#pilihan .pilihan-card {
+#wilayah h4,
+#gallery,
+#sekilas-berita {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+#contact {
+  background-image: url("../slider/img/parallax-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.custom-bg {
+  background: url("../img/partner/card-bg.jpg") center/cover no-repeat;
+}
+
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.custom-bg .card-content {
   position: relative;
+  z-index: 2;
 }
 
-#pilihan .pilihan-card .icon-right {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+/* Responsive Star */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
 }
 
-#pilihan .pilihan-card .icon-left {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+@media (max-width: 1024px) {
+  h6 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
 }
 
-#pilihan .pilihan-card i.material-icons {
-  font-size: 40px;
+@media (max-width: 992px) {
+  .navbar {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .nav-wrapper-custom {
+    height: 60px;
+    min-height: 60px;
+    padding: 0 10px;
+  }
+
+  .navbar-brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .navbar .material-icons {
+    line-height: 60px;
+  }
 }
 
-/* Spacing super rapat untuk HP kecil */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .berita-slider {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .square-img {
+    height: auto;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider .caption {
+    top: 95%;
+  }
+
+  .slider .caption h3 {
+    font-size: 2rem;
+  }
+
+  .slider .caption h5 {
+    font-size: 0.8rem;
+  }
+
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col.s12,
+  .card-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .collection-item {
+    padding: 10px 0;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+  }
+}
+
+.slider li {
+  height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+#slidernews .slides li img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+}
+
 @media (max-width: 480px) {
   #gallery-btn {
     margin-bottom: 4px;
@@ -1081,151 +683,29 @@ overflow: hidden;
   }
 }
 
-#btn-hero1 {
-  text-align: center;
-}
-
-#btn-hero1 a {
-  display: inline-block;
-  margin: 20 5px;
-}
-
-/* Parallax Contact-us */
-#contact {
-  background-image: url('../slider/img/parallax-background.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 20px;
-}
-
-/* Info Wilayah Background */
-.custom-bg {
-  background: url('../img/partner/card-bg.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-.custom-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.custom-bg .card-content {
-  position: relative;
-  z-index: 2;
-}
-
-.buttonToTop {
-background-color: grey !important; 
-}
-
-@media (prefers-color-scheme: dark) {
-.buttonToTop {
-background-color: grey!important; 
-}
-
-.buttonToTop i {
-color: #fff;
-}
-}
-
-/* New Navbar */
-/* Media Queries */
-/* Laptop */
-@media (max-width: 1366px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-/* Tablet */
 @media (max-width: 768px) {
-  html {
-    font-size: 62.5%;
-    .row {
-    grid-template-columns: repeat(2, 1fr);
+.slider .slides li img {
+width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
 }
-  }
-
-  #hamburger-menu {
-    display: inline-block;
-  }
-
-  .navbar .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: #fff;
-    width: 30rem;
-    height: 100vh;
-    transition: 0.3s;
-  }
-
-  .navbar .navbar-nav.active {
-    right: 0;
-  }
-
-  .navbar .navbar-nav a {
-    color: var(--bg);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-
-  .navbar .search-form {
-    width: 90%;
-    right: 2rem;
-  }
 }
 
- @media only screen and (max-width: 992px) {
-  .navbar {
-  height: 60px;
-  line-height: 60px;
-  }
-
-  .nav-wrapper-custom {
-  height: 60px;
-  min-height: 60px;
-  padding: 0 10px;
-  }
-
-  .navbar-brand img {
-  width: 42px;
-  height: 42px;
-  }
-
-  .navbar .material-icons{
-  line-height: 60px;
-  }
-
-  .sidenav-trigger {
-  display: flex;
-  align-items: center;
-  }
-
-  .navbar-extra {
-  margin-left: auto;
-  margin-right: 10px;
-  }
-
-  .search-form {
-  padding: 10px;
-  }
-
-  .search-form input {
-  font-size: 14px;
-  }
+/* Mobile */
+@media only screen and (max-width: 600px) {
+ 
+#slidernews,
+#slidernews .slides,
+#slidernews .slides li,
+#slidernews .slides li img {
+height: auto !important;
+min-height: 0 !important;
 }
-  /* Navbar End */
+}
+
+#slidernews .slides li img {
+display: block;
+width: 100%;
+height: auto !important;
+}
+
