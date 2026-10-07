@@ -11,6 +11,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidenav = document.querySelectorAll(".sidenav");
   M.Sidenav.init(sidenav);
 
+  // Navbar Javascript 
+  const searchBtn =
+  document.querySelector('#search-button');
+  const searchBtnMobile =
+  document.querySelector('#search-button-mobile');
+  const searchContainer =
+  document.querySelector('.search-container');
+  const closeBtn =
+  document.querySelector('#close-search');
+  if(searchBtn){
+  searchBtn.onclick = function(e){
+  e.preventDefault();
+  searchContainer.classList.toggle('active');
+  };
+  }
+  if(searchBtnMobile){
+  searchBtnMobile.onclick = function(e){
+  e.preventDefault();
+  searchContainer.classList.toggle('active');
+  };
+  }
+  closeBtn.onclick = function(){
+  searchContainer.classList.remove('active');
+  };
+  if (closeBtn) {
+    closeBtn.onclick = function () {
+      searchContainer.classList.remove("active");
+    };
+  }
+
   // Slider
   const slider = document.querySelectorAll(".slider");
   M.Slider.init(slider, {
@@ -155,8 +185,7 @@ fetch("modals.html")
     });
   }
 
-  
-// Menghilangkan scroll dibawah //
+  // Menghilangkan scroll dibawah //
   document.addEventListener("DOMContentLoaded", function () {
     var elems = document.querySelectorAll(".dropdown-trigger");
     M.Dropdown.init(elems, {

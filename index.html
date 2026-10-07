@@ -71,22 +71,37 @@
   </head>
   <body id="home" class="scrollspy">
 
-<!-- Navbar Start -->
-<div class="navbar-fixed " id="top">
-  <nav class="green darken-2">
-    <div class="container">
-      <div class="nav-wrapper">
-
-        <!-- Logo Navbar -->
-        <a href="#home" class="navbar-brand" id="logo-brand">
-          <img src="/img/partner/MediaKelapadua.png" width="50" height="50" class="d-inline-block align-text-top"/>
-        </a>
-
-        <!-- Trigger menu mobile -->
+    <!-- Navbar Start -->
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+   <div class="container nav-wrapper-custom">
+      <a class="navbar-brand" href="#"> <img src="/img/partner/MediaKelapadua.png"/></a>
+    
+      <!-- Trigger menu mobile -->
         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
           <i class="material-icons">menu</i>
         </a>
-      
+              
+        <!-- Menu Navbar -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a class="dropdown-trigger" href="#berita" data-target="dropdown1">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+          <!-- Dark Mode Toggle -->
+          <li>
+            <div class="switch small">
+              <label>
+                <i class="material-icons">wb_sunny</i>
+                <input type="checkbox" id="darkmodetoggle">
+                <span class="lever"></span>
+                <i class="material-icons">brightness_3</i>
+              </label>
+            </div>
+          </li>
+        </ul>
+        
         <!-- Tombol search -->
         <div class="navbar-extra right" style="margin-right: 2px;">
           <a href="javascript:void(0)" id="search-button">
@@ -101,34 +116,13 @@
             <i class="material-icons">close</i>
           </button>
         </form>
-
-        <!-- Menu desktop -->
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Beranda</a></li>
-          <li><a class="dropdown-trigger" href="#berita" data-target="dropdown1">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="#contact">Contact</a></li>
-          <!-- Dark Mode Toggle -->
-          <li>
-            <div class="switch small">
-              <label>
-                <i class="material-icons">wb_sunny</i>
-                <input type="checkbox" id="darkmodetoggle">
-                <span class="lever"></span>
-                <i class="material-icons">brightness_3</i>
-              </label>
-            </div>
-          </li>
-        </ul>
+     </div>
+     
+     <!-- Progress bar tepat di bawah nav -->
+     <div class="progress">
+       <div class="indeterminate"></div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Progress bar tepat di bawah nav -->
-  <div class="progress">
-    <div class="indeterminate"></div>
-  </div>
+    </nav>
 </div>
 
 <!-- Dropdown Content 1 -->
