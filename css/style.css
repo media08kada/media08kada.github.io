@@ -70,16 +70,16 @@ left: 20;
 right: 20;
 height: 80px; /* tinggi navbar */
 line-height: 70px;
-z-index: 9999;
+z-index: 1000;
 background-color: rgba(1, 1, 1, 0.8);
 border-bottom: 1px solid #faf7f4;
-overflow: hidden;
 }
 
 .nav-wrapper-custom {
 display: flex;
 align-items: center;
 justify-content: space-between;
+overflow: visible !important;
 }
 
 .navbar-brand {
@@ -163,6 +163,11 @@ cursor: pointer;
 .sidenav a {
   color: black !important;
   font-weight: lighter;
+  z-index: 2000 !important;
+}
+
+.dropdown-content {
+top: 64px !important;
 }
 
 .sidenav,
@@ -797,7 +802,6 @@ background-color: grey!important;
 color: #fff;
 }
 }
-
 
 /* New Navbar */
 /* Media Queries */

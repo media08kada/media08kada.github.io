@@ -11,6 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidenav = document.querySelectorAll(".sidenav");
   M.Sidenav.init(sidenav);
 
+  // Dropdown
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".dropdown-trigger");
+    M.Dropdown.init(dropdowns, {
+      coverTrigger: false,
+      constrainWidth: false,
+      alignment: "left",
+      closeOnClick: true,
+    });
+  });
+  
   // Navbar Javascript 
   const searchBtn =
   document.querySelector('#search-button');
