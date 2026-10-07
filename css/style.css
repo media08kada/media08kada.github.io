@@ -214,9 +214,23 @@ font-weight: 300;
 
 /* Slider */
 .slider {
+height: 400px !important;
+}
+
+.slider .slides {
+height: 400px !important;
+}
+
+.slider .slides li img {
+width: 100%;
+height: 400px;
+object-fit: cover;
+}
+
+.slider {
   position: relative;
-  overflow: visible;
-  border-radius: 5%;
+  overflow: hidden;
+  border-radius: 2%;
 }
 
 .slider h3 {
@@ -386,10 +400,114 @@ color: white;
 /* Image & Slider */
 .square-img {
   width: 100%;
-  display: block;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  object-position: center
+}
+
+  /* Berita Slider */
+.berita-slider {
+  margin: 0 20px 0 0;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.berita-slider {
+margin-bottom: 5px;
+padding: 0;
+}
+
+.no-gap {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#slidernews {
+  margin-top: 0 !important;
+}
+
+#berita {
+  margin: 20px 0 10px;
+}
+
+#berita .row .col {
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+#berita h5,
+#berita p,
+.date {
+  margin: 5px 0;
+}
+
+#berita p,
+#card-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.berita .row {
+  margin-bottom: 8px;
+}
+
+.date {
+  margin-bottom: 20px;
+}
+
+.taxt {
+  margin: 0 0 12px;
+}
+
+.btn-small.green {
+  margin-top: 5px;
+}
+
+.compact-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Tombol Like */
+#btn-hero {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+/* #like-btn yang berada di dalam #btn-hero */
+#btn-hero #like-btn {
+display: flex;
+align-items: center;
+margin: 0;
+background-color: gray;
+color: white;
+border: 1px solid gray;
+}
+
+#btn-hero #like-btn:hover,
+#btn-hero #like-btn:active,
+#btn-hero #like-btn:focus {
+background-color: gray;
+border-color: gray;
+color: white;
+}
+
+/* Image & Slider */
+.berita-slider {
+margin-bottom: 5px;
+padding: 0;
+}
+
+@media (max-width: 1023px) {
+.square-img {
+height: 220px;
+aspect-ratio: auto;
+}
 }
 
 /* Fallback untuk browser yang tidak support aspect-ratio */
@@ -442,7 +560,7 @@ color: white;
 
   P {
     font-size: 14px;
-     }
+  }
 }
 
 /* 📲 Tablet (768px – 1023px) */
@@ -470,10 +588,220 @@ color: white;
 }
 
 /* Grid & Row */
-.row {
+.custom-row {
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 10px;
+}
+
+.col h5 {
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.col p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+#show-more-btn {
+  margin-top: 10px;
+}
+
+.row .col {
+  padding: 0 8px;
+}
+
+/* Membuat row lebih rapat */
+.compact-row {
+  margin-bottom: 12px;
+}
+
+/* Mengurangi padding antar kolom */
+.row .col {
+  padding: 0 8px;
+}
+
+/* Heading lebih rapat */
+h5 {
+  margin: 5px 0 8px 0;
+}
+
+/* Paragraf lebih rapat */
+p {
+  margin: 0 0 8px 0;
+}
+
+/* Tombol lebih dekat ke teks */
+.btn-small {
+  margin-top: 5px;
+}
+
+/* Card & Collection */
+.card {
+  margin: 8px 0;
+}
+
+.card-panel {
+  min-height: 200px;
+}
+
+.card-panel img {
+  margin: 15px 5px 0;
+  vertical-align: middle;
+}
+
+.collection-header p {
+  margin: 0;
+  line-height: 0.8;
+}
+
+.card-content {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content a,
+.card-content h4,
+.card-content p {
+  margin: 2px 0;
+}
+
+@media (max-width: 600px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col.s12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .collection-item {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  h6 {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  h6 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Laptop (≤1366px) */
+@media (max-width: 1366px) {
+  h6 {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* Fallback untuk browser yang tidak support aspect-ratio */
+@supports not (aspect-ratio: 1 / 1) {
+  .slider .berita-slides li {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .slides li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Menghilangkan background di Img */
+.berita-slider,
+.slides li,
+.square-img {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.square-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #fff;
+}
+
+@supports not (aspect-ratio: 1 / 1) {
+  .slider .berita-slides li {
+    padding-top: 100%;
+    background: none;
+  }
+}
+
+/* Responsive Breakpoints  */
+/* 📱 Handphone (≤ 767px) */
+@media (max-width: 767px) {
+  .berita-slider {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  P {
+    font-size: 14px;
+  }
+}
+
+/* 📲 Tablet (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .berita-slider {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* 💻 Laptop (1024px – 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .berita-slider {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* 🖥️ Desktop (≥ 1440px) */
+@media (min-width: 1440px) {
+  .berita-slider {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Grid & Row */
+.custom-row {
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 10px;
 }
 
 .col h5 {
@@ -817,7 +1145,7 @@ color: #fff;
   html {
     font-size: 62.5%;
     .row {
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
   }
 
@@ -861,14 +1189,14 @@ color: #fff;
   }
 }
 
-  @media only screen and (max-width: 992px) {
+ @media only screen and (max-width: 992px) {
   .navbar {
-  height: 70px;
+  height: 60px;
   line-height: 60px;
   }
 
   .nav-wrapper-custom {
-  height: 70px;
+  height: 60px;
   min-height: 60px;
   padding: 0 10px;
   }
@@ -899,5 +1227,5 @@ color: #fff;
   .search-form input {
   font-size: 14px;
   }
-  }
+}
   /* Navbar End */
