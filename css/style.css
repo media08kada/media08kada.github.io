@@ -46,17 +46,17 @@ footer {
 }
 
 h4,
-h5,
 h6 {
   font-weight: 600;
 }
 
 h5 {
   margin: 5px 0 8px;
+  font-weight: bold;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   margin: 0 0 8px;
 }
@@ -326,7 +326,6 @@ padding: 0;
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  object-position: center;
   display: block;
 }
 
@@ -335,6 +334,14 @@ padding: 0;
   width: 100%;
   padding-top: 100%;
   overflow: hidden;
+}
+
+.square-wrapper {
+width: 100%;
+}
+
+.slider .slides li img {
+height: auto;
 }
 
 .square-wrapper .square-img {
@@ -512,8 +519,7 @@ padding: 0;
   }
 }
 
-/* CONTACT & WILAYAH */
-
+/* Contact & Wilayah */
 .no-margin {
   margin: 0 !important;
 }
@@ -692,20 +698,12 @@ object-fit: cover;
 }
 
 /* Mobile */
-@media only screen and (max-width: 600px) {
- 
-#slidernews,
-#slidernews .slides,
-#slidernews .slides li,
-#slidernews .slides li img {
-height: auto !important;
-min-height: 0 !important;
+/* Solusi sementara */
+@media (max-width: 600px) {
+#berita-1 .col.s12.m8,
+#berita-2 .col.s12.m8,
+#berita-3 .col.s12.m8 {
+margin-top: -100px;
 }
-}
-
-#slidernews .slides li img {
-display: block;
-width: 100%;
-height: auto !important;
 }
 
