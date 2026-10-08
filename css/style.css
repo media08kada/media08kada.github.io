@@ -51,26 +51,14 @@ footer {
 #gallery h4.light.grey-text.text-darken-1,
 #video h4.light.grey-text.text-darken-1,
 #contact h4.light.grey-text.text-darken-1 {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 h6 {
   font-weight: 600;
 }
-
-/* #berita p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  margin: 0 0 8px;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: 'poppins', sans-serif;
-  font-weight: 400;
-}*/
-
 
 p {
   font-size: 18px;
@@ -418,7 +406,7 @@ height: auto;
   color: white;
 }
 
-/* GRID, CARD, COLLECTION */
+/* Grid, Card, Colletion */
 .custom-row {
   display: flex;
   flex-wrap: wrap;
@@ -446,7 +434,7 @@ height: auto;
 
 #show-more-btn,
 .btn-small,
-.btn-small.green {
+.btn-small.grey {
   margin-top: 5px;
 }
 
@@ -485,8 +473,7 @@ height: auto;
   margin: 2px 0;
 }
 
-/* GALLERY */
-
+/* Gallery Start */
 .hidden {
   display: none;
 }
@@ -505,9 +492,9 @@ height: auto;
 .video {
   margin-bottom: 20px;
 }
+/* Gallery End */
 
-/* FLOATING BUTTONS */
-
+/* Floating Button Start */
 .fab-inside-slider {
   position: absolute;
   right: 20px;
@@ -541,6 +528,7 @@ height: auto;
     color: #fff;
   }
 }
+/* Floating Button End */
 
 /* Contact & Wilayah */
 .no-margin {

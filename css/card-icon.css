@@ -1,0 +1,146 @@
+/* BERITA PILIHAN */
+
+#pilihan .card {
+overflow: hidden;
+}
+
+#pilihan .card-image {
+position: relative;
+}
+
+#pilihan .card-image img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* WRAPPER ICON  */
+
+#pilihan .card-icons {
+position: absolute;
+bottom: 12px;
+right: 12px;
+
+display: flex;
+align-items: center;
+gap: 10px;
+
+z-index: 5;
+}
+
+/* LINK ICON */
+
+#pilihan .card-icons a {
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 42px;
+height: 42px;
+
+border-radius: 50%;
+background: rgba(0, 0, 0, 0.7);
+
+transition: all 0.3s ease;
+}
+
+/* STYLE ICON */
+
+#pilihan .card-icons i {
+font-size: 28px;
+color: #fff !important;
+transition: all 0.3s ease;
+}
+
+/* Icon Plus */
+
+#pilihan .icon-plus:hover {
+color: #b6895b !important;
+transform: scale(1.15);
+}
+
+/* Icon Expand */
+
+#pilihan .icon-expand:hover {
+color: #b6895b !important;
+transform: translateY(3px);
+}
+
+/* Hover tombol */
+
+#pilihan .card-icons a:hover {
+background: rgba(0, 0, 0, 0.9);
+}
+
+/* CARD CONTENT */
+
+#pilihan .card-content {
+text-align: center;
+padding: 14px;
+}
+
+#pilihan .card-content p {
+margin: 0;
+font-weight: 600;
+font-size: 16px;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+#pilihan .card-image img {
+height: auto;
+}
+
+#pilihan .card-icons {
+bottom: 10px;
+right: 10px;
+gap: 8px;
+}
+
+#pilihan .card-icons a {
+width: 38px;
+height: 38px;
+}
+
+#pilihan .card-icons i {
+font-size: 24px;
+}
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+#pilihan .card-image img {
+height: auto;
+}
+
+#pilihan .card-icons {
+bottom: 8px;
+right: 8px;
+gap: 6px;
+}
+
+#pilihan .card-icons a {
+width: 34px;
+height: 34px;
+}
+
+#pilihan .card-icons i {
+font-size: 22px;
+}
+
+#pilihan .card-content p {
+font-size: 15px;
+}
+
+}
+
+#pilihan .card-icons {
+position: absolute;
+bottom: 12px;
+left: 12px;
+}
