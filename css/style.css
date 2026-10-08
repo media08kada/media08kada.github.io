@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 body {
@@ -50,15 +50,16 @@ h6 {
   font-weight: 600;
 }
 
-h5 {
-  margin: 5px 0 8px;
-  font-weight: bold;
-}
-
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   margin: 0 0 8px;
+}
+
+h5 {
+  margin: 5px 0 8px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
 }
 
 /* Navbar Star */
