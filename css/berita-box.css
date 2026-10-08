@@ -10,7 +10,7 @@ html {
 
 /* Font Berita */
 #berita h4.light.grey-text.text-darken-3 {
-  position: center;
+ text-align: center;
   margin-top: 0;
   margin-bottom: 20;  
 }
@@ -88,6 +88,18 @@ margin-top: 80px;
   flex: 1;
   font-size: 1rem;
 }
+
+#card-content p {
+  font-size: 0.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}
+
 
 /* Bagian action */
 .card.horizontal .card-action {

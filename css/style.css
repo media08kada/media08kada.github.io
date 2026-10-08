@@ -45,10 +45,32 @@ footer {
   max-width: 100%;
 }
 
-h4,
+#berita h4.light.grey-text.text-darken-1,
+#wilayah h4.light.grey-text.text-darken-1,
+#pilihan h4.light.grey-text.text-darken-1,
+#gallery h4.light.grey-text.text-darken-1,
+#video h4.light.grey-text.text-darken-1,
+#contact h4.light.grey-text.text-darken-1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 h6 {
   font-weight: 600;
 }
+
+/* #berita p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}*/
+
 
 p {
   font-size: 18px;
@@ -248,7 +270,7 @@ padding: 0;
 .slider h3,
 .slider h5,
 .news h3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .slider .caption {
@@ -625,16 +647,19 @@ height: auto;
 @media (max-width: 600px) {
   .slider .caption {
     top: 95%;
+    margin-top: 50px;
   }
 
   .slider .caption h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .slider .caption h5 {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    font-weight: 700;
   }
-
 
   .row {
     margin-left: 0;
