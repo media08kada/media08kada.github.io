@@ -1,3 +1,41 @@
+/* ROOT & GLOBAL */
+:root {
+  --primary: #b6895b;
+  --bg: #242323;
+}
+
+html {
+  font-family: 'poppins', sans-serif;
+}
+
+/* Font Berita */
+#berita h4.light.grey-text.text-darken-3 {
+  position: center;
+  margin-top: 0;
+  margin-bottom: 20;  
+}
+
+#berita h6 {
+  font-weight: 600;
+}
+
+#berita h5 {
+  margin: 5px 0 8px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}
+
+#berita p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}
+
 .navbar-brand img {
   vertical-align: middle;
   margin: auto 0;
@@ -15,17 +53,6 @@ margin-top: 25px;
 #berita {
 margin-top: 80px;
 }
-
-#berita p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
-  text-align: justify;
-  text-indent: 30px;
-  letter-spacing: 0.3px;
-  font-weight: 300;
-}
-
 
 /* Card horizontal */
 .card.horizontal {
@@ -59,7 +86,7 @@ margin-top: 80px;
   flex-direction: column;
   justify-content: center;  
   flex: 1;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 /* Bagian action */
@@ -96,12 +123,17 @@ margin-top: 80px;
     max-width: 100%;
   }
 
-  #berita p {
-  font-size: 15px;
+#berita p {
+  font-size: 1.4rem;
   line-height: 1.5;
-  text-indent: 20px;
-  fline-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
+
   .card-action,
   .card-content {
     font-size: 12px;
