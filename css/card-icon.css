@@ -1,3 +1,9 @@
+:root {
+  --primary: #b6895b;
+  --bg: #242323;
+}
+
+
 /* BERITA PILIHAN */
 
 #pilihan .card {
@@ -155,7 +161,7 @@ left: 12px;
 
 /* Header Modal */
 .modal .modal-content h5 {
-  color: #b6895b;
+  color: #242323;
   font-weight: 600;
   margin-bottom: 15px;
   text-align: center;
@@ -164,8 +170,9 @@ left: 12px;
 /* Isi Modal */
 .modal .modal-content p {
   color: #555;
-  line-height: 1.8;
+  line-height: 1.4;
   font-size: 15px;
+  font-weight: 400;
 }
 
 /* Footer Modal */
