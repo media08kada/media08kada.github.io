@@ -262,6 +262,11 @@ fetch("modals.html")
     document.getElementById("icons").style.display = "none"; // sembunyikan div
   });
 
+  //modal trigger
+document.addEventListener("DOMContentLoaded", function () {
+  const elems = document.querySelectorAll(".modal");
+  M.Modal.init(elems);
+});
 
 
 

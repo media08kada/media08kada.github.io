@@ -144,3 +144,64 @@ position: absolute;
 bottom: 12px;
 left: 12px;
 }
+
+/* Modal */
+.modal {
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  overflow: hidden;
+}
+
+/* Header Modal */
+.modal .modal-content h5 {
+  color: #b6895b;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Isi Modal */
+.modal .modal-content p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Footer Modal */
+.modal .modal-footer {
+  background: #f8f8f8;
+  border-top: 1px solid #eee;
+}
+
+/* Tombol Tutup */
+.modal .modal-footer .btn-flat {
+  color: #b6895b;
+  font-weight: 600;
+}
+
+.modal .modal-footer .btn-flat:hover {
+  background-color: rgba(182, 137, 91, 0.1);
+}
+
+/* Dark Mode */
+body.dark-mode .modal {
+  background: #1e1e1e;
+}
+
+body.dark-mode .modal .modal-content h5 {
+  color: #b6895b;
+}
+
+body.dark-mode .modal .modal-content p {
+  color: #ddd;
+}
+
+body.dark-mode .modal .modal-footer {
+  background: #252525;
+  border-top: 1px solid #333;
+}
+
+body.dark-mode .modal .modal-footer .btn-flat {
+  color: #b6895b;
+}
