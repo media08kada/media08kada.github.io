@@ -19,7 +19,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: grey;
+  background: rgba(1, 1, 1, 0.8);;
   font-family: monospace;
   font-size: 25px;
   color: white;
@@ -28,7 +28,7 @@
 }
 
 .buttonToTop a:hover {
-  background-color: rgb(17, 136, 17);
+  background-color: #b6895b;
   color: #000;
   transform: rotate(360deg);
 }
