@@ -701,14 +701,14 @@ body.dark-mode .navbar-fixed nav {
     body.dark-mode footer.page-footer,
     body.dark-mode footer.green,
     body.dark-mode footer.green.darken-3 {
-    background-color: #b6895b !important;
-    color: #ffffff !important;
+    background-color: rgb(128, 128, 128) !important;
+    color: #fff !important;
     }
 
     /* Teks dan link footer */
     body.dark-mode footer *,
     body.dark-mode footer a {
-    color: #ffffff !important;
+    color: #fff !important;
     }
 
     /* Warna Sosial-Media */
