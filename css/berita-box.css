@@ -27,11 +27,14 @@ html {
 }
 
 #berita p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.9;
     text-align: justify;
     text-indent: 30px;
+    letter-spacing: 0.2px;
+    margin: 0 0 16px;
     margin-bottom: 20px;
+    font-weight: 400;
     color: #333;
 }
 .section h4 {
@@ -221,13 +224,13 @@ margin-top: 80px;
   }
 
 #berita p {
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  margin: 0 0 8px;
+  margin: 0 0 18px;
   text-align: justify;
   text-justify: inter-word;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'poppin', sans-serif;
   font-weight: 400;
 }
 
