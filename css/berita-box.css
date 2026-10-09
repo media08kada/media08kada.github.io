@@ -9,10 +9,11 @@ html {
 }
 
 /* Font Berita */
-#berita h4.light.grey-text.text-darken-3 {
+#berita h4.light.grey-text.text-darken-1 {
  text-align: center;
   margin-top: 0;
-  margin-bottom: 20;  
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 
 #berita h6 {
@@ -33,6 +34,11 @@ html {
     margin-bottom: 20px;
     color: #333;
 }
+.section h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 
 #berita .author-credit p {
     margin-top: 40px; /* Jarak dari paragraf terakhir */

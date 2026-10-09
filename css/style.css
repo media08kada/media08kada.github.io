@@ -54,6 +54,7 @@ footer {
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 h6 {
@@ -61,9 +62,12 @@ h6 {
 }
 
 p {
-  font-size: 18px;
-  font-weight: 300;
-  margin: 0 0 8px;
+  font-size: 15px;
+    line-height: 1.9;
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 h5 {
