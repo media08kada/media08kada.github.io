@@ -26,14 +26,21 @@ html {
 }
 
 #berita p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  margin: 0 0 8px;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: 'poppins', sans-serif;
-  font-weight: 400;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#berita .author-credit p {
+    margin-top: 40px; /* Jarak dari paragraf terakhir */
+    font-size: 10px;
+    text-align: right;
+    text-indent: 0;
+    font-style: italic;
+    color: #666;
 }
 
 .navbar-brand img {
@@ -68,6 +75,7 @@ margin-top: 80px;
   padding: 8px;
   display: flex;
   align-items: center;
+  justify-content: center;
   max-height: 100%;
 }
 
@@ -90,16 +98,17 @@ margin-top: 80px;
 }
 
 #card-content p {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   line-height: 1.5;
-  letter-spacing: 0.5px;
-  margin: 0 0 8px;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 0;
   text-align: justify;
   text-justify: inter-word;
   font-family: 'poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
+  text-indent: 0; /* pastikan tidak menjorok */
 }
-
 
 /* Bagian action */
 .card.horizontal .card-action {
@@ -111,7 +120,7 @@ margin-top: 80px;
 /* Konten & action seragam */
 .card.horizontal .card-content,
 .card.horizontal .card-action {
-  padding: 4px 4px;
+  padding: 10px 15px !important;
 }
 
 /* btn Hero */
@@ -119,46 +128,13 @@ margin-top: 80px;
   display: flex;
   gap: 10px;
   margin-top: 15px;
-  flex-wrap: wrap; /* supaya responsif di HP */
+  flex-wrap: wrap; 
   align-items: center;
 }
 
 #btn-hero .btn-small,
 #btn-hero .likeBtn {
   margin: 0;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .card.horizontal .card-image img {
-    max-height: 65px;
-    max-width: 100%;
-  }
-
-#berita p {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  margin: 0 0 8px;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
-  .card-action,
-  .card-content {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-}
-
-/* Desktop besar */
-@media (min-width: 1200px) {
-  .card.horizontal .card-image img {
-    max-height: 85px;
-    max-width: 100%;
-  }
 }
 
 /* Cuplikan Kalimat */
@@ -187,5 +163,47 @@ margin-top: 80px;
   color: rgb(84, 84, 84);
   margin-left: 8px;
 }
+
+/* Desktop besar */
+@media (min-width: 1200px) {
+  .card.horizontal .card-image img {
+    max-height: 85px;
+    max-width: 100%;
+  }
+}
+
+/* Tablet / layar sedang */
+@media (min-width: 601px) and (max-width: 1199px) {
+  .card.horizontal .card-image img {
+    max-height: 75px;
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .card.horizontal .card-image img {
+    max-height: 65px;
+    max-width: 100%;
+  }
+
+#berita p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+  .card-action,
+  .card-content {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
 
 
