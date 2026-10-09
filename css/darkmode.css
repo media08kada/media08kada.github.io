@@ -36,6 +36,7 @@ body.dark nav {
   color: #fff;
 }
 
+
 body.dark-mode nav,
 body.dark-mode .collection-header,
 body.dark-mode #sekilas-berita .collection-item,
@@ -56,7 +57,7 @@ body.dark-mode .card-panel h6,
 body.dark-mode #contact h4,
 body.dark-mode #contact .card-panel h5,
 body.dark-mode #contact .card-panel h6 {
-  color: grey text-darken-3!important;
+  color: white text-darken-3!important;
 }
 
 /* Section backgrounds */
@@ -75,6 +76,11 @@ body.dark-mode #bekerjasama .collection,
 body.dark-mode #hubungi-kami .collection {
   background-color: #212121  !important;
   color: #fff !important;
+}
+
+body.dark-mode p {
+    color: #fff !important;
+    font-weight: 300;
 }
 
 /* Card */
@@ -254,7 +260,6 @@ body.dark-mode .sidenav .user-view .email {
   color: #fff !important;
 }
 
-/* Dropdown content di dark mode (agar teks hitam & tidak tertutup box) */
 body.dark-mode .dropdown-content {
   background-color: #fff !important;  
   z-index: 9999 !important;           
