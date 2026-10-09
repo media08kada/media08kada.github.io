@@ -617,11 +617,11 @@ body.dark-mode .navbar-fixed nav {
     body.dark-mode .btn-floating,
     body.dark-mode .btn-theme,
     body.dark-mode .waves-effect.btn,
-    body.dark-mode .btn.green,
-    body.dark-mode .btn-small.green,
-    body.dark-mode .btn-large.green,
-    body.dark-mode .btn-floating.green,
-    body.dark-mode .btn-floating.btn-medium.green.darken-2,
+    body.dark-mode .btn.grey,
+    body.dark-mode .btn-small.grey,
+    body.dark-mode .btn-large.grey,
+    body.dark-mode .btn-floating.grey,
+    body.dark-mode .btn-floating.btn-medium.grey.darken-2,
     body.dark-mode a.btn,
     body.dark-mode a.btn-small {
     background-color: gray !important;
@@ -710,6 +710,39 @@ body.dark-mode .navbar-fixed nav {
     body.dark-mode footer a {
     color: #ffffff !important;
     }
+
+    /* Warna Sosial-Media */
+    /* WhatsApp */
+body.dark-mode .social-links .green.darken-2 {
+    background-color: #25D366 !important;
+}
+
+/* Instagram */
+body.dark-mode .social-links .purple.darken-1 {
+    background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    ) !important;
+}
+
+/* Facebook */
+body.dark-mode .social-links .indigo.darken-2 {
+    background-color: #1877F2 !important;
+}
+
+/* YouTube */
+body.dark-mode .social-links .red.darken-3 {
+    background-color: #FF0000 !important;
+}
+
+/* TikTok */
+body.dark-mode .social-links .fa-tiktok {
+    color: #fff !important;
+}
 
 
 
