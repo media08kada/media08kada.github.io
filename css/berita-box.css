@@ -17,7 +17,7 @@ html {
 }
 
 #berita h6 {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 #berita h5 {
@@ -40,13 +40,13 @@ html {
 }
 
 
-#berita .author-credit p {
-    margin-top: 40px; /* Jarak dari paragraf terakhir */
+#berita .author-credit h6 {
+    margin-top: 50px;
     font-size: 10px;
-    text-align: right;
+    text-align: lift;
     text-indent: 0;
     font-style: italic;
-    color: #666;
+    color: #333;
 }
 
 .navbar-brand img {
@@ -113,7 +113,7 @@ margin-top: 80px;
   text-justify: inter-word;
   font-family: 'poppins', sans-serif;
   font-weight: 100;
-  text-indent: 0; /* pastikan tidak menjorok */
+  text-indent: 0; 
 }
 
 /* Bagian action */

@@ -58,7 +58,7 @@ footer {
 }
 
 h6 {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 p {
@@ -72,7 +72,6 @@ p {
 
 h5 {
   margin: 5px 0 8px;
-  font-family: 'poppins', sans-serif;
   font-weight: 700;
 }
 
