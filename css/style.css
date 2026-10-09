@@ -62,7 +62,7 @@ h6 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
     line-height: 1.9;
     text-align: justify;
     text-indent: 30px;
@@ -380,33 +380,16 @@ padding: 0;
     object-fit: cover;
   }
 }
+
+/*  Btn-small Berita */
+.btn-small {
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    font-size: 11px;
+    border-radius: 4px;
+}
 /* Slider Berita End */
-
-/* Button Like */
-#btn-hero  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-#btn-hero #like-btn {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  background: gray;
-  color: white;
-  border: 1px solid gray;
-}
-
-#btn-hero #like-btn:hover,
-#btn-hero #like-btn:focus,
-#btn-hero #like-btn:active {
-  background: gray;
-  border-color: gray;
-  color: white;
-}
 
 /* Grid, Card, Colletion */
 .custom-row {
@@ -631,6 +614,8 @@ padding: 0;
 
   p {
     font-size: 14px;
+    line-height: 1.5;
+    text-indent: 30px;
   }
 }
 
@@ -670,6 +655,10 @@ padding: 0;
     font-size: 1.5rem;
     line-height: 1.2;
     letter-spacing: 0.5px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
 

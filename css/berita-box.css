@@ -142,7 +142,8 @@ margin-top: 80px;
   margin: 0;
 }
 
-/* Cuplikan Kalimat */
+/* Cuplikan Kalimat Start */
+/* Cuplikan Kalimat Start */
 .quote {
   text-align: justify;
   background-color: rgba(128, 128, 128, 0.2); 
@@ -168,6 +169,33 @@ margin-top: 80px;
   color: rgb(84, 84, 84);
   margin-left: 8px;
 }
+
+/* Button Like Start */
+#btn-hero  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#btn-hero #like-btn {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background: gray;
+  color: white;
+  border: 1px solid gray;
+}
+
+#btn-hero #like-btn:hover,
+#btn-hero #like-btn:focus,
+#btn-hero #like-btn:active {
+  background: gray;
+  border-color: gray;
+  color: white;
+}
+/* Button Like End */
 
 /* Desktop besar */
 @media (min-width: 1200px) {

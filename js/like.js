@@ -1,29 +1,26 @@
-//Reaksi Pembaca
+// Tombol Like
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".likeBtn").forEach(function (btn) {
     const articleId = btn.dataset.id;
-    const countSpan = btn.querySelector(".likeCount");
-    // Key localStorage
-    const likeKey = "likes_" + articleId;
     const likedKey = "liked_" + articleId;
-    // Ambil jumlah like
-    let likes = localStorage.getItem(likeKey) || 0;
-    countSpan.textContent = likes;
-    // Jika sudah pernah like
-    if (localStorage.getItem(likedKey) === "true") {
+
+    // Cek apakah sudah like
+    if (localStorage.getItem(likedKey)) {
       btn.disabled = true;
-      btn.innerHTML =
-        '👍 Disukai (<span class="likeCount">' + likes + "</span>)";
+      btn.classList.remove("grey");
+      btn.classList.add("blue");
+      btn.innerHTML = "👍 Disukai";
     }
+
     btn.addEventListener("click", function () {
-      if (localStorage.getItem(likedKey) === "true") return;
-      likes++;
-      countSpan.textContent = likes;
-      localStorage.setItem(likeKey, likes);
+      if (localStorage.getItem(likedKey)) return;
+
       localStorage.setItem(likedKey, "true");
+
       btn.disabled = true;
-      btn.innerHTML =
-        '👍 Disukai (<span class="likeCount">' + likes + "</span>)";
+      btn.classList.remove("grey");
+      btn.classList.add("blue");
+      btn.innerHTML = "👍 Disukai";
     });
   });
 });
