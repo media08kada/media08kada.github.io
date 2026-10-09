@@ -230,7 +230,6 @@ border-bottom: 1px solid #faf7f4;
   position: relative;
   height: 400px !important;
   overflow: hidden;
-  border-radius: 2%;
 }
 
 .slider .slides li img {
@@ -352,11 +351,11 @@ padding: 0;
 }
 
 .square-wrapper {
-width: 100%;
+ width: 100%;
 }
 
 .slider .slides li img {
-height: auto;
+ height: auto;
 }
 
 .square-wrapper .square-img {
