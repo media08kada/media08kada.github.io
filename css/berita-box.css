@@ -105,8 +105,8 @@ margin-top: 80px;
   font-size: 1rem;
 }
 
-#card-content p {
-  font-size: 0.9rem;
+.card.horizontal .card-stacked .card-content p {
+  font-size: 0.5rem;
   line-height: 1.5;
   letter-spacing: 0.2px;
   margin: 0;
@@ -119,7 +119,8 @@ margin-top: 80px;
 }
 
 /* Bagian action */
-.card.horizontal .card-action {
+.card.horizontal .card-stacked .card-content .card-action {
+  font-size: 0.8rem;
   border-top: none;   
   margin: 0;
   padding: 0;
@@ -234,9 +235,8 @@ margin-top: 80px;
   font-weight: 400;
 }
 
-  .card-action,
-  .card-content {
-    font-size: 12px;
+  .card.horizontal .card-stacked .card-content p {
+    font-size: 10px;
     line-height: 1.5;
   }
 }
