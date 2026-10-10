@@ -37,6 +37,16 @@ body.dark nav {
 }
 
 
+/* Warna Icon Dark Mode */
+body.dark-mode .light-icon {
+  color: #b6895b !important;
+}
+
+body.dark-mode .dark-icon {
+  color: #fff !important;
+}
+
+
 body.dark-mode nav,
 body.dark-mode .collection-header,
 body.dark-mode #sekilas-berita .collection-item,
@@ -68,7 +78,7 @@ body.dark-mode #bekerjasama,
 body.dark-mode #hubungi-kami,
 body.dark-mode .collection.with-header,
 body.dark-mode .card-panel,
-body.dark-mode .grey.lighten-3,
+body.dark-mode .white.lighten-3,
 body.dark-mode #sekilas-berita .card,
 body.dark-mode #sekilas-berita .card-content,
 body.dark-mode #sekilas-berita .collection,
@@ -117,9 +127,9 @@ body.dark-mode .btn-large {
 color: #212121 !important;
 }
 
-body.dark-mode .btn.green,
-body.dark-mode .btn-small.green,
-body.dark-mode .btn-large.green {
+body.dark-mode .btn.grey,
+body.dark-mode .btn-small.grey,
+body.dark-mode .btn-large.grey {
   background-color: grey !important;
 }
 
@@ -144,77 +154,90 @@ body.dark-mode #contact .card-panel {
   background-color: #3a3a3a !important;
 }
 
-/* Navbar Items & Switch */
-nav ul li {
-  line-height: 64px;
-  margin-left: 10px;
+/* Navbar Icon Dark Mode */
+/* Item Dark Mode */
+nav .dark-mode-item {
+    display: flex;
+    align-items: center;
+    height: 64px;
 }
 
-nav .switch {
-  position: relative;
-  margin-left: 20px;
-  top: -10px;
-  transform: scale(0.8);
-  display: flex;
-  align-items: center;
-  height: 64px;
+/* Switch */
+nav .dark-mode-item .switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: auto;
+    transform: scale(0.8);
+    position: relative;
+    top: 4px; 
 }
 
+/* Label Switch */
 nav .switch label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    height: auto;
 }
+
+nav .dark-mode-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav .switch label i.material-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+/* Search */
+#search-button {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* Search */
+#search-button {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* Dark Mode */
+nav .dark-mode-item {
+    margin-left: 15px; /* jarak 4px dari search */
+}
+
+
+/* Desktop */
+@media (min-width: 992px) {
+nav .switch {
+transform: scale(0.75);
+margin-left: 10px;
+position: relative;
+top: 5px; 
+ }
 
 nav .switch .lever {
-  width: 34px;
-  height: 20px; 
-  background-color: grey !important;
-  border-radius: 20px;
-  position: relative;
-  transition: background-color 0.3s ease;
+width: 30px;
+height: 16px;
 }
 
 nav .switch .lever:after {
-  content: "";
-  background-color: white !important;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  transition: left 0.3s ease, background-color 0.3s ease;
+width: 14px;
+height: 14px;
 }
 
-/* Saat switch aktif */
 nav .switch input[type=checkbox]:checked + .lever:after {
-  left: 15px;
-  background-color: grey !important;
+left: 15px;
 }
-
-/* Perkecil di layar lebar */
-@media (min-width: 992px) {
-  nav .switch {
-    transform: scale(0.7);
-  }
-
-  nav .switch .lever {
-    width: 28px;
-    height: 16px;
-    border-radius: 16px;
-  }
-
-  nav .switch .lever:after {
-    width: 14px;
-    height: 14px;
-    top: 1px;
-    left: 1px;
-  }
-
-  nav .switch input[type=checkbox]:checked + .lever:after {
-    left: 28px; 
-  }
 }
 
 /* Search Form */
@@ -228,10 +251,11 @@ nav .switch input[type=checkbox]:checked + .lever:after {
 .dark-icon,
 nav .switch i.material-icons,
 .switch .material-icons {
-  font-size: 20px;
+  font-size: 24px;
   margin: 0 5px;
   vertical-align: middle;
 }
+
 
 /* Youtube link khusus */
 body.dark-mode a[href*="youtube.com"] {
@@ -373,7 +397,7 @@ body.dark-mode .gallery img {
 
 /* Perubahan Warna pada model dark */
 /* Navbar */
-nav.green.darken-3 {
+nav.grey.darken-3 {
 background-color: #b6895b !important;
 }
 
@@ -382,7 +406,7 @@ background-color: transparent;
 }
 
 /* Mode dark */
-body.dark-mode nav.green.darken-3 {
+body.dark-mode nav.grey.darken-3 {
 background-color: #b6895b !important;
 }
 
@@ -391,35 +415,35 @@ background-color: transparent;
 }
 
 /* Button Small */
-.btn-small.green {
+.btn-small.grey {
   background-color: #2e7d32; 
 }
 
-body.dark-mode .btn-small.green {
+body.dark-mode .btn-small.grey {
   background-color: #b6895b !important;
 }
 
-body.dark-mode .btn-small.green:hover,
-body.dark-mode .btn-small.green:focus,
-body.dark-mode .btn-small.green:active {
+body.dark-mode .btn-small.grey:hover,
+body.dark-mode .btn-small.grey:focus,
+body.dark-mode .btn-small.grey:active {
   background-color: #a6784d !important; 
 }
 
-body.dark-mode .btn-small.green {
+body.dark-mode .btn-small.grey {
 background-color: #b6895b !important;
 color: #fff !important;
 }
 
-body.dark-mode .btn-small.green:hover {
+body.dark-mode .btn-small.grey:hover {
 background-color: #a6784d !important;
 }
 
 /* Card */
-.card.green.darken-1 {
+.card.grey.darken-1 {
   background-color: #2e7d32; 
 }
 
-body.dark-mode .card.green.darken-1 {
+body.dark-mode .card.grey.darken-1 {
   background-color: #a6784d !important;
   color: #fff !important; 
 }
@@ -434,66 +458,66 @@ body.dark-mode .btn-floating.btn-medium.grey.darken-2 {
   color: #fff !important; 
 }
 
-body.dark-mode .btn-floating.btn-medium.green.darken-2:hover,
-body.dark-mode .btn-floating.btn-medium.green.darken-2:focus,
-body.dark-mode .btn-floating.btn-medium.green.darken-2:active {
+body.dark-mode .btn-floating.btn-medium.grey.darken-2:hover,
+body.dark-mode .btn-floating.btn-medium.grey.darken-2:focus,
+body.dark-mode .btn-floating.btn-medium.grey.darken-2:active {
   background-color: #8f6240 !important; 
 }
 
 /* Button Default */
-.waves-effect.btn.green {
+.waves-effect.btn.grey {
   background-color: #2e7d32; 
 }
 
-body.dark-mode .waves-effect.btn.green {
+body.dark-mode .waves-effect.btn.grey {
   background-color: #a6784d !important;
   color: #fff !important;
 }
 
-body.dark-mode .waves-effect.btn.green:hover,
-body.dark-mode .waves-effect.btn.green:focus,
-body.dark-mode .waves-effect.btn.green:active {
+body.dark-mode .waves-effect.btn.grey:hover,
+body.dark-mode .waves-effect.btn.grey:focus,
+body.dark-mode .waves-effect.btn.grey:active {
   background-color: #8f6240 !important;
 }
 
 /* Footer Buttons */
-footer .btn-floating.green {
+footer .btn-floating.grey {
   background-color: #2e7d32; 
 }
 
-body.dark-mode footer.btn-floating.green {
+body.dark-mode footer.btn-floating.grey {
 background-color: grey !important;
 color: #fff !important;
 }
 
-body.dark-mode footer .btn-floating.green:hover,
-body.dark-mode footer .btn-floating.green:hover,
-body.dark-mode footer .btn-floating.green:focus,
-body.dark-mode footer .btn-floating.green:active {
+body.dark-mode footer .btn-floating.grey:hover,
+body.dark-mode footer .btn-floating.grey:hover,
+body.dark-mode footer .btn-floating.grey:focus,
+body.dark-mode footer .btn-floating.grey:active {
 background-color: grey !important;
 }
 
 /* Footer Background */
-footer.green.darken-3 {
+footer.grey.darken-3 {
   background-color: #2e7d32; 
 }
 
-body.dark-mode footer.green.darken-3 {
+body.dark-mode footer.grey.darken-3 {
   background-color: #8f6240 !important;
   color: #fff !important;
 }
 
 /* Default tombol (Materialize hijau) */
-.btn-small.green {
+.btn-small.grey {
   background-color: #4caf50;
 }
 
 /* Saat dark mode aktif */
-body.dark-mode .btn-small.green {
+body.dark-mode .btn-small.grey {
   background-color: #8f6240 !important;
 }
 
-#darkToggle.dark-mode .btn-small.green {
+#darkToggle.dark-mode .btn-small.grey {
   background-color: #8f6240 !important;
 }
 
@@ -505,7 +529,7 @@ body.dark-mode .btn-small.green {
 
 /* icon lebih dekat switch */
 .switch label i.material-icons {
-  font-size: 18px;      
+  font-size: 28px;      
   margin: 0 1px;        
   vertical-align: middle;
 }
@@ -657,14 +681,14 @@ body.dark-mode .navbar-fixed nav {
     /* Navbar Light Mode */
     .nav,
     .navbar-fixed nav,
-    nav.green.darken-3 {
+    nav.grey.darken-3 {
     background-color: #b6895b !important;
     }
 
     /* Navbar Dark Mode */
     body.dark-mode nav,
     body.dark-mode .navbar-fixed nav,
-    body.dark-mode nav.green.darken-3 {
+    body.dark-mode nav.grey.darken-3 {
     background-color: rgba(1, 1, 1, 0.8) !important;
     }
 
@@ -680,11 +704,11 @@ body.dark-mode .navbar-fixed nav {
     }
 
     /* Footer Background */
-    footer.green.darken-3 {
+    footer.grey.darky-3 {
     background-color: #2e7d32; 
     }
 
-    body.dark-mode footer.green.darken-3 {
+    body.dark-mode footer.grey.darken-3 {
     background-color: #b6895b !important;
     color: #fff !important;
     }
@@ -699,8 +723,8 @@ body.dark-mode .navbar-fixed nav {
     /* Footer Dark Mode */
     body.dark-mode footer,
     body.dark-mode footer.page-footer,
-    body.dark-mode footer.green,
-    body.dark-mode footer.green.darken-3 {
+    body.dark-mode footer.grey,
+    body.dark-mode footer.grey.darken-3 {
     background-color: rgb(128, 128, 128) !important;
     color: #fff !important;
     }

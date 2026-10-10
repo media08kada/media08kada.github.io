@@ -38,7 +38,9 @@
   margin-right: 1rem;
   color: gray;
   display: flex;
+  position: relative;
   align-items: center;
+  transform: translateY(-8px);
 }
 
 /* Input field */
@@ -58,6 +60,22 @@
   height: 32px;              /* dikurangi tinggi */
   padding: 5px 5px;
   font-size: 14px;
+}
+
+/* Tombol search navbar */
+#search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px; /* sesuaikan dengan tinggi navbar desktop */
+}
+
+/* Icon search */
+#search-button .material-icons {
+  font-size: 28px;
+  line-height: 1;
+  position: relative;
+  top: 15px; 
 }
 
 /* Responsive untuk handphone */
