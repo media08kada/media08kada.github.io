@@ -38,7 +38,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/partner/MediaKelapadua.png" type="image/x-icon"/>
+    <link rel="icon" href="../img/partner/MediaKelapadua.png" type="image/x-icon"/>
 
     <!-- Materialize CSS -->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
@@ -60,33 +60,24 @@
       <div class="container nav-wrapper-custom">
           <a class="navbar-brand" href="#"> <img src="/img/partner/MediaKelapadua.png"/></a>
 
-        <!-- Switch di kiri khusus mobile -->
-        <div class="switch hide-on-large-only" style="margin-left: 2px;">
-          <label>
-            <i class="material-icons">wb_sunny</i>
-            <input type="checkbox" id="darkmodetoggle-mobile">
-            <span class="lever"></span>
-            <i class="material-icons">brightness_3</i>
-          </label>
-        </div>
-
-            <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
-              <i class="material-icons large">home</i>
-              </a>
-              <ul class="right hide-on-med-and-down">
-              <li><a href="../index.html">Beranda</a></li>
-              <li>
-              <div class="switch">
+          <!-- Switch di kiri khusus mobile -->
+          <li class="dark-mode-item">
+            <div class="switch small">
               <label>
-              <i class="material-icons">wb_sunny</i>
-              <input type="checkbox" id="darkmodetoggle">
-              <span class="lever"></span>
-              <i class="material-icons">brightness_3</i>
+                <i class="material-icons">wb_sunny</i>
+                <input type="checkbox" id="darkmodetoggle">
               </label>
-                </div>
-              </li>
-            </ul>
-          </div>
+            </div>
+          </li>
+      
+          <a href="../index.html" data-target="mobile-nav" class="sidenav-trigger right">
+            <i class="material-icons large">home</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../index.html">Beranda</a></li>
+            <li>
+         </div>
+        <!-- Garis Bar Navbar --> 
         <div class="progress">
        <div class="indeterminate"></div>
       </div>
@@ -94,7 +85,7 @@
 </div>
 
 <!-- Berita Lain -->
-<section id="berita" class="section berita grey-text text-darken-3">
+<section id="berita" class="section berita grey-text text-darken-3" style="margin-top: 100px;">
   <div class="container">
     <!-- Judul -->
     <div class="row">
