@@ -36,7 +36,6 @@ body.dark nav {
   color: #fff;
 }
 
-
 /* Warna Icon Dark Mode */
 body.dark-mode .light-icon {
   color: #b6895b !important;
@@ -45,7 +44,6 @@ body.dark-mode .light-icon {
 body.dark-mode .dark-icon {
   color: #fff !important;
 }
-
 
 body.dark-mode nav,
 body.dark-mode .collection-header,
@@ -61,13 +59,8 @@ body.dark-mode h5,
 body.dark-mode h6,
 body.dark-mode p,
 body.dark-mode .grey-text,
-body.dark-mode .text-darken-3,
-body.dark-mode .card-panel h5,
-body.dark-mode .card-panel h6,
-body.dark-mode #contact h4,
-body.dark-mode #contact .card-panel h5,
-body.dark-mode #contact .card-panel h6 {
-  color: white text-darken-3!important;
+body.dark-mode .text-darken-3 {
+  color: #fff !important;
 }
 
 /* Section backgrounds */
@@ -123,26 +116,18 @@ body.dark-mode #sekilas-berita a.btn-small {
 /* Buttons */
 body.dark-mode .btn,
 body.dark-mode .btn-small,
-body.dark-mode .btn-large {
-color: #212121 !important;
-}
-
-body.dark-mode .btn.grey,
-body.dark-mode .btn-small.grey,
-body.dark-mode .btn-large.grey {
+body.dark-mode .btn-large,
+body.dark-mode .btn-floating,
+body.dark-mode .btn-theme {
   background-color: grey !important;
-}
-
-body.dark-mode .btn.grey,
-body.dark-mode .btn-small.grey,
-body.dark-mode .btn-large.grey {
-  background-color: grey !important;
+  color: #fff !important;
 }
 
 body.dark-mode .btn:hover,
 body.dark-mode .btn-small:hover,
-body.dark-mode .btn-large:hover {
-  filter: brightness(1.1);
+body.dark-mode .btn-large:hover,
+body.dark-mode .btn-floating:hover {
+  background-color: #666 !important;
 }
 
 /* Contact section */
@@ -158,6 +143,7 @@ body.dark-mode #contact .card-panel {
 nav .dark-mode-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 64px;
 }
 
@@ -181,13 +167,6 @@ nav .switch label {
   gap: 6px;
   margin: 0;
   height: auto;
-}
-
-nav .dark-mode-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
 }
 
 nav .switch label i.material-icons {
@@ -230,12 +209,6 @@ nav .switch label i.material-icons {
   }
   
   /* Item Dark Mode End */
-  
-  /* Search */
-  #search-button {
-    margin-right: 0;
-    padding-right: 0;
-  }
   
   /* Search */
   #search-button {
@@ -516,7 +489,7 @@ footer .btn-floating.grey {
   background-color: #2e7d32; 
 }
 
-body.dark-mode footer.btn-floating.grey {
+body.dark-mode footer .btn-floating.grey{
 background-color: grey !important;
 color: #fff !important;
 }
@@ -581,7 +554,6 @@ body.dark-mode .navbar-fixed nav {
 
 .slider-dark img {
   min-height: 100vh;
-  display: flex;
   align-items: center;
   background-image: url('../img/header-bg1.jpeg');
   background-repeat: no-repeat;
@@ -661,7 +633,7 @@ body.dark-mode .navbar-fixed nav {
     @media (prefers-color-scheme: dark) {
       #donationTable h4,
       #donationTable p {
-        color: #fff !important;/
+        color: #fff !important;
       }
     }
 
@@ -704,23 +676,21 @@ body.dark-mode .navbar-fixed nav {
     color: #fff !important;
     }
 
-    body.dark-mode footer .social-li*ks .btn-floating:hover,
+    body.dark-mode footer .social-links .btn-floating:hover,
     body.dark-mode footer .social-links .btn-floating:focus,
     body.dark-mode footer .social-links .btn-floating:active { background-color: #a6784d !important;
     }
 
     /* Navbar Light Mode */
-    .nav,
     .navbar-fixed nav,
     nav.grey.darken-3 {
-    background-color: #b6895b !important;
+      background-color: #b6895b !important;
     }
 
-    /* Navbar Dark Mode */
-    body.dark-mode nav,
     body.dark-mode .navbar-fixed nav,
     body.dark-mode nav.grey.darken-3 {
-    background-color: rgba(1, 1, 1, 0.8) !important;
+      background-color: rgba(1, 1, 1, 0.8) !important;
+      border-bottom: 2px solid #a6784d;
     }
 
     /* Warna link navbar */
@@ -735,8 +705,8 @@ body.dark-mode .navbar-fixed nav {
     }
 
     /* Footer Background */
-    footer.grey.darky-3 {
-    background-color: #2e7d32; 
+    footer.grey.darkin-3 {
+    background-color: #b6895b; 
     }
 
     body.dark-mode footer.grey.darken-3 {
@@ -745,25 +715,19 @@ body.dark-mode .navbar-fixed nav {
     }
 
     /* Footer Dark Mode */
-    body.dark-mode footer,
-    body.dark-mode footer.green.darken-3 {
-    background-color: #b6895b !important;
-    color: #fff !important;
+    footer.grey.darken-3 {
+      background-color: #2e7d32;
     }
 
-    /* Footer Dark Mode */
     body.dark-mode footer,
     body.dark-mode footer.page-footer,
-    body.dark-mode footer.grey,
     body.dark-mode footer.grey.darken-3 {
-    background-color: rgb(128, 128, 128) !important;
-    color: #fff !important;
+      background-color: grey !important;
+      color: #fff !important;
     }
 
-    /* Teks dan link footer */
-    body.dark-mode footer *,
-    body.dark-mode footer a {
-    color: #fff !important;
+    body.dark-mode footer * {
+      color: #fff !important;
     }
 
     /* Warna Sosial-Media */
