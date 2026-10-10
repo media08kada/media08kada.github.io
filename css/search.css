@@ -34,7 +34,7 @@
 .search-form label {
   cursor: pointer;
   font-size: 1.8rem;
-  margin-left: 5rem;      /* beri jarak dari tepi kiri box */
+  margin-left: 5rem;      
   margin-right: 1rem;
   color: gray;
   display: flex;
@@ -45,19 +45,19 @@
 
 /* Input field */
 .search-form input {
-  flex: 1;                   /* isi ruang tersisa */
+  flex: 1;                   
   height: 100%;
   border: none;
   outline: none;
-  font-size: 1.4rem;         /* proporsional dengan tinggi box */
-  padding: 1.3rem 2rem;    /* padding kiri-kanan lebih besar */
+  font-size: 1.4rem;         
+  padding: 1.3rem 2rem;    
   box-sizing: border-box;
   margin-left: 10px;
 }
 
 /* Default style (mobile / tablet) */
 .search-box {
-  height: 32px;              /* dikurangi tinggi */
+  height: 32px;             
   padding: 5px 5px;
   font-size: 14px;
 }
@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 64px; /* sesuaikan dengan tinggi navbar desktop */
+  height: 64px; /
 }
 
 /* Icon search */
@@ -95,24 +95,24 @@
     border: 1px solid #ccc;
     padding: 6px 10px;
     border-radius: 5px;
-    width: 100%;            /* biar form penuh mengikuti parent */
-    max-width: 400px;       /* batasi agar tidak terlalu lebar */
-    margin: 0 auto;         /* posisikan di tengah */
+    width: 100%;            
+    max-width: 400px;       
+    margin: 0 auto;         
     box-shadow: 0 4px 8px rgba(0,0,0,0.25);
   }
 
 .search-form input {
-  flex: 1;                /* biar input melebar maksimal */
+  flex: 1;                
   border: none;
   outline: none;
   font-size: 14px;
-  padding: 6px 10px;      /* padding proporsional */
-  box-sizing: border-box; /* padding masuk hitungan width */
+  padding: 6px 10px;      
+  box-sizing: border-box; 
 }
 
   .search-form label {
     font-size: 1.2rem;
-    margin-left: 0.6rem;     /* ikon turun + agak ke kanan */
+    margin-left: 0.6rem;     
     margin-right: 1rem;
   }
 }

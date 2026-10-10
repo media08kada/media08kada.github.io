@@ -45,12 +45,12 @@ footer {
   max-width: 100%;
 }
 
-#berita h4.light.grey-text.text-darken-1,
-#wilayah h4.light.grey-text.text-darken-1,
-#pilihan h4.light.grey-text.text-darken-1,
-#gallery h4.light.grey-text.text-darken-1,
-#video h4.light.grey-text.text-darken-1,
-#contact h4.light.grey-text.text-darken-1 {
+#berita h4.light.grey-text,
+#wilayah h4.light.grey-text,
+#pilihan h4.light.grey-text,
+#gallery h4.light.grey-text,
+#video h4.light.grey-text,
+#contact h4.light.grey-text {
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;

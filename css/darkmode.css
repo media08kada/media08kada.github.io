@@ -171,7 +171,8 @@ nav .dark-mode-item .switch {
     height: auto;
     transform: scale(0.8);
     position: relative;
-    top: 4px; 
+    top: 4px;
+    transition: all 0.3s ease; 
 }
 
 /* Label Switch */
@@ -196,7 +197,40 @@ nav .switch label i.material-icons {
     justify-content: center;
     line-height: 1;
     vertical-align: middle;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+
+nav .switch:hover i.material-icons {
+    transform: rotate(20deg) scale(1.15);
+    color: #b6895b;
+}
+
+/* Tombol Dark Mode di Sidenav */
+.sidenav .switch {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Icon Dark Mode di Sidenav */
+.sidenav .switch i.material-icons {
+    transition: transform 0.3s ease,
+                color 0.3s ease,
+                text-shadow 0.3s ease;
+}
+
+/* Hover */
+.sidenav .switch:hover i.material-icons {
+    color: #b6895b !important;
+    transform: rotate(20deg) scale(1.15);
+    text-shadow: 0 0 8px rgba(182, 137, 91, 0.6);
+}
+
+/* Saat diklik */
+.sidenav .switch:active i.material-icons {
+    transform: rotate(25deg) scale(0.95);
+}
+
+
 
 /* Search */
 #search-button {
@@ -212,7 +246,7 @@ nav .switch label i.material-icons {
 
 /* Dark Mode */
 nav .dark-mode-item {
-    margin-left: 15px; /* jarak 4px dari search */
+    margin-left: 15px; 
 }
 
 
@@ -300,6 +334,8 @@ body.dark-mode .dropdown-content li > span {
     background-color: #212121 ; 
   }
 }
+
+
 
 /* Default (Light Mode) */
 #berita,
