@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Inisialisasi Materialize Modal
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { //pesan 95
   const elems = document.querySelectorAll(".modal");
   M.Modal.init(elems);
 });
@@ -105,14 +105,14 @@ const popupAudio = document.querySelector(".popup-audio");
 
 window.addEventListener("load", () => {
   setTimeout(() => {
-    popupScreen.classList.add("active");
+    popupScreen.classList.add("active"); // Pesan 108
     if (popupAudio) popupAudio.play(); 
   }, 1000);
 });
 
 closeBtn.addEventListener("click", () => {
   popupScreen.classList.remove("active");
-  document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60;
+  document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60; //pesan 115
   const WebsiteCookie = document.cookie.indexOf("WebsiteName");
 
   if (WebsiteCookie !== -1) {
