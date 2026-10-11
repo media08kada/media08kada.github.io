@@ -1,3 +1,4 @@
+// Berita Utama
 document.addEventListener("DOMContentLoaded", () => {
   loadPreviewBerita(
     "berita-utama/maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html",
@@ -54,3 +55,24 @@ function loadPreviewBerita(fileBerita, nomor) {
       console.error(`Gagal memuat berita ${nomor}:`, error);
     });
 }
+
+//Berita Box Horizontal
+document.addEventListener("DOMContentLoaded", function () {
+  // Ambil data sumber
+  const judul = document.getElementById("judul-berita-2")?.textContent || "";
+  const isi = document.getElementById("isi-berita-2")?.textContent || "";
+  const gambar = document.getElementById("img-berita-2")?.src || "";
+
+  // Isi preview
+  document.getElementById("preview-judul-berita-2").textContent = judul;
+
+  document.getElementById("preview-isi-berita-2").textContent = isi;
+
+  document.getElementById("preview-img-berita-2").src = gambar;
+
+  document.getElementById("preview-link-berita-2").textContent =
+    "Baca Selengkapnya";
+
+  document.getElementById("preview-link-berita-2").href =
+    "pemanfaatan-lahan-bersama-komunitas-melon-kelapa-dua.html";
+});
