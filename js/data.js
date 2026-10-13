@@ -77,13 +77,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Ambil gambar pertama
         const img = doc.querySelector('[id^="img-berita-"]');
 
-        // Ambil isi berita pertama
-        const isi = doc.querySelector('[id^="isi-berita-"]');
+        // Ambil judul berita
+        const judul = doc.querySelector('[id^="judul-berita-"]');
 
-        // ======================
+        
         // Tampilkan gambar
-        // ======================
-        if (img) {
+                if (img) {
           let src = img.getAttribute("src");
 
           const cardImg = card.querySelector(".card-image img");
@@ -94,26 +93,18 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // ======================
-        // Tampilkan isi berita
-        // ======================
-        if (isi) {
-          const teks = isi.textContent.trim();
+        // Tampilkan judul
+          if (judul) {
+          const cardJudul = card.querySelector(".card-content h5");
 
-          const preview =
-            teks.split(" ").slice(0, 15).join(" ") + "...";
-
-          const cardIsi = card.querySelector(".card-content p");
-
-          if (cardIsi) {
-            cardIsi.textContent = preview;
+          if (cardJudul) {
+            cardJudul.textContent = judul.textContent.trim();
           }
         }
 
-        // ======================
+       
         // Set link otomatis
-        // ======================
-        const link = card.querySelector(".card-action a");
+       const link = card.querySelector(".card-action a");
 
         if (link) {
           link.href = linkBerita;

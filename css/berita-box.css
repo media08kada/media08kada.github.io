@@ -97,18 +97,17 @@ margin-top: 80px;
   flex: 1;
 }
 
-.berita-preview .card-content p {
+.berita-preview .card-content h5 {
   margin: 0;
   line-height: 1.5;
   color: #555;
-
   overflow: hidden;
   max-height: 6em;
-
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
+  font-weight: 600;
 }
 
 .berita-preview .card-action {
@@ -117,7 +116,7 @@ margin-top: 80px;
 
 .berita-preview .card-action a {
   color: #b6895b !important;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 0.9rem
 }
 
@@ -133,7 +132,7 @@ margin-top: 80px;
     padding: 10px 12px;
   }
 
-  .berita-preview .card-content p {
+  .berita-preview .card-content h5 {
     font-size: 14px;
     line-height: 1.5;
   }
@@ -170,10 +169,9 @@ margin-top: 80px;
   padding: 0 6px !important;
 }
 
-  .berita-preview .card-content p {
-    font-size: 8px;
+  .berita-preview .card-content h5 {
+    font-size: 12px;
     line-height: 1.2;
-
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
