@@ -56,7 +56,7 @@ function loadPreviewBerita(fileBerita, nomor) {
     });
 }
 
-// Berita Box Horizontal
+// Preview Berita Horizontal Otomatis
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".berita-preview");
 
@@ -64,54 +64,63 @@ document.addEventListener("DOMContentLoaded", () => {
     const linkBerita = card.dataset.link;
 
     fetch(linkBerita)
-      .then((response) => response.text())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`File tidak ditemukan: ${linkBerita}`);
+        }
+        return response.text();
+      })
       .then((html) => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, "text/html");
 
-// Ambil gambar pertama dari halaman sumber
-const img = doc.querySelector('[id^="img-berita-"]');
+        // Ambil gambar pertama
+        const img = doc.querySelector('[id^="img-berita-"]');
 
-// Ambil isi berita pertama dari halaman sumber
-const isi = doc.querySelector('[id^="isi-berita-"]');
+        // Ambil isi berita pertama
+        const isi = doc.querySelector('[id^="isi-berita-"]');
 
-// Isi gambar ke card
-if (img) {
-  let src = img.getAttribute("src");
+        // ======================
+        // Tampilkan gambar
+        // ======================
+        if (img) {
+          let src = img.getAttribute("src");
 
-  // Hapus "../" di depan path jika ada
-  src = src.replace(/^(\.\.\/)+/, "");
+          const cardImg = card.querySelector(".card-image img");
 
-  const cardImg = card.querySelector("img");
+          if (cardImg && src) {
+            cardImg.src = src;
+            cardImg.alt = img.alt || "Preview Berita";
+          }
+        }
 
-  if (cardImg) {
-    cardImg.src = src;
-    cardImg.alt = img.alt || "Gambar Berita";
-  }
-}
-
-// Isi preview berita
-if (isi) {
-  const cardText = card.querySelector(".card-preview");
-  
-  if (cardText) {
-    cardText.textContent = isi.textContent.trim();
-  }
-}
-        // Isi paragraf dan batasi panjang
+        // ======================
+        // Tampilkan isi berita
+        // ======================
         if (isi) {
           const teks = isi.textContent.trim();
 
-          const potong = teks.split(" ").slice(0, 15).join(" ") + "...";
+          const preview =
+            teks.split(" ").slice(0, 15).join(" ") + "...";
 
-          card.querySelector(".card-content p").textContent = potong;
+          const cardIsi = card.querySelector(".card-content p");
+
+          if (cardIsi) {
+            cardIsi.textContent = preview;
+          }
         }
 
+        // ======================
         // Set link otomatis
-        card.querySelector(".card-action a").href = linkBerita;
+        // ======================
+        const link = card.querySelector(".card-action a");
+
+        if (link) {
+          link.href = linkBerita;
+        }
       })
       .catch((error) => {
-        console.error("Gagal mengambil berita:", error);
+        console.error("Gagal memuat berita:", error);
       });
   });
 });
