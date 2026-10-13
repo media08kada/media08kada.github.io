@@ -20,7 +20,7 @@
     <meta property="og:title" content="Media Kelapa Dua" />
     <meta property="og:description" content="Maulid Nabi di Masjid Jami At-Taqwa Kelapa Dua Berlangsung Khidmat dan Semarak. Baca detailnya di sini!" />
     <meta property="og:image" content="https://mediakelapadua.web.id/img/berita-1/A.jpg" />
-    <meta property="og:url" content="https://mediakelapadua.web.id/berita-utama/maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html" />
+    <meta property="og:url" content="https://mediakelapadua.web.id/berita-utama/maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html"/>
     <meta property="og:type" content="Berita" />
     <meta property="og:site_name" content="MediaKada" />
 
@@ -94,7 +94,7 @@
         <div class="row berita-detil">
           <!-- Gambar -->
           <div class="col s12 m4">
-            <img src="../img/berita-1/A.jpg" alt="Festival Kelapa Dua" class="responsive-img z-depth-1" />
+            <img src="../img/berita-1/A.jpg" alt="Festival Kelapa Dua" class="responsive-img z-depth-1" id="img-berita-1"/>
           </div>
 
           <!-- Konten -->
@@ -124,19 +124,25 @@
        
             <h6 class="credit" style="font-size: 10px">(From : LMK-08 Kelapa Dua)</h6>
 
-           <div class="card horizontal">
-              <div class="card-image">
-                <img src="../img/berita-2/B.jpg" id="preview-img-berita-2" />
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h5 id="preview-judul-berita-2"></h5>
+            <!-- Preview Berita Horizontal-->
+             <div class="row">
+                <div class="col s12">
+                 <div class="card horizontal berita-preview"        data-link="pemanfaatan-lahan-bersama-komunitas-melon-kelapa-dua.html">
+                        <div class="card-image">
+                            <img id="card-img-2" src="" alt="Preview Berita">
+                        </div>
+                       <div class="card-stacked">
+                            <div class="card-content">
+                                <p id="card-isi-2">
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-action">
-                  <a id="preview-link-berita-2">This is a link</a>
-                </div>
               </div>
-            </div>
 
             <div id="btn-hero">
               <a href="../index.html" class="waves-effect waves-light btn-small grey">Home</a>
@@ -159,5 +165,6 @@
     <script src="../js/darkmode.js"></script>
 
     <script src="/js/like.js"></script>
+    <script src="/js/data.js"></script>
   </body>
 </html>

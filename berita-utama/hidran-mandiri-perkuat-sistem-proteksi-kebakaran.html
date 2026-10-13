@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="../css/berita-box.css" />
     <link rel="stylesheet" href="../css/darkmode.css" />
 
-    <title>Cek Kesehatan Gratis dan Skrining Sistematis Tuberkulosis (TBC)</title>
+    <title>Hidran Mandiri Perkuat Sistem Proteksi Kebakaran</title>
   </head>
   <body id="home" class="scrollspy">
 
@@ -92,7 +92,7 @@
         <!-- Berita-3 -->
         <div class="row berita-detil">
           <div class="col s12 m4">
-            <img src="../img/berita-3/C.jpg" alt="Festival Kelapa Dua" class="responsive-img z-depth-1" />
+            <img src="../img/berita-3/C.jpg" alt="Festival Kelapa Dua" class="responsive-img z-depth-1" id="img-berita-3"/>
           </div>
 
           <!-- Konten -->
@@ -120,19 +120,25 @@
 
             <h6 class="credit" style="font-size: 10px">(From : LMK-08 Kelapa Dua)</h6>
 
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="../img/berita-2/B.jpg" />
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>Pemanfaatan Lahan Bersama Komunitas Melon Kelapa Dua</p>
+            <!-- Preview Berita Horizontal-->
+             <div class="row">
+                <div class="col s12">
+                 <div class="card horizontal berita-preview"        data-link="maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html">
+                        <div class="card-image">
+                            <img id="card-img-1" src="" alt="Preview Berita">
+                        </div>
+                       <div class="card-stacked">
+                            <div class="card-content">
+                                <p id="card-isi-1">
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-action">
-                  <a href="pemanfaatan-lahan-bersama-komunitas-melon-kelapa-dua.html">This is a link</a>
-                </div>
               </div>
-            </div>
 
             <div id="btn-hero">
               <a href="../index.html" class="waves-effect waves-light btn-small grey">Home</a>
@@ -152,7 +158,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../js/darkmode.js"></script>
+    
     <script src="/js/like.js"></script>
+    <script src="/js/data.js"></script>
 
   </body>
 </html>

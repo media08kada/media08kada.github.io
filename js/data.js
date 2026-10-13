@@ -56,23 +56,62 @@ function loadPreviewBerita(fileBerita, nomor) {
     });
 }
 
-//Berita Box Horizontal
-document.addEventListener("DOMContentLoaded", function () {
-  // Ambil data sumber
-  const judul = document.getElementById("judul-berita-2")?.textContent || "";
-  const isi = document.getElementById("isi-berita-2")?.textContent || "";
-  const gambar = document.getElementById("img-berita-2")?.src || "";
+// Berita Box Horizontal
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".berita-preview");
 
-  // Isi preview
-  document.getElementById("preview-judul-berita-2").textContent = judul;
+  cards.forEach((card) => {
+    const linkBerita = card.dataset.link;
 
-  document.getElementById("preview-isi-berita-2").textContent = isi;
+    fetch(linkBerita)
+      .then((response) => response.text())
+      .then((html) => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
 
-  document.getElementById("preview-img-berita-2").src = gambar;
+// Ambil gambar pertama dari halaman sumber
+const img = doc.querySelector('[id^="img-berita-"]');
 
-  document.getElementById("preview-link-berita-2").textContent =
-    "Baca Selengkapnya";
+// Ambil isi berita pertama dari halaman sumber
+const isi = doc.querySelector('[id^="isi-berita-"]');
 
-  document.getElementById("preview-link-berita-2").href =
-    "pemanfaatan-lahan-bersama-komunitas-melon-kelapa-dua.html";
+// Isi gambar ke card
+if (img) {
+  let src = img.getAttribute("src");
+
+  // Hapus "../" di depan path jika ada
+  src = src.replace(/^(\.\.\/)+/, "");
+
+  const cardImg = card.querySelector("img");
+
+  if (cardImg) {
+    cardImg.src = src;
+    cardImg.alt = img.alt || "Gambar Berita";
+  }
+}
+
+// Isi preview berita
+if (isi) {
+  const cardText = card.querySelector(".card-preview");
+  
+  if (cardText) {
+    cardText.textContent = isi.textContent.trim();
+  }
+}
+        // Isi paragraf dan batasi panjang
+        if (isi) {
+          const teks = isi.textContent.trim();
+
+          const potong = teks.split(" ").slice(0, 15).join(" ") + "...";
+
+          card.querySelector(".card-content p").textContent = potong;
+        }
+
+        // Set link otomatis
+        card.querySelector(".card-action a").href = linkBerita;
+      })
+      .catch((error) => {
+        console.error("Gagal mengambil berita:", error);
+      });
+  });
 });
