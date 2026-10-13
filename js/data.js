@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     1,
   );
   loadPreviewBerita(
-    "berita-utama/pemanfaatan-lahan-bersama-komunitas-melon-kelapa-dua.html",
+    "berita-utama/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
     2,
   );
   loadPreviewBerita(
