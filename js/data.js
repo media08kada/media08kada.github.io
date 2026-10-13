@@ -101,8 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cardJudul.textContent = judul.textContent.trim();
           }
         }
-
-       
+     
         // Set link otomatis
        const link = card.querySelector(".card-action a");
 
