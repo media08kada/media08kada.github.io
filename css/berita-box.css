@@ -33,7 +33,7 @@ html {
     letter-spacing: 0.2px;
     margin: 0 0 16px;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 300;
     color: #333;
 }
 .section h4 {
@@ -225,6 +225,7 @@ margin-top: 80px;
   color: rgb(84, 84, 84);
   margin-left: 8px;
 }
+
 /* Cuplikan Kalimat End */
 
 /* Button Like Start */
