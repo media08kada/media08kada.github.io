@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!article) return;
 
+  console.log("URL:", location.pathname);
+
   const articleId = location.pathname.split("/").pop().replace(".html", "");
+
+  console.log("Article ID:", articleId);
 
   const btn = document.querySelector(".likeBtn");
   const count = document.querySelector(".likeCount");
