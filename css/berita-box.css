@@ -120,70 +120,6 @@ margin-top: 80px;
   font-size: 0.9rem
 }
 
-/* Tablet */
-@media (max-width: 992px) {
-
-  .berita-preview .card-image {
-    width: 170px;
-    min-width: 170px;
-  }
-
-  .berita-preview .card-content {
-    padding: 10px 12px;
-  }
-
-  .berita-preview .card-content h5 {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-
-  .berita-preview {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    align-items: flex-start;
-  }
-
-  .berita-preview .card-image {
-    width: 100px;
-    min-width: 100px;
-  }
-
-  .berita-preview .card-image img {
-    width: 100%;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-
-  .berita-preview .card-content {
-    padding: 0 4px;
-  }
-
-  .berita-preview .card-content {
-  padding: 0 6px !important;
-}
-
-  .berita-preview .card-content h5 {
-    font-size: 12px;
-    line-height: 1.2;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-clamp: 4;
-
-    .berita-preview .card-action a {
-    font-size: 14px;
-  }
-}
-}
-  
 /* btn Hero */
 #btn-hero {
   display: flex;
@@ -255,6 +191,71 @@ margin-top: 80px;
 }
 /* Button Like End */
 
+
+/* Responsive */
+/* Tablet */
+@media (max-width: 992px) {
+  
+  .berita-preview .card-image {
+    width: 170px;
+    min-width: 170px;
+  }
+  
+  .berita-preview .card-content {
+    padding: 10px 12px;
+  }
+  
+  .berita-preview .card-content h5 {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  }
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .berita-preview {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: flex-start;
+  }
+
+  .berita-preview .card-image {
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .berita-preview .card-image img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .berita-preview .card-content {
+    padding: 0 4px;
+  }
+
+  .berita-preview .card-content {
+  padding: 0 6px !important;
+}
+
+  .berita-preview .card-content h5 {
+    font-size: 12px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 4;
+
+    .berita-preview .card-action a {
+    font-size: 14px;
+  }
+}
+}
+  
 /* Desktop besar */
 @media (min-width: 1200px) {
   .card.horizontal .card-image img {
