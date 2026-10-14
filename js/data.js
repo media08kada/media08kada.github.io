@@ -80,9 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Ambil judul berita
         const judul = doc.querySelector('[id^="judul-berita-"]');
 
-        
         // Tampilkan gambar
-                if (img) {
+        if (img) {
           let src = img.getAttribute("src");
 
           const cardImg = card.querySelector(".card-image img");
@@ -94,16 +93,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Tampilkan judul
-          if (judul) {
+        if (judul) {
           const cardJudul = card.querySelector(".card-content h5");
 
           if (cardJudul) {
             cardJudul.textContent = judul.textContent.trim();
           }
         }
-     
+
         // Set link otomatis
-       const link = card.querySelector(".card-action a");
+        const link = card.querySelector(".card-action a");
 
         if (link) {
           link.href = linkBerita;
@@ -113,4 +112,95 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Gagal memuat berita:", error);
       });
   });
+});
+
+// Berita Wilayah
+const daftarBerita = [
+  {
+    url: "berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html",
+    nomor: 1,
+  },
+  {
+    url: "berita-wilayah/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html",
+    nomor: 2,
+  },
+  {
+    url: "berita-wilayah/kelurahan-kelapa-dua-gelar-rembuk-rw-2026.html",
+    nomor: 3,
+  },
+  {
+    url: "berita-wilayah/anggota-dprd-dki-jakarta-gelar-reses.html",
+    nomor: 4,
+  },
+  {
+    url: "berita-wilayah/koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html",
+    nomor: 5,
+  },
+  {
+    url: "berita-wilayah/sosialisasi-teknologi-wolbachia-untuk-pengendalian-dbd.html",
+    nomor: 6,
+  },
+  {
+    url: "berita-wilayah/penanaman-pohon-di-bantaran-kali-pesanggrahan.html",
+    nomor: 7,
+  },
+  {
+    url: "berita-wilayah/posyandu-siklus-hidup-melati-rw-08-gelar-pelayanan-kesehatan.html",
+    nomor: 8,
+  },
+];
+
+daftarBerita.forEach((berita) => {
+  fetch(berita.url)
+    .then((response) => response.text())
+    .then((html) => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, "text/html");
+
+      const img = doc.querySelector(`#img-wilayah-${berita.nomor}`);
+      const judul = doc.querySelector(`#judul-wilayah-${berita.nomor}`);
+      const isi = doc.querySelector(`#isi-wilayah-${berita.nomor}`);
+
+      // gambar
+      const targetImg = document.getElementById(`preview-img-${berita.nomor}`);
+
+      if (img && targetImg) {
+        targetImg.src = img.src;
+        targetImg.alt = judul ? judul.textContent.trim() : "";
+      }
+
+      // judul
+      const targetJudul = document.getElementById(
+        `preview-judul-${berita.nomor}`,
+      );
+
+      if (judul && targetJudul) {
+        targetJudul.textContent = judul.textContent.trim();
+      }
+
+      // isi
+      const targetIsi = document.getElementById(`preview-isi-${berita.nomor}`);
+
+      if (isi && targetIsi) {
+        const previewText =
+          isi.textContent
+            .replace(/\s+/g, " ")
+            .trim()
+            .split(" ")
+            .slice(0, 15)
+            .join(" ") + "...";
+
+        targetIsi.textContent = previewText;
+      }
+
+      // link artikel
+      const targetLink = document.getElementById(
+        `preview-link-${berita.nomor}`,
+      );
+
+      if (targetLink) {
+        targetLink.href = berita.url;
+      }
+    })
+    .catch((err) => console.error(`Gagal memuat ${berita.url}:`, err));
 });
