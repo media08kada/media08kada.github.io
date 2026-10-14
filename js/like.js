@@ -1,35 +1,45 @@
 // Tombol Like
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".likeBtn").forEach(function (btn) {
-    const articleId = btn.dataset.id;
-    const likedKey = "liked_" + articleId;
-    const countKey = "like_count_" + articleId;
+document.addEventListener("DOMContentLoaded", () => {
+  const article = document.querySelector("#berita");
 
-    const countEl = btn.querySelector(".likeCount");
+  if (!article) return;
 
-    // Ambil jumlah like
-    let count = parseInt(localStorage.getItem(countKey)) || 0;
-    countEl.textContent = count;
+  const articleId = location.pathname.split("/").pop().replace(".html", "");
 
-    // Jika sudah like
-    if (localStorage.getItem(likedKey)) {
-      btn.disabled = true;
-      btn.classList.remove("grey");
-      btn.classList.add("blue");
-    }
+  const btn = document.querySelector(".likeBtn");
+  const count = document.querySelector(".likeCount");
 
-    btn.addEventListener("click", function () {
-      if (localStorage.getItem(likedKey)) return;
+  const likedKey = "liked_" + articleId;
 
-      count++;
-      localStorage.setItem(countKey, count);
-      localStorage.setItem(likedKey, "true");
-
-      countEl.textContent = count;
-
-      btn.disabled = true;
-      btn.classList.remove("grey");
-      btn.classList.add("blue");
+  // Ambil jumlah like
+  fetch(`likes.php?id=${articleId}`)
+    .then((response) => response.json())
+    .then((data) => {
+      count.textContent = data.likes || 0;
     });
+
+  // Sudah pernah like
+  if (localStorage.getItem(likedKey)) {
+    btn.disabled = true;
+    btn.classList.remove("grey");
+    btn.classList.add("blue");
+  }
+
+  btn.addEventListener("click", () => {
+    if (localStorage.getItem(likedKey)) return;
+
+    fetch(`likes.php?id=${articleId}&action=like`)
+      .then((response) => response.json())
+      .then((data) => {
+        count.textContent = data.likes;
+
+        localStorage.setItem(likedKey, "true");
+
+        btn.disabled = true;
+        btn.classList.remove("grey");
+        btn.classList.add("blue");
+
+        btn.innerHTML = `👍 Disukai (<span class="likeCount">${data.likes}</span>)`;
+      });
   });
 });
