@@ -42,9 +42,8 @@ footer {
 }
 
 .container {
-   width: 95%;
+  max-width: 100%;
 }
-
 
 #berita h4.light.grey-text,
 #wilayah h4.light.grey-text,
@@ -315,7 +314,8 @@ padding: 0;
   padding: 0 8px;
 }
 
-#berita h5
+#berita h5,
+
 .date {
   margin: 5px 0;
 }
