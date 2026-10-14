@@ -42,8 +42,9 @@ footer {
 }
 
 .container {
-  max-width: 100%;
+   width: 95%;
 }
+
 
 #berita h4.light.grey-text,
 #wilayah h4.light.grey-text,
