@@ -2,47 +2,48 @@
 
 header("Content-Type: application/json");
 
-$file = "likes.json";
+$file = __DIR__ . "/likes.json";
 
 $id = $_GET['id'] ?? '';
 $action = $_GET['action'] ?? '';
 
-if (empty($id)) {
-echo json_encode([
-"likes" => 0
-]);
-exit;
+if ($id === '') {
+    echo json_encode([
+        "success" => false,
+        "likes" => 0
+    ]);
+    exit;
 }
 
-$data = [];
+if (!file_exists($file)) {
+    file_put_contents($file, "{}");
+}
 
-if (file_exists($file)) {
-$json = file_get_contents($file);
-$data = json_decode($json, true);
+$data = json_decode(file_get_contents($file), true);
 
 if (!is_array($data)) {
-$data = [];
-}
+    $data = [];
 }
 
 if (!isset($data[$id])) {
-$data[$id] = 0;
+    $data[$id] = 0;
 }
 
 if ($action === "like") {
 
-$data[$id]++;
+    $data[$id]++;
 
-file_put_contents(
-$file,
-json_encode(
-$data,
-JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
-),
-LOCK_EX
-);
+    file_put_contents(
+        $file,
+        json_encode(
+            $data,
+            JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+        ),
+        LOCK_EX
+    );
 }
 
 echo json_encode([
-"likes" => $data[$id]
+    "success" => true,
+    "likes" => $data[$id]
 ]);

@@ -1,6 +1,5 @@
-// Tombol Like
-document.addEventListener("DOMContentLoaded", () => {
-  // ID artikel berdasarkan nama file
+document.addEventListener("DOMContentLoaded", function () {
+  // Ambil nama file HTML sebagai ID artikel
   const articleId = window.location.pathname
     .split("/")
     .pop()
@@ -11,9 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!btn || !count) return;
 
-  const likedKey = `liked_${articleId}`;
+  const likedKey = "liked_" + articleId;
 
+
+  // Tampilkan status like
   function setLikedState(totalLike) {
+    count.textContent = totalLike;
+
     btn.disabled = true;
     btn.classList.remove("grey");
     btn.classList.add("blue");
@@ -21,39 +24,39 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.innerHTML = `👍 Disukai (<span id="likeCount">${totalLike}</span>)`;
   }
 
-  // Ambil jumlah like
-  fetch(`../api/likes.php?id=${encodeURIComponent(articleId)}`)
-    .then((res) => res.json())
-    .then((data) => {
-      const likes = data.likes || 0;
 
-      count.textContent = likes;
+  // Ambil jumlah like awal
+  fetch("/api/likes.php?id=" + encodeURIComponent(articleId))
+    .then((response) => response.json())
+    .then((data) => {
+      const totalLike = data.likes || 0;
+
+      count.textContent = totalLike;
 
       if (localStorage.getItem(likedKey)) {
-        setLikedState(likes);
+        setLikedState(totalLike);
       }
     })
-    .catch((err) => {
-      console.error("Gagal mengambil like:", err);
+    .catch((error) => {
+      console.error("Gagal memuat like:", error);
     });
 
-  // Klik tombol like
-  btn.addEventListener("click", () => {
-    if (localStorage.getItem(likedKey)) return;
 
-    btn.disabled = true;
+  // Saat tombol diklik
+  btn.addEventListener("click", function () {
+    if (localStorage.getItem(likedKey)) {
+      return;
+    }
 
-    fetch(`../api/likes.php?id=${encodeURIComponent(articleId)}&action=like`)
-      .then((res) => res.json())
+    fetch("/api/likes.php?id=" + encodeURIComponent(articleId) + "&action=like")
+      .then((response) => response.json())
       .then((data) => {
         localStorage.setItem(likedKey, "true");
 
         setLikedState(data.likes);
       })
-      .catch((err) => {
-        btn.disabled = false;
-
-        console.error("Gagal menyimpan like:", err);
+      .catch((error) => {
+        console.error("Gagal menyimpan like:", error);
       });
   });
 });
