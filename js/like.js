@@ -26,20 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Ambil jumlah like awal
-  fetch("/api/likes.php?id=" + encodeURIComponent(articleId))
-    .then((response) => response.json())
-    .then((data) => {
-      const totalLike = data.likes || 0;
+fetch("../api/likes.php?id=" + encodeURIComponent(articleId))
+  .then((response) => {
+    console.log(response.status);
+    return response.text();
+  })
+  .then((text) => {
+    console.log(text);
 
-      count.textContent = totalLike;
+    const data = JSON.parse(text);
 
-      if (localStorage.getItem(likedKey)) {
-        setLikedState(totalLike);
-      }
-    })
-    .catch((error) => {
-      console.error("Gagal memuat like:", error);
-    });
+    count.textContent = data.likes || 0;
+
+    if (localStorage.getItem(likedKey)) {
+      setLikedState(data.likes);
+    }
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
 
   // Saat tombol diklik
