@@ -121,7 +121,7 @@ const daftarBerita = [
     nomor: 1,
   },
   {
-    url: "berita-wilayah/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html",
+    url: "berita-wilayah/gulkarmat-bangun-hodran-mandiri-di-rw-08-kelapa-dua.html",
     nomor: 2,
   },
   {
