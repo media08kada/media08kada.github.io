@@ -59,6 +59,7 @@ footer {
 
 h6 {
   font-weight: 300;
+  line-height: 1.2;
 }
 
 p {
@@ -440,9 +441,9 @@ padding: 0;
   overflow: hidden;
 }
 
-.collection-header p {
+.collection-item p {
   margin: 0;
-  line-height: 0.8;
+  line-height: 1.9;
 }
 
 .card-content {
