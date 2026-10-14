@@ -1,42 +1,44 @@
 // Tombol Like
 document.addEventListener("DOMContentLoaded", () => {
   const article = document.querySelector("#berita");
-
   if (!article) return;
 
-  console.log("URL:", location.pathname);
-
+  // Ambil nama file halaman sebagai ID artikel
   const articleId = location.pathname.split("/").pop().replace(".html", "");
-
-  console.log("Article ID:", articleId);
 
   const btn = document.querySelector(".likeBtn");
   const count = document.querySelector(".likeCount");
 
+  if (!btn || !count) return;
+
   const likedKey = "liked_" + articleId;
 
   // Ambil jumlah like
-  fetch(`likes.php?id=${articleId}`)
+  fetch(`/api/likes.php?id=${articleId}`)
     .then((response) => response.json())
     .then((data) => {
-      count.textContent = data.likes || 0;
+      count.textContent = data.likes;
+
+      // Jika pengguna sudah pernah like
+      if (localStorage.getItem(likedKey)) {
+        btn.disabled = true;
+        btn.classList.remove("grey");
+        btn.classList.add("blue");
+
+        btn.innerHTML = `👍 Disukai (<span class="likeCount">${data.likes}</span>)`;
+      }
+    })
+    .catch((error) => {
+      console.error("Gagal mengambil data like:", error);
     });
 
-  // Sudah pernah like
-  if (localStorage.getItem(likedKey)) {
-    btn.disabled = true;
-    btn.classList.remove("grey");
-    btn.classList.add("blue");
-  }
-
+  // Event tombol like
   btn.addEventListener("click", () => {
     if (localStorage.getItem(likedKey)) return;
 
-    fetch(`likes.php?id=${articleId}&action=like`)
+    fetch(`/api/likes.php?id=${articleId}&action=like`)
       .then((response) => response.json())
       .then((data) => {
-        count.textContent = data.likes;
-
         localStorage.setItem(likedKey, "true");
 
         btn.disabled = true;
@@ -44,6 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.classList.add("blue");
 
         btn.innerHTML = `👍 Disukai (<span class="likeCount">${data.likes}</span>)`;
+      })
+      .catch((error) => {
+        console.error("Gagal menyimpan like:", error);
       });
   });
 });
