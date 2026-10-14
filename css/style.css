@@ -450,25 +450,23 @@ padding: 0;
 .card-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center !important;
   justify-content: center;
 }
 
 .card-content a,
 .card-content h4 {
   margin: 0;
-  text-align: center;
-  align-items: center;
+  text-align: center !important;
 }
-
 
 .card-content p {
   margin: 2px 0;
   text-align: center;
-  width: 100%;
   font-size: 12px;
   color: white;
 }
+
 
 /* Gallery Start */
 .hidden {
