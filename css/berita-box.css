@@ -107,7 +107,7 @@ margin-top: 80px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .berita-preview .card-action {
@@ -272,40 +272,77 @@ margin-top: 80px;
 
 /* Mobile */
 @media (max-width: 600px) {
+
+  /* Gambar card horizontal */
   .card.horizontal .card-image img {
     max-height: 65px;
     max-width: 100%;
   }
 
-#berita p {
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  margin: 0 0 18px;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: 'poppin', sans-serif;
-  font-weight: 400;
-}
-
-  .card.horizontal .card-stacked .card-content p {
-    font-size: 10px;
+  /* Isi berita */
+  #berita p {
+    font-size: 14px;
     line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin: 0 0 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
-}
 
-@media (max-width: 600px) {
+  /* Card preview berita */
+  .berita-preview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
 
+  .berita-preview .card-image {
+    width: 100px;
+    min-width: 100px;
+    margin: 5px 0 5px 5px;
+  }
+
+  .berita-preview .card-image img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .berita-preview .card-content {
+    padding: 5px 5px 5px 0 !important;
+  }
+
+  .berita-preview .card-content h5 {
+    margin: 0 0 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+     line-clamp: 4;
+  }
+
+  /* Isi card */
+  .card.horizontal .card-stacked .card-content p,
   #card-content p {
     font-size: 0.8rem;
     line-height: 1.3;
     letter-spacing: 0;
+    margin-right: 4px;
   }
 
+  /* Link card */
   .card.horizontal .card-action a {
     font-size: 0.7rem;
   }
 
+  /* Tombol Hero */
   #btn-hero .btn-small {
     font-size: 0.65rem;
     height: 24px;
