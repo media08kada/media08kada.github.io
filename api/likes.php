@@ -1,43 +1,48 @@
 <?php
+
 header("Content-Type: application/json");
 
-// Like PHP
 $file = "likes.json";
 
 $id = $_GET['id'] ?? '';
 $action = $_GET['action'] ?? '';
 
-if (!$id) {
-    echo json_encode(["likes" => 0]);
-    exit;
+if (empty($id)) {
+echo json_encode([
+"likes" => 0
+]);
+exit;
 }
 
-// Baca data
-$data = file_exists($file)
-    ? json_decode(file_get_contents($file), true)
-    : [];
+$data = [];
+
+if (file_exists($file)) {
+$json = file_get_contents($file);
+$data = json_decode($json, true);
 
 if (!is_array($data)) {
-    $data = [];
+$data = [];
+}
 }
 
-// Jika belum ada artikel
 if (!isset($data[$id])) {
-    $data[$id] = 0;
+$data[$id] = 0;
 }
 
-// Tambah like
 if ($action === "like") {
-    $data[$id]++;
 
-    file_put_contents(
-        $file,
-        json_encode($data, JSON_PRETTY_PRINT)
-    );
+$data[$id]++;
+
+file_put_contents(
+$file,
+json_encode(
+$data,
+JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+),
+LOCK_EX
+);
 }
 
-// Kirim jumlah like
 echo json_encode([
-    "likes" => $data[$id]
+"likes" => $data[$id]
 ]);
-?>

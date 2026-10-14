@@ -20,6 +20,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="../css/berita-box.css">
   </head>
   <body id="home" class="scrollspy">
 
@@ -75,17 +76,22 @@
 
         <p class="small-text" style="font-size: 10px" text-align="justify">(LMK-08 Kelapa Dua)</p>
 
-        <a href="../index.html" class="waves-effect waves-light btn-small green">
-          Home
-        </a>
+            <div id="btn-hero">
+              <a href="../index.html" class="waves-effect waves-light btn-small grey">Home</a>
+              <a href="../donasi.html" class="waves-effect waves-light btn-small grey">Open Donasi</a>
+             <div class="article-like">
+              <button class="likeBtn btn-small grey" data-id="berita-3">
+              👍 Like (<span class="likeCount">0</span>)
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
 
     <!-- JavaScript -->
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script src="../js/darkmode.js"></script>
+    <script src="../js/like.js"></script>
   </body>
 </html>
