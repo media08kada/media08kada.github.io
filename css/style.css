@@ -1,4 +1,3 @@
-/* Root & Global */
 :root {
   --primary: #b6895b;
   --bg: #242323;
@@ -35,7 +34,7 @@ img{
 }
 
 h4{
-  font-weight:700;
+  font-weight:400;
   margin-bottom:40px;
 }
 
