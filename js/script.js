@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Slider Berita
 document.addEventListener("DOMContentLoaded", function () {
-  M.Slider.init(document.querySelectorAll(".slider"), {
+  M.Slider1.init(document.querySelectorAll(".slider1"), {
     indicators: true,
     height: 300,
     duration: 500,
