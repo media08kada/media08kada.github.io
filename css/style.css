@@ -28,7 +28,7 @@ main {
   flex: 1;
 }
 
-/* Font Section */
+/* Font Section Start */
 h6 {
   font-weight: 300;
 }
@@ -40,51 +40,23 @@ h6 {
     text-indent: 30px;
     margin-bottom: 20px;
     color: #333;
-}
-
-.col.s12.m8.light h5 {
-  margin: 5px 0 8px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.collection-item {
-  overflow: hidden;
-}
-
-.collection-item p {
-  margin: 0;
-  line-height: 1.9;
-}
-
-section,
-footer {
-  width: 100%;
-  padding: 10px 0;
-  margin: 0;
-}
-
-footer {
-  margin-top: auto;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.container {
-  max-width: 100%;
-}
-
-#berita h4.light.grey-text,
-#wilayah h4.light.grey-text,
-#pilihan h4.light.grey-text,
-#gallery h4.light.grey-text,
-#video h4.light.grey-text,
-#contact h4.light.grey-text {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 300;
-}
+  }
+  
+  .col.s12.m8.light h5 {
+    margin: 5px 0 8px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .collection-item {
+    overflow: hidden;
+  }
+  
+  .collection-item p {
+    margin: 0;
+    line-height: 1.9;
+  }
+  /* Font Section End */
 
 /* Navbar Star */
 .navbar {
@@ -564,6 +536,38 @@ padding: 0;
   position: relative;
   z-index: 2;
 }
+
+/* Footer Start */
+section,
+footer {
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#pilihan .container {
+  width: 95%;
+  max-width: 1400px;
+}
+
+#berita h4.light.grey-text,
+#wilayah h4.light.grey-text,
+#pilihan h4.light.grey-text,
+#gallery h4.light.grey-text,
+#video h4.light.grey-text,
+#contact h4.light.grey-text {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+/* Footer End */
 
 /* Responsive Star */
 @media (max-width: 1366px) {
