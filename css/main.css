@@ -30,12 +30,12 @@ section{
   border-radius:16px;
 }
 
-img{
+img {
   border-radius:12px;
   transition:.4s;
 }
 
-h4{
+h4 {
   font-weight:400;
   margin-bottom:40px;
 }
@@ -96,14 +96,15 @@ img:hover{
 }
 
 /* Navbar Star */
-/* Navbar New Start */
 .navbar {
-  background:  rgba(1, 1, 1, 0.8);;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-  position: sticky;
-  top: 0;
-  z-index: 999;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 80px;
+line-height: 70px;
+z-index: 1000;
+background: rgba(1, 1, 1, 0.8);
 }
 
 .navbar ul li a {
@@ -114,18 +115,6 @@ img:hover{
 .navbar ul li a:hover {
   color: var(--primary);
 }
-/* Navbar New End */
-
-/* .navbar {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-height: 80px;
-line-height: 70px;
-z-index: 1000;
-background: rgba(1, 1, 1, 0.8);
-}*/
 
 .nav-wrapper-custom {
   display: flex;
@@ -316,10 +305,22 @@ padding: 0;
   color: grey;
 }
 
+.slider .slides li img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  height: auto;
+  filter: brightness(60%);
+}
 /* Slider End */
 
-/* Perbaikan jarak antara hero dan berita */
+/* Perbaikan jarak antara Hero dan Berita */
 /* Hero Slider */
+#berita.section {
+  padding-top: 0 !important;
+}
+
 #sliderhero {
   margin-bottom: 0 !important;
 }
@@ -330,11 +331,16 @@ padding: 0;
 }
 
 /* Berita Utama */
+#berita {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 #berita h4 {
   margin-top: 0 !important;
 }
 
-/* Berita Star */
+/* Berita Start */
 .berita-slider {
   display: flex;
   align-items: flex-start;
@@ -832,24 +838,34 @@ footer .social-links a {
     }
   }
 
-            @media (max-width: 768px) {
-            .slider .slides li img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            }
-            }
+  @media (max-width: 768px) {
+  .slider .slides li img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+    }
+  }
 
   /* Mobile */
-  /* Solusi sementara */
-  @media (max-width: 600px) {
-  #berita-1 .col.s12.m8,
-  #berita-2 .col.s12.m8,
-  #berita-3 .col.s12.m8 {
-  margin-top: -100px;
+@media only screen and (max-width: 600px) {
+
+  /* Kurangi jarak bawah slider */
+  .berita-slider {
+    margin-right: 0;
+    margin-bottom: -70px !important;
   }
+
+  /* Kurangi jarak antar kolom */
+  #berita .row .col {
+    margin-bottom: 0 !important;
   }
-/* Style CSS End */
+
+  /* Preview berita lebih dekat ke slider */
+  #berita h5 {
+    margin-top: 0 !important;
+  }
+}
+ /* Style CSS End */
 
 
   /* Scroll CSS Start */
