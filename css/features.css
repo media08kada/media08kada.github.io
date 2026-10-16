@@ -14,7 +14,6 @@ body {
   color: #212121;
 }
 
-#berita,
 #wilayah,
 #gallery {
   background-color: #fff;
@@ -306,7 +305,6 @@ body.dark-mode .dropdown-content li > span {
 }
 
 /* Default (Light Mode) */
-#berita,
 #wilayah,
 #gallery {
   background-color: #fff;  
@@ -923,15 +921,6 @@ img {
 
 
 /* Puskesmas css Start */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
-
 html {
   scroll-behavior: smooth;
   width: 100%;
@@ -998,15 +987,6 @@ html {
 
 
 /* Kelurahan css Start */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
-
 html {
   scroll-behavior: smooth;
   width: 100%;

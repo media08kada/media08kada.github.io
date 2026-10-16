@@ -123,35 +123,26 @@ img:hover{
 .navbar ul li a:hover {
   color: var(--primary);
 }
-/* Navbar New End */
-
-/* .navbar {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-height: 80px;
-line-height: 70px;
-z-index: 1000;
-background: rgba(1, 1, 1, 0.8);
-}*/
 
 .nav-wrapper-custom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: visible !important;
 }
 
 .navbar-brand {
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -6px;
 }
 
 .navbar-brand img {
-  width: 50px;
-  height: 50px;
+  width: 40;
+  height: 40px;
   object-fit: contain;
-  vertical-align: middle;
+  display: block;
 }
 
 .navbar .material-icons {
@@ -356,11 +347,6 @@ padding: 0;
 }
 
 /* Berita Utama */
-#berita {
-  padding-top: 80px !important;
-  margin-top: 0 !important;
-}
-
 #berita h4 {
   margin-top: 0 !important;
 }
@@ -381,24 +367,9 @@ padding: 0;
   margin-top: 0 !important;
 }
 
-#berita {
-  margin: 20px 0 10px;
-}
-
-#berita .row .col {
-  margin-bottom: 10px;
-  padding: 0 8px;
-}
-
 
 .date {
   margin: 5px 0;
-}
-
-#berita p,
-#card-content p {
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .date {

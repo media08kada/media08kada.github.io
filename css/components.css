@@ -582,7 +582,7 @@ body.dark-mode .modal .modal-footer .btn-flat {
 /* Iklan css End */
 
 
-/* Berita-box Start */
+/* Berita Sub Halaman Start */
 :root {
   --primary: #b6895b;
   --bg: #242323;
@@ -590,6 +590,36 @@ body.dark-mode .modal .modal-footer .btn-flat {
 
 html {
   font-family: 'poppins', sans-serif;
+}
+
+/* Pindahan dari Halaman lain */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+#berita {
+  background-color: #fff;  
+  transition: background-color 0.3s ease;
+}
+
+#berita {
+  margin: 20px 0 10px;
+}
+
+#berita {
+  padding-top: 80px !important;
+  margin-top: 0 !important;
+}
+
+#berita p,
+#card-content p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Font Berita */
@@ -621,6 +651,11 @@ html {
     font-weight: 300;
     color: #333;
 }
+
+#berita {
+  margin: 20px 0 10px;
+}
+
 .section h4 {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -634,6 +669,12 @@ html {
     font-style: italic;
     color: #333;
 }
+
+#berita .row .col {
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
 
 .navbar-brand img {
   vertical-align: middle;
@@ -855,8 +896,6 @@ margin-top: 25px;
 
 /* Mobile */
 @media (max-width: 600px) {
-
-  /* Gambar card horizontal */
   .card.horizontal .card-image img {
     max-height: 65px;
     max-width: 100%;
