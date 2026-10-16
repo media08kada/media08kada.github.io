@@ -1,3 +1,4 @@
+/* Style CSS Start */
 :root {
   --primary: #b6895b;
   --bg: #242323;
@@ -457,8 +458,6 @@ padding: 0;
   box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-
-
 /* Grid, Card, Colletion */
 .custom-row {
   display: flex;
@@ -847,4 +846,204 @@ footer .social-links a:hover {
   margin-top: -100px;
   }
   }
+/* Style CSS End */
 
+
+  /* Scroll CSS Start */
+.buttonToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonToTop:hover {
+  transform: scale(1.1);
+}
+
+.buttonToTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(1, 1, 1, 0.8);;
+  font-family: monospace;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonToTop a:hover {
+  background-color: #b6895b;
+  color: #000;
+  transform: rotate(360deg);
+}
+/* Scroll CSS End */
+
+
+/* Search CSS Start */
+.search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 35rem;
+  height: 4rem;              
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  border-radius: 2px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Aktif */
+.search-form.active {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.search-form {
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+/* Label (ikon search) */
+.search-form label {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-left: 5rem;      
+  margin-right: 1rem;
+  color: gray;
+  display: flex;
+  position: relative;
+  align-items: center;
+  transform: translateY(-8px);
+}
+
+/* Input field */
+.search-form input {
+  flex: 1;                   
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;         
+  padding: 1.3rem 2rem;    
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+/* Default style (mobile / tablet) */
+.search-box {
+  height: 32px;             
+  padding: 5px 5px;
+  font-size: 14px;
+}
+
+/* Tombol search navbar */
+#search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px; /
+}
+
+/* Icon search */
+#search-button .material-icons {
+  font-size: 28px;
+  line-height: 1;
+  position: relative;
+  top: 15px; 
+}
+
+/* Responsive untuk handphone */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-extra a#search-button i {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 100%;            
+    max-width: 400px;       
+    margin: 0 auto;         
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  }
+
+.search-form input {
+  flex: 1;                
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 6px 10px;      
+  box-sizing: border-box; 
+}
+
+  .search-form label {
+    font-size: 1.2rem;
+    margin-left: 0.6rem;     
+    margin-right: 1rem;
+  }
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive untuk handphone */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-extra a#search-button i {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .search-form {
+    position: fixed;
+    top: 60px;               
+    left: 10px;
+    right: 10px;
+    width: auto;
+    height: 50px;           
+    border-radius: 2px;
+    z-index: 999;
+  }
+}
+
+/* Layer desktop / layar lebar */
+@media (min-width: 1024px) {
+  .search-box {
+    height: 32px;           
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+}
+/* Search CSS End */

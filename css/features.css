@@ -762,65 +762,313 @@ body.dark-mode .social-links .red.darken-3 {
 body.dark-mode .social-links .fa-tiktok {
     color: #fff !important;
 }
+/* Darkmode css End */
 
 
+/* Video css Start */
+.preview-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;   /* perkecil dari 800px ke 640px */
+  margin: 0 auto 20px; /* auto -> center, jarak bawah lebih kecil */
+  overflow: hidden;
+  aspect-ratio: 16 / 9; /* jaga rasio 16:9 */
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 
-    
-    
+}
 
-    
+.preview-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
 
+/* Galeri sejajar dengan preview */
+.galleries {
+  width: 100%;
+  max-width: 800px;   /* samakan dengan preview-container */
+  margin: 0 auto;     /* center agar kanan-kiri sama */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; /* jarak antar item */
+  justify-items: center;
+  background-color: transparent;
+  }
 
+.galleries iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  background-color: transparent;
+  transition: transform 0.2s ease;
+}
 
+.galleries iframe:hover {
+  transform: scale(1.05);
+}
 
+.galleries img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;       /* biar thumbnail pas */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.galleries img:hover {
+  transform: scale(1.05);
+}
 
 
+/* Responsive untuk tablet */
+@media (max-width: 1024px) {
+  .preview-container,
+  .galleries {
+    max-width: 75%; /* tetap sama agar sejajar */
+  }
+}
+
+/* Responsive untuk HP sedang */
+@media (max-width: 768px) {
+  .preview-container,
+  .galleries {
+    max-width: 95%; /* tetap sama agar sejajar */
+  }
+  .galleries {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom agar lebih kecil */
+    gap: 10px;
+  }
+}
+
+/* Responsive untuk HP kecil */
+@media (max-width: 480px) {
+  .preview-container {
+    margin-bottom: 12px;
+    max-width: 90%; /* penuh tapi tetap sejajar */
+  }
+  .galleries {
+    max-width: 90%; /* sejajar dengan preview */
+    grid-template-columns: repeat(3, 1fr); /* tetap 3 sejajar */
+    gap: 6px; /* jarak lebih rapat */
+    margin-top: 0;
+  }
+  .galleries iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+}
+/* Video css End */
+
+/* Photo/Gallery css Start */
+/* Style Gallery */
+img {
+  max-width: 80% auto;
+  border: 1px solid var(--bg1);
+  position: relative;
+}
+
+.preview-img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.galleries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.galleries img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  .preview-img {
+    width: 100%;
+    height: 687px;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galleries img {
+    width: 80px;
+    height: 80px;
+  }
+}
+/* Photo/Gallery css End */
 
 
+/* Puskesmas css Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Infografis */
+.infografis-wrapper img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.infografis-description {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 480px) {
+  .infografis-wrapper iframe {
+    max-width: 100%;
+    height: 240px;
+  }
+}
+
+/* Scroll To Top */
+.buttonToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonToTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  background-color: var(--bg1);
+  color: #fff;
+  font-family: monospace;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+.buttonToTop a:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  transform: rotate(360deg);
+}
+/* Puskesmas css End */
 
 
+/* Kelurahan css Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Infografis */
+.infografis-wrapper img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.infografis-description {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 480px) {
+  .infografis-wrapper iframe {
+    max-width: 100%;
+    height: 240px;
+  }
+}
+
+/* Scroll To Top */
+.buttonToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonToTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  background-color: var(--bg1);
+  color: #fff;
+  font-family: monospace;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+.buttonToTop a:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  transform: rotate(360deg);
+}
+/* Kelurahan css End */
 
 

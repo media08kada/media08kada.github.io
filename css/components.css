@@ -1,0 +1,941 @@
+* Overlay layar popup */
+.popup-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--overlay-bg, rgba(175, 173, 173, 0.171));
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.popup-screen.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Kotak popup */
+.popup-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(0.85);
+  transition: transform 0.4s ease;
+}
+
+.popup-screen.active .popup-box {
+  transform: scale(1);
+}
+
+/* Popup khusus iklan */
+.popup-box {
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  width: 90%;        
+  padding: 20px;     
+  margin: 0 auto;    
+}
+
+/* Logo popup */
+.popup-logo {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol close */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 1.6em;
+  cursor: pointer;
+  opacity: 0.7;
+  border-radius: 50%;
+  background-color: #0cac14; /* hijau bootstrap */
+  color: #fff;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+/* Judul & teks */
+.popup-box h3 {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: 800;
+  color: #d62828; /* merah */
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.popup-box h4 {
+  margin: 20px 0;
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.popup-box p {
+  margin-bottom: 20px;
+  font-size: 1em;
+  text-align: center;
+  color: #f7f4f4;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.popup-box h6 {
+  margin-bottom: 20px;
+  font-size: 1em;
+  text-align: center;
+  color: #f7f4f4;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Tombol aksi */
+.popup-box .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 6px;
+  background: #0aa13d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.popup-box .btn {
+  position: relative;
+  top: 10px; /* geser ke atas 10px */
+}
+
+.popup-box .btn:hover {
+  background: #fff;
+  color: #13bb1b;
+  border: 1px solid #0dad15;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+section,
+footer {
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+}
+
+/* Responsive Popup */
+@media (min-width: 992px) {
+  .popup-box {
+    max-width: 450px;
+    height: 65vh;
+    padding: 60px;
+  }
+  .popup-logo {
+    width: 120px;
+    top: -70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .popup-box {
+    max-width: 80%;
+    padding: 40px;
+  }
+  .popup-logo {
+    width: 100px;
+    top: -60px;
+  }
+
+
+  .popup-box h4 {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+
+  .popup-box p {
+    font-size: 0.9em;
+  }
+}
+
+/* Handphone */
+@media (max-width: 480px) {
+  .popup-box {
+    width: 95%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .popup-logo {
+    width: 75px;
+    top: -40px;
+  }
+  .popup-box h3, .popup-box h4 {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+  .popup-box p, .popup-box h6 {
+    font-size: 0.85em;
+  }
+  .popup-box .btn {
+    font-size: 0.9em;
+    padding: 6px 14px;
+  }
+}
+/* Popup CSS Start End */
+
+
+/* Card CSS Start Start */
+#pilihan .card {
+overflow: hidden;
+}
+
+#pilihan .card-image {
+position: relative;
+}
+
+#pilihan .card-image img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* WRAPPER ICON  */
+
+#pilihan .card-icons {
+position: absolute;
+bottom: 12px;
+right: 12px;
+
+display: flex;
+align-items: center;
+gap: 10px;
+
+z-index: 5;
+}
+
+/* LINK ICON */
+#pilihan .card-icons a {
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 42px;
+height: 42px;
+
+border-radius: 50%;
+background: gray;
+
+transition: all 0.3s ease;
+}
+
+/* STYLE ICON */
+#pilihan .card-icons i {
+font-size: 28px;
+color: #fff !important;
+transition: all 0.3s ease;
+}
+/* Icon Plus */
+
+#pilihan .icon-plus:hover {
+color: #b6895b !important;
+transform: scale(1.15);
+}
+
+/* Icon Expand */
+#pilihan .icon-expand:hover {
+color: #b6895b !important;
+transform: translateY(3px);
+}
+
+/* Hover tombol */
+#pilihan .card-icons a:hover {
+background: rgba(0, 0, 0, 0.9);
+}
+
+/* CARD CONTENT */
+#pilihan .card-content {
+text-align: center;
+padding: 14px;
+}
+
+#pilihan .card-content p {
+margin: 0;
+font-weight: 600;
+font-size: 16px;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+
+#pilihan .card-image img {
+height: auto;
+}
+
+#pilihan .card-icons {
+bottom: 10px;
+right: 10px;
+gap: 8px;
+}
+
+#pilihan .card-icons a {
+width: 38px;
+height: 38px;
+}
+
+#pilihan .card-icons i {
+font-size: 24px;
+}
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+#pilihan .card-image img {
+height: auto;
+}
+
+#pilihan .card-icons {
+bottom: 8px;
+right: 8px;
+gap: 6px;
+}
+
+#pilihan .card-icons a {
+width: 34px;
+height: 34px;
+}
+
+#pilihan .card-icons i {
+font-size: 22px;
+}
+
+#pilihan .card-content p {
+font-size: 15px;
+}
+
+}
+
+#pilihan .card-icons {
+position: absolute;
+bottom: 12px;
+left: 12px;
+}
+
+/* Modal */
+.modal {
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  overflow: hidden;
+}
+
+/* Header Modal */
+.modal .modal-content h5 {
+  color: #b6895b;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Isi Modal */
+.modal .modal-content p {
+  color: #555;
+  line-height: 1.4;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Footer Modal */
+.modal .modal-footer {
+  background: #f8f8f8;
+  border-top: 1px solid #eee;
+}
+
+/* Tombol Tutup */
+.modal .modal-footer .btn-flat {
+  color: #b6895b;
+  font-weight: 600;
+}
+
+.modal .modal-footer .btn-flat:hover {
+  background-color: var(--primary);
+}
+
+/* Dark Mode */
+body.dark-mode .modal {
+  background: #1e1e1e;
+}
+
+body.dark-mode .modal .modal-content h5 {
+  color: #b6895b;
+}
+
+body.dark-mode .modal .modal-content p {
+  color: #ddd;
+}
+
+body.dark-mode .modal .modal-footer {
+  background: #252525;
+  border-top: 1px solid #333;
+}
+
+body.dark-mode .modal .modal-footer .btn-flat {
+  color: #b6895b;
+}
+/* Card CSS End */
+
+
+/* Bottom-Icons CSS Start */
+#icons {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#icons img {
+  width: 90px;
+  height: auto;
+  animation: pulse 2s infinite;
+}
+
+#icons.btn-floating {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
+#icons.btn-floating i {
+  font-size: 36px;
+}
+
+/* Responsif untuk layar mobile */
+@media (max-width: 600px) {
+  #icons {
+    bottom: 70px;
+    right: 15px;
+  }
+
+  #icons img {
+    width: 60px; /* perkecil ikon */
+  }
+
+  #icons.btn-floating {
+    width: 60px; /* perkecil tombol */
+    height: 60px;
+    line-height: 60px;
+  }
+
+  #icons.btn-floating i {
+    font-size: 24px; /* perkecil ikon di dalam tombol */
+  }
+}
+
+#close {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #5c5f5c;
+  color: #fff;
+  text-align: center;
+}
+/* Bottom Icons End */
+
+
+/* Medsos css Start */
+/* SHARE MEDSOS */
+.artikel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.artikel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* MISC */
+#histats_counter {
+  margin-top: 15px;
+}
+
+.small-text {
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* Social Links Footer */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+/* Medsos css End */
+
+
+/* Iklan css Start */
+.container-iklan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  padding: 62px;
+  margin: 0 auto;
+  background-color: #f7f7f7c2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.container-iklan img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+/* Iklan */
+.ad-section {
+  margin-top: 20px;
+  background: transparent;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+.ad-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background: transparent;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Jika iklan ada di dalam card */
+.card .ad-section,
+.card .ad-section img {
+  background: transparent !important;
+}
+/* Iklan css End */
+
+
+/* Berita-box Start */
+:root {
+  --primary: #b6895b;
+  --bg: #242323;
+}
+
+html {
+  font-family: 'poppins', sans-serif;
+}
+
+/* Font Berita */
+#berita h4.light.grey-text.text-darken-1 {
+ text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+#berita h6 {
+  font-weight: 300;
+}
+
+#berita h5 {
+  margin: 5px 0 8px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}
+
+#berita p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+    text-indent: 30px;
+    letter-spacing: 0.2px;
+    margin: 0 0 16px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #333;
+}
+.section h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#berita .author-credit h6 {
+    margin-top: 50px;
+    font-size: 10px;
+    text-align: lift;
+    text-indent: 0;
+    font-style: italic;
+    color: #333;
+}
+
+.navbar-brand img {
+  vertical-align: middle;
+  margin: auto 0;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.switch-mobile {
+margin-left: 2px;
+margin-top: 25px;
+}
+
+#berita {
+margin-top: 80px;
+}
+
+/* Card Horizontal Berita Start */
+.berita-preview {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; 
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.berita-preview .card-image {
+  width: 180px;
+  min-width: 180px;
+  margin: 10px 0 10px 10px;
+}
+
+.berita-preview .card-image img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.berita-preview .card-content {
+  padding: 4px 8px;
+  flex: 1;
+}
+
+.berita-preview .card-content h5 {
+  margin: 0;
+  line-height: 1.5;
+  color: #555;
+  overflow: hidden;
+  max-height: 6em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  font-weight: 300;
+}
+
+.berita-preview .card-action {
+  padding: 10px 15px;
+}
+
+.berita-preview .card-action a {
+  color: #b6895b !important;
+  font-weight: 500;
+  font-size: 0.9rem
+}
+
+/* btn Hero */
+#btn-hero {
+  display: flex;
+  gap: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  flex-wrap: wrap; 
+  align-items: center;
+}
+
+#btn-hero .btn-small,
+#btn-hero .likeBtn {
+  margin: 0;
+}
+
+/* Cuplikan Kalimat Start */
+.quote {
+  text-align: justify;
+  background-color: rgba(128, 128, 128, 0.2); 
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-style: italic;
+  font-size: 16px;
+  display: inline-block; 
+  margin-top: 1px;     
+  margin-bottom: 1px;
+}
+
+.quote::before {
+  content: "❝";        
+  font-size: 50px;
+  color: rgb(84, 84, 84);
+  margin-right: 8px;
+}
+
+.quote::after {
+  content: "❞";        
+  font-size: 50px;
+  color: rgb(84, 84, 84);
+  margin-left: 8px;
+}
+
+/* Cuplikan Kalimat End */
+
+/* Button Like Start */
+#btn-hero  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#btn-hero #like-btn {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  background: gray;
+  color: white;
+  border: 1px solid gray;
+}
+
+#btn-hero #like-btn:hover,
+#btn-hero #like-btn:focus,
+#btn-hero #like-btn:active {
+  background: gray;
+  border-color: gray;
+  color: white;
+}
+/* Button Like End */
+
+
+/* Responsive */
+/* Tablet */
+@media (max-width: 992px) {
+  
+  .berita-preview .card-image {
+    width: 170px;
+    min-width: 170px;
+  }
+  
+  .berita-preview .card-content {
+    padding: 10px 12px;
+  }
+  
+  .berita-preview .card-content h5 {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  }
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .berita-preview {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: flex-start;
+  }
+
+  .berita-preview .card-image {
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .berita-preview .card-image img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .berita-preview .card-content {
+    padding: 0 4px;
+  }
+
+  .berita-preview .card-content {
+  padding: 0 6px !important;
+}
+
+  .berita-preview .card-content h5 {
+    font-size: 12px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 4;
+
+    .berita-preview .card-action a {
+    font-size: 14px;
+  }
+}
+}
+  
+/* Desktop besar */
+@media (min-width: 1200px) {
+  .card.horizontal .card-image img {
+    max-height: 85px;
+    max-width: 100%;
+  }
+}
+
+/* Tablet / layar sedang */
+@media (min-width: 601px) and (max-width: 1199px) {
+  .card.horizontal .card-image img {
+    max-height: 75px;
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  /* Gambar card horizontal */
+  .card.horizontal .card-image img {
+    max-height: 65px;
+    max-width: 100%;
+  }
+
+  /* Isi berita */
+  #berita p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin: 0 0 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  /* Card preview berita */
+  .berita-preview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .berita-preview .card-image {
+    width: 100px;
+    min-width: 100px;
+    margin: 5px 0 5px 5px;
+  }
+
+  .berita-preview .card-image img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .berita-preview .card-content {
+    padding: 5px 5px 5px 0 !important;
+  }
+
+  .berita-preview .card-content h5 {
+    margin: 0 0 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+     line-clamp: 4;
+  }
+
+  /* Isi card */
+  .card.horizontal .card-stacked .card-content p,
+  #card-content p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-right: 4px;
+  }
+
+  /* Link card */
+  .card.horizontal .card-action a {
+    font-size: 0.7rem;
+  }
+
+  /* Tombol Hero */
+  #btn-hero .btn-small {
+    font-size: 0.65rem;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+  }
+}
+/* Berita-box End */

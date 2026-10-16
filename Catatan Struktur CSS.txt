@@ -1,0 +1,24 @@
+Catatan Struktur CSS
+
+1. Main
+	style.css
+	scroll.css
+	search.css
+
+2. Components
+	popup.css
+	card-icon.css
+	bottom-icons.css
+	medsos.css
+	iklan.css
+	berita-box.css
+
+3. Features
+	darkmode.css
+	video.css
+p	Photo.css
+	puskesmas.css
+	kelurahan.css
+
+
+	
