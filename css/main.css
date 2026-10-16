@@ -106,12 +106,11 @@ img:hover{
 }
 
 /* Navbar Star */
-/* Navbar New Start */
 .navbar {
-  background:  rgba(1, 1, 1, 0.8);;
+  background:  rgba(1, 1, 1, 0.8);
   backdrop-filter: blur(12px);
   box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
 }
@@ -358,7 +357,7 @@ padding: 0;
 
 /* Berita Utama */
 #berita {
-  padding-top: 50px !important;
+  padding-top: 80px !important;
   margin-top: 0 !important;
 }
 
