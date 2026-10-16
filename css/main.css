@@ -865,6 +865,10 @@ footer .social-links a {
     margin-top: 0 !important;
   }
 }
+
+#berita-1 .berita-slider {
+    margin-bottom: -100px !important;
+}
  /* Style CSS End */
 
 
