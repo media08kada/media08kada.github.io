@@ -80,9 +80,9 @@ h6 {
 
   section,
   footer {
-    width: 100%;
-  padding: 10px 0;
-  margin: 0;
+   width: 100%;
+   padding: 10px 0;
+   margin: 0;
 }
 
 footer {
@@ -345,6 +345,27 @@ padding: 0;
 
 /* Slider End */
 
+/* Perbaikan jarak antara hero dan berita */
+/* Hero Slider */
+#sliderhero {
+  margin-bottom: 0 !important;
+}
+
+#sliderhero .slides,
+#sliderhero .slides li {
+  height: 400px !important;
+}
+
+/* Berita Utama */
+#berita {
+  padding-top: 50px !important;
+  margin-top: 0 !important;
+}
+
+#berita h4 {
+  margin-top: 0 !important;
+}
+
 /* Berita Star */
 .berita-slider {
   display: flex;
@@ -370,7 +391,6 @@ padding: 0;
   padding: 0 8px;
 }
 
-#berita h5,
 
 .date {
   margin: 5px 0;
