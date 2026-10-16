@@ -847,6 +847,16 @@ footer .social-links a {
   }
 
   /* Mobile */
+  /* Solusi sementara */
+ /* @media (max-width: 600px) {
+  #berita-1 .col.s12.m8,
+  #berita-2 .col.s12.m8,
+  #berita-3 .col.s12.m8 {
+  margin-top: -100px;
+  }
+  }*/
+
+  /* Mobile */
 @media only screen and (max-width: 600px) {
 
   /* Kurangi jarak bawah slider */
@@ -864,10 +874,6 @@ footer .social-links a {
   #berita h5 {
     margin-top: 0 !important;
   }
-}
-
-#berita-1 .berita-slider {
-    margin-bottom: -100px !important;
 }
  /* Style CSS End */
 

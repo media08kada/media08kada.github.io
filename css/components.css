@@ -868,7 +868,7 @@ margin-top: 80px;
   }
 
   /* Isi berita */
-  #berita p {
+    #berita p {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.5px;
