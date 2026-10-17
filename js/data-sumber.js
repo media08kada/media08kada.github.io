@@ -5,6 +5,7 @@ const sumberBeritaUtama = [
   "berita-utama/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
 ];
 
+
 // Berita Wilayah
 const sumberBeritaWilayah = [
   {
@@ -40,6 +41,7 @@ const sumberBeritaWilayah = [
     nomor: 8,
   },
 ];
+
 
 // Berita Pilihan
 const sumberBeritaPilihan = [
