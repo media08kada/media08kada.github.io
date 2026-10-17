@@ -351,28 +351,76 @@ height: auto;
 /* Slider End */
 
 /* Slider Berita Utama Start */
-.berita-slider {
-    margin: 0;
-    background: transparent;
-    box-shadow: none;
+.berita-slider .slides{
+    overflow: hidden;
+    background: transparent !important;
 }
 
-.img-box{
-  aspect-ratio:1/1;
-  overflow:hidden;
-}
+  .berita-slider{
+      aspect-ratio: 1/1;
+      overflow: hidden;
+  }
 
-.img-box img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+  .berita-slider .slides,
+  .berita-slider .slides li,
+  .berita-slider .slides li img{
+      width:100%;
+      height:100% !important;
+  }
+
+  .berita-slider .slides li img{
+      object-fit:cover;
+  }
+
+.square-img{
+    aspect-ratio: 1/1;
+    width:100%;
+    object-fit:cover;
+    display:block;
 }
 
 @media (max-width:600px){
 
-    .berita-slider .slides li img{
-        height: 250px;
-    }
+  .berita-slider,
+  .berita-slider .slides,
+  .berita-slider .slides li{
+      height:auto !important;
+      min-height:unset !important;
+  }
+
+ #berita .row{
+    margin-bottom: 15px !important;
+  }
+
+  /* Slider menjadi kotak */
+  .berita-slider{
+    height: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  .berita-slider .slides{
+    height: auto !important;
+    background: transparent !important;
+  }
+
+  .berita-slider .slides li{
+    height: auto !important;
+  }
+
+  /* Gambar 1:1 */
+  .berita-slider .slides li img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto !important;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Menghilangkan jarak ke preview berita */
+  #berita .col.s12.m8{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
 }
 /* Slider Berita Utama End */
 
