@@ -538,6 +538,9 @@ height: auto;
     padding-top: 0;
 }
 
+#video .preview-container{
+    margin-top: 20px;
+}
 
 /* Gallery End */
 
