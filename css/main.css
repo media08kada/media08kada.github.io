@@ -471,6 +471,14 @@ height: auto;
   vertical-align: middle;
 }
 
+/* Section Pilihan */
+#pilihan .modal-content p {
+  font-size: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,.2);
+}
+
+
+/* Section Wilayah */
 #wilayah .card-content{
     text-align:center !important;
 }

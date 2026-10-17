@@ -204,3 +204,84 @@ daftarBerita.forEach((berita) => {
     })
     .catch((err) => console.error(`Gagal memuat ${berita.url}:`, err));
 });
+
+
+//Berita Pilihan
+// Berita Pilihan
+document.addEventListener("DOMContentLoaded", () => {
+
+  const sumberData = [
+    {
+      url: "Pilihan/maulid-nabi-di-mushollah-al-hidayah.html",
+      judul: "judul-pilihan-1",
+      isi: "isi-pilihan-1",
+      previewJudul: "preview-judul-pilihan-1",
+      previewIsi: "preview-isi-pilihan-1"
+    },
+    {
+      url: "Pilihan/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html",
+      judul: "judul-pilihan-2",
+      isi: "isi-pilihan-2",
+      previewJudul: "preview-judul-pilihan-2",
+      previewIsi: "preview-isi-pilihan-2"
+    },
+    {
+      url: "Pilihan/kabel-semrawut-bikin-resah-warga.html",
+      judul: "judul-pilihan-3",
+      isi: "isi-pilihan-3",
+      previewJudul: "preview-judul-pilihan-3",
+      previewIsi: "preview-isi-pilihan-3"
+    },
+    {
+      url: "Pilihan/mural-hadirkan-wajah-baru-kawasan-kelapa-dua.html",
+      judul: "judul-pilihan-4",
+      isi: "isi-pilihan-4",
+      previewJudul: "preview-judul-pilihan-4",
+      previewIsi: "preview-isi-pilihan-4"
+    }
+  ];
+
+  sumberData.forEach(item => {
+
+    fetch(item.url)
+      .then(response => {
+
+        if (!response.ok) {
+          throw new Error(`Gagal memuat ${item.url}`);
+        }
+
+        return response.text();
+      })
+      .then(html => {
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const judul = doc.getElementById(item.judul);
+        const isi = doc.getElementById(item.isi);
+
+        if (judul) {
+          document.getElementById(item.previewJudul).textContent =
+            judul.textContent.trim();
+        }
+
+        if (isi) {
+
+          let ringkasan = isi.textContent.trim();
+
+          if (ringkasan.length > 200) {
+            ringkasan = ringkasan.substring(0, 200) + "...";
+          }
+
+          document.getElementById(item.previewIsi).textContent =
+            ringkasan;
+        }
+
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      });
+
+  });
+
+});
