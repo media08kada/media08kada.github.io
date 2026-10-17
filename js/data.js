@@ -1,17 +1,9 @@
-// Berita Utama
+/* BERITA UTAMA */
+
 document.addEventListener("DOMContentLoaded", () => {
-  loadPreviewBerita(
-    "berita-utama/maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html",
-    1,
-  );
-  loadPreviewBerita(
-    "berita-utama/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
-    2,
-  );
-  loadPreviewBerita(
-    "berita-utama/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
-    3,
-  );
+  sumberBeritaUtama.forEach((url, index) => {
+    loadPreviewBerita(url, index + 1);
+  });
 });
 
 function loadPreviewBerita(fileBerita, nomor) {
@@ -56,7 +48,10 @@ function loadPreviewBerita(fileBerita, nomor) {
     });
 }
 
-// Preview Berita Horizontal Otomatis
+
+
+/* PREVIEW BERITA HORIZONTAL */
+
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".berita-preview");
 
@@ -68,22 +63,18 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!response.ok) {
           throw new Error(`File tidak ditemukan: ${linkBerita}`);
         }
+
         return response.text();
       })
       .then((html) => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, "text/html");
 
-        // Ambil gambar pertama
         const img = doc.querySelector('[id^="img-berita-"]');
-
-        // Ambil judul berita
         const judul = doc.querySelector('[id^="judul-berita-"]');
 
-        // Tampilkan gambar
         if (img) {
-          let src = img.getAttribute("src");
-
+          const src = img.getAttribute("src");
           const cardImg = card.querySelector(".card-image img");
 
           if (cardImg && src) {
@@ -92,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // Tampilkan judul
         if (judul) {
           const cardJudul = card.querySelector(".card-content h5");
 
@@ -101,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // Set link otomatis
         const link = card.querySelector(".card-action a");
 
         if (link) {
@@ -114,146 +103,90 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Berita Wilayah
-const daftarBerita = [
-  {
-    url: "berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html",
-    nomor: 1,
-  },
-  {
-    url: "berita-wilayah/gulkarmat-bangun-hodran-mandiri-di-rw-08-kelapa-dua.html",
-    nomor: 2,
-  },
-  {
-    url: "berita-wilayah/kolaborasi-ketua-rt-perkuat-layanan-posyandu-remaja.html",
-    nomor: 3,
-  },
-  {
-    url: "berita-wilayah/anggota-dprd-dki-jakarta-gelar-reses.html",
-    nomor: 4,
-  },
-  {
-    url: "berita-wilayah/koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html",
-    nomor: 5,
-  },
-  {
-    url: "berita-wilayah/sosialisasi-teknologi-wolbachia-untuk-pengendalian-dbd.html",
-    nomor: 6,
-  },
-  {
-    url: "berita-wilayah/penanaman-pohon-di-bantaran-kali-pesanggrahan.html",
-    nomor: 7,
-  },
-  {
-    url: "berita-wilayah/posyandu-siklus-hidup-melati-rw-08-gelar-pelayanan-kesehatan.html",
-    nomor: 8,
-  },
-];
 
-daftarBerita.forEach((berita) => {
-  fetch(berita.url)
-    .then((response) => response.text())
-    .then((html) => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, "text/html");
 
-      const img = doc.querySelector(`#img-wilayah-${berita.nomor}`);
-      const judul = doc.querySelector(`#judul-wilayah-${berita.nomor}`);
-      const isi = doc.querySelector(`#isi-wilayah-${berita.nomor}`);
+/* BERITA WILAYAH */
+document.addEventListener("DOMContentLoaded", () => {
+  sumberBeritaWilayah.forEach((berita) => {
+    fetch(berita.url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Gagal memuat ${berita.url}`);
+        }
 
-      // gambar
-      const targetImg = document.getElementById(`preview-img-${berita.nomor}`);
+        return response.text();
+      })
+      .then((html) => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
 
-      if (img && targetImg) {
-        targetImg.src = img.src;
-        targetImg.alt = judul ? judul.textContent.trim() : "";
-      }
+        const img = doc.querySelector(`#img-wilayah-${berita.nomor}`);
 
-      // judul
-      const targetJudul = document.getElementById(
-        `preview-judul-${berita.nomor}`,
-      );
+        const judul = doc.querySelector(`#judul-wilayah-${berita.nomor}`);
 
-      if (judul && targetJudul) {
-        targetJudul.textContent = judul.textContent.trim();
-      }
+        const isi = doc.querySelector(`#isi-wilayah-${berita.nomor}`);
 
-      // isi
-      const targetIsi = document.getElementById(`preview-isi-${berita.nomor}`);
+        const targetImg = document.getElementById(
+          `preview-img-${berita.nomor}`,
+        );
 
-      if (isi && targetIsi) {
-        const previewText =
-          isi.textContent
-            .replace(/\s+/g, " ")
-            .trim()
-            .split(" ")
-            .slice(0, 15)
-            .join(" ") + "...";
+        if (img && targetImg) {
+          targetImg.src = img.src;
+          targetImg.alt = judul ? judul.textContent.trim() : "";
+        }
 
-        targetIsi.textContent = previewText;
-      }
+        const targetJudul = document.getElementById(
+          `preview-judul-${berita.nomor}`,
+        );
 
-      // link artikel
-      const targetLink = document.getElementById(
-        `preview-link-${berita.nomor}`,
-      );
+        if (judul && targetJudul) {
+          targetJudul.textContent = judul.textContent.trim();
+        }
 
-      if (targetLink) {
-        targetLink.href = berita.url;
-      }
-    })
-    .catch((err) => console.error(`Gagal memuat ${berita.url}:`, err));
+        const targetIsi = document.getElementById(
+          `preview-isi-${berita.nomor}`,
+        );
+
+        if (isi && targetIsi) {
+          const previewText =
+            isi.textContent
+              .replace(/\s+/g, " ")
+              .trim()
+              .split(" ")
+              .slice(0, 15)
+              .join(" ") + "...";
+
+          targetIsi.textContent = previewText;
+        }
+
+        const targetLink = document.getElementById(
+          `preview-link-${berita.nomor}`,
+        );
+
+        if (targetLink) {
+          targetLink.href = berita.url;
+        }
+      })
+      .catch((err) => {
+        console.error(`Gagal memuat ${berita.url}:`, err);
+      });
+  });
 });
 
 
-//Berita Pilihan
-// Berita Pilihan
+
+/* BERITA PILIHAN */
 document.addEventListener("DOMContentLoaded", () => {
-
-  const sumberData = [
-    {
-      url: "Pilihan/maulid-nabi-di-mushollah-al-hidayah.html",
-      judul: "judul-pilihan-1",
-      isi: "isi-pilihan-1",
-      previewJudul: "preview-judul-pilihan-1",
-      previewIsi: "preview-isi-pilihan-1"
-    },
-    {
-      url: "Pilihan/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html",
-      judul: "judul-pilihan-2",
-      isi: "isi-pilihan-2",
-      previewJudul: "preview-judul-pilihan-2",
-      previewIsi: "preview-isi-pilihan-2"
-    },
-    {
-      url: "Pilihan/kabel-semrawut-bikin-resah-warga.html",
-      judul: "judul-pilihan-3",
-      isi: "isi-pilihan-3",
-      previewJudul: "preview-judul-pilihan-3",
-      previewIsi: "preview-isi-pilihan-3"
-    },
-    {
-      url: "Pilihan/mural-hadirkan-wajah-baru-kawasan-kelapa-dua.html",
-      judul: "judul-pilihan-4",
-      isi: "isi-pilihan-4",
-      previewJudul: "preview-judul-pilihan-4",
-      previewIsi: "preview-isi-pilihan-4"
-    }
-  ];
-
-  sumberData.forEach(item => {
-
+  sumberBeritaPilihan.forEach((item) => {
     fetch(item.url)
-      .then(response => {
-
+      .then((response) => {
         if (!response.ok) {
           throw new Error(`Gagal memuat ${item.url}`);
         }
 
         return response.text();
       })
-      .then(html => {
-
+      .then((html) => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, "text/html");
 
@@ -266,22 +199,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (isi) {
-
           let ringkasan = isi.textContent.trim();
 
           if (ringkasan.length > 200) {
             ringkasan = ringkasan.substring(0, 200) + "...";
           }
 
-          document.getElementById(item.previewIsi).textContent =
-            ringkasan;
+          document.getElementById(item.previewIsi).textContent = ringkasan;
         }
-
       })
-      .catch(error => {
-        console.error("Error:", error);
+      .catch((error) => {
+        console.error(`Gagal memuat ${item.url}:`, error);
       });
-
   });
-
 });
