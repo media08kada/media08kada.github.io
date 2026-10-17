@@ -63,14 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Slider Berita
 document.addEventListener("DOMContentLoaded", function () {
-  M.Slider1.init(document.querySelectorAll(".slider1"), {
+  M.Slider.init(document.querySelectorAll(".berita-slider"), {
     indicators: true,
     height: 300,
     duration: 500,
     interval: 5000,
   });
 });
-
 
   // Parallax
   const parallax = document.querySelectorAll(".parallax");

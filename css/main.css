@@ -91,7 +91,6 @@ footer {
   line-height: 1.4;
 }
 
-
 .container {
   width: 92%;
   max-width: 1280px;
@@ -128,21 +127,18 @@ img:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: visible !important;
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -6px;
+  margin-bottom: 10px;
 }
 
 .navbar-brand img {
-  width: 40;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  display: block;
+  vertical-align: middle;
 }
 
 .navbar .material-icons {
@@ -239,14 +235,14 @@ img:hover{
   position: relative;
 }
 
-.navbar .progress {
-  height: 1px;
-  margin: 0;
+.navbar .progress{
   position: absolute;
-  bottom: 0;
   left: 0;
-  right: 0;
-  background: #fff;
+  bottom: -1px;
+  width: 100%;
+  height: 1%;
+  margin: 0;
+  background: transparent;
 }
 
 .navbar .progress .indeterminate {
@@ -256,10 +252,6 @@ img:hover{
 
 .navbar .progress .indeterminate::before {
   animation: indeterminate 4s infinite;
-}
-
-.navbar .progress .indeterminate::after {
-  animation: indeterminate-short 4s infinite;
 }
 /* Navbar End */
 
@@ -280,8 +272,8 @@ height: auto;
 
 .slider .slides,
 .slider .slides li {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .slider h3 {
@@ -333,8 +325,6 @@ padding: 0;
   filter: brightness(60%);
 }
 
-/* Slider End */
-
 /* Perbaikan jarak antara hero dan berita */
 /* Hero Slider */
 #sliderhero {
@@ -346,107 +336,46 @@ padding: 0;
   height: 400px !important;
 }
 
-/* Berita Utama */
-#berita h4 {
-  margin-top: 0 !important;
+#berita{
+    padding-top: 0 !important;
 }
 
-/* Berita Star */
+#berita{
+  padding-top: 10px !important;
+}
+
+#berita h4{
+    margin-top: -10px !important;
+    margin-bottom: 15px !important;
+}
+/* Slider End */
+
+/* Slider Berita Utama Start */
 .berita-slider {
-  display: flex;
-  align-items: flex-start;
-  margin: 0 20px 0 0;
-  margin-bottom: 5px;
-  padding: 0;
-  box-shadow: none;
-  background: none;
-  border: none;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
-#slidernews {
-  margin-top: 0 !important;
+.img-box{
+  aspect-ratio:1/1;
+  overflow:hidden;
 }
 
-
-.date {
-  margin: 5px 0;
+.img-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-.date {
-  margin-bottom: 20px;
-}
+@media (max-width:600px){
 
-.taxt {
-  margin: 0 0 12px;
+    .berita-slider .slides li img{
+        height: 250px;
+    }
 }
+/* Slider Berita Utama End */
 
-/* Image */
-.square-img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  display: block;
-}
-
-.square-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-  overflow: hidden;
-}
-
-.square-wrapper {
- width: 100%;
-}
-
-.slider .slides li img {
- height: auto;
-}
-
-.square-wrapper .square-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Fallback */
-@supports not (aspect-ratio: 1/1) {
-  .slider .berita-slides li {
-    position: relative;
-    width: 100%;
-    padding-top: 100%;
-  }
-
-  .slides li img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-/*  Btn-small Berita */
-.btn-small {
-    height: 26px;
-    line-height: 26px;
-    padding: 0 10px;
-    font-size: 11px;
-    border-radius: 4px;
-}
-
-/* Animation Berita Utama */
-.custom-row{
-  padding:15px;
-  border-radius:15px;
-  transition:.3s;
-}
-
-.custom-row:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 25px rgba(0,0,0,.12);
-}
 
 /* Grid, Card, Colletion */
 .custom-row {
@@ -878,16 +807,6 @@ footer .social-links a:hover {
   object-fit: cover;
   }
   }
-
-  /* Mobile */
-  /* Solusi sementara */
-  @media (max-width: 600px) {
-  #berita-1 .col.s12.m8,
-  #berita-2 .col.s12.m8,
-  #berita-3 .col.s12.m8 {
-  margin-top: -100px;
-  }
-  }
 /* Style CSS End */
 
 
@@ -1009,6 +928,13 @@ footer .social-links a:hover {
 }
 
 /* Responsive untuk handphone */
+@media (min-width: 993px) {
+  .navbar-brand {
+    margin-bottom: 0;
+    transform: translateY(-5px);
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
