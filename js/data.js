@@ -125,7 +125,7 @@ const daftarBerita = [
     nomor: 2,
   },
   {
-    url: "berita-wilayah/berita-wilayah/kolaborasi-ketua-rt-perkuat-layanan-posyandu-remaja.html",
+    url: "berita-wilayah/kolaborasi-ketua-rt-perkuat-layanan-posyandu-remaja.html",
     nomor: 3,
   },
   {
