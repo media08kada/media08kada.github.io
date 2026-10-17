@@ -35,6 +35,7 @@
   background-repeat: no-repeat;
   transform: scale(0.85);
   transition: transform 0.4s ease;
+  z-index: 9999;
 }
 
 .popup-screen.active .popup-box {
