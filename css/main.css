@@ -334,27 +334,27 @@ img:hover{
     background: transparent !important;
 }
 
-  .berita-slider{
-      aspect-ratio: 1/1;
-      overflow: hidden;
-  }
+.berita-slider{
+   aspect-ratio: 1/1;
+   overflow: hidden;
+}
 
-  .berita-slider .slides,
-  .berita-slider .slides li,
-  .berita-slider .slides li img{
-      width:100%;
-      height:100% !important;
-  }
+.berita-slider .slides,
+.berita-slider .slides li,
+.berita-slider .slides li img{
+   width:100%;
+   height:100% !important;
+ }
 
-  .berita-slider .slides li img{
-      object-fit:cover;
-  }
+ .berita-slider .slides li img{
+   object-fit:cover; 
+ }
 
 .square-img{
-    aspect-ratio: 1/1;
-    width:100%;
-    object-fit:cover;
-    display:block;
+   aspect-ratio: 1/1;
+   width:100%;
+   object-fit:cover;
+   display:block;
 }
 
 @media (max-width:600px){
