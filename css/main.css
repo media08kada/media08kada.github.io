@@ -675,6 +675,7 @@ footer .social-links a:hover {
 .social-links a:hover{
   transform:translateY(-5px);
 }
+/* Footer End */
 
 /* Responsive Star */
 @media (max-width: 1366px) {
