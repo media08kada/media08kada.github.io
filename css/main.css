@@ -552,6 +552,7 @@ img:hover{
   bottom: 20px;
   z-index: 999;
   border-radius: 5%;
+
 }
 
 .btn-floating {
@@ -568,6 +569,10 @@ img:hover{
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.fab-inside-slider ul li {
+  margin-bottom: 0px !important;
 }
 
 @media (prefers-color-scheme: dark) {
