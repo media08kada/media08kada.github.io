@@ -452,6 +452,7 @@ img:hover{
 /* Section Pilihan */
 #pilihan .modal-content p {
   font-size: 15px;
+  line-height: 0.5;
   box-shadow: 0 15px 30px rgba(0,0,0,.2);
 }
 
@@ -534,6 +535,17 @@ img:hover{
     padding-bottom: 0 !important;
 }
 
+
+/* Preview Video Utama */
+.preview-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
 #video {
     margin-top: 0 !important;
     padding-top: 0 !important;
@@ -543,6 +555,83 @@ img:hover{
     margin-top: 20px;
 }
 
+/* Video Section */
+#video {
+    padding: 70px 0;
+}
+
+.preview-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Gallery Thumbnail */
+.video-gallery {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* Thumbnail */
+.video-thumb {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: 0.3s;
+}
+
+.video-thumb:hover img {
+    transform: scale(1.05);
+}
+
+/* Deskripsi */
+.video-description {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .video-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .preview-container {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .video-gallery {
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .video-thumb::before {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
 /* Gallery End */
 
 /* Floating Button Start */

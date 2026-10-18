@@ -675,44 +675,53 @@
   </section>
     <!-- Gallery End -->
 
-    <!-- Video Section  Start -->
-    <section id="video" class="video lighten-3 scrollspy">
-      <h4 class="center">Video</h4>
+<!-- Video Section Start -->
+<section id="video" class="video lighten-3 scrollspy">
+    <h4 class="center">Video</h4>
 
-    <!-- Preview utama -->
-    <div class="preview-container responsive-img materialboxed z-depth-3">
-      <iframe src="https://www.youtube.com/embed/ciw3dGeqIeo?si=WDFhKgvWelRFWgis" frameborder="0" allowfullscreen></iframe>
+    <!-- Preview Utama -->
+    <div class="preview-container z-depth-3">
+        <iframe
+            id="mainVideo"
+            src="https://www.youtube.com/embed/ciw3dGeqIeo"
+            allowfullscreen>
+        </iframe>
     </div>
 
     <!-- Thumbnail Video -->
-    <div class="galleries">
-      <img src="https://img.youtube.com/vi/ciw3dGeqIeo/hqdefault.jpg" 
-          alt="Thumbnail Video 1" onclick="changeVideo('ciw3dGeqIeo')">
+    <div class="video-gallery">
 
-      <img src="https://img.youtube.com/vi/geS2Qrqdj1s/hqdefault.jpg" 
-          alt="Thumbnail Video 2" onclick="changeVideo('geS2Qrqdj1s')">
+        <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg"
+                 alt="Video 1"></div>
 
-      <img src="https://img.youtube.com/vi/XwJqVVLdEDY/hqdefault.jpg" 
-          alt="Thumbnail Video 3" onclick="changeVideo('XwJqVVLdEDY')">
-      </div>
+        <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg"
+                 alt="Video 2"></div>
 
-      <div class="video-description">
-        <p style="text-align: center; margin-top: 15px"><strong>Subscribe, Like, Share, dan Comment</strong>
-        </p>
-        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
-          <a href="https://www.youtube.com/@KosongDelapan102" target="_blank" target="_blank" style="color: black; text-decoration: none;">
-            YouTube KosongDelapan102
-          </a>
-          <div class="g-ytsubscribe"
-           data-channelid="UC41XqwNU6eP4PJdziPCVT2Q"
-           data-layout="default"
-           data-count="hidden">
-          </div>
+        <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/XwJqVVLdEDY/maxresdefault.jpg"
+                 alt="Video 3"></div>
+    </div>
+
+    <!-- Deskripsi -->
+    <div class="video-description">
+        <p><strong>Subscribe, Like, Share, dan Comment</strong></p>
+
+        <a href="https://www.youtube.com/@KosongDelapan102"
+           target="_blank">YouTube KosongDelapan102
+        </a>
+
+        <div class="g-ytsubscribe"
+             data-channelid="UC41XqwNU6eP4PJdziPCVT2Q"
+             data-layout="default"
+             data-count="hidden">
         </div>
-      </div>
-    </section>
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <!-- Video Section End -->
+    </div>
+</section>
+
+<script src="https://apis.google.com/js/platform.js"></script>
+<!-- Video Section End -->
 
     <!-- Contact Us Start -->
     <section id="contact" class="contact grey lighten-4 scrollspy">
