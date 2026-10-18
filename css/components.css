@@ -191,7 +191,6 @@ body.dark-mode .modal .modal-footer .btn-flat {
 #icons img {
   width: 90px;
   height: auto;
-  animation: pulse 2s infinite;
 }
 
 #icons.btn-floating {
@@ -222,7 +221,7 @@ body.dark-mode .modal .modal-footer .btn-flat {
   }
 
   #icons.btn-floating i {
-    font-size: 24px; /* perkecil ikon di dalam tombol */
+    font-size: 24px; 
   }
 }
 
