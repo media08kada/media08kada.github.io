@@ -6,8 +6,7 @@ Catatan Struktur CSS
 	search.css
 
 2. Components
-	popup.css
-	card-icon.css
+	Card-icon.css
 	bottom-icons.css
 	medsos.css
 	iklan.css

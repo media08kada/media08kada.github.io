@@ -1,232 +1,3 @@
-* Overlay layar popup */
-.popup-screen {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--overlay-bg, rgba(175, 173, 173, 0.171));
-  backdrop-filter: blur(10px);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.popup-screen.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Kotak popup */
-.popup-box {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 320px;
-  padding: 40px 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: scale(0.85);
-  transition: transform 0.4s ease;
-  z-index: 9999;
-}
-
-.popup-screen.active .popup-box {
-  transform: scale(1);
-}
-
-/* Popup khusus iklan */
-.popup-box {
-  background-size: cover;
-  background-position: center;
-  height: 55vh;
-  width: 90%;        
-  padding: 20px;     
-  margin: 0 auto;    
-}
-
-/* Logo popup */
-.popup-logo {
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: auto;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Tombol close */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 32px;
-  height: 32px;
-  display: grid;
-  place-items: center;
-  font-size: 1.6em;
-  cursor: pointer;
-  opacity: 0.7;
-  border-radius: 50%;
-  background-color: #0cac14; /* hijau bootstrap */
-  color: #fff;
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
-}
-
-.close-btn:hover {
-  transform: rotate(90deg);
-  opacity: 1;
-}
-
-/* Judul & teks */
-.popup-box h3 {
-  margin-top: 20px;
-  font-size: 2em;
-  font-weight: 800;
-  color: #d62828; /* merah */
-  text-align: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-}
-
-.popup-box h4 {
-  margin: 20px 0;
-  font-size: 3em;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-}
-
-.popup-box p {
-  margin-bottom: 20px;
-  font-size: 1em;
-  text-align: center;
-  color: #f7f4f4;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-.popup-box h6 {
-  margin-bottom: 20px;
-  font-size: 1em;
-  text-align: center;
-  color: #f7f4f4;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-/* Tombol aksi */
-.popup-box .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 20px;
-  border-radius: 6px;
-  background: #0aa13d;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 300;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.popup-box .btn {
-  position: relative;
-  top: 10px; /* geser ke atas 10px */
-}
-
-.popup-box .btn:hover {
-  background: #fff;
-  color: #13bb1b;
-  border: 1px solid #0dad15;
-}
-
-footer {
-  margin-top: auto;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-section,
-footer {
-  padding: 10px 0;
-  margin: 0;
-  width: 100%;
-}
-
-.container {
-  max-width: 100%;
-}
-
-/* Responsive Popup */
-@media (min-width: 992px) {
-  .popup-box {
-    max-width: 450px;
-    height: 65vh;
-    padding: 60px;
-  }
-  .popup-logo {
-    width: 120px;
-    top: -70px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .popup-box {
-    max-width: 80%;
-    padding: 40px;
-  }
-  .popup-logo {
-    width: 100px;
-    top: -60px;
-  }
-
-
-  .popup-box h4 {
-    font-size: 1em;
-    line-height: 1.2;
-  }
-
-  .popup-box p {
-    font-size: 0.9em;
-  }
-}
-
-/* Handphone */
-@media (max-width: 480px) {
-  .popup-box {
-    width: 95%;
-    max-width: 300px;
-    padding: 15px;
-    border-radius: 15px;
-  }
-  .popup-logo {
-    width: 75px;
-    top: -40px;
-  }
-  .popup-box h3, .popup-box h4 {
-    font-size: 1em;
-    line-height: 1.2;
-  }
-  .popup-box p, .popup-box h6 {
-    font-size: 0.85em;
-  }
-  .popup-box .btn {
-    font-size: 0.9em;
-    padding: 6px 14px;
-  }
-}
-/* Popup CSS Start End */
-
-
 /* Card CSS Start Start */
 #pilihan .card {
 overflow: hidden;
@@ -243,21 +14,18 @@ height: 100%;
 object-fit: cover;
 }
 
-/* WRAPPER ICON  */
-
+/* Wrapper Icon  */
 #pilihan .card-icons {
 position: absolute;
 bottom: 12px;
-right: 12px;
-
+left: 12px;
 display: flex;
 align-items: center;
 gap: 10px;
-
 z-index: 5;
 }
 
-/* LINK ICON */
+/* Link Icon */
 #pilihan .card-icons a {
 display: flex;
 align-items: center;
@@ -272,13 +40,11 @@ background: gray;
 transition: all 0.3s ease;
 }
 
-/* STYLE ICON */
 #pilihan .card-icons i {
 font-size: 28px;
 color: #fff !important;
 transition: all 0.3s ease;
 }
-/* Icon Plus */
 
 #pilihan .icon-plus:hover {
 color: #b6895b !important;
@@ -308,7 +74,7 @@ font-weight: 600;
 font-size: 16px;
 }
 
-/* TABLET */
+/* Tablet */
 @media (max-width: 992px) {
 
 #pilihan .card-image img {
@@ -334,10 +100,6 @@ font-size: 24px;
 /* MOBILE */
 @media (max-width: 600px) {
 
-#pilihan .card-image img {
-height: auto;
-}
-
 #pilihan .card-icons {
 bottom: 8px;
 right: 8px;
@@ -356,12 +118,6 @@ font-size: 22px;
 #pilihan .card-content p {
 font-size: 15px;
 }
-}
-
-#pilihan .card-icons {
-position: absolute;
-bottom: 12px;
-left: 12px;
 }
 
 /* Modal */
@@ -407,10 +163,6 @@ left: 12px;
 /* Dark Mode */
 body.dark-mode .modal {
   background: #1e1e1e;
-}
-
-body.dark-mode .modal .modal-content h5 {
-  color: #b6895b;
 }
 
 body.dark-mode .modal .modal-content p {
@@ -564,7 +316,6 @@ body.dark-mode .modal .modal-footer .btn-flat {
 .ad-section {
   margin-top: 20px;
   background: transparent;
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
 .ad-section img {
@@ -572,7 +323,6 @@ body.dark-mode .modal .modal-footer .btn-flat {
   height: auto;
   object-fit: cover;
   background: transparent;
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Jika iklan ada di dalam card */
@@ -604,16 +354,10 @@ html {
 }
 
 #berita {
-  background-color: #fff;  
+  background-color: #fff;
   transition: background-color 0.3s ease;
-}
-
-#berita {
-  margin: 20px 0 10px;
-}
-
-#berita {
   padding-top: 80px !important;
+  margin: 20px 0 10px;
   margin-top: 0 !important;
 }
 
@@ -651,10 +395,6 @@ html {
     margin-bottom: 20px;
     font-weight: 300;
     color: #333;
-}
-
-#berita {
-  margin: 20px 0 10px;
 }
 
 .section h4 {
@@ -700,19 +440,16 @@ margin-top: 25px;
   overflow: hidden;
 }
 
+.berita-preview .card-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 .berita-preview .card-image {
   width: 180px;
   min-width: 180px;
   margin: 10px 0 10px 10px;
-}
-
-.berita-preview .card-image img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
 }
 
 .berita-preview .card-content {
@@ -743,18 +480,9 @@ margin-top: 25px;
   font-size: 0.9rem
 }
 
-/* btn Hero */
-#btn-hero {
-  display: flex;
-  gap: 10px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  flex-wrap: wrap; 
-  align-items: center;
-}
-
 #btn-hero .btn-small,
-#btn-hero .likeBtn {
+#btn-hero .likeBtn,
+#btn-hero #like-btn {
   margin: 0;
 }
 
@@ -788,18 +516,19 @@ margin-top: 25px;
 /* Cuplikan Kalimat End */
 
 /* Button Like Start */
-#btn-hero  {
+#btn-hero {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #btn-hero #like-btn {
   display: flex;
   align-items: center;
-  margin: 0;
   background: gray;
   color: white;
   border: 1px solid gray;
@@ -834,14 +563,18 @@ margin-top: 25px;
   }
   }
 
-/* Mobile */
 @media (max-width: 600px) {
 
+  .berita-preview .card-image img{
+    height:90px;
+    border-radius:4px;
+  }
+  
   .berita-preview {
     display: flex;
     flex-direction: row;
-    gap: 6px;
     align-items: flex-start;
+    gap: 0;
   }
 
   .berita-preview .card-image {
@@ -854,10 +587,6 @@ margin-top: 25px;
     height: 90px;
     object-fit: cover;
     border-radius: 4px;
-  }
-
-  .berita-preview .card-content {
-    padding: 0 4px;
   }
 
   .berita-preview .card-content {
@@ -914,26 +643,10 @@ margin-top: 25px;
     font-weight: 400;
   }
 
-  /* Card preview berita */
-  .berita-preview {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0;
-  }
-
   .berita-preview .card-image {
     width: 100px;
     min-width: 100px;
     margin: 5px 0 5px 5px;
-  }
-
-  .berita-preview .card-image img {
-    width: 100%;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 4px;
-    display: block;
   }
 
   .berita-preview .card-content {

@@ -513,7 +513,6 @@ img:hover{
   margin-bottom: 0px;
 }
 
-/* Pengaturan Jarak Galerry, Info Wilayah dan Video */
 #wilayah .row,
 #gallery .row {
     margin-bottom: 0 !important;
@@ -618,6 +617,10 @@ img:hover{
 
 #wilayah .card-content p.no-margin{
     transform: translateX(-10px);
+}
+
+.collection-item .materialboxed{
+    filter: brightness(70%);
 }
 
 
