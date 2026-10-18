@@ -15,7 +15,7 @@ Catatan Struktur CSS
 3. Features
 	darkmode.css
 	video.css
-p	Photo.css
+	Photo.css
 	puskesmas.css
 	kelurahan.css
 
