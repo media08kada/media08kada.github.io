@@ -686,8 +686,12 @@ grid-template-columns:repeat(2,1fr);
   right: 20px;
 }
 
-.fab-inside-slider ul li {
-  margin-bottom: 0px !important;
+.fab-inside-slider .fixed-action-btn ul{
+    transform:none !important;
+}
+
+.fab-inside-slider ul li{
+    margin:6px 0 !important;
 }
 
 @media (prefers-color-scheme: dark) {
