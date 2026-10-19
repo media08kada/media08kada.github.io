@@ -50,10 +50,6 @@ main {
 }
 
 /* Font Section Start */
-h6 {
-  font-weight: 300;
-}
-
 .text p {
 font-size: 16px;
 line-height: 1.9;
@@ -72,8 +68,21 @@ color: #333;
 .collection-item {
   overflow: hidden;
 }
+
+.collection-item img {
+  width: 100px;
+  height: 100px;
+  margin: 8px 10px 0 0;
+  float: left;
+}
   
- .collection-item p {
+.collection-item h6 {
+  text-align: left !important;
+  line-height: 1.5;
+  font-weight: 300;
+ }
+
+.collection-item p {
   margin: 0;
   line-height: 1.9;
  }
@@ -433,6 +442,7 @@ img:hover{
 .btn-small,
 .btn-small.grey {
   margin-top: 5px;
+  border-radius: 5px;
 }
 
 .card {
