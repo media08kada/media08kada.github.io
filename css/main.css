@@ -641,23 +641,22 @@ text-align: center;
 .video-gallery{
 grid-template-columns:repeat(2,1fr);
 }
-
 }
 
 /* Mobile */
 @media (max-width:600px){
-    .video-gallery{
-        width:95%;
-        grid-template-columns:repeat(3,1fr);
-        gap:6px;
-    }
+.video-gallery{
+ width:95%;
+ grid-template-columns:repeat(3,1fr);
+ gap:6px;
+ }
 
-    .video-thumb::after{
-        width:20px;
-        height:20px;
-        font-size:12px;
-    }
-  }
+.video-thumb::after{
+ width:20px;
+ height:20px;
+ font-size:12px;
+ } 
+}
 /* Gallery End */
 
 /* Floating Button Start */
@@ -697,6 +696,12 @@ grid-template-columns:repeat(2,1fr);
 @media (prefers-color-scheme: dark) {
   .buttonToTop i {
     color: #fff;
+  }
+}
+
+@media (min-width: 993px) {
+  .buttonToTop.btn-floating {
+    bottom: 50px;
   }
 }
 /* Floating Button End */
