@@ -221,18 +221,13 @@ fetch("modals.html")
     });
   });
 
-// Section Video //
-  function changeVideo(videoId) {
-    document.getElementById("preview-link").src =
-      "https://www.youtube.com/embed/" + videoId;
-  }
+    // Section Video //
+    const preview = document.getElementById("mainVideo");
+    function changeVideo(id) {
+        preview.src = `https://www.youtube.com/embed/${id}`;
+    }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var elems = document.querySelectorAll(".collapsible");
-    var instances = M.Collapsible.init(elems, options);
-  });
-
- // Histats.com  START  (aync)-->
+   // Histats.com  START  (aync)-->
   var _Hasync = _Hasync || [];
   _Hasync.push(["Histats.start", "1,4996560,4,1029,150,25,00011111"]);
   _Hasync.push(["Histats.fasi", "1"]);

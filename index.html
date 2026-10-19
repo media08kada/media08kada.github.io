@@ -655,6 +655,7 @@
 
 <!-- Video Section Start -->
 <section id="video" class="video lighten-3 scrollspy">
+
     <h4 class="center">Video</h4>
 
     <!-- Preview Utama -->
@@ -662,40 +663,37 @@
         <iframe
             id="mainVideo"
             src="https://www.youtube.com/embed/ciw3dGeqIeo"
+            title="YouTube Video"
+            frameborder="0"
             allowfullscreen>
         </iframe>
     </div>
 
     <!-- Thumbnail Video -->
     <div class="video-gallery">
-
-        <div class="video-thumb">
+        <div class="video-thumb" onclick="changeVideo('ciw3dGeqIeo')">
             <img src="https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg"
-                 alt="Video 1"></div>
-
-        <div class="video-thumb">
+                loading="lazy" alt="Video 1">
+        </div>
+        <div class="video-thumb" onclick="changeVideo('geS2Qrqdj1s')">
             <img src="https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg"
-                 alt="Video 2"></div>
-
-        <div class="video-thumb">
+                loading="lazy" alt="Video 2">
+        </div>
+        <div class="video-thumb" onclick="changeVideo('XwJqVVLdEDY')">
             <img src="https://img.youtube.com/vi/XwJqVVLdEDY/maxresdefault.jpg"
-                 alt="Video 3"></div>
-    </div>
-
-    <!-- Deskripsi -->
-    <div class="video-description">
-        <p><strong>Subscribe, Like, Share, dan Comment</strong></p>
-
-        <a href="https://www.youtube.com/@KosongDelapan102"
-           target="_blank">YouTube KosongDelapan102
-        </a>
-
-        <div class="g-ytsubscribe"
-             data-channelid="UC41XqwNU6eP4PJdziPCVT2Q"
-             data-layout="default"
-             data-count="hidden">
+                loading="lazy" alt="Video 3">
         </div>
     </div>
+
+  <!-- Deskripsi -->
+  <div class="video-description">
+    <p>Selamat menonton, channel Youtube @kosongdelapan102</p>
+
+    <a href="https://www.youtube.com/@KosongDelapan102"
+       target="_blank"
+       class="btn btn-subscribe">
+       Subscribe</a>
+  </div>
 </section>
 
 <script src="https://apis.google.com/js/platform.js"></script>

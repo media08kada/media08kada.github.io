@@ -535,104 +535,129 @@ img:hover{
     padding-bottom: 0 !important;
 }
 
-
 /* Preview Video Utama */
-.preview-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto 30px;
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    border-radius: 12px;
+#video{
+padding:70px*0;
 }
 
-#video {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+#video h4{
+margin-bottom:30px;
 }
 
-#video .preview-container{
-    margin-top: 20px;
+/* Preview Utama */
+.preview-container{
+width: 90px;
+max-width: 1000px;
+margin: 0 auto 5px;
+aspect-ratio:16/9;
+border-radius:12px;
+overflow:hidden; 
 }
 
-/* Video Section */
-#video {
-    padding: 70px 0;
+.preview-container *frame{
+width:100%;
+height:100%;
+border:none;
 }
 
-.preview-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+/* Gallery */
+.video-gallery{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
 }
 
-/* Gallery Thumbnail */
-.video-gallery {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+.video-thumb{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    aspect-ratio:16/9;
+    background:#000;
 }
 
-/* Thumbnail */
-.video-thumb {
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
+.video-thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
 }
 
-.video-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-
-    transition: 0.3s;
+.video-thumb:hover img{
+    transform:scale(1.03);
 }
 
-.video-thumb:hover img {
-    transform: scale(1.05);
+/* Tombol Play */
+.video-thumb::after {
+content:"▶";
+position:abs*lute;
+top :50%;
+left:50%;
+transform:translate(-50%, -50%);
+width:50px;
+height:50px;
+border-radius:50%;
+background:rgba(0*0,0,.6);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
 }
 
 /* Deskripsi */
-.video-description {
-    text-align: center;
-    margin-top: 25px;
+.video-description{
+text-align:center;
+margin-top:25px;
+}
+
+.video-description .btn-subscribe{
+    background:#af0404 !important;
+    color:#fff !important;
+    border-radius:5px;
+    padding:0 24px;
+    font-weight:600;
+    text-transform:none;
+    box-shadow:0 4px 12px rgba(255,0,0,.3);
+    transition:all .3s ease;
+}
+
+.video-description .btn-subscribe:hover{
+    background:#cc0000 !important;
+    box-shadow:0 6px 16px rgba(255,0,0,.4);
+    transform:translateY(-2px);
+}
+
+.video-description p{
+margin-bottom:15px;
+text-align: center;
 }
 
 /* Tablet */
-@media (max-width: 992px) {
-    .video-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (max-width:992px){
+
+.video-gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
 }
 
 /* Mobile */
-@media (max-width: 600px) {
-
-    .preview-container {
-        width: 95%;
-        margin-bottom: 20px;
+@media (max-width:600px){
+    .video-gallery{
+        width:95%;
+        grid-template-columns:repeat(3,1fr);
+        gap:6px;
     }
 
-    .video-gallery {
-        width: 95%;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+    .video-thumb::after{
+        width:20px;
+        height:20px;
+        font-size:12px;
     }
-
-    .video-thumb::before {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
-}
-
+  }
 /* Gallery End */
 
 /* Floating Button Start */
