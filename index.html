@@ -33,19 +33,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-    
-    <!-- Feather Icons-->
-    <script src="https://unpkg.com/feather-icons"></script>
-  
+
     <!-- Cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
  
-    <!-- css Swiper -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
      <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +55,7 @@
   <body id="home" class="scrollspy">
 
   <!-- Navbar Start -->
-  <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+  <nav class="navbar">
    <div class="container nav-wrapper-custom">
       <a class="navbar-brand" href="#"> <img loading="lazy" src="/img/partner/MediaKelapadua.png"/></a>
     
@@ -105,8 +99,8 @@
           </button>
         </form>
       </div>
-      
-      
+   
+     
      <!-- Progress bar tepat di bawah nav -->
      <div class="progress">
        <div class="indeterminate"></div>
@@ -204,43 +198,26 @@
           <!-- Slider Start -->
           <div class="slider" id="sliderhero">
             <ul class="slides">
-              <li>
-                <img  fetchpriority="high" src="slider/img/Ondel-bg1.jpeg"
-                    data-light="slider/img/Ondel-bg1.jpeg"
-                    data-dark="slider/img/Ondel-bg1-dark.jpeg"
-                    alt="Kelapa Dua">
-                <div class="caption center-align">
-                  <h3>Media Kelapa Dua</h3>
-                  <h5 class="white-text text-darken-1">
-                    Kampung Kite Kalo, Bukan Kite yang Ngurusin Siapa Lagi
-                  </h5>
-                  <div id="btn-hero">
-                  <a href="donasi.html"class="btn waves-effect waves-light btn-small grey">Open Donasi</a>
-                </div></li>
-                <li>
-                <img fetchpriority="high" src="slider/img/Kelapa-bg1.jpg"
-                    data-light="slider/img/Kelapa-bg1.jpg"
-                    data-dark="slider/img/Kelapa-bg1-dark.jpeg"
-                    alt="Kelapa Dua">
-                <div class="caption center-align">
-                  <h3>Media Kelapa Dua</h3>
-                  <h5 class="white-text text-darken-1">
-                    Gerakan Pemilahan Sampah, Sejak dari Rumah Tangga</h5>
-                    <div id="btn-hero">
-                  <a href="donasi.html"class="waves-effect waves-light btn-small grey">Open Donasi</a>
-                </div></li>
-                <li>
-                <img fetchpriority="high" src="slider/img/Kota-bg1.jpg"
-                data-light="slider/img/Kota-bg1.jpg"
-                data-dark="slider/img/Kota-bg1-dark.jpeg"
-                alt="Kelapa Dua">
-                <div class="caption center-align">
-                <h3>Media Kelapa Dua</h3>
-                <h5 class="white-text text-darken-1">
-                Maju Kotanya Bahagia Warganya
-                </h5>
-                <div id="btn-hero">
-                  <a href="donasi.html"class="waves-effect waves-light btn-small grey">Open Donasi</a>
+              <li><img fetchpriority="high" src="slider/img/Kelapa-bg1.jpg" data-light="slider/img/Kelapa-bg1.jpg" data-dark="slider/img/Kelapa-bg1-dark.jpeg" alt="Kelapa Dua">
+              <div class="caption center-align">
+              <h3>Media Kelapa Dua</h3>
+              <h5 class="white-text text-darken-1">
+              Gerakan Pemilahan Sampah, Sejak dari Rumah Tangga</h5>
+              <div id="btn-hero"><a href="donasi.html"class="waves-effect waves-light btn-small grey">Open Donasi</a></div></li>
+
+              <li><img  fetchpriority="lazy"src="slider/img/Ondel-bg1.jpeg" data-light="slider/img/Ondel-bg1.jpeg" data-dark="slider/img/Ondel-bg1-dark.jpeg" alt="Kelapa Dua">
+              <div class="caption center-align">
+              <h3>Media Kelapa Dua</h3>
+              <h5 class="white-text text-darken-1">
+              Kampung Kite Kalo, Bukan Kite yang Ngurusin Siapa Lagi</h5>
+              <div id="btn-hero">
+              <a href="donasi.html"class="btn waves-effect waves-light btn-small grey">Open Donasi</a></div></li>
+ 
+              <li><img fetchpriority="lazy" src="slider/img/Kota-bg1.jpg" data-light="slider/img/Kota-bg1.jpg" data-dark="slider/img/Kota-bg1-dark.jpeg" alt="Kelapa Dua">
+              <div class="caption center-align">
+              <h3>Media Kelapa Dua</h3>
+              <h5 class="white-text text-darken-1">Maju Kotanya Bahagia Warganya</h5>
+              <div id="btn-hero"><a href="donasi.html"class="waves-effect waves-light btn-small grey">Open Donasi</a>
               </div></li>
             </ul>
 
@@ -308,7 +285,7 @@
               </div>
 
                 <!-- Preview Berita-2-->
-                <div class="col s12 m8 light" data-aos="fade-up">
+                <div class="col s12 m8 light">
                 <h5 id="preview-judul-berita-2" class="light text-darken-3"></h5>
                   <h6 id="preview-tanggal-berita-2" class="date"></h6>
                   <p id="preview-isi-berita-2" class="text"></p>
@@ -334,7 +311,7 @@
               </div>
 
                 <!-- Preview Berita-3-->
-                <div class="col s12 m8 light" data-aos="fade-up">
+                <div class="col s12 m8 light">
                 <h5 id="preview-judul-berita-3" class="light text-darken-3"></h5>
                   <h6 id="preview-tanggal-berita-3" class="date"></h6>
                   <p id="preview-isi-berita-3" class="text"></p>
@@ -426,7 +403,7 @@
           </li>
  
           <!-- Tombol Wilayah-->
-          <div class="col m s12 center-align" style="margin-bottom: 10px;" data-aos="fade-up">
+          <div class="col m s12 center-align" style="margin-bottom: 10px;">
           <a id="show-more-btn" class="waves-effect waves-light btn-small grey"><i class="material-icons left"></i>Open</a>
           </div>
          </div>
@@ -435,7 +412,7 @@
 
         <!-- Info Iklan -->
             <div class="col s12 light">
-              <div class="ad-section responsive-img materialboxed z-depth-3">
+              <div class="ad-section responsive-img z-depth-3">
                 <a href="" target="_blank">
                 <img loading="lazy" src="img/iklan/iklan-cetak.jpg" alt="Iklan Promo"></a>
               </div>
@@ -578,7 +555,7 @@
 
             <!-- Info 1 -->
             <div class="col m3 s12">
-              <div class="card custom-bg responsive-img materialboxed z-depth-3">
+              <div class="card custom-bg responsive-img z-depth-3">
                 <div class="card-content white-text center-align">
                   <a href="/info-wilayah/kelurahan.html" class="waves-effect white-text"><i class="material-icons small white-text">account_balance</i></a>
                   <h4 class="card-title no-margin" style="font-size:16px;">Info</h4>
@@ -593,7 +570,7 @@
 
             <!-- Info 2 -->
             <div class="col m3 s12">
-              <div class="card custom-bg responsive-img materialboxed z-depth-3">
+              <div class="card custom-bg responsive-img z-depth-3">
                 <div class="card-content white-text center-align">
                   <a href="/info-wilayah/puskesmas.html" class="waves-effect white-text">
                     <i class="material-icons small white-text">local_hospital</i></a>
@@ -608,7 +585,7 @@
 
             <!-- Info 3 -->
             <div class="col m3 s12">
-              <div class="card custom-bg responsive-img materialboxed z-depth-3">
+              <div class="card custom-bg responsive-img z-depth-3">
                 <div class="card-content white-text center-align">
                   <a href="/info-wilayah/lmkkelapadua.html" class="waves-effect white-text">
                     <i class="material-icons small white-text">group</i>
@@ -624,7 +601,7 @@
 
             <!-- Info 4 -->
             <div class="col m3 s12">
-              <div class="card custom-bg responsive-img materialboxed z-depth-3">
+              <div class="card custom-bg responsive-img z-depth-3">
                 <div class="card-content white-text center-align">
                   <a href="/berita-lain.html" class="waves-effect white-text">
                     <i class="material-icons small white-text">event_note</i></a>
@@ -887,8 +864,6 @@
 
       <script src="js/script.js"></script>
       <script src="js/contact.js"></script>
-      <script src="js/search.js"></script>
-      <script src="js/page.js"></script>
       <script src="js/darkmode.js"></script>
       <script src="js/data-sumber.js"></script>
       <script src="js/data.js"></script>
@@ -904,16 +879,11 @@
 
       <!-- Google Adsense -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-        <script src="script.js" defer></script>
+          <script src="script.js" defer></script>
 
          <script>
           AOS.init();
         </script>
-  
-    <script>
-      feather.replace();
-    </script>
+ 
  </body>
 </html>
