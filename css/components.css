@@ -287,6 +287,10 @@ body.dark-mode .modal .modal-footer .btn-flat {
 
 
 /* Iklan css Start */
+html{
+ font-family:'Poppins',sans-serif;
+}
+
 .container-iklan {
   display: flex;
   flex-direction: column;
@@ -333,16 +337,6 @@ body.dark-mode .modal .modal-footer .btn-flat {
 
 
 /* Berita Sub Halaman Start */
-:root {
-  --primary: #b6895b;
-  --bg: #242323;
-}
-
-html {
-  font-family: 'poppins', sans-serif;
-}
-
-/* Pindahan dari Halaman lain */
 * {
   margin: 0;
   padding: 0;
@@ -380,7 +374,7 @@ html {
 
 #berita h5 {
   margin: 5px 0 8px;
-  font-family: 'poppins', sans-serif;
+  line-height: 25px;
   font-weight: 400;
 }
 
