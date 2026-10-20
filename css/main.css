@@ -765,7 +765,7 @@ grid-template-columns:repeat(2,1fr);
 
 /* Contact */
 #contact {
-  background-image: url("../slider/img/parallax-background.jpg");
+  background-image: url("../slider/img/parallax-background.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
