@@ -376,7 +376,7 @@ html{
 #berita h5 {
   margin: 5px 0 8px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #berita p {
@@ -657,13 +657,13 @@ margin-top: 25px;
   /* Isi berita */
     #berita p {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.8;
     letter-spacing: 0.5px;
     margin: 0 0 18px;
     text-align: justify;
     text-justify: inter-word;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   .berita-preview .card-image {
