@@ -463,6 +463,10 @@ margin-top: 25px;
   line-clamp: 4;
 }
 
+.berita-preview h6.date {
+    margin-bottom: 15px;
+}
+
 /* Desktop besar */
 @media (min-width: 1200px) {
   .berita-preview .card-content h5 {
