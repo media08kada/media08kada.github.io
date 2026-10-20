@@ -49,62 +49,6 @@ function loadPreviewBerita(fileBerita, nomor) {
 }
 
 
-
-/* PREVIEW BERITA HORIZONTAL */
-
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".berita-preview");
-
-  cards.forEach((card) => {
-    const linkBerita = card.dataset.link;
-
-    fetch(linkBerita)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`File tidak ditemukan: ${linkBerita}`);
-        }
-
-        return response.text();
-      })
-      .then((html) => {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
-
-        const img = doc.querySelector('[id^="img-berita-"]');
-        const judul = doc.querySelector('[id^="judul-berita-"]');
-
-        if (img) {
-          const src = img.getAttribute("src");
-          const cardImg = card.querySelector(".card-image img");
-
-          if (cardImg && src) {
-            cardImg.src = src;
-            cardImg.alt = img.alt || "Preview Berita";
-          }
-        }
-
-        if (judul) {
-          const cardJudul = card.querySelector(".card-content h5");
-
-          if (cardJudul) {
-            cardJudul.textContent = judul.textContent.trim();
-          }
-        }
-
-        const link = card.querySelector(".card-action a");
-
-        if (link) {
-          link.href = linkBerita;
-        }
-      })
-      .catch((error) => {
-        console.error("Gagal memuat berita:", error);
-      });
-  });
-});
-
-
-
 /* BERITA WILAYAH */
 document.addEventListener("DOMContentLoaded", () => {
   sumberBeritaWilayah.forEach((berita) => {
@@ -213,3 +157,65 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
+
+/* PREVIEW BERITA HORIZONTAL */
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".berita-preview");
+
+  cards.forEach((card) => {
+    const keyBerita = card.dataset.berita;
+    const linkBerita = sumberBerita[keyBerita];
+
+    if (!linkBerita) {
+      console.warn(`Data berita "${keyBerita}" tidak ditemukan.`);
+      return;
+    }
+
+    fetch(linkBerita)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`File tidak ditemukan: ${linkBerita}`);
+        }
+
+        return response.text();
+      })
+      .then((html) => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const img = doc.querySelector('[id^="img-berita-"]');
+        const judul = doc.querySelector('[id^="judul-berita-"]');
+
+        /* Gambar */
+        if (img) {
+          const cardImg = card.querySelector(".card-image img");
+
+          if (cardImg) {
+            cardImg.src = img.src;
+            cardImg.alt = img.alt || "Preview Berita";
+          }
+        }
+
+        /* Judul */
+        if (judul) {
+          const cardJudul = card.querySelector(".card-content h5");
+
+          if (cardJudul) {
+            cardJudul.textContent = judul.textContent.trim();
+          }
+        }
+
+        /* Link tombol */
+        const tombolLink = card.querySelector(".card-action a");
+
+        if (tombolLink) {
+          tombolLink.href = linkBerita;
+        }
+      })
+      .catch((error) => {
+        console.error("Gagal memuat berita:", error);
+      });
+  });
+});
+

@@ -461,8 +461,37 @@ margin-top: 25px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
-  font-weight: 300;
 }
+
+/* Desktop besar */
+@media (min-width: 1200px) {
+  .berita-preview .card-content h5 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1199px) {
+  .berita-preview .card-content h5 {
+    font-size: 1.05rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .berita-preview .card-content h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .berita-preview .card-content h5 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
 
 .berita-preview .card-action {
   padding: 10px 15px;

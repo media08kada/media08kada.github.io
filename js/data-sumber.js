@@ -74,3 +74,15 @@ const sumberBeritaPilihan = [
     previewIsi: "preview-isi-pilihan-4",
   },
 ];
+
+
+// Berita-Box
+const sumberBerita = {
+  "berita-1":
+    "posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
+
+  "berita-2": "hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
+
+  "berita-3":
+    "rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
+};
