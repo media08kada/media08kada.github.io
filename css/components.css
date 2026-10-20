@@ -564,6 +564,28 @@ margin-top: 25px;
   border-color: gray;
   color: white;
 }
+
+article-like {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.likeBtn {
+  background: #757575;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.likeBtn:hover {
+  background: #616161;
+}
+
+.likeBtn.red {
+  background: #e53935 !important;
+}
 /* Button Like End */
 
 

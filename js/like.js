@@ -1,67 +1,28 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Ambil nama file HTML sebagai ID artikel
-  const articleId = window.location.pathname
-    .split("/")
-    .pop()
-    .replace(".html", "");
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".likeBtn").forEach((btn) => {
+    const articleId = btn.dataset.id;
+    const countSpan = btn.querySelector(".likeCount");
 
-  const btn = document.getElementById("likeBtn");
-  const count = document.getElementById("likeCount");
+    let likes = parseInt(localStorage.getItem(`likes_${articleId}`)) || 0;
+    let liked = localStorage.getItem(`liked_${articleId}`) === "true";
 
-  if (!btn || !count) return;
+    countSpan.textContent = likes;
 
-  const likedKey = "liked_" + articleId;
-
-
-  // Tampilkan status like
-  function setLikedState(totalLike) {
-    count.textContent = totalLike;
-
-    btn.disabled = true;
-    btn.classList.remove("grey");
-    btn.classList.add("blue");
-
-    btn.innerHTML = `👍 Disukai (<span id="likeCount">${totalLike}</span>)`;
-  }
-
-
-  // Ambil jumlah like awal
-fetch("../api/likes.php?id=" + encodeURIComponent(articleId))
-  .then((response) => {
-    console.log(response.status);
-    return response.text();
-  })
-  .then((text) => {
-    console.log(text);
-
-    const data = JSON.parse(text);
-
-    count.textContent = data.likes || 0;
-
-    if (localStorage.getItem(likedKey)) {
-      setLikedState(data.likes);
-    }
-  })
-  .catch((err) => {
-    console.error(err);
-  });
-
-
-  // Saat tombol diklik
-  btn.addEventListener("click", function () {
-    if (localStorage.getItem(likedKey)) {
-      return;
+    if (liked) {
+      btn.classList.add("liked");
     }
 
-    fetch("/api/likes.php?id=" + encodeURIComponent(articleId) + "&action=like")
-      .then((response) => response.json())
-      .then((data) => {
-        localStorage.setItem(likedKey, "true");
+    btn.addEventListener("click", () => {
+      if (liked) return;
 
-        setLikedState(data.likes);
-      })
-      .catch((error) => {
-        console.error("Gagal menyimpan like:", error);
-      });
+      likes++;
+      liked = true;
+
+      localStorage.setItem(`likes_${articleId}`, likes);
+      localStorage.setItem(`liked_${articleId}`, "true");
+
+      countSpan.textContent = likes;
+      btn.classList.add("liked");
+    });
   });
 });
