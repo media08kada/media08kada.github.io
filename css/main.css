@@ -36,9 +36,14 @@ img{
 }
 
 h4{
-  font-weight:400;
-  margin-bottom:40px;
+  font-weight: 300 !important;    
+  line-height: 1.2;     
+  margin-top: 0;
+  margin-bottom: 20px; 
+  color: #212121;
+  text-align: left;    
 }
+  
 
 body.dark-mode {
   background: #212121;
@@ -59,13 +64,7 @@ text-indent: 30px;
 margin-bottom: 20px;
 color: #1b1b1b;  
 }
-  
-.col.s12.m8.light h5 {
- margin: 5px 0 8px;
- font-weight: 300;
- line-height: 1.5;
-}
-  
+ 
 .collection-item {
   overflow: hidden;
 }
@@ -360,26 +359,27 @@ img:hover{
  }
 
  .berita-slider .slides li img{
-   object-fit:cover; 
+  object-fit:cover; 
  }
 
 .square-img{
-   aspect-ratio: 1/1;
-   width:100%;
-   object-fit:cover;
-   display:block;
+  aspect-ratio: 1/1;
+  width:100%;
+  object-fit:cover;
+  display:block;
 }
 
 h6.date {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 #preview-judul-berita-1,
 #preview-judul-berita-2, 
-#preview-judul-berita-3 {
+#preview-judul-berita-3,
+#preview-judul-berita-4 {
   font-size: 22px;      
-  font-weight: 600;    
-  line-height: 0.8;     
+  font-weight: 300 !important;    
+  line-height: 1.2;     
   margin-top: 0;
   margin-bottom: 10px; 
   color: #212121;
@@ -390,7 +390,8 @@ h6.date {
 
   #preview-judul-berita-1,
   #preview-judul-berita-2, 
-  #preview-judul-berita-3 {
+  #preview-judul-berita-3,
+  #preview-judul-berita-4 {
     font-size: 18px;
     line-height: 0.5;
   }
