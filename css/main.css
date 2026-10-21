@@ -374,7 +374,26 @@ h6.date {
     margin-bottom: 15px;
 }
 
+#preview-judul-berita-1,
+#preview-judul-berita-2, 
+#preview-judul-berita-3 {
+  font-size: 22px;      
+  font-weight: 100;    
+  line-height: 0.8;     
+  margin-top: 0;
+  margin-bottom: 10px; 
+  color: #333;
+  text-align: left;    
+}
+
 @media (max-width:600px){
+
+  #preview-judul-berita-1,
+  #preview-judul-berita-2, 
+  #preview-judul-berita-3 {
+    font-size: 18px;
+    line-height: 0.5;
+  }
 
   .berita-slider,
   .berita-slider .slides,

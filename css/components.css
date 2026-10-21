@@ -373,10 +373,47 @@ html{
   font-weight: 300;
 }
 
-#berita h5 {
+/*#berita h5 {
   margin: 5px 0 8px;
   line-height: 1.5;
   font-weight: 600;
+}*/
+
+#berita h5 {
+  font-size: 22px;      
+  font-weight: 600;    
+  line-height: 1.5;     
+  margin: 5px 0 8px; 
+  text-align: left;    
+}
+
+#tanggal-berita-1,
+#tanggal-berita-2,
+#tanggal-berita-3 {
+  margin-bottom: 30px; /* jarak ke paragraf */
+}
+
+#isi-berita-1,
+#isi-berita-2,
+#isi-berita-3 {
+  margin-top: 0;
+}
+
+@media (max-width:600px){
+  #berita h5 {
+  font-size: 18px;
+  font-weight: 600;    
+  line-height: 1.5;     
+  margin: 5px 0 8px; 
+  color: #333;
+  text-align: left; 
+  }
+
+  #tanggal-berita-1,
+  #tanggal-berita-2,
+  #tanggal-berita-3 {
+  margin-bottom: 20px; /* jarak ke paragraf */
+}
 }
 
 #berita p {
