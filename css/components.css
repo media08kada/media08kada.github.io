@@ -427,12 +427,12 @@ html{
 }
 
 #berita .author-credit h6 {
-    margin-top: 50px;
-    font-size: 10px;
-    text-align: lift;
-    text-indent: 0;
-    font-style: italic;
-    color: #333;
+  margin-top: 50px;
+   font-size: 10px;
+   text-align: lift;
+   text-indent: 0;
+   font-style: italic;
+   color: #333;
 }
 
 #berita .row .col {
@@ -491,6 +491,7 @@ margin-top: 25px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
+  font-weight: 100;
 }
 
 .berita-preview h6.date {
