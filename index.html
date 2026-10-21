@@ -87,22 +87,48 @@
           <i class="material-icons">menu</i>
         </a>
 
-        <!-- Tombol search -->
+        <!-- Tombol Search -->
         <div class="navbar-extra right">
           <a href="javascript:void(0)" id="search-button">
             <i class="material-icons">search</i>
           </a>
         </div>
-        
-        <!-- Search Form -->
-        <form class="search-form">
-          <input type="text" placeholder="Search here..." />
+
+                <!-- Search Form -->
+        <form class="search-form" id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search here..."
+            autocomplete="off">>
+
           <button type="submit">
-            <i class="material-icons">close</i>
+            <i class="material-icons">search</i>
           </button>
         </form>
       </div>
    
+      <!-- Progress bar tepat di bawah nav -->
+     <div class="progress">
+       <div class="indeterminate"></div>
+      </div>
+    </div>
+    </nav>
+
+        <!-- Search Form -->
+        <form class="search-form" id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search here..."
+            autocomplete="off">>
+
+          <button type="submit">
+            <i class="material-icons">search</i>
+          </button>
+        </form>
+      </div>
+        
       <!-- Progress bar tepat di bawah nav -->
      <div class="progress">
        <div class="indeterminate"></div>
@@ -156,12 +182,12 @@
       
       <li><a href="index.html">Beranda</a></li>
       
-      <!-- Dropdown trigger di sidenav -->
-      <li>
-        <a class="dropdown-trigger" href="#berita" data-target="dropdown1-mobile">
-          Berita<i class="material-icons right">arrow_drop_down</i></a>
-        </li>
-        <li>
+        <!-- Dropdown trigger di sidenav -->
+         <li>
+          <a class="dropdown-trigger" href="#berita" data-target="dropdown1-mobile">
+            Berita<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
+          <li>
           <a class="dropdown-trigger" href="#wilayah" data-target="dropdown2-mobile">
             Info Wilayah<i class="material-icons right">arrow_drop_down</i></a>
           </li>
@@ -489,7 +515,7 @@
             <h5 id="preview-judul-pilihan-1"></h5>
             <p id="preview-isi-pilihan-1"></p>
             <p>Info selanjutnya klik icon Plus (+)</p></div>
-          <div class="modal-footer">
+            <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-grey btn-flat">
             Tutup</a>
           </div>
@@ -501,7 +527,7 @@
             <h5 id="preview-judul-pilihan-2"></h5>
             <p id="preview-isi-pilihan-2"></p>
             <p>Info selanjutnya klik icon Plus (+)</p></div>
-          <div class="modal-footer">
+            <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-grey btn-flat">
             Tutup</a>
           </div>
@@ -513,7 +539,7 @@
             <h5 id="preview-judul-pilihan-3"></h5>
             <p id="preview-isi-pilihan-3"></p>
             <p>Info selanjutnya klik icon Plus (+)</p></div>
-          <div class="modal-footer">
+            <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-grey btn-flat">
             Tutup</a>
           </div>

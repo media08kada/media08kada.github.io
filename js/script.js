@@ -263,147 +263,97 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Javascrip Search Start
-const page = [
-  { title: "Home", url: "index.html" },
-  { title: "Berita Utama", url: "#berita" },
-  { title: "Berita Wilayah", url: "#wilayah" },
-  { title: "Berita Pilihan", url: "#pilihan" },
-  { title: "Berita Lama", url: "news-old.html" },
-  { title: "Calendar Event", url: "/info-wilayah/event.html" },
-  { title: "Info Kelurahan", url: "/info-wilayah/kelurahan.html" },
-  { title: "Info Puskesmas", url: "/info-wilayah/puskesmas.html" },
-  { title: "Info LMK", url: "/info-wilayah/lmkkelapadua.html" },
-  { title: "Gallery Photo", url: "/gallery/gallery-photo.html" },
-  { title: "Gallery Video", url: "/gallery/gallery-video.html" },
-  { title: "Contact Us", url: "#contact" },
-];
+// Javascript Search Start
+// Data halaman
+const pages = [
+{
+    title: "Berita Utama",
+    url: "#berita",
+    content: [
+        "RW 08 Kelapa Dua Wakili Puskesmas Kebon Jeruk Lomba Kampung Bebas Jentik Tingkat Kota Jakarta Barat",
+        "Posyandu Siklus Hidup Melati RW 08 Tingkatkan Layanan Kesehatan Berbasis Teknologi",
+        "Hidran Mandiri Perkuat Sistem Proteksi Kebakaran"
+    ]}
+  ];
+ 
+// Ambil elemen
+const searchBtn = document.getElementById("search-button");
+const searchForm = document.getElementById("searchForm");
+const searchInput = document.getElementById("searchInput");
+const resultsContainer = document.getElementById("results");
 
-// Ambil query dari URL (?q=...)
+// Toggle Search Form
+if (searchBtn && searchForm) {
+  searchBtn.addEventListener("click", () => {
+    searchForm.classList.toggle("active");
+
+    if (searchForm.classList.contains("active")) {
+      searchInput.focus();
+    }
+  });
+}
+
+// Search Form Submit
+if (searchForm && searchInput) {
+  searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const keyword = searchInput.value.toLowerCase();
+
+const results = pages.filter(page =>
+    page.title.toLowerCase().includes(keyword) ||
+    page.content.some(item =>
+        item.toLowerCase().includes(keyword)
+    )
+);
+
+    if (keyword !== "") {
+      showResults(keyword) = `search.html?q=${encodeURIComponent(keyword)}`;
+    }
+  });
+}
+
+// Ambil Query dari URL
 const params = new URLSearchParams(window.location.search);
 const q = params.get("q");
 const query = q ? q.toLowerCase().trim() : "";
 
-// Container hasil pencarian
-const resultsContainer = document.getElementById("results");
-
-// Fungsi pencarian
+// Fungsi Pencarian
 function searchPages(keyword) {
   if (!keyword) return [];
+
   return pages.filter((page) => page.title.toLowerCase().includes(keyword));
 }
 
-// Render hasil pencarian
+// Tampilan Pencarian
 function renderResults() {
-  if (!resultsContainer) return; // cegah error jika #results tidak ada
+  // Cegah error jika bukan halaman search.html
+  if (!resultsContainer) return;
+
   resultsContainer.innerHTML = "";
+
   const results = searchPages(query);
-  
+
   if (results.length > 0) {
     results.forEach((page) => {
       const item = document.createElement("a");
+
       item.href = page.url;
       item.className = "collection-item";
       item.textContent = page.title;
+
       resultsContainer.appendChild(item);
     });
   } else {
     resultsContainer.innerHTML = query
-    ? `<p class="red-text center-align">Tidak ada hasil untuk "${query}"</p>`
-    : `<p class="grey-text center-align">Masukkan kata kunci untuk mencari</p>`;
+      ? `<p class="red-text center-align">
+           Tidak ada hasil untuk "<strong>${q}</strong>"
+         </p>`
+      : `<p class="grey-text center-align">
+           Masukkan kata kunci untuk mencari
+         </p>`;
   }
 }
 
-// Jalankan pencarian
+// Jalankan Pencarian
 renderResults();
-
-// Toggle search box
-const searchBtn = document.querySelector("#search-button");
-const searchForm = document.querySelector(".search-form");
-
-if (searchBtn && searchForm) {
-  searchBtn.addEventListener("click", () => {
-    searchForm.classList.toggle("active");
-  });
-}
-// Javascrip Search End
-
-// Javascrip Page Start
-const pages = [
-  { title: "Home", url: "index.html" },
-  { title: "Berita Utama", url: "#berita" },
-  { title: "Berita Wilayah", url: "#wilayah" },
-  { title: "Berita Pilihan", url: "#pilihan" },
-  { title: "Berita Lama", url: "news-old.html" },
-  { title: "Calendar Event", url: "/info-wilayah/event.html" },
-  { title: "Info Kelurahan", url: "/info-wilayah/kelurahan.html" },
-  { title: "Info Puskesmas", url: "/info-wilayah/puskesmas.html" },
-  { title: "Info LMK", url: "/info-wilayah/lmkkelapadua.html" },
-  { title: "Gallery Photo", url: "/gallery/gallery-photo.html" },
-  { title: "Gallery Video", url: "/gallery/gallery-video.html" },
-  { title: "Contact Us", url: "#contact" },
-];
-// Javascrip Page End
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
