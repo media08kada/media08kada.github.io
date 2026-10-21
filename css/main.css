@@ -399,8 +399,8 @@ h6.date {
   .berita-slider,
   .berita-slider .slides,
   .berita-slider .slides li{
-      height:auto !important;
-      min-height:unset !important;
+     height:auto !important;
+     min-height:unset !important;
   }
 
  #berita .row{
