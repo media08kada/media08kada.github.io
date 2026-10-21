@@ -486,6 +486,10 @@ h6.date {
   vertical-align: middle;
 }
 
+.card-content h4 {
+    color: #fff;
+}
+
 /* Section Pilihan */
 #pilihan .modal-content p {
   font-size: 15px;
