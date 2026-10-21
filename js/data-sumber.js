@@ -3,7 +3,23 @@ const sumberBeritaUtama = [
   "berita-utama/rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
   "berita-utama/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
   "berita-utama/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
+  "berita-utama/maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html",
 ];
+
+
+// Berita-Box
+const sumberBerita = {
+  "berita-1":
+    "rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
+
+  "berita-2":
+    "posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
+
+  "berita-3": "hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
+
+  "berita-4": 
+  "maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html",
+};
 
 
 // Berita Wilayah
@@ -76,13 +92,3 @@ const sumberBeritaPilihan = [
 ];
 
 
-// Berita-Box
-const sumberBerita = {
-  "berita-1":
-    "posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
-
-  "berita-2": "hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
-
-  "berita-3":
-    "rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
-};

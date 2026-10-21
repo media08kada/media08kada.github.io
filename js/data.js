@@ -1,5 +1,4 @@
 /* BERITA UTAMA */
-
 document.addEventListener("DOMContentLoaded", () => {
   sumberBeritaUtama.forEach((url, index) => {
     loadPreviewBerita(url, index + 1);

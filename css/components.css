@@ -382,13 +382,15 @@ html{
 
 #tanggal-berita-1,
 #tanggal-berita-2,
-#tanggal-berita-3 {
+#tanggal-berita-3,
+#tanggal-berita-4 {
   margin-bottom: 30px; /* jarak ke paragraf */
 }
 
 #isi-berita-1,
 #isi-berita-2,
-#isi-berita-3 {
+#isi-berita-3, 
+#isi-berita-4 {
   margin-top: 0;
 }
 
@@ -404,7 +406,8 @@ html{
 
   #tanggal-berita-1,
   #tanggal-berita-2,
-  #tanggal-berita-3 {
+  #tanggal-berita-3,
+  #tanggal-berita-4 {
   margin-bottom: 20px; /* jarak ke paragraf */
 }
 }
