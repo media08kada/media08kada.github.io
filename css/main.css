@@ -587,47 +587,47 @@ margin-bottom:30px;
 
 /* Preview Utama */
 .preview-container{
-width: 90px;
-max-width: 1000px;
-margin: 0 auto 5px;
-aspect-ratio:16/9;
-border-radius:12px;
-overflow:hidden; 
+  width: 90px;
+  max-width: 1000px;
+  margin: 0 auto 5px;
+  aspect-ratio:16/9;
+  border-radius:12px;
+  overflow:hidden; 
 }
 
 .preview-container *frame{
-width:100%;
-height:100%;
-border:none;
+  width:100%;
+  height:100%;
+  border:none;
 }
 
 /* Gallery */
 .video-gallery{
-    width:90%;
-    max-width:1000px;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
+  width:90%;
+  max-width:1000px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
 }
 
 .video-thumb{
-    position:relative;
-    overflow:hidden;
-    border-radius:10px;
-    aspect-ratio:16/9;
-    background:#000;
+  position:relative;
+  overflow:hidden;
+  border-radius:10px;
+  aspect-ratio:16/9;
+  background:#000;
 }
 
 .video-thumb img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
 }
 
 .video-thumb:hover img{
-    transform:scale(1.03);
+  transform:scale(1.03);
 }
 
 /* Tombol Play */
