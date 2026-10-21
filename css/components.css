@@ -243,7 +243,6 @@ body.dark-mode .modal .modal-footer .btn-flat {
 
 
 /* Medsos css Start */
-/* SHARE MEDSOS */
 .artikel {
   max-width: 800px;
   margin: 0 auto;
@@ -373,12 +372,6 @@ html{
   font-weight: 300;
 }
 
-/*#berita h5 {
-  margin: 5px 0 8px;
-  line-height: 1.5;
-  font-weight: 600;
-}*/
-
 #berita h5 {
   font-size: 22px;      
   font-weight: 600;    
@@ -405,7 +398,7 @@ html{
   font-weight: 600;    
   line-height: 1.5;     
   margin: 5px 0 8px; 
-  color: #333;
+  color: #000;
   text-align: left; 
   }
 

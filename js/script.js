@@ -266,16 +266,20 @@ document.addEventListener("DOMContentLoaded", function () {
 // Javascript Search Start
 // Data halaman
 const pages = [
-{
-    title: "Berita Utama",
-    url: "#berita",
-    content: [
-        "RW 08 Kelapa Dua Wakili Puskesmas Kebon Jeruk Lomba Kampung Bebas Jentik Tingkat Kota Jakarta Barat",
-        "Posyandu Siklus Hidup Melati RW 08 Tingkatkan Layanan Kesehatan Berbasis Teknologi",
-        "Hidran Mandiri Perkuat Sistem Proteksi Kebakaran"
-    ]}
-  ];
- 
+  { title: "Home", url: "index.html" },
+  { title: "Berita Utama", url: "#berita" },
+  { title: "Berita Wilayah", url: "#wilayah" },
+  { title: "Berita Pilihan", url: "#pilihan" },
+  { title: "Berita Lama", url: "news-old.html" },
+  { title: "Calendar Event", url: "/info-wilayah/event.html" },
+  { title: "Info Kelurahan", url: "/info-wilayah/kelurahan.html" },
+  { title: "Info Puskesmas", url: "/info-wilayah/puskesmas.html" },
+  { title: "Info LMK", url: "/info-wilayah/lmkkelapadua.html" },
+  { title: "Gallery Photo", url: "/gallery/gallery-photo.html" },
+  { title: "Gallery Video", url: "/gallery/gallery-video.html" },
+  { title: "Contact Us", url: "#contact" },
+];
+
 // Ambil elemen
 const searchBtn = document.getElementById("search-button");
 const searchForm = document.getElementById("searchForm");
@@ -298,14 +302,7 @@ if (searchForm && searchInput) {
   searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const keyword = searchInput.value.toLowerCase();
-
-const results = pages.filter(page =>
-    page.title.toLowerCase().includes(keyword) ||
-    page.content.some(item =>
-        item.toLowerCase().includes(keyword)
-    )
-);
+    const keyword = searchInput.value.trim();
 
     if (keyword !== "") {
       showResults(keyword) = `search.html?q=${encodeURIComponent(keyword)}`;
