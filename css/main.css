@@ -44,7 +44,6 @@ h4{
   text-align: left;    
 }
   
-
 body.dark-mode {
   background: #212121;
   color: #fff;
@@ -469,6 +468,7 @@ h6.date {
 .btn-small.grey {
   margin-top: 5px;
   border-radius: 5px;
+  background-color: #242323;
 }
 
 .card {
@@ -746,7 +746,7 @@ font-size:20px;
 
 .video-description .btn-subscribe{
   margin: 0;
-  background:#af0404 !important;
+  background:#cf0505 !important;
   color:#fff !important;
   border-radius:5px;
   padding:0 24px;
@@ -1070,7 +1070,6 @@ footer .social-links a:hover {
 
   /* Scroll CSS Start */
 .buttonToTop{
-  background:grey !important;
   position:fixed;
   bottom:20px;
   right:80px;
