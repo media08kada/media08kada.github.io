@@ -384,12 +384,12 @@ background-color: transparent;
 
 /* Button Small */
 .btn-small.grey {
-  background-color: #2e7d32; 
+  background-color: grey; 
 }
 
 /* Card */
 .card.grey.darken-1 {
-  background-color: #2e7d32; 
+  background-color: grey; 
 }
 
 body.dark-mode .card.grey.darken-1 {
@@ -415,7 +415,7 @@ body.dark-mode .btn-floating.btn-medium.grey.darken-2:active {
 
 /* Button Default */
 .waves-effect.btn.grey {
-  background-color: #2e7d32; 
+  background-color: grey; 
 }
 
 body.dark-mode .waves-effect.btn.grey {
