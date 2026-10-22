@@ -490,6 +490,80 @@ h6.date {
     color: #fff;
 }
 
+/* Berita + Flyer */
+.berita-flex{
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+}
+
+/* Kolom berita */
+.berita-list{
+  flex:1;
+  min-width:0;
+}
+
+/* Flyer */
+.flyer-box{
+  width:260px;
+  flex-shrink:0;
+  position:sticky;
+  top:80px;
+  margin-top: 25px;
+}
+
+.flyer-box img{
+  width:100%;
+  display:block;
+  border-radius:8px;
+  background:#fff;
+  padding:5px;
+}
+
+/* Desktop */
+@media only screen and (min-width:993px){
+
+  .flyer-box{
+    width:260px;
+    flex-shrink:0;
+    position:sticky;
+    top:80px;
+    margin-top:25px;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width:992px){
+
+  .flyer-box{
+    width:220px;
+    top:70px;
+  }
+
+}
+
+/* Mobile */
+@media only screen and (max-width:600px){
+
+  .berita-flex{
+    display:block;
+  }
+
+  .flyer-box{
+    width:100%;
+    position:relative;
+    top:auto;
+    margin-top:20px;
+  }
+
+  .flyer-box img{
+    max-width:320px;
+    margin:0 auto;
+  }
+
+}
+/* Gambar flyer End */
+
 /* Section Pilihan */
 #pilihan .modal-content p {
   font-size: 15px;
@@ -570,6 +644,10 @@ h6.date {
     margin-bottom: 20px;
 }
 
+#gallery-btn{
+  margin-bottom: 25px;
+}
+
 #gallery {
     margin-bottom: 15px;
     margin-bottom: 0 !important;
@@ -595,13 +673,13 @@ margin-bottom:30px;
   overflow:hidden; 
 }
 
-.preview-container *frame{
+.preview-container .frame{
   width:100%;
   height:100%;
   border:none;
 }
 
-/* Gallery */
+/* Gallery Video */
 .video-gallery{
   width:90%;
   max-width:1000px;
@@ -650,30 +728,32 @@ font-size:20px;
 
 /* Deskripsi */
 .video-description{
-text-align:center;
-margin-top:25px;
-}
-
-.video-description .btn-subscribe{
-    background:#af0404 !important;
-    color:#fff !important;
-    border-radius:5px;
-    padding:0 24px;
-    font-weight:600;
-    text-transform:none;
-    box-shadow:0 4px 12px rgba(255,0,0,.3);
-    transition:all .3s ease;
-}
-
-.video-description .btn-subscribe:hover{
-    background:#cc0000 !important;
-    box-shadow:0 6px 16px rgba(255,0,0,.4);
-    transform:translateY(-2px);
+  width:100%;
+  text-align:center;
+  margin:15px auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 
 .video-description p{
-margin-bottom:15px;
-text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:2px
+}
+
+.video-description .btn-subscribe{
+  margin: 0;
+  background:#af0404 !important;
+  color:#fff !important;
+  border-radius:5px;
+  padding:0 24px;
+  font-weight:600;
+  text-transform:none;
+  box-shadow:0 4px 12px rgba(255,0,0,.3);
+  transition:all .3s ease;
 }
 
 /* Tablet */
@@ -698,7 +778,7 @@ grid-template-columns:repeat(2,1fr);
  font-size:12px;
  } 
 }
-/* Gallery End */
+/* Video End */
 
 /* Floating Button Start */
 .fab-inside-slider {
