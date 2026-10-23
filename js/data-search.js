@@ -89,7 +89,7 @@ const beritaPages = [
   },
 ];
 
-// DATA MENU DAN HALAMAN
+// Data Menu
 const pages = [
   // Beranda
   {
