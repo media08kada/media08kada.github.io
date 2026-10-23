@@ -12,11 +12,10 @@ const beritaPages = [
 
   {
     keyword: [
-      "posyandu siklus hidup melati",
+      "Posyandu Siklus Hidup Melati RW 08 Tingkatkan Layanan Kesehatan Berbasis Teknologi",
       "posyandu",
-      "melati",
-      "balita",
-      "kesehatan warga",
+      "posyandu siklus hidup RW 08",
+      "kesehatan",
     ],
     url: "#berita-2",
   },
@@ -53,8 +52,40 @@ const beritaPages = [
   },
 
   {
-    keyword: ["lmk kelapa dua", "musyawarah", "rapat warga"],
+    keyword: [
+      "Maulid Nabi di Masjid Jami At-Taqwa Kelapa Dua Berlangsung Khidmat",
+      "masjid at taqwa",
+      "peringatan maulid nabi",
+      "kegiatan keagamaan",
+      "KH. Fakhruddin Al Bantani, S.H.I., M.Pd",
+      "Rasulullah SAW",
+      "ukhuwah Islamiyah",
+    ],
     url: "#berita-4",
+  },
+
+  {
+    keyword: [
+      "gerebek sampah",
+      "Gulkarmat Bangun Hidran Mandiri di RW 08 Kelapa Dua",
+      "Kolaborasi Ketua RT Perkuat Layanan Posyandu Remaja",
+      "Anggota DPRD DKI Jakarta Gelar Reses Di RW 08 Kelapa Dua",
+      "Koordinasi Wilayah (Rakorwil) Kelurahan Kelapa Dua",
+      "Sosialisasi Teknologi Wolbachia Pengendalian DBD",
+      "Penanaman Pohon di Bantaran Kali Pesanggrahan",
+      "Posyandu Siklus Hidup Melati RW 08 Gelar Pelayanan Kesehatan",
+    ],
+    url: "#wilayah",
+  },
+  {
+    keyword: [
+      "kelurahan kelapa dua",
+      "pustu kelapa dua",
+      "lmk kelapa dua",
+      "musyawarah",
+      "rapat warga",
+    ],
+    url: "#pilihan",
   },
 ];
 
