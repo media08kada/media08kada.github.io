@@ -1,7 +1,4 @@
-// =========================
 // DATA BERITA
-// =========================
-
 const beritaPages = [
   {
     keyword: [
@@ -61,10 +58,7 @@ const beritaPages = [
   },
 ];
 
-// =========================
 // DATA MENU DAN HALAMAN
-// =========================
-
 const pages = [
   // Beranda
   {
