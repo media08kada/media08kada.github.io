@@ -84,12 +84,15 @@ const beritaPages = [
       "lmk kelapa dua",
       "musyawarah",
       "rapat warga",
+      "Maulid Nabi Muhammad SAW di Mushollah Al Hidayah",
+      "Cek Kesehatan Gratis dan Skrining Tuberkulosis di RW 08 Kelapa Dua",
+      "Mural Hadirkan Wajah Baru Kawasan Kelapa Dua",
     ],
     url: "#pilihan",
   },
 ];
 
-// Data Menu
+// Data Menu dan Halaman
 const pages = [
   // Beranda
   {
