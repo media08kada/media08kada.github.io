@@ -22,36 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-  // Navbar Javascript 
-  const searchBtn =
-  document.querySelector('#search-button');
-  const searchBtnMobile =
-  document.querySelector('#search-button-mobile');
-  const searchContainer =
-  document.querySelector('.search-container');
-  const closeBtn =
-  document.querySelector('#close-search');
-  if(searchBtn){
-  searchBtn.onclick = function(e){
-  e.preventDefault();
-  searchContainer.classList.toggle('active');
-  };
-  }
-  if(searchBtnMobile){
-  searchBtnMobile.onclick = function(e){
-  e.preventDefault();
-  searchContainer.classList.toggle('active');
-  };
-  }
-  closeBtn.onclick = function(){
-  searchContainer.classList.remove('active');
-  };
-  if (closeBtn) {
-    closeBtn.onclick = function () {
-      searchContainer.classList.remove("active");
-    };
-  }
-
   // Slider
   const slider = document.querySelectorAll(".slider");
   M.Slider.init(slider, {
@@ -96,69 +66,6 @@ document.addEventListener("DOMContentLoaded", function () { //pesan 95
   M.Modal.init(elems);
 });
 
-// My Javascript Popup Screen Iklan //
-const popupScreen = document.querySelector(".popup-screen");
-const popupBox = document.querySelector(".popup-box");
-const closeBtn = document.querySelector(".close-btn");
-const popupAudio = document.querySelector(".popup-audio");
-
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    popupScreen.classList.add("active"); // Pesan 108
-    if (popupAudio) popupAudio.play(); 
-  }, 1000);
-});
-
-closeBtn.addEventListener("click", () => {
-  popupScreen.classList.remove("active");
-  document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60; //pesan 115
-  const WebsiteCookie = document.cookie.indexOf("WebsiteName");
-
-  if (WebsiteCookie !== -1) {
-    popupScreen.style.display = "none";
-  } else {
-    popupScreen.style.display = "flex";
-  }
-});
-
-// buka popup
-const openSearchBtn = document.querySelector('#open-search');
-const searchPopup = document.querySelector('#search-popup');
-
-if (openSearchBtn && searchPopup) {
-  openSearchBtn.addEventListener('click', () => {
-    searchPopup.classList.add('active');
-  });
-}
-
-// Load file modals.html ke dalam index
-fetch("modals.html")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("HTTP error " + response.status);
-    }
-    return response.text();
-  })
-  .then((data) => {
-    const container = document.getElementById("modal-container");
-    if (container) {
-      container.innerHTML = data;
-
-      // Inisialisasi Materialize modal setelah konten dimuat
-      const elems = document.querySelectorAll(".modal");
-      M.Modal.init(elems, {
-        // opsi tambahan jika perlu
-        dismissible: true,
-        inDuration: 250,
-        outDuration: 200,
-      });
-    } else {
-      console.error("Elemen #modal-container tidak ditemukan");
-    }
-  })
-  .catch((error) => console.error("Gagal memuat modals.html:", error));
-
-
 // Scroll ke atas
 function scrollKeatas() {
   window.scrollTo({
@@ -168,25 +75,20 @@ function scrollKeatas() {
 }
 
 // Load file modals.html ke dalam index
-fetch("modals.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("modal-container").innerHTML = data;
+document.addEventListener("DOMContentLoaded", function () {
+  // Inisialisasi Modal
+  const modalElems = document.querySelectorAll(".modal");
+  M.Modal.init(modalElems);
 
-    // Inisialisasi Materialize modal setelah dimuat
-    const elems = document.querySelectorAll(".modal");
-    M.Modal.init(elems);
-  })
-  .catch((error) => console.error("Gagal memuat modals.html:", error));
-
-
-  var sliderElems = document.querySelectorAll(".slider");
+  // Inisialisasi Slider
+  const sliderElems = document.querySelectorAll(".slider");
   M.Slider.init(sliderElems, {
     indicators: false,
     height: 500,
     duration: 500,
-    interval: 3000
+    interval: 3000,
   });
+});
 
 // Pemberitahuan pesan telah terkirim
   function showToast() {
@@ -263,94 +165,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Javascript Search Start
-// Data halaman
-const pages = [
-  { title: "Home", url: "index.html" },
-  { title: "Berita Utama", url: "#berita" },
-  { title: "Berita Wilayah", url: "#wilayah" },
-  { title: "Berita Pilihan", url: "#pilihan" },
-  { title: "Berita Lama", url: "news-old.html" },
-  { title: "Calendar Event", url: "/info-wilayah/event.html" },
-  { title: "Info Kelurahan", url: "/info-wilayah/kelurahan.html" },
-  { title: "Info Puskesmas", url: "/info-wilayah/puskesmas.html" },
-  { title: "Info LMK", url: "/info-wilayah/lmkkelapadua.html" },
-  { title: "Gallery Photo", url: "/gallery/gallery-photo.html" },
-  { title: "Gallery Video", url: "/gallery/gallery-video.html" },
-  { title: "Contact Us", url: "#contact" },
-];
 
-// Ambil elemen
-const searchBtn = document.getElementById("search-button");
-const searchForm = document.getElementById("searchForm");
-const searchInput = document.getElementById("searchInput");
-const resultsContainer = document.getElementById("results");
-
-// Toggle Search Form
-if (searchBtn && searchForm) {
-  searchBtn.addEventListener("click", () => {
-    searchForm.classList.toggle("active");
-
-    if (searchForm.classList.contains("active")) {
-      searchInput.focus();
-    }
-  });
-}
-
-// Search Form Submit
-if (searchForm && searchInput) {
-  searchForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const keyword = searchInput.value.trim();
-
-    if (keyword !== "") {
-      showResults(keyword) = `search.html?q=${encodeURIComponent(keyword)}`;
-    }
-  });
-}
-
-// Ambil Query dari URL
-const params = new URLSearchParams(window.location.search);
-const q = params.get("q");
-const query = q ? q.toLowerCase().trim() : "";
-
-// Fungsi Pencarian
-function searchPages(keyword) {
-  if (!keyword) return [];
-
-  return pages.filter((page) => page.title.toLowerCase().includes(keyword));
-}
-
-// Tampilan Pencarian
-function renderResults() {
-  // Cegah error jika bukan halaman search.html
-  if (!resultsContainer) return;
-
-  resultsContainer.innerHTML = "";
-
-  const results = searchPages(query);
-
-  if (results.length > 0) {
-    results.forEach((page) => {
-      const item = document.createElement("a");
-
-      item.href = page.url;
-      item.className = "collection-item";
-      item.textContent = page.title;
-
-      resultsContainer.appendChild(item);
-    });
-  } else {
-    resultsContainer.innerHTML = query
-      ? `<p class="red-text center-align">
-           Tidak ada hasil untuk "<strong>${q}</strong>"
-         </p>`
-      : `<p class="grey-text center-align">
-           Masukkan kata kunci untuk mencari
-         </p>`;
-  }
-}
-
-// Jalankan Pencarian
-renderResults();
