@@ -41,7 +41,6 @@ z-index: 5;
 display: flex;
 align-items: center;
 justify-content: center;
-
 width: 42px;
 height: 42px;
 
@@ -73,7 +72,7 @@ transform: translateY(3px);
 background: rgba(0, 0, 0, 0.9);
 }
 
-/* CARD CONTENT */
+/* Card Content */
 #pilihan .card-content {
 text-align: center;
 padding: 14px;
@@ -107,7 +106,7 @@ font-size: 24px;
 }
 }
 
-/* MOBILE */
+/* Mobile */
 @media (max-width: 600px) {
 
 #pilihan .card-icons {
@@ -700,6 +699,13 @@ margin-top: 25px;
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-clamp: 4;
+    
+
+@media (max-width: 600px) {
+  .berita-preview .card-content h5 {
+    color: #b6895b !important;
+  }
+}
 
     .berita-preview .card-action a {
     font-size: 14px;
