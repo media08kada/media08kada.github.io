@@ -1,4 +1,15 @@
 /* Card CSS Start Start */
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #212121;
+}
+
 #pilihan .card {
 overflow: hidden;
 }
@@ -69,9 +80,8 @@ padding: 14px;
 }
 
 #pilihan .card-content p {
-margin: 0;
-font-weight: 600;
-font-size: 16px;
+  margin: 0;
+  font-weight: 300;
 }
 
 /* Tablet */
@@ -286,10 +296,6 @@ body.dark-mode .modal .modal-footer .btn-flat {
 
 
 /* Iklan css Start */
-html{
- font-family:'Poppins',sans-serif;
-}
-
 .container-iklan {
   display: flex;
   flex-direction: column;
@@ -356,9 +362,30 @@ html{
 }
 
 #berita p,
-#card-content p {
+#card-content p,
+#isi-berita-1,
+#isi-berita-2,
+#isi-berita-3,
+#isi-berita-4,
+#isi-berita-1 p,
+#isi-berita-2 p,
+#isi-berita-3 p,
+#isi-berita-4 p {
   text-align: justify;
   text-justify: inter-word;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 400 !important;
+  color: #212121 !important;
+  letter-spacing: 0.1px;
+  margin-bottom: 18px;
+}
+
+#isi-berita-1,
+#isi-berita-2,
+#isi-berita-3, 
+#isi-berita-4 {
+  margin-top: 0;
 }
 
 /* Font Berita */
@@ -369,16 +396,9 @@ html{
   font-weight: 300;
 }
 
-#berita h6 {
-  font-weight: 300;
-}
-
 #berita h5 {
-  font-size: 22px;      
-  font-weight: 600;    
-  line-height: 1.5;     
-  margin: 5px 0 8px; 
-  text-align: left;    
+  text-align: left;
+  margin: 5px 0 8px;
 }
 
 #tanggal-berita-1,
@@ -388,21 +408,22 @@ html{
   margin-bottom: 30px; /* jarak ke paragraf */
 }
 
-#isi-berita-1,
-#isi-berita-2,
-#isi-berita-3, 
-#isi-berita-4 {
-  margin-top: 0;
+#berita p,
+#isi-berita-1 p,
+#isi-berita-2 p,
+#isi-berita-3 p,
+#isi-berita-4 p {
+  font-weight: 300 !important;
+  color: #212121 !important;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
 }
 
 @media (max-width:600px){
   #berita h5 {
-  font-size: 18px;
-  font-weight: 400;    
-  line-height: 1.5;     
-  margin: 5px 0 8px; 
-  color: #000;
-  text-align: left; 
+    font-size: 18px;
+    color: #000;
   }
 
   #tanggal-berita-1,
@@ -411,18 +432,15 @@ html{
   #tanggal-berita-4 {
   margin-bottom: 20px; /* jarak ke paragraf */
 }
-}
 
-#berita p {
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: justify;
-    text-indent: 30px;
-    letter-spacing: 0.2px;
-    margin: 0 0 16px;
-    margin-bottom: 20px;
-    font-weight: 300;
-    color: #333;
+  #berita p,
+  #isi-berita-1 p,
+  #isi-berita-2 p,
+  #isi-berita-3 p,
+  #isi-berita-4 p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 }
 
 .section h4 {
@@ -495,7 +513,6 @@ margin-top: 25px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
-  font-weight: 100;
 }
 
 .berita-preview h6.date {
@@ -530,7 +547,6 @@ margin-top: 25px;
     line-height: 1.4;
   }
 }
-
 
 .berita-preview .card-action {
   padding: 10px 15px;
@@ -604,7 +620,7 @@ margin-top: 25px;
   color: white;
 }
 
-article-like {
+.article-like {
   text-align: center;
   margin: 10px 0;
 }
@@ -715,17 +731,6 @@ article-like {
   }
 
   /* Isi berita */
-    #berita p {
-    font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
-    margin: 0 0 18px;
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-  }
-
   .berita-preview .card-image {
     width: 100px;
     min-width: 100px;

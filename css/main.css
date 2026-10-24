@@ -4,17 +4,12 @@
   --bg: #242323;
 }
 
-html {
-  font-family: 'poppins', sans-serif;
-}
-
 body {
   min-height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
   background: #fff;
   color: #212121;
 }
@@ -53,38 +48,115 @@ main {
   flex: 1;
 }
 
-/* Font Section Start */
-.text p {
-font-size: 16px;
-font-weight: 400;
-line-height: 1.9;
-text-align: justify;
-text-indent: 30px;
-margin-bottom: 20px;
-color: #1b1b1b;  
-}
- 
-.collection-item {
-  overflow: hidden;
+/* Font Section Global Start */
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
-.collection-item img {
-  width: 100px;
-  height: 100px;
-  margin: 8px 10px 0 0;
-  float: left;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: #212121;
 }
-  
-.collection-item h6 {
-  text-align: left !important;
-  line-height: 1.5;
+
+/* Heading Global */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 0;
+  letter-spacing: 0;
+  color: inherit;
+}
+
+/* H4 */
+h4 {
+  font-size: 2rem;
   font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* H5 */
+h5 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* H6 */
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+/* Link */
+a,
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+@media (max-width: 768px){
+
+  h4 {
+    font-size: 1.8rem;
  }
 
-.collection-item p {
-  margin: 0;
-  line-height: 1.9;
- }
+  h5 {
+    font-size: 18px;
+  }
+  
+ 
+  h6 {
+    font-size: 15px;
+  }
+
+ p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
  /* Font Section End */
 
  section,
@@ -122,7 +194,7 @@ img:hover{
 .sidenav,
 .dropdown-content a {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.5px;
   transition: 0.3s;
 }
@@ -377,8 +449,8 @@ h6.date {
 #preview-judul-berita-3,
 #preview-judul-berita-4 {
   font-size: 22px;      
-  font-weight: 300 !important;    
-  line-height: 1.2;     
+  font-weight: inherit;    
+  line-height: 1.5;     
   margin-top: 0;
   margin-bottom: 10px; 
   color: #212121;
@@ -391,7 +463,7 @@ h6.date {
   #preview-judul-berita-3,
   #preview-judul-berita-4 {
     font-size: 18px;
-    line-height: 0.5;
+    line-height: 1.4;
   }
 
   .berita-slider,
@@ -489,11 +561,34 @@ h6.date {
     color: #fff;
 }
 
-/* Berita + Flyer */
-.berita-flex{
-  display:flex;
-  align-items:flex-start;
-  gap:20px;
+.collection-item img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  margin: 5px 10px 0 0;
+  float: left;
+}
+
+.collection .collection-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Item Berita Pilihan */
+.collection .collection-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  .collection-item.item-hidden {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .collection-item.item-hidden:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 /* Kolom berita */
@@ -539,7 +634,6 @@ h6.date {
     width:220px;
     top:70px;
   }
-
 }
 
 /* Mobile */
@@ -1053,9 +1147,7 @@ footer p {
   }
 
   .collection-item h6 {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+    text-align: left !important
   }
 
   .collection-item p {
