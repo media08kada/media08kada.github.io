@@ -62,8 +62,7 @@ body {
   color: #212121;
 }
 
-/* Heading */
-h1,
+h1, 
 h2,
 h3,
 h4,
@@ -75,7 +74,6 @@ h6 {
   color: inherit;
 }
 
-/* H4 */
 h4 {
   font-size: 2rem;
   font-weight: 300;
@@ -83,7 +81,6 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* H5 */
 h5 {
   font-size: 22px;
   font-weight: 300;
@@ -91,7 +88,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-/* H6 */
 h6 {
   font-size: 16px;
   font-weight: 300;
@@ -100,7 +96,6 @@ h6 {
 }
 
 /* Paragraf */
-
 p {
   font-size: 16px;
   font-weight: 400;
@@ -109,7 +104,6 @@ p {
 }
 
 /* Form Link & Elemen */
-
 a,
 button,
 input,
@@ -119,17 +113,11 @@ select {
 }
 
 /* Tablet */
-
 @media (max-width: 768px) {
-
-  /* Judul Section Berita */
-
   #berita h4 {
     font-size: 2.3rem;
     font-weight: 700;
   }
-
-  /* Heading */
 
   h4 {
     font-size: 1.8rem;
@@ -144,14 +132,12 @@ select {
   }
 
   /* Paragraph */
-
   p {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.5;
   }
 
   /* Judul Modal */
-
   #preview-judul-pilihan-3 {
     color: #b6895b !important;
     font-size: 1.2rem;
@@ -161,9 +147,6 @@ select {
 
 /* Mobile */
 @media (max-width: 480px) {
-
-  /* Heading */
-
   h4 {
     font-size: 1.6rem;
   }
@@ -177,7 +160,6 @@ select {
   }
 
   /* Paragraph */
-
   p {
     font-size: 14px;
     line-height: 1.6;
@@ -185,7 +167,6 @@ select {
 }
 
 /* Modal Start */
-
 .modal .modal-content h5 {
   font-weight: 400;
   color: #b6895b !important;
@@ -194,8 +175,6 @@ select {
 .modal .modal-content p {
   line-height: 0.8;
 }
-
-
 /* Modal End */
 
  /* Font Section Global End */
