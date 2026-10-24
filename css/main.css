@@ -561,29 +561,52 @@ h6.date {
     color: #fff;
 }
 
+/* Item Berita Pilihan */
+.collection-item h6 {
+  margin: 0 0 10px;
+  line-height: 1.45;
+}
+
+.collection-item .btn-small {
+  margin-top: 4px;
+}
+
 .collection-item img {
   width: 85px;
   height: 85px;
   object-fit: cover;
-  margin: 5px 10px 0 0;
+  margin: 0px 12px 0 0;
   float: left;
 }
 
 .collection .collection-item {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e0e0e0;
+  overflow: hidden;
 }
 
-/* Item Berita Pilihan */
 .collection .collection-item {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
+.collection .collection-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.collection-item:nth-child(6),
+.collection-item:nth-child(7),
+.collection-item:nth-child(8) {
+  margin-top: -30px;
+}
+
 @media (min-width: 1200px) {
   .collection-item.item-hidden {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .collection-item.item-hidden:not(:last-child) {
@@ -603,8 +626,7 @@ h6.date {
   flex-shrink:0;
   position:sticky;
   top:80px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px auto;
 }
 
 .flyer-box img{
