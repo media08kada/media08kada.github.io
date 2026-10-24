@@ -661,12 +661,23 @@ h6.date {
 /* Desktop */
 @media only screen and (min-width:993px){
 
+  .berita-flex{
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
+  }
+
+  .berita-content{
+    flex:1;
+    min-width:0;
+  }
+
   .flyer-box{
     width:260px;
     flex-shrink:0;
     position:sticky;
     top:80px;
-    margin-top:25px;
+    margin-top: 30px;
   }
 }
 
@@ -1197,6 +1208,21 @@ footer p {
     font-size: 14px;
     line-height: 1.5;
   }
+}
+
+.collection-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.collection-item h6 {
+    text-align: left;
+    margin: 0 0 8px 0;
+}
+
+.collection-item .left-align {
+    text-align: left;
 }
 
   @media only screen and (max-width: 600px) {
