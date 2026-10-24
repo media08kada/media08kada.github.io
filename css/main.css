@@ -176,7 +176,6 @@ select {
   line-height: 0.8;
 }
 /* Modal End */
-
  /* Font Section Global End */
 
  section,
@@ -696,7 +695,6 @@ h6.date {
     max-width:320px;
     margin:0 auto;
   }
-
 }
 /* Gambar flyer End */
 
@@ -1274,7 +1272,6 @@ footer p {
 
 
 /* Search CSS Start */
-
 .search-form {
   position: absolute;
   top: 100%;
@@ -1360,7 +1357,6 @@ footer p {
 }
 
 /* Mobile */
-
 @media (max-width: 768px) {
 
   .navbar {
@@ -1403,5 +1399,4 @@ footer p {
     font-size: 14px;
   }
 }
-
 /* Search CSS End */
