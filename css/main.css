@@ -575,34 +575,17 @@ h6.date {
     color: #fff;
 }
 
-/* Item Berita Pilihan */
-.collection-item h6 {
-  margin: 0 0 10px;
-  line-height: 1.45;
-}
-
-.collection-item .btn-small {
-  margin-top: 4px;
-}
-
-.collection-item img {
-  width: 85px;
-  height: 85px;
-  object-fit: cover;
-  margin: 0px 12px 0 0;
-  float: left;
+/* Item Berita Wilayah */
+.collection {
+  border: none;
+  margin: 0;
 }
 
 .collection .collection-item {
-  padding-top: 12px;
-  padding-bottom: 22px;
+  padding: 18px 0;
   border-bottom: 1px solid #e0e0e0;
-  overflow: hidden;
-}
-
-.collection .collection-item {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  overflow: visible;
+  background: transparent;
 }
 
 .collection .collection-item::after {
@@ -611,22 +594,101 @@ h6.date {
   clear: both;
 }
 
-.collection-item:nth-child(6),
-.collection-item:nth-child(7),
-.collection-item:nth-child(8) {
-  margin-top: -30px;
+/* Thumbnail */
+.collection-item img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  margin: 0 12px 0 0;
+  float: left;
 }
 
+/* Judul Berita */
+.collection-item h6 {
+  margin: 0 0 10px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+/* Tombol */
+.collection-item .btn-small {
+  margin-top: 6px;
+}
+
+/* Item Hidden (5-8) */
+.collection-item.item-hidden {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+/* Jarak antar item 5-8 seragam */
+.collection-item.item-hidden + .collection-item.item-hidden {
+  margin-top: 12px;
+}
+
+/* Cegah thumbnail ikut membesar */
+.collection-item img {
+  transform: none !important;
+}
+
+/* Pertahankan ukuran lingkaran */
+.collection-item img.circle {
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Desktop */
 @media (min-width: 1200px) {
+
+  .collection .collection-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .collection-item.item-hidden {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .collection-item.item-hidden:not(:last-child) {
-    margin-bottom: 30px;
+  .collection-item.item-hidden + .collection-item.item-hidden {
+    margin-top: 15px;
+  }
+
+  .collection-item img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .collection-item h6 {
+    line-height: 1.5;
   }
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .collection .collection-item {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .collection-item img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+
+  .collection-item h6 {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .collection-item .btn-small {
+    margin-top: 4px;
+  }
+}
+/* Berita Wilayah End */
 
 /* Kolom berita */
 .berita-list{
