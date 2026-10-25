@@ -24,6 +24,7 @@ body.dark-mode a {
   color: #fff;
 }
 
+
 body.dark nav {
   background-color: #212121;
   color: #fff;
@@ -73,6 +74,13 @@ body.dark-mode #hubungi-kami .collection {
 body.dark-mode p {
     color: #fff !important;
     font-weight: 300;
+}
+
+/* Berita Utama - Dark Mode */
+body.dark-mode #berita h5,
+body.dark-mode #berita h6,
+body.dark-mode #berita p {
+    color: #fff !important;
 }
 
 /* Card */
