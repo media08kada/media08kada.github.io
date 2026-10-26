@@ -849,7 +849,6 @@ grid-template-columns:repeat(2,1fr);
   bottom: 20px;
   z-index: 999;
   border-radius: 5%;
-
 }
 
 .btn-floating {
@@ -868,13 +867,25 @@ grid-template-columns:repeat(2,1fr);
   right: 20px;
 }
 
-.fab-inside-slider .fixed-action-btn ul{
-    transform:none !important;
+.fab-inside-slider ul {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.fab-inside-slider ul li{
-    margin:8px 0 !important;
+.fab-inside-slider ul li {
+    list-style: none !important;
+    margin: 8px 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
 }
+
+.fab-inside-slider ul li::before,
+.fab-inside-slider ul li::after {
+    display: none !important;
+    content: none !important;
+}
+
 
 @media (prefers-color-scheme: dark) {
   .buttonToTop i {
