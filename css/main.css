@@ -50,18 +50,68 @@ main {
 }
 
 /* Font Section Start */
+/* Judul Berita */
+#berita h5 {
+  text-align: left;
+  margin: 5px 0 8px;
+  line-height: 1.5;
+}
+
 h6 {
   font-weight: 300;
 }
 
 .text p {
   font-size: 16px;
-    line-height: 1.9;
-    text-align: justify;
-    text-indent: 30px;
-    margin-bottom: 20px;
-    color: #333;
+  line-height: 1.9;
+  text-align: justify;
+  text-indent: 30px;
+  margin-bottom: 20px;
+  color: #333;
+  margin: 0;
+  line-height: 1.9;
   }
+
+#tanggal-berita-1,
+#tanggal-berita-2,
+#tanggal-berita-3,
+#tanggal-berita-4 {
+  margin-bottom: 30px; /* jarak ke paragraf */
+}
+
+#berita p,
+#isi-berita-1 p,
+#isi-berita-2 p,
+#isi-berita-3 p,
+#isi-berita-4 p {
+  font-weight: 300 !important;
+  color: #333 !important;
+  text-align: justify;
+  margin-top: 0;
+}
+
+@media (max-width:600px){
+  #berita h5 {
+    font-size: 18px;
+    color: #000;
+  }
+
+  #tanggal-berita-1,
+  #tanggal-berita-2,
+  #tanggal-berita-3,
+  #tanggal-berita-4 {
+  margin-bottom: 20px; /* jarak ke paragraf */
+}
+
+  #berita p,
+  #isi-berita-1 p,
+  #isi-berita-2 p,
+  #isi-berita-3 p,
+  #isi-berita-4 p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
   
   .col.s12.m8.light h5 {
     margin: 5px 0 8px;
