@@ -23,13 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   // Slider
-  const slider = document.querySelectorAll(".slider");
-  M.Slider.init(slider, {
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".slider");
+
+  M.Slider.init(sliders, {
     indicators: false,
     height: 400,
     transition: 600,
     interval: 3000,
   });
+});
 
   // Slider Berita
 document.addEventListener("DOMContentLoaded", function () {
