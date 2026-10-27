@@ -37,7 +37,7 @@ const sumberBeritaWilayah = [
     nomor: 3,
   },
   {
-    url: "berita-wilayah/anggota-dprd-dki-jakarta-gelar-reses.html",
+    url: "berita-wilayah/pengaspalan-jalan-pasca-pemasangan-pipa.html",
     nomor: 4,
   },
   {
