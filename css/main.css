@@ -158,7 +158,7 @@ img:hover{
   box-shadow: 0 3px 15px rgba(0,0,0,0.08);
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .navbar ul li a {
