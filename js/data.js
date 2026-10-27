@@ -47,50 +47,55 @@ function loadPreviewBerita(fileBerita, nomor) {
     });
 }
 
-
 /* BERITA WILAYAH */
+
 document.addEventListener("DOMContentLoaded", () => {
+
   sumberBeritaWilayah.forEach((berita) => {
+
     fetch(berita.url)
+
       .then((response) => {
+
         if (!response.ok) {
           throw new Error(`Gagal memuat ${berita.url}`);
         }
 
         return response.text();
       })
+
       .then((html) => {
+
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, "text/html");
 
-        const img = doc.querySelector(`#img-wilayah-${berita.nomor}`);
-
-        const judul = doc.querySelector(`#judul-wilayah-${berita.nomor}`);
-
-        const isi = doc.querySelector(`#isi-wilayah-${berita.nomor}`);
-
-        const targetImg = document.getElementById(
-          `preview-img-${berita.nomor}`,
+        // Judul
+        const judul = doc.querySelector(
+          `#judul-wilayah-${berita.nomor}`
         );
 
-        if (img && targetImg) {
-          targetImg.src = img.src;
-          targetImg.alt = judul ? judul.textContent.trim() : "";
-        }
+        // Isi
+        const isi = doc.querySelector(
+          `#isi-wilayah-${berita.nomor}`
+        );
 
+        // Target Judul
         const targetJudul = document.getElementById(
-          `preview-judul-${berita.nomor}`,
+          `preview-judul-${berita.nomor}`
         );
 
         if (judul && targetJudul) {
-          targetJudul.textContent = judul.textContent.trim();
+          targetJudul.textContent =
+            judul.textContent.trim();
         }
 
+        // Target Ringkasan
         const targetIsi = document.getElementById(
-          `preview-isi-${berita.nomor}`,
+          `preview-isi-${berita.nomor}`
         );
 
         if (isi && targetIsi) {
+
           const previewText =
             isi.textContent
               .replace(/\s+/g, " ")
@@ -102,18 +107,26 @@ document.addEventListener("DOMContentLoaded", () => {
           targetIsi.textContent = previewText;
         }
 
+        // Target Link
         const targetLink = document.getElementById(
-          `preview-link-${berita.nomor}`,
+          `preview-link-${berita.nomor}`
         );
 
         if (targetLink) {
           targetLink.href = berita.url;
         }
+
       })
+
       .catch((err) => {
-        console.error(`Gagal memuat ${berita.url}:`, err);
+        console.error(
+          `Gagal memuat ${berita.url}:`,
+          err
+        );
       });
+
   });
+
 });
 
 
