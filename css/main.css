@@ -35,7 +35,7 @@ img{
   transition: .4s;
 }
 
-h4{
+h2{
   font-weight:400;
   margin-bottom:40px;
 }
@@ -328,7 +328,7 @@ img:hover{
   font-weight: 300;
 }
 
-.contact h4,
+.contact h2,
 .slider h1,
 .slider h2,
 .slider h5,
@@ -375,7 +375,7 @@ img:hover{
   padding-top: 10px !important;
 }
 
-#berita h4{
+#berita h2{
     margin-top: -10px !important;
     margin-bottom: 15px !important;
 }
@@ -505,7 +505,7 @@ img:hover{
   vertical-align: middle;
 }
 
-.card-content h4 {
+.card-content h2 {
     color: #fff;
 }
 
@@ -734,7 +734,7 @@ img:hover{
   transition:.4s;
 }
 
-.gallery h4,
+.gallery h2,
 .video {
   margin-bottom: 20px;
 }
@@ -753,7 +753,7 @@ img:hover{
     margin-bottom: 0 !important;
 }
 
-.gallery h4 {
+.gallery h2 {
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -774,7 +774,7 @@ padding: 70px 0;
 text-align: center;
 }
 
-#video h4{
+#video h2{
 margin-bottom: 0;
 }
 
@@ -962,15 +962,22 @@ grid-template-columns:repeat(2,1fr);
   text-align: center;
 }
 
-#wilayah h4,
-#Pilihan h4,
-#gallery h4,
-#berita-wilayah {
-  margin-top: 20px !important;
-  margin-bottom: 15px !important;
+#berita h2,
+#berita-wilayah h2,
+#pilihan h2,
+#info-wilayah h2,
+#gallery h2,
+#video h2,
+#contact h2 {
+  margin-top: 20px;
+  margin-bottom: 15px ;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+  text-align: center;
 }
 
-#wilayah h4 {
+#wilayah h2 {
     clear: both;
 }
 
@@ -1026,16 +1033,7 @@ grid-template-columns:repeat(2,1fr);
   z-index: 2;
 }
 
-#contact h4 {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.3;
-    text-align: center;
-}
-
-body.dark-mode #contact h4{
+body.dark-mode #contact h2{
     color: #000 !important;
 }
 
@@ -1257,7 +1255,7 @@ footer h6 a {
   padding-top: 0 !important;
 }
 
-#video h4 {
+#video h2 {
   margin-top: 0;
   margin-bottom: 6px;
 }
