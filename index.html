@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <!-- Metadata -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
+  <meta name="description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
 
-<meta name="author" content="MediaKada">
+  <meta name="author" content="MediaKada">
 
-<!-- SEO & Verification -->
-<meta name="robots" content="index, follow">
-<meta name="google-site-verification" content="QwSdMazhBKysAXAxVwftI2Sm0OqIzOptOeUvVji3lsQ">
+  <!-- SEO & Verification -->
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="QwSdMazhBKysAXAxVwftI2Sm0OqIzOptOeUvVji3lsQ">
 
-<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
-<meta name="theme-color" content="#424242">
+  <!-- Browser Theme -->
+  <meta name="theme-color" content="#424242">
 
-<link rel="canonical" href="https://mediakelapadua.web.id/">
+  <link rel="canonical" 
+  href="https://mediakelapadua.web.id/">
+  <link rel="preload" 
+  as="image" 
+  href="slider/img/kbj.jpg" fetchpriority="high">
 
-<meta property="og:site_name" content="Media Kelapa Dua">
-<meta property="og:locale" content="id_ID">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mediakelapadua.web.id/">
-<meta property="og:title" content="Media Kelapa Dua">
-<meta property="og:description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
-<meta property="og:image" content="https://mediakelapadua.web.id/slider/img/img-share.jpg">
-<meta property="og:image:alt" content="Media Kelapa Dua">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://mediakelapadua.web.id/">
+  <link rel="preload" as="image" href="slider/img/kbj.jpg" fetchpriority="high">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://mediakelapadua.web.id/">
-<meta name="twitter:title" content="Media Kelapa Dua">
-<meta name="twitter:description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
-<meta name="twitter:image" content="https://mediakelapadua.web.id/slider/img/img-share.jpg">
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:site_name" content="Media Kelapa Dua">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mediakelapadua.web.id/">
+  <meta property="og:title" content="Media Kelapa Dua">
+  <meta property="og:description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
+
+  <meta property="og:image" content="https://mediakelapadua.web.id/slider/img/img-share.jpg">
+  <meta property="og:image:secure_url" content="https://mediakelapadua.web.id/slider/img/img-share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Media Kelapa Dua">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Media Kelapa Dua",
+    "url": "https://mediakelapadua.web.id",
+    "logo": "https://mediakelapadua.web.id/img/partner/MediaKelapadua.png",
+    "description": "Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, dan informasi resmi untuk warga.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kelapa Dua",
+      "addressRegion": "Jakarta Barat",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mediakelapadua.web.id/">
+  <meta name="twitter:title" content="Media Kelapa Dua">
+  <meta name="twitter:description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
+  <meta name="twitter:image" content="https://mediakelapadua.web.id/slider/img/img-share.jpg">
+  <meta name="twitter:image:alt" content="Media Kelapa Dua">
 
 <!-- Favicon -->
  <link rel="icon" type="image/png" href="/img/partner/MediaKelapadua.png">
@@ -104,7 +136,7 @@
         </div>
 
         <!-- Form Search -->
-        <form id="searchForm" class="search-form"      onsubmit="return false;">
+        <form id="searchForm" class="search-form" onsubmit="return false;">
           <label for="searchInput">
             <i class="material-icons">search</i>
           </label>
@@ -243,7 +275,7 @@
           <div class="slider" id="sliderhero">
             <ul class="slides">
               <li>
-                <img  fetchpriority="high" src="slider/img/kbj.jpg"
+                <img src="slider/img/kbj.jpg" alt="Kampung Bebas Jentik" loading="eager" fetchpriority="high"
                     data-light="slider/img/kbj.jpg"
                     data-dark="slider/img/kbj-bg1.jpg"
                     alt="Kelapa Dua">
@@ -1110,10 +1142,10 @@
         gtag('config', 'G-LFE1NH0SL3');
         </script>
 
-          <!-- Adsterra Social Bar -->
-    <script data-cfasync="false"
-    src="https://bauval.org/14/1b25ed0b1bada92bc7dcf053b889db90.invoke.js">
-    </script>  
+      <!-- Adsterra Social Bar -->
+      <script data-cfasync="false"
+      src="https://bauval.org/14/1b25ed0b1bada92bc7dcf053b889db90.invoke.js">
+      </script>  
 
       <!-- Google Adsense -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957" crossorigin="anonymous"></script>
