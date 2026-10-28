@@ -1058,34 +1058,34 @@
 
 <!-- Berita Wilayah -->
 <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const showMoreBtn = document.getElementById("show-more-btn");
-        const hiddenItems = document.querySelectorAll(".item-hidden");
-        let isOpen = false; // status awal
+    document.addEventListener("DOMContentLoaded", function () {
+      const showMoreBtn = document.getElementById("show-more-btn");
+      const hiddenItems = document.querySelectorAll(".item-hidden");
+      let isOpen = false; // status awal
 
-        // Pastikan item hidden tertutup saat awal
-        hiddenItems.forEach((item) => {
-          item.style.display = "none";
-        });
+      // Pastikan item hidden tertutup saat awal
+      hiddenItems.forEach((item) => {
+        item.style.display = "none";
+      });
 
-        showMoreBtn.addEventListener("click", function () {
-          if (!isOpen) {
-        // buka item
-        hiddenItems.forEach((item) => {
-          item.style.display = "block";
-        });
-        showMoreBtn.innerText = "Close"; // ubah teks tombol
-        isOpen = true;
-      } else {
-        // sembunyikan item
-        hiddenItems.forEach((item) => {
-          item.style.display = "none";
-        });
-        showMoreBtn.innerText = "Open"; // kembalikan teks tombol
-        isOpen = false;
-      }
-    });
+      showMoreBtn.addEventListener("click", function () {
+        if (!isOpen) {
+      // buka item
+      hiddenItems.forEach((item) => {
+        item.style.display = "block";
+      });
+      showMoreBtn.innerText = "Close"; // ubah teks tombol
+      isOpen = true;
+    } else {
+      // sembunyikan item
+      hiddenItems.forEach((item) => {
+        item.style.display = "none";
+      });
+      showMoreBtn.innerText = "Open"; // kembalikan teks tombol
+      isOpen = false;
+    }
   });
+});
 </script>
 
 <!-- Gallery toggle -->
@@ -1120,9 +1120,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   </script>
 
-  <script>document.getElementById("copyright-year")
-  .textContent = new Date().getFullYear();
-  </script>
+<script>document.getElementById("copyright-year")
+.textContent = new Date().getFullYear();
+</script>
 
 <script src="js/script.js"></script>
 <script src="js/contact.js"></script>
