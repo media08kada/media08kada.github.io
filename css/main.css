@@ -316,6 +316,7 @@ img:hover{
   padding: 0;
 }
 
+.slider h2,
 .slider h1 {
   font-weight: bold;
   margin-bottom: 0;
@@ -329,6 +330,7 @@ img:hover{
 
 .contact h4,
 .slider h1,
+.slider h2,
 .slider h5,
 .news h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
