@@ -316,7 +316,7 @@ img:hover{
   padding: 0;
 }
 
-.slider h3 {
+.slider h1 {
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -328,7 +328,7 @@ img:hover{
 }
 
 .contact h4,
-.slider h3,
+.slider h1,
 .slider h5,
 .news h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
@@ -973,14 +973,14 @@ grid-template-columns:repeat(2,1fr);
 }
 
 /* Info Wilayah */
-#wilayah .card-content{
+#info-wilayah .card-content{
   display:flex;
   flex-direction:column;
   align-items:center;
   text-align:center !important;
 }
 
-#wilayah .card-content p{
+#info-wilayah .card-content p{
   width:100%;
   color:#fff !important;
   font-size:12px;
@@ -990,7 +990,7 @@ grid-template-columns:repeat(2,1fr);
   padding:0 !important;
 }
 
-#wilayah .card-content p.no-margin{
+#info-wilayah .card-content p.no-margin{
     transform: translateX(-10px);
 }
 
