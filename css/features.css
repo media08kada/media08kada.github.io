@@ -30,9 +30,15 @@ body.dark nav {
   color: #fff;
 }
 
-/* Warna Icon Dark Mode */
-body.dark-mode .light-icon {
-  color: #b6895b !important;
+/* Hover untuk icon dark mode */
+label .material-icons {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+label:hover .material-icons {
+  color: #e27406; /* warna kuning saat hover */
+  transform: scale(1.15) rotate(10deg);
 }
 
 body.dark-mode .dark-icon {
@@ -163,7 +169,7 @@ nav .switch label i.material-icons {
   
   nav .switch:hover i.material-icons {
     transform: rotate(20deg) scale(1.15);
-    color: #b6895b;
+    color: #e27406;
   }
   
   /* Tombol Dark Mode di Sidenav */

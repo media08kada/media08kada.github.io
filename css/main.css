@@ -167,7 +167,7 @@ img:hover{
 }
 
 .navbar ul li a:hover {
-  color: var(--primary);
+  color: #e27406;
 }
 
 .nav-wrapper-custom {
