@@ -702,8 +702,14 @@ img:hover{
 /* Section Pilihan */
 #pilihan .modal-content p {
   font-size: 15px;
-  line-height: 0.5;
+  line-height:1.8;
   box-shadow: 0 15px 30px rgba(0,0,0,.2);
+  text-align: justify;
+}
+
+#modal-acara p {
+  text-align: justify;
+  line-height: 1.8;
 }
 
 /* Animation Berita Pilihan */
@@ -1259,6 +1265,12 @@ footer h6 a {
   .collection-item p {
     font-size: 14px;
     line-height: 1.5;
+  }
+
+  #modal-acara p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 12px;
   }
 }
 

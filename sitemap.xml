@@ -39,13 +39,18 @@
 
 <!-- Berita Wilayah  -->
 <url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html</loc>
-  <lastmod>2025-08-29T08:00:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html</loc>
+  <lastmod>2026-04-19T09:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/kelurahan-kelapa-dua-gelar-rembuk-rw-2026.html</loc>
-  <lastmod>2026-01-13T09:00:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/gulkarmat-bangun-hodran-mandiri-di-rw-08-kelapa-dua.html</loc>
+  <lastmod>2026-04-10T09:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/kolaborasi-ketua-rt-perkuat-layanan-posyandu-remaja.html</loc>
+  <lastmod>2026-10-17T09:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -54,8 +59,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/penanaman-pohon-di-bantaran-kali-pesanggrahan.html</loc>
-  <lastmod>2025-01-08T09:00:19+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/pengaspalan-jalan-pasca-pemasangan-pipa.html</loc>
+  <lastmod>2026-10-26T08:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -69,13 +74,35 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/warga-rw-08-kelapa-dua-terima-bantuan-soundsystem.html</loc>
-  <lastmod>2025-12-10T09:00:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/penanaman-pohon-di-bantaran-kali-pesanggrahan.html</loc>
+  <lastmod>2025-01-08T09:00:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mediakelapadua.web.id/berita-wilayah/posyandu-siklus-hidup-melati-rw-08-gelar-pelayanan-kesehatan.html</loc>
   <lastmod>2025-12-09T08:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Berita Pilihan  -->
+<url>
+  <loc>https://mediakelapadua.web.id/Pilihan/maulid-nabi-di-mushollah-al-hidayah.html</loc>
+  <lastmod>2026-10-10T19:00:00+00:00</lastmod>
+  <Priority>0.80</Priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/Pilihan/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html</loc>
+  <lastmod>2026-08-26T08:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/Pilihan/kabel-semrawut-bikin-resah-warga.html</loc>
+  <lastmod>2026-01-10T12:0gita0:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/Pilihan/mural-hadirkan-wajah-baru-kawasan-kelapa-dua.html</loc>
+  <lastmod>2026-02-12T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
@@ -116,49 +143,6 @@
   <priority>0.80</priority>
 </url>
 
-<!-- Modal  -->
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/lenong-betawi.html</loc>
-  <lastmod>2025-12-11T08:30:00+00:00</lastmod>
-  <Priority>0.80</Priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/kabel-semrawut-bikin-resah-warga.html</loc>
-  <lastmod>2026-01-10T12:0gita0:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/bpbd-dki-jakarta-berikan-pembekalan-kepada-petugas-ppsu.html</loc>
-  <lastmod>2026-04-25T10:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/rapat-penanganan-sampah-kelurahan-kelapa-dua.html</loc>
-  <lastmod>2026-04-23T10:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-<!-- Berita Ramadhan -->
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/gema-ramadhan-kelurahan-kelapa-dua-wujud-kebersamaan-dan-keperdulian-sosial.html</loc>
-  <lastmod>2026-02-27T17:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/lmk-kelurahan-kelapa-dua-gelar-buka-puasa-bersama-internal.html</loc>
-  <lastmod>2026-03-02T17:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/warga-padati-berbagai-lokasi-berburu-takjil-di-kelapa-dua.html</loc>
-  <lastmod>2026-02-20T15:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/asinan-betawi-dan-rujak-juhi-diburu-warga.html</loc>
-  <lastmod>2026-02-22T14:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
 
 <!-- Info Wilayah -->
 <url>
@@ -251,13 +235,38 @@
 <!-- Giat Video -->
 <url>
   <loc>https://mediakelapadua.web.id/video.html</loc>
-  <video:video>
-    <video:title>Kemeriahan Festival Kelapa Dua Jilid 4</video:title>
-    <video:description>Suasana penuh semangat kebersamaan mewarnai Festival Kelapa Dua Jilid 4 yang digelar di Lapangan Tenis Komplek Yonhub RW 04, Kelurahan Kelapa Dua, Kebon Jeruk, Jakarta Barat, pada Sabtu (29/11).</video:description>
-    <video:thumbnail_loc>https://mediakelapadua.web.id/img/video/thumbnail.jpg</video:thumbnail_loc>
-    <video:player_loc allow_embed="yes">https://youtu.be/KD5UOu4YiQs?si=VbFfsixkFNA96HU3</video:player_loc>
-    <video:duration>150</video:duration>
-    <video:publication_date>2025-11-30T09:19:42+00:00</video:publication_date>
+  <iframe
+  id="mainVideo" loading="lazy" src="https://www.youtube.com/embed/ciw3dGeqIeo" title="YouTube Video" frameborder="0" allowfullscreen>
+  </iframe>
+  <video:thumbnail_loc>https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg</video:thumbnail_loc>
+  <video:thumbnail_loc>https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg</video:thumbnail_loc>
+  <video:thumbnail_loc>https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg</video:thumbnail_loc>
+  <video:thumbnail_loc>https://img.youtube.com/vi/XwJqVVLdEDY/maxresdefault.jpg</video:thumbnail_loc>
+  
   </video:video>
+    <video:description>Selamat menonton, channel Youtube @kosongdelapan102.</video:description>
 </url>
+
+<!-- Policy -->
+<url>
+  <loc>https://mediakelapadua.web.id/tentang-kami.html</loc>
+  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/privacy-policy.html</loc>
+  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/disclaimer.html</loc>
+  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/complaint=policy.html</loc>
+  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 </urlset>
