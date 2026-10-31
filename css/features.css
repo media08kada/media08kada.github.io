@@ -976,3 +976,75 @@ html {
 /* Kelurahan css End */
 
 
+/* Tentang Kami  */
+#informasi {
+    padding: 50px 0;
+}
+
+#informasi .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#informasi h4 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+
+/* Khusus paragraf di section Tentang Kami */
+/* Tentang Kami */
+#informasi {
+    padding: 50px 0;
+}
+
+#informasi .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#informasi h4 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Paragraf isi */
+#informasi p {
+    text-align: justify;
+    text-indent: 0;
+    line-height: 1.9;
+    margin: 0 0 20px;
+    color: #444;
+    font-size: 18px;
+}
+
+/* Paragraf khusus tetap rata kiri */
+#informasi p.rata-kiri {
+    font-size: 16px;
+    text-align: left;
+}
+
+#informasi p {
+    font-size: clamp(1rem, 1vw + 0.7rem, 1.15rem);
+    line-height: 1.9;
+    text-align: justify;
+}
+
+/* Paragraf terakhir */
+#informasi p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #informasi {
+        padding: 40px 15px;
+    }
+
+    #informasi p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}

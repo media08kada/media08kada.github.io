@@ -1054,45 +1054,86 @@ footer h6 a {
     color: #fff !important;
     width: 100%;
     text-align: center !important;
-    margin: 0 0 10px 0 !important;
+    margin: 0 0 2px 0 !important;
     font-size: 12px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;
   list-style: none;
   padding: 0;
   margin: 0;
+  row-gap: 10px;
+  column-gap: 12px;
 }
 
-.social-links li {
-  margin: 0;
+/* Links menu footer */
+.footer-links {
+  flex-basis: 100%; /* pindah ke baris sendiri */
+  text-align: center;
+  margin: 0 0 4px 0; /* jarak dengan h6 dan icon */
+  line-height: 1.5;
+  font-weight: 300; /* lebih tipis */
+   letter-spacing: 0.3px;
 }
 
-.social-links .btn-floating {
-  margin: 0 !important;
+.footer-links a {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.85rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0 8px;
 }
 
-.social-links a {
-  transition: all 0.3s ease;
+/* Garis pemisah */
+.footer-links a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background: rgba(255,255,255,0.4);
 }
 
-.social-links a:hover {
-  transform: translateY(-4px);
+.footer-links a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+/* Desktop */
+@media (min-width: 993px) {
+  .footer-links {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .footer-links {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-  footer {
-    padding: 10px 0 12px;
+  footer h6 {
+    margin-bottom: 1px !important;
   }
 
-  .social-links {
-    gap: 10px;
+  .footer-links {
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.5;
   }
 }
 /* Footer End */
