@@ -996,7 +996,8 @@ html {
 /* Khusus paragraf di section Tentang Kami */
 /* Tentang Kami */
 #informasi {
-    padding: 50px 0;
+    padding: 60px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 #informasi .container {
@@ -1004,47 +1005,92 @@ html {
     margin: 0 auto;
 }
 
+/* Judul */
 #informasi h4 {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    font-weight: 400;
+    margin: 40px 0 30px;
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
+    font-weight: 500;
+    line-height: 1.4;
+    color: #222;
+    text-align: center;
 }
 
-/* Paragraf isi */
+/* Isi Artikel */
 #informasi p {
-    text-align: justify;
-    text-indent: 0;
-    line-height: 1.9;
-    margin: 0 0 20px;
+    margin-bottom: 22px;
+    font-size: clamp(18px, 1.2vw + 14px, 20px);
+    line-height: 1.95;
     color: #444;
-    font-size: 18px;
-}
-
-/* Paragraf khusus tetap rata kiri */
-#informasi p.rata-kiri {
-    font-size: 16px;
-    text-align: left;
-}
-
-#informasi p {
-    font-size: clamp(1rem, 1vw + 0.7rem, 1.15rem);
-    line-height: 1.9;
     text-align: justify;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
-/* Paragraf terakhir */
+/* Alamat redaksi & website */
+#informasi p.alamat-redaksi,
+#informasi p.website {
+    text-align: left;
+    text-indent: 0;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
 #informasi p:last-child {
     margin-bottom: 0;
 }
 
-/* Responsive */
+/* Tablet */
 @media (max-width: 768px) {
+
     #informasi {
-        padding: 40px 15px;
+        padding: 45px 18px;
+    }
+
+    #informasi h4 {
+        font-size: 1.7rem;
+        margin-top: 25px;
+        margin-bottom: 20px;
     }
 
     #informasi p {
-        font-size: 1rem;
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    #informasi p.rata-kiri {
+        font-size: 17px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    #informasi {
+        padding: 35px 15px;
+    }
+
+    /* Judul lebih besar */
+    #informasi h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        line-height: 1.3;
+    }
+
+    /* Isi lebih kecil */
+    #informasi p {
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: left;
+        text-align: justify;
+    }
+
+    /* Alamat & website */
+    #informasi p.alamat-redaksi,
+    #informasi p.website {
+        font-size: 14px;
         line-height: 1.7;
+        font-weight: 500;
     }
 }
