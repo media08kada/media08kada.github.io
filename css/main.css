@@ -295,6 +295,24 @@ img:hover{
 .navbar .progress .indeterminate::before {
   animation: indeterminate 4s infinite;
 }
+
+/* Dropdown Menu */
+.dropdown-content {
+  width: 220px !important;
+}
+
+.dropdown-content li > a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 38px !important;
+  min-height: 38px !important;
+  padding: 0 16px !important;
+}
+
+.dropdown-content .divider {
+  margin: 2px 0 !important;
+}
 /* Navbar End */
 
 /* Slider Start */
