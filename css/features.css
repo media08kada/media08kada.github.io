@@ -976,7 +976,7 @@ html {
 /* Kelurahan css End */
 
 
-/* Tentang Kami  */
+/* Informasi Kebijakan kami  */
 #informasi {
     padding: 50px 0;
 }
@@ -1007,10 +1007,10 @@ html {
 
 /* Judul */
 #informasi h4 {
-    margin: 40px 0 30px;
+    margin: 40px 0 15px;
     font-size: clamp(1.8rem, 2vw, 2.2rem);
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.2;
     color: #222;
     text-align: center;
 }
@@ -1018,8 +1018,8 @@ html {
 /* Isi Artikel */
 #informasi p {
     margin-bottom: 22px;
-    font-size: clamp(18px, 1.2vw + 14px, 20px);
-    line-height: 1.95;
+    font-size: clamp(15px, 1vw + 13px, 17px);
+    line-height: 1.5;
     color: #444;
     text-align: justify;
     font-weight: 400;
@@ -1054,7 +1054,7 @@ html {
 
     #informasi p {
         font-size: 18px;
-        line-height: 1.9;
+        line-height: 1.2;
     }
 
     #informasi p.rata-kiri {
@@ -1074,8 +1074,8 @@ html {
         font-size: 2rem;
         font-weight: 600;
         margin-top: 50px;
-        margin-bottom: 25px;
-        line-height: 1.3;
+        margin-bottom: 10px;
+        line-height: 0.9;
     }
 
     /* Isi lebih kecil */
@@ -1091,6 +1091,6 @@ html {
     #informasi p.website {
         font-size: 14px;
         line-height: 1.7;
-        font-weight: 500;
+        font-weight: 600;
     }
 }
