@@ -90,6 +90,14 @@ h6 {
   margin-top: 0;
 }
 
+/* Isi Berita */
+.col.s12.m8.light p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  text-align: justify;
+  margin-top: 15px;
+}
+
 @media (max-width:600px){
   #berita h5 {
     font-size: 18px;
@@ -110,12 +118,14 @@ h6 {
   #isi-berita-4 p {
     font-size: 15px;
     line-height: 1.8;
+    font-weight: 300 !important;
   }
 }
   
   .col.s12.m8.light h5 {
+    font-family: 'poppins', sans-serif;
     margin: 5px 0 8px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.5;
   }
   
@@ -388,8 +398,8 @@ img:hover{
 }
 
 #berita h2{
-    margin-top: -10px !important;
-    margin-bottom: 15px !important;
+  margin-top: -10px !important;
+  margin-bottom: 15px !important;
 }
 /* Slider End */
 
