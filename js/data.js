@@ -231,32 +231,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Data isi preview pilihan
-const dataPreview = {
-  "pilihan-1": {
-    judul: "Maulid Nabi di Mushollah Al Hidayah",
-    gambar: "img/maulid.jpg"
-  },
-  "pilihan-2": {
-    judul: "Cek Kesehatan Gratis di RW 08 Kelapa Dua",
-    gambar: "img/cek-kesehatan.jpg"
-  },
-  "pilihan-3": {
-    judul: "Hidran Mandiri Perkuat Sistem Proteksi Kebakaran",
-    gambar: "img/hidran.jpg"
-  },
-  "pilihan-4": {
-    judul: "Mural Hadirkan Wajah Baru Kawasan Kelapa Dua",
-    gambar: "img/mural.jpg"
-  }
-};
-
-document.querySelectorAll(".berita-preview").forEach((card) => {
-  const id = card.dataset.id;
-
-  card.querySelector(".preview-img").src = dataPreview[id].gambar;
-
-  card.querySelector(".preview-judul").textContent = dataPreview[id].judul;
-
-  card.querySelector(".preview-link").href = sumberPilihan[id];
-});

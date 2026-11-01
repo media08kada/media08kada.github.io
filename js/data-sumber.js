@@ -6,7 +6,6 @@ const sumberBeritaUtama = [
   "berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
 ];
 
-
 // Berita-Box
 const sumberBerita = {
   "berita-1":
@@ -15,8 +14,7 @@ const sumberBerita = {
   "berita-2":
     "posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
 
-  "berita-3": 
-  "kerja-bakti-sambut-verifikasi-lomba-kbj.html",
+  "berita-3": "kerja-bakti-sambut-verifikasi-lomba-kbj.html",
 
   "berita-4":
     "deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
@@ -58,7 +56,6 @@ const sumberBeritaWilayah = [
   },
 ];
 
-
 // Berita Pilihan
 const sumberBeritaPilihan = [
   {
@@ -90,7 +87,4 @@ const sumberBeritaPilihan = [
     previewIsi: "preview-isi-pilihan-4",
   },
 ];
-
-
-
 
