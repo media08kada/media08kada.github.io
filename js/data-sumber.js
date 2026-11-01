@@ -77,7 +77,7 @@ const sumberBeritaPilihan = [
     previewIsi: "preview-isi-pilihan-2",
   },
   {
-    url: "Pilihan/hidran-mandiri-perkuat-sistem-proteksi-kebakaran",
+    url: "Pilihan/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
     judul: "judul-pilihan-3",
     isi: "isi-pilihan-3",
     previewJudul: "preview-judul-pilihan-3",
