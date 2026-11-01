@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 /* BERITA PILIHAN */
 document.addEventListener("DOMContentLoaded", () => {
   sumberBeritaPilihan.forEach((item) => {

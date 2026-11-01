@@ -167,6 +167,64 @@ document.addEventListener("DOMContentLoaded", function () {
   M.Modal.init(elems);
 });
 
+// Berita Wilayah
+document.addEventListener("DOMContentLoaded", function () {
+    const showMoreBtn = document.getElementById("show-more-btn");
+    const hiddenItems = document.querySelectorAll(".item-hidden");
+    let isOpen = false;
+
+    // Pastikan item hidden tertutup saat awal
+    hiddenItems.forEach((item) => {
+        item.style.display = "none";
+    });
+
+    showMoreBtn.addEventListener("click", function () {
+        if (!isOpen) {
+            // Tampilkan item
+            hiddenItems.forEach((item) => {
+                item.style.display = "block";
+            });
+            showMoreBtn.innerText = "Close";
+            isOpen = true;
+        } else {
+            // Sembunyikan item
+            hiddenItems.forEach((item) => {
+                item.style.display = "none";
+            });
+            showMoreBtn.innerText = "Open";
+            isOpen = false;
+        }
+    });
+});
+
+// Gallery toggle
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("gallery-btn");
+  const hiddenItems = document.querySelectorAll(".gallery .hidden");
+  let isOpen = false;
+
+  btn.addEventListener("click", function () {
+    if (!isOpen) {
+      hiddenItems.forEach((item) => (item.style.display = "block"));
+      btn.innerHTML = '<i class="material-icons left"></i>Close';
+      isOpen = true;
+    } else {
+      hiddenItems.forEach((item) => (item.style.display = "none"));
+      btn.innerHTML = '<i class="material-icons left"></i>Open';
+      isOpen = false;
+    }
+  });
+});
+
+// Floating Action Button
+document.addEventListener("DOMContentLoaded", function () {
+  const elems = document.querySelectorAll(".fixed-action-btn");
+
+  M.FloatingActionButton.init(elems, {
+    direction: "left",
+    hoverEnabled: false,
+  });
+});
 
 
 
