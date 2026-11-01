@@ -92,16 +92,5 @@ const sumberBeritaPilihan = [
 ];
 
 
-// Pilihan-Box
-const sumberPilihan = {
-  "pilihan-1": "maulid-nabi-di-mushollah-al-hidayah.html",
-
-  "pilihan-2": "cek-kesehatan-gratis-di-rw-08-kelapa-dua.html",
-
-  "pilihan-3": "hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
-
-  "pilihan-4": "mural-hadirkan-wajah-baru-kawasan-kelapa-dua.html",
-};
-
 
 
