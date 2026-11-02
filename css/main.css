@@ -1307,8 +1307,8 @@ footer h6 a {
     }
 
     section {
-      margin-top: 6px;
-      margin-bottom: 6px;
+      margin-top: 6px !important;
+      margin-bottom: 6px !important;
     }
 
 /* Video */
