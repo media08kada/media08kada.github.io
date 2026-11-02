@@ -1,0 +1,142 @@
+/* Default desktop */
+.search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 35rem;
+  height: 4rem;              /* tinggi dikurangi */
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  border-radius: 2px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Aktif */
+.search-form.active {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.search-form {
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+/* Label (ikon search) */
+.search-form label {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-left: 5rem;      /* beri jarak dari tepi kiri box */
+  margin-right: 1rem;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+
+/* Input field */
+.search-form input {
+  flex: 1;                   /* isi ruang tersisa */
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;         /* proporsional dengan tinggi box */
+  padding: 1.3rem 2rem;    /* padding kiri-kanan lebih besar */
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+/* Default style (mobile / tablet) */
+.search-box {
+  height: 32px;              /* dikurangi tinggi */
+  padding: 5px 5px;
+  font-size: 14px;
+}
+
+/* Responsive untuk handphone */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-extra a#search-button i {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 100%;            /* biar form penuh mengikuti parent */
+    max-width: 400px;       /* batasi agar tidak terlalu lebar */
+    margin: 0 auto;         /* posisikan di tengah */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  }
+
+.search-form input {
+  flex: 1;                /* biar input melebar maksimal */
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 6px 10px;      /* padding proporsional */
+  box-sizing: border-box; /* padding masuk hitungan width */
+}
+
+  .search-form label {
+    font-size: 1.2rem;
+    margin-left: 0.6rem;     /* ikon turun + agak ke kanan */
+    margin-right: 1rem;
+  }
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive untuk handphone */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-extra a#search-button i {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .search-form {
+    position: fixed;
+    top: 60px;               /* sesuaikan tinggi navbar */
+    left: 10px;
+    right: 10px;
+    width: auto;
+    height: 50px;            /* lebih ramping */
+    border-radius: 2px;
+    z-index: 999;
+  }
+}
+
+/* Layer desktop / layar lebar */
+@media (min-width: 1024px) {
+  .search-box {
+    height: 32px;            /* konsisten dengan mobile */
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,52 @@
+/* Style Gallery */
+img {
+  max-width: 80% auto;
+  border: 1px solid var(--bg1);
+  position: relative;
+}
+
+.preview-img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.galleries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.galleries img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  .preview-img {
+    width: 100%;
+    height: 687px;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galleries img {
+    width: 80px;
+    height: 80px;
+  }
+}
