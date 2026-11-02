@@ -1101,11 +1101,11 @@ footer h6 a {
 
 /* Links menu footer */
 .footer-links {
-  flex-basis: 100%; /* pindah ke baris sendiri */
+  flex-basis: 100%; 
   text-align: center;
-  margin: 0 0 4px 0; /* jarak dengan h6 dan icon */
+  margin: 0 0 4px 0; 
   line-height: 1.5;
-  font-weight: 300; /* lebih tipis */
+  font-weight: 300; 
    letter-spacing: 0.3px;
 }
 
@@ -1116,7 +1116,7 @@ footer h6 a {
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
-    padding: 0 8px;
+    padding: 0 6px;
 }
 
 /* Garis pemisah */
