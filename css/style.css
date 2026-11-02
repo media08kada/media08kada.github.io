@@ -1,0 +1,677 @@
+/* GLOBAL & LAYOUT */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+  html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+section,
+footer {
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+}
+
+/* Default: Light mode */
+body {
+  background-color: #fff;
+  color: #212121;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #212121;
+  color: #fff;
+}
+
+/* NAVBAR & LOGO */
+.brand-logo {
+  max-width: 250px;
+}
+
+.navbar-brand img {
+  vertical-align: middle;
+  margin: auto 0;
+}
+
+.dropdown-content a,
+.sidenav a {
+  color: black !important;
+  font-weight: lighter;
+}
+
+.sidenav,
+.sidenav .user-view .name {
+  font-weight: lighter;
+}
+
+/* Garis Navbar Start */
+body .navbar-fixed nav {
+  border-bottom: none;
+  position: relative;
+}
+
+/* Progress bar menempel ke bawah nav */
+body .navbar-fixed .progress {
+  margin: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+/* Warna garis bergerak */
+body .navbar-fixed .progress .indeterminate {
+  background-color: #8f6240;
+  animation-duration: 4s;
+}
+
+/* Override keyframes bawaan Materialize */
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+/* Terapkan durasi lebih panjang ke kedua animasi */
+body .navbar-fixed .progress .indeterminate:before {
+  animation: indeterminate 4s infinite;
+}
+
+body .navbar-fixed .progress .indeterminate:after {
+  animation: indeterminate-short 4s infinite;
+}
+
+/* Garis Navbar End */
+/* SLIDER */
+.slider {
+  position: relative;
+  overflow: visible;
+  border-radius: 5%;
+}
+
+.slider h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.slider h5 {
+  margin-top: 20px;
+  color: #ccc;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact h4,
+.slider h3,
+.slider h5,
+.news h3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Caption */
+.slider .caption {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.slider .caption h3 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 50px 0 15px;
+}
+
+.caption h3 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.caption h5 {
+  font-size: 24px;
+  color: #ccc;
+  margin-top: 0;
+}
+
+.modal-title h6 {
+  color: grey;
+}
+
+/* Responsive untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  .slider .caption {
+    top: 95%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider .caption h3 {
+    font-size: 2rem;
+    margin: 80px 0 15px;
+  }
+
+  .slider .caption h5 {
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+}
+
+/* BERITA SLIDER */
+.berita-slider {
+  margin: 0 20px 0 0;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.berita-slider,
+.col.s12.m8.light {
+  margin-bottom: 5px; /* lebih rapat */
+  padding: 0; /* hilangkan padding ekstra */
+}
+
+.no-gap {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#slidernews {
+  margin-top: 0 !important;
+}
+
+#berita {
+  margin: 20px 0 10px;
+}
+
+#berita .row .col {
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+#berita h5,
+#berita p,
+.date {
+  margin: 5px 0;
+}
+
+#berita p,
+#card-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.berita .row {
+  margin-bottom: 8px;
+}
+
+.date {
+  margin-bottom: 20px;
+}
+
+.taxt {
+  margin: 0 0 10px;
+}
+
+.btn-small.green {
+  margin-top: 5px;
+}
+
+.compact-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* IMAGE & SLIDES */
+.square-img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Fallback untuk browser yang tidak support aspect-ratio */
+@supports not (aspect-ratio: 1 / 1) {
+  .slider .berita-slides li {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .slides li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Menghilangkan background di Img */
+.berita-slider,
+.slides li,
+.square-img {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.square-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+@supports not (aspect-ratio: 1 / 1) {
+  .slider .berita-slides li {
+    padding-top: 100%;
+    background: none;
+  }
+}
+
+/* RESPONSIVE BREAKPOINTS  */
+/* 📱 Handphone (≤ 767px) */
+@media (max-width: 767px) {
+  .berita-slider {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* 📲 Tablet (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .berita-slider {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* 💻 Laptop (1024px – 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .berita-slider {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* 🖥️ Desktop (≥ 1440px) */
+@media (min-width: 1440px) {
+  .berita-slider {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* GRID & ROW */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.col h5 {
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.col p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+#show-more-btn {
+  margin-top: 10px;
+}
+
+.row .col {
+  padding: 0 8px;
+}
+
+/* Membuat row lebih rapat */
+.compact-row {
+  margin-bottom: 12px;
+}
+
+/* Mengurangi padding antar kolom */
+.row .col {
+  padding: 0 8px;
+}
+
+/* Heading lebih rapat */
+h5 {
+  margin: 5px 0 8px 0;
+}
+
+/* Paragraf lebih rapat */
+p {
+  margin: 0 0 8px 0;
+}
+
+/* Tombol lebih dekat ke teks */
+.btn-small {
+  margin-top: 5px;
+}
+
+/* CARD & COLLECTION */
+.card {
+  margin: 8px 0;
+}
+
+.card-panel {
+  min-height: 200px;
+}
+
+.card-panel img {
+  margin: 15px 5px 0;
+  vertical-align: middle;
+}
+
+.collection-header p {
+  margin: 0;
+  line-height: 0.8;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content a,
+.card-content h4,
+.card-content p {
+  margin: 2px 0;
+}
+
+@media (max-width: 600px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col.s12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .collection-item {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  h6 {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  h6 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Laptop (≤1366px) */
+@media (max-width: 1366px) {
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* INFO WILAYAH */
+.no-margin {
+  margin: 0 !important;
+}
+#wilayah h3 {
+  text-align: center;
+}
+
+/* GALLERY */
+.hidden {
+  display: none;
+}
+
+.gallery img {
+  margin-bottom: 15px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.gallery h4,
+.video {
+  margin-bottom: 20px;
+}
+
+.gallery h4 {
+  margin-top: 40px;
+}
+
+/* FAB SLIDER */
+.fab-inside-slider {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 5%;
+}
+
+.slider {
+  position: relative;
+}
+
+.btn-floating {
+  border-radius: 8px !important;
+}
+
+.btn-floating i[data-feather='facebook'],
+.btn-floating svg.feather-facebook {
+  position: relative;
+  top: 6px;
+}
+
+/* Jarak Antar Elemen */
+#wilayah h4,
+#gallery,
+#sekilas-berita {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+.card.sticky {
+  width: 100%;
+  margin: 0;
+}
+
+.card.sticky .card-content {
+  padding: 0 24px;
+}
+
+.buttonToTop.btn-floating {
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Menghilang scroll dibawah dropdown */
+.dropdown-content {
+  max-height: none !important;
+  overflow-y: visible !important;
+}
+
+.dropdown-content {
+  width: 200px !important;
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .square-img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Atur modal agar muncul di tengah dengan ukuran lebih kecil */
+.modal {
+  max-width: 600px;
+}
+
+/* Berita Pilihan */
+#pilihan .pilihan-title {
+  margin-top: 5px;
+}
+
+#pilihan .pilihan-card {
+  position: relative;
+}
+
+#pilihan .pilihan-card .icon-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#pilihan .pilihan-card .icon-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#pilihan .pilihan-card i.material-icons {
+  font-size: 40px;
+}
+
+/* Spacing super rapat untuk HP kecil */
+@media (max-width: 480px) {
+  #gallery-btn {
+    margin-bottom: 4px;
+  }
+
+  section {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  #video {
+    margin-top: 8px;
+  }
+
+  #video h4 {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+}
+
+#btn-hero1 {
+  text-align: center;
+}
+
+#btn-hero1 a {
+  display: inline-block;
+  margin: 20 5px;
+}
+
+/* Parallax Contact-us */
+#contact {
+  background-image: url('../slider/img/parallax-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Info Wilayah Background */
+.custom-bg {
+  background: url('../img/partner/card-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.custom-bg .card-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
