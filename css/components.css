@@ -1,15 +1,4 @@
 /* Card CSS Start Start */
-body {
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
-  background: #fff;
-  color: #212121;
-}
-
 #pilihan .card {
 overflow: hidden;
 }
