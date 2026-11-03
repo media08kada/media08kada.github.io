@@ -58,7 +58,7 @@ const sumberBeritaWilayah = [
 // Berita Pilihan
 const sumberBeritaPilihan = [
   {
-    url: "Pilihan/maulid-nabi-di-mushollah-al-hidayah.html",
+    url: "Pilihan/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
     judul: "judul-pilihan-1",
     isi: "isi-pilihan-1",
     previewJudul: "preview-judul-pilihan-1",
