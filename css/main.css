@@ -1168,7 +1168,7 @@ footer h6 a {
 /* Responsive Star */
 @media (max-width: 1366px) {
   html {
-    font-size: 75px;
+    font-size: 75%;
   }
 }
 
