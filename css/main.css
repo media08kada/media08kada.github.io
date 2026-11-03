@@ -52,6 +52,7 @@ main {
 /* Font Section Start */
 /* Judul Berita */
 #berita h5 {
+  color: #333;
   text-align: left;
   margin: 5px 0 8px;
   line-height: 1.5;
@@ -84,10 +85,12 @@ h6 {
 #isi-berita-2 p,
 #isi-berita-3 p,
 #isi-berita-4 p {
+  text-indent: 30px;
   font-weight: 300 !important;
   color: #333 !important;
   text-align: justify;
   margin-top: 0;
+  margin: 0 0 20px;
 }
 
 /* Isi Berita */
@@ -1227,6 +1230,7 @@ footer h6 a {
     font-size: 14px;
     line-height: 1.5;
     text-indent: 30px;
+    margin: 0 0 20px;
   }
 }
 

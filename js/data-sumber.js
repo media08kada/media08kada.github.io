@@ -1,7 +1,7 @@
 // Berita Utama
 const sumberBeritaUtama = [
   "berita-utama/rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
-  "berita-utama/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
+  "berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
   "berita-utama/kerja-bakti-sambut-verifikasi-lomba-kbj.html",
   "berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
 ];
@@ -11,8 +11,7 @@ const sumberBerita = {
   "berita-1":
     "rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
 
-  "berita-2":
-    "posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
+  "berita-2": "verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
 
   "berita-3": "kerja-bakti-sambut-verifikasi-lomba-kbj.html",
 
