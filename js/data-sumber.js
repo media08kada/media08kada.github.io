@@ -38,7 +38,7 @@ const sumberBeritaWilayah = [
     nomor: 4,
   },
   {
-    url: "berita-wilayah/koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html",
+    url: "berita-wilayah/baznas-berikan-bantuan-pemasangan-listrik.html",
     nomor: 5,
   },
   {
