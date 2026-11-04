@@ -311,7 +311,6 @@ img:hover{
 }
 
 .dropdown-content li > a {
-  font-family: 'Roboto', sans-serif;
   font-size: 14px !important;
   font-weight: 300 !important;
   line-height: 38px !important;
