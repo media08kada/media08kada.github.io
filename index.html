@@ -7,6 +7,7 @@
 
   <meta name="description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
   <meta name="author" content="MediaKada">
+  <meta name="publisher" content="Media Kelapa Dua">
 
   <!-- SEO & Verification -->
   <meta name="robots" content="index, follow">
@@ -33,24 +34,23 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Media Kelapa Dua">
+  <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=61569679397521">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "NewsMediaOrganization",
-    "name": "Media Kelapa Dua",
-    "url": "https://mediakelapadua.web.id",
-    "logo": "https://mediakelapadua.web.id/img/partner/MediaKelapadua.png",
-    "description": "Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, dan informasi resmi untuk warga.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Kelapa Dua",
-      "addressRegion": "Jakarta Barat",
-      "addressCountry": "ID"
-    }
-  }
-  </script>
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+   {
+  "@type":"ListItem",
+  "position":1,
+  "name":"Beranda",
+  "item":"https://mediakelapadua.web.id/"
+   }
+   ]
+   }
+   </script>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -61,9 +61,9 @@
   <meta name="twitter:image:alt" content="Media Kelapa Dua">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/img/partner/MediaKelapadua.png">
-  <link rel="apple-touch-icon" href="/img/partner/MediaKelapadua.png">
-  <link rel="shortcut icon" href="/img/partner/MediaKelapadua.png">
+  <link rel="icon" type="image/png" href="https://mediakelapadua.web.id/img/partner/MediaKelapadua.png">
+  <link rel="apple-touch-icon" href="https://mediakelapadua.web.id/img/partner/MediaKelapadua.png">
+  <link rel="shortcut icon" href="https://mediakelapadua.web.id/img/partner/MediaKelapadua.png">
       
   <!-- Google Icon Font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -96,7 +96,7 @@
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957"
   crossorigin="anonymous"></script>
 
-  <title>Media Kelapa Dua</title>
+  <title>Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat</title>
       
   </head>
   <body id="top-page" class="scrollspy">
@@ -194,7 +194,7 @@
   <li><a href="tentang-kami.html">Tentang Kita</a></li>
   <li><a href="privacy-policy.html">Privacy Policy</a></li>
   <li><a href="disclaimer.html">Disclaimer</a></li>
-  <li><a href="complaint-policy.htm">Complaint Policy</a></li>
+  <li><a href="complaint-policy.html">Complaint Policy</a></li>
 </ul>
 
 <!-- Sidenav -->
@@ -271,7 +271,7 @@
   <li><a href="tentang-kami.html">Tentang Kita</a></li>
   <li><a href="privacy-policy.html">Privacy Policy</a></li>
   <li><a href="disclaimer.html">Disclaimer</a></li>
-  <li><a href="complaint-policy.htm">Complaint Policy</a></li>
+  <li><a href="complaint-policy.html">Complaint Policy</a></li>
 </ul>
 <!-- Navbar End -->
               
@@ -279,15 +279,20 @@
 <div class="slider" id="sliderhero">
 <ul class="slides">
   <li>
-    <img src="slider/img/kbj.jpg" alt="Kampung Bebas Jentik" loading="eager" fetchpriority="high"
+    <img src="slider/img/kbj.jpg" alt="Kampung Bebas Jentik Kelapa Dua Jakarta Barat" 
+        loading="eager" 
+        fetchpriority="high"
+        width="1920" 
+        height="1080"
         data-light="slider/img/kbj.jpg" 
-        data-dark="slider/img/kbj-bg1.jpg"
-        alt="Kelapa Dua" width="1920" height="1080">
-    <div class="caption center-align">
+        data-dark="slider/img/kbj-bg1.jpg">
+      <div class="caption center-align">
       <h1>Media Kelapa Dua</h1>
-      <h5 class="white-text text-darken-1">
-        Bersama Kita Cegah DBD dengan Lingkungan Bersih dan Sehat
-      </h5>
+      <section class="site-intro">
+      <div class="container">
+       <p>Media Kelapa Dua portal informasi masyarakat, untuk berita lokal, kegiatan warga, dan layanan publik.</p>
+       </div>
+      </section>
       <div id="btn-hero">
       <a href="https://rw08kelapadua.web.id/jumantik"
       target="_blank" class="btn waves-effect waves-light btn-small grey">Self Jumantik</a>
@@ -298,20 +303,27 @@
   <img fetchpriority="lazy" src="slider/img/Kelapa-bg1.jpg"
       data-light="slider/img/Kelapa-bg1.jpg"
       data-dark="slider/img/Kelapa-bg1-dark.jpeg" width="1920" height="1080">
-  <div class="caption center-align">
+    <div class="caption center-align">
     <h2>Media Kelapa Dua</h2>
-    <h5 class="white-text text-darken-1">
-      Gerakan Pemilahan Sampah, Sejak dari Rumah Tangga</h5>
+      <section class="site-intro">
+      <div class="container">
+       <p>Media Kelapa Dua portal informasi masyarakat, untuk berita lokal, kegiatan warga, dan layanan publik.</p>
+       </div>
+      </section>
       <div id="btn-hero">
     <a href="donasi.html" class="waves-effect waves-light btn-small grey">Open Donasi</a>
-  </div>
- </div>
-</li>
+    </div>
+   </div>
+  </li>
   <li>
   <img fetchpriority="lazy" src="slider/img/Kota-bg1.jpg" data-light="slider/img/Kota-bg1.jpg" data-dark="slider/img/Kota-bg1-dark.jpeg" width="1920" height="1080">
   <div class="caption center-align">
   <h2>Media Kelapa Dua</h2>
-  <h5 class="white-text text-darken-1">Maju Kotanya Bahagia Warganya</h5>
+       <section class="site-intro">
+      <div class="container">
+       <p>Media Kelapa Dua portal informasi masyarakat, untuk berita lokal, kegiatan warga, dan layanan publik.</p>
+       </div>
+      </section>
   <div id="btn-hero">
     <a href="donasi.html" class="waves-effect waves-light btn-small grey">Open Donasi</a>
   </div>
@@ -349,27 +361,6 @@
    </div>
   </div>
 <!-- Slider End -->
-
-<!-- Google Adsense-->
-<div class="container">
-  <div class="adsense-box center-align">
-
-    <small class="ads-label">Iklan</small>
-
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-format="fluid"
-         data-ad-layout-key="-h5+5-11-6f+hi"
-         data-ad-client="ca-pub-3130346024149957"
-         data-ad-slot="4132653758">
-    </ins>
-
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-  </div>
-</div>
 
   <!-- Berita Utama start -->
   <section id="berita" class="berita scrollspy">
@@ -472,27 +463,6 @@
     </div>
   </section>  
   <!-- Berita Utama End -->
-
-  <!-- Google Adsense -->
-  <div class="container">
-    <div class="adsense-box center-align">
-
-      <small class="ads-label">Iklan</small>
-
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-format="fluid"
-          data-ad-layout-key="-h5+5-11-6f+hi"
-          data-ad-client="ca-pub-3130346024149957"
-          data-ad-slot="4132653758">
-      </ins>
-
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-    </div>
-  </div>
 
   <!-- Berita Wilayah Start -->
   <section id="berita-wilayah" class="scrollspy collapsible popout">
@@ -841,6 +811,27 @@
  </div>    
 </section>
 <!-- Info Wilayah End -->
+
+<!-- Google Adsense -->
+<div class="container">
+  <div class="adsense-box center-align">
+
+    <small class="ads-label">Iklan</small>
+
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-h5+5-11-6f+hi"
+         data-ad-client="ca-pub-3130346024149957"
+         data-ad-slot="4132653758">
+    </ins>
+
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+  </div>
+</div>
 
 <!-- Gallery Start -->
 <section id="gallery" class="gallery scrollspy">
