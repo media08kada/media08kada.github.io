@@ -43,17 +43,23 @@ html, body {
 }
 
 .card-content {
+    padding: 12px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60px; /* sesuaikan tinggi */
+    min-height: 60px;
 }
 
 .card-content p {
     margin: 0;
-    font-size: 16px; /* sesuaikan ukuran font */
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-indent: 0 !important;
+    text-align: center !important;
+    margin: 0 !important;
 }
-
-
 
 
