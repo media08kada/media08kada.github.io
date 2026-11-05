@@ -5,48 +5,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat</title>
+  <title>Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat</title>
       
   <meta name="description" content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
   <meta name="author" content="MediaKada">
   <meta name="publisher" content="Media Kelapa Dua">
 
-  <!-- Schema.org -->
+<!-- Schema.org -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Beranda",
-          "item": "https://mediakelapadua.web.id/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Deklarasi STBM Kelurahan Kelapa Dua"
-        }
+      "@type": "Organization",
+      "@id": "https://mediakelapadua.web.id/#organization",
+      "name": "Media Kelapa Dua",
+      "url": "https://mediakelapadua.web.id/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mediakelapadua.web.id/img/partner/MediaKelapadua.png"
+      },
+      "sameAs": [
+        "https://www.instagram.com/mediakelapadua",
+        "https://www.facebook.com/profile.php?id=61569679397521",
+        "https://www.youtube.com/@KosongDelapan102",
+        "https://www.tiktok.com/@mediakelapadua"
       ]
     },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://mediakelapadua.web.id/#website",
+      "url": "https://mediakelapadua.web.id/",
+      "name": "Media Kelapa Dua",
+      "description": "Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.",
+      "publisher": {
+        "@id": "https://mediakelapadua.web.id/#organization"
+      },
+      "inLanguage": "id-ID"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://mediakelapadua.web.id/#webpage",
+      "url": "https://mediakelapadua.web.id/",
+      "name": "Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat",
+      "description": "Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.",
+      "isPartOf": {
+        "@id": "https://mediakelapadua.web.id/#website"
+      },
+      "about": {
+        "@id": "https://mediakelapadua.web.id/#organization"
+      },
+      "inLanguage": "id-ID"
+    },
+
     {
       "@type": "VideoObject",
       "name": "Deklarasi STBM Kelurahan Kelapa Dua",
       "description": "Kegiatan Deklarasi STBM Kelurahan Kelapa Dua dalam upaya meningkatkan kesehatan masyarakat dan menciptakan lingkungan yang bersih serta bebas stunting.",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ciw3dGeqIeo/mqdefault.jpg",
+      "thumbnailUrl": "https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg",
       "uploadDate": "2026-11-05",
       "embedUrl": "https://www.youtube.com/embed/ciw3dGeqIeo",
       "contentUrl": "https://www.youtube.com/watch?v=ciw3dGeqIeo",
-      "url": "https://mediakelapadua.web.id/deklarasi-stbm-kelapa-dua.html",
       "publisher": {
-        "@type": "Organization",
-        "name": "Media Kelapa Dua",
-        "url": "https://mediakelapadua.web.id/"
+        "@id": "https://mediakelapadua.web.id/#organization"
+      }
+    },
+
+    {
+      "@type": "VideoObject",
+      "name": "Video Kegiatan Kelapa Dua",
+      "description": "Dokumentasi kegiatan masyarakat dan pembangunan wilayah Kelapa Dua Jakarta Barat.",
+      "thumbnailUrl": "https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/geS2Qrqdj1s",
+      "contentUrl": "https://www.youtube.com/watch?v=geS2Qrqdj1s",
+      "publisher": {
+        "@id": "https://mediakelapadua.web.id/#organization"
+      }
+    },
+
+    {
+      "@type": "VideoObject",
+      "name": "Informasi Warga Kelapa Dua",
+      "description": "Informasi pelayanan masyarakat serta kegiatan lingkungan Kelurahan Kelapa Dua.",
+      "thumbnailUrl": "https://img.youtube.com/vi/XwJqVVLdEDY/maxresdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/XwJqVVLdEDY",
+      "contentUrl": "https://www.youtube.com/watch?v=XwJqVVLdEDY",
+      "publisher": {
+        "@id": "https://mediakelapadua.web.id/#organization"
       }
     }
+
   ]
 }
 </script>
@@ -898,23 +949,25 @@
   <!-- Preview Utama -->
   <div class="preview-container z-depth-3">
       <iframe
-        src="https://www.youtube.com/embed/ciw3dGeqIeo"
-        title="Video Kelurahan Kelapa Dua"
-        loading="lazy"
-        allowfullscreen>
+      src="https://www.youtube.com/embed/ciw3dGeqIeo"
+      title="Deklarasi STBM Kelurahan Kelapa Dua"
+      loading="lazy"
+      width="1280"
+      height="720"
+      allowfullscreen>
     </iframe>
   </div>
 
   <!-- Thumbnail Video -->
   <div class="video-gallery">
       <div class="video-thumb" onclick="changeVideo('ciw3dGeqIeo')">
-        <img src="https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg" alt="Video 1" loading="lazy">
+        <img src="https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg" alt="Deklarasi STBM" loading="lazy">
       </div>
       <div class="video-thumb" onclick="changeVideo('geS2Qrqdj1s')">
-        <img src="https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg" alt="Video 2" loading="lazy">
+        <img src="https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg" alt="Lomba Kader Berprestasi" loading="lazy">
       </div>
       <div class="video-thumb" onclick="changeVideo('XwJqVVLdEDY')">
-        <img src="https://img.youtube.com/vi/XwJqVVLdEDY/maxresdefault.jpg" alt="Video 3" loading="lazy">
+        <img src="https://img.youtube.com/vi/XwJqVVLdEDY/maxresdefault.jpg" alt="Lomba Kelurahan" loading="lazy">
       </div>
   </div>
 
