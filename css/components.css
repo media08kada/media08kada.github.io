@@ -140,6 +140,8 @@ font-size: 15px;
   line-height: 1.4;
   font-size: 15px;
   font-weight: 400;
+  text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Footer Modal */

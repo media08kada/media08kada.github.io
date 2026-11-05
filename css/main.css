@@ -714,11 +714,7 @@ img:hover{
   line-height:1.8;
   box-shadow: 0 15px 30px rgba(0,0,0,.2);
   text-align: justify;
-}
-
-#modal-acara p {
-  text-align: justify;
-  line-height: 1.8;
+  text-justify: inter-word;
 }
 
 /* Animation Berita Pilihan */
