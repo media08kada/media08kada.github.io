@@ -22,7 +22,7 @@ const sumberBerita = {
 // Berita Wilayah
 const sumberBeritaWilayah = [
   {
-    url: "berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html",
+    url: "berita-wilayah/baznas-berikan-bantuan-pemasangan-listrik.html",
     nomor: 1,
   },
   {
@@ -38,7 +38,7 @@ const sumberBeritaWilayah = [
     nomor: 4,
   },
   {
-    url: "berita-wilayah/baznas-berikan-bantuan-pemasangan-listrik.html",
+    url: "berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html",
     nomor: 5,
   },
   {
