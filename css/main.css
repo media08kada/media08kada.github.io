@@ -97,6 +97,13 @@ h6 {
   margin-top: 15px;
 }
 
+#judul-berita-1,
+#judul-berita-2,
+#judul-berita-3,
+#judul-berita-4 {
+  font-weight: 100;
+}
+
 @media (max-width:600px){
   #berita h5 {
     font-size: 18px;
