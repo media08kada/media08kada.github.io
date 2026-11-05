@@ -38,19 +38,38 @@
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-   {
-  "@type":"ListItem",
-  "position":1,
-  "name":"Beranda",
-  "item":"https://mediakelapadua.web.id/"
-   }
-   ]
-   }
-   </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Beranda",
+          "item": "https://mediakelapadua.web.id/"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Deklarasi STBM Kelurahan Kelapa Dua",
+      "description": "Kegiatan Deklarasi STBM Kelurahan Kelapa Dua.",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ciw3dGeqIeo/mqdefault.jpg",
+      "uploadDate": "2026-11-05",
+      "embedUrl": "https://www.youtube.com/embed/ciw3dGeqIeo",
+      "contentUrl": "https://www.youtube.com/watch?v=ciw3dGeqIeo",
+      "url": "https://mediakelapadua.web.id/nama-halaman-berita.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Media Kelapa Dua",
+        "url": "https://mediakelapadua.web.id/"
+      }
+    }
+  ]
+}
+</script>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -874,12 +893,11 @@
   <!-- Preview Utama -->
   <div class="preview-container z-depth-3">
       <iframe
-          id="mainVideo" loading="lazy"
-          src="https://www.youtube.com/embed/ciw3dGeqIeo"
-          title="YouTube Video"
-          frameborder="0"
-          allowfullscreen>
-      </iframe>
+        src="https://www.youtube.com/embed/ciw3dGeqIeo"
+        title="Video Kelurahan Kelapa Dua"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
   </div>
 
   <!-- Thumbnail Video -->
