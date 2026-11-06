@@ -1152,7 +1152,7 @@ html {
 
 #informasi h4 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #212121;
   margin-bottom: 30px;
@@ -1182,7 +1182,7 @@ html {
   margin: 12px 0;
   line-height: 1.8;
   color: #424242;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-indent: 0 !important;
   padding-left: 0 !important;
 }
@@ -1255,7 +1255,7 @@ body.dark-mode #informasi strong {
   }
 
   #informasi p {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     line-height: 1.7;
   }
 }
