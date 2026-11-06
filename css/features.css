@@ -50,7 +50,7 @@ body.dark-mode .collection-header,
 body.dark-mode #sekilas-berita .collection-item,
 body.dark-mode #bekerjasama .collection-item,
 body.dark-mode #hubungi-kami .collection-item {
-  background-color: #353535  !important;
+  background-color: rgba(1, 1, 1, 0.8) !important;
 }
 
 body.dark-mode nav a,
@@ -82,11 +82,22 @@ body.dark-mode p {
     font-weight: 300;
 }
 
+body.dark-mode .berita-list,
+body.dark-mode .berita-list .collection,
+body.dark-mode .berita-list .collection-item {
+    background-color: inherit !important;
+}
+
 /* Berita Utama - Dark Mode */
 body.dark-mode #berita h5,
 body.dark-mode #berita h6,
 body.dark-mode #berita p {
     color: #fff !important;
+}
+
+/* Dark Mode */
+body.dark-mode .berita-list {
+    background: transparent !important;
 }
 
 /* Card */
@@ -100,10 +111,15 @@ body.dark-mode .card-content h6 {
 
 /* Collection item */
 body.dark-mode .collection-item {
-  background-color: #353535  !important;
+  background-color: #333 !important;
   color: #ddd !important;
   border-bottom: 1px solid #353535 !important;
 }
+
+body.dark-mode #sekilas-berita .berita-list .collection-item {
+    background-color: transparent !important;
+}
+
 
 /* Sekilas Berita detail */
 body.dark-mode #sekilas-berita a.btn-small {
@@ -417,14 +433,14 @@ body.dark-mode .card.grey.darken-1 {
 }
 
 body.dark-mode .btn-floating.btn-medium.grey.darken-2 {
-  background-color: #a6784d !important;
+  background-color: grey\ !important;
   color: #fff !important; 
 }
 
 body.dark-mode .btn-floating.btn-medium.grey.darken-2:hover,
 body.dark-mode .btn-floating.btn-medium.grey.darken-2:focus,
 body.dark-mode .btn-floating.btn-medium.grey.darken-2:active {
-  background-color: #8f6240 !important; 
+  background-color: grey !important; 
 }
 
 /* Button Default */
@@ -433,19 +449,19 @@ body.dark-mode .btn-floating.btn-medium.grey.darken-2:active {
 }
 
 body.dark-mode .waves-effect.btn.grey {
-  background-color: #a6784d !important;
+  background-color: grey !important;
   color: #fff !important;
 }
 
 body.dark-mode .waves-effect.btn.grey:hover,
 body.dark-mode .waves-effect.btn.grey:focus,
 body.dark-mode .waves-effect.btn.grey:active {
-  background-color: #8f6240 !important;
+  background-color: grey!important;
 }
 
 /* Footer Buttons */
 footer .btn-floating.grey {
-  background-color: #2e7d32; 
+  background-color: grey; 
 }
 
 body.dark-mode footer .btn-floating.grey{
@@ -472,11 +488,11 @@ footer.grey.darken-3 {
 
 /* Saat dark mode aktif */
 body.dark-mode .btn-small.grey {
-  background-color: #8f6240 !important;
+  background-color: grey !important;
 }
 
 #darkToggle.dark-mode .btn-small.grey {
-  background-color: #8f6240 !important;
+  background-color: grey !important;
 }
 
 /* Layar Mobile */
