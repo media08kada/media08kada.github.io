@@ -477,6 +477,20 @@ margin-top: 25px;
   margin-left: 8px;
 }
 
+/* Credit dan Meta Berita */
+.credit {
+  margin: 0 0 3px;
+}
+
+.meta {
+  margin: 0 0 15px;
+  color: #757575;
+}
+
+.berita-preview {
+  margin-top: 12px;
+}
+
 /* Cuplikan Kalimat End */
 
 /* Button Like Start */

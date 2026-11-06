@@ -231,3 +231,39 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Credit dan Meta Berita
+document.querySelectorAll('[id^="preview-tanggal-"]').forEach((preview) => {
+  const id = preview.id.replace("preview-tanggal-", "");
+  const sumberTanggal = document.getElementById(`tanggal-berita-${id}`);
+
+  if (sumberTanggal) {
+    preview.textContent = `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
+  }
+});
+
+
+// Credit dan Meta Berita Wilayah
+document.querySelectorAll('[id^="preview-wilayah-"]').forEach((preview) => {
+  const id = preview.id.replace("preview-wilayah-", "");
+  const sumberTanggal = document.getElementById(`tanggal-wilayah-${id}`);
+
+  if (sumberTanggal) {
+    preview.textContent =
+      `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
+  }
+});
+
+
+// Credit dan Meta Berita Pilihan
+document.querySelectorAll('[id^="preview-pilihan-"]').forEach((preview) => {
+  const id = preview.id.replace("preview-pilihan-", "");
+  const sumberTanggal = document.getElementById(`tanggal-pilihan-${id}`);
+
+  if (sumberTanggal) {
+    preview.textContent =
+      `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
+  }
+});
+
+
+
