@@ -646,7 +646,7 @@ body.dark-mode .navbar-fixed nav {
     body.dark-mode .social-btn:hover {
     transform: translateY(-3px);
     filter: brightness(1.15);
-  }
+   }
 
     /* Footer Social Links Dark Mode */
     body.dark-mode footer .social-links .btn-floating {
