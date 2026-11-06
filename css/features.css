@@ -82,12 +82,6 @@ body.dark-mode p {
     font-weight: 300;
 }
 
-body.dark-mode .berita-list,
-body.dark-mode .berita-list .collection,
-body.dark-mode .berita-list .collection-item {
-    background-color: inherit !important;
-}
-
 /* Berita Utama - Dark Mode */
 body.dark-mode #berita h5,
 body.dark-mode #berita h6,
@@ -95,10 +89,7 @@ body.dark-mode #berita p {
     color: #fff !important;
 }
 
-/* Dark Mode */
-body.dark-mode .berita-list {
-    background: transparent !important;
-}
+
 
 /* Card */
 body.dark-mode .card {
@@ -119,7 +110,6 @@ body.dark-mode .collection-item {
 body.dark-mode #sekilas-berita .berita-list .collection-item {
     background-color: transparent !important;
 }
-
 
 /* Sekilas Berita detail */
 body.dark-mode #sekilas-berita a.btn-small {
@@ -433,14 +423,14 @@ body.dark-mode .card.grey.darken-1 {
 }
 
 body.dark-mode .btn-floating.btn-medium.grey.darken-2 {
-  background-color: grey\ !important;
+  background-color: #a6784d !important;
   color: #fff !important; 
 }
 
 body.dark-mode .btn-floating.btn-medium.grey.darken-2:hover,
 body.dark-mode .btn-floating.btn-medium.grey.darken-2:focus,
 body.dark-mode .btn-floating.btn-medium.grey.darken-2:active {
-  background-color: grey !important; 
+  background-color: #8f6240 !important; 
 }
 
 /* Button Default */
@@ -449,19 +439,19 @@ body.dark-mode .btn-floating.btn-medium.grey.darken-2:active {
 }
 
 body.dark-mode .waves-effect.btn.grey {
-  background-color: grey !important;
+  background-color: #a6784d !important;
   color: #fff !important;
 }
 
 body.dark-mode .waves-effect.btn.grey:hover,
 body.dark-mode .waves-effect.btn.grey:focus,
 body.dark-mode .waves-effect.btn.grey:active {
-  background-color: grey!important;
+  background-color: #8f6240 !important;
 }
 
 /* Footer Buttons */
 footer .btn-floating.grey {
-  background-color: grey; 
+  background-color: #2e7d32; 
 }
 
 body.dark-mode footer .btn-floating.grey{
@@ -488,11 +478,11 @@ footer.grey.darken-3 {
 
 /* Saat dark mode aktif */
 body.dark-mode .btn-small.grey {
-  background-color: grey !important;
+  background-color: #8f6240 !important;
 }
 
 #darkToggle.dark-mode .btn-small.grey {
-  background-color: grey !important;
+  background-color: #8f6240 !important;
 }
 
 /* Layar Mobile */
@@ -607,7 +597,7 @@ body.dark-mode .navbar-fixed nav {
     body.dark-mode .btn-floating,
     body.dark-mode .btn-theme,
     body.dark-mode .waves-effect.btn,
-    body.dark-mode .btn.grey,
+    body.dark-mode .btn.green,
     body.dark-mode .btn-small.grey,
     body.dark-mode .btn-large.grey,
     body.dark-mode .btn-floating.grey,
@@ -618,7 +608,7 @@ body.dark-mode .navbar-fixed nav {
     color: #fff !important;
     }
 
-    /* Hover */
+     /* Hover */
     body.dark-mode .btn:hover,
     body.dark-mode .btn-small:hover,
     body.dark-mode .btn-large:hover,
@@ -628,6 +618,35 @@ body.dark-mode .navbar-fixed nav {
     background-color: gray !important;
     color: #fff !important;
     }
+
+    /* Dark Mode */
+    body.dark-mode .fixed-action-btn > a.btn-floating {
+    background-color: #4caf50 !important; /* Green */
+    }
+
+    body.dark-mode .fixed-action-btn > a.btn-floating:hover {
+    background-color: #43a047 !important; /* Green lebih gelap saat hover */
+    }
+
+    /* Tombol utama FAB */
+    body.dark-mode .fixed-action-btn > a.btn-floating {
+    background-color: #4caf50 !important;
+    }
+
+    body.dark-mode .fixed-action-btn > a.btn-floating:hover {
+    background-color: #43a047 !important;
+    }
+
+    body.dark-mode .fixed-action-btn ul li a.social-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+    }
+
+    /* Hover */
+    body.dark-mode .social-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+  }
 
     /* Footer Social Links Dark Mode */
     body.dark-mode footer .social-links .btn-floating {
@@ -707,8 +726,8 @@ body.dark-mode .social-links .purple.darken-1 {
 }
 
 /* Facebook */
-body.dark-mode .social-links .indigo.darken-2 {
-    background-color: #1877F2 !important;
+body.dark-mode .social-links a[href*="facebook"] {
+    background: #1877F2 !important;
 }
 
 /* YouTube */
@@ -719,6 +738,7 @@ body.dark-mode .social-links .red.darken-3 {
 /* TikTok */
 body.dark-mode .social-links .fa-tiktok {
     color: #fff !important;
+    background-color: #000 !important;
 }
 /* Darkmode css End */
 
@@ -744,6 +764,18 @@ body.dark-mode .social-links .fa-tiktok {
   height: 100%;
   border: none;
   background-color: transparent;
+}
+
+body.dark-mode .video-description .btn-subscribe{
+  margin: 0;
+  background:#f30202 !important;
+  color:#fff !important;
+  border-radius:5px;
+  padding:0 24px;
+  font-weight:600;
+  text-transform:none;
+  box-shadow:0 4px 12px rgba(255,0,0,.3);
+  transition:all .3s ease;
 }
 
 /* Galeri sejajar dengan preview */
