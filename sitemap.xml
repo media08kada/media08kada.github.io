@@ -279,7 +279,17 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/complaint=policy.html</loc>
+  <loc>https://mediakelapadua.web.id/complaint-policy.html</loc>
+  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/pedoman-media-saber.html</loc>
+  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediakelapadua.web.id/kontak-redaksi.html</loc>
   <lastmod>2026-10-31T06:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
