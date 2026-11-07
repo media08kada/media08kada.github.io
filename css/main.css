@@ -921,6 +921,10 @@ grid-template-columns:repeat(2,1fr);
 /* Video End */
 
 /* Floating Button Start */
+#sliderhero{
+    position:relative !important;
+}
+
 .fab-inside-slider {
   position: absolute;
   right: 20px;
