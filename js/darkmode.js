@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // init sidenav
-  var elems = document.querySelectorAll(".sidenav");
-  M.Sidenav.init(elems);
+  // Inisialisasi Materialize jika tersedia
+  if (typeof M !== "undefined") {
+    // Sidenav
+    const sidenav = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(sidenav);
 
-  // init dropdown
-  var elemsDropdown = document.querySelectorAll(".dropdown-trigger");
-  M.Dropdown.init(elemsDropdown, { coverTrigger: false });
+    // Dropdown
+    const dropdown = document.querySelectorAll(".dropdown-trigger");
+    M.Dropdown.init(dropdown, {
+      coverTrigger: false,
+    });
+  }
 
-  // default mode
+  // Default mode
   document.body.classList.add("light-mode");
 
   function setDarkMode(isDarkMode) {
@@ -19,9 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("light-mode");
     }
 
-    // Update gambar slider
+    // Ganti gambar slider
     document.querySelectorAll("#sliderhero img").forEach((img) => {
       const darkSrc = img.getAttribute("data-dark");
+
       const lightSrc =
         img.getAttribute("data-light") || img.getAttribute("src");
 
@@ -35,21 +41,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const toggleDesktop = document.getElementById("darkmodetoggle");
+
   const toggleMobile = document.getElementById("darkmodetoggle-mobile");
 
   if (toggleDesktop) {
     toggleDesktop.checked = false;
+
     toggleDesktop.addEventListener("change", function () {
       setDarkMode(this.checked);
-      if (toggleMobile) toggleMobile.checked = this.checked;
+
+      if (toggleMobile) {
+        toggleMobile.checked = this.checked;
+      }
     });
   }
 
   if (toggleMobile) {
     toggleMobile.checked = false;
+
     toggleMobile.addEventListener("change", function () {
       setDarkMode(this.checked);
-      if (toggleDesktop) toggleDesktop.checked = this.checked;
+
+      if (toggleDesktop) {
+        toggleDesktop.checked = this.checked;
+      }
     });
   }
 });

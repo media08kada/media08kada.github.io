@@ -1,18 +1,11 @@
-// Inisialisasi komponen Materialize Navbar
-document.addEventListener("DOMContentLoaded", function () {
-  // Dropdown
-  const dropdowns = document.querySelectorAll(".dropdown-trigger");
-  M.Dropdown.init(dropdowns, {
-    coverTrigger: false,
-    constrainWidth: false,
-  });
+// MEDIA KELAPA DUA - SCRIPT.JS
+document.addEventListener("DOMContentLoaded", () => {
+  
+  // CEK MATERIALIZE
+  const hasMaterialize = typeof M !== "undefined";
 
-  // Sidenav
-  const sidenav = document.querySelectorAll(".sidenav");
-  M.Sidenav.init(sidenav);
-
-  // Dropdown
-  document.addEventListener("DOMContentLoaded", function () {
+  if (hasMaterialize) {
+    // Dropdown
     const dropdowns = document.querySelectorAll(".dropdown-trigger");
     M.Dropdown.init(dropdowns, {
       coverTrigger: false,
@@ -20,56 +13,156 @@ document.addEventListener("DOMContentLoaded", function () {
       alignment: "left",
       closeOnClick: true,
     });
-  });
+
+    // Sidenav
+    const sidenavs = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(sidenavs);
+
+    // Slider Utama
+    const sliders = document.querySelectorAll(".slider");
+    M.Slider.init(sliders, {
+      indicators: false,
+      height: 400,
+      transition: 600,
+      interval: 3000,
+    });
+
+    // Slider Berita
+    const beritaSliders = document.querySelectorAll(".berita-slider");
+    M.Slider.init(beritaSliders, {
+      indicators: true,
+      height: 300,
+      duration: 500,
+      interval: 5000,
+    });
+
+    // Parallax
+    const parallax = document.querySelectorAll(".parallax");
+    M.Parallax.init(parallax);
+
+    // Material Box
+    const materialboxed = document.querySelectorAll(".materialboxed");
+    M.Materialbox.init(materialboxed);
+
+    // ScrollSpy
+    const scrollspy = document.querySelectorAll(".scrollspy");
+    M.ScrollSpy.init(scrollspy, {
+      scrollOffset: 50,
+    });
+
+    // Modal
+    const modals = document.querySelectorAll(".modal");
+    M.Modal.init(modals, {
+      dismissible: true,
+      opacity: 0.5,
+      inDuration: 300,
+      outDuration: 200,
+    });
+
+    // Floating Action Button
+    const fabs = document.querySelectorAll(".fixed-action-btn");
+    M.FloatingActionButton.init(fabs, {
+      direction: "left",
+      hoverEnabled: false,
+    });
+  } else {
+    console.warn("Materialize JS tidak ditemukan.");
+  }
+
+    // TOMBOL CLOSE ICONS
+    const closeBtn = document.getElementById("close");
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const icons = document.getElementById("icons");
+
+      if (icons) {
+        icons.style.display = "none";
+      }
+    });
+  }
+
+    // BERITA WILAYAH
+    const showMoreBtn = document.getElementById("show-more-btn");
+
+  if (showMoreBtn) {
+    const hiddenItems = document.querySelectorAll(".item-hidden");
+    let isOpen = false;
+
+    hiddenItems.forEach((item) => {
+      item.style.display = "none";
+    });
+
+    showMoreBtn.addEventListener("click", () => {
+      if (!isOpen) {
+        hiddenItems.forEach((item) => {
+          item.style.display = "block";
+        });
+
+        showMoreBtn.innerText = "Close";
+        isOpen = true;
+      } else {
+        hiddenItems.forEach((item) => {
+          item.style.display = "none";
+        });
+
+        showMoreBtn.innerText = "Open";
+        isOpen = false;
+      }
+    });
+  }
+
   
-  // Slider
-document.addEventListener("DOMContentLoaded", function () {
-  const sliders = document.querySelectorAll(".slider");
+  // GALLERY
+    const galleryBtn = document.getElementById("gallery-btn");
 
-  M.Slider.init(sliders, {
-    indicators: false,
-    height: 400,
-    transition: 600,
-    interval: 3000,
-  });
+  if (galleryBtn) {
+    const galleryItems = document.querySelectorAll(".gallery .hidden");
+
+    let galleryOpen = false;
+
+    galleryItems.forEach((item) => {
+      item.style.display = "none";
+    });
+
+    galleryBtn.addEventListener("click", () => {
+      if (!galleryOpen) {
+        galleryItems.forEach((item) => {
+          item.style.display = "block";
+        });
+
+        galleryBtn.innerHTML = "Close";
+        galleryOpen = true;
+      } else {
+        galleryItems.forEach((item) => {
+          item.style.display = "none";
+        });
+
+        galleryBtn.innerHTML = "Open";
+        galleryOpen = false;
+      }
+    });
+  }
 });
 
-  // Slider Berita
-document.addEventListener("DOMContentLoaded", function () {
-  M.Slider.init(document.querySelectorAll(".berita-slider"), {
-    indicators: true,
-    height: 300,
-    duration: 500,
-    interval: 5000,
-  });
-});
 
-  // Parallax
-  const parallax = document.querySelectorAll(".parallax");
-  M.Parallax.init(parallax);
+// TOAST PESAN
+function showToast() {
+  if (typeof M !== "undefined") {
+    M.toast({
+      html: "Pesan berhasil dikirim!",
+      classes: "rounded green",
+      displayLength: 5000,
+    });
+  } else {
+    alert("Pesan berhasil dikirim!");
+  }
+}
 
-  // Materialbox
-  const materialbox = document.querySelectorAll(".materialboxed");
-  M.Materialbox.init(materialbox);
 
-  // ScrollSpy
-  const scrollspy = document.querySelectorAll(".scrollspy");
-  M.ScrollSpy.init(scrollspy, {
-    scrollOffset: 50,
-  });
-
-  // Modal
-  const modals = document.querySelectorAll(".modal");
-  M.Modal.init(modals);
-});
-
-// Inisialisasi Materialize Modal
-document.addEventListener("DOMContentLoaded", function () { //pesan 95
-  const elems = document.querySelectorAll(".modal");
-  M.Modal.init(elems);
-});
-
-// Scroll ke atas
+// SCROLL KE ATAS
 function scrollKeatas() {
   window.scrollTo({
     top: 0,
@@ -77,155 +170,33 @@ function scrollKeatas() {
   });
 }
 
-// Load file modals.html ke dalam index
-document.addEventListener("DOMContentLoaded", function () {
-  // Inisialisasi Modal
-  const modalElems = document.querySelectorAll(".modal");
-  M.Modal.init(modalElems);
 
-  // Inisialisasi Slider
-  const sliderElems = document.querySelectorAll(".slider");
-  M.Slider.init(sliderElems, {
-    indicators: false,
-    height: 500,
-    duration: 500,
-    interval: 3000,
-  });
-});
+// VIDEO YOUTUBE
+function changeVideo(id) {
+  const preview = document.getElementById("mainVideo");
 
-// Pemberitahuan pesan telah terkirim
-  function showToast() {
-    M.toast({
-      html: "Pesan berhasil dikirim!",
-      classes: "rounded green",
-      displayLength: 5000, 
-    });
+  if (preview) {
+    preview.src = `https://www.youtube.com/embed/${id}`;
   }
-
-  // Menghilangkan scroll dibawah //
-  document.addEventListener("DOMContentLoaded", function () {
-    var elems = document.querySelectorAll(".dropdown-trigger");
-    M.Dropdown.init(elems, {
-      coverTrigger: false, // dropdown muncul di luar trigger
-      constrainWidth: false, // lebar dropdown tidak dibatasi trigger
-      alignment: "left", // bisa diganti 'right' sesuai kebutuhan
-    });
-  });
-
-// Modal Berita Pilihan //
-  document.addEventListener("DOMContentLoaded", function () {
-    // Ambil semua elemen dengan class .modal
-    var elems = document.querySelectorAll(".modal");
-
-    // Inisialisasi Materialize Modal untuk semuanya
-    var instances = M.Modal.init(elems, {
-      dismissible: true, // bisa ditutup dengan klik di luar modal
-      opacity: 0.5, // transparansi background overlay
-      inDuration: 300, // animasi masuk
-      outDuration: 200, // animasi keluar
-    });
-  });
-
-    // Section Video //
-    const preview = document.getElementById("mainVideo");
-    function changeVideo(id) {
-        preview.src = `https://www.youtube.com/embed/${id}`;
-    }
-
-   // Histats.com  START  (aync)-->
-  var _Hasync = _Hasync || [];
-  _Hasync.push(["Histats.start", "1,4996560,4,1029,150,25,00011111"]);
-  _Hasync.push(["Histats.fasi", "1"]);
-  _Hasync.push(["Histats.track_hits", ""]);
-
-  (function () {
-    var hs = document.createElement("script");
-    hs.type = "text/javascript";
-    hs.async = true;
-    hs.src = "//s10.histats.com/js15_as.js";
-    (
-      document.getElementsByTagName("head")[0] ||
-      document.getElementsByTagName("body")[0]
-    ).appendChild(hs);
-  })();
-
-// Parallax //
-  document.addEventListener("DOMContentLoaded", function () {
-    var elems = document.querySelectorAll(".parallax");
-    M.Parallax.init(elems);
-  });
-
-   // Ambil tombol close-btn
-  document.getElementById("close").addEventListener("click", function(e) {
-    e.preventDefault(); // cegah link default
-    document.getElementById("icons").style.display = "none"; // sembunyikan div
-  });
-
-  //modal trigger
-document.addEventListener("DOMContentLoaded", function () {
-  const elems = document.querySelectorAll(".modal");
-  M.Modal.init(elems);
-});
-
-// Berita Wilayah
-document.addEventListener("DOMContentLoaded", function () {
-    const showMoreBtn = document.getElementById("show-more-btn");
-    const hiddenItems = document.querySelectorAll(".item-hidden");
-    let isOpen = false;
-
-    // Pastikan item hidden tertutup saat awal
-    hiddenItems.forEach((item) => {
-        item.style.display = "none";
-    });
-
-    showMoreBtn.addEventListener("click", function () {
-        if (!isOpen) {
-            // Tampilkan item
-            hiddenItems.forEach((item) => {
-                item.style.display = "block";
-            });
-            showMoreBtn.innerText = "Close";
-            isOpen = true;
-        } else {
-            // Sembunyikan item
-            hiddenItems.forEach((item) => {
-                item.style.display = "none";
-            });
-            showMoreBtn.innerText = "Open";
-            isOpen = false;
-        }
-    });
-});
-
-// Gallery toggle
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("gallery-btn");
-  const hiddenItems = document.querySelectorAll(".gallery .hidden");
-  let isOpen = false;
-
-  btn.addEventListener("click", function () {
-    if (!isOpen) {
-      hiddenItems.forEach((item) => (item.style.display = "block"));
-      btn.innerHTML = '<i class="material-icons left"></i>Close';
-      isOpen = true;
-    } else {
-      hiddenItems.forEach((item) => (item.style.display = "none"));
-      btn.innerHTML = '<i class="material-icons left"></i>Open';
-      isOpen = false;
-    }
-  });
-});
-
-// Floating Action Button
-document.addEventListener("DOMContentLoaded", function () {
-  const elems = document.querySelectorAll(".fixed-action-btn");
-
-  M.FloatingActionButton.init(elems, {
-    direction: "left",
-    hoverEnabled: false,
-  });
-});
+}
 
 
+// HISTATS
+var _Hasync = _Hasync || [];
 
+_Hasync.push(["Histats.start", "1,4996560,4,1029,150,25,00011111"]);
+
+_Hasync.push(["Histats.fasi", "1"]);
+
+_Hasync.push(["Histats.track_hits", ""]);
+
+(function () {
+  const hs = document.createElement("script");
+
+  hs.type = "text/javascript";
+  hs.async = true;
+  hs.src = "//s10.histats.com/js15_as.js";
+
+  (document.head || document.body).appendChild(hs);
+})();
 
