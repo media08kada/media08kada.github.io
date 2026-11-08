@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hasMaterialize = typeof M !== "undefined";
 
   if (hasMaterialize) {
+    
     // Dropdown
     const dropdowns = document.querySelectorAll(".dropdown-trigger");
     M.Dropdown.init(dropdowns, {
