@@ -31,6 +31,19 @@ img{
   transition: .4s;
 }
 
+.material-icons{
+  font-family:"Material Icons" !important;
+  font-weight:normal;
+  font-style:normal;
+  font-size:24px;
+  display:inline-block;
+  line-height:1;
+  text-transform:none;
+  letter-spacing:normal;
+  white-space:nowrap;
+  direction:ltr;
+}
+
 h2{
   font-weight:400;
   margin-bottom:40px;
@@ -436,6 +449,52 @@ img:hover{
     width:100%;
     object-fit:cover;
     display:block;
+}
+
+/* Berita Slider */
+.berita-slider {
+    position: relative;
+}
+
+/* Indicator masuk ke dalam gambar */
+.berita-slider .indicators {
+    bottom: 50px !important;
+    z-index: 10;
+}
+
+/* Style indicator */
+.berita-slider .indicator-item {
+    background-color: rgba(255,255,255,0.7);
+}
+
+.berita-slider .indicator-item.active {
+    background-color: #4caf50;
+}
+
+/* Hilangkan background putih slider berita */
+.berita-slider {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Hilangkan background area indikator */
+.berita-slider .indicators {
+    background: transparent !important;
+    box-shadow: none !important;
+    bottom: 15px !important;
+    z-index: 100;
+}
+
+/* Hilangkan background putih bawaan slides */
+.berita-slider .slides {
+    background: transparent !important;
+}
+
+/* Pastikan gambar memenuhi area slider */
+.berita-slider .slides li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width:600px){
