@@ -494,6 +494,24 @@ img:hover{
     padding-top: 0 !important;
   }
 }
+
+/* Berita Slider */
+.berita-slider {
+    position: relative;
+}
+
+/* Container slider */
+.berita-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gambar slider */
+.berita-slider .slides li img {
+    position: relative;
+    z-index: 1;
+}
+
 /* Slider Berita Utama End */
 
 /* Grid, Card, Colletion */
