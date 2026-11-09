@@ -230,30 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-// Credit dan Meta Berita
-document.querySelectorAll('[id^="preview-tanggal-"]').forEach((preview) => {
-  const id = preview.id.replace("preview-tanggal-", "");
-  const sumberTanggal = document.getElementById(`tanggal-berita-${id}`);
-
-  if (sumberTanggal) {
-    preview.textContent = `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
-  }
-});
-
-
-// Credit dan Meta Berita Wilayah
-document.querySelectorAll('[id^="preview-wilayah-"]').forEach((preview) => {
-  const id = preview.id.replace("preview-wilayah-", "");
-  const sumberTanggal = document.getElementById(`tanggal-wilayah-${id}`);
-
-  if (sumberTanggal) {
-    preview.textContent =
-      `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
-  }
-});
-
-
 // Credit dan Meta Berita Pilihan
 document.querySelectorAll('[id^="preview-pilihan-"]').forEach((preview) => {
   const id = preview.id.replace("preview-pilihan-", "");
@@ -264,6 +240,38 @@ document.querySelectorAll('[id^="preview-pilihan-"]').forEach((preview) => {
       `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
   }
 });
+
+
+// Berita Wilayah Horizonal
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".berita-preview").forEach((card) => {
+    const idBerita = card.dataset.berita;
+
+    const berita = DATA_BERITA[idBerita];
+
+    if (!berita) return;
+
+    const link = "../berita-utama/" + (sumberBerita[idBerita] || "#");
+
+    const img = card.querySelector("img");
+    const judul = card.querySelector("h5");
+    const tombol = card.querySelector("a");
+
+    if (img) {
+      img.src = berita.gambar;
+      img.alt = berita.judul;
+    }
+
+    if (judul) {
+      judul.textContent = berita.judul;
+    }
+
+    if (tombol) {
+      tombol.href = link;
+    }
+  });
+});
+
 
 
 

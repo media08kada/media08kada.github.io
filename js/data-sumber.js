@@ -6,7 +6,7 @@ const sumberBeritaUtama = [
   "berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
 ];
 
-// Berita-Box
+// Berita-Box Link
 const sumberBerita = {
   "berita-1":
     "rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
@@ -17,6 +17,32 @@ const sumberBerita = {
 
   "berita-4":
     "deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
+};
+
+// Data Berita Judul dan Gambar
+const DATA_BERITA = {
+  "berita-1": {
+    judul:
+      "RW 08 Kelapa Dua Wakili Puskesmas Kebon Jeruk Lomba Kampung Bebas Jentik Tingkat Kota Jakarta Barat",
+    gambar: "../img/berita-1/A.webp",
+  },
+
+  "berita-2": {
+    judul: "Verifikasi Lapangan Lomba Kampung Bebas Jentik di RW 08 Kelapa Dua",
+    gambar: "../img/berita-2/B.webp",
+  },
+
+  "berita-3": {
+    judul:
+      "Kerja Bakti Sambut Verifikasi Lomba Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
+    gambar: "../img/berita-3/C.webp",
+  },
+
+  "berita-4": {
+    judul:
+      "Deklarasi STBM Kelurahan Kelapa Dua Perkuat Komitmen Wujudkan Lingkungan Sehat dan Bebas Stunting",
+    gambar: "../img/berita-4/D.webp",
+  },
 };
 
 // Berita Wilayah
@@ -86,4 +112,7 @@ const sumberBeritaPilihan = [
     previewIsi: "preview-isi-pilihan-4",
   },
 ];
+
+
+
 
