@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
   <!-- Metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -199,26 +197,47 @@
   <nav class="navbar">
     <div class="container nav-wrapper-custom">
       <a class="navbar-brand" href="index.html">
-        <img src="img/partner/MediaKelapadua.png" alt="Logo Media Kelapa Dua" width="120" height="120"></a>
+      <img
+      src="img/partner/MediaKelapadua.png"
+      alt="Logo Media Kelapa Dua"
+      width="120"
+      height="120">
+      </a>
           
   <!-- Menu Navbar -->
       <ul class="right hide-on-med-and-down">
+
         <li><a href="index.html">Beranda</a></li>
-        <li><a class="dropdown-trigger" href="#berita" data-target="dropdown1">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-trigger" href="#contact" data-target="dropdown4">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+        
+        <li>
+          <a class="dropdown-trigger" href="#berita" data-target="dropdown1">Berita<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li>
+          <a class="dropdown-trigger" href="#wilayah" data-target="dropdown2">Info Wilayah<i class="material-icons right">arrow_drop_down</i></a></li>
+        
+        <li>
+          <a class="dropdown-trigger" href="#gallery" data-target="dropdown3">Gallery<i class="material-icons right">arrow_drop_down</i></a></li>
+        
+         <li>
+          <a class="dropdown-trigger" href="#contact" data-target="dropdown4">Contact<i class="material-icons right">arrow_drop_down</i>
+          </a>
+         </li>
       
-        <!-- Dark Mode Toggle -->
-        <li class="dark-mode-item">
-          <div class="switch small">
-            <label>
-              <i class="material-icons">wb_sunny</i>
-              <input type="checkbox" id="darkmodetoggle">
-            </label>
-          </div>
-        </li>
-      </ul>
+    <!-- Dark Mode Toggle -->
+    <li class="dark-mode-item">
+      <label class="dark-toggle">
+        <i class="material-icons">wb_sunny</i>
+
+        <input
+          type="checkbox"
+          id="darkmodetoggle">
+
+        <span class="lever"></span>
+
+      </label>
+    </li>
+      
+    </ul>
 
   <!-- Trigger menu mobile -->
   <a href="#" data-target="mobile-nav" class="sidenav-trigger">
@@ -252,7 +271,6 @@
   <div class="indeterminate"></div>
  </div>
 
- </div>
 </nav>
 
 <!-- Dropdown Content 1 -->
@@ -313,6 +331,7 @@
         <i class="material-icons">wb_sunny</i>
         <input type="checkbox" id="darkmodetoggle-mobile">
         <span class="lever"></span>
+        <i class="material-icons">dark_mode</i>
       </label>
 
   </div>
@@ -379,7 +398,6 @@
   <li>
     <img src="slider/img/kbj.jpg" alt="Kampung Bebas Jentik Kelapa Dua Jakarta Barat" 
         loading="eager" 
-        fetchpriority="high"
         width="1920" 
         height="1080"
         data-light="slider/img/kbj.jpg" 
@@ -398,7 +416,7 @@
     </div>
    </li>
   <li>
-  <img fetchpriority="lazy" src="slider/img/Kelapa-bg1.jpg"
+  <img src="slider/img/Kelapa-bg1.jpg"
       data-light="slider/img/Kelapa-bg1.jpg"
       data-dark="slider/img/Kelapa-bg1-dark.jpeg" width="1920" height="1080">
     <div class="caption center-align">
@@ -415,7 +433,7 @@
      </div>
    </li>
   <li>
-  <img fetchpriority="lazy" src="slider/img/Kota-bg1.jpg" data-light="slider/img/Kota-bg1.jpg" data-dark="slider/img/Kota-bg1-dark.jpeg" width="1920" height="1080">
+  <img src="slider/img/Kota-bg1.jpg" data-light="slider/img/Kota-bg1.jpg" data-dark="slider/img/Kota-bg1-dark.jpeg" width="1920" height="1080">
   <div class="caption center-align">
   <h2>Media Kelapa Dua</h2>
        <section class="site-intro">
@@ -424,7 +442,7 @@
        </div>
        </section>
        <a href="https://mediakelapadua.web.id/tentang-kami.html"
-       target="_blank" class="btn waves-effect waves-light btn-small grey">Tentang Kamis</a>
+       target="_blank" class="btn waves-effect waves-light btn-small grey">Tentang Kami</a>
   </div>
 
  </li>
@@ -586,7 +604,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-1"></h6>
           <div class="left-align">
-          <a id="preview-link-1"  class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-1"  class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
 
@@ -597,7 +615,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-2"></h6>
           <div class="left-align">
-          <a id="preview-link-2" class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-2" class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
 
@@ -608,7 +626,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-3"></h6>
           <div class="left-align">
-          <a id="preview-link-3" class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-3" class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
 
@@ -619,7 +637,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-4"></h6>
           <div class="left-align">
-          <a id="preview-link-4" class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-4" class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
 
@@ -630,7 +648,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-5"></h6>
           <div class="left-align">
-          <a id="preview-link-5" class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-5" class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
 
@@ -641,7 +659,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-6"></h6>
           <div class="left-align">
-          <a id="preview-link-6" class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-6" class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
 
@@ -652,7 +670,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-7"></h6>
           <div class="left-align">
-          <a id="preview-link-7" class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-7" class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
 
@@ -663,7 +681,7 @@
           class="circle responsive-img z-depth-3">
           <h6 id="preview-judul-8"></h6>
           <div class="left-align">
-          <a id="preview-link-8" class="waves-effect waves-light btn-small grey" href="/">Baca Selengkapnya</a>
+          <a id="preview-link-8" class="waves-effect waves-light btn-small grey" href="#!">Baca Selengkapnya</a>
         </div>
       </li>
     </ul>
@@ -1030,7 +1048,6 @@
           id="gallery-btn"
           type="button"
           class="waves-effect waves-light btn-small grey">
-
           Open
         </button>
       </div>
@@ -1047,15 +1064,13 @@
 
   <!-- Preview Utama -->
   <div class="preview-container z-depth-3">
-  <iframe
+    <iframe
     id="mainVideo"
     src="https://www.youtube.com/embed/ciw3dGeqIeo"
-    title="Deklarasi STBM Kelurahan Kelapa Dua"
     loading="lazy"
-    width="1280"
-    height="720"
+    referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
-  </iframe>
+    </iframe>
   </div>
 
   <!-- Thumbnail Video -->
@@ -1076,7 +1091,7 @@
     <p>Selamat menonton jangan lupa share, subscribe, dan like channel Youtube @kosongdelapan102</p>
     <a href="https://www.youtube.com/@KosongDelapan102"
        target="_blank"
-       class="btn btn-subscribe">
+       class="btn btn-subscribe" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
        Subscribe</a>
   </div>
 </section>
@@ -1152,11 +1167,15 @@
 <!-- Button Icons End -->
 
 <!-- Scroll Ke Atas -->
-<a id="btn-top"
-   class="btn-floating btn-medium grey pulse buttonToTop"
-   onclick="scrollKeatas()">
-  <i class="material-icons">expand_less</i>
-</a>
+<button
+id="btn-top"
+type="button"
+class="btn-floating btn-medium grey pulse buttonToTop"
+onclick="scrollKeatas()">
+
+<i class="material-icons">expand_less</i>
+
+</button>
 <!-- Scroll Ke Atas End -->
  
 </main>
@@ -1210,13 +1229,13 @@
 <!-- Materialize JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<script src="js/script.js"></script>
-<script src="js/darkmode.js"></script>
-<script src="js/data-search.js"></script>
-<script src="js/search.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/data-sumber.js"></script>
-<script src="js/data.js"></script>
+<script defer src="js/script.js"></script>
+<script defer src="js/darkmode.js"></script>
+<script defer src="js/data-search.js"></script>
+<script defer src="js/search.js"></script>
+<script defer src="js/contact.js"></script>
+<script defer src="js/data-sumber.js"></script>
+<script defer src="js/data.js"></script
 
 <!-- Google Tag Manager -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFE1NH0SL3"></script>
