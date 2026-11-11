@@ -1,6 +1,6 @@
 // Berita Utama
 const sumberBeritaUtama = [
-  "berita-utama/rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
+  "berita-utama/mini-konvensi-kbj-tingkat-provensi-dki-jakarta.html",
   "berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
   "berita-utama/kerja-bakti-sambut-verifikasi-lomba-kbj.html",
   "berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
@@ -9,7 +9,7 @@ const sumberBeritaUtama = [
 // Berita-Box Link
 const sumberBerita = {
   "berita-1":
-    "rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html",
+    "mini-konvensi-kbj-tingkat-provensi-dki-jakarta.html",
 
   "berita-2": "verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
 
@@ -23,7 +23,7 @@ const sumberBerita = {
 const DATA_BERITA = {
   "berita-1": {
     judul:
-      "RW 08 Kelapa Dua Wakili Puskesmas Kebon Jeruk Lomba Kampung Bebas Jentik Tingkat Kota Jakarta Barat",
+      "RW 08 Kelapa Dua Wakili Jakarta Barat dalam Mini Konvensi Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
     gambar: "../img/berita-1/A.webp",
   },
 
