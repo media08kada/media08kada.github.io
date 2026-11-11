@@ -76,7 +76,7 @@ const sumberBeritaWilayah = [
     nomor: 7,
   },
   {
-    url: "berita-wilayah/posyandu-siklus-hidup-melati-rw-08-gelar-pelayanan-kesehatan.html",
+    url: "berita-wilayah/persiapan-mini-konvensi-kader-jumantik-rw-08.html",
     nomor: 8,
   },
 ];
