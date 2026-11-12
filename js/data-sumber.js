@@ -121,28 +121,27 @@ const beritaPopuler = [
       "RW 08 Kelapa Dua Wakili Jakarta Barat dalam Mini Konvensi Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
     link: "/berita-utama/mini-konvensi-kbj-tingkat-provensi-dki-jakarta.html",
   },
-
   {
     judul: "Verifikasi Lapangan Lomba Kampung Bebas Jentik di RW 08 Kelapa Dua",
     link: "/berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
   },
-
   {
     judul:
       "Kerja Bakti Sambut Verifikasi Lomba Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
     link: "/berita-utama/kerja-bakti-sambut-verifikasi-lomba-kbj.html",
   },
-
   {
     judul:
       "Deklarasi STBM Kelurahan Kelapa Dua Perkuat Komitmen Wujudkan Lingkungan Sehat dan Bebas Stunting",
     link: "/berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
   },
-
   {
-    judul: 
-      "Baznas Berikan Bantuan Pemasangan Listrik bagi Warga Kelapa Dua",
+    judul: "Baznas Berikan Bantuan Pemasangan Listrik bagi Warga Kelapa Dua",
     link: "/berita-wilayah/baznas-berikan-bantuan-pemasangan-listrik.html",
+  },
+  {
+    judul: "Hidran Mandiri Perkuat Sistem Proteksi Kebakaran",
+    link: "/Pilihan/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
   },
 ];
 
