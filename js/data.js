@@ -50,13 +50,9 @@ function loadPreviewBerita(fileBerita, nomor) {
 /* BERITA WILAYAH */
 
 document.addEventListener("DOMContentLoaded", () => {
-
   sumberBeritaWilayah.forEach((berita) => {
-
     fetch(berita.url)
-
       .then((response) => {
-
         if (!response.ok) {
           throw new Error(`Gagal memuat ${berita.url}`);
         }
@@ -65,37 +61,30 @@ document.addEventListener("DOMContentLoaded", () => {
       })
 
       .then((html) => {
-
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, "text/html");
 
         // Judul
-        const judul = doc.querySelector(
-          `#judul-wilayah-${berita.nomor}`
-        );
+        const judul = doc.querySelector(`#judul-wilayah-${berita.nomor}`);
 
         // Isi
-        const isi = doc.querySelector(
-          `#isi-wilayah-${berita.nomor}`
-        );
+        const isi = doc.querySelector(`#isi-wilayah-${berita.nomor}`);
 
         // Target Judul
         const targetJudul = document.getElementById(
-          `preview-judul-${berita.nomor}`
+          `preview-judul-${berita.nomor}`,
         );
 
         if (judul && targetJudul) {
-          targetJudul.textContent =
-            judul.textContent.trim();
+          targetJudul.textContent = judul.textContent.trim();
         }
 
         // Target Ringkasan
         const targetIsi = document.getElementById(
-          `preview-isi-${berita.nomor}`
+          `preview-isi-${berita.nomor}`,
         );
 
         if (isi && targetIsi) {
-
           const previewText =
             isi.textContent
               .replace(/\s+/g, " ")
@@ -109,26 +98,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Target Link
         const targetLink = document.getElementById(
-          `preview-link-${berita.nomor}`
+          `preview-link-${berita.nomor}`,
         );
 
         if (targetLink) {
           targetLink.href = berita.url;
         }
-
       })
 
       .catch((err) => {
-        console.error(
-          `Gagal memuat ${berita.url}:`,
-          err
-        );
+        console.error(`Gagal memuat ${berita.url}:`, err);
       });
-
   });
-
 });
-
 
 /* BERITA PILIHAN */
 document.addEventListener("DOMContentLoaded", () => {
@@ -168,7 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
-
 
 /* PREVIEW BERITA HORIZONTAL */
 document.addEventListener("DOMContentLoaded", () => {
@@ -236,11 +217,9 @@ document.querySelectorAll('[id^="preview-pilihan-"]').forEach((preview) => {
   const sumberTanggal = document.getElementById(`tanggal-pilihan-${id}`);
 
   if (sumberTanggal) {
-    preview.textContent =
-      `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
+    preview.textContent = `Dipublikasikan oleh Redaksi Media Kelapa Dua | ${sumberTanggal.textContent}`;
   }
 });
-
 
 // Berita Wilayah Horizonal
 document.addEventListener("DOMContentLoaded", () => {
@@ -272,6 +251,90 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Populer News
+document.addEventListener("DOMContentLoaded", () => {
+  const ticker = document.querySelector(".news-ticker");
 
+  if (!ticker || typeof beritaPopuler === "undefined") return;
 
+  ticker.innerHTML = `
+        <div class="ticker-track">
+            ${beritaPopuler
+              .map(
+                (item) => `
+                <a href="${item.link}" title="${item.judul}">
+                    🔥 ${item.judul}
+                </a>
+            `,
+              )
+              .join("")}
 
+            ${beritaPopuler
+              .map(
+                (item) => `
+                <a href="${item.link}" title="${item.judul}">
+                    🔥 ${item.judul}
+                </a>
+            `,
+              )
+              .join("")}
+        </div>
+    `;
+
+  const track = document.querySelector(".ticker-track");
+  const jumlahBerita = beritaPopuler.length;
+
+  // 18 detik per berita
+  track.style.animationDuration = `${jumlahBerita * 18}s`;
+
+  let current = 0;
+  let autoSlide;
+
+  function showNews(index) {
+    items.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    items[index].classList.add("active");
+  }
+
+  function nextNews() {
+    current++;
+
+    if (current >= items.length) {
+      current = 0;
+    }
+
+    showNews(current);
+  }
+
+  function prevNews() {
+    current--;
+
+    if (current < 0) {
+      current = items.length - 1;
+    }
+
+    showNews(current);
+  }
+
+  document.getElementById("nextNews")?.addEventListener("click", nextNews);
+
+  document.getElementById("prevNews")?.addEventListener("click", prevNews);
+
+  function startAutoSlide() {
+    autoSlide = setInterval(nextNews, 5000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
+  }
+
+  startAutoSlide();
+
+  ticker.addEventListener("mouseenter", stopAutoSlide);
+  ticker.addEventListener("mouseleave", startAutoSlide);
+
+  ticker.addEventListener("touchstart", stopAutoSlide);
+  ticker.addEventListener("touchend", startAutoSlide);
+});
