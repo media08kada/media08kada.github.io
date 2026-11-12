@@ -26,3 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// FAB-Share
+document.addEventListener("DOMContentLoaded", () => {
+  const fab = document.querySelector(".article-share-fab");
+
+  fab.addEventListener("click", () => {
+    fab.classList.toggle("active");
+  });
+});
+

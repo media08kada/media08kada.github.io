@@ -714,3 +714,158 @@ margin-top: 25px;
       border-top: 1px solid #ddd;
     }
 /* Pedoman Media Siber End */
+
+
+/* FAB Artikel Halaman Lain Start */
+/* Container tombol hero */
+#btn-hero{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Container Share */
+.article-share-fab{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Tombol Share Utama */
+.article-share-fab .btn-share{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-width: 110px;
+    padding: 0 12px;
+    height: 32.4px; /* sama dengan btn-small Materialize */
+    line-height: 32.4px;
+    box-sizing: border-box;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: .3s ease;
+}
+
+.article-share-fab .btn-share span{
+    line-height: 1;
+}
+
+.article-share-fab .btn-share i{
+    font-size: 15px;
+    line-height: 1;
+}
+
+/* Hover */
+.article-share-fab .btn-share:hover{
+    filter: brightness(1.1);
+}
+
+/* Menu Share */
+.article-share-fab ul{
+    position: absolute;
+    top: calc(100% + 8px); /* pindah ke bawah */
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    z-index: 999;
+    white-space: nowrap;
+}
+
+.article-share-fab.active ul{
+    display: flex;
+}
+
+/* Tombol Sosial */
+.article-share-fab .btn-floating{
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    transition: all .3s ease;
+}
+
+/* Hover Tombol Sosial */
+.article-share-fab .btn-floating:hover{
+    transform: translateY(-2px);
+}
+
+/* Icon Sosial */
+.article-share-fab .btn-floating i{
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Tablet */
+@media (max-width: 768px){
+
+    .article-share-fab ul{
+        gap: 6px;
+    }
+
+    .article-share-fab .btn-share{
+        min-width: 115px;
+        font-size: 13px;
+    }
+
+    .article-share-fab .btn-floating{
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+    .article-share-fab .btn-share{
+        min-width: 110px;
+        height: 38px;
+        padding: 0 14px;
+
+        font-size: 13px;
+        gap: 6px;
+    }
+
+    .article-share-fab .btn-share i{
+        font-size: 17px;
+    }
+
+    .article-share-fab ul{
+        max-width: calc(100vw - 20px);
+        gap: 6px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .article-share-fab .btn-floating{
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+    }
+}
+/* FAB Artikel Halaman Lain End*/
+

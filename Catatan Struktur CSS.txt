@@ -12,6 +12,7 @@ Catatan Struktur CSS
 	iklan.css
 	berita-box.css
 	pedoman-media-saber.css
+	fab-share.css
 
 3. Features
 	darkmode.css
