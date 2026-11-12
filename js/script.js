@@ -1,11 +1,9 @@
-// =====================================
-// MEDIA KELAPA DUA - SCRIPT.JS FINAL
-// =====================================
 
+// MEDIA KELAPA DUA - SCRIPT.JS FINAL
 document.addEventListener("DOMContentLoaded", () => {
-  // =========================
+
   // MATERIALIZE INIT
-  // =========================
+
   if (typeof M !== "undefined") {
     // Dropdown
     const dropdowns = document.querySelectorAll(".dropdown-trigger");
@@ -98,10 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
     console.warn("Materialize JS tidak ditemukan.");
   }
 
-  // =========================
+ 
   // TOMBOL CLOSE ICON
-  // =========================
-  const closeBtn = document.getElementById("close");
+   const closeBtn = document.getElementById("close");
 
   const icons = document.getElementById("icons");
 
@@ -112,10 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // =========================
+ 
   // BERITA WILAYAH
-  // =========================
-  const showMoreBtn = document.getElementById("show-more-btn");
+   const showMoreBtn = document.getElementById("show-more-btn");
 
   if (showMoreBtn) {
     const hiddenItems = document.querySelectorAll(".item-hidden");
@@ -137,10 +133,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // =========================
+ 
   // GALLERY
-  // =========================
-  const galleryBtn = document.getElementById("gallery-btn");
+   const galleryBtn = document.getElementById("gallery-btn");
 
   if (galleryBtn) {
     const galleryItems = document.querySelectorAll(".gallery .hidden");
@@ -163,9 +158,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// =====================================
+
 // TOAST PESAN
-// =====================================
+
 function showToast() {
   if (typeof M !== "undefined") {
     M.toast({
@@ -178,9 +173,9 @@ function showToast() {
   }
 }
 
-// =====================================
+
 // SCROLL KE ATAS
-// =====================================
+
 function scrollKeatas() {
   window.scrollTo({
     top: 0,
@@ -188,9 +183,9 @@ function scrollKeatas() {
   });
 }
 
-// =====================================
+
 // VIDEO YOUTUBE
-// =====================================
+
 function changeVideo(videoId) {
   const iframe = document.getElementById("mainVideo");
 
@@ -199,9 +194,9 @@ function changeVideo(videoId) {
   iframe.src = `https://www.youtube.com/embed/${videoId}`;
 }
 
-// =====================================
+
 // HISTATS
-// =====================================
+
 var _Hasync = _Hasync || [];
 
 _Hasync.push(["Histats.start", "1,4996560,4,1029,150,25,00011111"]);
@@ -221,11 +216,12 @@ _Hasync.push(["Histats.track_hits", ""]);
   document.head.appendChild(hs);
 })();
 
-// =====================================
+
 // COPYRIGHT YEAR
-// =====================================
+
 const copyrightYear = document.getElementById("copyright-year");
 
 if (copyrightYear) {
   copyrightYear.textContent = new Date().getFullYear();
 }
+
