@@ -1,6 +1,6 @@
 // Berita Utama
 const sumberBeritaUtama = [
-  "berita-utama/mini-konvensi-kbj-tingkat-provensi-dki-jakarta.html",
+  "berita-utama/mini-konvensi-kbj-tingkat-provinsi-dki-jakarta.html",
   "berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
   "berita-utama/rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html",
   "berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
@@ -8,8 +8,7 @@ const sumberBeritaUtama = [
 
 // Berita-Box Link
 const sumberBerita = {
-  "berita-1":
-    "mini-konvensi-kbj-tingkat-provensi-dki-jakarta.html",
+  "berita-1": "mini-konvensi-kbj-tingkat-provinsi-dki-jakarta.html",
 
   "berita-2": "verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
 
@@ -119,7 +118,7 @@ const beritaPopuler = [
   {
     judul:
       "RW 08 Kelapa Dua Wakili Jakarta Barat dalam Mini Konvensi Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
-    link: "/berita-utama/mini-konvensi-kbj-tingkat-provensi-dki-jakarta.html",
+    link: "/berita-utama/mini-konvensi-kbj-tingkat-provinsi-dki-jakarta.html",
   },
   {
     judul: "Verifikasi Lapangan Lomba Kampung Bebas Jentik di RW 08 Kelapa Dua",
