@@ -2,7 +2,7 @@
 const sumberBeritaUtama = [
   "berita-utama/mini-konvensi-kbj-tingkat-provensi-dki-jakarta.html",
   "berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
-  "berita-utama/kerja-bakti-sambut-verifikasi-lomba-kbj.html",
+  "berita-utama/rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html",
   "berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
 ];
 
@@ -13,7 +13,7 @@ const sumberBerita = {
 
   "berita-2": "verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
 
-  "berita-3": "kerja-bakti-sambut-verifikasi-lomba-kbj.html",
+  "berita-3": "rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html",
 
   "berita-4":
     "deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
@@ -34,7 +34,7 @@ const DATA_BERITA = {
 
   "berita-3": {
     judul:
-      "Kerja Bakti Sambut Verifikasi Lomba Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
+      "RW 08 Kelapa Dua Meraih Juara 3 Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
     gambar: "../img/berita-3/C.webp",
   },
 
@@ -127,8 +127,8 @@ const beritaPopuler = [
   },
   {
     judul:
-      "Kerja Bakti Sambut Verifikasi Lomba Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
-    link: "/berita-utama/kerja-bakti-sambut-verifikasi-lomba-kbj.html",
+      "RW 08 Kelapa Dua Meraih Juara 3 Kampung Bebas Jentik Tingkat Provinsi DKI Jakarta",
+    link: "/berita-utama/rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html",
   },
   {
     judul:
