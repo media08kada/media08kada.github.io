@@ -338,3 +338,21 @@ document.addEventListener("DOMContentLoaded", () => {
   ticker.addEventListener("touchstart", stopAutoSlide);
   ticker.addEventListener("touchend", startAutoSlide);
 });
+
+// Tambahan
+async function loadBerita(url) {
+  try {
+    console.log("Memuat:", url);
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`${response.status} - ${response.statusText}`);
+    }
+
+    return await response.text();
+  } catch (error) {
+    console.error("Gagal:", url, error);
+    return null;
+  }
+}

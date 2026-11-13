@@ -1,9 +1,9 @@
 // Berita Utama
 const sumberBeritaUtama = [
-  "berita-utama/mini-konvensi-kbj-tingkat-provinsi-dki-jakarta.html",
-  "berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
-  "berita-utama/rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html",
-  "berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
+  "/berita-utama/mini-konvensi-kbj-tingkat-provinsi-dki-jakarta.html",
+  "/berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html",
+  "/berita-utama/rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html",
+  "/berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html",
 ];
 
 // Berita-Box Link
@@ -63,7 +63,7 @@ const sumberBeritaWilayah = [
     nomor: 4,
   },
   {
-    url: "berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html",
+    url: "berita-wilayah/gerebek-sampah-jalan-inspeksi-kelurahan-kelapa-dua.html",
     nomor: 5,
   },
   {
