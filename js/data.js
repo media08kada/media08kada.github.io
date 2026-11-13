@@ -300,12 +300,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function nextNews() {
     current++;
-
     if (current >= items.length) {
       current = 0;
     }
 
-    showNews(current);
+    showNews(newsItems[current]);
   }
 
   function prevNews() {
@@ -315,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
       current = items.length - 1;
     }
 
-    showNews(current);
+    showNews(newsItems[current]);
   }
 
   document.getElementById("nextNews")?.addEventListener("click", nextNews);
