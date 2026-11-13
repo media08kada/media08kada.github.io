@@ -1,105 +1,64 @@
-
-// MEDIA KELAPA DUA - SCRIPT.JS FINAL
+// MEDIA KELAPA DUA - SCRIPT.JS
 document.addEventListener("DOMContentLoaded", () => {
-
   // MATERIALIZE INIT
-
   if (typeof M !== "undefined") {
-    // Dropdown
-    const dropdowns = document.querySelectorAll(".dropdown-trigger");
-
-    if (dropdowns.length) {
-      M.Dropdown.init(dropdowns, {
+    try {
+      M.Dropdown.init(document.querySelectorAll(".dropdown-trigger"), {
         coverTrigger: false,
         constrainWidth: false,
         alignment: "left",
         closeOnClick: true,
       });
-    }
 
-    // Sidenav
-    const sidenavs = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(document.querySelectorAll(".sidenav"));
 
-    if (sidenavs.length) {
-      M.Sidenav.init(sidenavs);
-    }
-
-    // Slider Hero
-    const heroSlider = document.querySelector("#sliderhero");
-
-    if (heroSlider) {
-      M.Slider.init(heroSlider, {
+      M.Slider.init(document.querySelectorAll("#sliderhero"), {
         indicators: false,
         height: 400,
-        transition: 600,
+        duration: 600,
         interval: 3000,
       });
-    }
 
-    // Slider Berita
-    const beritaSliders = document.querySelectorAll(".berita-slider");
-
-    if (beritaSliders.length) {
-      M.Slider.init(beritaSliders, {
+      M.Slider.init(document.querySelectorAll(".berita-slider"), {
         indicators: true,
         height: 300,
         duration: 500,
         interval: 5000,
       });
-    }
 
-    // Parallax
-    const parallax = document.querySelectorAll(".parallax");
+      M.Parallax.init(document.querySelectorAll(".parallax"));
 
-    if (parallax.length) {
-      M.Parallax.init(parallax);
-    }
+      M.Materialbox.init(document.querySelectorAll(".materialboxed"));
 
-    // Materialbox
-    const materialboxed = document.querySelectorAll(".materialboxed");
-
-    if (materialboxed.length) {
-      M.Materialbox.init(materialboxed);
-    }
-
-    // Scrollspy
-    const scrollspy = document.querySelectorAll(".scrollspy");
-
-    if (scrollspy.length) {
-      M.ScrollSpy.init(scrollspy, {
+      M.ScrollSpy.init(document.querySelectorAll(".scrollspy"), {
         scrollOffset: 50,
       });
-    }
 
-    // Modal
-    const modals = document.querySelectorAll(".modal");
-
-    if (modals.length) {
-      M.Modal.init(modals, {
+      M.Modal.init(document.querySelectorAll(".modal"), {
         dismissible: true,
         opacity: 0.5,
         inDuration: 300,
         outDuration: 200,
       });
-    }
 
-    // Floating Action Button
-    const fabs = document.querySelectorAll(".fixed-action-btn");
+      M.FloatingActionButton.init(
+        document.querySelectorAll(".fixed-action-btn"),
+        {
+          direction: "left",
+          hoverEnabled: false,
+        },
+      );
 
-    if (fabs.length) {
-      M.FloatingActionButton.init(fabs, {
-        direction: "left",
-        hoverEnabled: false,
-      });
+      console.log("✅ Materialize berhasil diinisialisasi");
+    } catch (error) {
+      console.error("Materialize Error:", error);
     }
   } else {
-    console.warn("Materialize JS tidak ditemukan.");
+    console.warn("❌ Materialize JS tidak ditemukan");
   }
 
- 
-  // TOMBOL CLOSE ICON
-   const closeBtn = document.getElementById("close");
-
+  // CLOSE ICON
+  const closeBtn = document.getElementById("close");
   const icons = document.getElementById("icons");
 
   if (closeBtn && icons) {
@@ -109,33 +68,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
- 
-  // BERITA WILAYAH
-   const showMoreBtn = document.getElementById("show-more-btn");
+  // HELPER TOGGLE
+  function setupToggleButton(buttonId, itemsSelector) {
+    const button = document.getElementById(buttonId);
 
-  if (showMoreBtn) {
-    const hiddenItems = document.querySelectorAll(".item-hidden");
+    if (!button) return;
+
+    const items = document.querySelectorAll(itemsSelector);
 
     let opened = false;
 
-    hiddenItems.forEach((item) => {
+    items.forEach((item) => {
       item.style.display = "none";
     });
 
-    showMoreBtn.addEventListener("click", () => {
+    button.addEventListener("click", () => {
       opened = !opened;
 
-      hiddenItems.forEach((item) => {
-        item.style.display = opened ? "block" : "none";
+      items.forEach((item) => {
+        item.style.display = opened ? "" : "none";
       });
 
-      showMoreBtn.textContent = opened ? "Close" : "Open";
+      button.textContent = opened ? "Tutup" : "Lihat Selengkapnya";
     });
   }
 
- 
+  // BERITA WILAYAH
+  setupToggleButton("show-more-btn", ".item-hidden");
+
   // GALLERY
-   const galleryBtn = document.getElementById("gallery-btn");
+  const galleryBtn = document.getElementById("gallery-btn");
 
   if (galleryBtn) {
     const galleryItems = document.querySelectorAll(".gallery .hidden");
@@ -160,22 +122,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // TOAST PESAN
-
-function showToast() {
+function showToast(message = "Pesan berhasil dikirim!") {
   if (typeof M !== "undefined") {
     M.toast({
-      html: "Pesan berhasil dikirim!",
+      html: message,
       classes: "rounded green",
       displayLength: 5000,
     });
   } else {
-    alert("Pesan berhasil dikirim!");
+    alert(message);
   }
 }
 
 
 // SCROLL KE ATAS
-
 function scrollKeatas() {
   window.scrollTo({
     top: 0,
@@ -185,43 +145,18 @@ function scrollKeatas() {
 
 
 // VIDEO YOUTUBE
-
 function changeVideo(videoId) {
   const iframe = document.getElementById("mainVideo");
 
-  if (!iframe) return;
+  if (!iframe || !videoId) return;
 
   iframe.src = `https://www.youtube.com/embed/${videoId}`;
 }
 
 
-// HISTATS
-
-var _Hasync = _Hasync || [];
-
-_Hasync.push(["Histats.start", "1,4996560,4,1029,150,25,00011111"]);
-
-_Hasync.push(["Histats.fasi", "1"]);
-
-_Hasync.push(["Histats.track_hits", ""]);
-
-(function () {
-  const hs = document.createElement("script");
-
-  hs.type = "text/javascript";
-  hs.async = true;
-
-  hs.src = "https://s10.histats.com/js15_as.js";
-
-  document.head.appendChild(hs);
-})();
-
-
 // COPYRIGHT YEAR
-
 const copyrightYear = document.getElementById("copyright-year");
 
 if (copyrightYear) {
   copyrightYear.textContent = new Date().getFullYear();
 }
-

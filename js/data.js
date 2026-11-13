@@ -253,105 +253,70 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Populer News
 document.addEventListener("DOMContentLoaded", () => {
-  const ticker = document.querySelector(".news-ticker");
+    const ticker = document.querySelector(".news-ticker");
 
-  if (!ticker || typeof beritaPopuler === "undefined") return;
+    if (!ticker || typeof beritaPopuler === "undefined") return;
 
-  ticker.innerHTML = `
+    ticker.innerHTML = `
         <div class="ticker-track">
-            ${beritaPopuler
-              .map(
-                (item) => `
+            ${beritaPopuler.map(item => `
                 <a href="${item.link}" title="${item.judul}">
                     🔥 ${item.judul}
                 </a>
-            `,
-              )
-              .join("")}
+            `).join("")}
 
-            ${beritaPopuler
-              .map(
-                (item) => `
+            ${beritaPopuler.map(item => `
                 <a href="${item.link}" title="${item.judul}">
                     🔥 ${item.judul}
                 </a>
-            `,
-              )
-              .join("")}
+            `).join("")}
         </div>
     `;
 
-  const track = document.querySelector(".ticker-track");
-  const jumlahBerita = beritaPopuler.length;
+    const track = ticker.querySelector(".ticker-track");
 
-  // 18 detik per berita
-  track.style.animationDuration = `${jumlahBerita * 18}s`;
+    if (track) {
+        // 18 detik per berita
+        track.style.animationDuration =
+            `${Math.max(beritaPopuler.length * 18, 30)}s`;
 
-  let current = 0;
-  let autoSlide;
+        // Pause saat hover desktop
+        ticker.addEventListener("mouseenter", () => {
+            track.style.animationPlayState = "paused";
+        });
 
-  function showNews(index) {
-    items.forEach((item) => {
-      item.classList.remove("active");
-    });
+        ticker.addEventListener("mouseleave", () => {
+            track.style.animationPlayState = "running";
+        });
 
-    items[index].classList.add("active");
-  }
+        // Pause saat disentuh di mobile
+        ticker.addEventListener("touchstart", () => {
+            track.style.animationPlayState = "paused";
+        });
 
-  function nextNews() {
-    current++;
-    if (current >= items.length) {
-      current = 0;
+        ticker.addEventListener("touchend", () => {
+            track.style.animationPlayState = "running";
+        });
     }
-
-    showNews(newsItems[current]);
-  }
-
-  function prevNews() {
-    current--;
-
-    if (current < 0) {
-      current = items.length - 1;
-    }
-
-    showNews(newsItems[current]);
-  }
-
-  document.getElementById("nextNews")?.addEventListener("click", nextNews);
-
-  document.getElementById("prevNews")?.addEventListener("click", prevNews);
-
-  function startAutoSlide() {
-    autoSlide = setInterval(nextNews, 5000);
-  }
-
-  function stopAutoSlide() {
-    clearInterval(autoSlide);
-  }
-
-  startAutoSlide();
-
-  ticker.addEventListener("mouseenter", stopAutoSlide);
-  ticker.addEventListener("mouseleave", startAutoSlide);
-
-  ticker.addEventListener("touchstart", stopAutoSlide);
-  ticker.addEventListener("touchend", startAutoSlide);
 });
 
 // Tambahan
 async function loadBerita(url) {
-  try {
-    console.log("Memuat:", url);
+    try {
+        console.log("Memuat:", url);
 
-    const response = await fetch(url);
+        const response = await fetch(url);
 
-    if (!response.ok) {
-      throw new Error(`${response.status} - ${response.statusText}`);
+        if (!response.ok) {
+            throw new Error(
+                `${response.status} - ${response.statusText}`
+            );
+        }
+
+        return await response.text();
+
+    } catch (error) {
+        console.error("Gagal:", url, error);
+        return null;
     }
-
-    return await response.text();
-  } catch (error) {
-    console.error("Gagal:", url, error);
-    return null;
-  }
 }
