@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
 
-  <!-- Metadata -->
+<head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-language" content="id-ID">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat</title>
 
-  <meta name="news_keywords"
-        content="berita kelapa dua,jakarta barat,rw 08,puskesmas,baznas,stbm">
-
   <meta name="description"
         content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
 
-  <link rel="author"
-        href="https://mediakelapadua.web.id/tentang-kami.html">
+  <meta name="news_keywords"
+        content="berita kelapa dua,jakarta barat,rw 08,puskesmas,baznas,stbm">
 
-  <meta name="publisher"
-        content="Media Kelapa Dua">
+  <meta name="author" content="Media Kelapa Dua">
+  <meta name="publisher" content="Media Kelapa Dua">
 
   <!-- SEO -->
-  <meta name="robots"
-        content="index,follow">
-
-  <meta name="googlebot"
-        content="index,follow,max-image-preview:large">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow,max-image-preview:large">
 
   <meta name="google-site-verification"
         content="QwSdMazhBKysAXAxVwftI2Sm0OqIzOptOeUvVji3lsQ">
 
-  <!-- Theme -->
+  <link rel="canonical" href="https://mediakelapadua.web.id/">
+  <link rel="author" href="https://mediakelapadua.web.id/tentang-kami.html">
+
+  <!-- PWA -->
   <meta name="theme-color" content="#424242">
-  <meta name="author" content="Media Kelapa Dua">
-  <meta http-equiv="content-language" content="id-ID">
+  <link rel="manifest" href="/manifest.json">
 
-  <!-- Canonical -->
-  <link rel="canonical"
-        href="https://mediakelapadua.web.id/">
-
-  <!-- Preload Hero Image -->
+  <!-- PER FORMANCE -->
   <link rel="preload"
         as="image"
         href="slider/img/kbj.jpg"
         fetchpriority="high">
 
-  <!-- Open Graph -->
-  <meta property="og:site_name"
-        content="Media Kelapa Dua">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
-  <meta property="og:locale"
-        content="id_ID">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-  <meta property="og:type"
-        content="website">
-
-  <meta property="og:url"
-        content="https://mediakelapadua.web.id/">
+  <!-- Opengraph -->
+  <meta property="og:site_name" content="Media Kelapa Dua">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mediakelapadua.web.id/">
 
   <meta property="og:title"
         content="Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat">
@@ -70,27 +65,17 @@
   <meta property="og:image:secure_url"
         content="https://mediakelapadua.web.id/slider/img/img-share.jpg">
 
-  <meta property="og:image:type"
-        content="image/jpeg">
-
-  <meta property="og:image:width"
-        content="1200">
-
-  <meta property="og:image:height"
-        content="630">
-
-  <meta property="og:image:alt"
-        content="Media Kelapa Dua">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Media Kelapa Dua">
 
   <meta property="article:publisher"
         content="https://www.facebook.com/profile.php?id=61569679397521">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card"
-        content="summary_large_image">
-
-  <meta name="twitter:url"
-        content="https://mediakelapadua.web.id/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mediakelapadua.web.id/">
 
   <meta name="twitter:title"
         content="Media Kelapa Dua | Portal Berita">
@@ -116,29 +101,20 @@
         href="https://mediakelapadua.web.id/img/partner/MediaKelapadua.png">
 
   <!-- Google Fonts -->
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap">
 
-  <!-- Material Icons -->
+<!-- Material Icons -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <!-- Material Symbols -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 
-  <!-- Materialize CSS -->
+  <!-- Framework CSS -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -147,69 +123,81 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/features.css">
 
-  <!-- Adsense -->
+  <!-- Google Adsense -->
   <script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957"
-    crossorigin="anonymous"></script>
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957"
+          crossorigin="anonymous">
+  </script>
 
-  <!-- Schema.org -->
+  <!-- Structured Data (JSON-LD) --> 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
+
       {
-        "@type":"Organization",
-        "@id":"https://mediakelapadua.web.id/#organization",
-        "name":"Media Kelapa Dua",
-        "url":"https://mediakelapadua.web.id/",
-        "logo":{
-          "@type":"ImageObject",
-          "url":"https://mediakelapadua.web.id/img/partner/MediaKelapadua.png"
+        "@type": "Organization",
+        "@id": "https://mediakelapadua.web.id/#organization",
+        "name": "Media Kelapa Dua",
+        "url": "https://mediakelapadua.web.id/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mediakelapadua.web.id/img/partner/MediaKelapadua.png"
         },
-        "sameAs":[
+        "sameAs": [
           "https://www.instagram.com/mediakelapadua",
           "https://www.facebook.com/profile.php?id=61569679397521",
           "https://www.youtube.com/@KosongDelapan102",
           "https://www.tiktok.com/@mediakelapadua"
         ]
       },
+
       {
-        "@type":"WebSite",
-        "@id":"https://mediakelapadua.web.id/#website",
-        "url":"https://mediakelapadua.web.id/",
-        "name":"Media Kelapa Dua",
-        "inLanguage":"id-ID",
-        "publisher":{
-          "@id":"https://mediakelapadua.web.id/#organization"
-        }
+        "@type": "WebSite",
+        "@id": "https://mediakelapadua.web.id/#website",
+        "url": "https://mediakelapadua.web.id/",
+        "name": "Media Kelapa Dua",
+        "inLanguage": "id-ID",
+        "publisher": {
+          "@id": "https://mediakelapadua.web.id/#organization"
         },
-      {
-        "@type":"WebPage",
-        "@id":"https://mediakelapadua.web.id/#webpage",
-        "url":"https://mediakelapadua.web.id/",
-        "name":"Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat",
-        "inLanguage":"id-ID"
-      },
-      {
-        "@type":"WebSite",
-        "@id":"https://mediakelapadua.web.id/#website",
-        "url":"https://mediakelapadua.web.id/",
-        "name":"Media Kelapa Dua",
-        "potentialAction":{
-          "@type":"SearchAction",
-          "target":"https://mediakelapadua.web.id/search?q={search_term_string}",
-          "query-input":"required name=search_term_string"
-        }
-       {
-          "@type":"BreadcrumbList",
-          "itemListElement":[
-          {
-            "@type":"ListItem",
-            "position":1,
-            "name":"Beranda",
-            "item":"https://mediakelapadua.web.id/"
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://mediakelapadua.web.id/search?q={search_term_string}"
           },
+          "query-input": "required name=search_term_string"
+        }
+      },
+
+      {
+        "@type": "WebPage",
+        "@id": "https://mediakelapadua.web.id/#webpage",
+        "url": "https://mediakelapadua.web.id/",
+        "name": "Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat",
+        "isPartOf": {
+          "@id": "https://mediakelapadua.web.id/#website"
+        },
+        "about": {
+          "@id": "https://mediakelapadua.web.id/#organization"
+        },
+        "inLanguage": "id-ID"
+      },
+
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mediakelapadua.web.id/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://mediakelapadua.web.id/"
+          }
+        ]
       }
+
     ]
   }
   </script>
