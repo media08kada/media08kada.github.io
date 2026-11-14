@@ -603,57 +603,6 @@ line-height:1.4;
 animation-duration: 250s;
 }
 }
-
-/* Dark Mode Populer */
-.dark-mode .popular-news,
-[data-theme="dark"] .popular-news {
-    background: #353535;
-}
-
-.dark-mode .popular-header,
-[data-theme="dark"] .popular-header {
-    background: #353535;
-    border-right: 1px solid #4a4a4a;
-}
-
-.dark-mode .popular-header .label,
-[data-theme="dark"] .popular-header .label {
-    color: #fff;
-}
-
-.dark-mode .ticker-track a,
-[data-theme="dark"] .ticker-track a,
-.dark-mode .ticker-item a,
-[data-theme="dark"] .ticker-item a {
-    color: #fff;
-}
-
-.dark-mode .ticker-controls,
-[data-theme="dark"] .ticker-controls {
-    border-left: 1px solid #4a4a4a;
-}
-
-.dark-mode .ticker-controls button,
-[data-theme="dark"] .ticker-controls button {
-    background: #353535;
-}
-
-.dark-mode .ticker-controls button i,
-[data-theme="dark"] .ticker-controls button i,
-.dark-mode .material-icons,
-[data-theme="dark"] .material-icons {
-    color: #fff;
-}
-
-.dark-mode .ticker-controls button:hover,
-[data-theme="dark"] .ticker-controls button:hover {
-    background: var(--primary);
-}
-
-.dark-mode .ticker-controls button:hover i,
-[data-theme="dark"] .ticker-controls button:hover i {
-    color: #fff;
-}
 /* Populer News End */
 
 
