@@ -33,7 +33,7 @@ function loadPreviewBerita(fileBerita, nomor) {
 
       if (isi) {
         document.getElementById(`preview-isi-berita-${nomor}`).textContent =
-          isi.textContent.trim().substring(0, 500) + "...";
+          isi.textContent.trim().substring(0, 250) + "...";
       }
 
       const link = document.getElementById(`preview-link-berita-${nomor}`);
