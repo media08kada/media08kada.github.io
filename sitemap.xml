@@ -64,11 +64,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/pengaspalan-jalan-pasca-pemasangan-pipa.html</loc>
-  <lastmod>2026-10-26T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://mediakelapadua.web.id/berita-wilayah/sosialisasi-teknologi-wolbachia-untuk-pengendalian-dbd.html</loc>
   <lastmod>2025-12-22T14:00:00+00:00</lastmod>
   <priority>0.80</priority>
@@ -96,8 +91,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/gulkarmat-bangun-hidran-mandiri-di-rw-08-kelapa-dua.html</loc>
-  <lastmod>2026-04-10T09:00:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-wilayah/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html</loc>
+  <lastmod>2026-10-09T09:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -108,12 +103,12 @@
 
 <!-- Berita Lain -->
 <url>
-  <loc>https://mediakelapadua.web.id/berita-lain/sberita-lain/warga-rw-08-kelapa-dua-gelar-kerjabakti-sambut-ramadhan.html.html</loc>
-  <lastmod>2026-01-25T07:30:00+00:00</lastmod>
+  <loc>https://mediakelapadua.web.id/berita-lain/kerja-bakti-sambut-verifikasi-lomba-kbj.html</loc>
+  <lastmod>2026-11-26T07:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mediakelapadua.web.id/berita-lain/sberita-lain/musyawarah-masyarakat-desa-untuk-tingkatkan-pelayanan-kesehatan.html</loc>
+  <loc>https://mediakelapadua.web.id/berita-lain/musyawarah-masyarakat-desa-untuk-tingkatkan-pelayanan-kesehatan.html</loc>
   <lastmod>2025-12-11T07:14:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -255,16 +250,26 @@
 <!-- Giat Video -->
 <url>
   <loc>https://mediakelapadua.web.id/video.html</loc>
-  <iframe
-  id="mainVideo" loading="lazy" src="https://www.youtube.com/embed/ciw3dGeqIeo" title="YouTube Video" frameborder="0" allowfullscreen>
-  </iframe>
-  <video:thumbnail_loc>https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg</video:thumbnail_loc>
-  <video:thumbnail_loc>https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg</video:thumbnail_loc>
-  <video:thumbnail_loc>https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg</video:thumbnail_loc>
-  <video:thumbnail_loc>https://img.youtube.com/vi/XwJqVVLdEDY/maxresdefault.jpg</video:thumbnail_loc>
-  
+
+  <video:video>
+    <video:thumbnail_loc>
+      https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg
+    </video:thumbnail_loc>
+
+    <video:title>
+      Giat Video RW 08 Kelapa Dua
+    </video:title>
+
+    <video:description>
+      Dokumentasi kegiatan warga Kelapa Dua.
+    </video:description>
+
+    <video:player_loc>
+      https://www.youtube.com/watch?v=ciw3dGeqIeo
+    </video:player_loc>
+
   </video:video>
-    <video:description>Selamat menonton, channel Youtube @kosongdelapan102.</video:description>
+
 </url>
 
 <!-- Policy -->
