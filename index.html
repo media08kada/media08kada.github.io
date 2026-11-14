@@ -32,6 +32,8 @@
 
   <!-- Theme -->
   <meta name="theme-color" content="#424242">
+  <meta name="author" content="Media Kelapa Dua">
+  <meta http-equiv="content-language" content="id-ID">
 
   <!-- Canonical -->
   <link rel="canonical"
@@ -180,13 +182,33 @@
         "publisher":{
           "@id":"https://mediakelapadua.web.id/#organization"
         }
-      },
+        },
       {
         "@type":"WebPage",
         "@id":"https://mediakelapadua.web.id/#webpage",
         "url":"https://mediakelapadua.web.id/",
         "name":"Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat",
         "inLanguage":"id-ID"
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://mediakelapadua.web.id/#website",
+        "url":"https://mediakelapadua.web.id/",
+        "name":"Media Kelapa Dua",
+        "potentialAction":{
+          "@type":"SearchAction",
+          "target":"https://mediakelapadua.web.id/search?q={search_term_string}",
+          "query-input":"required name=search_term_string"
+        }
+       {
+          "@type":"BreadcrumbList",
+          "itemListElement":[
+          {
+            "@type":"ListItem",
+            "position":1,
+            "name":"Beranda",
+            "item":"https://mediakelapadua.web.id/"
+          },
       }
     ]
   }
