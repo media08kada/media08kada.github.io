@@ -1,307 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- Beranda -->
+  <url>
+    <loc>https://mediakelapadua.web.id/</loc>
+    <priority>1.0</priority>
+  </url>
 
-<!-- Beranda -->
-<url>
-  <loc>https://mediakelapadua.web.id/</loc>
-  <lastmod>2025-06-13T05:32:58+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
+  <!-- Berita Utama -->
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-utama/mini-konvensi-kbj-tingkat-provinsi-dki-jakarta.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Berita Utama -->
-<url>
-  <loc>https://mediakelapadua.web.id/berita-utama/mini-konvensi-kbj-tingkat-provinsi-dki-jakarta.html"</loc>
-  <lastmod>2026-11-11T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html</loc>
-  <lastmod>2026-11-03T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-utama/rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html</loc>
-  <lastmod>2026-11-13T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html</loc>
-  <lastmod>2026-10-30T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-utama/verifikasi-lapangan-lomba-kampung-bebas-jentik.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Berita Wilayah  -->
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/baznas-berikan-bantuan-pemasangan-listrik.html</loc>
-  <lastmod>2026-11-04T13:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/gulkarmat-bangun-hidran-mandiri-di-rw-08-kelapa-dua.html</loc>
-  <lastmod>2026-04-10T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/kolaborasi-ketua-rt-perkuat-layanan-posyandu-remaja.html</loc>
-  <lastmod>2026-10-17T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah//pengaspalan-jalan-pasca-pemasangan-pipa.html</loc>
-  <lastmod>2026-10-23T15:08:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html</loc>
-  <lastmod>2026-04-19T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/sosialisasi-teknologi-wolbachia-untuk-pengendalian-dbd.html</loc>
-  <lastmod>2025-12-22T14:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/penanaman-pohon-di-bantaran-kali-pesanggrahan.html</loc>
-  <lastmod>2025-01-08T09:00:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/persiapan-mini-konvensi-kader-jumantik-rw-08.html</loc>
-  <lastmod>2025-12-09T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-utama/rw-08-kelapa-dua-meraih-juara-3-kampung-bebas-jentik.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Berita Pilihan  -->
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html</loc>
-  <lastmod>2026-10-13T08:00:00+00:00</lastmod>
-  <Priority>0.80</Priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html</loc>
-  <lastmod>2026-08-26T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-wilayah/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html</loc>
-  <lastmod>2026-10-09T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/Pilihan/mural-hadirkan-wajah-baru-kawasan-kelapa-dua.html</loc>
-  <lastmod>2026-02-12T10:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-utama/deklarasi-stbm-kelurahan-kelapa-dua-wujudkan-lingkungan-sehat.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Berita Lain -->
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/kerja-bakti-sambut-verifikasi-lomba-kbj.html</loc>
-  <lastmod>2026-11-26T07:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/musyawarah-masyarakat-desa-untuk-tingkatkan-pelayanan-kesehatan.html</loc>
-  <lastmod>2025-12-11T07:14:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/rapat-koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html</loc>
-  <lastmod>2025-12-04T14:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/monitoring-liburan-sekolah-dan-menjelang-natal-2025.html</loc>
-  <lastmod>2025-12-24T21:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/pemeriksaan-kesehatan-warga-kelapa-dua.html</loc>
-  <lastmod>2025-08-21T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/penyerahan-sk-bank-sampah-rw-08-kelurahan-kelapa-dua.html</loc>
-  <lastmod>2025-12-22T14:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/posko-rw-03-kelapa-dua-saluran-bantuan-bencana-sumatera.html</loc>
-  <lastmod>2025-12-16T13:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/sri-wahyuni-juara-3-jambore-kader-posyandu-tingkat-dki-jakarta.html</loc>
-  <lastmod>2025-08-21T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/festival-kelapa-dua-jilid-1.html</loc>
-  <lastmod>2025-09-29T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html</loc>
-  <lastmod>2026-10-03T20:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html</loc>
-  <lastmod>2026-10-20T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <!-- Berita Wilayah -->
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/baznas-berikan-bantuan-pemasangan-listrik.html</loc>
+    <priority>0.8</priority>
+  </url>
 
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/gulkarmat-bangun-hidran-mandiri-di-rw-08-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Info Wilayah -->
-<url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/kelurahan.html</loc>
-  <lastmod>2025-12-11T08:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/puskesmas.html</loc>
-  <lastmod>2025-12-11T08:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/lmkkelurahan.html</loc>
-  <lastmod>2025-12-11T08:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/info-wilayah/event.html</loc>
-  <lastmod>2025-12-11T08:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/kolaborasi-ketua-rt-perkuat-layanan-posyandu-remaja.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Gallery  -->
-<url>
-  <loc>https://mediakelapadua.web.id/gallery/gallery-photo.html</loc>
-  <lastmod>2025-08-21T07:30:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/gallery/gallery-video.html</loc>
-  <lastmod>2025-11-25T08:11:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/pengaspalan-jalan-pasca-pemasangan-pipa.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Lain-lain -->
-<url>
-  <loc>https://mediakelapadua.web.id/gallery/table.html</loc>
-  <lastmod>2025-12-26T18:58:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/gerebek-sampah-jalan-inpseksi-kelurahan-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Berita Lain -->
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/kerja-bakti-sambut-verifikasi-lomba-kbj.html</loc>
-  <lastmod>2026-11-01T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/musyawarah-masyarakat-desa-untuk-tingkatkan-pelayanan-kesehatan.html</loc>
-  <lastmod>2025-12-11T09:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/rapat-koordinasi-wilayah-(rakowil)-kelurahan-kelapa-dua.html</loc>
-  <lastmod>2025-12-04T14:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/monitoring-liburan-sekolah-dan-menjelang-natal-2025.html</loc>
-  <lastmod>2025-12-24T21:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/pemeriksaan-kesehatan-warga-kelapa-dua.html</loc>
-  <lastmod>2025-12-21T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/penyerahan-sk-bank-sampah-rw-08-kelurahan-kelapa-dua.html</loc>
-  <lastmod>2025-12-12T20:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/posko-rw-03-kelapa-dua-salurkan-bantuan-bencana-sumatera.html</loc>
-  <lastmod>2025-12-16T14:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/sri-wahyuni-juara-3-jambore-kader-posyandu-tingkat-dki-jakarta.html</loc>
-  <lastmod>2025-08-21T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/berita-lain/festival-kelapa-dua-jilid-1.html</loc>
-  <lastmod>2025-11-29T08:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/sosialisasi-teknologi-wolbachia-untuk-pengendalian-dbd.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Giat Video -->
-<url>
-  <loc>https://mediakelapadua.web.id/video.html</loc>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/penanaman-pohon-di-bantaran-kali-pesanggrahan.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-  <video:video>
-    <video:thumbnail_loc>
-      https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg
-    </video:thumbnail_loc>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-wilayah/persiapan-mini-konvensi-kader-jumantik-rw-08.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-    <video:title>
-      Giat Video RW 08 Kelapa Dua
-    </video:title>
+  <!-- Berita Pilihan -->
+  <url>
+    <loc>https://mediakelapadua.web.id/Pilihan/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-    <video:description>
-      Dokumentasi kegiatan warga Kelapa Dua.
-    </video:description>
+  <url>
+    <loc>https://mediakelapadua.web.id/Pilihan/cek-kesehatan-gratis-di-rw-08-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-    <video:player_loc>
-      https://www.youtube.com/watch?v=ciw3dGeqIeo
-    </video:player_loc>
+  <url>
+    <loc>https://mediakelapadua.web.id/Pilihan/mural-hadirkan-wajah-baru-kawasan-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-  </video:video>
+  <!-- Berita Lain -->
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/warga-rw-08-kelapa-dua-gelar-kerjabakti-sambut-ramadhan.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/musyawarah-masyarakat-desa-untuk-tingkatkan-pelayanan-kesehatan.html</loc>
+    <priority>0.8</priority>
+  </url>
 
-<!-- Policy -->
-<url>
-  <loc>https://mediakelapadua.web.id/tentang-kami.html</loc>
-  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/privacy-policy.html</loc>
-  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/disclaimer.html</loc>
-  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/complaint-policy.html</loc>
-  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/pedoman-media-saber.html</loc>
-  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mediakelapadua.web.id/kontak-redaksi.html</loc>
-  <lastmod>2026-10-31T06:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/rapat-koordinasi-wilayah-(rakorwil)-kelurahan-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/monitoring-liburan-sekolah-dan-menjelang-natal-2025.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/pemeriksaan-kesehatan-warga-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/penyerahan-sk-bank-sampah-rw-08-kelurahan-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/posko-rw-03-kelapa-dua-salurkan-bantuan-bencana-sumatera.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/sri-wahyuni-juara-3-jambore-kader-posyandu-tingkat-dki-jakarta.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/festival-kelapa-dua-jilid-1.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/maulid-nabi-di-masjid-jami-at-taqwa-kelapa-dua.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/rw-08-kelapa-dua-wakili-puskesmas-kebon-jeruk-lomba-kampung-bebas-jentik-tingkat-kota-jakarta-barat.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/berita-lain/kerja-bakti-sambut-verifikasi-lomba-kbj.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Info Wilayah -->
+  <url>
+    <loc>https://mediakelapadua.web.id/info-wilayah/kelurahan.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/info-wilayah/puskesmas.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/info-wilayah/lmkkelurahan.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/info-wilayah/event.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://mediakelapadua.web.id/gallery/gallery-photo.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/gallery/gallery-video.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/gallery/table.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Video -->
+  <url>
+    <loc>https://mediakelapadua.web.id/video.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Halaman Kebijakan -->
+  <url>
+    <loc>https://mediakelapadua.web.id/tentang-kami.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/privacy-policy.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/disclaimer.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/complaint-policy.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/pedoman-media-saber.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://mediakelapadua.web.id/kontak-redaksi.html</loc>
+    <priority>0.5</priority>
+  </url>
 
 </urlset>
