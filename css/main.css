@@ -1736,3 +1736,113 @@ footer h6 a {
   }
 }
 /* Search CSS End */
+
+
+/* Berita Video 30 Detik Start */
+.news30-container{
+    max-width:1200px;     
+    margin:40px auto;
+    padding:0;
+}
+
+.container .news30-wrapper{
+    margin-left:0;
+    margin-right:0;
+}
+
+/* Slider */
+.news30-slider{
+    display:flex;
+    gap:20px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+
+    padding:0;
+}
+
+.news30-slider::-webkit-scrollbar{
+    display:none;
+}
+
+/* Card */
+.news-card{
+    flex:0 0 calc(25% - 15px);  /* 4 video per baris */
+    min-width:calc(25% - 15px);
+
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.news-card:hover{
+    transform:translateY(-4px);
+}
+
+/* Video 1920x1080 (16:9) */
+.news-card video{
+    width:100%;
+    aspect-ratio:16 / 9;
+    height:auto;
+
+    display:block;
+    background:#000;
+
+    object-fit:cover;
+}
+
+/* Konten */
+.news-content{
+    padding:5px;
+}
+
+.news-content h6{
+    margin:10px 0 8px;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.4;
+}
+
+.news-content p{
+    margin:0;
+    color:#666;
+    font-size:13px;
+    line-height:1.5;
+}
+
+/* Tablet: 2 kolom */
+@media (max-width:992px){
+
+    #newsSlider{
+        flex-wrap:wrap;      
+        overflow-x:hidden;   
+    }
+
+    .news-card{
+        flex:0 0 calc(50% - 10px);
+        min-width:calc(50% - 10px);
+    }
+}
+
+/* Mobile: 1 kolom */
+@media (max-width:600px){
+
+    #newsSlider{
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+
+    .news-card{
+        flex:0 0 100%;
+        min-width:100%;
+    }
+}
+/* Berita 30 Detik End */
+      
