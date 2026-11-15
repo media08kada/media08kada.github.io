@@ -20,7 +20,8 @@ Catatan Struktur CSS
 	Photo.css
 	puskesmas.css
 	kelurahan.css
-	Tentang Kami
+	Tentang Kami.css
+	Populer-image.css
 
 
 	
