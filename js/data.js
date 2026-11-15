@@ -321,23 +321,3 @@ async function loadBerita(url) {
     }
 }
 
-
-// Berita Video 30 Detik Start //
-const slider = document.getElementById("newsSlider");
-const btnPrev = document.getElementById("newsPrev");
-const btnNext = document.getElementById("newsNext");
-
-btnNext.addEventListener("click", () => {
-  slider.scrollBy({
-    left: 340,
-    behavior: "smooth",
-  });
-});
-
-btnPrev.addEventListener("click", () => {
-  slider.scrollBy({
-    left: -340,
-    behavior: "smooth",
-  });
-});
-// Berita Video 30 Detik End //
