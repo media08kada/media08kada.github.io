@@ -425,7 +425,6 @@ img:hover{
 }
 /* Slider End */
 
-
 /* Populer News Start */
 .hero-slider{
 margin-bottom:8px !important;
@@ -497,10 +496,11 @@ transform:translateY(0);
     text-decoration:none;
     font-size:clamp(11px, 2.8vw, 15px);
     font-weight:500;
-
+    transition:.3s ease;
 }
-.ticker-item a:hover{
-color:#d32f2f;
+
+.ticker-track a:hover{
+    color:#e02222;
 }
 
 .ticker-track{
@@ -530,7 +530,7 @@ transition:.3s;
 }
 
 .ticker-controls button:hover{
-background:var(--primary);
+background:#e02222;
 color:#fff;
 }
 
