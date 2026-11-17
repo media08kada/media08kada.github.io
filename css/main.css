@@ -1826,6 +1826,7 @@ footer h6 a {
     color:#666;
     font-size:13px;
     line-height:1.5;
+    text-align: justify;
 }
 
 /* Tablet: 2 kolom */
