@@ -160,3 +160,9 @@ const copyrightYear = document.getElementById("copyright-year");
 if (copyrightYear) {
   copyrightYear.textContent = new Date().getFullYear();
 }
+
+
+// Perbaikian Console Error
+window.addEventListener("load", () => {
+  document.documentElement.style.visibility = "visible";
+});
