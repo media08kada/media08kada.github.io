@@ -4,10 +4,6 @@
   --bg: #242323;
 }
 
-html {
-    visibility: hidden;
-}
-
 body {
   height: 100%;
   margin: 0;
@@ -245,16 +241,6 @@ img:hover{
   align-items: center;
   justify-content: center;
 }
-
-.material-icons,
-.material-symbols-outlined {
-    vertical-align: middle;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-}
-
 
 /* Search */
 .search-container {

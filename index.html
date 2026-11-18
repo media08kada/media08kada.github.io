@@ -2,7 +2,6 @@
 <html lang="id">
 
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-language" content="id-ID">
@@ -10,7 +9,6 @@
 
   <title>Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat</title>
 
-  <!-- SEO -->
   <meta name="description"
         content="Portal informasi Kelapa Dua Jakarta Barat berisi berita lokal, kegiatan masyarakat, layanan publik, kesehatan, lingkungan, serta informasi resmi untuk warga.">
 
@@ -20,6 +18,7 @@
   <meta name="author" content="Media Kelapa Dua">
   <meta name="publisher" content="Media Kelapa Dua">
 
+  <!-- SEO -->
   <meta name="robots" content="index,follow">
   <meta name="googlebot" content="index,follow,max-image-preview:large">
 
@@ -27,33 +26,25 @@
         content="QwSdMazhBKysAXAxVwftI2Sm0OqIzOptOeUvVji3lsQ">
 
   <link rel="canonical" href="https://mediakelapadua.web.id/">
+  <link rel="author" href="https://mediakelapadua.web.id/tentang-kami.html">
 
-  <link rel="author"
-        href="https://mediakelapadua.web.id/tentang-kami.html">
-
-  <!-- Theme -->
+  <!-- PWA -->
   <meta name="theme-color" content="#424242">
+  <link rel="manifest" href="/manifest.json">
 
   <!-- Performance -->
-  <link rel="preload"
-        as="image"
-        href="slider/img/kbj.jpg"
-        fetchpriority="high">
+  <link rel="preload" as="image" href="slider/img/kbj.jpg" fetchpriority="high">
 
-  <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
-  <!-- Preconnect -->
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect"
         href="https://fonts.gstatic.com"
         crossorigin>
 
-  <!-- Open Graph -->
+  <!-- Opengraph -->
   <meta property="og:site_name" content="Media Kelapa Dua">
   <meta property="og:locale" content="id_ID">
   <meta property="og:type" content="website">
@@ -79,7 +70,7 @@
   <meta property="article:publisher"
         content="https://www.facebook.com/profile.php?id=61569679397521">
 
-  <!-- Twitter -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://mediakelapadua.web.id/">
 
@@ -110,18 +101,17 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap">
 
-  <!-- Material Icons -->
+<!-- Material Icons -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 
-  <!-- Materialize -->
+  <!-- Framework CSS -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -130,34 +120,88 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/features.css">
 
-  <!-- Cegah FOUC -->
-  <style>
-    html.loading {
-      visibility: hidden;
-      opacity: 0;
-    }
-
-    html {
-      transition: opacity .2s ease;
-    }
-  </style>
-
-  <script>
-    document.documentElement.classList.add("loading");
-
-    window.addEventListener("load", function () {
-      document.documentElement.classList.remove("loading");
-    });
-  </script>
-
-  <!-- Adsense -->
+  <!-- Google Adsense -->
   <script async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130346024149957"
-          crossorigin="anonymous"></script>
+          crossorigin="anonymous">
+  </script>
+
+  <!-- Structured Data (JSON-LD) --> 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+
+      {
+        "@type": "Organization",
+        "@id": "https://mediakelapadua.web.id/#organization",
+        "name": "Media Kelapa Dua",
+        "url": "https://mediakelapadua.web.id/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mediakelapadua.web.id/img/partner/MediaKelapadua.png"
+        },
+        "sameAs": [
+          "https://www.instagram.com/mediakelapadua",
+          "https://www.facebook.com/profile.php?id=61569679397521",
+          "https://www.youtube.com/@KosongDelapan102",
+          "https://www.tiktok.com/@mediakelapadua"
+        ]
+      },
+
+      {
+        "@type": "WebSite",
+        "@id": "https://mediakelapadua.web.id/#website",
+        "url": "https://mediakelapadua.web.id/",
+        "name": "Media Kelapa Dua",
+        "inLanguage": "id-ID",
+        "publisher": {
+          "@id": "https://mediakelapadua.web.id/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://mediakelapadua.web.id/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+
+      {
+        "@type": "WebPage",
+        "@id": "https://mediakelapadua.web.id/#webpage",
+        "url": "https://mediakelapadua.web.id/",
+        "name": "Media Kelapa Dua | Portal Berita dan Informasi Warga Jakarta Barat",
+        "isPartOf": {
+          "@id": "https://mediakelapadua.web.id/#website"
+        },
+        "about": {
+          "@id": "https://mediakelapadua.web.id/#organization"
+        },
+        "inLanguage": "id-ID"
+      },
+
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mediakelapadua.web.id/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://mediakelapadua.web.id/"
+          }
+        ]
+      }
+
+    ]
+  }
+  </script>
 
 </head>
 
-<body id="top-page" class="scrollspy preload">
+<body id="top-page" class="scrollspy">
 
 <main>
 
@@ -208,20 +252,15 @@
   </ul>
 
   <!-- Trigger menu mobile -->
-  <a href="#"
-   data-target="mobile-nav"
-   class="sidenav-trigger"
-   aria-label="Mobile Menu">
-
+  <a href="#" data-target="mobile-nav" class="sidenav-trigger">
     <i class="material-icons">menu</i>
-
   </a>
 
   <!-- Tombol Search -->
-  <div class="navbar-extra">
-      <a href="#" id="search-button" aria-label="Search">
-          <i class="material-icons">search</i>
-      </a>
+  <div class="navbar-extra right">
+    <a href="#" id="search-button">
+      <i class="material-icons">search</i>
+    </a>
   </div>
 
   <!-- Form Search -->
@@ -1312,40 +1351,13 @@ onclick="scrollKeatas()">
 </script>
 
 <!-- Materialize JS -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-
-    if (typeof M === 'undefined') {
-        console.error('Materialize gagal dimuat');
-        return;
-    }
-
-    M.Sidenav.init(
-        document.querySelectorAll('.sidenav'),
-        {
-            edge: 'left',
-            draggable: true
-        }
-    );
-
-    M.Dropdown.init(
-        document.querySelectorAll('.dropdown-trigger'),
-        {
-            coverTrigger: false,
-            constrainWidth: false,
-            closeOnClick: true,
-            alignment: 'left'
-        }
-    );
-
-    M.Collapsible.init(
-        document.querySelectorAll('.collapsible')
-    );
-
-    M.AutoInit();
-
+document.addEventListener('DOMContentLoaded', function () {
+    if (typeof M !== 'undefined') {
+    console.log('Materialize berhasil dimuat');
+  }
 });
 </script>
 
