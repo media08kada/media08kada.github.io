@@ -10,6 +10,11 @@
     <!-- Materialize CSS -->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
 
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="https://mediakelapadua.web.id/img/partner/MediaKelapadua.png">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
@@ -57,24 +62,43 @@
       <h4 class="center light">Gallery-Video</h4>
 
 <!-- Preview utama -->
-    <div class="preview-container">
-      <iframe id="preview-link"
-        src="https://www.youtube.com/embed/ciw3dGeqIeo?si=WDFhKgvWelRFWgis"
-        frameborder="0" allowfullscreen>
-      </iframe>
+    <div class="preview-container z-depth-3">
+       <iframe
+      id="mainVideo"
+      width="100%"
+      height="500"
+      src="https://www.youtube.com/embed/FA7etcbHNfw?si=Ki9_NjtMC_OcYaNZ" title="YouTube video player"
+      frameborder="0"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
     </div>
 
     <!-- Thumbnail Video -->
-    <div class="galleries">
-      <img src="https://img.youtube.com/vi/ciw3dGeqIeo/hqdefault.jpg" 
-          alt="Thumbnail Video 1" onclick="changeVideo('KD5UOu4YiQs')">
-
-      <img src="https://img.youtube.com/vi/geS2Qrqdj1s/hqdefault.jpg" 
-          alt="Thumbnail Video 2" onclick="changeVideo('geS2Qrqdj1s')">
-
-      <img src="https://img.youtube.com/vi/XwJqVVLdEDY/hqdefault.jpg" 
-          alt="Thumbnail Video 3" onclick="changeVideo('XwJqVVLdEDY')">
+    <div class="video-gallery">
+      <div class="video-thumb" onclick="changeVideo('FA7etcbHNfw?si=Ki9_NjtMC_OcYaNZ')">
+      <img
+        src="https://img.youtube.com/vi/FA7etcbHNfw/hqdefault.jpg"
+        alt="Mini Konvensi Kampung Bebas Jentik"
+        loading="lazy">
     </div>
+
+    <div class="video-thumb" onclick="changeVideo('ciw3dGeqIeo')">
+      <img
+        src="https://img.youtube.com/vi/ciw3dGeqIeo/maxresdefault.jpg"
+        alt="Deklarasi STBM"
+        loading="lazy">
+    </div>
+    
+    <div class="video-thumb" onclick="changeVideo('geS2Qrqdj1s')">
+      <img
+        src="https://img.youtube.com/vi/geS2Qrqdj1s/maxresdefault.jpg"
+        alt="Lomba Kader Berprestasi"
+        loading="lazy">
+      </div>
+    </div> 
 
     <div class="video-description">
         <p style="text-align: center; margin-top: 15px;">Selamat menonton dan jangan lupa<br>
