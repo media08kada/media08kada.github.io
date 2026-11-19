@@ -1117,7 +1117,7 @@ html {
 #informasi p {
     margin-bottom: 22px;
     font-size: clamp(15px, 1vw + 13px, 17px);
-    line-height: 1.5;
+    line-height: 1.2;
     color: #444;
     text-align: justify;
     font-weight: 400;
@@ -1129,7 +1129,7 @@ html {
 #informasi p.website {
     text-align: left;
     text-indent: 0;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
