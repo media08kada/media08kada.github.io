@@ -506,9 +506,10 @@ transform:translateY(0);
 .ticker-track{
     display:flex;
     align-items:center;
+    width:max-content;
     white-space:nowrap;
     gap:50px;
-    animation:tickerRight 120s linear infinite;
+    animation:ticker 120s linear infinite;
 }
 
 /* Tombol */
@@ -538,15 +539,14 @@ color:#fff;
 font-size:22px;
 }
 
-@keyframes tickerRight{
+@keyframes ticker{
     from{
-        transform:translateX(-100%);
+        transform:translateX(-50%);
     }
     to{
-        transform:translateX(100%);
+        transform:translateX(0);
     }
 }
-
 
 /* Tablet */
 @media(max-width:768px){
