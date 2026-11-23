@@ -1771,6 +1771,18 @@ footer h6 a {
     margin-right:0;
 }
 
+.news-content span {
+    display: inline-block;
+    background: grey;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: 300;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
 /* Slider */
 .news30-slider{
     display:flex;
@@ -1791,7 +1803,7 @@ footer h6 a {
 
 /* Card */
 .news-card{
-    flex:0 0 calc(25% - 15px);  /* 4 video per baris */
+    flex:0 0 calc(25% - 15px);  
     min-width:calc(25% - 15px);
     background:#fff;
     border-radius:12px;
