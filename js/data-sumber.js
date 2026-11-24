@@ -83,7 +83,7 @@ const sumberBeritaWilayah = [
 // Berita Pilihan
 const sumberBeritaPilihan = [
   {
-    url: "Pilihan/posyandu-siklus-hidup-melati-rw-08-tingkatkan-layanan-kesehatan.html",
+    url: "Pilihan/pengembalian-fungsi-dan-penertiban-bangunan-di-kali-pesanggrahan.html",
     judul: "judul-pilihan-1",
     isi: "isi-pilihan-1",
     previewJudul: "preview-judul-pilihan-1",
