@@ -142,6 +142,10 @@ const beritaPopuler = [
     judul: "Hidran Mandiri Perkuat Sistem Proteksi Kebakaran",
     link: "/Pilihan/hidran-mandiri-perkuat-sistem-proteksi-kebakaran.html",
   },
+  {
+    judul: "Pengembalian Fungsi dan Penertiban Bangunan di Kali Pesanggrahan",
+    link: "/Pilihan/pengembalian-fungsi-dan-penertiban-bangunan-di-kali-pesanggrahan.html",
+  },
 ];
 
 
