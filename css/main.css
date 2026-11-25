@@ -408,7 +408,7 @@ img:hover{
   object-fit: cover;
   display: block;
   height: auto;
-  filter: brightness(70%);
+  filter: brightness(85%);
 }
 
 #sliderhero {
