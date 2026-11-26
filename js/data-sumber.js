@@ -67,7 +67,7 @@ const sumberBeritaWilayah = [
     nomor: 5,
   },
   {
-    url: "berita-wilayah/sosialisasi-teknologi-wolbachia-untuk-pengendalian-dbd.html",
+    url: "berita-wilayah/bantu-warga-untuk-kembali-nikmati-penerangan-listrik.html",
     nomor: 6,
   },
   {
