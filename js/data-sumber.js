@@ -104,7 +104,7 @@ const sumberBeritaPilihan = [
     previewIsi: "preview-isi-pilihan-3",
   },
   {
-    url: "Pilihan/mural-hadirkan-wajah-baru-kawasan-kelapa-dua.html",
+    url: "Pilihan/harapan-warga-rw-08-kelapa-dua-untuk-hadirnya-rptra.html",
     judul: "judul-pilihan-4",
     isi: "isi-pilihan-4",
     previewJudul: "preview-judul-pilihan-4",
