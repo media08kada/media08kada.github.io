@@ -161,15 +161,17 @@ if (copyrightYear) {
   copyrightYear.textContent = new Date().getFullYear();
 }
 
-// Jumlah Pengunjung
+// Jumlah Pengunjung Histats
 window._Hasync = window._Hasync || [];
 
 window._Hasync.push(["Histats.start", "1,4996560,4,1034,150,25,00010000"]);
 window._Hasync.push(["Histats.fasi", "1"]);
 window._Hasync.push(["Histats.track_hits", ""]);
 
-const histatsScript = document.createElement("script");
-histatsScript.async = true;
-histatsScript.src = "https://s10.histats.com/js15_as.js";
-
-document.head.appendChild(histatsScript);
+(function () {
+    var hs = document.createElement("script");
+    hs.type = "text/javascript";
+    hs.async = true;
+    hs.src = "https://s10.histats.com/js15_as.js";
+    document.head.appendChild(hs);
+})();
