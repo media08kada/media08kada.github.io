@@ -169,9 +169,9 @@ window._Hasync.push(["Histats.fasi", "1"]);
 window._Hasync.push(["Histats.track_hits", ""]);
 
 (function () {
-    var hs = document.createElement("script");
-    hs.type = "text/javascript";
-    hs.async = true;
-    hs.src = "https://s10.histats.com/js15_as.js";
-    document.head.appendChild(hs);
+  var hs = document.createElement("script");
+  hs.type = "text/javascript";
+  hs.async = true;
+  hs.src = "https://s10.histats.com/js15_as.js";
+  document.head.appendChild(hs);
 })();
