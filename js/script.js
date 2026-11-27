@@ -160,3 +160,16 @@ const copyrightYear = document.getElementById("copyright-year");
 if (copyrightYear) {
   copyrightYear.textContent = new Date().getFullYear();
 }
+
+// Jumlah Pengunjung
+window._Hasync = window._Hasync || [];
+
+window._Hasync.push(["Histats.start", "1,4996560,4,1034,150,25,00010000"]);
+window._Hasync.push(["Histats.fasi", "1"]);
+window._Hasync.push(["Histats.track_hits", ""]);
+
+const histatsScript = document.createElement("script");
+histatsScript.async = true;
+histatsScript.src = "https://s10.histats.com/js15_as.js";
+
+document.head.appendChild(histatsScript);

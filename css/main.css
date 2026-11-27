@@ -1885,4 +1885,90 @@ footer h6 a {
     }
 }
 /* Berita 30 Detik End */
-      
+
+
+/* VISITOR COUNTER MODERN */
+.visitor-counter{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    width:fit-content;
+    margin:15px auto;
+    padding:6px 10px;
+    background:#fff;
+    border:1px solid rgba(0,0,0,0.08);
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
+    transition:.3s;
+}
+
+.visitor-counter:hover{
+    transform:translateY(-1px);
+}
+
+.counter-icon{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#959696,#555555);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    flex-shrink:0;
+}
+
+.counter-icon i{
+    font-size:15px;
+}
+
+.counter-content{
+    display:flex;
+    flex-direction:column;
+    line-height:1.1;
+}
+
+.counter-label{
+    font-size:9px;
+    color:#666;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+}
+
+.counter-number{
+    font-size:15px;
+    font-weight:700;
+    color:#212121;
+}
+
+body.dark-mode .counter-number{
+    color:#fff;
+}
+
+body.dark-mode .counter-label{
+    color:#aaa;
+}
+
+@media (max-width:600px){
+    .visitor-counter{
+        padding:5px 8px;
+        gap:6px;
+    }
+
+    .counter-icon{
+        width:24px;
+        height:24px;
+    }
+
+    .counter-icon i{
+        font-size:13px;
+    }
+
+    .counter-number{
+        font-size:14px;
+    }
+
+    .counter-label{
+        font-size:8px;
+    }
+}
