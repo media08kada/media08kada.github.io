@@ -750,6 +750,10 @@ animation-duration: 250s;
     color: #fff;
 }
 
+.card-content P {
+  font-size: 13px;
+}
+
 /* Item Berita Wilayah */
 .collection {
   border: none;
