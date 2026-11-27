@@ -1887,16 +1887,3 @@ footer h6 a {
 /* Berita 30 Detik End */
 
 
-/* VISITOR COUNTER MODERN */
-#histats_counter{
-    margin-top:15px;
-    text-align:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-#histats_counter img{
-    max-width:100%;
-    height:auto;
-}
