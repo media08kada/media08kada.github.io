@@ -337,9 +337,10 @@ img:hover{
 .dropdown-content li > a {
   font-size: 14px !important;
   font-weight: 300 !important;
-  line-height: 38px !important;
-  min-height: 38px !important;
-  padding: 0 16px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  min-height: 32px !important;
+  padding: 0 12px !important;
 }
 
 .dropdown-content .divider {
